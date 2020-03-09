@@ -1,1 +1,1 @@
-[click me](https://wtfsystems.github.io)
+[click me](https://www.wtfsystems.net)
