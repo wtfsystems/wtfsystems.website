@@ -15,6 +15,6 @@ var classwte_1_1message =
     [ "get_to", "d0/d6b/classwte_1_1message.html#ae275aafbff52515cbc1268d284c717c5", null ],
     [ "is_timed_event", "d0/d6b/classwte_1_1message.html#a535ba94e95b56ff7e0190f0d51ed6fd3", null ],
     [ "num_args", "d0/d6b/classwte_1_1message.html#ac397c438c1d0e01c18de6034a0c6fc68", null ],
-    [ "operator<", "d0/d6b/classwte_1_1message.html#a8920fda7760c35772590b52d16366f2f", null ],
+    [ "operator<", "d0/d6b/classwte_1_1message.html#a72d7b943ee764368aec96eee63212b97", null ],
     [ "split_args", "d0/d6b/classwte_1_1message.html#ac212113a7fcb828c4603639886503d77", null ]
 ];

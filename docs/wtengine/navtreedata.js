@@ -23,7 +23,7 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "WTEngine", "index.html", [
-    [ "README", "d8/db3/md_src_wte_demo_include_wte__r_e_a_d_m_e.html", null ],
+    [ "README", "d8/d07/md_src_wte__r_e_a_d_m_e.html", null ],
     [ "Bug List", "de/da5/bug.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -40,6 +40,9 @@ var NAVTREE =
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ]
       ] ]
+    ] ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ]
     ] ]
   ] ]
 ];
@@ -47,7 +50,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"db/d25/classwte_1_1mnu_1_1menu__item.html#aca6fee0168d55b70aa95928b41515e43"
+"db/d25/classwte_1_1mnu_1_1menu__item.html#a1e5fa10c4295ab9088663f1847f72603"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

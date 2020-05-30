@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('d2/d44/classwte_1_1game__cfg__map.html
 </div><!--header-->
 <div class="contents">
 
-<p>Game config.  
+<p>Game config map.  
  <a href="../../d2/d44/classwte_1_1game__cfg__map.html#details">More...</a></p>
 
 <p><code>#include &lt;game_cfg_map.hpp&gt;</code></p>
@@ -110,8 +110,7 @@ Inheritance diagram for wte::game_cfg_map:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a920634fc1c3d0d5e73479db063b619c8"><td class="memItemLeft" align="right" valign="top"><a id="a920634fc1c3d0d5e73479db063b619c8"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>set_game_cfg_file</b> (const std::string fname)</td></tr>
+<tr class="memitem:a920634fc1c3d0d5e73479db063b619c8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d44/classwte_1_1game__cfg__map.html#a920634fc1c3d0d5e73479db063b619c8">set_game_cfg_file</a> (const std::string fname)</td></tr>
 <tr class="separator:a920634fc1c3d0d5e73479db063b619c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab64eec3c08dfc5a530046cb4df2d0f56"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d44/classwte_1_1game__cfg__map.html#ab64eec3c08dfc5a530046cb4df2d0f56">load</a> (void)</td></tr>
 <tr class="separator:ab64eec3c08dfc5a530046cb4df2d0f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,8 +163,8 @@ static std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRi
 <tr class="separator:a8ae9f876db7def5af08dfd4abcc9b46f inherit pro_static_attribs_classwte_1_1variable__map"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Game config. </p>
-<p>Statics to store game config variables </p>
+<div class="textblock"><p>Game config map. </p>
+<p>Statics to store game config variables. Inherits map functionality from the <a class="el" href="../../d3/d6f/classwte_1_1variable__map.html" title="Variable map.">variable_map</a> class. This class provides load/save functions. Also provides math functions to manipulate the values. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab50af6869643e47bc7a60a3f5df1e089"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab50af6869643e47bc7a60a3f5df1e089">&#9670;&nbsp;</a></span>add()</h2>
@@ -202,7 +201,14 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Add </p><dl class="section return"><dt>Returns</dt><dd>False on fail, true on success </dd></dl>
+<p>Add a value to a variable in the game config map. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">var</td><td>Variable name. </td></tr>
+    <tr><td class="paramname">val</td><td>Value to add by. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>False on fail, true on success. </dd></dl>
 
 </div>
 </div>
@@ -229,7 +235,13 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Clear save </p>
+<p>Clear the current game config save. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -268,7 +280,14 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Divide </p><dl class="section return"><dt>Returns</dt><dd>False on fail, true on success </dd></dl>
+<p>Dividea value by a variable in the game config map. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">var</td><td>Variable name. </td></tr>
+    <tr><td class="paramname">val</td><td>Value to divide by. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>False on fail, true on success. </dd></dl>
 
 </div>
 </div>
@@ -295,7 +314,13 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Load </p><dl class="section return"><dt>Returns</dt><dd>False on fail, true on success </dd></dl>
+<p>Load game config variables from file. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>False on fail, true on success </dd></dl>
 
 </div>
 </div>
@@ -334,7 +359,14 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Multiply </p><dl class="section return"><dt>Returns</dt><dd>False on fail, true on success </dd></dl>
+<p>Multiplya value by a variable in the game config map. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">var</td><td>Variable name. </td></tr>
+    <tr><td class="paramname">val</td><td>Value to multiply by. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>False on fail, true on success. </dd></dl>
 
 </div>
 </div>
@@ -361,7 +393,46 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Save </p><dl class="section return"><dt>Returns</dt><dd>False on fail, true on success </dd></dl>
+<p>Save a game config variable to file. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">var</td><td>Variable name. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>False on fail, true on success. </dd></dl>
+
+</div>
+</div>
+<a id="a920634fc1c3d0d5e73479db063b619c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a920634fc1c3d0d5e73479db063b619c8">&#9670;&nbsp;</a></span>set_game_cfg_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void wte::game_cfg_map::set_game_cfg_file </td>
+          <td>(</td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>fname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the file the game config variables will be written to. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fname</td><td>Filename to set saving to. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -400,12 +471,19 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Subtract </p><dl class="section return"><dt>Returns</dt><dd>False on fail, true on success </dd></dl>
+<p>Subtracta value from a variable in the game config map. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">var</td><td>Variable name. </td></tr>
+    <tr><td class="paramname">val</td><td>Value to subtract by. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>False on fail, true on success. </dd></dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/wte_demo/include/wte/game_cfg_map.hpp</li>
+<li>src/wte/game_cfg_map.hpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -413,7 +491,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/ddf/namespacewte.html">wte</a></li><li class="navelem"><a class="el" href="../../d2/d44/classwte_1_1game__cfg__map.html">game_cfg_map</a></li>
-    <li class="footer">Generated by
+    <li class="footer">Generated on Sat May 30 2020 17:20:39 for WTEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

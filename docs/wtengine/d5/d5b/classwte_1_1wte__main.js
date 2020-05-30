@@ -2,10 +2,10 @@ var classwte_1_1wte__main =
 [
     [ "~wte_main", "d5/d5b/classwte_1_1wte__main.html#a7baaad57616ffd9c464a1a361037986d", null ],
     [ "wte_main", "d5/d5b/classwte_1_1wte__main.html#aebdc668b3a253385e7ba854de0f80efb", null ],
-    [ "wte_main", "d5/d5b/classwte_1_1wte__main.html#ade9f78f93d20640f986286fa8676ed56", null ],
+    [ "wte_main", "d5/d5b/classwte_1_1wte__main.html#acb0aa0580b0ab2eef297e8869f37c061", null ],
     [ "do_game", "d5/d5b/classwte_1_1wte__main.html#a0d484a8f975c86db015bcc5291c945c7", null ],
     [ "end_game", "d5/d5b/classwte_1_1wte__main.html#ada9ec986207fb24678f86c67afe74f0e", null ],
-    [ "handle_custom_sys_msg", "d5/d5b/classwte_1_1wte__main.html#aaedc659c2c28e075787b7ba1a0dca6ca", null ],
+    [ "handle_custom_sys_msg", "d5/d5b/classwte_1_1wte__main.html#a8bbdebf4cb3ac5ee091a0ca897cf50f6", null ],
     [ "load_menus", "d5/d5b/classwte_1_1wte__main.html#a3ef3ffd5f194afda6b67f2db669404ae", null ],
     [ "load_systems", "d5/d5b/classwte_1_1wte__main.html#a3aa24dc7db81d2319d6ec31e807a142f", null ],
     [ "new_game", "d5/d5b/classwte_1_1wte__main.html#a4f6714faee4bd1dd1b95948ca810528e", null ],

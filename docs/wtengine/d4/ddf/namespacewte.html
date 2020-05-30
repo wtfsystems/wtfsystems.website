@@ -95,22 +95,21 @@ $(document).ready(function(){initNavTree('d4/ddf/namespacewte.html','../../');})
 </div><!--header-->
 <div class="contents">
 
-<p>WTEngine | File: alert.hpp.  
+<p>WTEngine | File: ai.hpp.  
 <a href="../../d4/ddf/namespacewte.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d4f/classwte_1_1alert.html">alert</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alert class.  <a href="../../dc/d4f/classwte_1_1alert.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/def/classwte_1_1engine__cfg__map.html">engine_cfg_map</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Engine config.  <a href="../../d3/def/classwte_1_1engine__cfg__map.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Engine config map.  <a href="../../d3/def/classwte_1_1engine__cfg__map.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de3/classwte_1_1engine__flags.html">engine_flags</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Engine flags.  <a href="../../d2/de3/classwte_1_1engine__flags.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d44/classwte_1_1game__cfg__map.html">game_cfg_map</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Game config.  <a href="../../d2/d44/classwte_1_1game__cfg__map.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Game config map.  <a href="../../d2/d44/classwte_1_1game__cfg__map.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dac/classwte_1_1input__flags.html">input_flags</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input flags.  <a href="../../d0/dac/classwte_1_1input__flags.html#details">More...</a><br /></td></tr>
@@ -176,10 +175,10 @@ typedef std::map&lt; <a class="el" href="../../d4/ddf/namespacewte.html#a0b2c99e
 <tr class="memitem:ac16debb5abf668b0683123262a1a5636"><td class="memItemLeft" align="right" valign="top"><a id="ac16debb5abf668b0683123262a1a5636"></a>
 typedef std::map&lt; <a class="el" href="../../d4/ddf/namespacewte.html#a0b2c99e5d60eaf9f9c63a4f5adc51b83">entity</a>, cmp::component_sptr &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>component_citerator</b></td></tr>
 <tr class="separator:ac16debb5abf668b0683123262a1a5636"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae27591f7fac4894b668310d3bacdf450"><td class="memItemLeft" align="right" valign="top"><a id="ae27591f7fac4894b668310d3bacdf450"></a>
-typedef std::multimap&lt; <a class="el" href="../../d4/ddf/namespacewte.html#a0b2c99e5d60eaf9f9c63a4f5adc51b83">entity</a>, cmp::component_sptr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddf/namespacewte.html#ae27591f7fac4894b668310d3bacdf450">world_map</a></td></tr>
-<tr class="memdesc:ae27591f7fac4894b668310d3bacdf450"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define main container for entity/component reference storage. <br /></td></tr>
-<tr class="separator:ae27591f7fac4894b668310d3bacdf450"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8d3d069a9721c21e71421397762c2f7"><td class="memItemLeft" align="right" valign="top"><a id="ac8d3d069a9721c21e71421397762c2f7"></a>
+typedef std::unordered_multimap&lt; <a class="el" href="../../d4/ddf/namespacewte.html#a0b2c99e5d60eaf9f9c63a4f5adc51b83">entity</a>, cmp::component_sptr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddf/namespacewte.html#ac8d3d069a9721c21e71421397762c2f7">world_map</a></td></tr>
+<tr class="memdesc:ac8d3d069a9721c21e71421397762c2f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define main container for entity/component reference storage. <br /></td></tr>
+<tr class="separator:ac8d3d069a9721c21e71421397762c2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66175a9914721c56f2232bb01eb0c507"><td class="memItemLeft" align="right" valign="top"><a id="a66175a9914721c56f2232bb01eb0c507"></a>
 typedef std::shared_ptr&lt; <a class="el" href="../../d4/dd6/classwte_1_1mnu_1_1menu.html">mnu::menu</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>menu_sptr</b></td></tr>
 <tr class="separator:a66175a9914721c56f2232bb01eb0c507"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -199,11 +198,9 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>IS_RUNNING</b>, 
 <b>GAME_STARTED</b>, 
 <b>GAME_MENU_OPENED</b>, 
-<b>DRAW_HITBOX</b>, 
+<b>DRAW_FPS</b>, 
 <br />
-&#160;&#160;<b>DRAW_FPS</b>, 
-<b>WAIT_FOR_VSYNC</b>, 
-<b>MAX_SYSTEM_FLAGS</b>
+&#160;&#160;<b>MAX_SYSTEM_FLAGS</b>
 <br />
  }</td></tr>
 <tr class="separator:a8f9ba4fa0c9cd64ce139a469e2f0595f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -225,7 +222,7 @@ Enumerations</h2></td></tr>
 <tr class="separator:aa48a0ff7932b61e7442b99596b60f42f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>WTEngine | File: alert.hpp. </p>
+<div class="textblock"><p>WTEngine | File: ai.hpp. </p>
 <p>WTEngine | File: wte_main.hpp.</p>
 <p>WTEngine | File: variable_map.hpp.</p>
 <p>WTEngine | File: system.hpp.</p>
@@ -271,12 +268,6 @@ Enumerations</h2></td></tr>
 <p>WTEngine | File: direction.hpp.</p>
 <p>WTEngine | File: damage.hpp.</p>
 <p>WTEngine | File: component.hpp.</p>
-<p>WTEngine | File: ai.hpp.</p>
-<dl class="section author"><dt>Author</dt><dd>Matthew Evans</dd></dl>
-<dl class="section version"><dt>Version</dt><dd>0.1a </dd></dl>
-<dl class="section copyright"><dt>Copyright</dt><dd>See LICENSE.md for copyright information. </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2019-2020</dd></dl>
-<p>Alerts.</p>
 <dl class="section author"><dt>Author</dt><dd>Matthew Evans</dd></dl>
 <dl class="section version"><dt>Version</dt><dd>0.1a </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>See LICENSE.md for copyright information. </dd></dl>
@@ -504,7 +495,7 @@ Enumerations</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/ddf/namespacewte.html">wte</a></li>
-    <li class="footer">Generated by
+    <li class="footer">Generated on Sat May 30 2020 17:20:39 for WTEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>
