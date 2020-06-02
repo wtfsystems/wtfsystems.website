@@ -61,7 +61,8 @@ var hierarchy =
     [ "wte::mnu::menu_item", "db/d25/classwte_1_1mnu_1_1menu__item.html", [
       [ "wte::mnu::menu_item_action", "d0/dbf/classwte_1_1mnu_1_1menu__item__action.html", null ],
       [ "wte::mnu::menu_item_apply", "d4/d5b/classwte_1_1mnu_1_1menu__item__apply.html", null ],
-      [ "wte::mnu::menu_item_setting", "df/dd3/classwte_1_1mnu_1_1menu__item__setting.html", null ]
+      [ "wte::mnu::menu_item_setting", "df/dd3/classwte_1_1mnu_1_1menu__item__setting.html", null ],
+      [ "wte::mnu::menu_item_toggle", "d5/d02/classwte_1_1mnu_1_1menu__item__toggle.html", null ]
     ] ],
     [ "wte::message", "d0/d6b/classwte_1_1message.html", null ],
     [ "wte::sys::system", "d2/d4c/classwte_1_1sys_1_1system.html", [

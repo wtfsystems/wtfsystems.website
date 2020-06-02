@@ -103,6 +103,7 @@ Inheritance diagram for wte::mnu::menu_item:</div>
 <area href="../../d0/dbf/classwte_1_1mnu_1_1menu__item__action.html" title="Menu item action." alt="wte::mnu::menu_item_action" shape="rect" coords="0,56,168,80"/>
 <area href="../../d4/d5b/classwte_1_1mnu_1_1menu__item__apply.html" alt="wte::mnu::menu_item_apply" shape="rect" coords="178,56,346,80"/>
 <area href="../../df/dd3/classwte_1_1mnu_1_1menu__item__setting.html" alt="wte::mnu::menu_item_setting" shape="rect" coords="356,56,524,80"/>
+<area href="../../d5/d02/classwte_1_1mnu_1_1menu__item__toggle.html" alt="wte::mnu::menu_item_toggle" shape="rect" coords="534,56,702,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -110,14 +111,18 @@ Inheritance diagram for wte::mnu::menu_item:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af33e4bb20060f55f0a92f0d6001080cd"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/classwte_1_1mnu_1_1menu__item.html#af33e4bb20060f55f0a92f0d6001080cd">~menu_item</a> ()</td></tr>
 <tr class="separator:af33e4bb20060f55f0a92f0d6001080cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca6fee0168d55b70aa95928b41515e43"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/classwte_1_1mnu_1_1menu__item.html#aca6fee0168d55b70aa95928b41515e43">get_text</a> (void)</td></tr>
-<tr class="separator:aca6fee0168d55b70aa95928b41515e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a964a1299582e99c65018b8f1102714e0"><td class="memItemLeft" align="right" valign="top">virtual const std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/classwte_1_1mnu_1_1menu__item.html#a964a1299582e99c65018b8f1102714e0">get_text</a> (void)</td></tr>
+<tr class="separator:a964a1299582e99c65018b8f1102714e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2002ba48b1d45e56feaffbec58de566d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/classwte_1_1mnu_1_1menu__item.html#a2002ba48b1d45e56feaffbec58de566d">on_left</a> (void)</td></tr>
 <tr class="separator:a2002ba48b1d45e56feaffbec58de566d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf5bef13120795b8db20138ab8c82170"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/classwte_1_1mnu_1_1menu__item.html#acf5bef13120795b8db20138ab8c82170">on_right</a> (void)</td></tr>
 <tr class="separator:acf5bef13120795b8db20138ab8c82170"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e5fa10c4295ab9088663f1847f72603"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d0/d6b/classwte_1_1message.html">message</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/classwte_1_1mnu_1_1menu__item.html#a1e5fa10c4295ab9088663f1847f72603">on_select</a> (void)</td></tr>
-<tr class="separator:a1e5fa10c4295ab9088663f1847f72603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace254d74dcb3c08f06de0b1252413dd8"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="../../d0/d6b/classwte_1_1message.html">message</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/classwte_1_1mnu_1_1menu__item.html#ace254d74dcb3c08f06de0b1252413dd8">on_select</a> (void)</td></tr>
+<tr class="separator:ace254d74dcb3c08f06de0b1252413dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7969a3cf0614766ef3557bb7d1819d7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/classwte_1_1mnu_1_1menu__item.html#ac7969a3cf0614766ef3557bb7d1819d7">reset_to_default</a> (void)</td></tr>
+<tr class="separator:ac7969a3cf0614766ef3557bb7d1819d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bc019e6a36c8d01b8f46880ec42a20a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/classwte_1_1mnu_1_1menu__item.html#a2bc019e6a36c8d01b8f46880ec42a20a">set_default</a> (void)</td></tr>
+<tr class="separator:a2bc019e6a36c8d01b8f46880ec42a20a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cabb4cdae909c79a46e58ad67c07465"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d25/classwte_1_1mnu_1_1menu__item.html#a0cabb4cdae909c79a46e58ad67c07465">get_label</a> (void) const</td></tr>
 <tr class="separator:a0cabb4cdae909c79a46e58ad67c07465"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -226,8 +231,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aca6fee0168d55b70aa95928b41515e43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca6fee0168d55b70aa95928b41515e43">&#9670;&nbsp;</a></span>get_text()</h2>
+<a id="a964a1299582e99c65018b8f1102714e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a964a1299582e99c65018b8f1102714e0">&#9670;&nbsp;</a></span>get_text()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -236,7 +241,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::vector&lt;std::string&gt; wte::mnu::menu_item::get_text </td>
+          <td class="memname">virtual const std::vector&lt;std::string&gt; wte::mnu::menu_item::get_text </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -257,7 +262,7 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Reimplemented in <a class="el" href="../../d0/dbf/classwte_1_1mnu_1_1menu__item__action.html#abacdfbc283b9ab0bce7d3ec6ecb93347">wte::mnu::menu_item_action</a>, <a class="el" href="../../d4/d5b/classwte_1_1mnu_1_1menu__item__apply.html#a6e5eea7af1de377fc3eaaa382ade2c4a">wte::mnu::menu_item_apply</a>, and <a class="el" href="../../df/dd3/classwte_1_1mnu_1_1menu__item__setting.html#a6733b2caabfc517ceb2ca49a55ee5bea">wte::mnu::menu_item_setting</a>.</p>
+<p>Reimplemented in <a class="el" href="../../df/dd3/classwte_1_1mnu_1_1menu__item__setting.html#a22fc8c2375b22a217419b23c2bba4a7f">wte::mnu::menu_item_setting</a>, <a class="el" href="../../d4/d5b/classwte_1_1mnu_1_1menu__item__apply.html#a1f67768b35ee8c94ff2183609b8bee0f">wte::mnu::menu_item_apply</a>, <a class="el" href="../../d5/d02/classwte_1_1mnu_1_1menu__item__toggle.html#a160a7367cccd4392434b5f4760fd61f3">wte::mnu::menu_item_toggle</a>, and <a class="el" href="../../d0/dbf/classwte_1_1mnu_1_1menu__item__action.html#a9e36e5ea28d8bbeccb416e781e7c83b9">wte::mnu::menu_item_action</a>.</p>
 
 </div>
 </div>
@@ -292,6 +297,8 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
+<p>Reimplemented in <a class="el" href="../../df/dd3/classwte_1_1mnu_1_1menu__item__setting.html#a90477e91ec38e8062396f1b56e130571">wte::mnu::menu_item_setting</a>, <a class="el" href="../../d5/d02/classwte_1_1mnu_1_1menu__item__toggle.html#ad08132f56b982482fb9c17d30f644d9c">wte::mnu::menu_item_toggle</a>, and <a class="el" href="../../d4/d5b/classwte_1_1mnu_1_1menu__item__apply.html#a5e26ade6a0cb80e45649c2000033c6d4">wte::mnu::menu_item_apply</a>.</p>
+
 </div>
 </div>
 <a id="acf5bef13120795b8db20138ab8c82170"></a>
@@ -325,10 +332,12 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
+<p>Reimplemented in <a class="el" href="../../df/dd3/classwte_1_1mnu_1_1menu__item__setting.html#af4d34839ead02bfd00422034f2c055c8">wte::mnu::menu_item_setting</a>, <a class="el" href="../../d5/d02/classwte_1_1mnu_1_1menu__item__toggle.html#a99efbe6670a6d539dd09717c714508ea">wte::mnu::menu_item_toggle</a>, and <a class="el" href="../../d4/d5b/classwte_1_1mnu_1_1menu__item__apply.html#a12be44dd24609bdc7cf7a4106ca687af">wte::mnu::menu_item_apply</a>.</p>
+
 </div>
 </div>
-<a id="a1e5fa10c4295ab9088663f1847f72603"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e5fa10c4295ab9088663f1847f72603">&#9670;&nbsp;</a></span>on_select()</h2>
+<a id="ace254d74dcb3c08f06de0b1252413dd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace254d74dcb3c08f06de0b1252413dd8">&#9670;&nbsp;</a></span>on_select()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -337,7 +346,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="../../d0/d6b/classwte_1_1message.html">message</a> wte::mnu::menu_item::on_select </td>
+          <td class="memname">virtual const <a class="el" href="../../d0/d6b/classwte_1_1message.html">message</a> wte::mnu::menu_item::on_select </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -358,7 +367,77 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Reimplemented in <a class="el" href="../../d0/dbf/classwte_1_1mnu_1_1menu__item__action.html#a38e6fcb1c4c1a8288d9e1371f303a9c9">wte::mnu::menu_item_action</a>, and <a class="el" href="../../d4/d5b/classwte_1_1mnu_1_1menu__item__apply.html#ace2fb7f0c560c94687b0f8a9257e1909">wte::mnu::menu_item_apply</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d4/d5b/classwte_1_1mnu_1_1menu__item__apply.html#af9257301dc20e9550a70a2e28de2d5e4">wte::mnu::menu_item_apply</a>, and <a class="el" href="../../d0/dbf/classwte_1_1mnu_1_1menu__item__action.html#acd2a89fc7b6af275e76bb7b9ffdb88d7">wte::mnu::menu_item_action</a>.</p>
+
+</div>
+</div>
+<a id="ac7969a3cf0614766ef3557bb7d1819d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7969a3cf0614766ef3557bb7d1819d7">&#9670;&nbsp;</a></span>reset_to_default()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void wte::mnu::menu_item::reset_to_default </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p>Reimplemented in <a class="el" href="../../d5/d02/classwte_1_1mnu_1_1menu__item__toggle.html#a1acb9fbdd4fc27757f756563489a117d">wte::mnu::menu_item_toggle</a>, and <a class="el" href="../../df/dd3/classwte_1_1mnu_1_1menu__item__setting.html#a9adc244a445903af2cf4d120381a5eb3">wte::mnu::menu_item_setting</a>.</p>
+
+</div>
+</div>
+<a id="a2bc019e6a36c8d01b8f46880ec42a20a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bc019e6a36c8d01b8f46880ec42a20a">&#9670;&nbsp;</a></span>set_default()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void wte::mnu::menu_item::set_default </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Description </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p>Reimplemented in <a class="el" href="../../d5/d02/classwte_1_1mnu_1_1menu__item__toggle.html#a8e4b0d0f3c2cb7c7d190e9b79becf102">wte::mnu::menu_item_toggle</a>, and <a class="el" href="../../df/dd3/classwte_1_1mnu_1_1menu__item__setting.html#af71c6c2c5917a0cc3b0bc3ae946bead5">wte::mnu::menu_item_setting</a>.</p>
 
 </div>
 </div>
@@ -371,7 +450,7 @@ Protected Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/ddf/namespacewte.html">wte</a></li><li class="navelem"><b>mnu</b></li><li class="navelem"><a class="el" href="../../db/d25/classwte_1_1mnu_1_1menu__item.html">menu_item</a></li>
-    <li class="footer">Generated on Sat May 30 2020 17:20:41 for WTEngine by
+    <li class="footer">Generated on Tue Jun 2 2020 08:40:27 for WTEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>
