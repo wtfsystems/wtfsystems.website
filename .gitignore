@@ -4,3 +4,5 @@ wtfsystems.github.io.code-workspace
 # Ignore build script
 copy_docs.bat
 docs_list.csv
+
+wip/

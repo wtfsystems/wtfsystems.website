@@ -115,9 +115,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae43307ea615066c66ea9684e3a14cdc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae35c392979da4fa36f48038ee67b7342"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classwte_1_1mgr_1_1audio__manager.html#ae35c392979da4fa36f48038ee67b7342">~audio_manager</a> ()</td></tr>
 <tr class="separator:ae35c392979da4fa36f48038ee67b7342"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa51dcdc50596185ae64a46c56573f0db"><td class="memItemLeft" align="right" valign="top"><a id="aa51dcdc50596185ae64a46c56573f0db"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classwte_1_1mgr_1_1audio__manager.html#aa51dcdc50596185ae64a46c56573f0db">transfer_messages</a> (const message_container messages)</td></tr>
-<tr class="memdesc:aa51dcdc50596185ae64a46c56573f0db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Take a vector of messages and pass them into the audio messages deck. <br /></td></tr>
+<tr class="memitem:a8b0721b58430a54d94e704f90f2ef42a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classwte_1_1mgr_1_1audio__manager.html#a8b0721b58430a54d94e704f90f2ef42a">initialize</a> (void)</td></tr>
+<tr class="separator:a8b0721b58430a54d94e704f90f2ef42a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a272548d37aaf513c59c20920bb04890d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classwte_1_1mgr_1_1audio__manager.html#a272548d37aaf513c59c20920bb04890d">de_init</a> (void)</td></tr>
+<tr class="separator:a272548d37aaf513c59c20920bb04890d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa51dcdc50596185ae64a46c56573f0db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da2/classwte_1_1mgr_1_1audio__manager.html#aa51dcdc50596185ae64a46c56573f0db">transfer_messages</a> (const message_container messages)</td></tr>
 <tr class="separator:aa51dcdc50596185ae64a46c56573f0db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classwte_1_1mgr_1_1manager"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwte_1_1mgr_1_1manager')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d4/d4e/classwte_1_1mgr_1_1manager.html">wte::mgr::manager&lt; audio_manager &gt;</a></td></tr>
 <tr class="memitem:ac8f34396cfead9f5f54d34434a0bba5e inherit pub_methods_classwte_1_1mgr_1_1manager"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d4e/classwte_1_1mgr_1_1manager.html#ac8f34396cfead9f5f54d34434a0bba5e">~manager</a> ()</td></tr>
@@ -161,7 +163,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Audio Manager. </p>
-<p>Handles audio messages in a thread. Initializes the Allegro audio and Allegro codec addons durring construction. Messages get passed from the main engine loop via <a class="el" href="../../df/da2/classwte_1_1mgr_1_1audio__manager.html#aa51dcdc50596185ae64a46c56573f0db" title="Take a vector of messages and pass them into the audio messages deck.">transfer_messages()</a>. The Audio Manager is then implemented as a thread, creating local Allegro objects. As messages are placed in the deck, take them from the top and process.</p>
+<p>Handles audio messages in a thread. Initializes the Allegro audio and Allegro codec addons durring construction. Messages get passed from the main engine loop via <a class="el" href="../../df/da2/classwte_1_1mgr_1_1audio__manager.html#aa51dcdc50596185ae64a46c56573f0db">transfer_messages()</a>. The Audio Manager is then implemented as a thread, creating local Allegro objects. As messages are placed in the deck, take them from the top and process.</p>
 <p>The manager creates the following mixers: Mixer Main - All other mixers attach to this. Mixer 1 - Play music - Load a file and play in a loop. Looping can be disabled. Mixer 2 - Play samples - Has set number of samples that can be loaded in. Mixer 3 - Play voice - Load a file and play once. Mixer 4 - Play ambiance - Load a file and play in a loop. Looping can be disabled. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae43307ea615066c66ea9684e3a14cdc4"></a>
@@ -216,6 +218,113 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a272548d37aaf513c59c20920bb04890d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a272548d37aaf513c59c20920bb04890d">&#9670;&nbsp;</a></span>de_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wte::mgr::audio_manager::de_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>de-init </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a8b0721b58430a54d94e704f90f2ef42a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b0721b58430a54d94e704f90f2ef42a">&#9670;&nbsp;</a></span>initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wte::mgr::audio_manager::initialize </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Initialize audio manager. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="aa51dcdc50596185ae64a46c56573f0db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa51dcdc50596185ae64a46c56573f0db">&#9670;&nbsp;</a></span>transfer_messages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wte::mgr::audio_manager::transfer_messages </td>
+          <td>(</td>
+          <td class="paramtype">const message_container&#160;</td>
+          <td class="paramname"><em>messages</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the volume level of a mixer. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>Mixer position. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Value of the mixer gain.</dd></dl>
+<p>Take a vector of messages and pass them into the audio messages deck. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">messages</td><td>Vector of messages to be passed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/wte/mgr/audio_manager.hpp</li>
 </ul>
@@ -225,7 +334,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/ddf/namespacewte.html">wte</a></li><li class="navelem"><b>mgr</b></li><li class="navelem"><a class="el" href="../../df/da2/classwte_1_1mgr_1_1audio__manager.html">audio_manager</a></li>
-    <li class="footer">Generated on Tue Jun 2 2020 08:40:26 for WTEngine by
+    <li class="footer">Generated on Thu Jun 11 2020 13:42:08 for WTEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

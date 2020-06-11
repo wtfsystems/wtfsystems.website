@@ -228,9 +228,14 @@ std::function&lt; void(const <a class="el" href="../../d4/ddf/namespacewte.html#
   </tr>
 </table>
 </div><div class="memdoc">
-<p>overlay </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Overlay constructor. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
+    <tr><td class="paramname">w</td><td>Overlay width in pixels. </td></tr>
+    <tr><td class="paramname">h</td><td>Overlay height in pixels. </td></tr>
+    <tr><td class="paramname">x</td><td>Horizontal location of the overlay in pixels. </td></tr>
+    <tr><td class="paramname">y</td><td>Verticle location of the overlay in pixels. </td></tr>
+    <tr><td class="paramname">l</td><td>Layer for sorting. </td></tr>
+    <tr><td class="paramname">func</td><td>Function to define what is displayed in the overlay. </td></tr>
   </table>
   </dd>
 </dl>
@@ -260,7 +265,7 @@ std::function&lt; void(const <a class="el" href="../../d4/ddf/namespacewte.html#
   </tr>
 </table>
 </div><div class="memdoc">
-<p>overlay </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Overlay destructor. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">void</td><td></td></tr>
   </table>
@@ -294,9 +299,9 @@ std::function&lt; void(const <a class="el" href="../../d4/ddf/namespacewte.html#
   </tr>
 </table>
 </div><div class="memdoc">
-<p>overlay </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Set the font used by the overlay. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
+    <tr><td class="paramname">font</td><td>Allegro font object to be used. </td></tr>
   </table>
   </dd>
 </dl>
@@ -355,9 +360,13 @@ std::function&lt; void(const <a class="el" href="../../d4/ddf/namespacewte.html#
   </tr>
 </table>
 </div><div class="memdoc">
-<p>overlay </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Set text on the overlay. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
+    <tr><td class="paramname">txt</td><td>Text to be displayed. </td></tr>
+    <tr><td class="paramname">color</td><td>Allegro color object. </td></tr>
+    <tr><td class="paramname">x</td><td>Horizontal location of the text. </td></tr>
+    <tr><td class="paramname">y</td><td>Verticle location of the text. </td></tr>
+    <tr><td class="paramname">f</td><td>Text flags for drawing - see Allegro docs on al_draw_text. </td></tr>
   </table>
   </dd>
 </dl>
@@ -374,7 +383,7 @@ std::function&lt; void(const <a class="el" href="../../d4/ddf/namespacewte.html#
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/ddf/namespacewte.html">wte</a></li><li class="navelem"><b>cmp</b></li><li class="navelem"><a class="el" href="../../d6/d4a/classwte_1_1cmp_1_1overlay.html">overlay</a></li>
-    <li class="footer">Generated on Tue Jun 2 2020 08:40:26 for WTEngine by
+    <li class="footer">Generated on Thu Jun 11 2020 13:42:07 for WTEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

@@ -111,12 +111,15 @@ Inheritance diagram for wte::mnu::menu_item_action:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aafc9d411fe8a73081729d0c5188a89bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbf/classwte_1_1mnu_1_1menu__item__action.html#aafc9d411fe8a73081729d0c5188a89bc">menu_item_action</a> (const std::string l, const std::string c, const std::string a)</td></tr>
+<tr class="memdesc:aafc9d411fe8a73081729d0c5188a89bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Menu item action constructor. Call this to define a message with arguments.  <a href="../../d0/dbf/classwte_1_1mnu_1_1menu__item__action.html#aafc9d411fe8a73081729d0c5188a89bc">More...</a><br /></td></tr>
 <tr class="separator:aafc9d411fe8a73081729d0c5188a89bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83c98e0659d07438d3dc3443d67721f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbf/classwte_1_1mnu_1_1menu__item__action.html#a83c98e0659d07438d3dc3443d67721f8">menu_item_action</a> (const std::string l, const std::string c)</td></tr>
+<tr class="memdesc:a83c98e0659d07438d3dc3443d67721f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Menu item action constructor. Call this to define a message with no arguments.  <a href="../../d0/dbf/classwte_1_1mnu_1_1menu__item__action.html#a83c98e0659d07438d3dc3443d67721f8">More...</a><br /></td></tr>
 <tr class="separator:a83c98e0659d07438d3dc3443d67721f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e9b1fd07db93a003f1b0b9257e8521c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbf/classwte_1_1mnu_1_1menu__item__action.html#a1e9b1fd07db93a003f1b0b9257e8521c">~menu_item_action</a> ()</td></tr>
 <tr class="separator:a1e9b1fd07db93a003f1b0b9257e8521c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd2a89fc7b6af275e76bb7b9ffdb88d7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d0/d6b/classwte_1_1message.html">message</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbf/classwte_1_1mnu_1_1menu__item__action.html#acd2a89fc7b6af275e76bb7b9ffdb88d7">on_select</a> (void) override</td></tr>
+<tr class="memdesc:acd2a89fc7b6af275e76bb7b9ffdb88d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Menu item action on selection. Return the stored command when selected.  <a href="../../d0/dbf/classwte_1_1mnu_1_1menu__item__action.html#acd2a89fc7b6af275e76bb7b9ffdb88d7">More...</a><br /></td></tr>
 <tr class="separator:acd2a89fc7b6af275e76bb7b9ffdb88d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e36e5ea28d8bbeccb416e781e7c83b9"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbf/classwte_1_1mnu_1_1menu__item__action.html#a9e36e5ea28d8bbeccb416e781e7c83b9">get_text</a> (void) override</td></tr>
 <tr class="separator:a9e36e5ea28d8bbeccb416e781e7c83b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,9 +186,13 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Menu item action constructor. Call this to define a message with arguments. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
+    <tr><td class="paramname">l</td><td>Label for item. </td></tr>
+    <tr><td class="paramname">c</td><td>Command to run for item. </td></tr>
+    <tr><td class="paramname">a</td><td>Arguments for command. </td></tr>
   </table>
   </dd>
 </dl>
@@ -226,9 +233,12 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Menu item action constructor. Call this to define a message with no arguments. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
+    <tr><td class="paramname">l</td><td>Label for item. </td></tr>
+    <tr><td class="paramname">c</td><td>Command to run for item. </td></tr>
   </table>
   </dd>
 </dl>
@@ -258,7 +268,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Menu item action destructor. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">void</td><td></td></tr>
   </table>
@@ -292,7 +302,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Get the display label. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">void</td><td></td></tr>
   </table>
@@ -327,7 +337,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Description </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Menu item action on selection. Return the stored command when selected. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">void</td><td></td></tr>
   </table>
@@ -348,7 +360,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/ddf/namespacewte.html">wte</a></li><li class="navelem"><b>mnu</b></li><li class="navelem"><a class="el" href="../../d0/dbf/classwte_1_1mnu_1_1menu__item__action.html">menu_item_action</a></li>
-    <li class="footer">Generated on Tue Jun 2 2020 08:40:27 for WTEngine by
+    <li class="footer">Generated on Thu Jun 11 2020 13:42:08 for WTEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>
