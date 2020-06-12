@@ -25,6 +25,7 @@ var hierarchy =
     [ "wte::engine_flags", "d2/de3/classwte_1_1engine__flags.html", null ],
     [ "wte::mgr::engine_time", "da/d1b/classwte_1_1mgr_1_1engine__time.html", [
       [ "wte::mgr::message_manager", "d7/dbd/classwte_1_1mgr_1_1message__manager.html", null ],
+      [ "wte::mgr::render_manager", "d2/dd2/classwte_1_1mgr_1_1render__manager.html", null ],
       [ "wte::mgr::render_manager", "d2/dd2/classwte_1_1mgr_1_1render__manager.html", null ]
     ] ],
     [ "wte::input_flags", "d0/dac/classwte_1_1input__flags.html", null ],
@@ -49,6 +50,7 @@ var hierarchy =
       [ "wte::mgr::message_manager", "d7/dbd/classwte_1_1mgr_1_1message__manager.html", null ]
     ] ],
     [ "wte::mgr::manager< render_manager >", "d4/d4e/classwte_1_1mgr_1_1manager.html", [
+      [ "wte::mgr::render_manager", "d2/dd2/classwte_1_1mgr_1_1render__manager.html", null ],
       [ "wte::mgr::render_manager", "d2/dd2/classwte_1_1mgr_1_1render__manager.html", null ]
     ] ],
     [ "wte::mgr::manager< spawn_manager >", "d4/d4e/classwte_1_1mgr_1_1manager.html", [

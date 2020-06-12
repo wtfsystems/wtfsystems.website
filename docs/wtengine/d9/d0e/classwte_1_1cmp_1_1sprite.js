@@ -10,6 +10,8 @@ var classwte_1_1cmp_1_1sprite =
     [ "draw_offset_x", "d9/d0e/classwte_1_1cmp_1_1sprite.html#a1843afd716500576de2f8b8d15b0b642", null ],
     [ "draw_offset_y", "d9/d0e/classwte_1_1cmp_1_1sprite.html#a4be77ed96e011c7c46b9d42cd928741c", null ],
     [ "rate", "d9/d0e/classwte_1_1cmp_1_1sprite.html#a1dcd1c295c59b231b29c2d5c24dd7504", null ],
+    [ "scale_factor_x", "d9/d0e/classwte_1_1cmp_1_1sprite.html#af958a0cc900f766bc31bc0a982d23835", null ],
+    [ "scale_factor_y", "d9/d0e/classwte_1_1cmp_1_1sprite.html#a89b5faa4f5c6c27a59b90b9087dced85", null ],
     [ "sheet_height", "d9/d0e/classwte_1_1cmp_1_1sprite.html#acea87d292522b4cc69ac609161da21bc", null ],
     [ "sheet_width", "d9/d0e/classwte_1_1cmp_1_1sprite.html#a200f02b0db5a603d65f70e3c856b62ff", null ],
     [ "sprite_bitmap", "d9/d0e/classwte_1_1cmp_1_1sprite.html#abce1d0890a4ea137646804bc6a9ecc4d", null ],

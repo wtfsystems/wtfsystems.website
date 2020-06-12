@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['initialize_353',['initialize',['../df/da2/classwte_1_1mgr_1_1audio__manager.html#a8b0721b58430a54d94e704f90f2ef42a',1,'wte::mgr::audio_manager::initialize()'],['../d7/d0c/classwte_1_1mgr_1_1menu__manager.html#a3e242d6dbc5eaa8fd48804db7eb5bee4',1,'wte::mgr::menu_manager::initialize()'],['../d2/dd2/classwte_1_1mgr_1_1render__manager.html#aba1c23fa066f573e194c7903d6362aae',1,'wte::mgr::render_manager::initialize()']]],
+  ['initialize_353',['initialize',['../df/da2/classwte_1_1mgr_1_1audio__manager.html#a8b0721b58430a54d94e704f90f2ef42a',1,'wte::mgr::audio_manager::initialize()'],['../d7/d0c/classwte_1_1mgr_1_1menu__manager.html#a3e242d6dbc5eaa8fd48804db7eb5bee4',1,'wte::mgr::menu_manager::initialize()'],['../d2/dd2/classwte_1_1mgr_1_1render__manager.html#aba1c23fa066f573e194c7903d6362aae',1,'wte::mgr::render_manager::initialize(void)'],['../d2/dd2/classwte_1_1mgr_1_1render__manager.html#aba1c23fa066f573e194c7903d6362aae',1,'wte::mgr::render_manager::initialize(void)']]],
   ['input_5fflags_354',['input_flags',['../d0/dac/classwte_1_1input__flags.html#a4558c60662eb83b3e8f693f94485a805',1,'wte::input_flags']]],
   ['is_5fenabled_355',['is_enabled',['../d2/d4c/classwte_1_1sys_1_1system.html#a6f8068eaff0bc46c01e74d37ef13b80f',1,'wte::sys::system']]],
   ['is_5fengine_5fsetting_356',['is_engine_setting',['../df/dd3/classwte_1_1mnu_1_1menu__item__setting.html#a6d7b1b3728777cd0062268db39459f25',1,'wte::mnu::menu_item_setting']]],
