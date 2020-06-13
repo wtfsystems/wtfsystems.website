@@ -1,7 +1,7 @@
 var searchData=
 [
   ['add_0',['add',['../d2/d44/classwte_1_1game__cfg__map.html#ab50af6869643e47bc7a60a3f5df1e089',1,'wte::game_cfg_map::add()'],['../df/d08/classwte_1_1mgr_1_1system__manager.html#ade0384669e8842a39fdd7da66170969a',1,'wte::mgr::system_manager::add()']]],
-  ['add_5fcomponent_1',['add_component',['../d3/db3/classwte_1_1mgr_1_1entity__manager.html#aa39293150305389f5de54d5b92803ba0',1,'wte::mgr::entity_manager']]],
+  ['add_5fcomponent_1',['add_component',['../d3/db3/classwte_1_1mgr_1_1entity__manager.html#a14902e0bb60a1a9fb781c0b5f740a31e',1,'wte::mgr::entity_manager']]],
   ['add_5fcycle_2',['add_cycle',['../d9/d0e/classwte_1_1cmp_1_1sprite.html#ae0dfca743cf246d09f0a8f9c64398ab5',1,'wte::cmp::sprite']]],
   ['add_5ffile_5flocation_3',['add_file_location',['../d5/d5b/classwte_1_1wte__main.html#a974ac74b09c55577c14ac29408def3cf',1,'wte::wte_main']]],
   ['add_5fitem_4',['add_item',['../d4/dd6/classwte_1_1mnu_1_1menu.html#a7df437012ccad6d38c0ec191eba9b33d',1,'wte::mnu::menu']]],

@@ -115,8 +115,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a32cd41b64252f07f0c6e102524c5784d"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6f/classwte_1_1variable__map.html#a32cd41b64252f07f0c6e102524c5784d">reg</a> (const std::string var, const std::string val)</td></tr>
+<tr class="memdesc:a32cd41b64252f07f0c6e102524c5784d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new entry in the map. Call this first before accessing.  <a href="../../d3/d6f/classwte_1_1variable__map.html#a32cd41b64252f07f0c6e102524c5784d">More...</a><br /></td></tr>
 <tr class="separator:a32cd41b64252f07f0c6e102524c5784d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedd6ccb8d1775b5c90a63b0899ca0549"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6f/classwte_1_1variable__map.html#aedd6ccb8d1775b5c90a63b0899ca0549">reg</a> (const std::string expr)</td></tr>
+<tr class="memdesc:aedd6ccb8d1775b5c90a63b0899ca0549"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new entry in the map. Call this first before accessing.  <a href="../../d3/d6f/classwte_1_1variable__map.html#aedd6ccb8d1775b5c90a63b0899ca0549">More...</a><br /></td></tr>
 <tr class="separator:aedd6ccb8d1775b5c90a63b0899ca0549"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2b4283e821a69bb4ede3e51aa6007b3"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6f/classwte_1_1variable__map.html#ad2b4283e821a69bb4ede3e51aa6007b3">is_reg</a> (const std::string var)</td></tr>
 <tr class="separator:ad2b4283e821a69bb4ede3e51aa6007b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,9 +127,11 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a6978aa4f6a9029d50014e101bd2e5c02"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6f/classwte_1_1variable__map.html#a6978aa4f6a9029d50014e101bd2e5c02">set</a> (const std::string expr)</td></tr>
 <tr class="separator:a6978aa4f6a9029d50014e101bd2e5c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6fe13fab83bf47125e5db5b0e35e3ae"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6f/classwte_1_1variable__map.html#ab6fe13fab83bf47125e5db5b0e35e3ae">get</a> (const std::string var)</td></tr>
+<tr class="memdesc:ab6fe13fab83bf47125e5db5b0e35e3ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get value. Returns by string.  <a href="../../d3/d6f/classwte_1_1variable__map.html#ab6fe13fab83bf47125e5db5b0e35e3ae">More...</a><br /></td></tr>
 <tr class="separator:ab6fe13fab83bf47125e5db5b0e35e3ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f50bd12de4eb7e30240d5a379e5e328"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a5f50bd12de4eb7e30240d5a379e5e328"><td class="memTemplItemLeft" align="right" valign="top">static const T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d6f/classwte_1_1variable__map.html#a5f50bd12de4eb7e30240d5a379e5e328">get</a> (const std::string var)</td></tr>
+<tr class="memdesc:a5f50bd12de4eb7e30240d5a379e5e328"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get value. Returns by defined type.  <a href="../../d3/d6f/classwte_1_1variable__map.html#a5f50bd12de4eb7e30240d5a379e5e328">More...</a><br /></td></tr>
 <tr class="separator:a5f50bd12de4eb7e30240d5a379e5e328"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
@@ -168,13 +172,15 @@ template&lt;class derived&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get value Returns by string </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Get value. Returns by string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
+    <tr><td class="paramname">var</td><td>Variable to get. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Value of variable in string form. </dd></dl>
 
 </div>
 </div>
@@ -205,13 +211,21 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get value Returns by type </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
+
+<p>Get value. Returns by defined type. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Data type to cast to. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">var</td><td>Variable to get. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Value of variable in casted form. </dd></dl>
 
 </div>
 </div>
@@ -242,11 +256,11 @@ template&lt;class derived&gt; </div>
 </div><div class="memdoc">
 <p>Check if a variable is registered in the map. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
+    <tr><td class="paramname">var</td><td>Variable name to check. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if it exists, false if it does not. </dd></dl>
 
 </div>
 </div>
@@ -275,13 +289,15 @@ template&lt;class derived&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Create a new entry in the map. Call this first before accessing. </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Create a new entry in the map. Call this first before accessing. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
+    <tr><td class="paramname">expr</td><td>Variable and value expresion (var=val) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if created, false if not created. </dd></dl>
 
 </div>
 </div>
@@ -320,13 +336,16 @@ template&lt;class derived&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Create a new entry in the map. Call this first before accessing. </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Create a new entry in the map. Call this first before accessing. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
+    <tr><td class="paramname">var</td><td>Variable name. </td></tr>
+    <tr><td class="paramname">val</td><td>Initial value of variable. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if created, false if not created. </dd></dl>
 
 </div>
 </div>
@@ -357,11 +376,11 @@ template&lt;class derived&gt; </div>
 </div><div class="memdoc">
 <p>Set based on string </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
+    <tr><td class="paramname">expr</td><td>Variable and value expresion (var=val) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if set, false if not set. </dd></dl>
 
 </div>
 </div>
@@ -400,13 +419,14 @@ template&lt;class derived&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set key to value </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Set key to value. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
+    <tr><td class="paramname">var</td><td>Variable name to set. </td></tr>
+    <tr><td class="paramname">val</td><td>Value to set. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if set, false if not set. </dd></dl>
 
 </div>
 </div>
@@ -419,7 +439,7 @@ template&lt;class derived&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/ddf/namespacewte.html">wte</a></li><li class="navelem"><a class="el" href="../../d3/d6f/classwte_1_1variable__map.html">variable_map</a></li>
-    <li class="footer">Generated on Fri Jun 12 2020 18:56:24 for WTEngine by
+    <li class="footer">Generated on Sat Jun 13 2020 15:21:54 for WTEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

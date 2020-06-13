@@ -1,11 +1,12 @@
 var searchData=
 [
-  ['save_156',['save',['../d3/def/classwte_1_1engine__cfg__map.html#a97b440232ffeb631dc2014fda739ca6f',1,'wte::engine_cfg_map::save()'],['../d2/d44/classwte_1_1game__cfg__map.html#a60d13f832ee53ea7fb6450b4c0edde0e',1,'wte::game_cfg_map::save()']]],
-  ['set_157',['set',['../d2/de3/classwte_1_1engine__flags.html#ab5361f717cc93dc3a2ae5e2afefe2b99',1,'wte::engine_flags::set()'],['../d0/dac/classwte_1_1input__flags.html#aec26fe443037c81bd631f54296ede571',1,'wte::input_flags::set()'],['../d3/d6f/classwte_1_1variable__map.html#a7591d4f6204da1ddd4428c81eeb4a76d',1,'wte::variable_map::set(const std::string var, const std::string val)'],['../d3/d6f/classwte_1_1variable__map.html#a6978aa4f6a9029d50014e101bd2e5c02',1,'wte::variable_map::set(const std::string expr)']]],
-  ['set_5falert_158',['set_alert',['../dc/d4f/classwte_1_1alert.html#a4f77a45ce102a775e93d6ece2ab404ef',1,'wte::alert']]],
-  ['set_5farena_5fsize_159',['set_arena_size',['../d2/dd2/classwte_1_1mgr_1_1render__manager.html#a57f30e82e9a9668ccb9fb92ed72242cb',1,'wte::mgr::render_manager']]],
-  ['set_5fbg_5fcolor_160',['set_bg_color',['../dc/d4f/classwte_1_1alert.html#a54a9f99b66296726630e9b793bf48470',1,'wte::alert']]],
-  ['set_5fcomponent_161',['set_component',['../d3/db3/classwte_1_1mgr_1_1entity__manager.html#aaa9af951c5624effe0129180c39b83f7',1,'wte::mgr::entity_manager']]],
+  ['save_155',['save',['../d3/def/classwte_1_1engine__cfg__map.html#a97b440232ffeb631dc2014fda739ca6f',1,'wte::engine_cfg_map::save()'],['../d2/d44/classwte_1_1game__cfg__map.html#a60d13f832ee53ea7fb6450b4c0edde0e',1,'wte::game_cfg_map::save()']]],
+  ['set_156',['set',['../d2/de3/classwte_1_1engine__flags.html#ab5361f717cc93dc3a2ae5e2afefe2b99',1,'wte::engine_flags::set()'],['../d0/dac/classwte_1_1input__flags.html#aec26fe443037c81bd631f54296ede571',1,'wte::input_flags::set()'],['../d3/d6f/classwte_1_1variable__map.html#a7591d4f6204da1ddd4428c81eeb4a76d',1,'wte::variable_map::set(const std::string var, const std::string val)'],['../d3/d6f/classwte_1_1variable__map.html#a6978aa4f6a9029d50014e101bd2e5c02',1,'wte::variable_map::set(const std::string expr)']]],
+  ['set_5falert_157',['set_alert',['../dc/d4f/classwte_1_1alert.html#a4f77a45ce102a775e93d6ece2ab404ef',1,'wte::alert']]],
+  ['set_5farena_5fsize_158',['set_arena_size',['../d2/dd2/classwte_1_1mgr_1_1render__manager.html#a57f30e82e9a9668ccb9fb92ed72242cb',1,'wte::mgr::render_manager']]],
+  ['set_5fbg_5fcolor_159',['set_bg_color',['../dc/d4f/classwte_1_1alert.html#a54a9f99b66296726630e9b793bf48470',1,'wte::alert']]],
+  ['set_5fcomponent_160',['set_component',['../d3/db3/classwte_1_1mgr_1_1entity__manager.html#ace79ade18218672dd540b9b50d889734',1,'wte::mgr::entity_manager']]],
+  ['set_5fcomponents_161',['set_components',['../d3/db3/classwte_1_1mgr_1_1entity__manager.html#ab615a5996949e9e767079775d48535c7',1,'wte::mgr::entity_manager']]],
   ['set_5fcycle_162',['set_cycle',['../d9/d0e/classwte_1_1cmp_1_1sprite.html#a8cf7cb73a7d22c2e5b7fb2c3e512a15b',1,'wte::cmp::sprite']]],
   ['set_5fdefault_163',['set_default',['../db/d25/classwte_1_1mnu_1_1menu__item.html#a2bc019e6a36c8d01b8f46880ec42a20a',1,'wte::mnu::menu_item::set_default()'],['../d4/d5b/classwte_1_1mnu_1_1menu__item__apply.html#a6218580efd794addd9b6367637b10c77',1,'wte::mnu::menu_item_apply::set_default()'],['../df/dd3/classwte_1_1mnu_1_1menu__item__setting.html#af71c6c2c5917a0cc3b0bc3ae946bead5',1,'wte::mnu::menu_item_setting::set_default()'],['../d5/d02/classwte_1_1mnu_1_1menu__item__toggle.html#a8e4b0d0f3c2cb7c7d190e9b79becf102',1,'wte::mnu::menu_item_toggle::set_default()']]],
   ['set_5ffont_164',['set_font',['../d6/d4a/classwte_1_1cmp_1_1overlay.html#a3adc0b51c28a1752085c0c478ed703cc',1,'wte::cmp::overlay']]],

@@ -167,18 +167,16 @@ typedef std::vector&lt; cmp::component_sptr &gt;::iterator&#160;</td><td class="
 typedef std::vector&lt; cmp::component_sptr &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddf/namespacewte.html#a4a33e8a5901afdadca59133875a4b90b">entity_citerator</a></td></tr>
 <tr class="memdesc:a4a33e8a5901afdadca59133875a4b90b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant iterator for addressing a group of components related to an entity. <br /></td></tr>
 <tr class="separator:a4a33e8a5901afdadca59133875a4b90b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6cc87c34a7e3341e67328986c63c8f8"><td class="memItemLeft" align="right" valign="top"><a id="af6cc87c34a7e3341e67328986c63c8f8"></a>
-typedef std::map&lt; <a class="el" href="../../d4/ddf/namespacewte.html#a0b2c99e5d60eaf9f9c63a4f5adc51b83">entity</a>, cmp::component_sptr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddf/namespacewte.html#af6cc87c34a7e3341e67328986c63c8f8">component_container</a></td></tr>
-<tr class="memdesc:af6cc87c34a7e3341e67328986c63c8f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container for storing components of similar type. <br /></td></tr>
-<tr class="separator:af6cc87c34a7e3341e67328986c63c8f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee885cc0962e7fe53a7bbfbbc96a2962"><td class="memItemLeft" align="right" valign="top"><a id="aee885cc0962e7fe53a7bbfbbc96a2962"></a>
-typedef std::map&lt; <a class="el" href="../../d4/ddf/namespacewte.html#a0b2c99e5d60eaf9f9c63a4f5adc51b83">entity</a>, cmp::component_sptr &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddf/namespacewte.html#aee885cc0962e7fe53a7bbfbbc96a2962">component_iterator</a></td></tr>
-<tr class="memdesc:aee885cc0962e7fe53a7bbfbbc96a2962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterator for component storage. <br /></td></tr>
-<tr class="separator:aee885cc0962e7fe53a7bbfbbc96a2962"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac16debb5abf668b0683123262a1a5636"><td class="memItemLeft" align="right" valign="top"><a id="ac16debb5abf668b0683123262a1a5636"></a>
-typedef std::map&lt; <a class="el" href="../../d4/ddf/namespacewte.html#a0b2c99e5d60eaf9f9c63a4f5adc51b83">entity</a>, cmp::component_sptr &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddf/namespacewte.html#ac16debb5abf668b0683123262a1a5636">component_citerator</a></td></tr>
-<tr class="memdesc:ac16debb5abf668b0683123262a1a5636"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant iterator for component storage. <br /></td></tr>
-<tr class="separator:ac16debb5abf668b0683123262a1a5636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b78b2c2036737826de5eb29ae89c356"><td class="memTemplParams" colspan="2"><a id="a0b78b2c2036737826de5eb29ae89c356"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a0b78b2c2036737826de5eb29ae89c356"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d4/ddf/namespacewte.html#a0b78b2c2036737826de5eb29ae89c356">component_container</a> = std::map&lt; const <a class="el" href="../../d4/ddf/namespacewte.html#a0b2c99e5d60eaf9f9c63a4f5adc51b83">entity</a>, std::shared_ptr&lt; T &gt; &gt;</td></tr>
+<tr class="memdesc:a0b78b2c2036737826de5eb29ae89c356"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container for storing components of similar type. <br /></td></tr>
+<tr class="separator:a0b78b2c2036737826de5eb29ae89c356"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a671cd82a31336868242984081878e9ff"><td class="memTemplParams" colspan="2"><a id="a671cd82a31336868242984081878e9ff"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a671cd82a31336868242984081878e9ff"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d4/ddf/namespacewte.html#a671cd82a31336868242984081878e9ff">const_component_container</a> = std::map&lt; const <a class="el" href="../../d4/ddf/namespacewte.html#a0b2c99e5d60eaf9f9c63a4f5adc51b83">entity</a>, std::shared_ptr&lt; const T &gt; &gt;</td></tr>
+<tr class="memdesc:a671cd82a31336868242984081878e9ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant container for storing components of similar type. <br /></td></tr>
+<tr class="separator:a671cd82a31336868242984081878e9ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8d3d069a9721c21e71421397762c2f7"><td class="memItemLeft" align="right" valign="top"><a id="ac8d3d069a9721c21e71421397762c2f7"></a>
 typedef std::unordered_multimap&lt; <a class="el" href="../../d4/ddf/namespacewte.html#a0b2c99e5d60eaf9f9c63a4f5adc51b83">entity</a>, cmp::component_sptr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddf/namespacewte.html#ac8d3d069a9721c21e71421397762c2f7">world_map</a></td></tr>
 <tr class="memdesc:ac8d3d069a9721c21e71421397762c2f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container to store all entites. <br /></td></tr>
@@ -503,7 +501,7 @@ Enumerations</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/ddf/namespacewte.html">wte</a></li>
-    <li class="footer">Generated on Fri Jun 12 2020 18:56:24 for WTEngine by
+    <li class="footer">Generated on Sat Jun 13 2020 15:21:54 for WTEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>
