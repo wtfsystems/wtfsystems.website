@@ -112,14 +112,15 @@ Inheritance diagram for wte::cmp::background:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad583ef6d049013ab937b48a6f43fd618"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d3f/classwte_1_1cmp_1_1background.html#ad583ef6d049013ab937b48a6f43fd618">background</a> (const int w, const int h, ALLEGRO_COLOR c, const std::size_t l)</td></tr>
-<tr class="separator:ad583ef6d049013ab937b48a6f43fd618"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7e288f6031398fc1dbbd47baa324074"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d3f/classwte_1_1cmp_1_1background.html#ab7e288f6031398fc1dbbd47baa324074">background</a> (const int w, const int h, std::string fname, const std::size_t l)</td></tr>
-<tr class="separator:ab7e288f6031398fc1dbbd47baa324074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21450ee445f2c4c3e6fe54c148dec872"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d3f/classwte_1_1cmp_1_1background.html#a21450ee445f2c4c3e6fe54c148dec872">background</a> (const int w, const int h, const std::size_t l, ALLEGRO_COLOR c)</td></tr>
+<tr class="separator:a21450ee445f2c4c3e6fe54c148dec872"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cb58e70ba6cbd9049dc9f01f22521a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d3f/classwte_1_1cmp_1_1background.html#a2cb58e70ba6cbd9049dc9f01f22521a2">background</a> (const int w, const int h, const std::size_t l, void func(<a class="el" href="../../d4/ddf/namespacewte.html#a0b2c99e5d60eaf9f9c63a4f5adc51b83">entity</a>, <a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html">mgr::entity_manager</a> &amp;, int64_t))</td></tr>
 <tr class="separator:a2cb58e70ba6cbd9049dc9f01f22521a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7aac30031e157098899ab312b3aeb880"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d3f/classwte_1_1cmp_1_1background.html#a7aac30031e157098899ab312b3aeb880">~background</a> ()</td></tr>
 <tr class="separator:a7aac30031e157098899ab312b3aeb880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4f2d638aec85679a90266d9d3442a34"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d3f/classwte_1_1cmp_1_1background.html#aa4f2d638aec85679a90266d9d3442a34">load_file</a> (std::string label, std::string fname)</td></tr>
+<tr class="memdesc:aa4f2d638aec85679a90266d9d3442a34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a bitmap. Store in a map for reference to later. Call this during entity creation.  <a href="../../dc/d3f/classwte_1_1cmp_1_1background.html#aa4f2d638aec85679a90266d9d3442a34">More...</a><br /></td></tr>
+<tr class="separator:aa4f2d638aec85679a90266d9d3442a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classwte_1_1cmp_1_1animator"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwte_1_1cmp_1_1animator')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d2/d55/classwte_1_1cmp_1_1animator.html">wte::cmp::animator</a></td></tr>
 <tr class="memitem:ab45ba9123fff3d48d01cbcd375243755 inherit pub_methods_classwte_1_1cmp_1_1animator"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/classwte_1_1cmp_1_1animator.html#ab45ba9123fff3d48d01cbcd375243755">~animator</a> ()</td></tr>
 <tr class="separator:ab45ba9123fff3d48d01cbcd375243755 inherit pub_methods_classwte_1_1cmp_1_1animator"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,9 +142,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a4584ccd8274fb7617a71cca532d5045f"><td class="memItemLeft" align="right" valign="top"><a id="a4584ccd8274fb7617a71cca532d5045f"></a>
+std::map&lt; std::string, ALLEGRO_BITMAP * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>bmp_map</b></td></tr>
+<tr class="separator:a4584ccd8274fb7617a71cca532d5045f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f9c036808d6511cb5c741c6e2113a64"><td class="memItemLeft" align="right" valign="top"><a id="a2f9c036808d6511cb5c741c6e2113a64"></a>
 ALLEGRO_BITMAP *&#160;</td><td class="memItemRight" valign="bottom"><b>background_bitmap</b></td></tr>
 <tr class="separator:a2f9c036808d6511cb5c741c6e2113a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa411fc7c66a62762feb9263f0664c0fe"><td class="memItemLeft" align="right" valign="top"><a id="aa411fc7c66a62762feb9263f0664c0fe"></a>
+ALLEGRO_COLOR&#160;</td><td class="memItemRight" valign="bottom"><b>color</b></td></tr>
+<tr class="separator:aa411fc7c66a62762feb9263f0664c0fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -165,8 +172,8 @@ std::function&lt; void(const <a class="el" href="../../d4/ddf/namespacewte.html#
 <div class="textblock"><p>Background component. </p>
 <p>Store the background bitmap </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad583ef6d049013ab937b48a6f43fd618"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad583ef6d049013ab937b48a6f43fd618">&#9670;&nbsp;</a></span>background() <span class="overload">[1/3]</span></h2>
+<a id="a21450ee445f2c4c3e6fe54c148dec872"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21450ee445f2c4c3e6fe54c148dec872">&#9670;&nbsp;</a></span>background() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -189,14 +196,14 @@ std::function&lt; void(const <a class="el" href="../../d4/ddf/namespacewte.html#
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ALLEGRO_COLOR&#160;</td>
-          <td class="paramname"><em>c</em>, </td>
+          <td class="paramtype">const std::size_t&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::size_t&#160;</td>
-          <td class="paramname"><em>l</em>&#160;</td>
+          <td class="paramtype">ALLEGRO_COLOR&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -223,66 +230,8 @@ std::function&lt; void(const <a class="el" href="../../d4/ddf/namespacewte.html#
 
 </div>
 </div>
-<a id="ab7e288f6031398fc1dbbd47baa324074"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7e288f6031398fc1dbbd47baa324074">&#9670;&nbsp;</a></span>background() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">wte::cmp::background::background </td>
-          <td>(</td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>w</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>h</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>fname</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::size_t&#160;</td>
-          <td class="paramname"><em>l</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Static background, load image from file. Image is scaled to fit the background bitmap. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">w</td><td>Background width. </td></tr>
-    <tr><td class="paramname">h</td><td>Background height. </td></tr>
-    <tr><td class="paramname">fname</td><td>File name to load. </td></tr>
-    <tr><td class="paramname">l</td><td>Background layer. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-</div>
-</div>
 <a id="a2cb58e70ba6cbd9049dc9f01f22521a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2cb58e70ba6cbd9049dc9f01f22521a2">&#9670;&nbsp;</a></span>background() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cb58e70ba6cbd9049dc9f01f22521a2">&#9670;&nbsp;</a></span>background() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -371,6 +320,52 @@ std::function&lt; void(const <a class="el" href="../../d4/ddf/namespacewte.html#
 
 </div>
 </div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa4f2d638aec85679a90266d9d3442a34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4f2d638aec85679a90266d9d3442a34">&#9670;&nbsp;</a></span>load_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wte::cmp::background::load_file </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>fname</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Load a bitmap. Store in a map for reference to later. Call this during entity creation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fname</td><td>Filename to load. </td></tr>
+    <tr><td class="paramname">label</td><td>Label for referencing bitmap. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/wte/cmp/gfx/background.hpp</li>
 </ul>
@@ -380,7 +375,7 @@ std::function&lt; void(const <a class="el" href="../../d4/ddf/namespacewte.html#
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/ddf/namespacewte.html">wte</a></li><li class="navelem"><b>cmp</b></li><li class="navelem"><a class="el" href="../../dc/d3f/classwte_1_1cmp_1_1background.html">background</a></li>
-    <li class="footer">Generated on Sat Jun 13 2020 18:01:34 for WTEngine by
+    <li class="footer">Generated on Wed Jun 17 2020 11:29:42 for WTEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

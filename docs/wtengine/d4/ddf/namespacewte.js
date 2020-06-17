@@ -39,6 +39,7 @@ var namespacewte =
       [ "menu_item", "db/d25/classwte_1_1mnu_1_1menu__item.html", "db/d25/classwte_1_1mnu_1_1menu__item" ],
       [ "menu_item_action", "d0/dbf/classwte_1_1mnu_1_1menu__item__action.html", "d0/dbf/classwte_1_1mnu_1_1menu__item__action" ],
       [ "menu_item_apply", "d4/d5b/classwte_1_1mnu_1_1menu__item__apply.html", "d4/d5b/classwte_1_1mnu_1_1menu__item__apply" ],
+      [ "menu_item_selection", "d7/dd5/classwte_1_1mnu_1_1menu__item__selection.html", "d7/dd5/classwte_1_1mnu_1_1menu__item__selection" ],
       [ "menu_item_setting", "df/dd3/classwte_1_1mnu_1_1menu__item__setting.html", "df/dd3/classwte_1_1mnu_1_1menu__item__setting" ],
       [ "menu_item_toggle", "d5/d02/classwte_1_1mnu_1_1menu__item__toggle.html", "d5/d02/classwte_1_1mnu_1_1menu__item__toggle" ]
     ] ],

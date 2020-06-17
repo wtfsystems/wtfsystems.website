@@ -24,7 +24,6 @@ var NAVTREE =
 [
   [ "WTEngine", "index.html", [
     [ "README", "d8/d07/md_src_wte__r_e_a_d_m_e.html", null ],
-    [ "Bug List", "de/da5/bug.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -50,7 +49,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"d9/d28/classwte_1_1mgr_1_1spawn__manager.html"
+"d9/d0e/classwte_1_1cmp_1_1sprite.html#aa1ed7796a80d3a25283d8c1145ac8fa1"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
