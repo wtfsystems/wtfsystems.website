@@ -124,17 +124,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a442c527ca2c4fdaa41c258fe5385ea1d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d08/classwte_1_1mgr_1_1system__manager.html#a442c527ca2c4fdaa41c258fe5385ea1d">add</a> (sys::system_uptr new_system)</td></tr>
 <tr class="memdesc:a442c527ca2c4fdaa41c258fe5385ea1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new system to the manager. Enters system into the vector of systems if not. Systems run in the order they were added. Can fail if the system exists or if the game is running.  <a href="../../df/d08/classwte_1_1mgr_1_1system__manager.html#a442c527ca2c4fdaa41c258fe5385ea1d">More...</a><br /></td></tr>
 <tr class="separator:a442c527ca2c4fdaa41c258fe5385ea1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a146b46222863f679aeaea723ca48f45b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d08/classwte_1_1mgr_1_1system__manager.html#a146b46222863f679aeaea723ca48f45b">run</a> (<a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html">entity_manager</a> &amp;entities, <a class="el" href="../../d7/dbd/classwte_1_1mgr_1_1message__manager.html">mgr::message_manager</a> &amp;messages, int64_t current_time)</td></tr>
-<tr class="memdesc:a146b46222863f679aeaea723ca48f45b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run all systems. Iterate through the system vector and run each. Throw error if no systems have been loaded.  <a href="../../df/d08/classwte_1_1mgr_1_1system__manager.html#a146b46222863f679aeaea723ca48f45b">More...</a><br /></td></tr>
-<tr class="separator:a146b46222863f679aeaea723ca48f45b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a467982a6d04d8ef22ec69346d307d36e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d08/classwte_1_1mgr_1_1system__manager.html#a467982a6d04d8ef22ec69346d307d36e">dispatch</a> (<a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html">entity_manager</a> &amp;entities, <a class="el" href="../../d7/dbd/classwte_1_1mgr_1_1message__manager.html">mgr::message_manager</a> &amp;messages)</td></tr>
-<tr class="memdesc:a467982a6d04d8ef22ec69346d307d36e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process dispatch for all systems. Checks each system for its name and sends corresponding messages. Throw error if no systems have been loaded.  <a href="../../df/d08/classwte_1_1mgr_1_1system__manager.html#a467982a6d04d8ef22ec69346d307d36e">More...</a><br /></td></tr>
-<tr class="separator:a467982a6d04d8ef22ec69346d307d36e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54c339143a72f974d66380c99f85adcb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d08/classwte_1_1mgr_1_1system__manager.html#a54c339143a72f974d66380c99f85adcb">run</a> (<a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html">mgr::entity_manager</a> &amp;world, <a class="el" href="../../d7/dbd/classwte_1_1mgr_1_1message__manager.html">mgr::message_manager</a> &amp;messages, int64_t current_time)</td></tr>
+<tr class="memdesc:a54c339143a72f974d66380c99f85adcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run all systems. Iterate through the system vector and run each.  <a href="../../df/d08/classwte_1_1mgr_1_1system__manager.html#a54c339143a72f974d66380c99f85adcb">More...</a><br /></td></tr>
+<tr class="separator:a54c339143a72f974d66380c99f85adcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9e579112f4a510fc605134deb83244d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d08/classwte_1_1mgr_1_1system__manager.html#ad9e579112f4a510fc605134deb83244d">dispatch</a> (<a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html">mgr::entity_manager</a> &amp;world, <a class="el" href="../../d7/dbd/classwte_1_1mgr_1_1message__manager.html">mgr::message_manager</a> &amp;messages, int64_t current_time)</td></tr>
+<tr class="memdesc:ad9e579112f4a510fc605134deb83244d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process dispatcher components. Get messages for the entities and pass to each. Keeps checking for responces and will process as well.  <a href="../../df/d08/classwte_1_1mgr_1_1system__manager.html#ad9e579112f4a510fc605134deb83244d">More...</a><br /></td></tr>
+<tr class="separator:ad9e579112f4a510fc605134deb83244d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5202448bb380404004703fb51b65d2a6"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d08/classwte_1_1mgr_1_1system__manager.html#a5202448bb380404004703fb51b65d2a6">enable_system</a> (std::string sys)</td></tr>
-<tr class="memdesc:a5202448bb380404004703fb51b65d2a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable a system. Toggle a system to enabled so it's run member is processed.  <a href="../../df/d08/classwte_1_1mgr_1_1system__manager.html#a5202448bb380404004703fb51b65d2a6">More...</a><br /></td></tr>
+<tr class="memdesc:a5202448bb380404004703fb51b65d2a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable a system. Toggle a system to enabled so its run member is processed.  <a href="../../df/d08/classwte_1_1mgr_1_1system__manager.html#a5202448bb380404004703fb51b65d2a6">More...</a><br /></td></tr>
 <tr class="separator:a5202448bb380404004703fb51b65d2a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07cbc7b966433ac3b5cd338834ca35a0"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d08/classwte_1_1mgr_1_1system__manager.html#a07cbc7b966433ac3b5cd338834ca35a0">disable_system</a> (std::string sys)</td></tr>
-<tr class="memdesc:a07cbc7b966433ac3b5cd338834ca35a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable a system. Toggle a system to disabled so it's run member is skipped. Dispatching will still be processed.  <a href="../../df/d08/classwte_1_1mgr_1_1system__manager.html#a07cbc7b966433ac3b5cd338834ca35a0">More...</a><br /></td></tr>
+<tr class="memdesc:a07cbc7b966433ac3b5cd338834ca35a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable a system. Toggle a system to disabled so its run member is skipped.  <a href="../../df/d08/classwte_1_1mgr_1_1system__manager.html#a07cbc7b966433ac3b5cd338834ca35a0">More...</a><br /></td></tr>
 <tr class="separator:a07cbc7b966433ac3b5cd338834ca35a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classwte_1_1mgr_1_1manager"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwte_1_1mgr_1_1manager')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d4/d4e/classwte_1_1mgr_1_1manager.html">wte::mgr::manager&lt; system_manager &gt;</a></td></tr>
 <tr class="memitem:ac8f34396cfead9f5f54d34434a0bba5e inherit pub_methods_classwte_1_1mgr_1_1manager"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d4e/classwte_1_1mgr_1_1manager.html#ac8f34396cfead9f5f54d34434a0bba5e">~manager</a> ()</td></tr>
@@ -315,7 +315,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Disable a system. Toggle a system to disabled so it's run member is skipped. Dispatching will still be processed. </p>
+<p>Disable a system. Toggle a system to disabled so its run member is skipped. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sys</td><td>Name of system to disable. </td></tr>
@@ -326,8 +326,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a467982a6d04d8ef22ec69346d307d36e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a467982a6d04d8ef22ec69346d307d36e">&#9670;&nbsp;</a></span>dispatch()</h2>
+<a id="ad9e579112f4a510fc605134deb83244d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9e579112f4a510fc605134deb83244d">&#9670;&nbsp;</a></span>dispatch()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -338,14 +338,20 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void wte::mgr::system_manager::dispatch </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html">entity_manager</a> &amp;&#160;</td>
-          <td class="paramname"><em>entities</em>, </td>
+          <td class="paramtype"><a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html">mgr::entity_manager</a> &amp;&#160;</td>
+          <td class="paramname"><em>world</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="../../d7/dbd/classwte_1_1mgr_1_1message__manager.html">mgr::message_manager</a> &amp;&#160;</td>
-          <td class="paramname"><em>messages</em>&#160;</td>
+          <td class="paramname"><em>messages</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>current_time</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -360,11 +366,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Process dispatch for all systems. Checks each system for its name and sends corresponding messages. Throw error if no systems have been loaded. </p>
+<p>Process dispatcher components. Get messages for the entities and pass to each. Keeps checking for responces and will process as well. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">entities</td><td>Reference to entity manager. </td></tr>
+    <tr><td class="paramname">world</td><td>Reference to entity manager. </td></tr>
     <tr><td class="paramname">messages</td><td>Reference to message manager. </td></tr>
+    <tr><td class="paramname">current_time</td><td>Current engine time. </td></tr>
   </table>
   </dd>
 </dl>
@@ -429,7 +436,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Enable a system. Toggle a system to enabled so it's run member is processed. </p>
+<p>Enable a system. Toggle a system to enabled so its run member is processed. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sys</td><td>Name of system to enable. </td></tr>
@@ -475,8 +482,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a146b46222863f679aeaea723ca48f45b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a146b46222863f679aeaea723ca48f45b">&#9670;&nbsp;</a></span>run()</h2>
+<a id="a54c339143a72f974d66380c99f85adcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54c339143a72f974d66380c99f85adcb">&#9670;&nbsp;</a></span>run()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -487,8 +494,8 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void wte::mgr::system_manager::run </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html">entity_manager</a> &amp;&#160;</td>
-          <td class="paramname"><em>entities</em>, </td>
+          <td class="paramtype"><a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html">mgr::entity_manager</a> &amp;&#160;</td>
+          <td class="paramname"><em>world</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -515,10 +522,10 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Run all systems. Iterate through the system vector and run each. Throw error if no systems have been loaded. </p>
+<p>Run all systems. Iterate through the system vector and run each. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">entities</td><td>Reference to the entity manager. </td></tr>
+    <tr><td class="paramname">world</td><td>Reference to the entity manager. </td></tr>
     <tr><td class="paramname">messages</td><td>Reference to the message manager. </td></tr>
     <tr><td class="paramname">current_time</td><td>Current engine time. </td></tr>
   </table>
@@ -537,7 +544,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/ddf/namespacewte.html">wte</a></li><li class="navelem"><b>mgr</b></li><li class="navelem"><a class="el" href="../../df/d08/classwte_1_1mgr_1_1system__manager.html">system_manager</a></li>
-    <li class="footer">Generated on Wed Jun 17 2020 11:29:43 for WTEngine by
+    <li class="footer">Generated on Fri Jun 19 2020 12:40:25 for WTEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

@@ -135,9 +135,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a174e2b5eae48d86ce09287a164fbf2f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace79ade18218672dd540b9b50d889734"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ace79ade18218672dd540b9b50d889734"><td class="memTemplItemLeft" align="right" valign="top">const std::shared_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html#ace79ade18218672dd540b9b50d889734">set_component</a> (const <a class="el" href="../../d4/ddf/namespacewte.html#a0b2c99e5d60eaf9f9c63a4f5adc51b83">entity</a> e_id)</td></tr>
+<tr class="memdesc:ace79ade18218672dd540b9b50d889734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the value of a component by type for an entity. Note that calling this for a component that does not exist will cause the program to fail. If there is a chance it does not exist, call has_component first.  <a href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html#ace79ade18218672dd540b9b50d889734">More...</a><br /></td></tr>
 <tr class="separator:ace79ade18218672dd540b9b50d889734"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf4f3bcda30a2e10fc2656e732893359"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:adf4f3bcda30a2e10fc2656e732893359"><td class="memTemplItemLeft" align="right" valign="top">const std::shared_ptr&lt; const T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html#adf4f3bcda30a2e10fc2656e732893359">get_component</a> (const <a class="el" href="../../d4/ddf/namespacewte.html#a0b2c99e5d60eaf9f9c63a4f5adc51b83">entity</a> e_id) const</td></tr>
+<tr class="memdesc:adf4f3bcda30a2e10fc2656e732893359"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the value of a component by type for an entity.  <a href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html#adf4f3bcda30a2e10fc2656e732893359">More...</a><br /></td></tr>
 <tr class="separator:adf4f3bcda30a2e10fc2656e732893359"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab615a5996949e9e767079775d48535c7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ab615a5996949e9e767079775d48535c7"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../d4/ddf/namespacewte.html#a0b78b2c2036737826de5eb29ae89c356">component_container</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html#ab615a5996949e9e767079775d48535c7">set_components</a> (void)</td></tr>
@@ -387,7 +389,9 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Read the value of a component by type for an entity. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+
+<p>Read the value of a component by type for an entity. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>Component type. </td></tr>
   </table>
@@ -615,7 +619,9 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set the value of a component by type for an entity. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+
+<p>Set the value of a component by type for an entity. Note that calling this for a component that does not exist will cause the program to fail. If there is a chance it does not exist, call has_component first. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>Component type. </td></tr>
   </table>
@@ -683,7 +689,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/ddf/namespacewte.html">wte</a></li><li class="navelem"><b>mgr</b></li><li class="navelem"><a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html">entity_manager</a></li>
-    <li class="footer">Generated on Wed Jun 17 2020 11:29:42 for WTEngine by
+    <li class="footer">Generated on Fri Jun 19 2020 12:40:25 for WTEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

@@ -4,7 +4,6 @@ var classwte_1_1sys_1_1system =
     [ "system", "d2/d4c/classwte_1_1sys_1_1system.html#a9cd549a5b1b59bbf8aa735562fb17d80", null ],
     [ "system", "d2/d4c/classwte_1_1sys_1_1system.html#ab0abf7a4a227c226436e958df1ab21b7", null ],
     [ "disable", "d2/d4c/classwte_1_1sys_1_1system.html#a75b06d2c2be559e166ff48781c04b061", null ],
-    [ "dispatch", "d2/d4c/classwte_1_1sys_1_1system.html#a7b2f9397beefeed38e1dc34c6e494e68", null ],
     [ "enable", "d2/d4c/classwte_1_1sys_1_1system.html#ac1d23d07bc9708920f91419cd282ef97", null ],
     [ "get_name", "d2/d4c/classwte_1_1sys_1_1system.html#a79f86d812412ad57693aa5da5df274cc", null ],
     [ "is_enabled", "d2/d4c/classwte_1_1sys_1_1system.html#a6f8068eaff0bc46c01e74d37ef13b80f", null ],
