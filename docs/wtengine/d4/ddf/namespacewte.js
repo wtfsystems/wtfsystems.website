@@ -57,5 +57,6 @@ var namespacewte =
     [ "input_flags", "d0/dac/classwte_1_1input__flags.html", "d0/dac/classwte_1_1input__flags" ],
     [ "message", "d0/d6b/classwte_1_1message.html", "d0/d6b/classwte_1_1message" ],
     [ "variable_map", "d3/d6f/classwte_1_1variable__map.html", "d3/d6f/classwte_1_1variable__map" ],
+    [ "wte_display", "dd/dd5/classwte_1_1wte__display.html", "dd/dd5/classwte_1_1wte__display" ],
     [ "wte_main", "d5/d5b/classwte_1_1wte__main.html", "d5/d5b/classwte_1_1wte__main" ]
 ];

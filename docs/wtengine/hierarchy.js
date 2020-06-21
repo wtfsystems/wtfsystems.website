@@ -22,6 +22,7 @@ var hierarchy =
       [ "wte::cmp::velocity", "da/d7f/classwte_1_1cmp_1_1velocity.html", null ],
       [ "wte::cmp::visible", "d0/d55/classwte_1_1cmp_1_1visible.html", null ]
     ] ],
+    [ "Display", "df/d4d/class_display.html", null ],
     [ "wte::engine_flags", "d2/de3/classwte_1_1engine__flags.html", null ],
     [ "wte::mgr::engine_time", "da/d1b/classwte_1_1mgr_1_1engine__time.html", [
       [ "wte::mgr::message_manager", "d7/dbd/classwte_1_1mgr_1_1message__manager.html", null ],
@@ -79,5 +80,8 @@ var hierarchy =
     [ "wte::variable_map< game_cfg_map >", "d3/d6f/classwte_1_1variable__map.html", [
       [ "wte::game_cfg_map", "d2/d44/classwte_1_1game__cfg__map.html", null ]
     ] ],
-    [ "wte::wte_main", "d5/d5b/classwte_1_1wte__main.html", null ]
+    [ "wte::wte_display", "dd/dd5/classwte_1_1wte__display.html", [
+      [ "wte::wte_main", "d5/d5b/classwte_1_1wte__main.html", null ]
+    ] ],
+    [ "WTEngine", "d6/ddb/class_w_t_engine.html", null ]
 ];

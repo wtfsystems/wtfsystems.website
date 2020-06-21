@@ -116,6 +116,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3768491a65bf1645f1637d4340509cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa65b571324c7eefd10799ba9035ca8e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4a/classwte_1_1cmp_1_1overlay.html#aa65b571324c7eefd10799ba9035ca8e6">~overlay</a> ()</td></tr>
 <tr class="separator:aa65b571324c7eefd10799ba9035ca8e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5820028eb8b53983b10d97fe09b2fb3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4a/classwte_1_1cmp_1_1overlay.html#a5820028eb8b53983b10d97fe09b2fb3c">reload_overlay_bitmap</a> (void)</td></tr>
+<tr class="memdesc:a5820028eb8b53983b10d97fe09b2fb3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reload the overlay bitmap. Called when the screen is updated.  <a href="../../d6/d4a/classwte_1_1cmp_1_1overlay.html#a5820028eb8b53983b10d97fe09b2fb3c">More...</a><br /></td></tr>
+<tr class="separator:a5820028eb8b53983b10d97fe09b2fb3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3adc0b51c28a1752085c0c478ed703cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4a/classwte_1_1cmp_1_1overlay.html#a3adc0b51c28a1752085c0c478ed703cc">set_font</a> (ALLEGRO_FONT *font)</td></tr>
 <tr class="separator:a3adc0b51c28a1752085c0c478ed703cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07080c006842f145a358321797afd2bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4a/classwte_1_1cmp_1_1overlay.html#a07080c006842f145a358321797afd2bc">set_text</a> (const std::string txt, const ALLEGRO_COLOR color, const float x, const float y, const int f)</td></tr>
@@ -144,12 +147,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:af1c29d043c7456259616492e4677d5b0"><td class="memItemLeft" align="right" valign="top"><a id="af1c29d043c7456259616492e4677d5b0"></a>
-std::map&lt; std::string, ALLEGRO_BITMAP * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>bmp_map</b></td></tr>
-<tr class="separator:af1c29d043c7456259616492e4677d5b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd6710897548a1e38ed612ee73e85c58"><td class="memItemLeft" align="right" valign="top"><a id="abd6710897548a1e38ed612ee73e85c58"></a>
 ALLEGRO_BITMAP *&#160;</td><td class="memItemRight" valign="bottom"><b>overlay_bitmap</b></td></tr>
 <tr class="separator:abd6710897548a1e38ed612ee73e85c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1c29d043c7456259616492e4677d5b0"><td class="memItemLeft" align="right" valign="top"><a id="af1c29d043c7456259616492e4677d5b0"></a>
+std::map&lt; std::string, ALLEGRO_BITMAP * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>bmp_map</b></td></tr>
+<tr class="separator:af1c29d043c7456259616492e4677d5b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfc14d1885f6c0fcc156d522a4042b49"><td class="memItemLeft" align="right" valign="top"><a id="adfc14d1885f6c0fcc156d522a4042b49"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>pos_x</b></td></tr>
 <tr class="separator:adfc14d1885f6c0fcc156d522a4042b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -327,6 +330,41 @@ std::function&lt; void(const <a class="el" href="../../d4/ddf/namespacewte.html#
 
 </div>
 </div>
+<a id="a5820028eb8b53983b10d97fe09b2fb3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5820028eb8b53983b10d97fe09b2fb3c">&#9670;&nbsp;</a></span>reload_overlay_bitmap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wte::cmp::overlay::reload_overlay_bitmap </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reload the overlay bitmap. Called when the screen is updated. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+</div>
+</div>
 <a id="a3adc0b51c28a1752085c0c478ed703cc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3adc0b51c28a1752085c0c478ed703cc">&#9670;&nbsp;</a></span>set_font()</h2>
 
@@ -434,7 +472,7 @@ std::function&lt; void(const <a class="el" href="../../d4/ddf/namespacewte.html#
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/ddf/namespacewte.html">wte</a></li><li class="navelem"><b>cmp</b></li><li class="navelem"><a class="el" href="../../d6/d4a/classwte_1_1cmp_1_1overlay.html">overlay</a></li>
-    <li class="footer">Generated on Fri Jun 19 2020 12:40:24 for WTEngine by
+    <li class="footer">Generated on Sat Jun 20 2020 22:44:39 for WTEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

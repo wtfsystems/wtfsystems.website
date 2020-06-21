@@ -8,6 +8,7 @@ var classwte_1_1mgr_1_1menu__manager =
     [ "initialize", "d7/d0c/classwte_1_1mgr_1_1menu__manager.html#ac2fe807f680e7cd777932d0ba5da1524", null ],
     [ "new_menu", "d7/d0c/classwte_1_1mgr_1_1menu__manager.html#a70e966a1d732833dd65da732275f0e16", null ],
     [ "open_menu", "d7/d0c/classwte_1_1mgr_1_1menu__manager.html#a0c4e924793aba3225b655b24263dbed7", null ],
+    [ "reload_menu_bitmap", "d7/d0c/classwte_1_1mgr_1_1menu__manager.html#aed4495eb75b84b09d53904bc95b2c083", null ],
     [ "render_menu", "d7/d0c/classwte_1_1mgr_1_1menu__manager.html#a834ede711921605802fbad6d21e530b1", null ],
     [ "reset", "d7/d0c/classwte_1_1mgr_1_1menu__manager.html#ab0efbb2257ac0564b6d6ad4cceee6f50", null ],
     [ "run", "d7/d0c/classwte_1_1mgr_1_1menu__manager.html#a5ac05d6d582796c00a4843f869e708e6", null ],

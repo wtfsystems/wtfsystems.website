@@ -118,6 +118,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2cb58e70ba6cbd9049dc9f01f22521a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7aac30031e157098899ab312b3aeb880"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d3f/classwte_1_1cmp_1_1background.html#a7aac30031e157098899ab312b3aeb880">~background</a> ()</td></tr>
 <tr class="separator:a7aac30031e157098899ab312b3aeb880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb7f6254b59b5a52def3efbc892f443e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d3f/classwte_1_1cmp_1_1background.html#adb7f6254b59b5a52def3efbc892f443e">reload_background_bitmap</a> (void)</td></tr>
+<tr class="memdesc:adb7f6254b59b5a52def3efbc892f443e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reload the background bitmap. Called when the screen is updated.  <a href="../../dc/d3f/classwte_1_1cmp_1_1background.html#adb7f6254b59b5a52def3efbc892f443e">More...</a><br /></td></tr>
+<tr class="separator:adb7f6254b59b5a52def3efbc892f443e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4f2d638aec85679a90266d9d3442a34"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d3f/classwte_1_1cmp_1_1background.html#aa4f2d638aec85679a90266d9d3442a34">load_file</a> (std::string label, std::string fname)</td></tr>
 <tr class="memdesc:aa4f2d638aec85679a90266d9d3442a34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a bitmap. Store in a map for reference to later. Call this during entity creation.  <a href="../../dc/d3f/classwte_1_1cmp_1_1background.html#aa4f2d638aec85679a90266d9d3442a34">More...</a><br /></td></tr>
 <tr class="separator:aa4f2d638aec85679a90266d9d3442a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,15 +145,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a4584ccd8274fb7617a71cca532d5045f"><td class="memItemLeft" align="right" valign="top"><a id="a4584ccd8274fb7617a71cca532d5045f"></a>
-std::map&lt; std::string, ALLEGRO_BITMAP * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>bmp_map</b></td></tr>
-<tr class="separator:a4584ccd8274fb7617a71cca532d5045f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f9c036808d6511cb5c741c6e2113a64"><td class="memItemLeft" align="right" valign="top"><a id="a2f9c036808d6511cb5c741c6e2113a64"></a>
 ALLEGRO_BITMAP *&#160;</td><td class="memItemRight" valign="bottom"><b>background_bitmap</b></td></tr>
 <tr class="separator:a2f9c036808d6511cb5c741c6e2113a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa411fc7c66a62762feb9263f0664c0fe"><td class="memItemLeft" align="right" valign="top"><a id="aa411fc7c66a62762feb9263f0664c0fe"></a>
 ALLEGRO_COLOR&#160;</td><td class="memItemRight" valign="bottom"><b>color</b></td></tr>
 <tr class="separator:aa411fc7c66a62762feb9263f0664c0fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4584ccd8274fb7617a71cca532d5045f"><td class="memItemLeft" align="right" valign="top"><a id="a4584ccd8274fb7617a71cca532d5045f"></a>
+std::map&lt; std::string, ALLEGRO_BITMAP * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>bmp_map</b></td></tr>
+<tr class="separator:a4584ccd8274fb7617a71cca532d5045f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -366,6 +369,41 @@ std::function&lt; void(const <a class="el" href="../../d4/ddf/namespacewte.html#
 
 </div>
 </div>
+<a id="adb7f6254b59b5a52def3efbc892f443e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb7f6254b59b5a52def3efbc892f443e">&#9670;&nbsp;</a></span>reload_background_bitmap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wte::cmp::background::reload_background_bitmap </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reload the background bitmap. Called when the screen is updated. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/wte/cmp/gfx/background.hpp</li>
 </ul>
@@ -375,7 +413,7 @@ std::function&lt; void(const <a class="el" href="../../d4/ddf/namespacewte.html#
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/ddf/namespacewte.html">wte</a></li><li class="navelem"><b>cmp</b></li><li class="navelem"><a class="el" href="../../dc/d3f/classwte_1_1cmp_1_1background.html">background</a></li>
-    <li class="footer">Generated on Fri Jun 19 2020 12:40:24 for WTEngine by
+    <li class="footer">Generated on Sat Jun 20 2020 22:44:39 for WTEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

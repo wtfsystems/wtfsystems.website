@@ -18,7 +18,6 @@ var classwte_1_1wte__main =
     [ "input_th", "d5/d5b/classwte_1_1wte__main.html#a0f82446083294ada7d61cf2302715340", null ],
     [ "menus", "d5/d5b/classwte_1_1wte__main.html#a508b3f396bbe826f9605a422ca4f6339", null ],
     [ "messages", "d5/d5b/classwte_1_1wte__main.html#a275cf8c414dddc702ecb01007679eacb", null ],
-    [ "screen", "d5/d5b/classwte_1_1wte__main.html#a4453a0798da6beec88b54878890a1be8", null ],
     [ "spawner", "d5/d5b/classwte_1_1wte__main.html#a9e1313c5e233b431b076002805f8b74e", null ],
     [ "systems", "d5/d5b/classwte_1_1wte__main.html#a76a60d6b95f6a17a5f06e7b7a80e4d44", null ],
     [ "world", "d5/d5b/classwte_1_1wte__main.html#ac7218a3b9178962a9f8826e1fc243e1b", null ]

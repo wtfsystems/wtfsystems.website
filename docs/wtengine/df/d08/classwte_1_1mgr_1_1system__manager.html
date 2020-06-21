@@ -130,6 +130,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad9e579112f4a510fc605134deb83244d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d08/classwte_1_1mgr_1_1system__manager.html#ad9e579112f4a510fc605134deb83244d">dispatch</a> (<a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html">mgr::entity_manager</a> &amp;world, <a class="el" href="../../d7/dbd/classwte_1_1mgr_1_1message__manager.html">mgr::message_manager</a> &amp;messages, int64_t current_time)</td></tr>
 <tr class="memdesc:ad9e579112f4a510fc605134deb83244d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process dispatcher components. Get messages for the entities and pass to each. Keeps checking for responces and will process as well.  <a href="../../df/d08/classwte_1_1mgr_1_1system__manager.html#ad9e579112f4a510fc605134deb83244d">More...</a><br /></td></tr>
 <tr class="separator:ad9e579112f4a510fc605134deb83244d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57eec6bcb3ee7e3d4f2a547eaa5908ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d08/classwte_1_1mgr_1_1system__manager.html#a57eec6bcb3ee7e3d4f2a547eaa5908ea">reload_temp_bitmaps</a> (<a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html">mgr::entity_manager</a> &amp;world)</td></tr>
+<tr class="memdesc:a57eec6bcb3ee7e3d4f2a547eaa5908ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reloads temporary bitmaps. Any background or overlay drawing bitmaps will be recreated. Called when the screen is reloaded.  <a href="../../df/d08/classwte_1_1mgr_1_1system__manager.html#a57eec6bcb3ee7e3d4f2a547eaa5908ea">More...</a><br /></td></tr>
+<tr class="separator:a57eec6bcb3ee7e3d4f2a547eaa5908ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5202448bb380404004703fb51b65d2a6"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d08/classwte_1_1mgr_1_1system__manager.html#a5202448bb380404004703fb51b65d2a6">enable_system</a> (std::string sys)</td></tr>
 <tr class="memdesc:a5202448bb380404004703fb51b65d2a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable a system. Toggle a system to enabled so its run member is processed.  <a href="../../df/d08/classwte_1_1mgr_1_1system__manager.html#a5202448bb380404004703fb51b65d2a6">More...</a><br /></td></tr>
 <tr class="separator:a5202448bb380404004703fb51b65d2a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -482,6 +485,41 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a57eec6bcb3ee7e3d4f2a547eaa5908ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57eec6bcb3ee7e3d4f2a547eaa5908ea">&#9670;&nbsp;</a></span>reload_temp_bitmaps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wte::mgr::system_manager::reload_temp_bitmaps </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html">mgr::entity_manager</a> &amp;&#160;</td>
+          <td class="paramname"><em>world</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reloads temporary bitmaps. Any background or overlay drawing bitmaps will be recreated. Called when the screen is reloaded. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">world</td><td>Reference to the entity manager. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+</div>
+</div>
 <a id="a54c339143a72f974d66380c99f85adcb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a54c339143a72f974d66380c99f85adcb">&#9670;&nbsp;</a></span>run()</h2>
 
@@ -544,7 +582,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/ddf/namespacewte.html">wte</a></li><li class="navelem"><b>mgr</b></li><li class="navelem"><a class="el" href="../../df/d08/classwte_1_1mgr_1_1system__manager.html">system_manager</a></li>
-    <li class="footer">Generated on Fri Jun 19 2020 12:40:25 for WTEngine by
+    <li class="footer">Generated on Sat Jun 20 2020 22:44:40 for WTEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

@@ -9,5 +9,6 @@ var classwte_1_1mgr_1_1system__manager =
     [ "empty", "df/d08/classwte_1_1mgr_1_1system__manager.html#a3cd1534da864c3061c3141265d876c42", null ],
     [ "enable_system", "df/d08/classwte_1_1mgr_1_1system__manager.html#a5202448bb380404004703fb51b65d2a6", null ],
     [ "finalize", "df/d08/classwte_1_1mgr_1_1system__manager.html#ab2c03ca8c68eeb9bfadbf3cad694bba4", null ],
+    [ "reload_temp_bitmaps", "df/d08/classwte_1_1mgr_1_1system__manager.html#a57eec6bcb3ee7e3d4f2a547eaa5908ea", null ],
     [ "run", "df/d08/classwte_1_1mgr_1_1system__manager.html#a54c339143a72f974d66380c99f85adcb", null ]
 ];
