@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['initialize_378',['initialize',['../df/da2/classwte_1_1mgr_1_1audio__manager.html#a8b0721b58430a54d94e704f90f2ef42a',1,'wte::mgr::audio_manager::initialize()'],['../d7/d0c/classwte_1_1mgr_1_1menu__manager.html#ac2fe807f680e7cd777932d0ba5da1524',1,'wte::mgr::menu_manager::initialize()'],['../d2/dd2/classwte_1_1mgr_1_1render__manager.html#aba1c23fa066f573e194c7903d6362aae',1,'wte::mgr::render_manager::initialize()']]],
-  ['input_5fflags_379',['input_flags',['../d0/dac/classwte_1_1input__flags.html#a4558c60662eb83b3e8f693f94485a805',1,'wte::input_flags']]],
+  ['initialize_377',['initialize',['../df/da2/classwte_1_1mgr_1_1audio__manager.html#a8b0721b58430a54d94e704f90f2ef42a',1,'wte::mgr::audio_manager::initialize()'],['../d7/d0c/classwte_1_1mgr_1_1menu__manager.html#ac2fe807f680e7cd777932d0ba5da1524',1,'wte::mgr::menu_manager::initialize()'],['../d2/dd2/classwte_1_1mgr_1_1render__manager.html#aba1c23fa066f573e194c7903d6362aae',1,'wte::mgr::render_manager::initialize()']]],
+  ['input_5fflags_378',['input_flags',['../d0/dac/classwte_1_1input__flags.html#a4558c60662eb83b3e8f693f94485a805',1,'wte::input_flags']]],
+  ['input_5fhandler_379',['input_handler',['../d7/d84/classwte_1_1cmp_1_1input__handler.html#aec61b3859bc2f9d0608c20bdbfd2b04f',1,'wte::cmp::input_handler']]],
   ['is_5fenabled_380',['is_enabled',['../d2/d4c/classwte_1_1sys_1_1system.html#a6f8068eaff0bc46c01e74d37ef13b80f',1,'wte::sys::system']]],
   ['is_5fengine_5fsetting_381',['is_engine_setting',['../db/d25/classwte_1_1mnu_1_1menu__item.html#a1853f47784d166483f20dea1a9e248d1',1,'wte::mnu::menu_item::is_engine_setting()'],['../df/dd3/classwte_1_1mnu_1_1menu__item__setting.html#a6d7b1b3728777cd0062268db39459f25',1,'wte::mnu::menu_item_setting::is_engine_setting()']]],
   ['is_5freg_382',['is_reg',['../d3/d6f/classwte_1_1variable__map.html#ad2b4283e821a69bb4ede3e51aa6007b3',1,'wte::variable_map']]],

@@ -93,11 +93,6 @@ $(document).ready(function(){initNavTree('df/d08/classwte_1_1mgr_1_1system__mana
 <div class="title">wte::mgr::system_manager Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>System Manager class.  
- <a href="../../df/d08/classwte_1_1mgr_1_1system__manager.html#details">More...</a></p>
-
-<p><code>#include &lt;system_manager.hpp&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for wte::mgr::system_manager:</div>
 <div class="dyncontent">
@@ -157,10 +152,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a4eeefa94714ddba7f1cc05c4cf295bd2 inherit pro_methods_classwte_1_1mgr_1_1manager"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d4e/classwte_1_1mgr_1_1manager.html#a4eeefa94714ddba7f1cc05c4cf295bd2">manager</a> ()</td></tr>
 <tr class="separator:a4eeefa94714ddba7f1cc05c4cf295bd2 inherit pro_methods_classwte_1_1mgr_1_1manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>System Manager class. </p>
-<p>Store the configured systems and process their runs and dispatches. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="acd4acdafe7e32d2b38264ded87532a1a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acd4acdafe7e32d2b38264ded87532a1a">&#9670;&nbsp;</a></span>system_manager()</h2>
 
@@ -183,7 +175,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>System Manager constructor. Clears the systems vector and sets the finalized flag to false. </p><dl class="params"><dt>Parameters</dt><dd>
+<p><a class="el" href="../../d9/d16/class_system.html">System</a> <a class="el" href="../../d8/d3d/class_manager.html">Manager</a> constructor. Clears the systems vector and sets the finalized flag to false. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">void</td><td></td></tr>
   </table>
@@ -215,7 +207,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>System Manager destructor. Makes sure the systems are cleared. </p><dl class="params"><dt>Parameters</dt><dd>
+<p><a class="el" href="../../d9/d16/class_system.html">System</a> <a class="el" href="../../d8/d3d/class_manager.html">Manager</a> destructor. <a class="el" href="../../d1/d49/class_makes.html" title="Extend this to create a threaded object. Has a virtual run member that is defined in the inheriting c...">Makes</a> sure the systems are cleared. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">void</td><td></td></tr>
   </table>
@@ -253,7 +245,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Add a new system to the manager. Enters system into the vector of systems if not. Systems run in the order they were added. Can fail if the system exists or if the game is running. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">new_system</td><td>System to add. </td></tr>
+    <tr><td class="paramname">new_system</td><td><a class="el" href="../../d9/d16/class_system.html">System</a> to add. </td></tr>
   </table>
   </dd>
 </dl>
@@ -582,7 +574,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/ddf/namespacewte.html">wte</a></li><li class="navelem"><b>mgr</b></li><li class="navelem"><a class="el" href="../../df/d08/classwte_1_1mgr_1_1system__manager.html">system_manager</a></li>
-    <li class="footer">Generated on Sat Jun 20 2020 22:44:40 for WTEngine by
+    <li class="footer">Generated on Tue Jun 23 2020 22:57:36 for WTEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['damage_24',['damage',['../d8/d47/classwte_1_1cmp_1_1damage.html',1,'wte::cmp::damage'],['../d8/d47/classwte_1_1cmp_1_1damage.html#ac0a4c7699473676e2e930cec999d3ec4',1,'wte::cmp::damage::damage()']]],
   ['de_5finit_25',['de_init',['../df/da2/classwte_1_1mgr_1_1audio__manager.html#a272548d37aaf513c59c20920bb04890d',1,'wte::mgr::audio_manager::de_init()'],['../d7/d0c/classwte_1_1mgr_1_1menu__manager.html#a2f52e32ef5375ec9bd69d4d889a82f63',1,'wte::mgr::menu_manager::de_init()'],['../d2/dd2/classwte_1_1mgr_1_1render__manager.html#a0629eb60f122bf267bb5666b4f5f7d50',1,'wte::mgr::render_manager::de_init()']]],
   ['delete_5fcomponent_26',['delete_component',['../d3/db3/classwte_1_1mgr_1_1entity__manager.html#af30022b9b493ab3798f29e9f4c295f73',1,'wte::mgr::entity_manager']]],
   ['delete_5fentity_27',['delete_entity',['../d3/db3/classwte_1_1mgr_1_1entity__manager.html#a4f58a1da040b3240e0a291d6692149f8',1,'wte::mgr::entity_manager']]],
