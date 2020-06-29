@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['game_5fcfg_5fmap_256',['game_cfg_map',['../d2/d44/classwte_1_1game__cfg__map.html',1,'wte']]]
+  ['game_5fcfg_301',['game_cfg',['../d5/d1b/classwte_1_1game__cfg.html',1,'wte']]]
 ];

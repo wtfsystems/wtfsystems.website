@@ -6,6 +6,6 @@ var classwte_1_1mgr_1_1render__manager =
     [ "initialize", "d2/dd2/classwte_1_1mgr_1_1render__manager.html#aba1c23fa066f573e194c7903d6362aae", null ],
     [ "reload_arena_bitmap", "d2/dd2/classwte_1_1mgr_1_1render__manager.html#a9e4d15da21d018e69653a6930d73bfcf", null ],
     [ "render", "d2/dd2/classwte_1_1mgr_1_1render__manager.html#af84cf8baa9911037c8967a0d7808215f", null ],
-    [ "set_scale_factor", "d2/dd2/classwte_1_1mgr_1_1render__manager.html#a83b91e08d918344a3562b47fcecb9403", null ],
-    [ "update_resolution", "d2/dd2/classwte_1_1mgr_1_1render__manager.html#a346e8b117ee6fdcb47e8e45e8b3053bb", null ]
+    [ "set_scale_factor", "d2/dd2/classwte_1_1mgr_1_1render__manager.html#ab604db1d6bc7fd9b1efc1a89bc6cc066", null ],
+    [ "update_resolution", "d2/dd2/classwte_1_1mgr_1_1render__manager.html#afd55c118b7ccd7dd9798919aa91a0bd1", null ]
 ];

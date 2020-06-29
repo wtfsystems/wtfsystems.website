@@ -11,8 +11,8 @@ var namespacewte =
       [ "hitbox", "de/dfa/classwte_1_1cmp_1_1hitbox.html", "de/dfa/classwte_1_1cmp_1_1hitbox" ],
       [ "input_handler", "d7/d84/classwte_1_1cmp_1_1input__handler.html", "d7/d84/classwte_1_1cmp_1_1input__handler" ],
       [ "location", "de/dea/classwte_1_1cmp_1_1location.html", "de/dea/classwte_1_1cmp_1_1location" ],
-      [ "name", "df/d0c/classwte_1_1cmp_1_1name.html", "df/d0c/classwte_1_1cmp_1_1name" ],
       [ "overlay", "d6/d4a/classwte_1_1cmp_1_1overlay.html", "d6/d4a/classwte_1_1cmp_1_1overlay" ],
+      [ "sample_loop", "dd/d36/classwte_1_1cmp_1_1sample__loop.html", "dd/d36/classwte_1_1cmp_1_1sample__loop" ],
       [ "sprite", "d9/d0e/classwte_1_1cmp_1_1sprite.html", "d9/d0e/classwte_1_1cmp_1_1sprite" ],
       [ "team", "db/d76/classwte_1_1cmp_1_1team.html", "db/d76/classwte_1_1cmp_1_1team" ],
       [ "visible", "d0/d55/classwte_1_1cmp_1_1visible.html", "d0/d55/classwte_1_1cmp_1_1visible" ]
@@ -47,9 +47,9 @@ var namespacewte =
       [ "system", "d2/d4c/classwte_1_1sys_1_1system.html", "d2/d4c/classwte_1_1sys_1_1system" ]
     ] ],
     [ "alert", "dc/d4f/classwte_1_1alert.html", null ],
-    [ "engine_cfg_map", "d3/def/classwte_1_1engine__cfg__map.html", null ],
+    [ "engine_cfg", "df/dd4/classwte_1_1engine__cfg.html", null ],
     [ "engine_flags", "d2/de3/classwte_1_1engine__flags.html", "d2/de3/classwte_1_1engine__flags" ],
-    [ "game_cfg_map", "d2/d44/classwte_1_1game__cfg__map.html", null ],
+    [ "game_cfg", "d5/d1b/classwte_1_1game__cfg.html", null ],
     [ "input_flags", "d0/dac/classwte_1_1input__flags.html", "d0/dac/classwte_1_1input__flags" ],
     [ "message", "d0/d6b/classwte_1_1message.html", "d0/d6b/classwte_1_1message" ],
     [ "variable_map", "d3/d6f/classwte_1_1variable__map.html", "d3/d6f/classwte_1_1variable__map" ],

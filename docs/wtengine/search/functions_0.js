@@ -1,16 +1,19 @@
 var searchData=
 [
-  ['add_303',['add',['../d2/d44/classwte_1_1game__cfg__map.html#ab50af6869643e47bc7a60a3f5df1e089',1,'wte::game_cfg_map::add()'],['../df/d08/classwte_1_1mgr_1_1system__manager.html#a442c527ca2c4fdaa41c258fe5385ea1d',1,'wte::mgr::system_manager::add()']]],
-  ['add_5fcomponent_304',['add_component',['../d3/db3/classwte_1_1mgr_1_1entity__manager.html#a14902e0bb60a1a9fb781c0b5f740a31e',1,'wte::mgr::entity_manager']]],
-  ['add_5fcycle_305',['add_cycle',['../d9/d0e/classwte_1_1cmp_1_1sprite.html#ae0dfca743cf246d09f0a8f9c64398ab5',1,'wte::cmp::sprite']]],
-  ['add_5ffile_5flocation_306',['add_file_location',['../d5/d5b/classwte_1_1wte__main.html#a974ac74b09c55577c14ac29408def3cf',1,'wte::wte_main']]],
-  ['add_5fhandle_5foff_307',['add_handle_off',['../d7/d84/classwte_1_1cmp_1_1input__handler.html#a7dc2cd059ddf143eb15940775572cb55',1,'wte::cmp::input_handler']]],
-  ['add_5fhandle_5fon_308',['add_handle_on',['../d7/d84/classwte_1_1cmp_1_1input__handler.html#abeb0cf426989e5a4f0f3f5de10b0ef47',1,'wte::cmp::input_handler']]],
-  ['add_5fhandle_5fon_5foff_309',['add_handle_on_off',['../d7/d84/classwte_1_1cmp_1_1input__handler.html#a1afd907a9d8f1849217bc854f37130f2',1,'wte::cmp::input_handler']]],
-  ['add_5fitem_310',['add_item',['../d4/dd6/classwte_1_1mnu_1_1menu.html#a5e719c5a0010b2d18afd8e2e9ae4e259',1,'wte::mnu::menu']]],
-  ['add_5fmessage_311',['add_message',['../d7/dbd/classwte_1_1mgr_1_1message__manager.html#ae21c5e961faf556b0b74e2e4f225e552',1,'wte::mgr::message_manager']]],
-  ['add_5fspawn_312',['add_spawn',['../d9/d28/classwte_1_1mgr_1_1spawn__manager.html#a29be736da3ae748ba31dd35bfd92e281',1,'wte::mgr::spawn_manager']]],
-  ['ai_313',['ai',['../d4/d06/classwte_1_1cmp_1_1ai.html#a43f1f8f9e23f3a104d988923fc0837c6',1,'wte::cmp::ai']]],
-  ['animator_314',['animator',['../d2/d55/classwte_1_1cmp_1_1animator.html#a56935730d5aaabd7bb055b1dbfeb7f2b',1,'wte::cmp::animator']]],
-  ['audio_5fmanager_315',['audio_manager',['../df/da2/classwte_1_1mgr_1_1audio__manager.html#ae43307ea615066c66ea9684e3a14cdc4',1,'wte::mgr::audio_manager']]]
+  ['add_348',['add',['../d5/d1b/classwte_1_1game__cfg.html#af81529e5c8dc28ff48d1bb9fe416dbd5',1,'wte::game_cfg::add()'],['../df/d08/classwte_1_1mgr_1_1system__manager.html#a442c527ca2c4fdaa41c258fe5385ea1d',1,'wte::mgr::system_manager::add()']]],
+  ['add_5fcomponent_349',['add_component',['../d3/db3/classwte_1_1mgr_1_1entity__manager.html#ab172ece86c7cdaf2ef6cecc455fafb94',1,'wte::mgr::entity_manager']]],
+  ['add_5fcycle_350',['add_cycle',['../d9/d0e/classwte_1_1cmp_1_1sprite.html#ae0dfca743cf246d09f0a8f9c64398ab5',1,'wte::cmp::sprite']]],
+  ['add_5ffile_5flocation_351',['add_file_location',['../d5/d5b/classwte_1_1wte__main.html#aa13be7ccb224a6751579c48388ea40d1',1,'wte::wte_main']]],
+  ['add_5fhandle_352',['add_handle',['../dd/d36/classwte_1_1cmp_1_1sample__loop.html#af06a9d341f4ae534e7b63cac61dae54c',1,'wte::cmp::sample_loop']]],
+  ['add_5fhandle_5foff_353',['add_handle_off',['../d7/d84/classwte_1_1cmp_1_1input__handler.html#a98224299d2d6ef13f4de83cd2e57c5cd',1,'wte::cmp::input_handler']]],
+  ['add_5fhandle_5fon_354',['add_handle_on',['../d7/d84/classwte_1_1cmp_1_1input__handler.html#ac564fe5b44df8e439f881e0cb4516fbf',1,'wte::cmp::input_handler']]],
+  ['add_5fhandle_5fon_5foff_355',['add_handle_on_off',['../d7/d84/classwte_1_1cmp_1_1input__handler.html#a3829d7bef038d011d408637dcec586c6',1,'wte::cmp::input_handler']]],
+  ['add_5fitem_356',['add_item',['../d4/dd6/classwte_1_1mnu_1_1menu.html#a5e719c5a0010b2d18afd8e2e9ae4e259',1,'wte::mnu::menu']]],
+  ['add_5fmessage_357',['add_message',['../d7/dbd/classwte_1_1mgr_1_1message__manager.html#a6cf67dd5c31639fdb5739e3ebd45398e',1,'wte::mgr::message_manager']]],
+  ['add_5fspawn_358',['add_spawn',['../d9/d28/classwte_1_1mgr_1_1spawn__manager.html#a400f0a2242d773fd4d2afa95f08518d0',1,'wte::mgr::spawn_manager']]],
+  ['adjust_5fx_359',['adjust_x',['../de/dea/classwte_1_1cmp_1_1location.html#a062edc61e7d133d3027cad460a7cdf90',1,'wte::cmp::location']]],
+  ['adjust_5fy_360',['adjust_y',['../de/dea/classwte_1_1cmp_1_1location.html#a868f350b2a9863f06ae6ac762f75df8d',1,'wte::cmp::location']]],
+  ['ai_361',['ai',['../d4/d06/classwte_1_1cmp_1_1ai.html#aacbc892ee0c7d49989bb533c3e8a1eed',1,'wte::cmp::ai']]],
+  ['animator_362',['animator',['../d2/d55/classwte_1_1cmp_1_1animator.html#a99d7accf7e8b98eb6deaa0eaa14d26e5',1,'wte::cmp::animator']]],
+  ['audio_5fmanager_363',['audio_manager',['../df/da2/classwte_1_1mgr_1_1audio__manager.html#ae43307ea615066c66ea9684e3a14cdc4',1,'wte::mgr::audio_manager']]]
 ];

@@ -1,7 +1,7 @@
 var classwte_1_1wte__display =
 [
     [ "~wte_display", "dd/dd5/classwte_1_1wte__display.html#a23311e02f8c4497fbb96075ccf87ab8d", null ],
-    [ "wte_display", "dd/dd5/classwte_1_1wte__display.html#aab9ab72cd5e6eaea24525f0e5abc854c", null ],
+    [ "wte_display", "dd/dd5/classwte_1_1wte__display.html#a3ad870318c50a1b8f66bbd7bb1283bde", null ],
     [ "create_display", "dd/dd5/classwte_1_1wte__display.html#adac5316fefbc042c1657484272e5f4d3", null ],
     [ "destroy_display", "dd/dd5/classwte_1_1wte__display.html#a25d8fd43309f111136242a4cda34d410", null ],
     [ "get_window_title", "dd/dd5/classwte_1_1wte__display.html#a8e4fcbf1cf3899aaaf946f7e96be8241", null ],

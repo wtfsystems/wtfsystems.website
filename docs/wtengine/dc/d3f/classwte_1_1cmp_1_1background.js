@@ -1,11 +1,10 @@
 var classwte_1_1cmp_1_1background =
 [
     [ "background", "dc/d3f/classwte_1_1cmp_1_1background.html#a21450ee445f2c4c3e6fe54c148dec872", null ],
-    [ "background", "dc/d3f/classwte_1_1cmp_1_1background.html#a2cb58e70ba6cbd9049dc9f01f22521a2", null ],
+    [ "background", "dc/d3f/classwte_1_1cmp_1_1background.html#a538255b0db4a33478461861b0cfe8348", null ],
     [ "~background", "dc/d3f/classwte_1_1cmp_1_1background.html#a7aac30031e157098899ab312b3aeb880", null ],
-    [ "load_file", "dc/d3f/classwte_1_1cmp_1_1background.html#afd09cca6090c6c3db56a5ee95d788de7", null ],
-    [ "reload_background_bitmap", "dc/d3f/classwte_1_1cmp_1_1background.html#adb7f6254b59b5a52def3efbc892f443e", null ],
-    [ "background_bitmap", "dc/d3f/classwte_1_1cmp_1_1background.html#a2f9c036808d6511cb5c741c6e2113a64", null ],
-    [ "bmp_map", "dc/d3f/classwte_1_1cmp_1_1background.html#a4584ccd8274fb7617a71cca532d5045f", null ],
-    [ "color", "dc/d3f/classwte_1_1cmp_1_1background.html#aa411fc7c66a62762feb9263f0664c0fe", null ]
+    [ "draw_bitmap", "dc/d3f/classwte_1_1cmp_1_1background.html#aef055e28723fb7415b925987e7bda392", null ],
+    [ "get_color", "dc/d3f/classwte_1_1cmp_1_1background.html#ae644b082898dc8edacdfb8f64e55d22e", null ],
+    [ "load_bitmap", "dc/d3f/classwte_1_1cmp_1_1background.html#a377a082d3ef6414bfa0d3cc2f5d1395c", null ],
+    [ "reload_background_bitmap", "dc/d3f/classwte_1_1cmp_1_1background.html#adb7f6254b59b5a52def3efbc892f443e", null ]
 ];

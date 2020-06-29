@@ -1,18 +1,28 @@
 var annotated_dup =
 [
     [ "wte", "d4/ddf/namespacewte.html", "d4/ddf/namespacewte" ],
+    [ "Animator", "dc/d2a/class_animator.html", null ],
     [ "Audio", "d2/d4a/class_audio.html", null ],
+    [ "Background", "d4/da1/class_background.html", null ],
+    [ "Direction", "d0/de1/class_direction.html", null ],
     [ "Display", "df/d4d/class_display.html", null ],
+    [ "Enabled", "dd/d43/class_enabled.html", null ],
     [ "Engine", "d8/d9b/class_engine.html", null ],
     [ "Entity", "d2/d96/class_entity.html", null ],
+    [ "Hitbox", "d7/d44/class_hitbox.html", null ],
     [ "Input", "d4/d7b/class_input.html", null ],
     [ "Input", "d4/d7b/class_input.html", null ],
     [ "Input", "d4/d7b/class_input.html", null ],
+    [ "Location", "d8/de6/class_location.html", null ],
     [ "Makes", "d1/d49/class_makes.html", null ],
     [ "Manager", "d8/d3d/class_manager.html", null ],
     [ "Menu", "d2/db8/class_menu.html", null ],
     [ "Message", "d4/d7f/class_message.html", null ],
+    [ "Overlay", "d6/d6e/class_overlay.html", null ],
     [ "Render", "da/d7f/class_render.html", null ],
+    [ "Sprite", "d7/dbf/class_sprite.html", null ],
     [ "System", "d9/d16/class_system.html", null ],
+    [ "Team", "d1/d35/class_team.html", null ],
+    [ "Visible", "d2/dbe/class_visible.html", null ],
     [ "WTEngine", "d6/ddb/class_w_t_engine.html", null ]
 ];
