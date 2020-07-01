@@ -147,7 +147,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3d9f2cb16e596de8957d47b126f18a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac41b9e0dc099ff2e0170cebe54312210"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ac41b9e0dc099ff2e0170cebe54312210"><td class="memTemplItemLeft" align="right" valign="top">const std::shared_ptr&lt; const T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html#ac41b9e0dc099ff2e0170cebe54312210">get_component</a> (const entity_id &amp;e_id) const</td></tr>
-<tr class="memdesc:ac41b9e0dc099ff2e0170cebe54312210"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the value of a component by type for an entity.  <a href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html#ac41b9e0dc099ff2e0170cebe54312210">More...</a><br /></td></tr>
+<tr class="memdesc:ac41b9e0dc099ff2e0170cebe54312210"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the value of a component by type for an entity. Note that calling this for a component that does not exist will cause the program to fail. If there is a chance it does not exist, call <a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html#a8fb2cf8ab7c64131ac1fbced367e973a">has_component()</a> first.  <a href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html#ac41b9e0dc099ff2e0170cebe54312210">More...</a><br /></td></tr>
 <tr class="separator:ac41b9e0dc099ff2e0170cebe54312210"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab615a5996949e9e767079775d48535c7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ab615a5996949e9e767079775d48535c7"><td class="memTemplItemLeft" align="right" valign="top">const component_container&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html#ab615a5996949e9e767079775d48535c7">set_components</a> (void)</td></tr>
@@ -353,7 +353,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p>Delete a component by type for an entity. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>Component type. </td></tr>
+    <tr><td class="paramname">T</td><td><a class="el" href="../../d2/d00/class_component.html">Component</a> type. </td></tr>
   </table>
   </dd>
 </dl>
@@ -463,10 +463,10 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Read the value of a component by type for an entity. </p>
+<p>Read the value of a component by type for an entity. Note that calling this for a component that does not exist will cause the program to fail. If there is a chance it does not exist, call <a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html#a8fb2cf8ab7c64131ac1fbced367e973a">has_component()</a> first. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>Component type. </td></tr>
+    <tr><td class="paramname">T</td><td><a class="el" href="../../d2/d00/class_component.html">Component</a> type. </td></tr>
   </table>
   </dd>
 </dl>
@@ -509,7 +509,7 @@ template&lt;typename T &gt; </div>
 <p>Get all components for a particulair type. This will return a container of non-modifiable components casted to their type. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>Component type. </td></tr>
+    <tr><td class="paramname">T</td><td><a class="el" href="../../d2/d00/class_component.html">Component</a> type. </td></tr>
   </table>
   </dd>
 </dl>
@@ -682,7 +682,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p>Check if an entity has a component by type. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>Component type. </td></tr>
+    <tr><td class="paramname">T</td><td><a class="el" href="../../d2/d00/class_component.html">Component</a> type. </td></tr>
   </table>
   </dd>
 </dl>
@@ -762,7 +762,7 @@ template&lt;typename T &gt; </div>
 <p>Set the value of a component by type for an entity. Note that calling this for a component that does not exist will cause the program to fail. If there is a chance it does not exist, call <a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html#a8fb2cf8ab7c64131ac1fbced367e973a">has_component()</a> first. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>Component type. </td></tr>
+    <tr><td class="paramname">T</td><td><a class="el" href="../../d2/d00/class_component.html">Component</a> type. </td></tr>
   </table>
   </dd>
 </dl>
@@ -805,7 +805,7 @@ template&lt;typename T &gt; </div>
 <p>Set all components for a particulair type. This will return a container of modifiable components casted to their type. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>Component type. </td></tr>
+    <tr><td class="paramname">T</td><td><a class="el" href="../../d2/d00/class_component.html">Component</a> type. </td></tr>
   </table>
   </dd>
 </dl>
@@ -905,7 +905,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/ddf/namespacewte.html">wte</a></li><li class="navelem"><b>mgr</b></li><li class="navelem"><a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html">entity_manager</a></li>
-    <li class="footer">Generated on Mon Jun 29 2020 12:34:12 for WTEngine by
+    <li class="footer">Generated on Tue Jun 30 2020 19:59:03 for WTEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

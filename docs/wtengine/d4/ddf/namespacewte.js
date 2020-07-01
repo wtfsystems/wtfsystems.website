@@ -4,6 +4,8 @@ var namespacewte =
       [ "ai", "d4/d06/classwte_1_1cmp_1_1ai.html", "d4/d06/classwte_1_1cmp_1_1ai" ],
       [ "animator", "d2/d55/classwte_1_1cmp_1_1animator.html", "d2/d55/classwte_1_1cmp_1_1animator" ],
       [ "background", "dc/d3f/classwte_1_1cmp_1_1background.html", "dc/d3f/classwte_1_1cmp_1_1background" ],
+      [ "bitmap_map", "da/d4e/classwte_1_1cmp_1_1bitmap__map.html", "da/d4e/classwte_1_1cmp_1_1bitmap__map" ],
+      [ "bounding_box", "d8/d3b/classwte_1_1cmp_1_1bounding__box.html", "d8/d3b/classwte_1_1cmp_1_1bounding__box" ],
       [ "component", "db/d74/classwte_1_1cmp_1_1component.html", "db/d74/classwte_1_1cmp_1_1component" ],
       [ "direction", "da/d95/classwte_1_1cmp_1_1direction.html", "da/d95/classwte_1_1cmp_1_1direction" ],
       [ "dispatcher", "d2/d00/classwte_1_1cmp_1_1dispatcher.html", "d2/d00/classwte_1_1cmp_1_1dispatcher" ],
@@ -15,6 +17,7 @@ var namespacewte =
       [ "sample_loop", "dd/d36/classwte_1_1cmp_1_1sample__loop.html", "dd/d36/classwte_1_1cmp_1_1sample__loop" ],
       [ "sprite", "d9/d0e/classwte_1_1cmp_1_1sprite.html", "d9/d0e/classwte_1_1cmp_1_1sprite" ],
       [ "team", "db/d76/classwte_1_1cmp_1_1team.html", "db/d76/classwte_1_1cmp_1_1team" ],
+      [ "velocity", "da/d7f/classwte_1_1cmp_1_1velocity.html", "da/d7f/classwte_1_1cmp_1_1velocity" ],
       [ "visible", "d0/d55/classwte_1_1cmp_1_1visible.html", "d0/d55/classwte_1_1cmp_1_1visible" ]
     ] ],
     [ "mgr", null, [
@@ -44,6 +47,7 @@ var namespacewte =
       [ "colision", "d2/d54/classwte_1_1sys_1_1colision.html", "d2/d54/classwte_1_1sys_1_1colision" ],
       [ "input", "d3/deb/classwte_1_1sys_1_1input.html", "d3/deb/classwte_1_1sys_1_1input" ],
       [ "logic", "dc/d9f/classwte_1_1sys_1_1logic.html", "dc/d9f/classwte_1_1sys_1_1logic" ],
+      [ "movement", "d5/d8f/classwte_1_1sys_1_1movement.html", "d5/d8f/classwte_1_1sys_1_1movement" ],
       [ "system", "d2/d4c/classwte_1_1sys_1_1system.html", "d2/d4c/classwte_1_1sys_1_1system" ]
     ] ],
     [ "alert", "dc/d4f/classwte_1_1alert.html", null ],

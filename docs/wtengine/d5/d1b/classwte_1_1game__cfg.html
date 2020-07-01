@@ -93,11 +93,6 @@ $(document).ready(function(){initNavTree('d5/d1b/classwte_1_1game__cfg.html','..
 <div class="title">wte::game_cfg Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Game config map.  
- <a href="../../d5/d1b/classwte_1_1game__cfg.html#details">More...</a></p>
-
-<p><code>#include &lt;game_cfg.hpp&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for wte::game_cfg:</div>
 <div class="dyncontent">
@@ -192,10 +187,7 @@ std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" va
 static std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_map</b></td></tr>
 <tr class="separator:a8ae9f876db7def5af08dfd4abcc9b46f inherit pro_static_attribs_classwte_1_1variable__map"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Game config map. </p>
-<p>Statics to store game config variables. Inherits map functionality from the <a class="el" href="../../d3/d6f/classwte_1_1variable__map.html" title="Variable map.">variable_map</a> class. This class provides load/save functions. Also provides math functions to manipulate the values. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="af81529e5c8dc28ff48d1bb9fe416dbd5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af81529e5c8dc28ff48d1bb9fe416dbd5">&#9670;&nbsp;</a></span>add()</h2>
 
@@ -239,7 +231,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">var</td><td>Variable name. </td></tr>
+    <tr><td class="paramname">var</td><td><a class="el" href="../../d2/d3c/class_variable.html">Variable</a> name. </td></tr>
     <tr><td class="paramname">val</td><td>Value to add by. </td></tr>
   </table>
   </dd>
@@ -324,7 +316,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">var</td><td>Variable name. </td></tr>
+    <tr><td class="paramname">var</td><td><a class="el" href="../../d2/d3c/class_variable.html">Variable</a> name. </td></tr>
     <tr><td class="paramname">val</td><td>Value to divide by. </td></tr>
   </table>
   </dd>
@@ -360,7 +352,7 @@ template&lt;typename T &gt; </div>
 <p>Get value. Returns by string. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">var</td><td>Variable to get. </td></tr>
+    <tr><td class="paramname">var</td><td><a class="el" href="../../d2/d3c/class_variable.html">Variable</a> to get. </td></tr>
   </table>
   </dd>
 </dl>
@@ -403,7 +395,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">var</td><td>Variable to get. </td></tr>
+    <tr><td class="paramname">var</td><td><a class="el" href="../../d2/d3c/class_variable.html">Variable</a> to get. </td></tr>
   </table>
   </dd>
 </dl>
@@ -436,7 +428,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p>Check if a variable is registered in the map. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">var</td><td>Variable name to check. </td></tr>
+    <tr><td class="paramname">var</td><td><a class="el" href="../../d2/d3c/class_variable.html">Variable</a> name to check. </td></tr>
   </table>
   </dd>
 </dl>
@@ -520,7 +512,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">var</td><td>Variable name. </td></tr>
+    <tr><td class="paramname">var</td><td><a class="el" href="../../d2/d3c/class_variable.html">Variable</a> name. </td></tr>
     <tr><td class="paramname">val</td><td>Value to multiply by. </td></tr>
   </table>
   </dd>
@@ -556,7 +548,7 @@ template&lt;typename T &gt; </div>
 <p>Create a new entry in the map. Call this first before accessing. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">expr</td><td>Variable and value expresion (var=val) </td></tr>
+    <tr><td class="paramname">expr</td><td><a class="el" href="../../d2/d3c/class_variable.html">Variable</a> and value expresion (var=val) </td></tr>
   </table>
   </dd>
 </dl>
@@ -601,7 +593,7 @@ template&lt;typename T &gt; </div>
 <p>Create a new entry in the map. Call this first before accessing. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">var</td><td>Variable name. </td></tr>
+    <tr><td class="paramname">var</td><td><a class="el" href="../../d2/d3c/class_variable.html">Variable</a> name. </td></tr>
     <tr><td class="paramname">val</td><td>Initial value of variable. </td></tr>
   </table>
   </dd>
@@ -635,7 +627,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p>Save a game config variable to file. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">var</td><td>Variable name. </td></tr>
+    <tr><td class="paramname">var</td><td><a class="el" href="../../d2/d3c/class_variable.html">Variable</a> name. </td></tr>
   </table>
   </dd>
 </dl>
@@ -668,7 +660,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p>Set based on string </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">expr</td><td>Variable and value expresion (var=val) </td></tr>
+    <tr><td class="paramname">expr</td><td><a class="el" href="../../d2/d3c/class_variable.html">Variable</a> and value expresion (var=val) </td></tr>
   </table>
   </dd>
 </dl>
@@ -711,7 +703,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p>Set key to value. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">var</td><td>Variable name to set. </td></tr>
+    <tr><td class="paramname">var</td><td><a class="el" href="../../d2/d3c/class_variable.html">Variable</a> name to set. </td></tr>
     <tr><td class="paramname">val</td><td>Value to set. </td></tr>
   </table>
   </dd>
@@ -796,7 +788,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">var</td><td>Variable name. </td></tr>
+    <tr><td class="paramname">var</td><td><a class="el" href="../../d2/d3c/class_variable.html">Variable</a> name. </td></tr>
     <tr><td class="paramname">val</td><td>Value to subtract by. </td></tr>
   </table>
   </dd>
@@ -814,7 +806,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/ddf/namespacewte.html">wte</a></li><li class="navelem"><a class="el" href="../../d5/d1b/classwte_1_1game__cfg.html">game_cfg</a></li>
-    <li class="footer">Generated on Mon Jun 29 2020 12:34:11 for WTEngine by
+    <li class="footer">Generated on Tue Jun 30 2020 19:59:02 for WTEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

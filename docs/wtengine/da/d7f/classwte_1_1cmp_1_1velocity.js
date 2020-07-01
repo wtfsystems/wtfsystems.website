@@ -1,5 +1,6 @@
 var classwte_1_1cmp_1_1velocity =
 [
-    [ "velocity", "da/d7f/classwte_1_1cmp_1_1velocity.html#ac378dd9764f96d690575acc568491fff", null ],
-    [ "speed", "da/d7f/classwte_1_1cmp_1_1velocity.html#a1df58b1cda67457febe5a2778e89e06e", null ]
+    [ "velocity", "da/d7f/classwte_1_1cmp_1_1velocity.html#ac0fec5e9a5f96b798535110217fb0b15", null ],
+    [ "get_speed", "da/d7f/classwte_1_1cmp_1_1velocity.html#a77f2dd293f8417b859de8ee700ba6551", null ],
+    [ "set_speed", "da/d7f/classwte_1_1cmp_1_1velocity.html#a2c515823f34cb32d7088e5affa82b73f", null ]
 ];
