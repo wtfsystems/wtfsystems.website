@@ -1,7 +1,7 @@
 var classwte_1_1cmp_1_1animator =
 [
     [ "~animator", "d2/d55/classwte_1_1cmp_1_1animator.html#ab45ba9123fff3d48d01cbcd375243755", null ],
-    [ "animator", "d2/d55/classwte_1_1cmp_1_1animator.html#a99d7accf7e8b98eb6deaa0eaa14d26e5", null ],
+    [ "animator", "d2/d55/classwte_1_1cmp_1_1animator.html#a69a7361a43ad8064bc9cebeecbec9142", null ],
     [ "clear_tint", "d2/d55/classwte_1_1cmp_1_1animator.html#a2838aebefde8bb9431cfce66e9a6a5ca", null ],
     [ "draw_tinted", "d2/d55/classwte_1_1cmp_1_1animator.html#ae90c71e608cbf595d0992634e4738f07", null ],
     [ "get_bitmap", "d2/d55/classwte_1_1cmp_1_1animator.html#a747dfac7815f44c7472a52f8da405943", null ],

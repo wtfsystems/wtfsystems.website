@@ -25,6 +25,7 @@ var annotated_dup =
     [ "Input", "d4/d7b/class_input.html", null ],
     [ "Input", "d4/d7b/class_input.html", null ],
     [ "Input", "d4/d7b/class_input.html", null ],
+    [ "Input", "d4/d7b/class_input.html", null ],
     [ "Location", "d8/de6/class_location.html", null ],
     [ "Logic", "da/df6/class_logic.html", null ],
     [ "Makes", "d1/d49/class_makes.html", null ],

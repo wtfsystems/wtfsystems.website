@@ -2,6 +2,7 @@ var classwte_1_1cmp_1_1bitmap__map =
 [
     [ "~bitmap_map", "da/d4e/classwte_1_1cmp_1_1bitmap__map.html#a34c48cce0a50530390e15182725e05a9", null ],
     [ "bitmap_map", "da/d4e/classwte_1_1cmp_1_1bitmap__map.html#adba9f982ab67b36cc46d8ee410cf3c6e", null ],
+    [ "delete_bitmap", "da/d4e/classwte_1_1cmp_1_1bitmap__map.html#ab5f84cd3600e034c975f10a55ee99ec1", null ],
     [ "draw_bitmap", "da/d4e/classwte_1_1cmp_1_1bitmap__map.html#a6af7c3a6a732911f5b66d543bb7deca0", null ],
     [ "draw_bitmap_region", "da/d4e/classwte_1_1cmp_1_1bitmap__map.html#a860b895eb4a0a9e0c0a1421cccf7949d", null ],
     [ "draw_rotated_bitmap", "da/d4e/classwte_1_1cmp_1_1bitmap__map.html#af028efafd8dd7cdc76f76ae61af7db71", null ],

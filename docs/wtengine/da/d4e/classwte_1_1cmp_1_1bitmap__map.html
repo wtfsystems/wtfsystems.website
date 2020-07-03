@@ -112,6 +112,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a593545cb6bcb281a0a0e4aa403689cd1"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4e/classwte_1_1cmp_1_1bitmap__map.html#a593545cb6bcb281a0a0e4aa403689cd1">load_bitmap</a> (const std::string &amp;label, const std::string &amp;fname)</td></tr>
 <tr class="memdesc:a593545cb6bcb281a0a0e4aa403689cd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a bitmap. Store in a map for reference to later. Call this during entity creation.  <a href="../../da/d4e/classwte_1_1cmp_1_1bitmap__map.html#a593545cb6bcb281a0a0e4aa403689cd1">More...</a><br /></td></tr>
 <tr class="separator:a593545cb6bcb281a0a0e4aa403689cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5f84cd3600e034c975f10a55ee99ec1"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4e/classwte_1_1cmp_1_1bitmap__map.html#ab5f84cd3600e034c975f10a55ee99ec1">delete_bitmap</a> (const std::string &amp;label)</td></tr>
+<tr class="separator:ab5f84cd3600e034c975f10a55ee99ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6af7c3a6a732911f5b66d543bb7deca0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4e/classwte_1_1cmp_1_1bitmap__map.html#a6af7c3a6a732911f5b66d543bb7deca0">draw_bitmap</a> (const std::string &amp;label, const float &amp;dx, const float &amp;dy, const int &amp;flags)</td></tr>
 <tr class="separator:a6af7c3a6a732911f5b66d543bb7deca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a570af86169c185d0196f5820e1567d8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4e/classwte_1_1cmp_1_1bitmap__map.html#a570af86169c185d0196f5820e1567d8e">draw_tinted_bitmap</a> (const std::string &amp;label, const ALLEGRO_COLOR &amp;tint, const float &amp;dx, const float &amp;dy, const int &amp;flags)</td></tr>
@@ -206,6 +208,39 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab5f84cd3600e034c975f10a55ee99ec1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5f84cd3600e034c975f10a55ee99ec1">&#9670;&nbsp;</a></span>delete_bitmap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const bool wte::cmp::bitmap_map::delete_bitmap </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>label</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Delete a bitmap from the map. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">labal</td><td>Label of saved bitmap. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if removed, false if not. </dd></dl>
+
+</div>
+</div>
 <a id="a6af7c3a6a732911f5b66d543bb7deca0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6af7c3a6a732911f5b66d543bb7deca0">&#9670;&nbsp;</a></span>draw_bitmap()</h2>
 
@@ -1257,7 +1292,7 @@ Protected Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/ddf/namespacewte.html">wte</a></li><li class="navelem"><b>cmp</b></li><li class="navelem"><a class="el" href="../../da/d4e/classwte_1_1cmp_1_1bitmap__map.html">bitmap_map</a></li>
-    <li class="footer">Generated on Tue Jun 30 2020 19:59:02 for WTEngine by
+    <li class="footer">Generated on Thu Jul 2 2020 23:25:38 for WTEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

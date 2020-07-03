@@ -25,7 +25,8 @@ var hierarchy =
       [ "wte::cmp::dispatcher", "d2/d00/classwte_1_1cmp_1_1dispatcher.html", null ],
       [ "wte::cmp::enabled", "d4/d34/classwte_1_1cmp_1_1enabled.html", null ],
       [ "wte::cmp::hitbox", "de/dfa/classwte_1_1cmp_1_1hitbox.html", null ],
-      [ "wte::cmp::input_handler", "d7/d84/classwte_1_1cmp_1_1input__handler.html", null ],
+      [ "wte::cmp::input_button", "dd/d34/classwte_1_1cmp_1_1input__button.html", null ],
+      [ "wte::cmp::input_directional", "d1/dbb/classwte_1_1cmp_1_1input__directional.html", null ],
       [ "wte::cmp::location", "de/dea/classwte_1_1cmp_1_1location.html", null ],
       [ "wte::cmp::sample_loop", "dd/d36/classwte_1_1cmp_1_1sample__loop.html", null ],
       [ "wte::cmp::team", "db/d76/classwte_1_1cmp_1_1team.html", null ],
@@ -53,6 +54,7 @@ var hierarchy =
     [ "Input", "d4/d7b/class_input.html", null ],
     [ "Input", "d4/d7b/class_input.html", null ],
     [ "Input", "d4/d7b/class_input.html", null ],
+    [ "Input", "d4/d7b/class_input.html", null ],
     [ "wte::input_flags", "d0/dac/classwte_1_1input__flags.html", null ],
     [ "Location", "d8/de6/class_location.html", null ],
     [ "Logic", "da/df6/class_logic.html", null ],
@@ -61,8 +63,8 @@ var hierarchy =
       [ "wte::mgr::input_manager", "d2/d27/classwte_1_1mgr_1_1input__manager.html", null ]
     ] ],
     [ "Makes", "d1/d49/class_makes.html", null ],
-    [ "Manager", "d8/d3d/class_manager.html", null ],
     [ "wte::mgr::manager< derived >", "d4/d4e/classwte_1_1mgr_1_1manager.html", null ],
+    [ "Manager", "d8/d3d/class_manager.html", null ],
     [ "wte::mgr::manager< audio_manager >", "d4/d4e/classwte_1_1mgr_1_1manager.html", [
       [ "wte::mgr::audio_manager", "df/da2/classwte_1_1mgr_1_1audio__manager.html", null ]
     ] ],
@@ -104,6 +106,7 @@ var hierarchy =
     [ "Render", "da/d7f/class_render.html", null ],
     [ "Sample", "d4/d72/class_sample.html", null ],
     [ "Sprite", "d7/dbf/class_sprite.html", null ],
+    [ "System", "d9/d16/class_system.html", null ],
     [ "wte::sys::system", "d2/d4c/classwte_1_1sys_1_1system.html", [
       [ "wte::sys::animate", "dd/d18/classwte_1_1sys_1_1animate.html", null ],
       [ "wte::sys::colision", "d2/d54/classwte_1_1sys_1_1colision.html", null ],
@@ -111,7 +114,6 @@ var hierarchy =
       [ "wte::sys::logic", "dc/d9f/classwte_1_1sys_1_1logic.html", null ],
       [ "wte::sys::movement", "d5/d8f/classwte_1_1sys_1_1movement.html", null ]
     ] ],
-    [ "System", "d9/d16/class_system.html", null ],
     [ "System", "d9/d16/class_system.html", null ],
     [ "Team", "d1/d35/class_team.html", null ],
     [ "Variable", "d2/d3c/class_variable.html", null ],
