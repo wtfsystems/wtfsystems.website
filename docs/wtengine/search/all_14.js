@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['wte_300',['wte',['../d4/ddf/namespacewte.html',1,'']]],
-  ['wte_5fdisplay_301',['wte_display',['../dd/dd5/classwte_1_1wte__display.html',1,'wte::wte_display'],['../dd/dd5/classwte_1_1wte__display.html#a3ad870318c50a1b8f66bbd7bb1283bde',1,'wte::wte_display::wte_display()']]],
-  ['wte_5fload_302',['wte_load',['../d5/d5b/classwte_1_1wte__main.html#a47633aebc3abc11f5c4b660b084e2fe9',1,'wte::wte_main']]],
-  ['wte_5fmain_303',['wte_main',['../d5/d5b/classwte_1_1wte__main.html',1,'wte::wte_main'],['../d5/d5b/classwte_1_1wte__main.html#aebdc668b3a253385e7ba854de0f80efb',1,'wte::wte_main::wte_main(const wte_main &amp;)=delete'],['../d5/d5b/classwte_1_1wte__main.html#a462b43902ec1aa628149819901ff4acc',1,'wte::wte_main::wte_main(const int argc, char **argv, const std::string &amp;title)']]],
-  ['wte_5funload_304',['wte_unload',['../d5/d5b/classwte_1_1wte__main.html#a84159783c02ff53973691ef42f3cb132',1,'wte::wte_main']]],
-  ['wtengine_305',['WTEngine',['../d6/ddb/class_w_t_engine.html',1,'']]]
+  ['variable_306',['Variable',['../d2/d3c/class_variable.html',1,'']]],
+  ['variable_5fmap_307',['variable_map',['../d3/d6f/classwte_1_1variable__map.html',1,'wte::variable_map&lt; derived &gt;'],['../d3/d6f/classwte_1_1variable__map.html#a51efa10c3fe1e0e2e5509143e80f11d1',1,'wte::variable_map::variable_map()']]],
+  ['variable_5fmap_3c_20engine_5fcfg_20_3e_308',['variable_map&lt; engine_cfg &gt;',['../d3/d6f/classwte_1_1variable__map.html',1,'wte']]],
+  ['variable_5fmap_3c_20game_5fcfg_20_3e_309',['variable_map&lt; game_cfg &gt;',['../d3/d6f/classwte_1_1variable__map.html',1,'wte']]],
+  ['velocity_310',['Velocity',['../dc/d38/class_velocity.html',1,'Velocity'],['../da/d7f/classwte_1_1cmp_1_1velocity.html',1,'wte::cmp::velocity'],['../da/d7f/classwte_1_1cmp_1_1velocity.html#a9a23604be0244d2e656e940647f53728',1,'wte::cmp::velocity::velocity(void)'],['../da/d7f/classwte_1_1cmp_1_1velocity.html#ac0fec5e9a5f96b798535110217fb0b15',1,'wte::cmp::velocity::velocity(const float v)'],['../da/d7f/classwte_1_1cmp_1_1velocity.html#a21891b17bdbd6dbc7b8085fc71ff2026',1,'wte::cmp::velocity::velocity(const float xv, const float yv)']]],
+  ['visible_311',['visible',['../d0/d55/classwte_1_1cmp_1_1visible.html',1,'wte::cmp::visible'],['../d2/dbe/class_visible.html',1,'Visible'],['../d0/d55/classwte_1_1cmp_1_1visible.html#ace6e2ff6c39bd364801f5da4e0dcdd0a',1,'wte::cmp::visible::visible()'],['../d0/d55/classwte_1_1cmp_1_1visible.html#a74b7aab42b787f3bc445ea27f1461e0e',1,'wte::cmp::visible::visible(const bool v)']]]
 ];

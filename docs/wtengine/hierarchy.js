@@ -54,25 +54,20 @@ var hierarchy =
     [ "Input", "d4/d7b/class_input.html", null ],
     [ "Input", "d4/d7b/class_input.html", null ],
     [ "Input", "d4/d7b/class_input.html", null ],
-    [ "Input", "d4/d7b/class_input.html", null ],
     [ "wte::input_flags", "d0/dac/classwte_1_1input__flags.html", null ],
     [ "Location", "d8/de6/class_location.html", null ],
     [ "Logic", "da/df6/class_logic.html", null ],
     [ "wte::mgr::make_thread", "d6/d47/classwte_1_1mgr_1_1make__thread.html", [
-      [ "wte::mgr::audio_manager", "df/da2/classwte_1_1mgr_1_1audio__manager.html", null ],
-      [ "wte::mgr::input_manager", "d2/d27/classwte_1_1mgr_1_1input__manager.html", null ]
+      [ "wte::mgr::audio_manager", "df/da2/classwte_1_1mgr_1_1audio__manager.html", null ]
     ] ],
     [ "Makes", "d1/d49/class_makes.html", null ],
-    [ "wte::mgr::manager< derived >", "d4/d4e/classwte_1_1mgr_1_1manager.html", null ],
     [ "Manager", "d8/d3d/class_manager.html", null ],
+    [ "wte::mgr::manager< derived >", "d4/d4e/classwte_1_1mgr_1_1manager.html", null ],
     [ "wte::mgr::manager< audio_manager >", "d4/d4e/classwte_1_1mgr_1_1manager.html", [
       [ "wte::mgr::audio_manager", "df/da2/classwte_1_1mgr_1_1audio__manager.html", null ]
     ] ],
     [ "wte::mgr::manager< entity_manager >", "d4/d4e/classwte_1_1mgr_1_1manager.html", [
       [ "wte::mgr::entity_manager", "d3/db3/classwte_1_1mgr_1_1entity__manager.html", null ]
-    ] ],
-    [ "wte::mgr::manager< input_manager >", "d4/d4e/classwte_1_1mgr_1_1manager.html", [
-      [ "wte::mgr::input_manager", "d2/d27/classwte_1_1mgr_1_1input__manager.html", null ]
     ] ],
     [ "wte::mgr::manager< menu_manager >", "d4/d4e/classwte_1_1mgr_1_1manager.html", [
       [ "wte::mgr::menu_manager", "d7/d0c/classwte_1_1mgr_1_1menu__manager.html", null ]
@@ -89,7 +84,9 @@ var hierarchy =
     [ "wte::mgr::manager< system_manager >", "d4/d4e/classwte_1_1mgr_1_1manager.html", [
       [ "wte::mgr::system_manager", "df/d08/classwte_1_1mgr_1_1system__manager.html", null ]
     ] ],
+    [ "Menu", "d2/db8/class_menu.html", null ],
     [ "wte::mnu::menu", "d4/dd6/classwte_1_1mnu_1_1menu.html", null ],
+    [ "Menu", "d2/db8/class_menu.html", null ],
     [ "Menu", "d2/db8/class_menu.html", null ],
     [ "wte::mnu::menu_item", "db/d25/classwte_1_1mnu_1_1menu__item.html", [
       [ "wte::mnu::menu_item_action", "d0/dbf/classwte_1_1mnu_1_1menu__item__action.html", null ],
@@ -98,15 +95,14 @@ var hierarchy =
       [ "wte::mnu::menu_item_setting", "df/dd3/classwte_1_1mnu_1_1menu__item__setting.html", null ],
       [ "wte::mnu::menu_item_toggle", "d5/d02/classwte_1_1mnu_1_1menu__item__toggle.html", null ]
     ] ],
-    [ "wte::message", "d0/d6b/classwte_1_1message.html", null ],
     [ "Message", "d4/d7f/class_message.html", null ],
+    [ "wte::message", "d0/d6b/classwte_1_1message.html", null ],
     [ "Message", "d4/d7f/class_message.html", null ],
     [ "Movement", "d1/de2/class_movement.html", null ],
     [ "Overlay", "d6/d6e/class_overlay.html", null ],
     [ "Render", "da/d7f/class_render.html", null ],
     [ "Sample", "d4/d72/class_sample.html", null ],
     [ "Sprite", "d7/dbf/class_sprite.html", null ],
-    [ "System", "d9/d16/class_system.html", null ],
     [ "wte::sys::system", "d2/d4c/classwte_1_1sys_1_1system.html", [
       [ "wte::sys::animate", "dd/d18/classwte_1_1sys_1_1animate.html", null ],
       [ "wte::sys::colision", "d2/d54/classwte_1_1sys_1_1colision.html", null ],
@@ -114,6 +110,7 @@ var hierarchy =
       [ "wte::sys::logic", "dc/d9f/classwte_1_1sys_1_1logic.html", null ],
       [ "wte::sys::movement", "d5/d8f/classwte_1_1sys_1_1movement.html", null ]
     ] ],
+    [ "System", "d9/d16/class_system.html", null ],
     [ "System", "d9/d16/class_system.html", null ],
     [ "Team", "d1/d35/class_team.html", null ],
     [ "Variable", "d2/d3c/class_variable.html", null ],
@@ -128,6 +125,11 @@ var hierarchy =
     [ "Visible", "d2/dbe/class_visible.html", null ],
     [ "wte::wte_display", "dd/dd5/classwte_1_1wte__display.html", [
       [ "wte::wte_main", "d5/d5b/classwte_1_1wte__main.html", null ]
+    ] ],
+    [ "wte::wte_input_map", "dc/db0/classwte_1_1wte__input__map.html", [
+      [ "wte::wte_input", "d9/da1/classwte_1_1wte__input.html", [
+        [ "wte::wte_main", "d5/d5b/classwte_1_1wte__main.html", null ]
+      ] ]
     ] ],
     [ "WTEngine", "d6/ddb/class_w_t_engine.html", null ]
 ];

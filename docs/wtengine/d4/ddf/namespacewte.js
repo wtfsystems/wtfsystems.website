@@ -25,7 +25,6 @@ var namespacewte =
       [ "audio_manager", "df/da2/classwte_1_1mgr_1_1audio__manager.html", "df/da2/classwte_1_1mgr_1_1audio__manager" ],
       [ "engine_time", "da/d1b/classwte_1_1mgr_1_1engine__time.html", "da/d1b/classwte_1_1mgr_1_1engine__time" ],
       [ "entity_manager", "d3/db3/classwte_1_1mgr_1_1entity__manager.html", "d3/db3/classwte_1_1mgr_1_1entity__manager" ],
-      [ "input_manager", "d2/d27/classwte_1_1mgr_1_1input__manager.html", "d2/d27/classwte_1_1mgr_1_1input__manager" ],
       [ "make_thread", "d6/d47/classwte_1_1mgr_1_1make__thread.html", "d6/d47/classwte_1_1mgr_1_1make__thread" ],
       [ "manager", "d4/d4e/classwte_1_1mgr_1_1manager.html", "d4/d4e/classwte_1_1mgr_1_1manager" ],
       [ "menu_manager", "d7/d0c/classwte_1_1mgr_1_1menu__manager.html", "d7/d0c/classwte_1_1mgr_1_1menu__manager" ],
@@ -59,5 +58,7 @@ var namespacewte =
     [ "message", "d0/d6b/classwte_1_1message.html", "d0/d6b/classwte_1_1message" ],
     [ "variable_map", "d3/d6f/classwte_1_1variable__map.html", "d3/d6f/classwte_1_1variable__map" ],
     [ "wte_display", "dd/dd5/classwte_1_1wte__display.html", "dd/dd5/classwte_1_1wte__display" ],
+    [ "wte_input", "d9/da1/classwte_1_1wte__input.html", "d9/da1/classwte_1_1wte__input" ],
+    [ "wte_input_map", "dc/db0/classwte_1_1wte__input__map.html", "dc/db0/classwte_1_1wte__input__map" ],
     [ "wte_main", "d5/d5b/classwte_1_1wte__main.html", "d5/d5b/classwte_1_1wte__main" ]
 ];

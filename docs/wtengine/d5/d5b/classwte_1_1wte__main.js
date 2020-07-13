@@ -14,8 +14,6 @@ var classwte_1_1wte__main =
     [ "on_menu_open", "d5/d5b/classwte_1_1wte__main.html#a5f3d81355e993f17be405f5781ff657e", null ],
     [ "operator=", "d5/d5b/classwte_1_1wte__main.html#a8baa07943d1d1e97a1e2a9d521f207ec", null ],
     [ "out_of_focus", "d5/d5b/classwte_1_1wte__main.html#afd095b5bf5cd3a8728f8224e42332b9e", null ],
-    [ "wte_load", "d5/d5b/classwte_1_1wte__main.html#a47633aebc3abc11f5c4b660b084e2fe9", null ],
-    [ "wte_unload", "d5/d5b/classwte_1_1wte__main.html#a84159783c02ff53973691ef42f3cb132", null ],
     [ "menus", "d5/d5b/classwte_1_1wte__main.html#a508b3f396bbe826f9605a422ca4f6339", null ],
     [ "messages", "d5/d5b/classwte_1_1wte__main.html#a275cf8c414dddc702ecb01007679eacb", null ],
     [ "spawner", "d5/d5b/classwte_1_1wte__main.html#a9e1313c5e233b431b076002805f8b74e", null ],
