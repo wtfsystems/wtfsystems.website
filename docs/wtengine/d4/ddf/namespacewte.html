@@ -150,13 +150,11 @@ Typedefs</h2></td></tr>
 <tr class="separator:ae0779b06e2731efe7a169ea34facbb49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb06d3544221b0d8128e07b63ff0760e"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; cmp::component_csptr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddf/namespacewte.html#adb06d3544221b0d8128e07b63ff0760e">const_entity_container</a></td></tr>
 <tr class="separator:adb06d3544221b0d8128e07b63ff0760e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56755629ebb58790ea2caba5b704ff51"><td class="memTemplParams" colspan="2"><a id="a56755629ebb58790ea2caba5b704ff51"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a56755629ebb58790ea2caba5b704ff51"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>component_container</b> = std::map&lt; const <a class="el" href="../../d4/ddf/namespacewte.html#abf2544b3056d60f0182109d89eab289a">entity_id</a>, std::shared_ptr&lt; T &gt; &gt;</td></tr>
+<tr class="memitem:a56755629ebb58790ea2caba5b704ff51"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a56755629ebb58790ea2caba5b704ff51"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d4/ddf/namespacewte.html#a56755629ebb58790ea2caba5b704ff51">component_container</a> = std::map&lt; const <a class="el" href="../../d4/ddf/namespacewte.html#abf2544b3056d60f0182109d89eab289a">entity_id</a>, std::shared_ptr&lt; T &gt; &gt;</td></tr>
 <tr class="separator:a56755629ebb58790ea2caba5b704ff51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fc4f86a660a0c1c54c06a1186c7d0f8"><td class="memTemplParams" colspan="2"><a id="a4fc4f86a660a0c1c54c06a1186c7d0f8"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a4fc4f86a660a0c1c54c06a1186c7d0f8"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>const_component_container</b> = std::map&lt; const <a class="el" href="../../d4/ddf/namespacewte.html#abf2544b3056d60f0182109d89eab289a">entity_id</a>, std::shared_ptr&lt; const T &gt; &gt;</td></tr>
+<tr class="memitem:a4fc4f86a660a0c1c54c06a1186c7d0f8"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a4fc4f86a660a0c1c54c06a1186c7d0f8"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d4/ddf/namespacewte.html#a4fc4f86a660a0c1c54c06a1186c7d0f8">const_component_container</a> = std::map&lt; const <a class="el" href="../../d4/ddf/namespacewte.html#abf2544b3056d60f0182109d89eab289a">entity_id</a>, std::shared_ptr&lt; const T &gt; &gt;</td></tr>
 <tr class="separator:a4fc4f86a660a0c1c54c06a1186c7d0f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b889fdc5d76fcd57b54f6db840e8c39"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_multimap&lt; <a class="el" href="../../d4/ddf/namespacewte.html#abf2544b3056d60f0182109d89eab289a">entity_id</a>, cmp::component_sptr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddf/namespacewte.html#a4b889fdc5d76fcd57b54f6db840e8c39">world_map</a></td></tr>
 <tr class="separator:a4b889fdc5d76fcd57b54f6db840e8c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -525,6 +523,50 @@ Enumerations</h2></td></tr>
 <dl class="section date"><dt>Date</dt><dd>2019-2020</dd></dl>
 <p>The main engine object. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="a56755629ebb58790ea2caba5b704ff51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56755629ebb58790ea2caba5b704ff51">&#9670;&nbsp;</a></span>component_container</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d4/ddf/namespacewte.html#a56755629ebb58790ea2caba5b704ff51">wte::component_container</a> = typedef std::map&lt;const <a class="el" href="../../d4/ddf/namespacewte.html#abf2544b3056d60f0182109d89eab289a">entity_id</a>, std::shared_ptr&lt;T&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Container for storing components of similar type. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Component</td><td>type </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4fc4f86a660a0c1c54c06a1186c7d0f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fc4f86a660a0c1c54c06a1186c7d0f8">&#9670;&nbsp;</a></span>const_component_container</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d4/ddf/namespacewte.html#a4fc4f86a660a0c1c54c06a1186c7d0f8">wte::const_component_container</a> = typedef std::map&lt;const <a class="el" href="../../d4/ddf/namespacewte.html#abf2544b3056d60f0182109d89eab289a">entity_id</a>, std::shared_ptr&lt;const T&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constant container for storing components of similar type. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Component</td><td>type </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="adb06d3544221b0d8128e07b63ff0760e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb06d3544221b0d8128e07b63ff0760e">&#9670;&nbsp;</a></span>const_entity_container</h2>
 
@@ -727,7 +769,7 @@ Enumerations</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/ddf/namespacewte.html">wte</a></li>
-    <li class="footer">Generated on Mon Jul 20 2020 17:00:29 for WTEngine by
+    <li class="footer">Generated on Mon Jul 20 2020 17:15:44 for WTEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>
