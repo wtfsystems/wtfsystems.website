@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['name_727',['name',['../d2/d4c/classwte_1_1sys_1_1system.html#a381086c8e07af1e9cf7f9cb2705141a8',1,'wte::sys::system']]]
+  ['display_746',['display',['../dd/dd5/classwte_1_1wte__display.html#ac46ecd44bea8a4464b2dffaf46a0350a',1,'wte::wte_display']]]
 ];

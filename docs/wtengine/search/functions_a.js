@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['keep_5frunning_557',['keep_running',['../d6/d47/classwte_1_1mgr_1_1make__thread.html#aeb86d7ba232cb8c280a4c32434281f68',1,'wte::mgr::make_thread']]]
+  ['joystick_5fcheck_574',['joystick_check',['../d0/dac/classwte_1_1input__flags.html#afbe34011f5e2905cf9faffaa5ae4307d',1,'wte::input_flags']]],
+  ['joystick_5ftoggle_575',['joystick_toggle',['../d0/dac/classwte_1_1input__flags.html#ac92d99d9b229902a4256e5c53c2ab7d5',1,'wte::input_flags']]]
 ];
