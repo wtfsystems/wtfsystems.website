@@ -93,6 +93,8 @@ $(document).ready(function(){initNavTree('d3/db3/classwte_1_1mgr_1_1entity__mana
 <div class="title">wte::mgr::entity_manager Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;entity_manager.hpp&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for wte::mgr::entity_manager:</div>
 <div class="dyncontent">
@@ -109,8 +111,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac521408509b2fc5dac8c16662fd47728"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7641d53241f770d7bbd2abf714d9292d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html#a7641d53241f770d7bbd2abf714d9292d">~entity_manager</a> ()</td></tr>
 <tr class="separator:a7641d53241f770d7bbd2abf714d9292d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24ac1cd73bf6b5a3e8c7a309bdc28e1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html#a24ac1cd73bf6b5a3e8c7a309bdc28e1b">clear</a> (void)</td></tr>
-<tr class="memdesc:a24ac1cd73bf6b5a3e8c7a309bdc28e1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the entity manager. Set the entity counter to zero and clear the entities and componenets.  <a href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html#a24ac1cd73bf6b5a3e8c7a309bdc28e1b">More...</a><br /></td></tr>
+<tr class="memitem:a24ac1cd73bf6b5a3e8c7a309bdc28e1b"><td class="memItemLeft" align="right" valign="top"><a id="a24ac1cd73bf6b5a3e8c7a309bdc28e1b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html#a24ac1cd73bf6b5a3e8c7a309bdc28e1b">clear</a> (void)</td></tr>
+<tr class="memdesc:a24ac1cd73bf6b5a3e8c7a309bdc28e1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the entity manager. Set the entity counter to zero and clear the entities and componenets. <br /></td></tr>
 <tr class="separator:a24ac1cd73bf6b5a3e8c7a309bdc28e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab39fed6033c5b58d2923c70fb245bbbe"><td class="memItemLeft" align="right" valign="top">const entity_id&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html#ab39fed6033c5b58d2923c70fb245bbbe">new_entity</a> (void)</td></tr>
 <tr class="memdesc:ab39fed6033c5b58d2923c70fb245bbbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new entity by name, using the next available ID. Throw error if there is no room for entities.  <a href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html#ab39fed6033c5b58d2923c70fb245bbbe">More...</a><br /></td></tr>
@@ -158,7 +161,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a257e0ed90b97a7a841bdeba6787be048"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all components for a particulair type. This will return a container of non-modifiable components casted to their type.  <a href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html#a257e0ed90b97a7a841bdeba6787be048">More...</a><br /></td></tr>
 <tr class="separator:a257e0ed90b97a7a841bdeba6787be048"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Store a collection of entities and their corresponding components in memory. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac521408509b2fc5dac8c16662fd47728"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac521408509b2fc5dac8c16662fd47728">&#9670;&nbsp;</a></span>entity_manager()</h2>
 
@@ -181,13 +186,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="../../d2/d96/class_entity.html">Entity</a> manager constructor. Start entity counter at 1 </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<p>Entity manager constructor. Start entity counter at 1 </p>
 
 </div>
 </div>
@@ -213,13 +212,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="../../d2/d96/class_entity.html">Entity</a> manager destructor. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<p>Entity manager destructor. </p>
 
 </div>
 </div>
@@ -261,7 +254,7 @@ Public Member Functions</h2></td></tr>
 <p>Add a new component to an entity. Entities can only have a single compoenent of each type. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">e_id</td><td><a class="el" href="../../d2/d96/class_entity.html">Entity</a> ID to add a component to. </td></tr>
+    <tr><td class="paramname">e_id</td><td>Entity ID to add a component to. </td></tr>
     <tr><td class="paramname">comp</td><td>Componenet to add. </td></tr>
   </table>
   </dd>
@@ -271,41 +264,6 @@ Public Member Functions</h2></td></tr>
 Return false if the entity already has a component of the same type. </dd>
 <dd>
 Return true on success. </dd></dl>
-
-</div>
-</div>
-<a id="a24ac1cd73bf6b5a3e8c7a309bdc28e1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24ac1cd73bf6b5a3e8c7a309bdc28e1b">&#9670;&nbsp;</a></span>clear()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void wte::mgr::entity_manager::clear </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Clear the entity manager. Set the entity counter to zero and clear the entities and componenets. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -336,13 +294,13 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p>Delete a component by type for an entity. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td><a class="el" href="../../d2/d00/class_component.html">Component</a> type. </td></tr>
+    <tr><td class="paramname">T</td><td>Component type. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">e_id</td><td><a class="el" href="../../d2/d96/class_entity.html">Entity</a> ID to delete component from. </td></tr>
+    <tr><td class="paramname">e_id</td><td>Entity ID to delete component from. </td></tr>
   </table>
   </dd>
 </dl>
@@ -449,7 +407,7 @@ template&lt;typename T &gt; </div>
 <p>Read the value of a component by type for an entity. Note that calling this for a component that does not exist will cause the program to fail. If there is a chance it does not exist, call <a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html#a8fb2cf8ab7c64131ac1fbced367e973a">has_component()</a> first. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td><a class="el" href="../../d2/d00/class_component.html">Component</a> type. </td></tr>
+    <tr><td class="paramname">T</td><td>Component type. </td></tr>
   </table>
   </dd>
 </dl>
@@ -492,13 +450,7 @@ template&lt;typename T &gt; </div>
 <p>Get all components for a particulair type. This will return a container of non-modifiable components casted to their type. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td><a class="el" href="../../d2/d00/class_component.html">Component</a> type. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
+    <tr><td class="paramname">T</td><td>Component type. </td></tr>
   </table>
   </dd>
 </dl>
@@ -529,13 +481,7 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get the entity reference vector. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns a vector of all entity IDs and names. </dd></dl>
+<p>Get the entity reference vector. </p><dl class="section return"><dt>Returns</dt><dd>Returns a vector of all entity IDs and names. </dd></dl>
 
 </div>
 </div>
@@ -564,7 +510,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p>Get all components related to an entity. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">e_id</td><td><a class="el" href="../../d2/d96/class_entity.html">Entity</a> ID to get components for. </td></tr>
+    <tr><td class="paramname">e_id</td><td>Entity ID to get components for. </td></tr>
   </table>
   </dd>
 </dl>
@@ -601,7 +547,7 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../d2/d96/class_entity.html">Entity</a> ID, WTE_ENTITY_ERROR if not found. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Entity ID, WTE_ENTITY_ERROR if not found. </dd></dl>
 
 </div>
 </div>
@@ -630,11 +576,11 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p>Get entity name. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">e_id</td><td><a class="el" href="../../d2/d96/class_entity.html">Entity</a> ID to get name for. </td></tr>
+    <tr><td class="paramname">e_id</td><td>Entity ID to get name for. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../d2/d96/class_entity.html">Entity</a> name string. Empty string if not found. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Entity name string. Empty string if not found. </dd></dl>
 
 </div>
 </div>
@@ -665,7 +611,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p>Check if an entity has a component by type. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td><a class="el" href="../../d2/d00/class_component.html">Component</a> type. </td></tr>
+    <tr><td class="paramname">T</td><td>Component type. </td></tr>
   </table>
   </dd>
 </dl>
@@ -706,12 +652,6 @@ Return false if it does not. </dd></dl>
 </div><div class="memdoc">
 
 <p>Create a new entity by name, using the next available ID. Throw error if there is no room for entities. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="section return"><dt>Returns</dt><dd>The newly created entity ID. WTE_ENTITY_ERROR on fail. </dd></dl>
 
 </div>
@@ -745,7 +685,7 @@ template&lt;typename T &gt; </div>
 <p>Set the value of a component by type for an entity. Note that calling this for a component that does not exist will cause the program to fail. If there is a chance it does not exist, call <a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html#a8fb2cf8ab7c64131ac1fbced367e973a">has_component()</a> first. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td><a class="el" href="../../d2/d00/class_component.html">Component</a> type. </td></tr>
+    <tr><td class="paramname">T</td><td>Component type. </td></tr>
   </table>
   </dd>
 </dl>
@@ -788,13 +728,7 @@ template&lt;typename T &gt; </div>
 <p>Set all components for a particulair type. This will return a container of modifiable components casted to their type. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td><a class="el" href="../../d2/d00/class_component.html">Component</a> type. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
+    <tr><td class="paramname">T</td><td>Component type. </td></tr>
   </table>
   </dd>
 </dl>
@@ -827,7 +761,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p>Set all components related to an entity. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">e_id</td><td><a class="el" href="../../d2/d96/class_entity.html">Entity</a> ID to set components for. </td></tr>
+    <tr><td class="paramname">e_id</td><td>Entity ID to set components for. </td></tr>
   </table>
   </dd>
 </dl>
@@ -870,8 +804,8 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p>Set the entity name. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">e_id</td><td><a class="el" href="../../d2/d96/class_entity.html">Entity</a> ID to set. </td></tr>
-    <tr><td class="paramname">name</td><td><a class="el" href="../../d2/d96/class_entity.html">Entity</a> name to set. </td></tr>
+    <tr><td class="paramname">e_id</td><td>Entity ID to set. </td></tr>
+    <tr><td class="paramname">name</td><td>Entity name to set. </td></tr>
   </table>
   </dd>
 </dl>
@@ -888,7 +822,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/ddf/namespacewte.html">wte</a></li><li class="navelem"><b>mgr</b></li><li class="navelem"><a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html">entity_manager</a></li>
-    <li class="footer">Generated on Sun Jul 12 2020 22:41:31 for WTEngine by
+    <li class="footer">Generated on Mon Jul 20 2020 16:28:48 for WTEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

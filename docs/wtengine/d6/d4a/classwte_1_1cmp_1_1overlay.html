@@ -93,15 +93,20 @@ $(document).ready(function(){initNavTree('d6/d4a/classwte_1_1cmp_1_1overlay.html
 <div class="title">wte::cmp::overlay Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Store an overlay bitmap and define drawing to it.  
+ <a href="../../d6/d4a/classwte_1_1cmp_1_1overlay.html#details">More...</a></p>
+
+<p><code>#include &lt;overlay.hpp&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for wte::cmp::overlay:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="../../d6/d4a/classwte_1_1cmp_1_1overlay.png" usemap="#wte::cmp::overlay_map" alt=""/>
   <map id="wte::cmp::overlay_map" name="wte::cmp::overlay_map">
-<area href="../../d2/d55/classwte_1_1cmp_1_1animator.html" alt="wte::cmp::animator" shape="rect" coords="0,56,132,80"/>
-<area href="../../da/d4e/classwte_1_1cmp_1_1bitmap__map.html" alt="wte::cmp::bitmap_map" shape="rect" coords="142,56,274,80"/>
-<area href="../../db/d74/classwte_1_1cmp_1_1component.html" alt="wte::cmp::component" shape="rect" coords="0,0,132,24"/>
+<area href="../../d2/d55/classwte_1_1cmp_1_1animator.html" title="Interface class for components with an animation process." alt="wte::cmp::animator" shape="rect" coords="0,56,132,80"/>
+<area href="../../da/d4e/classwte_1_1cmp_1_1bitmap__map.html" title="Stores a map of bitmaps. Extend this to add functionality to a component. Also includes wrappers to t..." alt="wte::cmp::bitmap_map" shape="rect" coords="142,56,274,80"/>
+<area href="../../db/d74/classwte_1_1cmp_1_1component.html" title="Interface class for creating a component." alt="wte::cmp::component" shape="rect" coords="0,0,132,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -111,8 +116,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad9341f1ecbdb6a97b290e5a233e183b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa65b571324c7eefd10799ba9035ca8e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4a/classwte_1_1cmp_1_1overlay.html#aa65b571324c7eefd10799ba9035ca8e6">~overlay</a> ()</td></tr>
 <tr class="separator:aa65b571324c7eefd10799ba9035ca8e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5820028eb8b53983b10d97fe09b2fb3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4a/classwte_1_1cmp_1_1overlay.html#a5820028eb8b53983b10d97fe09b2fb3c">reload_overlay_bitmap</a> (void)</td></tr>
-<tr class="memdesc:a5820028eb8b53983b10d97fe09b2fb3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reload the overlay bitmap. Called when the screen is updated.  <a href="../../d6/d4a/classwte_1_1cmp_1_1overlay.html#a5820028eb8b53983b10d97fe09b2fb3c">More...</a><br /></td></tr>
+<tr class="memitem:a5820028eb8b53983b10d97fe09b2fb3c"><td class="memItemLeft" align="right" valign="top"><a id="a5820028eb8b53983b10d97fe09b2fb3c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4a/classwte_1_1cmp_1_1overlay.html#a5820028eb8b53983b10d97fe09b2fb3c">reload_overlay_bitmap</a> (void)</td></tr>
+<tr class="memdesc:a5820028eb8b53983b10d97fe09b2fb3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reload the overlay bitmap. Called when the screen is updated. <br /></td></tr>
 <tr class="separator:a5820028eb8b53983b10d97fe09b2fb3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc18cab567104c4815cd50160a6aba48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4a/classwte_1_1cmp_1_1overlay.html#afc18cab567104c4815cd50160a6aba48">draw_text</a> (const std::string &amp;txt, const ALLEGRO_COLOR &amp;color, const float &amp;x, const float &amp;y, const int &amp;f)</td></tr>
 <tr class="separator:afc18cab567104c4815cd50160a6aba48"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -199,7 +205,9 @@ Additional Inherited Members</h2></td></tr>
 ALLEGRO_BITMAP *&#160;</td><td class="memItemRight" valign="bottom"><b>internal_bitmap</b></td></tr>
 <tr class="separator:a37a08afb2fa8ac4e9359e4bc41c5ea0c inherit pro_attribs_classwte_1_1cmp_1_1animator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Store an overlay bitmap and define drawing to it. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad9341f1ecbdb6a97b290e5a233e183b5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad9341f1ecbdb6a97b290e5a233e183b5">&#9670;&nbsp;</a></span>overlay()</h2>
 
@@ -257,10 +265,10 @@ ALLEGRO_BITMAP *&#160;</td><td class="memItemRight" valign="bottom"><b>internal_
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="../../d6/d6e/class_overlay.html">Overlay</a> constructor. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Overlay constructor. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">w</td><td><a class="el" href="../../d6/d6e/class_overlay.html">Overlay</a> width in pixels. </td></tr>
-    <tr><td class="paramname">h</td><td><a class="el" href="../../d6/d6e/class_overlay.html">Overlay</a> height in pixels. </td></tr>
+    <tr><td class="paramname">w</td><td>Overlay width in pixels. </td></tr>
+    <tr><td class="paramname">h</td><td>Overlay height in pixels. </td></tr>
     <tr><td class="paramname">x</td><td>Horizontal location of the overlay in pixels. </td></tr>
     <tr><td class="paramname">y</td><td>Verticle location of the overlay in pixels. </td></tr>
     <tr><td class="paramname">l</td><td>Layer for sorting. </td></tr>
@@ -268,7 +276,6 @@ ALLEGRO_BITMAP *&#160;</td><td class="memItemRight" valign="bottom"><b>internal_
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -294,13 +301,7 @@ ALLEGRO_BITMAP *&#160;</td><td class="memItemRight" valign="bottom"><b>internal_
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="../../d6/d6e/class_overlay.html">Overlay</a> destructor. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>Overlay destructor. </p>
 
 </div>
 </div>
@@ -366,7 +367,6 @@ ALLEGRO_BITMAP *&#160;</td><td class="memItemRight" valign="bottom"><b>internal_
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -393,13 +393,7 @@ ALLEGRO_BITMAP *&#160;</td><td class="memItemRight" valign="bottom"><b>internal_
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get X position. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>X position. </dd></dl>
+<p>Get X position. </p><dl class="section return"><dt>Returns</dt><dd>X position. </dd></dl>
 
 </div>
 </div>
@@ -426,48 +420,7 @@ ALLEGRO_BITMAP *&#160;</td><td class="memItemRight" valign="bottom"><b>internal_
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get Y position. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Y position. </dd></dl>
-
-</div>
-</div>
-<a id="a5820028eb8b53983b10d97fe09b2fb3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5820028eb8b53983b10d97fe09b2fb3c">&#9670;&nbsp;</a></span>reload_overlay_bitmap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void wte::cmp::overlay::reload_overlay_bitmap </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reload the overlay bitmap. Called when the screen is updated. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>Get Y position. </p><dl class="section return"><dt>Returns</dt><dd>Y position. </dd></dl>
 
 </div>
 </div>
@@ -500,7 +453,6 @@ ALLEGRO_BITMAP *&#160;</td><td class="memItemRight" valign="bottom"><b>internal_
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -513,7 +465,7 @@ ALLEGRO_BITMAP *&#160;</td><td class="memItemRight" valign="bottom"><b>internal_
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/ddf/namespacewte.html">wte</a></li><li class="navelem"><b>cmp</b></li><li class="navelem"><a class="el" href="../../d6/d4a/classwte_1_1cmp_1_1overlay.html">overlay</a></li>
-    <li class="footer">Generated on Sun Jul 12 2020 22:41:30 for WTEngine by
+    <li class="footer">Generated on Mon Jul 20 2020 16:28:48 for WTEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

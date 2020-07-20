@@ -95,16 +95,21 @@ $(document).ready(function(){initNavTree('d2/d55/classwte_1_1cmp_1_1animator.htm
 <div class="title">wte::cmp::animator Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Interface class for components with an animation process.  
+ <a href="../../d2/d55/classwte_1_1cmp_1_1animator.html#details">More...</a></p>
+
+<p><code>#include &lt;animator.hpp&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for wte::cmp::animator:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="../../d2/d55/classwte_1_1cmp_1_1animator.png" usemap="#wte::cmp::animator_map" alt=""/>
   <map id="wte::cmp::animator_map" name="wte::cmp::animator_map">
-<area href="../../db/d74/classwte_1_1cmp_1_1component.html" alt="wte::cmp::component" shape="rect" coords="143,0,276,24"/>
-<area href="../../dc/d3f/classwte_1_1cmp_1_1background.html" alt="wte::cmp::background" shape="rect" coords="0,112,133,136"/>
-<area href="../../d6/d4a/classwte_1_1cmp_1_1overlay.html" alt="wte::cmp::overlay" shape="rect" coords="143,112,276,136"/>
-<area href="../../d9/d0e/classwte_1_1cmp_1_1sprite.html" alt="wte::cmp::sprite" shape="rect" coords="286,112,419,136"/>
+<area href="../../db/d74/classwte_1_1cmp_1_1component.html" title="Interface class for creating a component." alt="wte::cmp::component" shape="rect" coords="143,0,276,24"/>
+<area href="../../dc/d3f/classwte_1_1cmp_1_1background.html" title="Store the background bitmap." alt="wte::cmp::background" shape="rect" coords="0,112,133,136"/>
+<area href="../../d6/d4a/classwte_1_1cmp_1_1overlay.html" title="Store an overlay bitmap and define drawing to it." alt="wte::cmp::overlay" shape="rect" coords="143,112,276,136"/>
+<area href="../../d9/d0e/classwte_1_1cmp_1_1sprite.html" title="Stores a sprite sheet and its animation process." alt="wte::cmp::sprite" shape="rect" coords="286,112,419,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -154,7 +159,9 @@ Protected Attributes</h2></td></tr>
 ALLEGRO_BITMAP *&#160;</td><td class="memItemRight" valign="bottom"><b>internal_bitmap</b></td></tr>
 <tr class="separator:a37a08afb2fa8ac4e9359e4bc41c5ea0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Interface class for components with an animation process. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab45ba9123fff3d48d01cbcd375243755"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab45ba9123fff3d48d01cbcd375243755">&#9670;&nbsp;</a></span>~animator()</h2>
 
@@ -177,13 +184,7 @@ ALLEGRO_BITMAP *&#160;</td><td class="memItemRight" valign="bottom"><b>internal_
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="../../dc/d2a/class_animator.html">Animator</a> destructor. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>Animator destructor. </p>
 
 </div>
 </div>
@@ -220,14 +221,13 @@ ALLEGRO_BITMAP *&#160;</td><td class="memItemRight" valign="bottom"><b>internal_
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="../../dc/d2a/class_animator.html">Animator</a> constructor. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Animator constructor. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">l</td><td>Layer for sorting. </td></tr>
     <tr><td class="paramname">func</td><td>Animation function. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -255,13 +255,7 @@ ALLEGRO_BITMAP *&#160;</td><td class="memItemRight" valign="bottom"><b>internal_
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Clear tint color. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>Clear tint color. </p>
 
 </div>
 </div>
@@ -288,13 +282,7 @@ ALLEGRO_BITMAP *&#160;</td><td class="memItemRight" valign="bottom"><b>internal_
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Check if the bitmap should be drawn tinted. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if tint set, false if tint cleared. </dd></dl>
+<p>Check if the bitmap should be drawn tinted. </p><dl class="section return"><dt>Returns</dt><dd>True if tint set, false if tint cleared. </dd></dl>
 
 </div>
 </div>
@@ -321,13 +309,7 @@ ALLEGRO_BITMAP *&#160;</td><td class="memItemRight" valign="bottom"><b>internal_
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Return the internal bitmap. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The internal bitmap. </dd></dl>
+<p>Return the internal bitmap. </p><dl class="section return"><dt>Returns</dt><dd>The internal bitmap. </dd></dl>
 
 </div>
 </div>
@@ -354,13 +336,7 @@ ALLEGRO_BITMAP *&#160;</td><td class="memItemRight" valign="bottom"><b>internal_
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get the tint color. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Allegro color. </dd></dl>
+<p>Get the tint color. </p><dl class="section return"><dt>Returns</dt><dd>Allegro color. </dd></dl>
 
 </div>
 </div>
@@ -444,7 +420,6 @@ ALLEGRO_BITMAP *&#160;</td><td class="memItemRight" valign="bottom"><b>internal_
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -471,13 +446,7 @@ ALLEGRO_BITMAP *&#160;</td><td class="memItemRight" valign="bottom"><b>internal_
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set drawing to the internal bitmap. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>Set drawing to the internal bitmap. </p>
 
 </div>
 </div>
@@ -510,7 +479,6 @@ ALLEGRO_BITMAP *&#160;</td><td class="memItemRight" valign="bottom"><b>internal_
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -523,7 +491,7 @@ ALLEGRO_BITMAP *&#160;</td><td class="memItemRight" valign="bottom"><b>internal_
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/ddf/namespacewte.html">wte</a></li><li class="navelem"><b>cmp</b></li><li class="navelem"><a class="el" href="../../d2/d55/classwte_1_1cmp_1_1animator.html">animator</a></li>
-    <li class="footer">Generated on Sun Jul 12 2020 22:41:30 for WTEngine by
+    <li class="footer">Generated on Mon Jul 20 2020 16:28:47 for WTEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

@@ -93,20 +93,25 @@ $(document).ready(function(){initNavTree('d8/d3b/classwte_1_1cmp_1_1bounding__bo
 <div class="title">wte::cmp::bounding_box Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Set a bounding box for an entity. Entities can not move out of this box.  
+ <a href="../../d8/d3b/classwte_1_1cmp_1_1bounding__box.html#details">More...</a></p>
+
+<p><code>#include &lt;bounding_box.hpp&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for wte::cmp::bounding_box:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="../../d8/d3b/classwte_1_1cmp_1_1bounding__box.png" usemap="#wte::cmp::bounding_5Fbox_map" alt=""/>
   <map id="wte::cmp::bounding_5Fbox_map" name="wte::cmp::bounding_5Fbox_map">
-<area href="../../db/d74/classwte_1_1cmp_1_1component.html" alt="wte::cmp::component" shape="rect" coords="0,0,145,24"/>
+<area href="../../db/d74/classwte_1_1cmp_1_1component.html" title="Interface class for creating a component." alt="wte::cmp::component" shape="rect" coords="0,0,145,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae1672ab02afc3b708b298901e2bd144d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3b/classwte_1_1cmp_1_1bounding__box.html#ae1672ab02afc3b708b298901e2bd144d">bounding_box</a> (const float lx, const float ly, const float rx, const float ry)</td></tr>
-<tr class="memdesc:ae1672ab02afc3b708b298901e2bd144d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d7/d83/class_bounding.html">Bounding</a> box constructor.  <a href="../../d8/d3b/classwte_1_1cmp_1_1bounding__box.html#ae1672ab02afc3b708b298901e2bd144d">More...</a><br /></td></tr>
+<tr class="memdesc:ae1672ab02afc3b708b298901e2bd144d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bounding box constructor.  <a href="../../d8/d3b/classwte_1_1cmp_1_1bounding__box.html#ae1672ab02afc3b708b298901e2bd144d">More...</a><br /></td></tr>
 <tr class="separator:ae1672ab02afc3b708b298901e2bd144d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bff296bd7ab9f23a3c49dfbba48a868"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d3b/classwte_1_1cmp_1_1bounding__box.html#a3bff296bd7ab9f23a3c49dfbba48a868">set_min_x</a> (const float &amp;mx)</td></tr>
 <tr class="separator:a3bff296bd7ab9f23a3c49dfbba48a868"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,7 +147,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a769a89e4047d5c0f0c4c8ce7105bfdce inherit pro_methods_classwte_1_1cmp_1_1component"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d74/classwte_1_1cmp_1_1component.html#a769a89e4047d5c0f0c4c8ce7105bfdce">component</a> ()</td></tr>
 <tr class="separator:a769a89e4047d5c0f0c4c8ce7105bfdce inherit pro_methods_classwte_1_1cmp_1_1component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Set a bounding box for an entity. Entities can not move out of this box. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae1672ab02afc3b708b298901e2bd144d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae1672ab02afc3b708b298901e2bd144d">&#9670;&nbsp;</a></span>bounding_box()</h2>
 
@@ -189,7 +196,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="../../d7/d83/class_bounding.html">Bounding</a> box constructor. </p>
+<p>Bounding box constructor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">lx</td><td>Left X </td></tr>
@@ -199,7 +206,6 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -227,13 +233,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get the right X of the bounding box. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Right X </dd></dl>
+<p>Get the right X of the bounding box. </p><dl class="section return"><dt>Returns</dt><dd>Right X </dd></dl>
 
 </div>
 </div>
@@ -260,13 +260,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get the right Y of the bounding box. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Right Y </dd></dl>
+<p>Get the right Y of the bounding box. </p><dl class="section return"><dt>Returns</dt><dd>Right Y </dd></dl>
 
 </div>
 </div>
@@ -293,13 +287,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get the left X of the bounding box. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Left X </dd></dl>
+<p>Get the left X of the bounding box. </p><dl class="section return"><dt>Returns</dt><dd>Left X </dd></dl>
 
 </div>
 </div>
@@ -326,13 +314,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get the left Y of the bounding box. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Left Y </dd></dl>
+<p>Get the left Y of the bounding box. </p><dl class="section return"><dt>Returns</dt><dd>Left Y </dd></dl>
 
 </div>
 </div>
@@ -365,7 +347,6 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -398,7 +379,6 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -431,7 +411,6 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -464,7 +443,6 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -477,7 +455,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/ddf/namespacewte.html">wte</a></li><li class="navelem"><b>cmp</b></li><li class="navelem"><a class="el" href="../../d8/d3b/classwte_1_1cmp_1_1bounding__box.html">bounding_box</a></li>
-    <li class="footer">Generated on Sun Jul 12 2020 22:41:30 for WTEngine by
+    <li class="footer">Generated on Mon Jul 20 2020 16:28:47 for WTEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

@@ -93,6 +93,11 @@ $(document).ready(function(){initNavTree('d9/d28/classwte_1_1mgr_1_1spawn__manag
 <div class="title">wte::mgr::spawn_manager Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Spawn stuff.  
+ <a href="../../d9/d28/classwte_1_1mgr_1_1spawn__manager.html#details">More...</a></p>
+
+<p><code>#include &lt;spawn_manager.hpp&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for wte::mgr::spawn_manager:</div>
 <div class="dyncontent">
@@ -105,11 +110,13 @@ Inheritance diagram for wte::mgr::spawn_manager:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5832f5634cde17fa24921ff445d90ff3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d28/classwte_1_1mgr_1_1spawn__manager.html#a5832f5634cde17fa24921ff445d90ff3">spawn_manager</a> ()</td></tr>
-<tr class="memdesc:a5832f5634cde17fa24921ff445d90ff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spawn <a class="el" href="../../d8/d3d/class_manager.html">Manager</a> constructor. Clears the spawner map.  <a href="../../d9/d28/classwte_1_1mgr_1_1spawn__manager.html#a5832f5634cde17fa24921ff445d90ff3">More...</a><br /></td></tr>
+<tr class="memitem:a5832f5634cde17fa24921ff445d90ff3"><td class="memItemLeft" align="right" valign="top"><a id="a5832f5634cde17fa24921ff445d90ff3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d28/classwte_1_1mgr_1_1spawn__manager.html#a5832f5634cde17fa24921ff445d90ff3">spawn_manager</a> ()</td></tr>
+<tr class="memdesc:a5832f5634cde17fa24921ff445d90ff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spawn Manager constructor. Clears the spawner map. <br /></td></tr>
 <tr class="separator:a5832f5634cde17fa24921ff445d90ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6471a70be7eac9f37eaa16277d60cb29"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d28/classwte_1_1mgr_1_1spawn__manager.html#a6471a70be7eac9f37eaa16277d60cb29">~spawn_manager</a> ()</td></tr>
-<tr class="memdesc:a6471a70be7eac9f37eaa16277d60cb29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spawn <a class="el" href="../../d8/d3d/class_manager.html">Manager</a> destructor. Clears the spawner map.  <a href="../../d9/d28/classwte_1_1mgr_1_1spawn__manager.html#a6471a70be7eac9f37eaa16277d60cb29">More...</a><br /></td></tr>
+<tr class="memitem:a6471a70be7eac9f37eaa16277d60cb29"><td class="memItemLeft" align="right" valign="top"><a id="a6471a70be7eac9f37eaa16277d60cb29"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d28/classwte_1_1mgr_1_1spawn__manager.html#a6471a70be7eac9f37eaa16277d60cb29">~spawn_manager</a> ()</td></tr>
+<tr class="memdesc:a6471a70be7eac9f37eaa16277d60cb29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spawn Manager destructor. Clears the spawner map. <br /></td></tr>
 <tr class="separator:a6471a70be7eac9f37eaa16277d60cb29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88394fae66e09994402bae797a9ae132"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d28/classwte_1_1mgr_1_1spawn__manager.html#a88394fae66e09994402bae797a9ae132">process</a> (const message_container &amp;messages, <a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html">entity_manager</a> &amp;world)</td></tr>
 <tr class="memdesc:a88394fae66e09994402bae797a9ae132"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process spawns. Takes spawner messages and creates or deletes entities.  <a href="../../d9/d28/classwte_1_1mgr_1_1spawn__manager.html#a88394fae66e09994402bae797a9ae132">More...</a><br /></td></tr>
@@ -119,77 +126,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a092ef505ee6e4c60c64cc68512029a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Spawn stuff </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a5832f5634cde17fa24921ff445d90ff3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5832f5634cde17fa24921ff445d90ff3">&#9670;&nbsp;</a></span>spawn_manager()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">wte::mgr::spawn_manager::spawn_manager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Spawn <a class="el" href="../../d8/d3d/class_manager.html">Manager</a> constructor. Clears the spawner map. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-</div>
-</div>
-<a id="a6471a70be7eac9f37eaa16277d60cb29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6471a70be7eac9f37eaa16277d60cb29">&#9670;&nbsp;</a></span>~spawn_manager()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">wte::mgr::spawn_manager::~spawn_manager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Spawn <a class="el" href="../../d8/d3d/class_manager.html">Manager</a> destructor. Clears the spawner map. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+<div class="textblock"><p>Spawn stuff. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a092ef505ee6e4c60c64cc68512029a95"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a092ef505ee6e4c60c64cc68512029a95">&#9670;&nbsp;</a></span>add_spawn()</h2>
 
@@ -285,7 +223,6 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -298,7 +235,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/ddf/namespacewte.html">wte</a></li><li class="navelem"><b>mgr</b></li><li class="navelem"><a class="el" href="../../d9/d28/classwte_1_1mgr_1_1spawn__manager.html">spawn_manager</a></li>
-    <li class="footer">Generated on Sun Jul 12 2020 22:41:31 for WTEngine by
+    <li class="footer">Generated on Mon Jul 20 2020 16:28:49 for WTEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

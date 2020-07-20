@@ -94,14 +94,19 @@ $(document).ready(function(){initNavTree('da/d4e/classwte_1_1cmp_1_1bitmap__map.
 <div class="title">wte::cmp::bitmap_map Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Stores a map of bitmaps. Extend this to add functionality to a component. Also includes wrappers to the Allegro bitmap drawing functions.  
+ <a href="../../da/d4e/classwte_1_1cmp_1_1bitmap__map.html#details">More...</a></p>
+
+<p><code>#include &lt;bitmap_map.hpp&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for wte::cmp::bitmap_map:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="../../da/d4e/classwte_1_1cmp_1_1bitmap__map.png" usemap="#wte::cmp::bitmap_5Fmap_map" alt=""/>
   <map id="wte::cmp::bitmap_5Fmap_map" name="wte::cmp::bitmap_5Fmap_map">
-<area href="../../dc/d3f/classwte_1_1cmp_1_1background.html" alt="wte::cmp::background" shape="rect" coords="0,56,133,80"/>
-<area href="../../d6/d4a/classwte_1_1cmp_1_1overlay.html" alt="wte::cmp::overlay" shape="rect" coords="143,56,276,80"/>
+<area href="../../dc/d3f/classwte_1_1cmp_1_1background.html" title="Store the background bitmap." alt="wte::cmp::background" shape="rect" coords="0,56,133,80"/>
+<area href="../../d6/d4a/classwte_1_1cmp_1_1overlay.html" title="Store an overlay bitmap and define drawing to it." alt="wte::cmp::overlay" shape="rect" coords="143,56,276,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -142,7 +147,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:adba9f982ab67b36cc46d8ee410cf3c6e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4e/classwte_1_1cmp_1_1bitmap__map.html#adba9f982ab67b36cc46d8ee410cf3c6e">bitmap_map</a> ()</td></tr>
 <tr class="separator:adba9f982ab67b36cc46d8ee410cf3c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Stores a map of bitmaps. Extend this to add functionality to a component. Also includes wrappers to the Allegro bitmap drawing functions. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a34c48cce0a50530390e15182725e05a9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a34c48cce0a50530390e15182725e05a9">&#9670;&nbsp;</a></span>~bitmap_map()</h2>
 
@@ -165,13 +172,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="../../db/d39/class_bitmap.html">Bitmap</a> map destructor. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>Bitmap map destructor. </p>
 
 </div>
 </div>
@@ -197,13 +198,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="../../db/d39/class_bitmap.html">Bitmap</a> map constructor. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>Bitmap map constructor. </p>
 
 </div>
 </div>
@@ -233,7 +228,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Delete a bitmap from the map. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">labal</td><td>Label of saved bitmap. </td></tr>
+    <tr><td class="paramname">label</td><td>Label of saved bitmap. </td></tr>
   </table>
   </dd>
 </dl>
@@ -288,14 +283,13 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Draw a bitmap from the map. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">labal</td><td>Label of saved bitmap. </td></tr>
+    <tr><td class="paramname">label</td><td>Label of saved bitmap. </td></tr>
     <tr><td class="paramname">dx</td><td>X location of the background to draw to. </td></tr>
     <tr><td class="paramname">dy</td><td>Y location of the background to draw to. </td></tr>
-    <tr><td class="paramname">flags</td><td>Allegro <a class="el" href="../../db/d39/class_bitmap.html">Bitmap</a> flags. </td></tr>
+    <tr><td class="paramname">flags</td><td>Allegro Bitmap flags. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -370,18 +364,17 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Draw a region of a bitmap from the map. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">labal</td><td>Label of saved bitmap. </td></tr>
+    <tr><td class="paramname">label</td><td>Label of saved bitmap. </td></tr>
     <tr><td class="paramname">sx</td><td>Source X. </td></tr>
     <tr><td class="paramname">sy</td><td>Source Y. </td></tr>
     <tr><td class="paramname">sw</td><td>Source width. </td></tr>
     <tr><td class="paramname">sh</td><td>Source height. </td></tr>
     <tr><td class="paramname">dx</td><td>X location of the background to draw to. </td></tr>
     <tr><td class="paramname">dy</td><td>Y location of the background to draw to. </td></tr>
-    <tr><td class="paramname">flags</td><td>Allegro <a class="el" href="../../db/d39/class_bitmap.html">Bitmap</a> flags. </td></tr>
+    <tr><td class="paramname">flags</td><td>Allegro Bitmap flags. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -456,7 +449,7 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramname">dx</td><td>X location of the background to draw to. </td></tr>
     <tr><td class="paramname">dy</td><td>Y location of the background to draw to. </td></tr>
     <tr><td class="paramname">angle</td><td>Angle of rotation in radians. </td></tr>
-    <tr><td class="paramname">flags</td><td>Allegro <a class="el" href="../../db/d39/class_bitmap.html">Bitmap</a> flags. </td></tr>
+    <tr><td class="paramname">flags</td><td>Allegro Bitmap flags. </td></tr>
   </table>
   </dd>
 </dl>
@@ -546,7 +539,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Draw a scaled bitmap from the map. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">labal</td><td>Label of saved bitmap. </td></tr>
+    <tr><td class="paramname">label</td><td>Label of saved bitmap. </td></tr>
     <tr><td class="paramname">sx</td><td>Source X. </td></tr>
     <tr><td class="paramname">sy</td><td>Source Y. </td></tr>
     <tr><td class="paramname">sw</td><td>Source width. </td></tr>
@@ -555,11 +548,10 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramname">dy</td><td>Y location of the background to draw to. </td></tr>
     <tr><td class="paramname">dw</td><td>Destination width. </td></tr>
     <tr><td class="paramname">dh</td><td>Destination height. </td></tr>
-    <tr><td class="paramname">flags</td><td>Allegro <a class="el" href="../../db/d39/class_bitmap.html">Bitmap</a> flags. </td></tr>
+    <tr><td class="paramname">flags</td><td>Allegro Bitmap flags. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -640,7 +632,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Draw a scaled rotated bitmap from the map. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">labal</td><td>Label of saved bitmap. </td></tr>
+    <tr><td class="paramname">label</td><td>Label of saved bitmap. </td></tr>
     <tr><td class="paramname">cx</td><td>Center X of bitmap for rotation. </td></tr>
     <tr><td class="paramname">cy</td><td>Center Y of bitmap for rotation. </td></tr>
     <tr><td class="paramname">dx</td><td>X location of the background to draw to. </td></tr>
@@ -648,11 +640,10 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramname">xscale</td><td>X scale factor. </td></tr>
     <tr><td class="paramname">yscale</td><td>Y scale factor. </td></tr>
     <tr><td class="paramname">angle</td><td>Angle of rotation in radians. </td></tr>
-    <tr><td class="paramname">flags</td><td>Allegro <a class="el" href="../../db/d39/class_bitmap.html">Bitmap</a> flags. </td></tr>
+    <tr><td class="paramname">flags</td><td>Allegro Bitmap flags. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -709,15 +700,14 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Draw a tinted bitmap from the map. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">labal</td><td>Label of saved bitmap. </td></tr>
+    <tr><td class="paramname">label</td><td>Label of saved bitmap. </td></tr>
     <tr><td class="paramname">tint</td><td>Allegro Color of tint. </td></tr>
     <tr><td class="paramname">dx</td><td>X location of the background to draw to. </td></tr>
     <tr><td class="paramname">dy</td><td>Y location of the background to draw to. </td></tr>
-    <tr><td class="paramname">flags</td><td>Allegro <a class="el" href="../../db/d39/class_bitmap.html">Bitmap</a> flags. </td></tr>
+    <tr><td class="paramname">flags</td><td>Allegro Bitmap flags. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -798,7 +788,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Draw a tinted region of a bitmap from the map. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">labal</td><td>Label of saved bitmap. </td></tr>
+    <tr><td class="paramname">label</td><td>Label of saved bitmap. </td></tr>
     <tr><td class="paramname">tint</td><td>Allegro Color of tint. </td></tr>
     <tr><td class="paramname">sx</td><td>Source X. </td></tr>
     <tr><td class="paramname">sy</td><td>Source Y. </td></tr>
@@ -806,11 +796,10 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramname">sh</td><td>Source height. </td></tr>
     <tr><td class="paramname">dx</td><td>X location of the background to draw to. </td></tr>
     <tr><td class="paramname">dy</td><td>Y location of the background to draw to. </td></tr>
-    <tr><td class="paramname">flags</td><td>Allegro <a class="el" href="../../db/d39/class_bitmap.html">Bitmap</a> flags. </td></tr>
+    <tr><td class="paramname">flags</td><td>Allegro Bitmap flags. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -885,18 +874,17 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Draw a tinted rotated bitmap from the map. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">labal</td><td>Label of saved bitmap. </td></tr>
+    <tr><td class="paramname">label</td><td>Label of saved bitmap. </td></tr>
     <tr><td class="paramname">tint</td><td>Allegro Color of tint. </td></tr>
     <tr><td class="paramname">cx</td><td>Center X of bitmap for rotation. </td></tr>
     <tr><td class="paramname">cy</td><td>Center Y of bitmap for rotation. </td></tr>
     <tr><td class="paramname">dx</td><td>X location of the background to draw to. </td></tr>
     <tr><td class="paramname">dy</td><td>Y location of the background to draw to. </td></tr>
     <tr><td class="paramname">angle</td><td>Angle of rotation in radians. </td></tr>
-    <tr><td class="paramname">flags</td><td>Allegro <a class="el" href="../../db/d39/class_bitmap.html">Bitmap</a> flags. </td></tr>
+    <tr><td class="paramname">flags</td><td>Allegro Bitmap flags. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -989,7 +977,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Draw a tinted scaled bitmap from the map. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">labal</td><td>Label of saved bitmap. </td></tr>
+    <tr><td class="paramname">label</td><td>Label of saved bitmap. </td></tr>
     <tr><td class="paramname">tint</td><td>Allegro Color of tint. </td></tr>
     <tr><td class="paramname">sx</td><td>Source X. </td></tr>
     <tr><td class="paramname">sy</td><td>Source Y. </td></tr>
@@ -999,11 +987,10 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramname">dy</td><td>Y location of the background to draw to. </td></tr>
     <tr><td class="paramname">dw</td><td>Destination width. </td></tr>
     <tr><td class="paramname">dh</td><td>Destination height. </td></tr>
-    <tr><td class="paramname">flags</td><td>Allegro <a class="el" href="../../db/d39/class_bitmap.html">Bitmap</a> flags. </td></tr>
+    <tr><td class="paramname">flags</td><td>Allegro Bitmap flags. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -1090,7 +1077,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Draw a tinted scaled rotated bitmap from the map. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">labal</td><td>Label of saved bitmap. </td></tr>
+    <tr><td class="paramname">label</td><td>Label of saved bitmap. </td></tr>
     <tr><td class="paramname">tint</td><td>Allegro Color of tint. </td></tr>
     <tr><td class="paramname">cx</td><td>Center X of bitmap for rotation. </td></tr>
     <tr><td class="paramname">cy</td><td>Center Y of bitmap for rotation. </td></tr>
@@ -1100,11 +1087,10 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramname">yscale</td><td>Y scale factor. </td></tr>
     <tr><td class="paramname">dx</td><td>X location of the background to draw to. </td></tr>
     <tr><td class="paramname">dy</td><td>Y location of the background to draw to. </td></tr>
-    <tr><td class="paramname">flags</td><td>Allegro <a class="el" href="../../db/d39/class_bitmap.html">Bitmap</a> flags. </td></tr>
+    <tr><td class="paramname">flags</td><td>Allegro Bitmap flags. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -1215,7 +1201,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Draw a tinted scaled rotated bitmap from the map. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">labal</td><td>Label of saved bitmap. </td></tr>
+    <tr><td class="paramname">label</td><td>Label of saved bitmap. </td></tr>
     <tr><td class="paramname">sx</td><td>Source X. </td></tr>
     <tr><td class="paramname">sy</td><td>Source Y. </td></tr>
     <tr><td class="paramname">sw</td><td>Source width. </td></tr>
@@ -1229,11 +1215,10 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramname">yscale</td><td>Y scale factor. </td></tr>
     <tr><td class="paramname">dx</td><td>X location of the background to draw to. </td></tr>
     <tr><td class="paramname">dy</td><td>Y location of the background to draw to. </td></tr>
-    <tr><td class="paramname">flags</td><td>Allegro <a class="el" href="../../db/d39/class_bitmap.html">Bitmap</a> flags. </td></tr>
+    <tr><td class="paramname">flags</td><td>Allegro Bitmap flags. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -1292,7 +1277,7 @@ Protected Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/ddf/namespacewte.html">wte</a></li><li class="navelem"><b>cmp</b></li><li class="navelem"><a class="el" href="../../da/d4e/classwte_1_1cmp_1_1bitmap__map.html">bitmap_map</a></li>
-    <li class="footer">Generated on Sun Jul 12 2020 22:41:30 for WTEngine by
+    <li class="footer">Generated on Mon Jul 20 2020 16:28:47 for WTEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

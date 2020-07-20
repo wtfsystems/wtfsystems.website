@@ -93,14 +93,19 @@ $(document).ready(function(){initNavTree('d9/d0e/classwte_1_1cmp_1_1sprite.html'
 <div class="title">wte::cmp::sprite Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Stores a sprite sheet and its animation process.  
+ <a href="../../d9/d0e/classwte_1_1cmp_1_1sprite.html#details">More...</a></p>
+
+<p><code>#include &lt;sprite.hpp&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for wte::cmp::sprite:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="../../d9/d0e/classwte_1_1cmp_1_1sprite.png" usemap="#wte::cmp::sprite_map" alt=""/>
   <map id="wte::cmp::sprite_map" name="wte::cmp::sprite_map">
-<area href="../../d2/d55/classwte_1_1cmp_1_1animator.html" alt="wte::cmp::animator" shape="rect" coords="0,56,127,80"/>
-<area href="../../db/d74/classwte_1_1cmp_1_1component.html" alt="wte::cmp::component" shape="rect" coords="0,0,127,24"/>
+<area href="../../d2/d55/classwte_1_1cmp_1_1animator.html" title="Interface class for components with an animation process." alt="wte::cmp::animator" shape="rect" coords="0,56,127,80"/>
+<area href="../../db/d74/classwte_1_1cmp_1_1component.html" title="Interface class for creating a component." alt="wte::cmp::component" shape="rect" coords="0,0,127,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -181,7 +186,9 @@ Additional Inherited Members</h2></td></tr>
 ALLEGRO_BITMAP *&#160;</td><td class="memItemRight" valign="bottom"><b>internal_bitmap</b></td></tr>
 <tr class="separator:a37a08afb2fa8ac4e9359e4bc41c5ea0c inherit pro_attribs_classwte_1_1cmp_1_1animator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Stores a sprite sheet and its animation process. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6ac5df8a3c567b722afc7f8af2b06e76"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6ac5df8a3c567b722afc7f8af2b06e76">&#9670;&nbsp;</a></span>sprite()</h2>
 
@@ -239,10 +246,10 @@ ALLEGRO_BITMAP *&#160;</td><td class="memItemRight" valign="bottom"><b>internal_
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="../../d7/dbf/class_sprite.html">Sprite</a> constructor. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Sprite constructor. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sw</td><td><a class="el" href="../../d7/dbf/class_sprite.html">Sprite</a> width. </td></tr>
-    <tr><td class="paramname">sh</td><td><a class="el" href="../../d7/dbf/class_sprite.html">Sprite</a> height. </td></tr>
+    <tr><td class="paramname">sw</td><td>Sprite width. </td></tr>
+    <tr><td class="paramname">sh</td><td>Sprite height. </td></tr>
     <tr><td class="paramname">dox</td><td>Horizontal draw offset in relation to entity location. </td></tr>
     <tr><td class="paramname">doy</td><td>Verticle draw offset in relation to entity location. </td></tr>
     <tr><td class="paramname">rt</td><td>Rate in engine timer ticks for animation. </td></tr>
@@ -250,7 +257,6 @@ ALLEGRO_BITMAP *&#160;</td><td class="memItemRight" valign="bottom"><b>internal_
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -276,13 +282,7 @@ ALLEGRO_BITMAP *&#160;</td><td class="memItemRight" valign="bottom"><b>internal_
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="../../d7/dbf/class_sprite.html">Sprite</a> destructor. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>Sprite destructor. </p>
 
 </div>
 </div>
@@ -469,7 +469,7 @@ ALLEGRO_BITMAP *&#160;</td><td class="memItemRight" valign="bottom"><b>internal_
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get the sprite height. </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../d7/dbf/class_sprite.html">Sprite</a> height. </dd></dl>
+<p>Get the sprite height. </p><dl class="section return"><dt>Returns</dt><dd>Sprite height. </dd></dl>
 
 </div>
 </div>
@@ -496,7 +496,7 @@ ALLEGRO_BITMAP *&#160;</td><td class="memItemRight" valign="bottom"><b>internal_
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get the sprite width. </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../d7/dbf/class_sprite.html">Sprite</a> width. </dd></dl>
+<p>Get the sprite width. </p><dl class="section return"><dt>Returns</dt><dd>Sprite width. </dd></dl>
 
 </div>
 </div>
@@ -585,7 +585,6 @@ ALLEGRO_BITMAP *&#160;</td><td class="memItemRight" valign="bottom"><b>internal_
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -695,7 +694,7 @@ ALLEGRO_BITMAP *&#160;</td><td class="memItemRight" valign="bottom"><b>internal_
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/ddf/namespacewte.html">wte</a></li><li class="navelem"><b>cmp</b></li><li class="navelem"><a class="el" href="../../d9/d0e/classwte_1_1cmp_1_1sprite.html">sprite</a></li>
-    <li class="footer">Generated on Sun Jul 12 2020 22:41:30 for WTEngine by
+    <li class="footer">Generated on Mon Jul 20 2020 16:28:48 for WTEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

@@ -95,6 +95,11 @@ $(document).ready(function(){initNavTree('d2/dd2/classwte_1_1mgr_1_1render__mana
 <div class="title">wte::mgr::render_manager Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>An object that handles drawing the world to the screen.  
+ <a href="../../d2/dd2/classwte_1_1mgr_1_1render__manager.html#details">More...</a></p>
+
+<p><code>#include &lt;render_manager.hpp&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for wte::mgr::render_manager:</div>
 <div class="dyncontent">
@@ -112,11 +117,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab3c55341fa3716a63ea08e715a1f9247"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22cd3d792f06421b85056a862589b53e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classwte_1_1mgr_1_1render__manager.html#a22cd3d792f06421b85056a862589b53e">~render_manager</a> ()</td></tr>
 <tr class="separator:a22cd3d792f06421b85056a862589b53e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba1c23fa066f573e194c7903d6362aae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classwte_1_1mgr_1_1render__manager.html#aba1c23fa066f573e194c7903d6362aae">initialize</a> (void)</td></tr>
-<tr class="memdesc:aba1c23fa066f573e194c7903d6362aae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the render manager. Configures the internal objects for the render manager to use.  <a href="../../d2/dd2/classwte_1_1mgr_1_1render__manager.html#aba1c23fa066f573e194c7903d6362aae">More...</a><br /></td></tr>
+<tr class="memitem:aba1c23fa066f573e194c7903d6362aae"><td class="memItemLeft" align="right" valign="top"><a id="aba1c23fa066f573e194c7903d6362aae"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classwte_1_1mgr_1_1render__manager.html#aba1c23fa066f573e194c7903d6362aae">initialize</a> (void)</td></tr>
+<tr class="memdesc:aba1c23fa066f573e194c7903d6362aae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the render manager. Configures the internal objects for the render manager to use. <br /></td></tr>
 <tr class="separator:aba1c23fa066f573e194c7903d6362aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0629eb60f122bf267bb5666b4f5f7d50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classwte_1_1mgr_1_1render__manager.html#a0629eb60f122bf267bb5666b4f5f7d50">de_init</a> (void)</td></tr>
-<tr class="memdesc:a0629eb60f122bf267bb5666b4f5f7d50"><td class="mdescLeft">&#160;</td><td class="mdescRight">De-initialize the render manager. Destories the internal objects.  <a href="../../d2/dd2/classwte_1_1mgr_1_1render__manager.html#a0629eb60f122bf267bb5666b4f5f7d50">More...</a><br /></td></tr>
+<tr class="memitem:a0629eb60f122bf267bb5666b4f5f7d50"><td class="memItemLeft" align="right" valign="top"><a id="a0629eb60f122bf267bb5666b4f5f7d50"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classwte_1_1mgr_1_1render__manager.html#a0629eb60f122bf267bb5666b4f5f7d50">de_init</a> (void)</td></tr>
+<tr class="memdesc:a0629eb60f122bf267bb5666b4f5f7d50"><td class="mdescLeft">&#160;</td><td class="mdescRight">De-initialize the render manager. Destories the internal objects. <br /></td></tr>
 <tr class="separator:a0629eb60f122bf267bb5666b4f5f7d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd55c118b7ccd7dd9798919aa91a0bd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classwte_1_1mgr_1_1render__manager.html#afd55c118b7ccd7dd9798919aa91a0bd1">update_resolution</a> (const int &amp;w, const int &amp;h)</td></tr>
 <tr class="memdesc:afd55c118b7ccd7dd9798919aa91a0bd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inform the renderer of the screen resolution. Gets called by the engine when the screen resolution is updated.  <a href="../../d2/dd2/classwte_1_1mgr_1_1render__manager.html#afd55c118b7ccd7dd9798919aa91a0bd1">More...</a><br /></td></tr>
@@ -124,11 +131,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab604db1d6bc7fd9b1efc1a89bc6cc066"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classwte_1_1mgr_1_1render__manager.html#ab604db1d6bc7fd9b1efc1a89bc6cc066">set_scale_factor</a> (const float &amp;f)</td></tr>
 <tr class="memdesc:ab604db1d6bc7fd9b1efc1a89bc6cc066"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set scale factor. This is used to scale the game arena and menus to a larger size. For support of higher resolution screens.  <a href="../../d2/dd2/classwte_1_1mgr_1_1render__manager.html#ab604db1d6bc7fd9b1efc1a89bc6cc066">More...</a><br /></td></tr>
 <tr class="separator:ab604db1d6bc7fd9b1efc1a89bc6cc066"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e4d15da21d018e69653a6930d73bfcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classwte_1_1mgr_1_1render__manager.html#a9e4d15da21d018e69653a6930d73bfcf">reload_arena_bitmap</a> (void)</td></tr>
-<tr class="memdesc:a9e4d15da21d018e69653a6930d73bfcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reload the arena bitmap. Called when the screen is updated.  <a href="../../d2/dd2/classwte_1_1mgr_1_1render__manager.html#a9e4d15da21d018e69653a6930d73bfcf">More...</a><br /></td></tr>
+<tr class="memitem:a9e4d15da21d018e69653a6930d73bfcf"><td class="memItemLeft" align="right" valign="top"><a id="a9e4d15da21d018e69653a6930d73bfcf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classwte_1_1mgr_1_1render__manager.html#a9e4d15da21d018e69653a6930d73bfcf">reload_arena_bitmap</a> (void)</td></tr>
+<tr class="memdesc:a9e4d15da21d018e69653a6930d73bfcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reload the arena bitmap. Called when the screen is updated. <br /></td></tr>
 <tr class="separator:a9e4d15da21d018e69653a6930d73bfcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af84cf8baa9911037c8967a0d7808215f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd2/classwte_1_1mgr_1_1render__manager.html#af84cf8baa9911037c8967a0d7808215f">render</a> (const <a class="el" href="../../d7/d0c/classwte_1_1mgr_1_1menu__manager.html">menu_manager</a> &amp;, const <a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html">entity_manager</a> &amp;)</td></tr>
-<tr class="memdesc:af84cf8baa9911037c8967a0d7808215f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../da/d7f/class_render.html">Render</a> method - Draw the game screen. Gets passed the entity manager and menu manager by reference then draws everything to screen.  <a href="../../d2/dd2/classwte_1_1mgr_1_1render__manager.html#af84cf8baa9911037c8967a0d7808215f">More...</a><br /></td></tr>
+<tr class="memdesc:af84cf8baa9911037c8967a0d7808215f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render method - Draw the game screen. Gets passed the entity manager and menu manager by reference then draws everything to screen.  <a href="../../d2/dd2/classwte_1_1mgr_1_1render__manager.html#af84cf8baa9911037c8967a0d7808215f">More...</a><br /></td></tr>
 <tr class="separator:af84cf8baa9911037c8967a0d7808215f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -156,7 +164,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a4790a2b5c72205de5db01990e151157c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the font to be used by the renderer. If not called, Allegro's default font will be used. This should be called during engine initialization before the main object is created. See the Allegro docs for more information on al_load_font and the parameters used.  <a href="../../d2/dd2/classwte_1_1mgr_1_1render__manager.html#a4790a2b5c72205de5db01990e151157c">More...</a><br /></td></tr>
 <tr class="separator:a4790a2b5c72205de5db01990e151157c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>An object that handles drawing the world to the screen. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab3c55341fa3716a63ea08e715a1f9247"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab3c55341fa3716a63ea08e715a1f9247">&#9670;&nbsp;</a></span>render_manager()</h2>
 
@@ -179,13 +189,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="../../d2/dd2/classwte_1_1mgr_1_1render__manager.html">render_manager</a> constructor. Generates the <a class="el" href="../../d2/dd2/classwte_1_1mgr_1_1render__manager.html">render_manager</a> object. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p><a class="el" href="../../d2/dd2/classwte_1_1mgr_1_1render__manager.html" title="An object that handles drawing the world to the screen.">render_manager</a> constructor. Generates the <a class="el" href="../../d2/dd2/classwte_1_1mgr_1_1render__manager.html" title="An object that handles drawing the world to the screen.">render_manager</a> object. </p>
 
 </div>
 </div>
@@ -211,52 +215,11 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="../../d2/dd2/classwte_1_1mgr_1_1render__manager.html">render_manager</a> destructor. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p><a class="el" href="../../d2/dd2/classwte_1_1mgr_1_1render__manager.html" title="An object that handles drawing the world to the screen.">render_manager</a> destructor. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0629eb60f122bf267bb5666b4f5f7d50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0629eb60f122bf267bb5666b4f5f7d50">&#9670;&nbsp;</a></span>de_init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void wte::mgr::render_manager::de_init </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>De-initialize the render manager. Destories the internal objects. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-</div>
-</div>
 <a id="aa12e249a4ad4baba2d60f67ef664b5f7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa12e249a4ad4baba2d60f67ef664b5f7">&#9670;&nbsp;</a></span>get_arena_height()</h2>
 
@@ -280,13 +243,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get the arena height. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The arena height in pixels. </dd></dl>
+<p>Get the arena height. </p><dl class="section return"><dt>Returns</dt><dd>The arena height in pixels. </dd></dl>
 
 </div>
 </div>
@@ -313,13 +270,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get the arnea width. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The arena width in pixels. </dd></dl>
+<p>Get the arnea width. </p><dl class="section return"><dt>Returns</dt><dd>The arena width in pixels. </dd></dl>
 
 </div>
 </div>
@@ -345,13 +296,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get scale factor. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Scale factor multiplier. </dd></dl>
+<p>Get scale factor. </p><dl class="section return"><dt>Returns</dt><dd>Scale factor multiplier. </dd></dl>
 
 </div>
 </div>
@@ -378,13 +323,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get screen height. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Screen height in pixels. </dd></dl>
+<p>Get screen height. </p><dl class="section return"><dt>Returns</dt><dd>Screen height in pixels. </dd></dl>
 
 </div>
 </div>
@@ -411,83 +350,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get screen width. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Screen width in pixels. </dd></dl>
-
-</div>
-</div>
-<a id="aba1c23fa066f573e194c7903d6362aae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba1c23fa066f573e194c7903d6362aae">&#9670;&nbsp;</a></span>initialize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void wte::mgr::render_manager::initialize </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Initialize the render manager. Configures the internal objects for the render manager to use. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-</div>
-</div>
-<a id="a9e4d15da21d018e69653a6930d73bfcf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e4d15da21d018e69653a6930d73bfcf">&#9670;&nbsp;</a></span>reload_arena_bitmap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void wte::mgr::render_manager::reload_arena_bitmap </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reload the arena bitmap. Called when the screen is updated. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>Get screen width. </p><dl class="section return"><dt>Returns</dt><dd>Screen width in pixels. </dd></dl>
 
 </div>
 </div>
@@ -525,7 +388,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="../../da/d7f/class_render.html">Render</a> method - Draw the game screen. Gets passed the entity manager and menu manager by reference then draws everything to screen. </p>
+<p>Render method - Draw the game screen. Gets passed the entity manager and menu manager by reference then draws everything to screen. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">menus</td><td>Reference to menu manager. </td></tr>
@@ -579,7 +442,6 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -614,7 +476,6 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -667,7 +528,6 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -702,7 +562,6 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -737,7 +596,6 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -783,7 +641,6 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -796,7 +653,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/ddf/namespacewte.html">wte</a></li><li class="navelem"><b>mgr</b></li><li class="navelem"><a class="el" href="../../d2/dd2/classwte_1_1mgr_1_1render__manager.html">render_manager</a></li>
-    <li class="footer">Generated on Sun Jul 12 2020 22:41:31 for WTEngine by
+    <li class="footer">Generated on Mon Jul 20 2020 16:28:49 for WTEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

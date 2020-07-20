@@ -94,6 +94,11 @@ $(document).ready(function(){initNavTree('d0/dac/classwte_1_1input__flags.html',
 <div class="title">wte::input_flags Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Colletion of flags to store input state.  
+ <a href="../../d0/dac/classwte_1_1input__flags.html#details">More...</a></p>
+
+<p><code>#include &lt;input_flags.hpp&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -140,7 +145,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:abbf30706c9b1e7dc0ae68f8e3a62b6d2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dac/classwte_1_1input__flags.html#abbf30706c9b1e7dc0ae68f8e3a62b6d2">set_last_buttonpress</a> (const std::size_t &amp;lk)</td></tr>
 <tr class="separator:abbf30706c9b1e7dc0ae68f8e3a62b6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Colletion of flags to store input state. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="af8a5d2c0c9a6299656911d387fab9ca4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af8a5d2c0c9a6299656911d387fab9ca4">&#9670;&nbsp;</a></span>check_button_event()</h2>
 
@@ -306,13 +313,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get the last button that was pressed. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Button code. </dd></dl>
+<p>Get the last button that was pressed. </p><dl class="section return"><dt>Returns</dt><dd>Button code. </dd></dl>
 
 </div>
 </div>
@@ -339,13 +340,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get the last key that was pressed. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Key code. </dd></dl>
+<p>Get the last key that was pressed. </p><dl class="section return"><dt>Returns</dt><dd>Key code. </dd></dl>
 
 </div>
 </div>
@@ -387,7 +382,7 @@ Static Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">j</td><td>Joystick to check. </td></tr>
-    <tr><td class="paramname">d</td><td><a class="el" href="../../d0/de1/class_direction.html">Direction</a> flag to check. </td></tr>
+    <tr><td class="paramname">d</td><td>Direction flag to check. </td></tr>
   </table>
   </dd>
 </dl>
@@ -431,11 +426,10 @@ Static Public Member Functions</h2></td></tr>
 <p>Toggle flag to set. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">j</td><td>Joystick to set flag for. </td></tr>
-    <tr><td class="paramname">d</td><td><a class="el" href="../../d0/de1/class_direction.html">Direction</a> flag to set. </td></tr>
+    <tr><td class="paramname">d</td><td>Direction flag to set. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -518,7 +512,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Set X pole of a joystick. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">j</td><td>Joystick to set. </td></tr>
-    <tr><td class="paramname">d</td><td><a class="el" href="../../d0/de1/class_direction.html">Direction</a> to set. </td></tr>
+    <tr><td class="paramname">d</td><td>Direction to set. </td></tr>
   </table>
   </dd>
 </dl>
@@ -561,7 +555,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Set Y pole of a joystick. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">j</td><td>Joystick to set. </td></tr>
-    <tr><td class="paramname">d</td><td><a class="el" href="../../d0/de1/class_direction.html">Direction</a> to set. </td></tr>
+    <tr><td class="paramname">d</td><td>Direction to set. </td></tr>
   </table>
   </dd>
 </dl>
@@ -640,7 +634,6 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -673,7 +666,6 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -700,13 +692,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set all input flags to false. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>Set all input flags to false. </p>
 
 </div>
 </div>
@@ -719,7 +705,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/ddf/namespacewte.html">wte</a></li><li class="navelem"><a class="el" href="../../d0/dac/classwte_1_1input__flags.html">input_flags</a></li>
-    <li class="footer">Generated on Sun Jul 12 2020 22:41:29 for WTEngine by
+    <li class="footer">Generated on Mon Jul 20 2020 16:28:47 for WTEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

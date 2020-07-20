@@ -94,14 +94,19 @@ $(document).ready(function(){initNavTree('d9/da1/classwte_1_1wte__input.html','.
 <div class="title">wte::wte_input Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Manage the input queue and process events.  
+ <a href="../../d9/da1/classwte_1_1wte__input.html#details">More...</a></p>
+
+<p><code>#include &lt;wte_input.hpp&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for wte::wte_input:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="../../d9/da1/classwte_1_1wte__input.png" usemap="#wte::wte_5Finput_map" alt=""/>
   <map id="wte::wte_5Finput_map" name="wte::wte_5Finput_map">
-<area href="../../dc/db0/classwte_1_1wte__input__map.html" alt="wte::wte_input_map" shape="rect" coords="0,0,120,24"/>
-<area href="../../d5/d5b/classwte_1_1wte__main.html" alt="wte::wte_main" shape="rect" coords="0,112,120,136"/>
+<area href="../../dc/db0/classwte_1_1wte__input__map.html" title="Map buttons and keyboard." alt="wte::wte_input_map" shape="rect" coords="0,0,120,24"/>
+<area href="../../d5/d5b/classwte_1_1wte__main.html" title="The main engine object. Sets up various system objects used by the engine. Contains the main game loo..." alt="wte::wte_main" shape="rect" coords="0,112,120,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -114,18 +119,28 @@ Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a23f2cebd588e524975cd25d150491384"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da1/classwte_1_1wte__input.html#a23f2cebd588e524975cd25d150491384">wte_input</a> ()</td></tr>
 <tr class="separator:a23f2cebd588e524975cd25d150491384"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae57d5eba2a7bff638ec5c9620b867f8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da1/classwte_1_1wte__input.html#ae57d5eba2a7bff638ec5c9620b867f8f">create_input_event_queue</a> (void)</td></tr>
-<tr class="memdesc:ae57d5eba2a7bff638ec5c9620b867f8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the input queue for capturing events. Called during engine initialization.  <a href="../../d9/da1/classwte_1_1wte__input.html#ae57d5eba2a7bff638ec5c9620b867f8f">More...</a><br /></td></tr>
+<tr class="memitem:ae57d5eba2a7bff638ec5c9620b867f8f"><td class="memItemLeft" align="right" valign="top"><a id="ae57d5eba2a7bff638ec5c9620b867f8f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da1/classwte_1_1wte__input.html#ae57d5eba2a7bff638ec5c9620b867f8f">create_input_event_queue</a> (void)</td></tr>
+<tr class="memdesc:ae57d5eba2a7bff638ec5c9620b867f8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the input queue for capturing events. Called during engine initialization. <br /></td></tr>
 <tr class="separator:ae57d5eba2a7bff638ec5c9620b867f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add0a623b511a6aa5620d0310e2165292"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da1/classwte_1_1wte__input.html#add0a623b511a6aa5620d0310e2165292">destroy_input_event_queue</a> (void)</td></tr>
-<tr class="memdesc:add0a623b511a6aa5620d0310e2165292"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the input queue. Called during engine de-initialization.  <a href="../../d9/da1/classwte_1_1wte__input.html#add0a623b511a6aa5620d0310e2165292">More...</a><br /></td></tr>
+<tr class="memitem:add0a623b511a6aa5620d0310e2165292"><td class="memItemLeft" align="right" valign="top"><a id="add0a623b511a6aa5620d0310e2165292"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da1/classwte_1_1wte__input.html#add0a623b511a6aa5620d0310e2165292">destroy_input_event_queue</a> (void)</td></tr>
+<tr class="memdesc:add0a623b511a6aa5620d0310e2165292"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the input queue. Called during engine de-initialization. <br /></td></tr>
 <tr class="separator:add0a623b511a6aa5620d0310e2165292"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee2cd44364e1ab919ece9ae445c43008"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da1/classwte_1_1wte__input.html#aee2cd44364e1ab919ece9ae445c43008">check_input_events</a> (void)</td></tr>
-<tr class="memdesc:aee2cd44364e1ab919ece9ae445c43008"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the input queue for events. Called during the main engine loop. Pass any events to the input handler.  <a href="../../d9/da1/classwte_1_1wte__input.html#aee2cd44364e1ab919ece9ae445c43008">More...</a><br /></td></tr>
+<tr class="memitem:aee2cd44364e1ab919ece9ae445c43008"><td class="memItemLeft" align="right" valign="top"><a id="aee2cd44364e1ab919ece9ae445c43008"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da1/classwte_1_1wte__input.html#aee2cd44364e1ab919ece9ae445c43008">check_input_events</a> (void)</td></tr>
+<tr class="memdesc:aee2cd44364e1ab919ece9ae445c43008"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the input queue for events. Called during the main engine loop. Pass any events to the input handler. <br /></td></tr>
 <tr class="separator:aee2cd44364e1ab919ece9ae445c43008"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Manage the input queue and process events. </p>
+<p>The engine has two input modes that can be set with the WTE_INPUT_MODE build flag. (0) Digital mode:</p><ul>
+<li>D-pad and sticks record 8-way directions.</li>
+<li>D-pad and left stick are the same.</li>
+<li>Analogue triggers are read as button presses. (1) Analogue mode:</li>
+<li>D-pad only registers button presses, read full data from sticks.</li>
+<li>Analogue triggers have their data stored. </li>
+</ul>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad16ceab86e8a364b2c1f9c028e669eb7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad16ceab86e8a364b2c1f9c028e669eb7">&#9670;&nbsp;</a></span>~wte_input()</h2>
@@ -149,13 +164,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>WTE <a class="el" href="../../d4/d7b/class_input.html">Input</a> destructor. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>WTE Input destructor. </p>
 
 </div>
 </div>
@@ -181,119 +190,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>WTE <a class="el" href="../../d4/d7b/class_input.html">Input</a> constructor. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="aee2cd44364e1ab919ece9ae445c43008"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee2cd44364e1ab919ece9ae445c43008">&#9670;&nbsp;</a></span>check_input_events()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void wte::wte_input::check_input_events </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Check the input queue for events. Called during the main engine loop. Pass any events to the input handler. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-</div>
-</div>
-<a id="ae57d5eba2a7bff638ec5c9620b867f8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae57d5eba2a7bff638ec5c9620b867f8f">&#9670;&nbsp;</a></span>create_input_event_queue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void wte::wte_input::create_input_event_queue </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Create the input queue for capturing events. Called during engine initialization. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-</div>
-</div>
-<a id="add0a623b511a6aa5620d0310e2165292"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add0a623b511a6aa5620d0310e2165292">&#9670;&nbsp;</a></span>destroy_input_event_queue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void wte::wte_input::destroy_input_event_queue </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Destroy the input queue. Called during engine de-initialization. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>WTE Input constructor. </p>
 
 </div>
 </div>
@@ -306,7 +203,7 @@ Protected Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/ddf/namespacewte.html">wte</a></li><li class="navelem"><a class="el" href="../../d9/da1/classwte_1_1wte__input.html">wte_input</a></li>
-    <li class="footer">Generated on Sun Jul 12 2020 22:41:30 for WTEngine by
+    <li class="footer">Generated on Mon Jul 20 2020 16:28:47 for WTEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

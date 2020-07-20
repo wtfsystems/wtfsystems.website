@@ -94,13 +94,18 @@ $(document).ready(function(){initNavTree('d6/d47/classwte_1_1mgr_1_1make__thread
 <div class="title">wte::mgr::make_thread Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Extend this to create a threaded object. Has a virtual run member that is defined in the inheriting class. Calling start runs the "run" member in a detached thread. Inside the run member, is_running can be called to see if the thread is considered active. Call the stop member to end the thread.  
+ <a href="../../d6/d47/classwte_1_1mgr_1_1make__thread.html#details">More...</a></p>
+
+<p><code>#include &lt;make_thread.hpp&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for wte::mgr::make_thread:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="../../d6/d47/classwte_1_1mgr_1_1make__thread.png" usemap="#wte::mgr::make_5Fthread_map" alt=""/>
   <map id="wte::mgr::make_5Fthread_map" name="wte::mgr::make_5Fthread_map">
-<area href="../../df/da2/classwte_1_1mgr_1_1audio__manager.html" alt="wte::mgr::audio_manager" shape="rect" coords="0,56,151,80"/>
+<area href="../../df/da2/classwte_1_1mgr_1_1audio__manager.html" title="Handles audio messages in a thread." alt="wte::mgr::audio_manager" shape="rect" coords="0,56,151,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -132,7 +137,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a0df00b1b311a8040cbdc4a5a31da8d0a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d47/classwte_1_1mgr_1_1make__thread.html#a0df00b1b311a8040cbdc4a5a31da8d0a">run</a> (void)=0</td></tr>
 <tr class="separator:a0df00b1b311a8040cbdc4a5a31da8d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Extend this to create a threaded object. Has a virtual run member that is defined in the inheriting class. Calling start runs the "run" member in a detached thread. Inside the run member, is_running can be called to see if the thread is considered active. Call the stop member to end the thread. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a11edb47e8b4e1aa38a34d86648cb377c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a11edb47e8b4e1aa38a34d86648cb377c">&#9670;&nbsp;</a></span>~make_thread()</h2>
 
@@ -155,13 +162,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Calls stop member if started flag is true </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>Calls stop member if started flag is true. </p>
 
 </div>
 </div>
@@ -187,13 +188,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set started flag to false </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>Set started flag to false. </p>
 
 </div>
 </div>
@@ -221,13 +216,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Check if thread is running </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>Check if thread is running. </p>
 
 </div>
 </div>
@@ -254,13 +243,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Call this within <a class="el" href="../../d6/d47/classwte_1_1mgr_1_1make__thread.html#a0df00b1b311a8040cbdc4a5a31da8d0a">run()</a> to check if the thread is running </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>Call this within <a class="el" href="../../d6/d47/classwte_1_1mgr_1_1make__thread.html#a0df00b1b311a8040cbdc4a5a31da8d0a">run()</a> to check if the thread is running. </p>
 
 </div>
 </div>
@@ -287,13 +270,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Override this in extended class to implement a thread </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>Override this in extended class to implement a thread. </p>
 
 </div>
 </div>
@@ -320,13 +297,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Call to start execution of thread </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>Call to start execution of thread. </p>
 
 </div>
 </div>
@@ -353,13 +324,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Call to end thread </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>Call to end thread. </p>
 
 </div>
 </div>
@@ -372,7 +337,7 @@ Protected Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/ddf/namespacewte.html">wte</a></li><li class="navelem"><b>mgr</b></li><li class="navelem"><a class="el" href="../../d6/d47/classwte_1_1mgr_1_1make__thread.html">make_thread</a></li>
-    <li class="footer">Generated on Sun Jul 12 2020 22:41:31 for WTEngine by
+    <li class="footer">Generated on Mon Jul 20 2020 16:28:48 for WTEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

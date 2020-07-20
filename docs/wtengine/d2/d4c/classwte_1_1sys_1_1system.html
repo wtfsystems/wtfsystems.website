@@ -95,17 +95,22 @@ $(document).ready(function(){initNavTree('d2/d4c/classwte_1_1sys_1_1system.html'
 <div class="title">wte::sys::system Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Interface class for creating systems.  
+ <a href="../../d2/d4c/classwte_1_1sys_1_1system.html#details">More...</a></p>
+
+<p><code>#include &lt;system.hpp&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for wte::sys::system:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="../../d2/d4c/classwte_1_1sys_1_1system.png" usemap="#wte::sys::system_map" alt=""/>
   <map id="wte::sys::system_map" name="wte::sys::system_map">
-<area href="../../dd/d18/classwte_1_1sys_1_1animate.html" alt="wte::sys::animate" shape="rect" coords="0,56,118,80"/>
-<area href="../../d2/d54/classwte_1_1sys_1_1colision.html" alt="wte::sys::colision" shape="rect" coords="128,56,246,80"/>
-<area href="../../d3/deb/classwte_1_1sys_1_1input.html" alt="wte::sys::input" shape="rect" coords="256,56,374,80"/>
-<area href="../../dc/d9f/classwte_1_1sys_1_1logic.html" alt="wte::sys::logic" shape="rect" coords="384,56,502,80"/>
-<area href="../../d5/d8f/classwte_1_1sys_1_1movement.html" alt="wte::sys::movement" shape="rect" coords="512,56,630,80"/>
+<area href="../../dd/d18/classwte_1_1sys_1_1animate.html" title="Find the animate components and process them." alt="wte::sys::animate" shape="rect" coords="0,56,118,80"/>
+<area href="../../d2/d54/classwte_1_1sys_1_1colision.html" title="Will select components by team and test for a colision." alt="wte::sys::colision" shape="rect" coords="128,56,246,80"/>
+<area href="../../d3/deb/classwte_1_1sys_1_1input.html" title="Processes keyboard input." alt="wte::sys::input" shape="rect" coords="256,56,374,80"/>
+<area href="../../dc/d9f/classwte_1_1sys_1_1logic.html" title="Processes entities that have ai components. Also sends messages to entities with dispatch components." alt="wte::sys::logic" shape="rect" coords="384,56,502,80"/>
+<area href="../../d5/d8f/classwte_1_1sys_1_1movement.html" title="Moves entities." alt="wte::sys::movement" shape="rect" coords="512,56,630,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -142,19 +147,55 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a5fa23ca9c78801bcd00e2f85df86bbfb"><td class="memItemLeft" align="right" valign="top"><a id="a5fa23ca9c78801bcd00e2f85df86bbfb"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>system</b> (const std::string &amp;n)</td></tr>
+<tr class="memitem:a5fa23ca9c78801bcd00e2f85df86bbfb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4c/classwte_1_1sys_1_1system.html#a5fa23ca9c78801bcd00e2f85df86bbfb">system</a> (const std::string &amp;n)</td></tr>
 <tr class="separator:a5fa23ca9c78801bcd00e2f85df86bbfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a48e1653d2ee1f13b14d597bd0f630418"><td class="memItemLeft" align="right" valign="top"><a id="a48e1653d2ee1f13b14d597bd0f630418"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>enabled</b></td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4c/classwte_1_1sys_1_1system.html#a48e1653d2ee1f13b14d597bd0f630418">enabled</a></td></tr>
+<tr class="memdesc:a48e1653d2ee1f13b14d597bd0f630418"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag to enable/disable system. <br /></td></tr>
 <tr class="separator:a48e1653d2ee1f13b14d597bd0f630418"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a381086c8e07af1e9cf7f9cb2705141a8"><td class="memItemLeft" align="right" valign="top"><a id="a381086c8e07af1e9cf7f9cb2705141a8"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4c/classwte_1_1sys_1_1system.html#a381086c8e07af1e9cf7f9cb2705141a8">name</a></td></tr>
+<tr class="memdesc:a381086c8e07af1e9cf7f9cb2705141a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of system. <br /></td></tr>
 <tr class="separator:a381086c8e07af1e9cf7f9cb2705141a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Interface class for creating systems. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a5fa23ca9c78801bcd00e2f85df86bbfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fa23ca9c78801bcd00e2f85df86bbfb">&#9670;&nbsp;</a></span>system()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wte::sys::system::system </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>System constructor. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>System name. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/wte/sys/system.hpp</li>
 </ul>
@@ -164,7 +205,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td><
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/ddf/namespacewte.html">wte</a></li><li class="navelem"><b>sys</b></li><li class="navelem"><a class="el" href="../../d2/d4c/classwte_1_1sys_1_1system.html">system</a></li>
-    <li class="footer">Generated on Sun Jul 12 2020 22:41:32 for WTEngine by
+    <li class="footer">Generated on Mon Jul 20 2020 16:28:49 for WTEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

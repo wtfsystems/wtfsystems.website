@@ -93,6 +93,11 @@ $(document).ready(function(){initNavTree('df/d08/classwte_1_1mgr_1_1system__mana
 <div class="title">wte::mgr::system_manager Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Store the configured systems and process their runs and dispatches.  
+ <a href="../../df/d08/classwte_1_1mgr_1_1system__manager.html#details">More...</a></p>
+
+<p><code>#include &lt;system_manager.hpp&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for wte::mgr::system_manager:</div>
 <div class="dyncontent">
@@ -111,8 +116,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a77c6107021daf96f66b38615466aac1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8b4159f4ef65918a5111aebca61a414"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d08/classwte_1_1mgr_1_1system__manager.html#aa8b4159f4ef65918a5111aebca61a414">clear</a> (void)</td></tr>
 <tr class="separator:aa8b4159f4ef65918a5111aebca61a414"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2c03ca8c68eeb9bfadbf3cad694bba4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d08/classwte_1_1mgr_1_1system__manager.html#ab2c03ca8c68eeb9bfadbf3cad694bba4">finalize</a> (void)</td></tr>
-<tr class="memdesc:ab2c03ca8c68eeb9bfadbf3cad694bba4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finalize system manager. Set finalized flag to prevent additional systems from being loaded.  <a href="../../df/d08/classwte_1_1mgr_1_1system__manager.html#ab2c03ca8c68eeb9bfadbf3cad694bba4">More...</a><br /></td></tr>
+<tr class="memitem:ab2c03ca8c68eeb9bfadbf3cad694bba4"><td class="memItemLeft" align="right" valign="top"><a id="ab2c03ca8c68eeb9bfadbf3cad694bba4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d08/classwte_1_1mgr_1_1system__manager.html#ab2c03ca8c68eeb9bfadbf3cad694bba4">finalize</a> (void)</td></tr>
+<tr class="memdesc:ab2c03ca8c68eeb9bfadbf3cad694bba4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finalize system manager. Set finalized flag to prevent additional systems from being loaded. <br /></td></tr>
 <tr class="separator:ab2c03ca8c68eeb9bfadbf3cad694bba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cd1534da864c3061c3141265d876c42"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d08/classwte_1_1mgr_1_1system__manager.html#a3cd1534da864c3061c3141265d876c42">empty</a> (void)</td></tr>
 <tr class="separator:a3cd1534da864c3061c3141265d876c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,7 +141,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a332d13758715dfb5499ef44842180a31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable a system. Toggle a system to disabled so its run member is skipped.  <a href="../../df/d08/classwte_1_1mgr_1_1system__manager.html#a332d13758715dfb5499ef44842180a31">More...</a><br /></td></tr>
 <tr class="separator:a332d13758715dfb5499ef44842180a31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Store the configured systems and process their runs and dispatches. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="acd4acdafe7e32d2b38264ded87532a1a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acd4acdafe7e32d2b38264ded87532a1a">&#9670;&nbsp;</a></span>system_manager()</h2>
 
@@ -158,13 +166,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="../../d9/d16/class_system.html">System</a> <a class="el" href="../../d8/d3d/class_manager.html">Manager</a> constructor. Clears the systems vector and sets the finalized flag to false. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>System Manager constructor. Clears the systems vector and sets the finalized flag to false. </p>
 
 </div>
 </div>
@@ -190,13 +192,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="../../d9/d16/class_system.html">System</a> <a class="el" href="../../d8/d3d/class_manager.html">Manager</a> destructor. <a class="el" href="../../d1/d49/class_makes.html" title="Extend this to create a threaded object. Has a virtual run member that is defined in the inheriting c...">Makes</a> sure the systems are cleared. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>System Manager destructor. Makes sure the systems are cleared. </p>
 
 </div>
 </div>
@@ -228,7 +224,7 @@ Public Member Functions</h2></td></tr>
 <p>Add a new system to the manager. Enters system into the vector of systems if not. Systems run in the order they were added. Can fail if the system exists or if the game is running. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">new_system</td><td><a class="el" href="../../d9/d16/class_system.html">System</a> to add. </td></tr>
+    <tr><td class="paramname">new_system</td><td>System to add. </td></tr>
   </table>
   </dd>
 </dl>
@@ -259,13 +255,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Clear the system manager and allow systems to be loaded again. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>Clear the system manager and allow systems to be loaded again. </p>
 
 </div>
 </div>
@@ -353,7 +343,6 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -380,13 +369,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Check if systems were loaded into the manager. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if empty, false if not. </dd></dl>
+<p>Check if systems were loaded into the manager. </p><dl class="section return"><dt>Returns</dt><dd>True if empty, false if not. </dd></dl>
 
 </div>
 </div>
@@ -425,41 +408,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab2c03ca8c68eeb9bfadbf3cad694bba4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2c03ca8c68eeb9bfadbf3cad694bba4">&#9670;&nbsp;</a></span>finalize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void wte::mgr::system_manager::finalize </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Finalize system manager. Set finalized flag to prevent additional systems from being loaded. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-</div>
-</div>
 <a id="a57eec6bcb3ee7e3d4f2a547eaa5908ea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a57eec6bcb3ee7e3d4f2a547eaa5908ea">&#9670;&nbsp;</a></span>reload_temp_bitmaps()</h2>
 
@@ -491,7 +439,6 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -544,7 +491,6 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -557,7 +503,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/ddf/namespacewte.html">wte</a></li><li class="navelem"><b>mgr</b></li><li class="navelem"><a class="el" href="../../df/d08/classwte_1_1mgr_1_1system__manager.html">system_manager</a></li>
-    <li class="footer">Generated on Sun Jul 12 2020 22:41:31 for WTEngine by
+    <li class="footer">Generated on Mon Jul 20 2020 16:28:49 for WTEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>
