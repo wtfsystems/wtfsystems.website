@@ -66,9 +66,11 @@ $(function() {
 <div class="title">Messaging and List of Built-In Messages </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>All in-engine communication is done with the messaging queue. Messages can be used to change game settings, control the game menus, or have entities interact with each other. Messages can also be set with a timer value to be processed later. When starting a new game a scriped file of messages is loaded to process the in-game events.</p>
-<h4><a class="anchor" id="autotoc_md8"></a>
-Message format:</h4>
+<div class="textblock"><p>All in-engine communication is done with the messaging queue. Messages can be used to change game settings, control the game menus, or have entities interact with each other. Messages can also be set with a timer value to be processed later. The message manager stores messages and keeps track of when they should be processed.</p>
+<p>When starting a new game, a file containing messages in binary format can be passed for processing. The engine also has a command (see below) that can be used to load additional messages. These messages have their timer values added to the current engine time when loaded.</p>
+<p>A tool named <em>csv2sdf</em> is included to convert files in CSV format to be readable by the engine.</p>
+<h3><a class="anchor" id="autotoc_md9"></a>
+Message format:</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Timer (optional)  </th><th class="markdownTableHeadNone">System  </th><th class="markdownTableHeadNone">To (optional)  </th><th class="markdownTableHeadNone">From (optional)  </th><th class="markdownTableHeadNone">Command  </th><th class="markdownTableHeadNone">Arguments   </th></tr>
@@ -76,6 +78,13 @@ Message format:</h4>
 <td class="markdownTableBodyNone">Timer value to run at (-1 for instant)  </td><td class="markdownTableBodyNone">The system to process the message  </td><td class="markdownTableBodyNone">To entity  </td><td class="markdownTableBodyNone">From entity  </td><td class="markdownTableBodyNone">Command to exectute  </td><td class="markdownTableBodyNone">Arguments for command   </td></tr>
 </table>
 <p>Arguments are split with a semicolon ;</p>
+<h3><a class="anchor" id="autotoc_md10"></a>
+Examples:</h3>
+<p>Send an instant message to pause music: </p><div class="fragment"><div class="line">messages.add_message(message(&quot;audio&quot;, &quot;pause_music&quot;, &quot;&quot;));</div>
+</div><!-- fragment --><p> Delete my_entity at timer value 100: </p><div class="fragment"><div class="line">messages.add_message(message(100, &quot;spawner&quot;, &quot;delete&quot;, &quot;my_entity&quot;));</div>
+</div><!-- fragment --><p> Communication between entities: </p><div class="fragment"><div class="line">messages.add_message(message(&quot;entities&quot;, &quot;first_entity&quot;, &quot;second_entity&quot;, &quot;command&quot;, &quot;arguments&quot;));</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md11"></a>
+Built-In Messages</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Description  </th><th class="markdownTableHeadNone">System  </th><th class="markdownTableHeadNone">Commmand  </th><th class="markdownTableHeadNone">Arguments   </th></tr>
@@ -157,7 +166,7 @@ Message format:</h4>
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 21 2020 14:14:48 for WTEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2020 17:37:49 for WTEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.16
 </small></address>
