@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>WTEngine: Class Members - Functions</title>
+<title>WTEngine: Entities / Components / Systems</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -46,7 +46,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -61,30 +60,24 @@ $(function() {
 </iframe>
 </div>
 
+</div><!-- top -->
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">Entities / Components / Systems </div>  </div>
+</div><!--header-->
 <div class="contents">
-&#160;
-
-<h3><a id="index_n"></a>- n -</h3><ul>
-<li>new_entity()
-: <a class="el" href="classwte_1_1mgr_1_1entity__manager.html#ab39fed6033c5b58d2923c70fb245bbbe">wte::mgr::entity_manager</a>
-</li>
-<li>new_game()
-: <a class="el" href="classwte_1_1wte__main.html#a4f6714faee4bd1dd1b95948ca810528e">wte::wte_main</a>
-</li>
-<li>new_menu()
-: <a class="el" href="classwte_1_1mgr_1_1menu__manager.html#aa4ead48b53a3a92b40d301406d6812c6">wte::mgr::menu_manager</a>
-</li>
-<li>num_args()
-: <a class="el" href="classwte_1_1message.html#ac397c438c1d0e01c18de6034a0c6fc68">wte::message</a>
-</li>
-<li>num_items()
-: <a class="el" href="classwte_1_1mnu_1_1menu.html#aa5391ac2120667386841ebe03a7ca5af">wte::mnu::menu</a>
-</li>
-</ul>
-</div><!-- contents -->
+<div class="textblock"><h3><a class="anchor" id="autotoc_md1"></a>
+ENTITIES/COMPONENTS:</h3>
+<p>Entities are in-game objects, and components are the data containers that make them up. The engine tracks these in an internal database, and user-defined components can be created by extending the base object. This data can then be fetched in various ways by entity ID or component type.</p>
+<hr  />
+<h3><a class="anchor" id="autotoc_md3"></a>
+SYSTEMS:</h3>
+<p>Systems are the logic members that get processed each step through the game loop. The engine has a few pre-defined systems for use, but user created ones are possible as well. </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 21 2020 12:04:53 for WTEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2020 12:04:51 for WTEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.16
 </small></address>

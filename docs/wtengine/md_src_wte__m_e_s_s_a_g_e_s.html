@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>WTEngine: List of built-in messages</title>
+<title>WTEngine: Messaging and List of Built-In Messages</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,10 +63,19 @@ $(function() {
 </div><!-- top -->
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">List of built-in messages </div>  </div>
+<div class="title">Messaging and List of Built-In Messages </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Arguments are split with a semicolon ;</p>
+<div class="textblock"><p>All in-engine communication is done with the messaging queue. Messages can be used to change game settings, control the game menus, or have entities interact with each other. Messages can also be set with a timer value to be processed later. When starting a new game a scriped file of messages is loaded to process the in-game events.</p>
+<h4><a class="anchor" id="autotoc_md5"></a>
+Message format:</h4>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Timer (optional)  </th><th class="markdownTableHeadNone">System  </th><th class="markdownTableHeadNone">To (optional)  </th><th class="markdownTableHeadNone">From (optional)  </th><th class="markdownTableHeadNone">Command  </th><th class="markdownTableHeadNone">Arguments   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Timer value to run at (-1 for instant)  </td><td class="markdownTableBodyNone">The system to process the message  </td><td class="markdownTableBodyNone">To entity  </td><td class="markdownTableBodyNone">From entity  </td><td class="markdownTableBodyNone">Command to exectute  </td><td class="markdownTableBodyNone">Arguments for command   </td></tr>
+</table>
+<p>Arguments are split with a semicolon ;</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Description  </th><th class="markdownTableHeadNone">System  </th><th class="markdownTableHeadNone">Commmand  </th><th class="markdownTableHeadNone">Arguments   </th></tr>
@@ -87,13 +96,13 @@ $(function() {
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Disable a system  </td><td class="markdownTableBodyNone">system  </td><td class="markdownTableBodyNone">disable_system  </td><td class="markdownTableBodyNone">(1) Name of system   </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Set Engine Config Variable  </td><td class="markdownTableBodyNone">system  </td><td class="markdownTableBodyNone">set_engcfg  </td><td class="markdownTableBodyNone">(1) "var=val" Variable to set and the value   </td></tr>
+<td class="markdownTableBodyNone">Set engine config variable  </td><td class="markdownTableBodyNone">system  </td><td class="markdownTableBodyNone">set_engcfg  </td><td class="markdownTableBodyNone">(1) "var=val" Variable to set and the value   </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">Set Game Config Variable  </td><td class="markdownTableBodyNone">system  </td><td class="markdownTableBodyNone">set_gamecfg  </td><td class="markdownTableBodyNone">(1) "var=val" Variable to set and the value   </td></tr>
+<td class="markdownTableBodyNone">Set game config variable  </td><td class="markdownTableBodyNone">system  </td><td class="markdownTableBodyNone">set_gamecfg  </td><td class="markdownTableBodyNone">(1) "var=val" Variable to set and the value   </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Reconfigure the display  </td><td class="markdownTableBodyNone">system  </td><td class="markdownTableBodyNone">reconf_display  </td><td class="markdownTableBodyNone">none   </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">Enable/disable FPS Counter  </td><td class="markdownTableBodyNone">system  </td><td class="markdownTableBodyNone">fps_counter  </td><td class="markdownTableBodyNone">(1) "on/off"   </td></tr>
+<td class="markdownTableBodyNone">Enable/disable FPS counter  </td><td class="markdownTableBodyNone">system  </td><td class="markdownTableBodyNone">fps_counter  </td><td class="markdownTableBodyNone">(1) "on/off"   </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Load a script from file  </td><td class="markdownTableBodyNone">system  </td><td class="markdownTableBodyNone">load_script  </td><td class="markdownTableBodyNone">(1) Filename of script   </td></tr>
 <tr class="markdownTableRowEven">
@@ -148,7 +157,7 @@ $(function() {
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 21 2020 00:01:21 for WTEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2020 12:04:51 for WTEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.16
 </small></address>
