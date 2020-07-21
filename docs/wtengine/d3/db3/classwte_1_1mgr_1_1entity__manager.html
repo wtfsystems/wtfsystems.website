@@ -9,14 +9,6 @@
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
-<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="../../resize.js"></script>
-<script type="text/javascript" src="../../navtreedata.js"></script>
-<script type="text/javascript" src="../../navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
@@ -54,23 +46,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('d3/db3/classwte_1_1mgr_1_1entity__manager.html','../../');});
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,6 +60,11 @@ $(document).ready(function(){initNavTree('d3/db3/classwte_1_1mgr_1_1entity__mana
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d4/ddf/namespacewte.html">wte</a></li><li class="navelem"><b>mgr</b></li><li class="navelem"><a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html">entity_manager</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -96,8 +76,6 @@ $(document).ready(function(){initNavTree('d3/db3/classwte_1_1mgr_1_1entity__mana
 
 <p>Store a collection of entities and their corresponding components in memory.  
  <a href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html#details">More...</a></p>
-
-<p><code>#include &lt;entity_manager.hpp&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for wte::mgr::entity_manager:</div>
 <div class="dyncontent">
@@ -172,9 +150,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">wte::mgr::entity_manager::entity_manager </td>
@@ -183,11 +158,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Entity manager constructor. Start entity counter at 1 </p>
 
@@ -198,9 +168,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">wte::mgr::entity_manager::~entity_manager </td>
@@ -209,11 +176,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Entity manager destructor. </p>
 
@@ -225,9 +187,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const bool wte::mgr::entity_manager::add_component </td>
@@ -247,11 +206,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Add a new component to an entity. Entities can only have a single compoenent of each type. </p>
@@ -277,9 +231,6 @@ Return true on success. </dd></dl>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const bool wte::mgr::entity_manager::delete_component </td>
@@ -289,11 +240,6 @@ template&lt;typename T &gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Delete a component by type for an entity. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -318,9 +264,6 @@ Return false if no components were deleted. </dd></dl>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const bool wte::mgr::entity_manager::delete_entity </td>
@@ -330,11 +273,6 @@ Return false if no components were deleted. </dd></dl>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Delete entity by ID. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -351,9 +289,6 @@ Return false if no components were deleted. </dd></dl>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const bool wte::mgr::entity_manager::entity_exists </td>
@@ -363,11 +298,6 @@ Return false if no components were deleted. </dd></dl>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Check if an entity exists. Check the entity vector by ID and return result. </p>
@@ -388,9 +318,6 @@ Return false if no components were deleted. </dd></dl>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const std::shared_ptr&lt;const T&gt; wte::mgr::entity_manager::get_component </td>
@@ -400,11 +327,6 @@ template&lt;typename T &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Read the value of a component by type for an entity. Note that calling this for a component that does not exist will cause the program to fail. If there is a chance it does not exist, call <a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html#a8fb2cf8ab7c64131ac1fbced367e973a">has_component()</a> first. </p>
@@ -431,9 +353,6 @@ template&lt;typename T &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="../../d4/ddf/namespacewte.html#a4fc4f86a660a0c1c54c06a1186c7d0f8">const_component_container</a>&lt;T&gt; wte::mgr::entity_manager::get_components </td>
@@ -443,11 +362,6 @@ template&lt;typename T &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Get all components for a particulair type. This will return a container of non-modifiable components casted to their type. </p>
@@ -466,9 +380,6 @@ template&lt;typename T &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="../../d4/ddf/namespacewte.html#a9f86554d6a9e6f20df0dba235e5e36dc">world_container</a> wte::mgr::entity_manager::get_entities </td>
@@ -478,11 +389,6 @@ template&lt;typename T &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Get the entity reference vector. </p><dl class="section return"><dt>Returns</dt><dd>Returns a vector of all entity IDs and names. </dd></dl>
 
@@ -493,9 +399,6 @@ template&lt;typename T &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="../../d4/ddf/namespacewte.html#adb06d3544221b0d8128e07b63ff0760e">const_entity_container</a> wte::mgr::entity_manager::get_entity </td>
@@ -505,11 +408,6 @@ template&lt;typename T &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Get all components related to an entity. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -526,9 +424,6 @@ template&lt;typename T &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="../../d4/ddf/namespacewte.html#abf2544b3056d60f0182109d89eab289a">entity_id</a> wte::mgr::entity_manager::get_id </td>
@@ -538,11 +433,6 @@ template&lt;typename T &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Get entity ID by name. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -559,9 +449,6 @@ template&lt;typename T &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const std::string wte::mgr::entity_manager::get_name </td>
@@ -571,11 +458,6 @@ template&lt;typename T &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Get entity name. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -594,9 +476,6 @@ template&lt;typename T &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const bool wte::mgr::entity_manager::has_component </td>
@@ -606,11 +485,6 @@ template&lt;typename T &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Check if an entity has a component by type. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -635,9 +509,6 @@ Return false if it does not. </dd></dl>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="../../d4/ddf/namespacewte.html#abf2544b3056d60f0182109d89eab289a">entity_id</a> wte::mgr::entity_manager::new_entity </td>
@@ -647,11 +518,6 @@ Return false if it does not. </dd></dl>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Create a new entity by name, using the next available ID. Throw error if there is no room for entities. </p>
@@ -666,9 +532,6 @@ Return false if it does not. </dd></dl>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const std::shared_ptr&lt;T&gt; wte::mgr::entity_manager::set_component </td>
@@ -678,11 +541,6 @@ template&lt;typename T &gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Set the value of a component by type for an entity. Note that calling this for a component that does not exist will cause the program to fail. If there is a chance it does not exist, call <a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html#a8fb2cf8ab7c64131ac1fbced367e973a">has_component()</a> first. </p>
@@ -709,9 +567,6 @@ template&lt;typename T &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="../../d4/ddf/namespacewte.html#a56755629ebb58790ea2caba5b704ff51">component_container</a>&lt;T&gt; wte::mgr::entity_manager::set_components </td>
@@ -721,11 +576,6 @@ template&lt;typename T &gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Set all components for a particulair type. This will return a container of modifiable components casted to their type. </p>
@@ -744,9 +594,6 @@ template&lt;typename T &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="../../d4/ddf/namespacewte.html#ae0779b06e2731efe7a169ea34facbb49">entity_container</a> wte::mgr::entity_manager::set_entity </td>
@@ -756,11 +603,6 @@ template&lt;typename T &gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Set all components related to an entity. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -777,9 +619,6 @@ template&lt;typename T &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const bool wte::mgr::entity_manager::set_name </td>
@@ -799,11 +638,6 @@ template&lt;typename T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Set the entity name. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -820,15 +654,11 @@ template&lt;typename T &gt; </div>
 <li>src/wte/mgr/entity_manager.hpp</li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="../../d4/ddf/namespacewte.html">wte</a></li><li class="navelem"><b>mgr</b></li><li class="navelem"><a class="el" href="../../d3/db3/classwte_1_1mgr_1_1entity__manager.html">entity_manager</a></li>
-    <li class="footer">Generated on Mon Jul 20 2020 17:15:45 for WTEngine by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Mon Jul 20 2020 20:17:28 for WTEngine by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.16
+</small></address>
 </body>
 </html>

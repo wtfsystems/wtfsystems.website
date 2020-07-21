@@ -4,6 +4,5 @@ var searchData=
   ['background_18',['background',['../dc/d3f/classwte_1_1cmp_1_1background.html',1,'wte::cmp::background'],['../dc/d3f/classwte_1_1cmp_1_1background.html#a21450ee445f2c4c3e6fe54c148dec872',1,'wte::cmp::background::background(const int w, const int h, const std::size_t l, ALLEGRO_COLOR c)'],['../dc/d3f/classwte_1_1cmp_1_1background.html#a4152df5fa834cfb5b6f0aeccb9966b31',1,'wte::cmp::background::background(const int w, const int h, const std::size_t l, void func(const entity_id &amp;, mgr::entity_manager &amp;, const int64_t &amp;))']]],
   ['bitmap_5fmap_19',['bitmap_map',['../da/d4e/classwte_1_1cmp_1_1bitmap__map.html',1,'wte::cmp::bitmap_map'],['../da/d4e/classwte_1_1cmp_1_1bitmap__map.html#adba9f982ab67b36cc46d8ee410cf3c6e',1,'wte::cmp::bitmap_map::bitmap_map()']]],
   ['bounding_5fbox_20',['bounding_box',['../d8/d3b/classwte_1_1cmp_1_1bounding__box.html',1,'wte::cmp::bounding_box'],['../d8/d3b/classwte_1_1cmp_1_1bounding__box.html#ae1672ab02afc3b708b298901e2bd144d',1,'wte::cmp::bounding_box::bounding_box()']]],
-  ['bug_20list_21',['Bug List',['../de/da5/bug.html',1,'']]],
-  ['button_5fbind_22',['button_bind',['../dc/db0/classwte_1_1wte__input__map.html#aad0883c12244448ec47a336f02038e2e',1,'wte::wte_input_map']]]
+  ['button_5fbind_21',['button_bind',['../dc/db0/classwte_1_1wte__input__map.html#aad0883c12244448ec47a336f02038e2e',1,'wte::wte_input_map']]]
 ];
