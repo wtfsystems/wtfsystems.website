@@ -1,0 +1,41 @@
+body {
+    background-color: #808080;
+    min-width: 700px;
+    max-width: 950px;
+    margin: auto;
+}
+
+.header_div {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.nav_div {
+    text-align: center;
+    font-weight: bold;
+    width: 65%;
+    margin: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 10px;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+.section_div {
+    background-color: #98AFC7;
+    text-align:  left;
+    width: 94%;
+    margin: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border-radius: 16px;
+    border: 1px solid #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
