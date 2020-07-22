@@ -66,11 +66,28 @@ $(function() {
 <div class="title">Main Engine Object </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"></div></div><!-- contents -->
+<div class="textblock"><p>Creating a game is done by extending the <b>wte_main</b> object and implementing the members below.</p>
+<p><em>Required:</em> </p><div class="fragment"><div class="line">virtual void load_menus(void) - Define menus here</div>
+<div class="line">virtual void load_systems(void) - Load systems here</div>
+<div class="line">virtual void new_game(void) - New game process</div>
+<div class="line">virtual void end_game(void) - End game process</div>
+</div><!-- fragment --><p><em>Optional:</em> </p><div class="fragment"><div class="line">virtual void on_menu_open(void) - Events when a menu opens</div>
+<div class="line">virtual void on_menu_close(void) - Events when a menu closes</div>
+<div class="line">virtual void out_of_focus(void) - Events if the game window is clicked out of</div>
+<div class="line">virtual void back_in_focus(void) - Events when the game window is brought back into focus</div>
+<div class="line">virtual void handle_custom_sys_msg(const message&amp;) - Define custom message handling</div>
+</div><!-- fragment --><p>In your <b>main.cpp</b> file delcare the object as such: </p><div class="fragment"><div class="line">//  Initialize game object.</div>
+<div class="line">wte_demo my_game(argc, argv);</div>
+<div class="line">//  Run the game.</div>
+<div class="line">my_game.do_game();</div>
+</div><!-- fragment --><p>The command line arguments must be passed in for PhysicsFS.</p>
+<p>When defining the constructor for your object, pass the window's display title as well: </p><div class="fragment"><div class="line">wte_demo::wte_demo(int argc, char **argv) : wte_main(argc, argv, &quot;WTE Demo&quot;)</div>
+</div><!-- fragment --><p>See the demo files <b>main.cpp</b> and <b>wte_demo.cpp</b> for an example of an implementation. </p>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 22 2020 12:58:35 for WTEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 22 2020 19:51:47 for WTEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.16
 </small></address>
