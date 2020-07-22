@@ -12,7 +12,7 @@ var searchData=
   ['manager_3c_20spawn_5fmanager_20_3e_188',['manager&lt; spawn_manager &gt;',['../classwte_1_1mgr_1_1manager.html',1,'wte::mgr']]],
   ['manager_3c_20system_5fmanager_20_3e_189',['manager&lt; system_manager &gt;',['../classwte_1_1mgr_1_1manager.html',1,'wte::mgr']]],
   ['menus_190',['Menus',['../md_src_wte__docs_menus.html',1,'']]],
-  ['messaging_20and_20list_20of_20built_2din_20messages_191',['Messaging and List of Built-In Messages',['../md_src_wte__docs_messages.html',1,'']]],
+  ['messaging_20and_20list_20of_20built_2din_20commands_191',['Messaging and List of Built-In Commands',['../md_src_wte__docs_messages.html',1,'']]],
   ['menu_192',['menu',['../classwte_1_1mnu_1_1menu.html',1,'wte::mnu::menu'],['../classwte_1_1mnu_1_1menu.html#a24e261a232a7040dda3f2feef4591340',1,'wte::mnu::menu::menu()']]],
   ['menu_5fciterator_193',['menu_citerator',['../namespacewte.html#a7451d7863df4fee569aef0f71d404c83',1,'wte']]],
   ['menu_5fitem_194',['menu_item',['../classwte_1_1mnu_1_1menu__item.html',1,'wte::mnu::menu_item'],['../classwte_1_1mnu_1_1menu__item.html#aed7a9ef7884d9f3f218bb8537e9af036',1,'wte::mnu::menu_item::menu_item(const std::string l)'],['../classwte_1_1mnu_1_1menu__item.html#a64872f2d1443cf15c80dd58543e06696',1,'wte::mnu::menu_item::menu_item(const std::string l, const std::size_t st)']]],
