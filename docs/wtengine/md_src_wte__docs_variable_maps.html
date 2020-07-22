@@ -66,11 +66,31 @@ $(function() {
 <div class="title">Variable Maps </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"></div></div><!-- contents -->
+<div class="textblock"><p>The variable maps are a method to dynamically create and store variables for use by the game engine. WTEngine has two variable maps: <b>game_cfg</b> and <b>engine_cfg</b>. These are stored as strings, but can be type-casted to return as specific data types. Be careful when using these as they can return unexpected results if misused!</p>
+<p>The <b>engine_cfg</b> map should be used for storing configuration variables related to the engine, while <b>game_cfg</b> is used for variables related to your game. The <b>game_cfg</b> map also has members for performing simple math, see it's documentation for more information.</p>
+<p><em>Registering a variable:</em> </p><div class="fragment"><div class="line">engine_cfg::reg(&quot;display_mode=windowed&quot;)</div>
+</div><!-- fragment --><p><em>Or:</em> </p><div class="fragment"><div class="line">engine_cfg::reg(&quot;display_mode&quot;, &quot;windowed&quot;)</div>
+</div><!-- fragment --><p><em>Retrieving data as a string:</em> </p><div class="fragment"><div class="line">game_cfg::get(&quot;score&quot;)</div>
+</div><!-- fragment --><p><em>Retrieving data as a casted type:</em> </p><div class="fragment"><div class="line">game_cfg::get&lt;int&gt;(&quot;lives&quot;)</div>
+</div><!-- fragment --><p><em>Performing math:</em> </p><div class="fragment"><div class="line">game_cfg::subtract&lt;int&gt;(&quot;lives&quot;, 1);</div>
+</div><!-- fragment --><hr  />
+<h3><a class="anchor" id="autotoc_md30"></a>
+Saving data:</h3>
+<p>Both variable maps can save their data, but the functionality is different for each.</p>
+<p>The <b>engine_cfg</b> map saves all registered data in <b>settings.cfg</b> and is saved/loaded with the following commands:</p>
+<p><em>Load engine config data:</em> </p><div class="fragment"><div class="line">engine_cfg::load();</div>
+</div><!-- fragment --><p><em>Save engine config data:</em> </p><div class="fragment"><div class="line">engine_cfg::save();</div>
+</div><!-- fragment --><p>The <b>game_cfg</b> map is designed to store only the registered variables you specifically tell it to save. By default they will be saved to <b>game.cfg</b> but this can also be changed. When setting a new filename it becomes the active file and subsequent save commands will write to this file. This allows you to store seperate data into different files.</p>
+<p><em>Setting a save file:</em> </p><div class="fragment"><div class="line">game_cfg::set_game_cfg_file(&quot;my_save.cfg&quot;)</div>
+</div><!-- fragment --><p><em>Clearing old saved data:</em> </p><div class="fragment"><div class="line">game_cfg::clear_save();</div>
+</div><!-- fragment --><p><em>Saving data:</em> </p><div class="fragment"><div class="line">game_cfg::save(&quot;hiscore&quot;);</div>
+</div><!-- fragment --><hr  />
+<p>The messaging system can also be used to set these variables. See the documentation page on messaging for more information. </p>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 21 2020 22:13:48 for WTEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 22 2020 12:58:35 for WTEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.16
 </small></address>

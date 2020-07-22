@@ -66,11 +66,15 @@ $(function() {
 <div class="title">Menus </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"></div></div><!-- contents -->
+<div class="textblock"><p>By default WTEngine creates two empty menus, <b>main_menu</b> and <b>game_menu</b>. You can then create additional menus as necessary and add items to them. See the documentation on the individual menu items for their usage and functionality. All menus are stored in the <b>menu_manager</b> object.</p>
+<p><em>Creating a new menu:</em> </p><div class="fragment"><div class="line">mnu::menu my_menu = mnu::menu(&quot;settings&quot;, &quot;Settings&quot;);</div>
+</div><!-- fragment --><p><em>Adding an item using set_menu:</em> </p><div class="fragment"><div class="line">menus.set_menu(&quot;main_menu&quot;)-&gt;add_item(wte_menu_action(&quot;Settings&quot;, &quot;open_menu&quot;, &quot;settings&quot;));</div>
+</div><!-- fragment --><p><em>Adding an item directly:</em> </p><div class="fragment"><div class="line">my_menu.add_item(wte_menu_action(&quot;Return&quot;, &quot;close_menu&quot;));</div>
+</div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 21 2020 22:13:47 for WTEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 22 2020 12:58:35 for WTEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.16
 </small></address>
