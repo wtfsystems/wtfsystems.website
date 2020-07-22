@@ -66,24 +66,38 @@ $(function() {
 <div class="title">Entities / Components / Systems </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>WTEngine uses an <a href="https://en.wikipedia.org/wiki/Entity_component_system">ECS</a> design for it's memory management. <br  />
-</p>
-<hr  />
-<h3><a class="anchor" id="autotoc_md13"></a>
+<div class="textblock"><p>WTEngine stores game objects in the <b>entity_manager</b> class.</p>
+<h3><a class="anchor" id="autotoc_md12"></a>
 Entities:</h3>
-<p>Entities are in-game objects, and components are the data containers that make them up. The engine tracks these in an internal database, and user-defined components can be created by extending the base object. This data can then be fetched in various ways by entity ID or component type.</p>
-<hr  />
-<h3><a class="anchor" id="autotoc_md15"></a>
+<p>Entities are any and all in-game objects, such as the player, background, enemies, even the text showing the score. When creating a new entity the engine will assign a unique ID number and unique name. If the engine is unable to create an entity the error code <b>WTE_ENTITY_ERROR</b> is returned. You can then change the name of the entity if desired. When setting the name the engine will verify it does not already exist.</p>
+<p><em>Creating an entity:</em> </p><div class="fragment"><div class="line">entity_id e_id = world.new_entity();</div>
+</div><!-- fragment --><p><em>Setting an entity name:</em> </p><div class="fragment"><div class="line">world.set_name(e_id, &quot;some_unique_name&quot;);</div>
+</div><!-- fragment --><p><em>Get entity name by ID:</em> </p><div class="fragment"><div class="line">std::string player_name = world.get_name(plr_id);</div>
+</div><!-- fragment --><p><em>Get entity ID by name:</em> </p><div class="fragment"><div class="line">entity_id e_id = world.get_id(&quot;some_entity&quot;);</div>
+</div><!-- fragment --><hr  />
+<h3><a class="anchor" id="autotoc_md14"></a>
 Components:</h3>
-<hr  />
-<h3><a class="anchor" id="autotoc_md17"></a>
+<p>Components are the data objects that make up each entity. Examples would be the location on the screen, sprite data, hitpoints, etc. After creating an entity you can assign components to it using its Entity ID. The engine has seperate functions for reading and setting component data. You can also create your own components by extending the base <b>component</b> object.</p>
+<p><em>Adding a component:</em> </p><div class="fragment"><div class="line">wte_new_component(e_id, cmp::visible, false);</div>
+</div><!-- fragment --><p><em>Setting a component's data:</em> </p><div class="fragment"><div class="line">wte_set_component(e_id, cmp::sprite)-&gt;load_sprite(&quot;my_sprite.bmp&quot;);</div>
+</div><!-- fragment --><p><em>Reading a component's data:</em> </p><div class="fragment"><div class="line">wte_get_component(e_id, cmp::location)-&gt;get_x()</div>
+</div><!-- fragment --><hr  />
+<h3><a class="anchor" id="autotoc_md16"></a>
 Systems:</h3>
-<p>Systems are the logic members that get processed each step through the game loop. The engine has a few pre-defined systems for use, but user created ones are possible as well. </p>
+<p>Systems are functions that are processed each iteration when the game is running. These are designed to obtain all components of a certain type and process them. For example, the movement system will look for all entities with a velocity component, verify they have a location component, and update their posistion based on the velocity value. You can also create your own systems by extending the base <b>system</b> object. You then load all systems into the <b>system_manager</b> in order they will be processed.</p>
+<p><em>Example:</em> </p><div class="fragment"><div class="line">void wte_demo::load_systems(void) {</div>
+<div class="line">    wte_add_system(sys::input);</div>
+<div class="line">    wte_add_system(sys::movement);</div>
+<div class="line">    wte_add_system(sys::colision);</div>
+<div class="line">    wte_add_system(sys::logic);</div>
+<div class="line">    wte_add_system(sys::animate);</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>The <b>entity_manager</b> has members for reading or setting all components of a type, see it's documentation for more information. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 21 2020 18:18:36 for WTEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 21 2020 21:46:03 for WTEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.16
 </small></address>
