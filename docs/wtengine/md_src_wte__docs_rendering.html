@@ -67,20 +67,20 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>The <b>render_manager</b> requires some parameters to be set up in your <b>main.cpp</b> file before calling the main engine object.</p>
-<h3><a class="anchor" id="autotoc_md30"></a>
+<h3><a class="anchor" id="autotoc_md41"></a>
 Set the arena</h3>
-<p>Set the arena size in pixels. This can later be scaled up or down as necessary. </p><div class="fragment"><div class="line">mgr::render_manager::set_arena_size(1920, 1080);</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md31"></a>
+<p>Set the arena size in pixels. This is a bitmap that is used for drawing the visible game area to. It can later be scaled up or down as necessary with the <b>scale_factor</b> engine variable. </p><div class="fragment"><div class="line">mgr::render_manager::set_arena_size(1920, 1080);</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md42"></a>
 Set the title screen</h3>
-<p>Load a file to be used as the main title screen. This will be streched to fit the display size. </p><div class="fragment"><div class="line">mgr::render_manager::set_title_screen(&quot;title.bmp&quot;);</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md32"></a>
+<p>Load a file to be used as the main title screen. This will be streched to fit the display size. If no file is provided, a black title screen will be drawn. </p><div class="fragment"><div class="line">mgr::render_manager::set_title_screen(&quot;title.bmp&quot;);</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md43"></a>
 Set the background</h3>
-<p>Load a file to be used as the in-game background. If the arena size is smaller than the display size, the background will be visible. This will be streched to fit the display size. </p><div class="fragment"><div class="line">mgr::render_manager::set_background_screen(&quot;title.bmp&quot;);</div>
+<p>Load a file to be used as the in-game background. If the arena size is smaller than the display size, the background will be visible. This will be streched to fit the display size. If no file is provided, a black background will be drawn. </p><div class="fragment"><div class="line">mgr::render_manager::set_background_screen(&quot;title.bmp&quot;);</div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 28 2020 15:19:29 for WTEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 28 2020 17:59:20 for WTEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.16
 </small></address>

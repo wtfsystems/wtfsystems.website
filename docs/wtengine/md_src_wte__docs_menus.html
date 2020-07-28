@@ -70,11 +70,15 @@ $(function() {
 <p><em>Creating a new menu:</em> </p><div class="fragment"><div class="line">mnu::menu my_menu = mnu::menu(&quot;settings&quot;, &quot;Settings&quot;);</div>
 </div><!-- fragment --><p><em>Adding an item using set_menu:</em> </p><div class="fragment"><div class="line">menus.set_menu(&quot;main_menu&quot;)-&gt;add_item(wte_menu_action(&quot;Settings&quot;, &quot;open_menu&quot;, &quot;settings&quot;));</div>
 </div><!-- fragment --><p><em>Adding an item directly:</em> </p><div class="fragment"><div class="line">my_menu.add_item(wte_menu_action(&quot;Return&quot;, &quot;close_menu&quot;));</div>
-</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- fragment --><p>You can also set the background and font color of the menus as such: </p><div class="fragment"><div class="line">menus.set_menu_color(ALLEGRO_COLOR font, ALLEGRO_COLOR background);</div>
+</div><!-- fragment --><p> See the documentation on Allegro's color structures for information on the passing values.</p>
+<p>A custom menu size can be also be set: </p><div class="fragment"><div class="line">menus.set_menu_size(200, 200, 10);</div>
+</div><!-- fragment --><p> The values are width, height and padding in order. The engine will default to 500x400x32 if not called. </p>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 28 2020 15:19:29 for WTEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 28 2020 17:59:20 for WTEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.16
 </small></address>
