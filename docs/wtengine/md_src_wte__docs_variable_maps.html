@@ -74,8 +74,9 @@ $(function() {
 </div><!-- fragment --><p><em>Retrieving data as a string:</em> </p><div class="fragment"><div class="line">game_cfg::get(&quot;score&quot;)</div>
 </div><!-- fragment --><p><em>Retrieving data as a casted type:</em> </p><div class="fragment"><div class="line">game_cfg::get&lt;int&gt;(&quot;lives&quot;)</div>
 </div><!-- fragment --><p><em>Performing math:</em> </p><div class="fragment"><div class="line">game_cfg::subtract&lt;int&gt;(&quot;lives&quot;, 1);</div>
-</div><!-- fragment --><hr  />
-<h3><a class="anchor" id="autotoc_md30"></a>
+</div><!-- fragment --><p>The messaging system can also be used to set these variables. See the documentation page on messaging for more information.</p>
+<hr  />
+<h3><a class="anchor" id="autotoc_md35"></a>
 Saving data:</h3>
 <p>Both variable maps can save their data, but the functionality is different for each.</p>
 <p>The <b>engine_cfg</b> map saves all registered data in <b>settings.cfg</b> and is saved/loaded with the following commands:</p>
@@ -86,12 +87,35 @@ Saving data:</h3>
 </div><!-- fragment --><p><em>Clearing old saved data:</em> </p><div class="fragment"><div class="line">game_cfg::clear_save();</div>
 </div><!-- fragment --><p><em>Saving data:</em> </p><div class="fragment"><div class="line">game_cfg::save(&quot;hiscore&quot;);</div>
 </div><!-- fragment --><hr  />
-<p>The messaging system can also be used to set these variables. See the documentation page on messaging for more information. </p>
+<h3><a class="anchor" id="autotoc_md37"></a>
+Engine Config Variables Created by the Engine:</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Defined In  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">draw_fps  </td><td class="markdownTableBodyNone">wte_main.hpp  </td><td class="markdownTableBodyNone">0 = don't draw FPS, 1 = draw FPS   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">display_mode  </td><td class="markdownTableBodyNone">wte_display.hpp  </td><td class="markdownTableBodyNone">windowed or windowed_full_screen   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">scale_factor  </td><td class="markdownTableBodyNone">wte_display.hpp  </td><td class="markdownTableBodyNone">Scale factor for drawing the arena   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">vsync  </td><td class="markdownTableBodyNone">wte_display.hpp  </td><td class="markdownTableBodyNone">0 (default) = Use gfx driver settings, 1 = on, 2 = off   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">main_vol  </td><td class="markdownTableBodyNone">audio_manager.hpp  </td><td class="markdownTableBodyNone">The main volume level (0.0f - 1.0f)   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">mixN_vol  </td><td class="markdownTableBodyNone">audio_manager.hpp  </td><td class="markdownTableBodyNone">The volume level of individual mixers (N = 1 - 4) (0.0f - 1.0f)   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">set_a_key_KEY  </td><td class="markdownTableBodyNone">wte_input_map.hpp  </td><td class="markdownTableBodyNone">Set A key bind (KEY = key to bind)   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">set_b_key_KEY  </td><td class="markdownTableBodyNone">wte_input_map.hpp  </td><td class="markdownTableBodyNone">Set B key bind (KEY = key to bind)   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">joy_ACTION  </td><td class="markdownTableBodyNone">wte_input_map.hpp  </td><td class="markdownTableBodyNone">Joystick input binding (ACTION = joystick action to bind)   </td></tr>
+</table>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 23 2020 11:08:55 for WTEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 28 2020 15:19:29 for WTEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.16
 </small></address>

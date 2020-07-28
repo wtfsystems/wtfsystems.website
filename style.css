@@ -26,10 +26,10 @@ body {
     border-bottom: 1px solid #000000;
 }
 
-.nav_div a:link { color: #FFFF00; }
-.nav_div a:visited { color: #FFFF00; }
-.nav_div a:hover { color: #FFFF00; }
-.nav_div a:active { color: #FFFF00; }
+.nav_div a:link { color: #FFA500; }
+.nav_div a:visited { color: #FFA500; }
+.nav_div a:hover { color: #FFA500; }
+.nav_div a:active { color: #FFA500; }
 
 .section_div {
     background-color: #98AFC7;

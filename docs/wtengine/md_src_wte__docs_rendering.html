@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>WTEngine: Class Members - Functions</title>
+<title>WTEngine: Rendering</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -46,7 +46,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -61,40 +60,27 @@ $(function() {
 </iframe>
 </div>
 
+</div><!-- top -->
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">Rendering </div>  </div>
+</div><!--header-->
 <div class="contents">
-&#160;
-
-<h3><a id="index_e"></a>- e -</h3><ul>
-<li>empty()
-: <a class="el" href="classwte_1_1mgr_1_1system__manager.html#a3cd1534da864c3061c3141265d876c42">wte::mgr::system_manager</a>
-</li>
-<li>enable()
-: <a class="el" href="classwte_1_1cmp_1_1enabled.html#a300fbcabad4f7049e24bf69950ec0433">wte::cmp::enabled</a>
-, <a class="el" href="classwte_1_1sys_1_1system.html#ac1d23d07bc9708920f91419cd282ef97">wte::sys::system</a>
-</li>
-<li>enable_system()
-: <a class="el" href="classwte_1_1mgr_1_1system__manager.html#a4156e3a590211c1ad69eb32db4aa833e">wte::mgr::system_manager</a>
-</li>
-<li>enabled()
-: <a class="el" href="classwte_1_1cmp_1_1enabled.html#addfcd298601f638305a357f5372efa9c">wte::cmp::enabled</a>
-</li>
-<li>end_game()
-: <a class="el" href="classwte_1_1wte__main.html#ada9ec986207fb24678f86c67afe74f0e">wte::wte_main</a>
-</li>
-<li>engine_flags()
-: <a class="el" href="classwte_1_1engine__flags.html#a318e5d8641383c338a2431ac6e0fddf3">wte::engine_flags</a>
-</li>
-<li>entity_exists()
-: <a class="el" href="classwte_1_1mgr_1_1entity__manager.html#aad100a57a5b8abfbbdad8a189043ff54">wte::mgr::entity_manager</a>
-</li>
-<li>entity_manager()
-: <a class="el" href="classwte_1_1mgr_1_1entity__manager.html#ac521408509b2fc5dac8c16662fd47728">wte::mgr::entity_manager</a>
-</li>
-</ul>
-</div><!-- contents -->
+<div class="textblock"><p>The <b>render_manager</b> requires some parameters to be set up in your <b>main.cpp</b> file before calling the main engine object.</p>
+<h3><a class="anchor" id="autotoc_md30"></a>
+Set the arena</h3>
+<p>Set the arena size in pixels. This can later be scaled up or down as necessary. </p><div class="fragment"><div class="line">mgr::render_manager::set_arena_size(1920, 1080);</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md31"></a>
+Set the title screen</h3>
+<p>Load a file to be used as the main title screen. This will be streched to fit the display size. </p><div class="fragment"><div class="line">mgr::render_manager::set_title_screen(&quot;title.bmp&quot;);</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md32"></a>
+Set the background</h3>
+<p>Load a file to be used as the in-game background. If the arena size is smaller than the display size, the background will be visible. This will be streched to fit the display size. </p><div class="fragment"><div class="line">mgr::render_manager::set_background_screen(&quot;title.bmp&quot;);</div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 28 2020 15:19:31 for WTEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 28 2020 15:19:29 for WTEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.16
 </small></address>
