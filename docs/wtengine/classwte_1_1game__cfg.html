@@ -74,7 +74,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Statics to store game config variables.  
+<p>Store game config variables in a globally accessible class.  
  <a href="classwte_1_1game__cfg.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for wte::game_cfg:</div>
@@ -130,14 +130,14 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memdesc:afc51a87335f5eb462bfbed45e1156d07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set key to value.  <a href="classwte_1_1game__cfg.html#afc51a87335f5eb462bfbed45e1156d07">More...</a><br /></td></tr>
 <tr class="separator:afc51a87335f5eb462bfbed45e1156d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72c3352eaf7e6b6a6fd75159dbc8ac7e"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1game__cfg.html#a72c3352eaf7e6b6a6fd75159dbc8ac7e">set</a> (const std::string &amp;expr)</td></tr>
-<tr class="memdesc:a72c3352eaf7e6b6a6fd75159dbc8ac7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set based on string.  <a href="classwte_1_1game__cfg.html#a72c3352eaf7e6b6a6fd75159dbc8ac7e">More...</a><br /></td></tr>
+<tr class="memdesc:a72c3352eaf7e6b6a6fd75159dbc8ac7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a value based on string.  <a href="classwte_1_1game__cfg.html#a72c3352eaf7e6b6a6fd75159dbc8ac7e">More...</a><br /></td></tr>
 <tr class="separator:a72c3352eaf7e6b6a6fd75159dbc8ac7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e530595a3f1f57fa069b5af1a157dd0"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1game__cfg.html#a8e530595a3f1f57fa069b5af1a157dd0">get</a> (const std::string &amp;var)</td></tr>
-<tr class="memdesc:a8e530595a3f1f57fa069b5af1a157dd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get value.  <a href="classwte_1_1game__cfg.html#a8e530595a3f1f57fa069b5af1a157dd0">More...</a><br /></td></tr>
+<tr class="memdesc:a8e530595a3f1f57fa069b5af1a157dd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a value.  <a href="classwte_1_1game__cfg.html#a8e530595a3f1f57fa069b5af1a157dd0">More...</a><br /></td></tr>
 <tr class="separator:a8e530595a3f1f57fa069b5af1a157dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bca951d2359e953c13134fda02eae83"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a3bca951d2359e953c13134fda02eae83"><td class="memTemplItemLeft" align="right" valign="top">static const T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwte_1_1game__cfg.html#a3bca951d2359e953c13134fda02eae83">get</a> (const std::string &amp;var)</td></tr>
-<tr class="memdesc:a3bca951d2359e953c13134fda02eae83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get value.  <a href="classwte_1_1game__cfg.html#a3bca951d2359e953c13134fda02eae83">More...</a><br /></td></tr>
+<tr class="memdesc:a3bca951d2359e953c13134fda02eae83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a value.  <a href="classwte_1_1game__cfg.html#a3bca951d2359e953c13134fda02eae83">More...</a><br /></td></tr>
 <tr class="separator:a3bca951d2359e953c13134fda02eae83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classwte_1_1variable__map"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classwte_1_1variable__map')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classwte_1_1variable__map.html">wte::variable_map&lt; game_cfg &gt;</a></td></tr>
 <tr class="memitem:a21bc8480b1a18f6af0b0ece7b82e6731 inherit pub_static_methods_classwte_1_1variable__map"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1variable__map.html#a21bc8480b1a18f6af0b0ece7b82e6731">reg</a> (const std::string &amp;var, const std::string &amp;val)</td></tr>
@@ -150,16 +150,16 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memdesc:a4f0b6d25dfb1d8212d085c4a9173cf3b inherit pub_static_methods_classwte_1_1variable__map"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a variable is registered in the map.  <a href="classwte_1_1variable__map.html#a4f0b6d25dfb1d8212d085c4a9173cf3b">More...</a><br /></td></tr>
 <tr class="separator:a4f0b6d25dfb1d8212d085c4a9173cf3b inherit pub_static_methods_classwte_1_1variable__map"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3eea8dc33f6c0cb222781de3638ca96e inherit pub_static_methods_classwte_1_1variable__map"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1variable__map.html#a3eea8dc33f6c0cb222781de3638ca96e">set</a> (const std::string &amp;var, const std::string &amp;val)</td></tr>
-<tr class="memdesc:a3eea8dc33f6c0cb222781de3638ca96e inherit pub_static_methods_classwte_1_1variable__map"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set key to value.  <a href="classwte_1_1variable__map.html#a3eea8dc33f6c0cb222781de3638ca96e">More...</a><br /></td></tr>
+<tr class="memdesc:a3eea8dc33f6c0cb222781de3638ca96e inherit pub_static_methods_classwte_1_1variable__map"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a variable to a value.  <a href="classwte_1_1variable__map.html#a3eea8dc33f6c0cb222781de3638ca96e">More...</a><br /></td></tr>
 <tr class="separator:a3eea8dc33f6c0cb222781de3638ca96e inherit pub_static_methods_classwte_1_1variable__map"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9f98d986c181483864b3d49225d7195 inherit pub_static_methods_classwte_1_1variable__map"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1variable__map.html#af9f98d986c181483864b3d49225d7195">set</a> (const std::string &amp;expr)</td></tr>
-<tr class="memdesc:af9f98d986c181483864b3d49225d7195 inherit pub_static_methods_classwte_1_1variable__map"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set based on string.  <a href="classwte_1_1variable__map.html#af9f98d986c181483864b3d49225d7195">More...</a><br /></td></tr>
+<tr class="memdesc:af9f98d986c181483864b3d49225d7195 inherit pub_static_methods_classwte_1_1variable__map"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a variable to a value.  <a href="classwte_1_1variable__map.html#af9f98d986c181483864b3d49225d7195">More...</a><br /></td></tr>
 <tr class="separator:af9f98d986c181483864b3d49225d7195 inherit pub_static_methods_classwte_1_1variable__map"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72022a625283fc39dc8047290e1c33b9 inherit pub_static_methods_classwte_1_1variable__map"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1variable__map.html#a72022a625283fc39dc8047290e1c33b9">get</a> (const std::string &amp;var)</td></tr>
-<tr class="memdesc:a72022a625283fc39dc8047290e1c33b9 inherit pub_static_methods_classwte_1_1variable__map"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get value.  <a href="classwte_1_1variable__map.html#a72022a625283fc39dc8047290e1c33b9">More...</a><br /></td></tr>
+<tr class="memdesc:a72022a625283fc39dc8047290e1c33b9 inherit pub_static_methods_classwte_1_1variable__map"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a variable's value.  <a href="classwte_1_1variable__map.html#a72022a625283fc39dc8047290e1c33b9">More...</a><br /></td></tr>
 <tr class="separator:a72022a625283fc39dc8047290e1c33b9 inherit pub_static_methods_classwte_1_1variable__map"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9fe9ad7a7d1ef1b20521d8ac447b5ef inherit pub_static_methods_classwte_1_1variable__map"><td class="memItemLeft" align="right" valign="top">static const T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1variable__map.html#ab9fe9ad7a7d1ef1b20521d8ac447b5ef">get</a> (const std::string &amp;var)</td></tr>
-<tr class="memdesc:ab9fe9ad7a7d1ef1b20521d8ac447b5ef inherit pub_static_methods_classwte_1_1variable__map"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get value.  <a href="classwte_1_1variable__map.html#ab9fe9ad7a7d1ef1b20521d8ac447b5ef">More...</a><br /></td></tr>
+<tr class="memdesc:ab9fe9ad7a7d1ef1b20521d8ac447b5ef inherit pub_static_methods_classwte_1_1variable__map"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a variable's value.  <a href="classwte_1_1variable__map.html#ab9fe9ad7a7d1ef1b20521d8ac447b5ef">More...</a><br /></td></tr>
 <tr class="separator:ab9fe9ad7a7d1ef1b20521d8ac447b5ef inherit pub_static_methods_classwte_1_1variable__map"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -189,8 +189,8 @@ static std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRi
 <tr class="separator:a8ae9f876db7def5af08dfd4abcc9b46f inherit pro_static_attribs_classwte_1_1variable__map"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Statics to store game config variables. </p>
-<p>Inherits map functionality from the <a class="el" href="classwte_1_1variable__map.html" title="Interface class to create a map of variables.">variable_map</a> class. This class provides load/save functions. Also provides math functions to manipulate the values. </p>
+<div class="textblock"><p>Store game config variables in a globally accessible class. </p>
+<p>Inherits map functionality from the <a class="el" href="classwte_1_1variable__map.html" title="Interface class to create a map of variables.">variable_map</a> class. This class provides specific load/save functions. Also provides math functions to manipulate the values. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="af81529e5c8dc28ff48d1bb9fe416dbd5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af81529e5c8dc28ff48d1bb9fe416dbd5">&#9670;&nbsp;</a></span>add()</h2>
@@ -324,7 +324,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Get value. </p>
+<p>Get a value. </p>
 <p>Returns by string.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -362,7 +362,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Get value. </p>
+<p>Get a value. </p>
 <p>Returns by defined type.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -640,7 +640,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Set based on string. </p>
+<p>Set a value based on string. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">expr</td><td>Variable and value expresion (var=val) </td></tr>
@@ -791,7 +791,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 28 2020 18:05:09 for WTEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 29 2020 15:36:25 for WTEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.16
 </small></address>

@@ -147,8 +147,16 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Handles audio messages in a thread. </p>
-<p>Messages get passed from the main engine loop via <a class="el" href="classwte_1_1mgr_1_1audio__manager.html#ad1da0df070c1f38cc087cdd1c6dc17b0" title="Take a vector of messages and pass them into the audio messages deck.">transfer_messages()</a>. The Audio Manager is then implemented as a thread, creating local Allegro objects. As messages are placed in the deck, take them from the top and process.</p>
-<p>The manager creates the following mixers: Mixer Main - All other mixers attach to this. Mixer 1 - Play music - Load a file and play in a loop. Looping can be disabled. Mixer 2 - Play samples - Has set number of samples that can be loaded in. Mixer 3 - Play voice - Load a file and play once. Mixer 4 - Play ambiance - Load a file and play in a loop. Looping can be disabled. </p>
+<p>Messages get passed from the main engine loop via <a class="el" href="classwte_1_1mgr_1_1audio__manager.html#ad1da0df070c1f38cc087cdd1c6dc17b0" title="Take a vector of messages and pass them into the audio messages deck.">transfer_messages()</a>. <br  />
+ The Audio Manager is then implemented as a thread, creating local Allegro objects. <br  />
+ As messages are placed in the deck, take them from the top and process. <br  />
+ <br  />
+ The manager creates the following mixers: <br  />
+ Mixer Main - All other mixers attach to this. <br  />
+ Mixer 1 - Play music - Load a file and play in a loop. Looping can be disabled. <br  />
+ Mixer 2 - Play samples - Has set number of samples that can be loaded in. <br  />
+ Mixer 3 - Play voice - Load a file and play once. <br  />
+ Mixer 4 - Play ambiance - Load a file and play in a loop. Looping can be disabled. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae43307ea615066c66ea9684e3a14cdc4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae43307ea615066c66ea9684e3a14cdc4">&#9670;&nbsp;</a></span>audio_manager()</h2>
@@ -285,7 +293,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 28 2020 18:05:10 for WTEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 29 2020 15:36:26 for WTEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.16
 </small></address>
