@@ -26,10 +26,22 @@ body {
     border-bottom: 1px solid #000000;
 }
 
-.nav_div a:link { color: #FFA500; }
-.nav_div a:visited { color: #FFA500; }
-.nav_div a:hover { color: #FFA500; }
-.nav_div a:active { color: #FFA500; }
+.nav_div a:link {
+    color: #FFA500;
+    text-decoration: none;
+}
+.nav_div a:visited {
+    color: #FFA500;
+    text-decoration: none;
+}
+.nav_div a:hover {
+    color: #FFA500;
+    text-decoration: none;
+}
+.nav_div a:active {
+    color: #FFA500;
+    text-decoration: none;
+}
 
 .section_div {
     background-color: #98AFC7;
@@ -44,4 +56,19 @@ body {
     padding-bottom: 10px;
     padding-left: 32px;
     padding-right: 32px;
+}
+
+.form_button {
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    text-align: center;
+}
+
+hr {
+    border: 2px dotted #000000;
+}
+
+textarea {
+    resize: none;
 }
