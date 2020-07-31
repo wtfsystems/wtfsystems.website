@@ -8,5 +8,6 @@ var searchData=
   ['load_5fsprite_176',['load_sprite',['../classwte_1_1cmp_1_1sprite.html#a9cc5ebee16ef6b3cbff6a0e9269d28c8',1,'wte::cmp::sprite']]],
   ['load_5fsystems_177',['load_systems',['../classwte_1_1wte__main.html#a3aa24dc7db81d2319d6ec31e807a142f',1,'wte::wte_main']]],
   ['location_178',['location',['../classwte_1_1cmp_1_1location.html',1,'wte::cmp::location'],['../classwte_1_1cmp_1_1location.html#a70ab7f1bb4965a6b07e21fde589ce194',1,'wte::cmp::location::location()']]],
-  ['logic_179',['logic',['../classwte_1_1sys_1_1logic.html',1,'wte::sys::logic'],['../classwte_1_1sys_1_1logic.html#a6183586188846cf9b62cee99e83dc972',1,'wte::sys::logic::logic()']]]
+  ['logic_179',['logic',['../classwte_1_1sys_1_1logic.html',1,'wte::sys::logic'],['../classwte_1_1sys_1_1logic.html#a6183586188846cf9b62cee99e83dc972',1,'wte::sys::logic::logic()']]],
+  ['license_180',['LICENSE',['../md__l_i_c_e_n_s_e.html',1,'']]]
 ];
