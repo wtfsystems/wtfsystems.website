@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['test_5fmodule_11',['test_module',['../classtest_1_1test__module.html',1,'test']]],
-  ['triangle_12',['triangle',['../classosc_1_1oscillator.html#aaa6939037d18d785f825b62e67faba18',1,'osc::oscillator']]]
+  ['sawtooth_12',['sawtooth',['../classosc_1_1oscillator.html#ac2037e681e6f9164c4d5934bb819120c',1,'osc::oscillator']]],
+  ['sine_13',['sine',['../classosc_1_1oscillator.html#a61e3124af090e775598a3fe7f14c9cf6',1,'osc::oscillator']]],
+  ['square_14',['square',['../classosc_1_1oscillator.html#a0f8e0763830aaea7a2504b93f8ea5f20',1,'osc::oscillator']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['clear_5fmodules_18',['clear_modules',['../classpatch_1_1patchboard.html#a7f845bbccee4d73447e58776b478efa3',1,'patch::patchboard']]]
+  ['clear_5fmodules_23',['clear_modules',['../classpatch_1_1patchboard.html#a7f845bbccee4d73447e58776b478efa3',1,'patch::patchboard']]]
 ];
