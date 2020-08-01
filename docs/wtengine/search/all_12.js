@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['setting_20up_20physicsfs_251',['Setting up PhysicsFS',['../md_src_wte__docs_physicsfs.html',1,'']]],
+  ['setting_20up_20physicsfs_250',['Setting up PhysicsFS',['../md_src_wte__docs_physicsfs.html',1,'']]],
+  ['setting_20up_20the_20renderer_251',['Setting up the Renderer',['../md_src_wte__docs_rendering.html',1,'']]],
   ['spawning_20entities_252',['Spawning Entities',['../md_src_wte__docs_spawner.html',1,'']]],
   ['sample_5floop_253',['sample_loop',['../classwte_1_1cmp_1_1sample__loop.html',1,'wte::cmp::sample_loop'],['../classwte_1_1cmp_1_1sample__loop.html#a019df1dd753087af9427bfda858302dc',1,'wte::cmp::sample_loop::sample_loop()']]],
   ['save_254',['save',['../classwte_1_1engine__cfg.html#a61967f3544cd2775173a0cd8a97d8ee3',1,'wte::engine_cfg::save()'],['../classwte_1_1game__cfg.html#aed2f4054bd3b0c9d3c9d6a3b88e94231',1,'wte::game_cfg::save()']]],
