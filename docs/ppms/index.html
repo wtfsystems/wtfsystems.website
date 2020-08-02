@@ -66,16 +66,91 @@ $(function() {
 <div class="title">Python Polyphonic MIDI Synthesizer </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a href="https://www.python.org/"><em>Python3</em></a> script that simulates a synthesizer.</p>
+<div class="textblock"><p><a href="https://www.python.org/"><em>Python3</em></a> script that simulates a modular synthesizer. Requires a separate MIDI input device.</p>
 <p>When a key is pressed, a sample is generated then added to the output stream. It is then stored in a reference map.</p>
 <p>When releasing a key, the sample is retrieved from the reference map and removed from the output stream.</p>
 <p>Requires the following packages to be installed:</p><ul>
 <li><a href="https://numpy.org/">numpy</a></li>
 <li><a href="https://www.scipy.org/">scipy</a></li>
 <li><a href="https://pypi.org/project/sounddevice/">sounddevice</a></li>
-<li><a href="https://pypi.org/project/python-rtmidi/">rtmidi</a> </li>
+<li><a href="https://pypi.org/project/python-rtmidi/">rtmidi</a></li>
 </ul>
-</div></div><!-- PageDoc -->
+<hr  />
+<h1><a class="anchor" id="autotoc_md2"></a>
+Settings</h1>
+<p>Settings are found in the file <em>settings.json</em>. One will be created automatically the first time the program is ran.</p>
+<h2><a class="anchor" id="autotoc_md3"></a>
+Keyboard events</h2>
+<p>The MIDI note on/off messages. </p><div class="fragment"><div class="line">&#39;key_down&#39;: 144,</div>
+<div class="line">&#39;key_up&#39;: 128,</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md4"></a>
+Loading modules</h2>
+<p>Load modules to process signal. The signal will be filtered through each module in order added. </p><div class="fragment"><div class="line">#  List modules to load</div>
+<div class="line">#  Patchboard processes these in order</div>
+<div class="line">&#39;modules&#39;: [ &#39;mod.test&#39; ],</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md5"></a>
+MIDI control bindings</h2>
+<p>Bind MIDI controls to modules or general settings. </p><div class="fragment"><div class="line">#  MIDI bindings</div>
+<div class="line">#  Format:  binding_name, midi[0], midi[1]</div>
+<div class="line">&#39;bindings&#39;: [</div>
+<div class="line">    #  Default bindings</div>
+<div class="line">    [ &#39;master_volume&#39;, 176, 29 ],</div>
+<div class="line"> </div>
+<div class="line">    #  Module bindings</div>
+<div class="line">    #  Binding names should have the format class_name.member_name</div>
+<div class="line">    [ &#39;test_module.set_a_value&#39;, 176, 118 ]</div>
+<div class="line">],</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md6"></a>
+Saving data</h2>
+<p>Modules will store their data values here on shutdown, then restore them on next run. </p><div class="fragment"><div class="line">#  For saving module data</div>
+<div class="line">&#39;module_data&#39;: []</div>
+</div><!-- fragment --><hr  />
+<h1><a class="anchor" id="autotoc_md8"></a>
+Modules</h1>
+<h2><a class="anchor" id="autotoc_md9"></a>
+Requirements</h2>
+<ul>
+<li><b>process function</b> <div class="fragment"><div class="line">def process(self, signal):</div>
+<div class="line">    #  Do something with the signal</div>
+<div class="line">    return signal</div>
+</div><!-- fragment --></li>
+<li><b>save_data function</b> <div class="fragment"><div class="line">def save_data(self):</div>
+<div class="line">    return [</div>
+<div class="line">        [ &#39;example.control_a&#39;, self.value_a ],</div>
+<div class="line">        [ &#39;example.control_b&#39;, self.value_b ]</div>
+<div class="line">    ]</div>
+</div><!-- fragment --></li>
+</ul>
+<h2><a class="anchor" id="autotoc_md10"></a>
+Example mod.test.py</h2>
+<div class="fragment"><div class="line">##  PPMS Synth Module for testing the patchboard.</div>
+<div class="line">class test_module:</div>
+<div class="line">    ##  Store test_value</div>
+<div class="line">    __test_value = 0</div>
+<div class="line"> </div>
+<div class="line">    ## Test process, simply print the test_value.</div>
+<div class="line">    #  @param self Object pointer</div>
+<div class="line">    #  @param signal Signal data to modify</div>
+<div class="line">    #  @return Modified signal data</div>
+<div class="line">    def process(self, signal):</div>
+<div class="line">        print(&quot;Test value:&quot;, self.__test_value)</div>
+<div class="line">        return signal</div>
+<div class="line"> </div>
+<div class="line">    ##  Build an array of save data for the module.</div>
+<div class="line">    #  Bindings should have the format class_name.member_name.</div>
+<div class="line">    #  @param self Object pointer</div>
+<div class="line">    #  @return Module data to save</div>
+<div class="line">    def save_data(self):</div>
+<div class="line">        return [</div>
+<div class="line">            [ &#39;test_module.set_a_value&#39;, self.__test_value ]</div>
+<div class="line">        ]</div>
+<div class="line"> </div>
+<div class="line">    ## Set test value.</div>
+<div class="line">    #  @param self Object pointer</div>
+<div class="line">    #  @param val New value to set</div>
+<div class="line">    def set_a_value(self, val):</div>
+<div class="line">        self.__test_value = val</div>
+</div><!-- fragment --> </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

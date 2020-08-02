@@ -4,7 +4,7 @@ var indexSectionsWithContent =
   1: "opt",
   2: "_acgpst",
   3: "_",
-  4: "clp"
+  4: "lp"
 };
 
 var indexSectionNames =
