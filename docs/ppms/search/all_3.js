@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['get_5fmodule_6',['get_module',['../classpatch_1_1patchboard.html#aac50be47faddb632c75976d9baa88177',1,'patch::patchboard']]]
+  ['envelope_7',['envelope',['../classenv_1_1envelope.html',1,'env']]]
 ];

@@ -67,6 +67,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a href="https://www.python.org/">Python3</a> script that simulates a <a href="https://en.wikipedia.org/wiki/Modular_synthesizer">modular synthesizer</a>. Requires a separate <a href="https://en.wikipedia.org/wiki/MIDI">MIDI</a> input device. Generates samples based on waveforms and processes them through modules. Allows control of the modules through MIDI messages.</p>
+<p><em>Note:</em> Still early in development, working on maths.</p>
 <h3><a class="anchor" id="autotoc_md1"></a>
 Oscillators</h3>
 <p>Generates a waveform based on the following types:</p><ul>
@@ -81,10 +82,14 @@ Modules</h3>
 <p>Modules are used to process the waveform signal. These are loaded from the settings *(see below)* then the signal is passed through each in order loaded for processing. You can then set up bindings to control module parameters using MIDI controls.</p>
 <h3><a class="anchor" id="autotoc_md3"></a>
 Included Modules</h3>
-<p><em>None!</em> :p Someone needs to read up on dsp...</p>
-<ul>
-<li>Currently a test module <em>mod.test</em> for testing MIDI control bindings.</li>
-</ul>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">File  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>mod.test</b>  </td><td class="markdownTableBodyNone">Test module for testing MIDI control bindings.   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>mod.reverb</b>  </td><td class="markdownTableBodyNone">Adds reverberation effect.   </td></tr>
+</table>
 <h3><a class="anchor" id="autotoc_md4"></a>
 Requirements</h3>
 <p>Requires the following packages to be installed:</p><ul>
@@ -99,14 +104,14 @@ Configuration</h1>
 <p>Settings can be found in the file <em>settings.json</em>. One will be created automatically the first time the script is ran.</p>
 <h3><a class="anchor" id="autotoc_md7"></a>
 Sample rate</h3>
-<p>You can set the sample rate here. Defaults to 44100Hz. </p><div class="fragment"><div class="line">&#39;sample_rate&#39;: 44100,</div>
+<p>You can set the sample rate here. Defaults to 44100Hz. Value is a float. </p><div class="fragment"><div class="line">&#39;sample_rate&#39;: 44100.0,</div>
 </div><!-- fragment --><h3><a class="anchor" id="autotoc_md8"></a>
 Keyboard events</h3>
 <p>The MIDI note on/off messages. Defaults to the following: </p><div class="fragment"><div class="line">&#39;note_on&#39;: 144,</div>
 <div class="line">&#39;note_off&#39;: 128,</div>
 </div><!-- fragment --><h3><a class="anchor" id="autotoc_md9"></a>
 Loading modules</h3>
-<p>Load modules to process the signal. The signal will be filtered through each module in order added. </p><div class="fragment"><div class="line">&#39;modules&#39;: [ &#39;mod.test&#39; ],</div>
+<p>Load modules to process the signal. The signal will be filtered through each module in order added. </p><div class="fragment"><div class="line">&#39;modules&#39;: [ &#39;mod.test&#39;, &#39;mod.another&#39; ],</div>
 </div><!-- fragment --><h3><a class="anchor" id="autotoc_md10"></a>
 MIDI control bindings</h3>
 <p>Bind MIDI controls to modules or general settings.</p>
