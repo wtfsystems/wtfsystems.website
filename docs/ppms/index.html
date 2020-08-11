@@ -86,7 +86,7 @@ Included Modules</h3>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">File  </th><th class="markdownTableHeadNone">Description   </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><b>mod.test</b>  </td><td class="markdownTableBodyNone">Test module for testing MIDI control bindings.   </td></tr>
+<td class="markdownTableBodyNone"><b>mod.test</b>  </td><td class="markdownTableBodyNone">For testing MIDI control bindings.   </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><b>mod.reverb</b>  </td><td class="markdownTableBodyNone">Adds reverberation effect.   </td></tr>
 </table>
@@ -110,9 +110,12 @@ Keyboard events</h3>
 <p>The MIDI note on/off messages. Defaults to the following: </p><div class="fragment"><div class="line">&#39;note_on&#39;: 144,</div>
 <div class="line">&#39;note_off&#39;: 128,</div>
 </div><!-- fragment --><h3><a class="anchor" id="autotoc_md9"></a>
+Impact weight</h3>
+<p>Set the impact weight. This is used for factoring keyboard velocity. </p><div class="fragment"><div class="line">&#39;impact_weight&#39;: 20000,</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md10"></a>
 Loading modules</h3>
 <p>Load modules to process the signal. The signal will be filtered through each module in order added. </p><div class="fragment"><div class="line">&#39;modules&#39;: [ &#39;mod.test&#39;, &#39;mod.another&#39; ],</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md10"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md11"></a>
 MIDI control bindings</h3>
 <p>Bind MIDI controls to modules or general settings.</p>
 <p><b>Format:</b> binding_name, midi_msg[0], midi_msg[1] </p><div class="fragment"><div class="line">&#39;bindings&#39;: [</div>
@@ -123,11 +126,11 @@ MIDI control bindings</h3>
 <div class="line">    #  Binding names should have the format class_name.member_name</div>
 <div class="line">    [ &#39;test_module.set_a_value&#39;, 176, 118 ]</div>
 <div class="line">],</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md11"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md12"></a>
 Saving data</h3>
 <p>Modules will store their data values here on shutdown, then restore them on next run. </p><div class="fragment"><div class="line">&#39;module_data&#39;: []</div>
 </div><!-- fragment --><hr  />
-<h1><a class="anchor" id="autotoc_md13"></a>
+<h1><a class="anchor" id="autotoc_md14"></a>
 Modules</h1>
 <p>To make a module, create a Python file in the <em>mod</em> folder. Define the module as a class, then define the following functions.</p>
 <ul>
@@ -143,7 +146,7 @@ Modules</h1>
 </div><!-- fragment --></li>
 </ul>
 <p>For each control in the module, create a seperate function to set its value. Then to create bindings to these controls, use the format <b>class_name.function_name</b>.</p>
-<h2><a class="anchor" id="autotoc_md14"></a>
+<h2><a class="anchor" id="autotoc_md15"></a>
 Example mod.test.py</h2>
 <div class="fragment"><div class="line">##  PPMS Synth Module for testing the patchboard.</div>
 <div class="line">class test_module:</div>
