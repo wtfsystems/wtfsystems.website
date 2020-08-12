@@ -26,6 +26,26 @@ body {
     border-bottom: 1px solid #000000;
 }
 
+a:link {
+    color: #7B3F00;
+    text-decoration: underline dotted;
+}
+
+a:visited {
+    color: #32174D;
+    text-decoration: underline dotted;
+}
+
+a:hover {
+    color: #32174D;
+    text-decoration: underline dotted;
+}
+
+a:active {
+    color: #32174D;
+    text-decoration: underline dotted;
+}
+
 .nav_div a:link {
     color: #FFA500;
     text-decoration: none;
