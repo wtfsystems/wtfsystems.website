@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['clear_5fmodules_7',['clear_modules',['../classpatch_1_1patchboard.html#a7f845bbccee4d73447e58776b478efa3',1,'patch::patchboard']]]
+  ['band_5fpass_10',['band_pass',['../classbpass_1_1band__pass.html',1,'bpass']]]
 ];

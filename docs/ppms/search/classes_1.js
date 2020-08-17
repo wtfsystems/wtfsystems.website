@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['oscillator_30',['oscillator',['../classosc_1_1oscillator.html',1,'osc']]]
+  ['envelope_36',['envelope',['../classenv_1_1envelope.html',1,'env']]]
 ];

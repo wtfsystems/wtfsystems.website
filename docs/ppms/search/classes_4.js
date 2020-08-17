@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['test_5fmodule_33',['test_module',['../classtest_1_1test__module.html',1,'test']]]
+  ['reverberation_39',['reverberation',['../classreverb_1_1reverberation.html',1,'reverb']]]
 ];
