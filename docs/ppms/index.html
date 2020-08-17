@@ -66,7 +66,7 @@ $(function() {
 <div class="title">Python Polyphonic MIDI Synthesizer </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a href="https://www.python.org/">Python3</a> script that simulates a <a href="https://en.wikipedia.org/wiki/Modular_synthesizer">modular synthesizer</a>. Requires a separate <a href="https://en.wikipedia.org/wiki/MIDI">MIDI</a> input device. Generates samples based on waveforms and processes them through modules. Allows control of the modules through MIDI messages.</p>
+<div class="textblock"><p><a href="https://www.python.org/">Python3</a> script that simulates a <a href="https://en.wikipedia.org/wiki/Modular_synthesizer">modular synthesizer</a>. Requires a separate <a href="https://en.wikipedia.org/wiki/MIDI">MIDI</a> input device, however a <a href="https://vmpk.sourceforge.io/">virtual</a> one may be used. Generates samples based on <a href="https://en.wikipedia.org/wiki/Waveform">waveforms</a> and processes them through modules. Allows control of the modules through MIDI messages.</p>
 <p><em>Note:</em> Still early in development, working on maths.</p>
 <h3><a class="anchor" id="autotoc_md1"></a>
 Requirements</h3>
@@ -79,15 +79,15 @@ Requirements</h3>
 <h3><a class="anchor" id="autotoc_md2"></a>
 Oscillators</h3>
 <p>Generates a waveform based on the following types:</p><ul>
-<li>sawtooth</li>
-<li>triangle</li>
-<li>square</li>
-<li>sine</li>
+<li>sawtooth /|</li>
+<li>triangle /\</li>
+<li>square |_|</li>
+<li>sine ~</li>
 </ul>
 <p>You can select which waveform is generated using MIDI program change.</p>
 <h3><a class="anchor" id="autotoc_md3"></a>
 Modules</h3>
-<p>Modules are used to process the waveform signal. These are loaded from the settings *(see below)* then the signal is passed through each in order loaded for processing. You can then set up bindings to control module parameters using MIDI controls.</p>
+<p>Modules are used to process the waveform signal. These are loaded from the settings (<em>see below</em>) then the signal is passed through each in the order they were loaded. You can then set up bindings to control module parameters using MIDI controls.</p>
 <h3><a class="anchor" id="autotoc_md4"></a>
 Included Modules</h3>
 <table class="markdownTable">
@@ -97,6 +97,8 @@ Included Modules</h3>
 <td class="markdownTableBodyNone"><b>mod.test</b>  </td><td class="markdownTableBodyNone">For testing MIDI control bindings.   </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><b>mod.reverb</b>  </td><td class="markdownTableBodyNone">Adds reverberation effect.   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>mod.bpass</b>  </td><td class="markdownTableBodyNone">Provides a high-pass and low-pass filter.   </td></tr>
 </table>
 <hr  />
 <h1><a class="anchor" id="autotoc_md6"></a>
@@ -109,7 +111,7 @@ Sample rate</h3>
 Keyboard events</h3>
 <p>The MIDI note on/off messages. Defaults to the following: </p><div class="fragment"><div class="line">&#39;note_on&#39;: 144,</div>
 <div class="line">&#39;note_off&#39;: 128,</div>
-</div><!-- fragment --><p>The preset message: </p><div class="fragment"><div class="line">&quot;preset_msg&quot;: 192,</div>
+</div><!-- fragment --><p>The load preset message is defined as: </p><div class="fragment"><div class="line">&quot;preset_msg&quot;: 192,</div>
 </div><!-- fragment --><h3><a class="anchor" id="autotoc_md9"></a>
 Impact weight</h3>
 <p>Set the impact weight. This is used for factoring keyboard velocity. </p><div class="fragment"><div class="line">&#39;impact_weight&#39;: 20000,</div>
@@ -185,6 +187,10 @@ Example mod.test.py</h2>
 </div><!-- fragment --><hr  />
 <h1><a class="anchor" id="autotoc_md19"></a>
 Presets</h1>
+<p>Preset files are used to store module parameters and can be loaded during runtime. When the MIDI message to load a preset is received, it selects the corresponding preset file and sets the active parameters.</p>
+<p>For setting the preset folder and MIDI message, see <b>Configuration</b> above.</p>
+<h2><a class="anchor" id="autotoc_md20"></a>
+Example preset.json</h2>
 <div class="fragment"><div class="line">[</div>
 <div class="line">    [ &quot;envelope.set_attack&quot;, 100 ],</div>
 <div class="line">    [ &quot;envelope.set_decay&quot;, 27 ],</div>
