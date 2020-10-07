@@ -29,20 +29,29 @@
  * SOFTWARE.
  */
 
+console.log("Running prime wheel effect");
 /*
  * Config variables
  */
-var background_color = "#808080"; /* Sets the background color */
-var font_color = "#191970";       /* Sets the font color */
-var font_size = "32px";           /* Sets the font size */
-var font_face = "Arial";          /* Sets the font face */
-var scale = 4;                    /* Set the scale factor for the wheel */
-var interval = 5;                 /* Timer interval to draw (milliseconds) */
+/* Sets the background color */
+var background_color = "#808080";
+/* Sets the font color */
+var font_color = "#191970";
+/* Sets the font size */
+var font_size = "32px";
+/* Sets the font face */
+var font_face = "Arial";
+/* Set the scale factor for the wheel */
+var scale = 4;
+/* Timer interval to draw (milliseconds) */
+var interval = 10;
+/* div name of canvas to draw to */
+var canvas_name = "background_canvas"
 
 /*
  * Initialize
  */
-var canvas = document.getElementById("background_canvas");
+var canvas = document.getElementById(canvas_name);
 var ctx = canvas.getContext("2d");
 
 canvas.width = canvas.clientWidth * scale;
@@ -100,7 +109,23 @@ function animate() {
 ctx.fillStyle = background_color;
 ctx.fillRect(0, 0, width, height);
 
-setInterval(animate, 30);
+var animate_proc = setInterval(animate, interval);
+
+/*
+ * Function to toggle background on/off
+ */
+function toggle_background() {
+    var x = document.getElementById(canvas_name);
+    if (x.style.display === "none") {
+        console.log("Prime wheel toggeled on");
+        x.style.display = "block";
+        animate_proc = setInterval(animate, interval);
+    } else{
+        console.log("Prime wheel toggeled off");
+        x.style.display = "none";
+        clearInterval(animate_proc);
+    }
+}
 
 /*
  * CSS:

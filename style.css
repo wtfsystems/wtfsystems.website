@@ -36,8 +36,18 @@ body > .content {
 
 .content > .header {
     margin: auto;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    text-align: center;
+}
+.header > button {
+    color: #000000;
+    background: #ffffff;
+    border: 0px;
+    text-align: center;
+}
+.header > button:active {
+    color: #ffffff;
+    background: #000000;
+    transform: translateY(4px);
 }
 
 .content > .page_row {
@@ -76,13 +86,17 @@ body > .content {
 
 .page_row > .project_showcase {
     width: 100%;
-    /* height: 500px; */
 }
 .project_showcase > .project_item {
     color: #600000;
-    background: rgba(128, 128, 128, 0.6);
+    background: rgba(128, 128, 128, 0.75);
+    border-top: 1px solid #600000;
     margin-top: 16px;
     margin-bottom: 16px;
+}
+.project_showcase > td {
+    text-align: left;
+    vertical-align: middle;
 }
 
 .page_row > .form_display {
