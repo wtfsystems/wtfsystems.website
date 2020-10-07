@@ -121,19 +121,22 @@ Preset directory</h3>
 Loading modules</h3>
 <p>Load modules to process the signal. The signal will be filtered through each module in order added. </p><div class="fragment"><div class="line">&#39;modules&#39;: [ &#39;mod.test&#39;, &#39;mod.another&#39; ],</div>
 </div><!-- fragment --><h3><a class="anchor" id="autotoc_md12"></a>
+Loading presets</h3>
+<p>List preset files in order here. These files must be located in the folder as indicated by the <b>preset_folder</b> setting. </p><div class="fragment"><div class="line">&#39;presets&#39;: [ &quot;example1.json&quot;, &quot;example2.json&quot; ],</div>
+</div><!-- fragment --><p>Run with <em>&ndash;build_presets</em> to generate a list from the presets folder.</p>
+<h3><a class="anchor" id="autotoc_md13"></a>
 MIDI control bindings</h3>
 <p>Bind MIDI controls to modules or general settings.</p>
 <p><b>Format:</b> binding_name, midi_msg[0], midi_msg[1] </p><div class="fragment"><div class="line">&#39;bindings&#39;: [</div>
 <div class="line">    #  Default bindings</div>
 <div class="line">    [ &#39;master_volume&#39;, 176, 29 ],</div>
+<div class="line">    [ &#39;pitch_wheel&#39;, 224, 0 ],</div>
+<div class="line">    [ &#39;mod_wheel&#39;, 176, 1 ],</div>
 <div class="line"> </div>
 <div class="line">    #  Module bindings</div>
 <div class="line">    #  Binding names should have the format class_name.member_name</div>
 <div class="line">    [ &#39;test_module.set_a_value&#39;, 176, 118 ]</div>
 <div class="line">],</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md13"></a>
-Loading presets</h3>
-<p>List preset files in order here. These files must be located in the folder as indicated by the <b>preset_folder</b> setting. </p><div class="fragment"><div class="line">&#39;presets&#39;: [ &quot;example1.json&quot;, &quot;example2.json&quot; ],</div>
 </div><!-- fragment --><h3><a class="anchor" id="autotoc_md14"></a>
 Saving data</h3>
 <p>Modules will store their data values here on shutdown, then restore them on next run. </p><div class="fragment"><div class="line">&#39;module_data&#39;: []</div>
