@@ -47,6 +47,7 @@ body > .content {
 .header > button:active {
     color: #ffffff;
     background: #000000;
+    border: 0px;
     transform: translateY(4px);
 }
 
