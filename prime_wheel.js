@@ -32,13 +32,16 @@
 /*
  * Config variables
  */
-var background_color = "#808080";
-var font_color = "#191970";
-var font_size = "32px";
-var font_face = "Arial";
-var scale = 4;
-var interval = 10;
+var background_color = "#808080"; /* Sets the background color */
+var font_color = "#191970";       /* Sets the font color */
+var font_size = "32px";           /* Sets the font size */
+var font_face = "Arial";          /* Sets the font face */
+var scale = 4;                    /* Set the scale factor for the wheel */
+var interval = 10;                /* Timer interval to draw (milliseconds) */
 
+/*
+ * Initialize
+ */
 var canvas = document.getElementById("background_canvas");
 var ctx = canvas.getContext("2d");
 
@@ -54,7 +57,7 @@ var center_y = height / 2;
 var last_prime = 2;
 
 /*
- * Function to find prime numbers.
+ * Function to find prime numbers
  */
 function find_prime(num) {
     for(var i = 2; i < num; i++) {
@@ -64,7 +67,7 @@ function find_prime(num) {
 }
 
 /*
- * Animation function.
+ * Animation function
  */
 function animate() {
     if(find_prime(last_prime) == true) {
@@ -81,7 +84,7 @@ function animate() {
     last_prime++;
 
     /*
-     * Resets the effect.
+     * Resets the effect
      */
     if(last_prime > 1200 * scale) {
         ctx.fillStyle = background_color;
@@ -91,7 +94,7 @@ function animate() {
 }
 
 /*
- * Clear the canvas and start the animation.
+ * Clear the canvas and start the animation
  */
 ctx.fillStyle = background_color;
 ctx.fillRect(0, 0, width, height);
