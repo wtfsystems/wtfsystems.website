@@ -14,8 +14,12 @@
 
 <div class="content">
     <div class="header">
-        <button onclick="toggle_background()">Toggle Background</button>
-        <br/>
+        <p id="toggle_button"></p>
+        <script>
+            if(!canvas_exists()) {
+                document.getElementById("toggle_button").innerHTML = "<button onclick='toggle_background()'>Toggle Background</button>";
+            }
+        </script>
         <img src="img/logo.png" alt="what the function systems" title="what the function systems"/>
     </div>
 
