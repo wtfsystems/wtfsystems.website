@@ -12,7 +12,7 @@ var searchData=
   ['dispatch_47',['dispatch',['../classwte_1_1mgr_1_1system__manager.html#a111a1be7ab63313d2cec87abadaa9c59',1,'wte::mgr::system_manager']]],
   ['dispatcher_48',['dispatcher',['../classwte_1_1cmp_1_1dispatcher.html',1,'wte::cmp::dispatcher'],['../classwte_1_1cmp_1_1dispatcher.html#aa57dc53ccdb82e4247929ff20ec35d9b',1,'wte::cmp::dispatcher::dispatcher()']]],
   ['display_49',['display',['../classwte_1_1wte__display.html#ac46ecd44bea8a4464b2dffaf46a0350a',1,'wte::wte_display']]],
-  ['divide_50',['divide',['../classwte_1_1game__cfg.html#a1caf44aa2aea55bb95255c6b95258704',1,'wte::game_cfg']]],
+  ['divide_50',['divide',['../classwte_1_1game__cfg.html#a0d6a58ceb177550876b5de08aafa1d2e',1,'wte::game_cfg']]],
   ['do_5fgame_51',['do_game',['../classwte_1_1wte__main.html#a0d484a8f975c86db015bcc5291c945c7',1,'wte::wte_main']]],
   ['draw_5fbitmap_52',['draw_bitmap',['../classwte_1_1cmp_1_1bitmap__map.html#a6af7c3a6a732911f5b66d543bb7deca0',1,'wte::cmp::bitmap_map']]],
   ['draw_5fbitmap_5fregion_53',['draw_bitmap_region',['../classwte_1_1cmp_1_1bitmap__map.html#a860b895eb4a0a9e0c0a1421cccf7949d',1,'wte::cmp::bitmap_map']]],

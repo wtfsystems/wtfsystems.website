@@ -91,6 +91,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a60306b5d4e79712fcd945614fb29eb36"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1game__cfg.html#a60306b5d4e79712fcd945614fb29eb36">set_game_cfg_file</a> (const std::string &amp;fname)</td></tr>
 <tr class="memdesc:a60306b5d4e79712fcd945614fb29eb36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the file the game config variables will be written to.  <a href="classwte_1_1game__cfg.html#a60306b5d4e79712fcd945614fb29eb36">More...</a><br /></td></tr>
 <tr class="separator:a60306b5d4e79712fcd945614fb29eb36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a67d454abd384345cf9b4194ad4760d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1game__cfg.html#a3a67d454abd384345cf9b4194ad4760d">set_enc_key</a> (const char &amp;key)</td></tr>
+<tr class="memdesc:a3a67d454abd384345cf9b4194ad4760d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows a different encryption key to be set.  <a href="classwte_1_1game__cfg.html#a3a67d454abd384345cf9b4194ad4760d">More...</a><br /></td></tr>
+<tr class="separator:a3a67d454abd384345cf9b4194ad4760d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0024415978cc9b1286ec8be3c3d62b66"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1game__cfg.html#a0024415978cc9b1286ec8be3c3d62b66">load</a> (void)</td></tr>
 <tr class="memdesc:a0024415978cc9b1286ec8be3c3d62b66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load game config variables from file.  <a href="classwte_1_1game__cfg.html#a0024415978cc9b1286ec8be3c3d62b66">More...</a><br /></td></tr>
 <tr class="separator:a0024415978cc9b1286ec8be3c3d62b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -101,22 +104,22 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memitem:aed2f4054bd3b0c9d3c9d6a3b88e94231"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1game__cfg.html#aed2f4054bd3b0c9d3c9d6a3b88e94231">save</a> (const std::string &amp;var)</td></tr>
 <tr class="memdesc:aed2f4054bd3b0c9d3c9d6a3b88e94231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save a game config variable to file.  <a href="classwte_1_1game__cfg.html#aed2f4054bd3b0c9d3c9d6a3b88e94231">More...</a><br /></td></tr>
 <tr class="separator:aed2f4054bd3b0c9d3c9d6a3b88e94231"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af81529e5c8dc28ff48d1bb9fe416dbd5"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:af81529e5c8dc28ff48d1bb9fe416dbd5"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwte_1_1game__cfg.html#af81529e5c8dc28ff48d1bb9fe416dbd5">add</a> (const std::string &amp;var, T val)</td></tr>
-<tr class="memdesc:af81529e5c8dc28ff48d1bb9fe416dbd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a value to a variable in the game config map.  <a href="classwte_1_1game__cfg.html#af81529e5c8dc28ff48d1bb9fe416dbd5">More...</a><br /></td></tr>
-<tr class="separator:af81529e5c8dc28ff48d1bb9fe416dbd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1066810800f99c0ccb551927206fb5c7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a1066810800f99c0ccb551927206fb5c7"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwte_1_1game__cfg.html#a1066810800f99c0ccb551927206fb5c7">subtract</a> (const std::string &amp;var, T val)</td></tr>
-<tr class="memdesc:a1066810800f99c0ccb551927206fb5c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtract a value from a variable in the game config map.  <a href="classwte_1_1game__cfg.html#a1066810800f99c0ccb551927206fb5c7">More...</a><br /></td></tr>
-<tr class="separator:a1066810800f99c0ccb551927206fb5c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addccb955a2b2440b59a00a5f0e9bf3c0"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:addccb955a2b2440b59a00a5f0e9bf3c0"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwte_1_1game__cfg.html#addccb955a2b2440b59a00a5f0e9bf3c0">multiply</a> (const std::string &amp;var, T val)</td></tr>
-<tr class="memdesc:addccb955a2b2440b59a00a5f0e9bf3c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply a value by a variable in the game config map.  <a href="classwte_1_1game__cfg.html#addccb955a2b2440b59a00a5f0e9bf3c0">More...</a><br /></td></tr>
-<tr class="separator:addccb955a2b2440b59a00a5f0e9bf3c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1caf44aa2aea55bb95255c6b95258704"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a1caf44aa2aea55bb95255c6b95258704"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwte_1_1game__cfg.html#a1caf44aa2aea55bb95255c6b95258704">divide</a> (const std::string &amp;var, T val)</td></tr>
-<tr class="memdesc:a1caf44aa2aea55bb95255c6b95258704"><td class="mdescLeft">&#160;</td><td class="mdescRight">Divide a value by a variable in the game config map.  <a href="classwte_1_1game__cfg.html#a1caf44aa2aea55bb95255c6b95258704">More...</a><br /></td></tr>
-<tr class="separator:a1caf44aa2aea55bb95255c6b95258704"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a598c7f78306add2703ac937e0301fd93"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a598c7f78306add2703ac937e0301fd93"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwte_1_1game__cfg.html#a598c7f78306add2703ac937e0301fd93">add</a> (const std::string &amp;var, const T &amp;val)</td></tr>
+<tr class="memdesc:a598c7f78306add2703ac937e0301fd93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a value to a variable in the game config map.  <a href="classwte_1_1game__cfg.html#a598c7f78306add2703ac937e0301fd93">More...</a><br /></td></tr>
+<tr class="separator:a598c7f78306add2703ac937e0301fd93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e8d013853446d8b696627450faf51ad"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a5e8d013853446d8b696627450faf51ad"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwte_1_1game__cfg.html#a5e8d013853446d8b696627450faf51ad">subtract</a> (const std::string &amp;var, const T &amp;val)</td></tr>
+<tr class="memdesc:a5e8d013853446d8b696627450faf51ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtract a value from a variable in the game config map.  <a href="classwte_1_1game__cfg.html#a5e8d013853446d8b696627450faf51ad">More...</a><br /></td></tr>
+<tr class="separator:a5e8d013853446d8b696627450faf51ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a704879271a079ef9c223f4aaccbd9732"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a704879271a079ef9c223f4aaccbd9732"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwte_1_1game__cfg.html#a704879271a079ef9c223f4aaccbd9732">multiply</a> (const std::string &amp;var, const T &amp;val)</td></tr>
+<tr class="memdesc:a704879271a079ef9c223f4aaccbd9732"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply a value by a variable in the game config map.  <a href="classwte_1_1game__cfg.html#a704879271a079ef9c223f4aaccbd9732">More...</a><br /></td></tr>
+<tr class="separator:a704879271a079ef9c223f4aaccbd9732"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d6a58ceb177550876b5de08aafa1d2e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a0d6a58ceb177550876b5de08aafa1d2e"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwte_1_1game__cfg.html#a0d6a58ceb177550876b5de08aafa1d2e">divide</a> (const std::string &amp;var, const T &amp;val)</td></tr>
+<tr class="memdesc:a0d6a58ceb177550876b5de08aafa1d2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Divide a value by a variable in the game config map.  <a href="classwte_1_1game__cfg.html#a0d6a58ceb177550876b5de08aafa1d2e">More...</a><br /></td></tr>
+<tr class="separator:a0d6a58ceb177550876b5de08aafa1d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a135a848ed236fca2306144d3c77d45e6"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1game__cfg.html#a135a848ed236fca2306144d3c77d45e6">reg</a> (const std::string &amp;var, const std::string &amp;val)</td></tr>
 <tr class="memdesc:a135a848ed236fca2306144d3c77d45e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new entry in the map.  <a href="classwte_1_1game__cfg.html#a135a848ed236fca2306144d3c77d45e6">More...</a><br /></td></tr>
 <tr class="separator:a135a848ed236fca2306144d3c77d45e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,8 +195,8 @@ static std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRi
 <div class="textblock"><p>Store game config variables in a globally accessible class. </p>
 <p>Inherits map functionality from the <a class="el" href="classwte_1_1variable__map.html" title="Interface class to create a map of variables.">variable_map</a> class. This class provides specific load/save functions. Also provides math functions to manipulate the values. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="af81529e5c8dc28ff48d1bb9fe416dbd5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af81529e5c8dc28ff48d1bb9fe416dbd5">&#9670;&nbsp;</a></span>add()</h2>
+<a id="a598c7f78306add2703ac937e0301fd93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a598c7f78306add2703ac937e0301fd93">&#9670;&nbsp;</a></span>add()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -212,7 +215,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">T&#160;</td>
+          <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>val</em>&#160;</td>
         </tr>
         <tr>
@@ -246,8 +249,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a1caf44aa2aea55bb95255c6b95258704"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1caf44aa2aea55bb95255c6b95258704">&#9670;&nbsp;</a></span>divide()</h2>
+<a id="a0d6a58ceb177550876b5de08aafa1d2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d6a58ceb177550876b5de08aafa1d2e">&#9670;&nbsp;</a></span>divide()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -266,7 +269,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">T&#160;</td>
+          <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>val</em>&#160;</td>
         </tr>
         <tr>
@@ -444,8 +447,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="addccb955a2b2440b59a00a5f0e9bf3c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#addccb955a2b2440b59a00a5f0e9bf3c0">&#9670;&nbsp;</a></span>multiply()</h2>
+<a id="a704879271a079ef9c223f4aaccbd9732"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a704879271a079ef9c223f4aaccbd9732">&#9670;&nbsp;</a></span>multiply()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -464,7 +467,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">T&#160;</td>
+          <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>val</em>&#160;</td>
         </tr>
         <tr>
@@ -697,6 +700,40 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a3a67d454abd384345cf9b4194ad4760d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a67d454abd384345cf9b4194ad4760d">&#9670;&nbsp;</a></span>set_enc_key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void wte::game_cfg::set_enc_key </td>
+          <td>(</td>
+          <td class="paramtype">const char &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Allows a different encryption key to be set. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>New key. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a60306b5d4e79712fcd945614fb29eb36"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a60306b5d4e79712fcd945614fb29eb36">&#9670;&nbsp;</a></span>set_game_cfg_file()</h2>
 
@@ -731,8 +768,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a1066810800f99c0ccb551927206fb5c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1066810800f99c0ccb551927206fb5c7">&#9670;&nbsp;</a></span>subtract()</h2>
+<a id="a5e8d013853446d8b696627450faf51ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e8d013853446d8b696627450faf51ad">&#9670;&nbsp;</a></span>subtract()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -751,7 +788,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">T&#160;</td>
+          <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>val</em>&#160;</td>
         </tr>
         <tr>
@@ -791,7 +828,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 1 2020 15:48:00 for WTEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 7 2020 00:17:07 for WTEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.16
 </small></address>

@@ -2,139 +2,119 @@
 <html>
 
 <head>
-<meta charset="UTF-8">
-<title>wtfsystems</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>wtfsystems.net</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<a name="top"></a>
 
-<div class="header_div">
-<img src="img/logo.png" alt="what the function systems" title="what the function systems"/>
-<br/><br/>
-(╭ರᴥ•́)
-<br/><br/>
-</div>
+<canvas id="background_canvas"></canvas>
+<script src="prime_wheel.js"></script>
 
-<hr/>
+<div class="content">
+    <div class="header">
+        <img src="img/logo.png" alt="what the function systems" title="what the function systems"/>
+    </div>
 
-<div style="display: flex; justify-content: space-around;">
-<div class="section_div" style="width: 65%; display: flex; align-items: center; justify-content: center; font-size: 120%;">
-Hello and welcome to the personal website of Matthew Evans!  
-<br/>
-My main interests are Comp Sci and application design.  I also enjoy tinkering around with game development.  Below are some samples of my work.
-<br/>
-When not behind a screen I can usually be found out walking around blasting EDM through my headphones.
-</div>
+    <div class="page_row">
+        <div class="main_text page_text">
+            Hello and welcome to the personal website of Matthew Evans!
+        </div>
 
-<div class="header_div" style="width: 35%;">
-<img src="img/me.png" width="90%" alt="Me at age 15" title="Me at age 15"/>
-</div>
-</div>
+        <div class="my_pic">
+            <img src="img/me.png" width="100%" alt="Me at age 15" title="Me at age 15"/>
+        </div>
+    </div>
 
-<hr/><br/>
+    <div class="page_row">
+        <div class="project_showcase">
+            <div class="project_item">
+            <table><tr>
+                <td width="65%" style="text-align: left; vertical-align: top;">
+                    <h3>WTEngine</h3>
+                    A cross-platform C++17 game engine that uses <a href="https://liballeg.org/">Allegro</a> and <a href="https://www.icculus.org/physfs/">PhysicsFS</a>.
+                    Has an <a href="https://en.wikipedia.org/wiki/Entity_component_system">ECS</a> based memory manager, messaging system, dynamic maps for configuration variables, and a programmable menu interface.
+                    Performs 2D rendering and has simple controller support.
+                    <ul>
+                    <li><a href="https://github.com/wtfsystems/wtengine">GitHub Repo</a></li>
+                    <li><a href="https://www.wtfsystems.net/docs/wtengine/index.html">Documentation</a></li>
+                    <li><a href="https://github.com/wtfsystems/releases/tree/master/win64">Demo Game</a></li>
+                    </ul>
+                </td>
+                <td width="35%" style="text-align: right; vertical-align: center;">
+                    <img src="img/wte_demo.png" width="100%" title="WTE Demo"/>
+                </td>
+            </tr></table>
+            </div>
 
-<div class="header_div">
-<h2>Libraries & Programs</h2>
-</div>
+            <div class="project_item">
+            <table><tr>
+                <td width="65%" style="text-align: left; vertical-align: top;">
+                    <h3>ppms</h3>
+                    Python Polyphonic MIDI Synthesizer.
+                    Digital synthesizer playable with a MIDI input device.
+                    Has plug-in support for modules that alter the signal.
+                    <ul>
+                    <li><a href="https://github.com/wtfsystems/ppms">GitHub Repo</a></li>
+                    <li><a href="https://www.wtfsystems.net/docs/ppms/index.html">Documentation</a></li>
+                    </ul>
+                </td>
+                <td width="35%" style="text-align: right; vertical-align: center;">
+                    <img src="img/ppms.png" width="100%" title="ppms"/>
+                </td>
+            </tr></table>
+            </div>
 
-<div class="section_div">
-<table><tr>
-<td width="65%" style="text-align: left; vertical-align: top;">
-    <h3>WTEngine</h3>
-    A cross-platform C++17 game engine that uses <a href="https://liballeg.org/">Allegro</a> and <a href="https://www.icculus.org/physfs/">PhysicsFS</a>.
-    Has an <a href="https://en.wikipedia.org/wiki/Entity_component_system">ECS</a> based memory manager, messaging system, dynamic maps for configuration variables, and a programmable menu interface.
-    Performs 2D rendering and has simple controller support.
-    <ul>
-    <li><a href="https://github.com/wtfsystems/wtengine">GitHub Repo</a></li>
-    <li><a href="https://www.wtfsystems.net/docs/wtengine/index.html">Documentation</a></li>
-    <li><a href="https://github.com/wtfsystems/releases/tree/master/win64">Demo Game</a></li>
-    </ul>
-</td>
-<td width="35%" style="text-align: right; vertical-align: center;">
-    <img src="img/wte_demo.png" width="100%" title="WTE Demo"/>
-</td>
-</tr></table>
-</div>
+            <div class="project_item">
+            <h3>Code Snippets</h3>
+            Collection of useful C++ headers.
+            <ul>
+            <li><a href="https://github.com/wtfsystems/cpp_snippets">GitHub Repo</a></li>
+            </ul>
+            </div>
+        </div>
+    </div>
 
-<br/>
+    <div class="page_row">
+        <div class="form_display page_text">
+            Please use the form below if you would like to send me a message.
+            <noscript><br/>You need JavaScript enabled for submitting the form.</noscript>
+            <br/><br/>
+    
+            <form name="submit-to-google-sheet" id="submit-to-google-sheet" class="contact_form">
+                <input name="name" type="text" placeholder="Your name" size="28" required/>
+                <input name="email" type="email" placeholder="Your email" size="28" required/>
+                <br/><br/>
+                <textarea name="message" type="text" placeholder="Type a message!" cols="58" rows="6" required></textarea>
+                <br/><br/>
+                <button type="submit">Submit<br/>. * ･ ｡ﾟ☆━੧༼ •́ ヮ •̀ ༽୨</button>
+            </form>
+    
+            <script>
+                //  From:  https://github.com/jamiewilson/form-to-google-sheets
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbwuE-jfH-ZanjllWwAqYPieGZ3byinXQduncinAVYnFRT6WuwGo/exec'
+                const form = document.forms['submit-to-google-sheet']
+        
+                form.addEventListener('submit', e => {
+                    e.preventDefault()
+                    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => console.log('Success!', response))
+                    .catch(error => console.error('Error!', error.message))
+        
+                    window.alert("Thanks for your message!");
+                    document.getElementById("submit-to-google-sheet").reset(); 
+                })
+            </script>
+        </div>
+    </div>
 
-<div class="section_div">
-<table><tr>
-<td width="65%" style="text-align: left; vertical-align: top;">
-    <h3>ppms</h3>
-    Python Polyphonic MIDI Synthesizer.
-    Digital synthesizer playable with a MIDI input device.
-    Has plug-in support for modules that alter the signal.
-    <ul>
-    <li><a href="https://github.com/wtfsystems/ppms">GitHub Repo</a></li>
-    <li><a href="https://www.wtfsystems.net/docs/ppms/index.html">Documentation</a></li>
-    </ul>
-</td>
-<td width="35%" style="text-align: right; vertical-align: center;">
-    <img src="img/ppms.png" width="100%" title="ppms"/>
-</td>
-</tr></table>
-</div>
-
-<br/>
-
-<div class="header_div">
-<h2>Code Snippets</h2>
-</div>
-
-<div class="section_div">
-<h3>C++ Code Snippets</h3>
-Collection of useful C++ headers.
-<ul>
-<li><a href="https://github.com/wtfsystems/cpp_snippets">GitHub Repo</a></li>
-</ul>
-</div>
-
-<br/><hr/><br/>
-
-<div class="header_div">
-Please use the form below if you would like to send me a message.
-<noscript><br/>You need JavaScript enabled for submitting the form.</noscript>
-<br/><br/>
-
-<form name="submit-to-google-sheet" id="submit-to-google-sheet">
-<input name="name" type="text" placeholder="Your name" size="28" required/>
-<input name="email" type="email" placeholder="Your email" size="28" required/>
-<br/><br/>
-<textarea name="message" type="text" placeholder="Type a message!" cols="58" rows="6" required></textarea>
-<br/><br/>
-<button type="submit" class="form_button">Submit<br/>. * ･ ｡ﾟ☆━੧༼ •́ ヮ •̀ ༽୨</button>
-</form>
-
-<script>
-//  From:  https://github.com/jamiewilson/form-to-google-sheets
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwuE-jfH-ZanjllWwAqYPieGZ3byinXQduncinAVYnFRT6WuwGo/exec'
-const form = document.forms['submit-to-google-sheet']
-
-form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => console.log('Success!', response))
-    .catch(error => console.error('Error!', error.message))
-
-    window.alert("Thanks for your message!");
-    document.getElementById("submit-to-google-sheet").reset(); 
-})
-</script>
-</div>
-
-<br/><hr/><br/>
-
-<div class="nav_div">
-<a href="#top">BACK TO TOP</a>
-</div>
-
-<div class="header_div">
-<br/>
-ヽ(ಠ▃ಠ)ﾉ
-<br/><br/>
+    <div class="page_row">
+        <footer>
+            Thanks for viewing!<br/>
+            Background source code <a href="prime_wheel.js">available here</a>
+        </footer>
+    </div>
 </div>
 
 </body>

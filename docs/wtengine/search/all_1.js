@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['add_1',['add',['../classwte_1_1game__cfg.html#af81529e5c8dc28ff48d1bb9fe416dbd5',1,'wte::game_cfg::add()'],['../classwte_1_1mgr_1_1system__manager.html#a442c527ca2c4fdaa41c258fe5385ea1d',1,'wte::mgr::system_manager::add()']]],
+  ['add_1',['add',['../classwte_1_1game__cfg.html#a598c7f78306add2703ac937e0301fd93',1,'wte::game_cfg::add()'],['../classwte_1_1mgr_1_1system__manager.html#a442c527ca2c4fdaa41c258fe5385ea1d',1,'wte::mgr::system_manager::add()']]],
   ['add_5fcomponent_2',['add_component',['../classwte_1_1mgr_1_1entity__manager.html#ab172ece86c7cdaf2ef6cecc455fafb94',1,'wte::mgr::entity_manager']]],
   ['add_5fcycle_3',['add_cycle',['../classwte_1_1cmp_1_1sprite.html#ab7d7ce2fca2d0b16036f4d7578e913de',1,'wte::cmp::sprite']]],
   ['add_5ffile_5flocation_4',['add_file_location',['../classwte_1_1wte__main.html#aa13be7ccb224a6751579c48388ea40d1',1,'wte::wte_main']]],
