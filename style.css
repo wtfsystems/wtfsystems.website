@@ -42,6 +42,7 @@ body > .content {
     color: #000000;
     background: #ffffff;
     border: 0px;
+    border-radius: 8px;
     text-align: center;
 }
 .header > button:active {
@@ -62,7 +63,7 @@ body > .content {
 
 .page_text {
     color: #000000;
-    background: #b0c4de;
+    background: #e6e6fa;
     border: 1px solid #000000;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -127,8 +128,9 @@ body > .content {
 
 footer {
     flex: 100%;
-    background: #ffffff;
-    color: #000000;
+    color: #600000;
+    background: #a9a9a9;
+    border-radius: 8px;
     text-align: center;
     margin: 12px;
     padding: 6px;
