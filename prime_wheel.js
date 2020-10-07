@@ -87,6 +87,7 @@ function animate() {
      * Resets the effect
      */
     if(last_prime > 1200 * scale) {
+        console.log("Resetting prime wheel effect");
         ctx.fillStyle = background_color;
         ctx.fillRect(0, 0, width, height);
         last_prime = 2;
