@@ -79,7 +79,7 @@ function find_prime(num) {
  * Animation function
  */
 function animate() {
-    if(find_prime(last_prime) == true) {
+    if(find_prime(last_prime)) {
         console.log("Found prime: " + last_prime);
         ctx.font = font_size + " " + font_face;
         ctx.fillStyle = font_color;
