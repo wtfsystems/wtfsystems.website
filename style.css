@@ -1,4 +1,5 @@
 body {
+    background-color: #808080;
     display: flex;
     align-items: stretch;
     align-content: stretch;
@@ -6,7 +7,6 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #000000;
 }
 html {
     height: 100%;
