@@ -45,7 +45,7 @@ var font_face = "Arial";
 var scale = 4;
 /* Timer interval to draw (milliseconds) */
 var interval = 10;
-/* div name of canvas to draw to */
+/* ID of canvas to draw to */
 var canvas_name = "background_canvas"
 
 /*
