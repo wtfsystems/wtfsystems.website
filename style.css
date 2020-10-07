@@ -1,5 +1,5 @@
 body {
-    background-color: #808080;
+    background: #808080;
     display: flex;
     align-items: stretch;
     align-content: stretch;
@@ -51,7 +51,7 @@ body > .content {
 
 .page_text {
     color: #000000;
-    background-color: #b0c4de;
+    background: #b0c4de;
     border: 1px solid #000000;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -78,9 +78,11 @@ body > .content {
     width: 100%;
     /* height: 500px; */
 }
-
 .project_showcase > .project_item {
-    color: #000000;
+    color: #600000;
+    background: rgba(128, 128, 128, 0.6);
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .page_row > .form_display {
@@ -92,7 +94,7 @@ body > .content {
 }
 .contact_form > button {
     color: #000000;
-    background-color: #ffffff;
+    background: #ffffff;
     border: 2px solid #000000;
     border-radius: 8px;
     padding: 10px;
@@ -100,17 +102,17 @@ body > .content {
 }
 .contact_form > button:hover {
     color: #000000;
-    background-color: #808080;
+    background: #808080;
 }
 .contact_form > button:active {
     color: #000000;
-    background-color: #808080;
+    background: #808080;
     transform: translateY(4px);
 }
 
 footer {
     flex: 100%;
-    background-color: #ffffff;
+    background: #ffffff;
     color: #000000;
     text-align: center;
     margin: 12px;

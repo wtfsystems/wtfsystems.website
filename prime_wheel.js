@@ -37,7 +37,7 @@ var font_color = "#191970";       /* Sets the font color */
 var font_size = "32px";           /* Sets the font size */
 var font_face = "Arial";          /* Sets the font face */
 var scale = 4;                    /* Set the scale factor for the wheel */
-var interval = 10;                /* Timer interval to draw (milliseconds) */
+var interval = 5;                 /* Timer interval to draw (milliseconds) */
 
 /*
  * Initialize
