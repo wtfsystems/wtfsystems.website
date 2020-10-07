@@ -128,18 +128,6 @@ function toggle_background() {
 }
 
 /*
- * Check to see if the canvas exists
- */
-function canvas_exists() {
-    try {
-        var pixel = ctx.getImageData(0, 0, 1, 1);
-        return false;
-    } catch(err) {
-        return (err.code === 18);
-    }
-}
-
-/*
  * CSS:
  * html {
  *     height: 100%;
