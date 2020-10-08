@@ -139,7 +139,7 @@ function toggle_background() {
         console.log("Prime wheel toggeled on");
         x.style.display = "block";
         animate_proc = setInterval(animate, interval);
-    } else{
+    } else {
         console.log("Prime wheel toggeled off");
         x.style.display = "none";
         clearInterval(animate_proc);
