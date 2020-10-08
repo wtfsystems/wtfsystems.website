@@ -4,7 +4,7 @@
  * Filename:  prime_wheel.js
  * By:  Matthew Evans
  *      https://www.wtfsystems.net/
- * Version:  100720
+ * Version:  100820
  * 
  * See LICENSE.md for copyright information.
  * 
