@@ -75,9 +75,9 @@ var y_offset = 0;
  */
 function set_offset() {
     if(use_offset) {
-        x_offset = Math.floor(Math.random() * ((center_x / 3) * 2) + 1);
+        x_offset = Math.floor(Math.random() * (center_x * 2 / 3) + 1);
         x_offset = x_offset * (Math.random() < 0.5 ? -1 : 1);
-        y_offset = Math.floor(Math.random() * ((center_y / 3) * 2) + 1);
+        y_offset = Math.floor(Math.random() * (center_y * 2 / 3) + 1);
         y_offset = y_offset * (Math.random() < 0.5 ? -1 : 1);
     }
 }
