@@ -44,9 +44,11 @@ var font_face = "Arial";
 /* Set the scale factor for the wheel */
 var scale = 4;
 /* Timer interval to draw (milliseconds) */
-var interval = 10;
+var interval = 5;
 /* ID of canvas to draw to */
 var canvas_name = "background_canvas"
+/* Use random offset */
+var use_offset = true;
 
 /*
  * Initialize
@@ -64,6 +66,22 @@ var center_x = width / 2;
 var center_y = height / 2;
 
 var last_prime = 2;
+
+var x_offset = 0;
+var y_offset = 0;
+
+/*
+ * Function to generate a random offset
+ */
+function set_offset() {
+    if(use_offset) {
+        x_offset = Math.floor(Math.random() * ((center_x / 3) * 2) + 1);
+        x_offset = x_offset * (Math.random() < 0.5 ? -1 : 1);
+        y_offset = Math.floor(Math.random() * ((center_y / 3) * 2) + 1);
+        y_offset = y_offset * (Math.random() < 0.5 ? -1 : 1);
+    }
+}
+set_offset();  //  Call to set
 
 /*
  * Function to find prime numbers
@@ -85,8 +103,8 @@ function animate() {
         ctx.fillStyle = font_color;
         ctx.fillText(
             last_prime,
-            center_x + (last_prime * Math.cos(last_prime)),
-            center_y - (last_prime * Math.sin(last_prime))
+            (center_x + x_offset) + (last_prime * Math.cos(last_prime)),
+            (center_y + y_offset) - (last_prime * Math.sin(last_prime))
         );
     }
 
@@ -95,8 +113,9 @@ function animate() {
     /*
      * Resets the effect
      */
-    if(last_prime > 1200 * scale) {
+    if(last_prime > 1400 * scale) {
         console.log("Resetting prime wheel effect");
+        set_offset();
         ctx.fillStyle = background_color;
         ctx.fillRect(0, 0, width, height);
         last_prime = 2;
