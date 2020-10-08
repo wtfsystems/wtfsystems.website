@@ -37,23 +37,6 @@ body > .content {
     margin: auto;
     text-align: center;
 }
-#toggle_button {
-    margin: 0px;
-    padding: 0px;
-}
-#toggle_button > button {
-    color: #000000;
-    background: #ffffff;
-    border: 0px;
-    border-radius: 8px;
-    text-align: center;
-}
-#toggle_button > button:active {
-    color: #ffffff;
-    background: #000000;
-    border: 0px;
-    transform: translateY(4px);
-}
 
 .content > .page_row {
     display: flex;
