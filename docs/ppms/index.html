@@ -66,17 +66,25 @@ $(function() {
 <div class="title">Python Polyphonic MIDI Synthesizer </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a href="https://www.python.org/">Python3</a> script that simulates a <a href="https://en.wikipedia.org/wiki/Modular_synthesizer">modular synthesizer</a>. Requires a separate <a href="https://en.wikipedia.org/wiki/MIDI">MIDI</a> input device, however a <a href="https://vmpk.sourceforge.io/">virtual</a> one may be used. Generates samples based on <a href="https://en.wikipedia.org/wiki/Waveform">waveforms</a> and processes them through modules. Allows control of the modules through MIDI messages.</p>
-<h3><a class="anchor" id="autotoc_md1"></a>
-Requirements</h3>
+<div class="textblock"><h2><a class="anchor" id="autotoc_md1"></a>
+Warning</h2>
+<ul>
+<li>Speaker warning</li>
+<li>Experimental, WIP, math</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md2"></a>
+About</h1>
+<p><a href="https://www.python.org/">Python3</a> script that simulates a <a href="https://en.wikipedia.org/wiki/Modular_synthesizer">modular synthesizer</a>. Requires a separate <a href="https://en.wikipedia.org/wiki/MIDI">MIDI</a> input device, however a <a href="https://vmpk.sourceforge.io/">virtual</a> one may be used. Generates samples based on <a href="https://en.wikipedia.org/wiki/Waveform">waveforms</a> and processes them through modules. Allows control of the modules through MIDI messages.</p>
+<h2><a class="anchor" id="autotoc_md3"></a>
+Requirements</h2>
 <p>Requires the following packages to be installed:</p><ul>
 <li><a href="https://numpy.org/">numpy</a></li>
 <li><a href="https://www.scipy.org/">scipy</a></li>
 <li><a href="https://pypi.org/project/sounddevice/">sounddevice</a></li>
 <li><a href="https://pypi.org/project/python-rtmidi/">python-rtmidi</a></li>
 </ul>
-<h3><a class="anchor" id="autotoc_md2"></a>
-Oscillators</h3>
+<h2><a class="anchor" id="autotoc_md4"></a>
+Oscillators</h2>
 <p>Generates a waveform based on the following types:</p><ul>
 <li>sawtooth /|</li>
 <li>triangle /\</li>
@@ -84,10 +92,10 @@ Oscillators</h3>
 <li>sine ~</li>
 </ul>
 <p>You can select which waveform is generated using MIDI program change.</p>
-<h3><a class="anchor" id="autotoc_md3"></a>
-Modules</h3>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Modules</h2>
 <p>Modules are used to process the waveform signal. These are loaded from the settings (<em>see below</em>) then the signal is passed through each in the order they were loaded. You can then set up bindings to control module parameters using MIDI controls.</p>
-<h3><a class="anchor" id="autotoc_md4"></a>
+<h3><a class="anchor" id="autotoc_md6"></a>
 Included Modules</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -100,31 +108,31 @@ Included Modules</h3>
 <td class="markdownTableBodyNone"><b>mod.bpass</b>  </td><td class="markdownTableBodyNone">Provides a high-pass and low-pass filter.   </td></tr>
 </table>
 <hr  />
-<h1><a class="anchor" id="autotoc_md6"></a>
+<h1><a class="anchor" id="autotoc_md8"></a>
 Configuration</h1>
 <p>Settings can be found in the file <em>settings.json</em>. One will be created automatically the first time the script is ran.</p>
-<h3><a class="anchor" id="autotoc_md7"></a>
+<h3><a class="anchor" id="autotoc_md9"></a>
 Sample rate</h3>
 <p>You can set the sample rate here. Defaults to 44100Hz. Value is a float. </p><div class="fragment"><div class="line">&#39;sample_rate&#39;: 44100.0,</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md8"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md10"></a>
 Keyboard events</h3>
 <p>The MIDI note on/off messages. Defaults to the following: </p><div class="fragment"><div class="line">&#39;note_on&#39;: 144,</div>
 <div class="line">&#39;note_off&#39;: 128,</div>
 </div><!-- fragment --><p>The load preset message is defined as: </p><div class="fragment"><div class="line">&quot;preset_msg&quot;: 192,</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md9"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md11"></a>
 Impact weight</h3>
 <p>Set the impact weight. This is used for factoring keyboard velocity. </p><div class="fragment"><div class="line">&#39;impact_weight&#39;: 20000,</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md10"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md12"></a>
 Preset directory</h3>
 <p>Folder to load preset files from. </p><div class="fragment"><div class="line">&#39;preset_folder&#39;: &quot;presets&quot;,</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md11"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md13"></a>
 Loading modules</h3>
 <p>Load modules to process the signal. The signal will be filtered through each module in order added. </p><div class="fragment"><div class="line">&#39;modules&#39;: [ &#39;mod.test&#39;, &#39;mod.another&#39; ],</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md12"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md14"></a>
 Loading presets</h3>
 <p>List preset files in order here. These files must be located in the folder as indicated by the <b>preset_folder</b> setting. </p><div class="fragment"><div class="line">&#39;presets&#39;: [ &quot;example1.json&quot;, &quot;example2.json&quot; ],</div>
 </div><!-- fragment --><p>Run with <em>&ndash;build_presets</em> to generate a list from the presets folder.</p>
-<h3><a class="anchor" id="autotoc_md13"></a>
+<h3><a class="anchor" id="autotoc_md15"></a>
 MIDI control bindings</h3>
 <p>Bind MIDI controls to modules or general settings.</p>
 <p><b>Format:</b> binding_name, midi_msg[0], midi_msg[1] </p><div class="fragment"><div class="line">&#39;bindings&#39;: [</div>
@@ -137,11 +145,11 @@ MIDI control bindings</h3>
 <div class="line">    #  Binding names should have the format class_name.member_name</div>
 <div class="line">    [ &#39;test_module.set_a_value&#39;, 176, 118 ]</div>
 <div class="line">],</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md14"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md16"></a>
 Saving data</h3>
 <p>Modules will store their data values here on shutdown, then restore them on next run. </p><div class="fragment"><div class="line">&#39;module_data&#39;: []</div>
 </div><!-- fragment --><hr  />
-<h1><a class="anchor" id="autotoc_md16"></a>
+<h1><a class="anchor" id="autotoc_md18"></a>
 Modules</h1>
 <p>To make a module, create a Python file in the <em>mod</em> folder. Define the module as a class, then define the following functions.</p>
 <ul>
@@ -157,7 +165,7 @@ Modules</h1>
 </div><!-- fragment --></li>
 </ul>
 <p>For each control in the module, create a seperate function to set its value. Then to create bindings to these controls, use the format <b>class_name.function_name</b>.</p>
-<h2><a class="anchor" id="autotoc_md17"></a>
+<h2><a class="anchor" id="autotoc_md19"></a>
 Example mod.test.py</h2>
 <div class="fragment"><div class="line">##  PPMS Synth Module for testing the patchboard.</div>
 <div class="line">class test_module:</div>
@@ -187,11 +195,11 @@ Example mod.test.py</h2>
 <div class="line">    def set_a_value(self, val):</div>
 <div class="line">        self.__test_value = val</div>
 </div><!-- fragment --><hr  />
-<h1><a class="anchor" id="autotoc_md19"></a>
+<h1><a class="anchor" id="autotoc_md21"></a>
 Presets</h1>
 <p>Preset files are used to store module parameters and can be loaded during runtime. When the MIDI message to load a preset is received, it selects the corresponding preset file and sets the active parameters.</p>
 <p>For setting the preset folder and MIDI message, see <b>Configuration</b> above.</p>
-<h2><a class="anchor" id="autotoc_md20"></a>
+<h2><a class="anchor" id="autotoc_md22"></a>
 Example preset.json</h2>
 <div class="fragment"><div class="line">[</div>
 <div class="line">    [ &quot;envelope.set_attack&quot;, 100 ],</div>
