@@ -1,5 +1,4 @@
 # Ignore vs code stuffs
-.vscode/
 wtfsystems.github.io.code-workspace
 
 # Ignore build script
