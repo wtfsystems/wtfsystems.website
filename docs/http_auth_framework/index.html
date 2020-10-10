@@ -79,11 +79,21 @@ Requirements</h3>
 <hr  />
 <h3><a class="anchor" id="autotoc_md4"></a>
 Usage</h3>
-<p>First import the file </p><div class="fragment"><div class="line">import http_auth_framework</div>
-</div><!-- fragment --><p>Then create an instance of the class </p><div class="fragment"><div class="line">auth = http_auth_framework.http_auth()</div>
-</div><!-- fragment --><p>Next set any parameter values </p><div class="fragment"><div class="line">auth.DES_KEY = b&#39;\0\0\0\0\0\0\0\0&#39;</div>
-</div><!-- fragment --><hr  />
+<p>First import the file: </p><div class="fragment"><div class="line">import http_auth_framework</div>
+</div><!-- fragment --><p>Then create an instance of the class: </p><div class="fragment"><div class="line">auth = http_auth_framework.http_auth()</div>
+</div><!-- fragment --><p>Next set any parameter values: </p><div class="fragment"><div class="line">auth.DES_KEY = b&#39;\0\0\0\0\0\0\0\0&#39;</div>
+</div><!-- fragment --><p>To log a user in, use the <b>create_session</b> member: </p><div class="fragment"><div class="line">login_result = auth.create_session(request.form[&#39;username&#39;], request.form[&#39;passwd&#39;])</div>
+</div><!-- fragment --><p>Use <b>delete_session</b> to clear the session: </p><div class="fragment"><div class="line">@app.route(&#39;/dologout&#39;, methods = [&#39;POST&#39;, &#39;GET&#39;])</div>
+<div class="line">def dologout():</div>
+<div class="line">    auth.delete_session()</div>
+<div class="line">    return make_response(render_template(&#39;login.html&#39;))</div>
+</div><!-- fragment --><p>The <b>http_auth</b> class also has members for validating and changing a user's password.</p>
+<hr  />
 <h3><a class="anchor" id="autotoc_md6"></a>
+Example</h3>
+<p>The file <a href="https://github.com/wtfsystems/http_auth_framework/blob/master/run_example.py">run_example.py</a> provides a working Flask application as an example.</p>
+<hr  />
+<h3><a class="anchor" id="autotoc_md8"></a>
 Configuration</h3>
 <ul>
 <li>Set the key used for DES encryption <div class="fragment"><div class="line">DES_KEY = b&#39;\0\0\0\0\0\0\0\0&#39;</div>
@@ -108,19 +118,15 @@ Configuration</h3>
 </div><!-- fragment --></li>
 </ul>
 <hr  />
-<h3><a class="anchor" id="autotoc_md8"></a>
+<h3><a class="anchor" id="autotoc_md10"></a>
 User Database Admin</h3>
 <p>The script <a href="https://github.com/wtfsystems/http_auth_framework/blob/master/user_admin.py">user_admin.py</a> creates a useable database file for the framework. Also has commands to add, delete and list users.</p>
 <p><b>Commands:</b></p><ul>
 <li>&ndash;new_db - Generates a new database file if one does not already exist.</li>
 <li>&ndash;list - List users in the database.</li>
 <li>-n <em>username</em> <em>password</em> - Adds a new user</li>
-<li>-d <em>username</em> - Deletes a user</li>
+<li>-d <em>username</em> - Deletes a user </li>
 </ul>
-<hr  />
-<h3><a class="anchor" id="autotoc_md10"></a>
-Example</h3>
-<p>The file <a href="https://github.com/wtfsystems/http_auth_framework/blob/master/run_example.py">run_example.py</a> provides a working Flask application as an example. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->
