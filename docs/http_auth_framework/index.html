@@ -87,11 +87,12 @@ Usage</h3>
 <div class="line">def dologout():</div>
 <div class="line">    auth.delete_session()</div>
 <div class="line">    return make_response(render_template(&#39;login.html&#39;))</div>
-</div><!-- fragment --><p>Now for any page routes, call the template with <b>validate_auth_redirect</b>: </p><div class="fragment"><div class="line">@app.route(&#39;/&#39;, methods = [&#39;GET&#39;])</div>
+</div><!-- fragment --><p>Now for any page routes, call the template with <b>validate_auth_redirect</b>. If the user is not logged in, they will be redirected to the login page: </p><div class="fragment"><div class="line">@app.route(&#39;/&#39;, methods = [&#39;GET&#39;])</div>
 <div class="line">def index():</div>
 <div class="line">    return auth.validate_auth_redirect(&#39;main.html&#39;)</div>
-</div><!-- fragment --><p>If the user is not logged in, they will be redirected to the login page.</p>
-<p>The <b>http_auth</b> class also has members for validating and changing a user's password.</p>
+</div><!-- fragment --><p>You can also use the member <b>check_session</b>: </p><div class="fragment"><div class="line">if auth.check_session() == False:</div>
+<div class="line">    return make_response(render_template(&#39;login.html&#39;))</div>
+</div><!-- fragment --><p>The <b>http_auth</b> class also has members for validating and changing a user's password.</p>
 <hr  />
 <h3><a class="anchor" id="autotoc_md6"></a>
 Example</h3>
