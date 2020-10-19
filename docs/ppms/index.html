@@ -163,6 +163,10 @@ Modules</h1>
 <div class="line">        [ &#39;example.control_b&#39;, self.value_b ]</div>
 <div class="line">    ]</div>
 </div><!-- fragment --></li>
+<li><b>gate_signal function</b> - <em>Optional</em> - Receive and process gate signals. <div class="fragment"><div class="line">def gate_signal(self, signal):</div>
+<div class="line">    #  Do something with the gate signal</div>
+<div class="line">    pass</div>
+</div><!-- fragment --></li>
 </ul>
 <p>For each control in the module, create a seperate function to set its value. Then to create bindings to these controls, use the format <b>class_name.function_name</b>.</p>
 <h2><a class="anchor" id="autotoc_md19"></a>
@@ -196,10 +200,17 @@ Example mod.test.py</h2>
 <div class="line">        self.__test_value = val</div>
 </div><!-- fragment --><hr  />
 <h1><a class="anchor" id="autotoc_md21"></a>
+Gate Signal</h1>
+<p>The <em>gate signal</em> is a dictionary and has the following format: </p><div class="fragment"><div class="line">&#39;status&#39;: &#39;on&#39; or &#39;off&#39;,</div>
+<div class="line">&#39;note&#39;: note_value,</div>
+<div class="line">&#39;waveform&#39;: waveform_name,</div>
+<div class="line">&#39;impact&#39;: impact_value</div>
+</div><!-- fragment --><hr  />
+<h1><a class="anchor" id="autotoc_md23"></a>
 Presets</h1>
 <p>Preset files are used to store module parameters and can be loaded during runtime. When the MIDI message to load a preset is received, it selects the corresponding preset file and sets the active parameters.</p>
 <p>For setting the preset folder and MIDI message, see <b>Configuration</b> above.</p>
-<h2><a class="anchor" id="autotoc_md22"></a>
+<h2><a class="anchor" id="autotoc_md24"></a>
 Example preset.json</h2>
 <div class="fragment"><div class="line">[</div>
 <div class="line">    [ &quot;envelope.set_attack&quot;, 100 ],</div>
