@@ -4,7 +4,7 @@
  * Filename:  prime_wheel.js
  * By:  Matthew Evans
  *      https://www.wtfsystems.net/
- * Version:  100820
+ * Version:  110320
  * 
  * See LICENSE.md for copyright information.
  * 
@@ -34,32 +34,32 @@ console.log("Running prime wheel effect");
  * Config variables
  */
 /* Sets the background color */
-var background_color = "#808080";
+var BACKGROUND_COLOR = "#808080";
 /* Sets the font color */
-var font_color = "#191970";
+var FONT_COLOR = "#191970";
 /* Sets the font size */
-var font_size = "32px";
+var FONT_SIZE = "32px";
 /* Sets the font face */
-var font_face = "Arial";
+var FONT_FACE = "Arial";
 /* Set the scale factor for the wheel */
-var scale = 4;
+var SCALE = 4;
 /* Timer interval to draw (milliseconds) */
-var interval = 5;
+var INTERVAL = 5;
 /* ID of canvas to draw to */
-var canvas_name = "background_canvas"
+var CANVAS_NAME = "background_canvas"
 /* Use random offset */
-var use_offset = true;
+var USE_OFFSET = true;
 /* Spam console with prime numbers */
-var spam = true;
+var SPAM = true;
 
 /*
  * Initialize
  */
-var canvas = document.getElementById(canvas_name);
+var canvas = document.getElementById(CANVAS_NAME);
 var ctx = canvas.getContext("2d");
 
-canvas.width = canvas.clientWidth * scale;
-canvas.height = canvas.clientHeight * scale;
+canvas.width = canvas.clientWidth * SCALE;
+canvas.height = canvas.clientHeight * SCALE;
 
 var width = ctx.canvas.width;
 var height = ctx.canvas.height;
@@ -76,7 +76,7 @@ var y_offset = 0;
  * Function to generate a random offset
  */
 function set_offset() {
-    if(use_offset) {
+    if(USE_OFFSET) {
         x_offset = Math.floor(Math.random() * (center_x * 2 / 3) + 1);
         x_offset = x_offset * (Math.random() < 0.5 ? -1 : 1);
         y_offset = Math.floor(Math.random() * (center_y * 2 / 3) + 1);
@@ -100,9 +100,9 @@ function find_prime(num) {
  */
 function animate() {
     if(find_prime(last_prime)) {
-        if(spam) console.log("Found prime: " + last_prime);
-        ctx.font = font_size + " " + font_face;
-        ctx.fillStyle = font_color;
+        if(SPAM) console.log("Found prime: " + last_prime);
+        ctx.font = FONT_SIZE + " " + FONT_FACE;
+        ctx.fillStyle = FONT_COLOR;
         ctx.fillText(
             last_prime,
             (center_x + x_offset) + (last_prime * Math.cos(last_prime)),
@@ -115,10 +115,10 @@ function animate() {
     /*
      * Resets the effect
      */
-    if(last_prime > 1400 * scale) {
+    if(last_prime > 1400 * SCALE) {
         console.log("Resetting prime wheel effect");
         set_offset();
-        ctx.fillStyle = background_color;
+        ctx.fillStyle = BACKGROUND_COLOR;
         ctx.fillRect(0, 0, width, height);
         last_prime = 2;
     }
@@ -127,20 +127,20 @@ function animate() {
 /*
  * Clear the canvas and start the animation
  */
-ctx.fillStyle = background_color;
+ctx.fillStyle = BACKGROUND_COLOR;
 ctx.fillRect(0, 0, width, height);
 
-var animate_proc = setInterval(animate, interval);
+var animate_proc = setInterval(animate, INTERVAL);
 
 /*
  * Function to toggle background on/off
  */
 function toggle_background() {
-    var x = document.getElementById(canvas_name);
+    var x = document.getElementById(CANVAS_NAME);
     if (x.style.display === "none") {
         console.log("Prime wheel toggeled on");
         x.style.display = "block";
-        animate_proc = setInterval(animate, interval);
+        animate_proc = setInterval(animate, INTERVAL);
     } else {
         console.log("Prime wheel toggeled off");
         x.style.display = "none";
