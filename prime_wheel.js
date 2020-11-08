@@ -108,7 +108,7 @@ function is_prime(num) {
 /*
  * Animation function
  */
-function animate(self) {
+function animate_wheel(self) {
     if(is_prime(self.last_prime)) {
         if(self.SPAM) console.log("Found prime: " + self.last_prime);
         self.ctx.font = self.FONT_SIZE + " " + self.FONT_FACE;
@@ -141,7 +141,7 @@ function toggle_background(self) {
     if (x.style.display === "none") {
         console.log("Prime wheel toggeled on");
         x.style.display = "block";
-        self.animate_proc = setInterval(function() { animate(self) }, self.INTERVAL);
+        self.animate_proc = setInterval(function() { animate_wheel(self) }, self.INTERVAL);
     } else {
         console.log("Prime wheel toggeled off");
         x.style.display = "none";
@@ -150,7 +150,7 @@ function toggle_background(self) {
 }
 
 let the_wheel = new prime_wheel();
-the_wheel.animate_proc = setInterval(function() { animate(the_wheel) }, the_wheel.INTERVAL);
+the_wheel.animate_proc = setInterval(function() { animate_wheel(the_wheel) }, the_wheel.INTERVAL);
 
 /*
  * CSS:
