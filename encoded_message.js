@@ -30,7 +30,7 @@
  * SOFTWARE.
  */
 
-function encoded_message() {
+function encoded_message(ENCODED_TEXT) {
     /* Sets the background color */
     var BACKGROUND_COLOR = "#808080";
     /* Sets the canvas width */
@@ -45,8 +45,6 @@ function encoded_message() {
     var FONT_FACE = "Arial";
     /* ID of canvas to draw to */
     var CANVAS_NAME = "message_canvas"
-    /* Text to draw as an array of UTF-16 codes */
-    var ENCODED_TEXT = [ 0x63, 0x6f, 0x6e, 0x74, 0x61, 0x63, 0x74, 0x40, 0x77, 0x74, 0x66, 0x73, 0x79, 0x73, 0x74, 0x65, 0x6d, 0x73, 0x2e, 0x6e, 0x65, 0x74 ]
 
     var canvas = document.getElementById(CANVAS_NAME);
     var ctx = canvas.getContext("2d");
