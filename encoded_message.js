@@ -33,6 +33,10 @@
 function encoded_message() {
     /* Sets the background color */
     var BACKGROUND_COLOR = "#808080";
+    /* Sets the canvas width */
+    var CANVAS_WIDTH = 180;
+    /* Sets the canvas height */
+    var CANVAS_HEIGHT = 24;
     /* Sets the font color */
     var FONT_COLOR = "#191970";
     /* Sets the font size */
@@ -47,8 +51,8 @@ function encoded_message() {
     var canvas = document.getElementById(CANVAS_NAME);
     var ctx = canvas.getContext("2d");
 
-    canvas.width = 180;
-    canvas.height = 24;
+    canvas.width = CANVAS_WIDTH;
+    canvas.height = CANVAS_HEIGHT;
 
     ctx.fillStyle = BACKGROUND_COLOR;
     ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
