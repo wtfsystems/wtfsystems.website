@@ -58,9 +58,7 @@ function encoded_message() {
     ctx.textBaseline = 'middle'; 
     ctx.textAlign = 'center'; 
 
-    var output_text = String.fromCharCode(...ENCODED_TEXT);
-
-    ctx.fillText(output_text, ctx.canvas.width / 2, ctx.canvas.height / 2);
+    ctx.fillText(String.fromCharCode(...ENCODED_TEXT), ctx.canvas.width / 2, ctx.canvas.height / 2);
 }
 
 encoded_message();
