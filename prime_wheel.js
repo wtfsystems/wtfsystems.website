@@ -134,7 +134,7 @@ function animate_wheel(self) {
 
 /*
  * Function to toggle background on/off
- * Usage:  <button onclick="toggle_background(the_wheel)">Toggle Background</button> 
+ * Usage:  <button onclick="toggle_background(the_wheel)">Toggle Background</button>
  */
 function toggle_background(self) {
     var x = document.getElementById(self.CANVAS_NAME);
