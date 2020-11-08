@@ -5,7 +5,7 @@
  * Filename:  encoded_message.js
  * By:  Matthew Evans
  *      https://www.wtfsystems.net/
- * Version:  110320
+ * Version:  110820
  * 
  * See LICENSE.md for copyright information.
  * 
