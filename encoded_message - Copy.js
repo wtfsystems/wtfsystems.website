@@ -30,37 +30,39 @@
  * SOFTWARE.
  */
 
-function encoded_message() {
+class encoded_message {
     /* Sets the background color */
-    var BACKGROUND_COLOR = "#808080";
+    BACKGROUND_COLOR = "#808080";
     /* Sets the font color */
-    var FONT_COLOR = "#191970";
+    FONT_COLOR = "#191970";
     /* Sets the font size */
-    var FONT_SIZE = "16px";
+    FONT_SIZE = "16px";
     /* Sets the font face */
-    var FONT_FACE = "Arial";
+    FONT_FACE = "Arial";
     /* ID of canvas to draw to */
-    var CANVAS_NAME = "message_canvas"
+    CANVAS_NAME = "message_canvas"
     /* Text to draw as an array of UTF-16 codes */
-    var ENCODED_TEXT = [ 0x63, 0x6f, 0x6e, 0x74, 0x61, 0x63, 0x74, 0x40, 0x77, 0x74, 0x66, 0x73, 0x79, 0x73, 0x74, 0x65, 0x6d, 0x73, 0x2e, 0x6e, 0x65, 0x74 ]
+    ENCODED_TEXT = [ 0x63, 0x6f, 0x6e, 0x74, 0x61, 0x63, 0x74, 0x40, 0x77, 0x74, 0x66, 0x73, 0x79, 0x73, 0x74, 0x65, 0x6d, 0x73, 0x2e, 0x6e, 0x65, 0x74 ]
 
-    var canvas = document.getElementById(CANVAS_NAME);
-    var ctx = canvas.getContext("2d");
+    constructor() {
+        var canvas = document.getElementById(this.CANVAS_NAME);
+        var ctx = canvas.getContext("2d");
 
-    canvas.width = 180;
-    canvas.height = 24;
+        canvas.width = 180;
+        canvas.height = 24;
 
-    ctx.fillStyle = BACKGROUND_COLOR;
-    ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+        ctx.fillStyle = this.BACKGROUND_COLOR;
+        ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 
-    ctx.font = FONT_SIZE + " " + FONT_FACE;
-    ctx.fillStyle = FONT_COLOR;
-    ctx.textBaseline = 'middle'; 
-    ctx.textAlign = 'center'; 
+        ctx.font = this.FONT_SIZE + " " + this.FONT_FACE;
+        ctx.fillStyle = this.FONT_COLOR;
+        ctx.textBaseline = 'middle'; 
+        ctx.textAlign = 'center'; 
 
-    var output_text = String.fromCharCode(...ENCODED_TEXT);
+        var output_text = String.fromCharCode(...this.ENCODED_TEXT);
 
-    ctx.fillText(output_text, ctx.canvas.width / 2, ctx.canvas.height / 2);
+        ctx.fillText(output_text, ctx.canvas.width / 2, ctx.canvas.height / 2);
+    }
 }
 
-encoded_message();
+let the_message = new encoded_message();
