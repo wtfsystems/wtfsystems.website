@@ -20,6 +20,9 @@ html {
     height: 100%;
     margin: 0 auto;
 }
+#message_canvas {
+    margin: 0 auto;
+}
 
 body > .content {
     display: flex;
@@ -86,35 +89,6 @@ body > .content {
 .project_showcase > td {
     text-align: left;
     vertical-align: middle;
-}
-
-.page_row > .form_display {
-    width: 550px;
-    text-align:  center;
-}
-.contact_form > input {
-    background: #dcdcdc;
-}
-.contact_form > textarea {
-    background: #dcdcdc;
-    resize: none;
-}
-.contact_form > button {
-    color: #000000;
-    background: #dcdcdc;
-    border: 2px solid #000000;
-    border-radius: 8px;
-    padding: 10px;
-    text-align: center;
-}
-.contact_form > button:hover {
-    color: #000000;
-    background: #808080;
-}
-.contact_form > button:active {
-    color: #000000;
-    background: #808080;
-    transform: translateY(4px);
 }
 
 footer {

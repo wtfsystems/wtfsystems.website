@@ -15,6 +15,10 @@
 <div class="content">
     <div class="header">
         <img src="img/logo.png" alt="what the function systems" title="what the function systems"/>
+        <br/><br/>
+        <canvas id="message_canvas"></canvas>
+        <script src="encoded_message.js"></script>
+        <br/><br/>
     </div>
 
     <div class="page_row">
@@ -81,39 +85,6 @@
                 <li><a href="https://github.com/wtfsystems/cpp_snippets">GitHub Repo</a></li>
                 </ul>
             </div>
-        </div>
-    </div>
-
-    <div class="page_row">
-        <div class="form_display page_text">
-            Please use the form below if you would like to send me a message.
-            <noscript><br/>You need JavaScript enabled for submitting the form.</noscript>
-            <br/><br/>
-    
-            <form name="submit-to-google-sheet" id="submit-to-google-sheet" class="contact_form">
-                <input name="name" type="text" placeholder="Your name" size="28" required/>
-                <input name="email" type="email" placeholder="Your email" size="28" required/>
-                <br/><br/>
-                <textarea name="message" type="text" placeholder="Type a message!" cols="58" rows="6" required></textarea>
-                <br/><br/>
-                <button type="submit">Submit<br/>. * ･ ｡ﾟ☆━੧༼ •́ ヮ •̀ ༽୨</button>
-            </form>
-    
-            <script>
-                //  From:  https://github.com/jamiewilson/form-to-google-sheets
-                const scriptURL = 'https://script.google.com/macros/s/AKfycbwuE-jfH-ZanjllWwAqYPieGZ3byinXQduncinAVYnFRT6WuwGo/exec'
-                const form = document.forms['submit-to-google-sheet']
-        
-                form.addEventListener('submit', e => {
-                    e.preventDefault()
-                    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                    .then(response => console.log('Success!', response))
-                    .catch(error => console.error('Error!', error.message))
-        
-                    window.alert("Thanks for your message!");
-                    document.getElementById("submit-to-google-sheet").reset(); 
-                })
-            </script>
         </div>
     </div>
 

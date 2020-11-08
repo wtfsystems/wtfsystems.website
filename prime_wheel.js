@@ -4,7 +4,7 @@
  * Filename:  prime_wheel.js
  * By:  Matthew Evans
  *      https://www.wtfsystems.net/
- * Version:  110320
+ * Version:  110820
  * 
  * See LICENSE.md for copyright information.
  * 
@@ -29,66 +29,76 @@
  * SOFTWARE.
  */
 
-console.log("Running prime wheel effect");
-/*
- * Config variables
- */
-/* Sets the background color */
-var BACKGROUND_COLOR = "#808080";
-/* Sets the font color */
-var FONT_COLOR = "#191970";
-/* Sets the font size */
-var FONT_SIZE = "32px";
-/* Sets the font face */
-var FONT_FACE = "Arial";
-/* Set the scale factor for the wheel */
-var SCALE = 4;
-/* Timer interval to draw (milliseconds) */
-var INTERVAL = 5;
-/* ID of canvas to draw to */
-var CANVAS_NAME = "background_canvas"
-/* Use random offset */
-var USE_OFFSET = true;
-/* Spam console with prime numbers */
-var SPAM = true;
+class prime_wheel {
+    /*
+     * Config variables
+     */
+    /* Sets the background color */
+    BACKGROUND_COLOR = "#808080";
+    /* Sets the font color */
+    FONT_COLOR = "#191970";
+    /* Sets the font size */
+    FONT_SIZE = "32px";
+    /* Sets the font face */
+    FONT_FACE = "Arial";
+    /* Set the scale factor for the wheel */
+    SCALE = 4;
+    /* Timer interval to draw (milliseconds) */
+    INTERVAL = 5;
+    /* ID of canvas to draw to */
+    CANVAS_NAME = "background_canvas"
+    /* Use random offset */
+    USE_RANDOM_OFFSET = true;
+    /* Spam console with prime numbers */
+    SPAM = true;
 
-/*
- * Initialize
- */
-var canvas = document.getElementById(CANVAS_NAME);
-var ctx = canvas.getContext("2d");
+    /*
+     * Initialize
+     */
+    constructor() {
+        console.log("Running prime wheel effect");
 
-canvas.width = canvas.clientWidth * SCALE;
-canvas.height = canvas.clientHeight * SCALE;
+        this.canvas = document.getElementById(this.CANVAS_NAME);
+        this.ctx = this.canvas.getContext("2d");
 
-var width = ctx.canvas.width;
-var height = ctx.canvas.height;
+        this.canvas.width = this.canvas.clientWidth * this.SCALE;
+        this.canvas.height = this.canvas.clientHeight * this.SCALE;
 
-var center_x = width / 2;
-var center_y = height / 2;
+        this.width = this.ctx.canvas.width;
+        this.height = this.ctx.canvas.height;
 
-var last_prime = 2;
+        this.center_x = this.width / 2;
+        this.center_y = this.height / 2;
 
-var x_offset = 0;
-var y_offset = 0;
+        this.last_prime = 2;
 
-/*
- * Function to generate a random offset
- */
-function set_offset() {
-    if(USE_OFFSET) {
-        x_offset = Math.floor(Math.random() * (center_x * 2 / 3) + 1);
-        x_offset = x_offset * (Math.random() < 0.5 ? -1 : 1);
-        y_offset = Math.floor(Math.random() * (center_y * 2 / 3) + 1);
-        y_offset = y_offset * (Math.random() < 0.5 ? -1 : 1);
+        this.x_offset = 0;
+        this.y_offset = 0;
+        this.set_offset();
+        this.animate_proc = null;
+
+        //  Clear the canvas
+        this.ctx.fillStyle = this.BACKGROUND_COLOR;
+        this.ctx.fillRect(0, 0, this.width, this.height);
+    }
+
+    /*
+     * Generate a random offset if enabled
+     */
+    set_offset() {
+        if(this.USE_RANDOM_OFFSET) {
+            this.x_offset = Math.floor(Math.random() * (this.center_x * 2 / 3) + 1);
+            this.x_offset = this.x_offset * (Math.random() < 0.5 ? -1 : 1);
+            this.y_offset = Math.floor(Math.random() * (this.center_y * 2 / 3) + 1);
+            this.y_offset = this.y_offset * (Math.random() < 0.5 ? -1 : 1);
+        }
     }
 }
-set_offset();  //  Call to set
 
 /*
- * Function to find prime numbers
+ * Function to check if a number is prime
  */
-function find_prime(num) {
+function is_prime(num) {
     for(var i = 2; i < num; i++) {
         if(num % i == 0) return false;
     }
@@ -98,55 +108,49 @@ function find_prime(num) {
 /*
  * Animation function
  */
-function animate() {
-    if(find_prime(last_prime)) {
-        if(SPAM) console.log("Found prime: " + last_prime);
-        ctx.font = FONT_SIZE + " " + FONT_FACE;
-        ctx.fillStyle = FONT_COLOR;
-        ctx.fillText(
-            last_prime,
-            (center_x + x_offset) + (last_prime * Math.cos(last_prime)),
-            (center_y + y_offset) - (last_prime * Math.sin(last_prime))
+function animate(self) {
+    if(is_prime(self.last_prime)) {
+        if(self.SPAM) console.log("Found prime: " + self.last_prime);
+        self.ctx.font = self.FONT_SIZE + " " + self.FONT_FACE;
+        self.ctx.fillStyle = self.FONT_COLOR;
+        self.ctx.fillText(
+            self.last_prime,
+            (self.center_x + self.x_offset) + (self.last_prime * Math.cos(self.last_prime)),
+            (self.center_y + self.y_offset) - (self.last_prime * Math.sin(self.last_prime))
         );
     }
 
-    last_prime++;
+    self.last_prime++;
 
-    /*
-     * Resets the effect
-     */
-    if(last_prime > 1400 * SCALE) {
+    //  Resets the effect
+    if(self.last_prime > 1400 * self.SCALE) {
         console.log("Resetting prime wheel effect");
-        set_offset();
-        ctx.fillStyle = BACKGROUND_COLOR;
-        ctx.fillRect(0, 0, width, height);
-        last_prime = 2;
+        self.set_offset();
+        self.ctx.fillStyle = self.BACKGROUND_COLOR;
+        self.ctx.fillRect(0, 0, self.width, self.height);
+        self.last_prime = 2;
     }
 }
-
-/*
- * Clear the canvas and start the animation
- */
-ctx.fillStyle = BACKGROUND_COLOR;
-ctx.fillRect(0, 0, width, height);
-
-var animate_proc = setInterval(animate, INTERVAL);
 
 /*
  * Function to toggle background on/off
+ * Usage:  <button onclick="toggle_background(the_wheel)">Toggle Background</button> 
  */
-function toggle_background() {
-    var x = document.getElementById(CANVAS_NAME);
+function toggle_background(self) {
+    var x = document.getElementById(self.CANVAS_NAME);
     if (x.style.display === "none") {
         console.log("Prime wheel toggeled on");
         x.style.display = "block";
-        animate_proc = setInterval(animate, INTERVAL);
+        self.animate_proc = setInterval(function() { animate(self) }, self.INTERVAL);
     } else {
         console.log("Prime wheel toggeled off");
         x.style.display = "none";
-        clearInterval(animate_proc);
+        clearInterval(self.animate_proc);
     }
 }
+
+let the_wheel = new prime_wheel();
+the_wheel.animate_proc = setInterval(function() { animate(the_wheel) }, the_wheel.INTERVAL);
 
 /*
  * CSS:
