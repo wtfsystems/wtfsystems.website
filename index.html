@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <title>wtfsystems.net</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="prime_wheel.js"></script>
+    <script type="text/javascript" src="encoded_message.js"></script>
 </head>
 
 <body>
 
 <canvas id="background_canvas"></canvas>
-<script src="prime_wheel.js"></script>
 
 <div class="content">
     <div class="header">
         <img src="img/logo.png" alt="what the function systems" title="what the function systems"/>
         <br/><br/>
         <canvas id="message_canvas"></canvas>
-        <script src="encoded_message.js"></script>
         <br/><br/>
     </div>
 
@@ -95,6 +95,12 @@
         </footer>
     </div>
 </div>
+
+<script type="text/javascript">
+    let the_wheel = new prime_wheel();
+    the_wheel.animate_proc = setInterval(function() { animate_wheel(the_wheel) }, the_wheel.INTERVAL);
+    encoded_message();
+</script>
 
 </body>
 </html>

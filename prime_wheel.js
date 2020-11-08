@@ -149,9 +149,6 @@ function toggle_background(self) {
     }
 }
 
-let the_wheel = new prime_wheel();
-the_wheel.animate_proc = setInterval(function() { animate_wheel(the_wheel) }, the_wheel.INTERVAL);
-
 /*
  * CSS:
  * html {
@@ -166,6 +163,14 @@ the_wheel.animate_proc = setInterval(function() { animate_wheel(the_wheel) }, th
  * }
  * 
  * HTML:
- * <canvas id="background_canvas"></canvas>
- * <script src="prime_wheel.js"></script>
+ * <head>
+ *    <script type="text/javascript" src="prime_wheel.js"></script>
+ * </head>
+ * <body>
+ *    <canvas id="background_canvas"></canvas>
+ *    <script type="text/javascript">
+ *       let the_wheel = new prime_wheel();
+ *       the_wheel.animate_proc = setInterval(function() { animate_wheel(the_wheel) }, the_wheel.INTERVAL);
+ *    </script>
+ * </body>
  */

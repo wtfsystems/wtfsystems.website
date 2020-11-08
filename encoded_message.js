@@ -60,5 +60,3 @@ function encoded_message() {
 
     ctx.fillText(String.fromCharCode(...ENCODED_TEXT), ctx.canvas.width / 2, ctx.canvas.height / 2);
 }
-
-encoded_message();
