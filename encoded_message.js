@@ -32,26 +32,18 @@
 
 function encoded_message(ENCODED_TEXT, options) {
     var options = options || {};
-    /* Sets the background color */
-    var BACKGROUND_COLOR = options.backgrounnd_color || "#808080";
-    /* Sets the font size */
-    var FONT_SIZE = options.font_size || "16px";
-    /* Sets the font face */
-    var FONT_FACE = options.font_face || "Arial";
-    /* ID of canvas to draw to */
-    var CANVAS_NAME = options.canvas_name || "message_canvas";
 
-    var canvas = document.getElementById(CANVAS_NAME);
+    var canvas = document.getElementById(options.canvas_name || "message_canvas");
     var ctx = canvas.getContext("2d");
 
     /* Set canvas width and height */
     canvas.width = options.canvas_width || 200;
     canvas.height = options.canvas_height || 32;
 
-    ctx.fillStyle = BACKGROUND_COLOR;
+    ctx.fillStyle = options.backgrounnd_color || "#808080";
     ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 
-    ctx.font = FONT_SIZE + " " + FONT_FACE;
+    ctx.font = (options.font_size || "16px") + " " + (options.font_face || "Arial");
     ctx.fillStyle = options.font_color || "#191970";
     ctx.textBaseline = 'middle'; 
     ctx.textAlign = 'center'; 
@@ -59,3 +51,31 @@ function encoded_message(ENCODED_TEXT, options) {
     /* Draw the encoded text */
     ctx.fillText(String.fromCharCode(...ENCODED_TEXT), ctx.canvas.width / 2, ctx.canvas.height / 2);
 }
+
+/*
+ * HTML:
+ * <head>
+ *    <script type="text/javascript" src="encoded_message.js"></script>
+ * </head>
+ * <body>
+ *    <canvas id="background_canvas"></canvas>
+ *    <script type="text/javascript">
+ *       encoded_message(
+ *          [ 0x63, 0x6f, 0x6e, 0x74, 0x61, 0x63, 0x74, 0x40, 0x77, 0x74, 0x66, 0x73, 0x79, 0x73, 0x74, 0x65, 0x6d, 0x73, 0x2e, 0x6e, 0x65, 0x74 ],
+ *          { canvas_width: 240, canvas_height: 48 }
+ *       );
+ *    </script>
+ * </body>
+ *
+ * Required Parameter:
+ * ENCODED_TEXT - An array of UTF-16 codes
+ *
+ * Optional Parameters:
+ * canvas_name - Set the ID of the canvas to draw to
+ * canvas_width - Set the width of the canvas
+ * canvas_height - Set the height of the canvas
+ * backgrounnd_color - Set the canvas background color
+ * font_color - Set the font color
+ * font_size - Set the font size
+ * font_face - Set the font face
+ */
