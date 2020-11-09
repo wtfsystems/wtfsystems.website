@@ -57,7 +57,7 @@ function encoded_message(ENCODED_TEXT, options) {
  *    <script type="text/javascript" src="encoded_message.js"></script>
  * </head>
  * <body>
- *    <canvas id="background_canvas"></canvas>
+ *    <canvas id="message_canvas"></canvas>
  *    <script type="text/javascript">
  *       encoded_message(
  *          [ 0x63, 0x6f, 0x6e, 0x74, 0x61, 0x63, 0x74, 0x40, 0x77, 0x74, 0x66, 0x73, 0x79, 0x73, 0x74, 0x65, 0x6d, 0x73, 0x2e, 0x6e, 0x65, 0x74 ],
