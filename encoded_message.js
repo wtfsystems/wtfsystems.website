@@ -36,7 +36,6 @@ function encoded_message(ENCODED_TEXT, options) {
     var canvas = document.getElementById(options.canvas_name || "message_canvas");
     var ctx = canvas.getContext("2d");
 
-    /* Set canvas width and height */
     canvas.width = options.canvas_width || 200;
     canvas.height = options.canvas_height || 32;
 
@@ -45,8 +44,8 @@ function encoded_message(ENCODED_TEXT, options) {
 
     ctx.font = (options.font_size || "16px") + " " + (options.font_face || "Arial");
     ctx.fillStyle = options.font_color || "#191970";
-    ctx.textBaseline = 'middle'; 
-    ctx.textAlign = 'center'; 
+    ctx.textBaseline = options.text_baseline || 'middle'; 
+    ctx.textAlign = options.text_align || 'center'; 
 
     /* Draw the encoded text */
     ctx.fillText(String.fromCharCode(...ENCODED_TEXT), ctx.canvas.width / 2, ctx.canvas.height / 2);
@@ -78,4 +77,6 @@ function encoded_message(ENCODED_TEXT, options) {
  * font_color - Set the font color
  * font_size - Set the font size
  * font_face - Set the font face
+ * text_baseline - Vertical alignment of text
+ * text_align - Horizontal alignment of text
  */
