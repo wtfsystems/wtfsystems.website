@@ -44,8 +44,8 @@ function encoded_message(ENCODED_TEXT, options) {
 
     ctx.font = (options.font_size || "16px") + " " + (options.font_face || "Arial");
     ctx.fillStyle = options.font_color || "#191970";
-    ctx.textBaseline = options.text_baseline || 'middle'; 
-    ctx.textAlign = options.text_align || 'center'; 
+    ctx.textBaseline = options.text_baseline || "middle"; 
+    ctx.textAlign = options.text_align || "center"; 
 
     /* Draw the encoded text */
     ctx.fillText(String.fromCharCode(...ENCODED_TEXT), ctx.canvas.width / 2, ctx.canvas.height / 2);
