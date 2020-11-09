@@ -6,8 +6,6 @@
  *      https://www.wtfsystems.net/
  * Version:  110820
  * 
- * See LICENSE.md for copyright information.
- * 
  * Copyright (c) 2020 Matthew Evans
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
