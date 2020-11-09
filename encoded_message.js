@@ -30,35 +30,32 @@
  * SOFTWARE.
  */
 
-function encoded_message(ENCODED_TEXT) {
+function encoded_message(ENCODED_TEXT, options) {
+    var options = options || {};
     /* Sets the background color */
-    var BACKGROUND_COLOR = "#808080";
-    /* Sets the canvas width */
-    var CANVAS_WIDTH = 180;
-    /* Sets the canvas height */
-    var CANVAS_HEIGHT = 24;
-    /* Sets the font color */
-    var FONT_COLOR = "#191970";
+    var BACKGROUND_COLOR = options.backgrounnd_color || "#808080";
     /* Sets the font size */
-    var FONT_SIZE = "16px";
+    var FONT_SIZE = options.font_size || "16px";
     /* Sets the font face */
-    var FONT_FACE = "Arial";
+    var FONT_FACE = options.font_face || "Arial";
     /* ID of canvas to draw to */
-    var CANVAS_NAME = "message_canvas"
+    var CANVAS_NAME = options.canvas_name || "message_canvas";
 
     var canvas = document.getElementById(CANVAS_NAME);
     var ctx = canvas.getContext("2d");
 
-    canvas.width = CANVAS_WIDTH;
-    canvas.height = CANVAS_HEIGHT;
+    /* Set canvas width and height */
+    canvas.width = options.canvas_width || 200;
+    canvas.height = options.canvas_height || 32;
 
     ctx.fillStyle = BACKGROUND_COLOR;
     ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 
     ctx.font = FONT_SIZE + " " + FONT_FACE;
-    ctx.fillStyle = FONT_COLOR;
+    ctx.fillStyle = options.font_color || "#191970";
     ctx.textBaseline = 'middle'; 
     ctx.textAlign = 'center'; 
 
+    /* Draw the encoded text */
     ctx.fillText(String.fromCharCode(...ENCODED_TEXT), ctx.canvas.width / 2, ctx.canvas.height / 2);
 }

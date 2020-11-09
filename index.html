@@ -16,9 +16,8 @@
 <div class="content">
     <div class="header">
         <img src="img/logo.png" alt="what the function systems" title="what the function systems"/>
-        <br/><br/>
+        <br/>
         <canvas id="message_canvas"></canvas>
-        <br/><br/>
     </div>
 
     <div class="page_row">
@@ -97,7 +96,10 @@
 </div>
 
 <script type="text/javascript">
-    encoded_message([ 0x63, 0x6f, 0x6e, 0x74, 0x61, 0x63, 0x74, 0x40, 0x77, 0x74, 0x66, 0x73, 0x79, 0x73, 0x74, 0x65, 0x6d, 0x73, 0x2e, 0x6e, 0x65, 0x74 ]);
+    encoded_message(
+        [ 0x63, 0x6f, 0x6e, 0x74, 0x61, 0x63, 0x74, 0x40, 0x77, 0x74, 0x66, 0x73, 0x79, 0x73, 0x74, 0x65, 0x6d, 0x73, 0x2e, 0x6e, 0x65, 0x74 ],
+        { canvas_width: 240, canvas_height: 48 }
+    );
     let the_wheel = new prime_wheel();
     the_wheel.animate_proc = setInterval(function() { animate_wheel(the_wheel) }, the_wheel.INTERVAL);
 </script>
