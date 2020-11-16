@@ -108,16 +108,16 @@ a:link {
 }
 
 a:visited {
-    color: #32174D;
+    color: #32174d;
     text-decoration: underline dotted;
 }
 
 a:hover {
-    color: #32174D;
+    color: #32174d;
     text-decoration: underline dotted;
 }
 
 a:active {
-    color: #32174D;
+    color: #32174d;
     text-decoration: underline dotted;
 }
