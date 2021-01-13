@@ -12,5 +12,5 @@ var searchData=
   ['wte_5finput_5fmap_339',['wte_input_map',['../classwte_1_1wte__input__map.html',1,'wte::wte_input_map'],['../classwte_1_1wte__input__map.html#aa0561030e095cfc965f591c1c9f88c32',1,'wte::wte_input_map::wte_input_map()']]],
   ['wte_5fjoystick_5fflags_340',['WTE_JOYSTICK_FLAGS',['../namespacewte.html#a2837f195cd2a218e5f2c3032e8a10eef',1,'wte']]],
   ['wte_5fkey_5fset_5fenum_341',['WTE_KEY_SET_ENUM',['../classwte_1_1wte__input__map.html#a4b837fd8b11441ed0b718b3e5ec31ee6',1,'wte::wte_input_map']]],
-  ['wte_5fmain_342',['wte_main',['../classwte_1_1wte__main.html',1,'wte::wte_main'],['../classwte_1_1wte__main.html#aebdc668b3a253385e7ba854de0f80efb',1,'wte::wte_main::wte_main(const wte_main &amp;)=delete'],['../classwte_1_1wte__main.html#a462b43902ec1aa628149819901ff4acc',1,'wte::wte_main::wte_main(const int argc, char **argv, const std::string &amp;title)']]]
+  ['wte_5fmain_342',['wte_main',['../classwte_1_1wte__main.html',1,'wte::wte_main'],['../classwte_1_1wte__main.html#a462b43902ec1aa628149819901ff4acc',1,'wte::wte_main::wte_main(const int argc, char **argv, const std::string &amp;title)'],['../classwte_1_1wte__main.html#aebdc668b3a253385e7ba854de0f80efb',1,'wte::wte_main::wte_main(const wte_main &amp;)=delete']]]
 ];

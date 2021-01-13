@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['patchboard_42',['patchboard',['../classpatch_1_1patchboard.html',1,'patch']]]
+  ['oscillator_53',['oscillator',['../classparts_1_1oscillator.html',1,'parts']]]
 ];

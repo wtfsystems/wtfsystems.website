@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['test_5fmodule_37',['test_module',['../classtest_1_1test__module.html',1,'test']]],
-  ['triangle_38',['triangle',['../classosc_1_1oscillator.html#a2e4bb92edc30a84e08773e16410017f5',1,'osc::oscillator']]]
+  ['reverberation_30',['reverberation',['../classreverb_1_1reverberation.html',1,'reverb']]]
 ];

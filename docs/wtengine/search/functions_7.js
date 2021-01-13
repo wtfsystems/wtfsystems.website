@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['get_501',['get',['../classwte_1_1engine__cfg.html#a887a0d9411ce27571671ae8547c59e5a',1,'wte::engine_cfg::get(const std::string &amp;var)'],['../classwte_1_1engine__cfg.html#ac96860994b3f69cf8ec7c0077c5c4434',1,'wte::engine_cfg::get(const std::string &amp;var)'],['../classwte_1_1game__cfg.html#a8e530595a3f1f57fa069b5af1a157dd0',1,'wte::game_cfg::get(const std::string &amp;var)'],['../classwte_1_1game__cfg.html#a3bca951d2359e953c13134fda02eae83',1,'wte::game_cfg::get(const std::string &amp;var)'],['../classwte_1_1variable__map.html#a72022a625283fc39dc8047290e1c33b9',1,'wte::variable_map::get(const std::string &amp;var)'],['../classwte_1_1variable__map.html#ab9fe9ad7a7d1ef1b20521d8ac447b5ef',1,'wte::variable_map::get(const std::string &amp;var)']]],
+  ['get_501',['get',['../classwte_1_1engine__cfg.html#ac96860994b3f69cf8ec7c0077c5c4434',1,'wte::engine_cfg::get(const std::string &amp;var)'],['../classwte_1_1engine__cfg.html#a887a0d9411ce27571671ae8547c59e5a',1,'wte::engine_cfg::get(const std::string &amp;var)'],['../classwte_1_1variable__map.html#ab9fe9ad7a7d1ef1b20521d8ac447b5ef',1,'wte::variable_map::get(const std::string &amp;var)'],['../classwte_1_1variable__map.html#a72022a625283fc39dc8047290e1c33b9',1,'wte::variable_map::get(const std::string &amp;var)'],['../classwte_1_1game__cfg.html#a8e530595a3f1f57fa069b5af1a157dd0',1,'wte::game_cfg::get(const std::string &amp;var)'],['../classwte_1_1game__cfg.html#a3bca951d2359e953c13134fda02eae83',1,'wte::game_cfg::get(const std::string &amp;var)']]],
   ['get_5factive_5fargs_502',['get_active_args',['../classwte_1_1mnu_1_1menu__item__toggle.html#a920c7e66c1611d7fd553738af9a06242',1,'wte::mnu::menu_item_toggle']]],
   ['get_5factive_5fcmd_503',['get_active_cmd',['../classwte_1_1mnu_1_1menu__item__toggle.html#af0a9eae450f78e03bdaa34713dd733e2',1,'wte::mnu::menu_item_toggle']]],
   ['get_5falert_504',['get_alert',['../classwte_1_1alert.html#a6e872c3fd6c907957ae399b49ffdc687',1,'wte::alert']]],
@@ -24,7 +24,7 @@ var searchData=
   ['get_5ffont_5fcolor_522',['get_font_color',['../classwte_1_1alert.html#ad9340c1ebea3be21400e1772d97dbbc6',1,'wte::alert']]],
   ['get_5ffrom_523',['get_from',['../classwte_1_1message.html#ab0ab6b8d73f2f03c12b37f562c700404',1,'wte::message']]],
   ['get_5fheight_524',['get_height',['../classwte_1_1cmp_1_1hitbox.html#ad9351b3140993135065deeb652130e18',1,'wte::cmp::hitbox']]],
-  ['get_5fid_525',['get_id',['../classwte_1_1mgr_1_1entity__manager.html#a7a71ee887c322444a9c8c0f4dfee869e',1,'wte::mgr::entity_manager::get_id()'],['../classwte_1_1mnu_1_1menu.html#a8e5eab073ae54be5fdccc0819c508c4a',1,'wte::mnu::menu::get_id()']]],
+  ['get_5fid_525',['get_id',['../classwte_1_1mnu_1_1menu.html#a8e5eab073ae54be5fdccc0819c508c4a',1,'wte::mnu::menu::get_id()'],['../classwte_1_1mgr_1_1entity__manager.html#a7a71ee887c322444a9c8c0f4dfee869e',1,'wte::mgr::entity_manager::get_id()']]],
   ['get_5fjoystick_5fpol_5fx_526',['get_joystick_pol_x',['../classwte_1_1input__flags.html#af2dc4c23168bff86fdde8b8c9604238f',1,'wte::input_flags']]],
   ['get_5fjoystick_5fpol_5fy_527',['get_joystick_pol_y',['../classwte_1_1input__flags.html#a9ac0f043eb47897128e0e31f3cdfea09',1,'wte::input_flags']]],
   ['get_5fjoystick_5fradians_528',['get_joystick_radians',['../classwte_1_1input__flags.html#ac7a0e555cb0b5dde684a3b05f7f4f7e6',1,'wte::input_flags']]],

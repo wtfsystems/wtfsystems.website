@@ -2,9 +2,9 @@ var searchData=
 [
   ['initialize_152',['initialize',['../classwte_1_1mgr_1_1audio__manager.html#a8b0721b58430a54d94e704f90f2ef42a',1,'wte::mgr::audio_manager::initialize()'],['../classwte_1_1mgr_1_1menu__manager.html#ac2fe807f680e7cd777932d0ba5da1524',1,'wte::mgr::menu_manager::initialize()'],['../classwte_1_1mgr_1_1render__manager.html#aba1c23fa066f573e194c7903d6362aae',1,'wte::mgr::render_manager::initialize()']]],
   ['input_153',['input',['../classwte_1_1sys_1_1input.html',1,'wte::sys']]],
-  ['input_5fbutton_154',['input_button',['../classwte_1_1cmp_1_1input__button.html',1,'wte::cmp::input_button'],['../classwte_1_1cmp_1_1input__button.html#a5d6e75b7ba67d9776595de6e852ba11e',1,'wte::cmp::input_button::input_button()']]],
-  ['input_5fdirectional_155',['input_directional',['../classwte_1_1cmp_1_1input__directional.html',1,'wte::cmp::input_directional'],['../classwte_1_1cmp_1_1input__directional.html#a33ec8f53c942e6589308ce559b074df3',1,'wte::cmp::input_directional::input_directional()']]],
-  ['input_5fflags_156',['input_flags',['../classwte_1_1input__flags.html',1,'wte::input_flags'],['../classwte_1_1input__flags.html#a4558c60662eb83b3e8f693f94485a805',1,'wte::input_flags::input_flags()']]],
+  ['input_5fbutton_154',['input_button',['../classwte_1_1cmp_1_1input__button.html#a5d6e75b7ba67d9776595de6e852ba11e',1,'wte::cmp::input_button::input_button()'],['../classwte_1_1cmp_1_1input__button.html',1,'wte::cmp::input_button']]],
+  ['input_5fdirectional_155',['input_directional',['../classwte_1_1cmp_1_1input__directional.html#a33ec8f53c942e6589308ce559b074df3',1,'wte::cmp::input_directional::input_directional()'],['../classwte_1_1cmp_1_1input__directional.html',1,'wte::cmp::input_directional']]],
+  ['input_5fflags_156',['input_flags',['../classwte_1_1input__flags.html#a4558c60662eb83b3e8f693f94485a805',1,'wte::input_flags::input_flags()'],['../classwte_1_1input__flags.html',1,'wte::input_flags']]],
   ['internal_5fbitmap_157',['internal_bitmap',['../classwte_1_1cmp_1_1animator.html#a37a08afb2fa8ac4e9359e4bc41c5ea0c',1,'wte::cmp::animator']]],
   ['is_5fenabled_158',['is_enabled',['../classwte_1_1sys_1_1system.html#a6f8068eaff0bc46c01e74d37ef13b80f',1,'wte::sys::system']]],
   ['is_5fengine_5fsetting_159',['is_engine_setting',['../classwte_1_1mnu_1_1menu__item.html#a1853f47784d166483f20dea1a9e248d1',1,'wte::mnu::menu_item']]],

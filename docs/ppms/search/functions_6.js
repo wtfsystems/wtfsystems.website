@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['triangle_68',['triangle',['../classosc_1_1oscillator.html#a2e4bb92edc30a84e08773e16410017f5',1,'osc::oscillator']]]
+  ['triangle_85',['triangle',['../classparts_1_1oscillator.html#a9dd74d4107a4424cead2cc694b1e9789',1,'parts::oscillator']]]
 ];

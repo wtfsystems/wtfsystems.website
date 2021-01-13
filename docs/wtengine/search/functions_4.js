@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['de_5finit_466',['de_init',['../classwte_1_1mgr_1_1audio__manager.html#a272548d37aaf513c59c20920bb04890d',1,'wte::mgr::audio_manager::de_init()'],['../classwte_1_1mgr_1_1menu__manager.html#a2f52e32ef5375ec9bd69d4d889a82f63',1,'wte::mgr::menu_manager::de_init()'],['../classwte_1_1mgr_1_1render__manager.html#a0629eb60f122bf267bb5666b4f5f7d50',1,'wte::mgr::render_manager::de_init()']]],
+  ['de_5finit_466',['de_init',['../classwte_1_1mgr_1_1menu__manager.html#a2f52e32ef5375ec9bd69d4d889a82f63',1,'wte::mgr::menu_manager::de_init()'],['../classwte_1_1mgr_1_1audio__manager.html#a272548d37aaf513c59c20920bb04890d',1,'wte::mgr::audio_manager::de_init()'],['../classwte_1_1mgr_1_1render__manager.html#a0629eb60f122bf267bb5666b4f5f7d50',1,'wte::mgr::render_manager::de_init()']]],
   ['delete_5fbitmap_467',['delete_bitmap',['../classwte_1_1cmp_1_1bitmap__map.html#ab5f84cd3600e034c975f10a55ee99ec1',1,'wte::cmp::bitmap_map']]],
   ['delete_5fcomponent_468',['delete_component',['../classwte_1_1mgr_1_1entity__manager.html#ab1290de8a405e730fa3f8bfb9631d4c8',1,'wte::mgr::entity_manager']]],
   ['delete_5fentity_469',['delete_entity',['../classwte_1_1mgr_1_1entity__manager.html#ad5d88d156ef6dca3ac0e87d52af6a3f2',1,'wte::mgr::entity_manager']]],

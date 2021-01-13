@@ -9,11 +9,11 @@ var searchData=
   ['clear_5ftint_28',['clear_tint',['../classwte_1_1cmp_1_1animator.html#a2838aebefde8bb9431cfce66e9a6a5ca',1,'wte::cmp::animator']]],
   ['close_5fmenu_29',['close_menu',['../classwte_1_1mgr_1_1menu__manager.html#ae4a105b2d268692b5906636c195e84df',1,'wte::mgr::menu_manager']]],
   ['colision_30',['colision',['../classwte_1_1sys_1_1colision.html',1,'wte::sys']]],
-  ['component_31',['component',['../classwte_1_1cmp_1_1component.html',1,'wte::cmp::component'],['../classwte_1_1cmp_1_1component.html#ab57cc4bd5b63d207f1e8f06cce9d5921',1,'wte::cmp::component::component(const component &amp;)=delete'],['../classwte_1_1cmp_1_1component.html#a769a89e4047d5c0f0c4c8ce7105bfdce',1,'wte::cmp::component::component()']]],
+  ['component_31',['component',['../classwte_1_1cmp_1_1component.html#ab57cc4bd5b63d207f1e8f06cce9d5921',1,'wte::cmp::component::component(const component &amp;)=delete'],['../classwte_1_1cmp_1_1component.html#a769a89e4047d5c0f0c4c8ce7105bfdce',1,'wte::cmp::component::component()'],['../classwte_1_1cmp_1_1component.html',1,'wte::cmp::component']]],
   ['component_5fcontainer_32',['component_container',['../namespacewte.html#a56755629ebb58790ea2caba5b704ff51',1,'wte']]],
-  ['const_5fcomponent_5fcontainer_33',['const_component_container',['../namespacewte.html#a4fc4f86a660a0c1c54c06a1186c7d0f8',1,'wte']]],
-  ['const_5fentity_5fcontainer_34',['const_entity_container',['../namespacewte.html#adb06d3544221b0d8128e07b63ff0760e',1,'wte']]],
-  ['create_5fdisplay_35',['create_display',['../classwte_1_1wte__display.html#adac5316fefbc042c1657484272e5f4d3',1,'wte::wte_display']]],
-  ['create_5finput_5fevent_5fqueue_36',['create_input_event_queue',['../classwte_1_1wte__input.html#ae57d5eba2a7bff638ec5c9620b867f8f',1,'wte::wte_input']]],
-  ['components_20with_20custom_20functions_37',['Components with Custom Functions',['../md_src_wte__docs_function_wrappers.html',1,'']]]
+  ['components_20with_20custom_20functions_33',['Components with Custom Functions',['../md_src_wte__docs_function_wrappers.html',1,'']]],
+  ['const_5fcomponent_5fcontainer_34',['const_component_container',['../namespacewte.html#a4fc4f86a660a0c1c54c06a1186c7d0f8',1,'wte']]],
+  ['const_5fentity_5fcontainer_35',['const_entity_container',['../namespacewte.html#adb06d3544221b0d8128e07b63ff0760e',1,'wte']]],
+  ['create_5fdisplay_36',['create_display',['../classwte_1_1wte__display.html#adac5316fefbc042c1657484272e5f4d3',1,'wte::wte_display']]],
+  ['create_5finput_5fevent_5fqueue_37',['create_input_event_queue',['../classwte_1_1wte__input.html#ae57d5eba2a7bff638ec5c9620b867f8f',1,'wte::wte_input']]]
 ];

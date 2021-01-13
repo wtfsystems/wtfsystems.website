@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['add_5fmodule_49',['add_module',['../classpatch_1_1patchboard.html#a5cd6cb6598524ab65ad2d69fd9465e69',1,'patch::patchboard']]]
+  ['add_5fmodule_63',['add_module',['../classparts_1_1patchboard.html#a3e06d39a61c7ca0ab4a5338bbf6522ae',1,'parts::patchboard']]]
 ];
