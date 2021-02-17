@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['gate_5fmap_14',['gate_map',['../classparts_1_1synthmod.html#ab2d669ff35f8da22ece127c7f20b356e',1,'parts::synthmod']]],
-  ['gate_5fsignal_15',['gate_signal',['../classparts_1_1synthmod.html#a52c7d282b49a14136ec25dea2411de62',1,'parts::synthmod']]],
-  ['gate_5fstatus_16',['gate_status',['../classparts_1_1synthmod.html#ad4760a34c1ae30330de2bfd9f0228603',1,'parts::synthmod']]],
-  ['gate_5fupdate_17',['gate_update',['../classparts_1_1synthmod.html#a04bfd8fc0b1de756cde88e0965b1d0dd',1,'parts::synthmod']]],
+  ['gate_5fcontrol_14',['gate_control',['../classparts_1_1gate__control.html',1,'parts']]],
+  ['gate_5fsignal_15',['gate_signal',['../classparts_1_1gate__control.html#a83a78bbb21d0c68b50517cac92e62915',1,'parts::gate_control']]],
+  ['gate_5fstatus_16',['gate_status',['../classparts_1_1gate__control.html#ad64334a47cdd38f7bc3f43667104d8ad',1,'parts::gate_control']]],
+  ['gate_5fupdate_17',['gate_update',['../classparts_1_1gate__control.html#a8e9abe72b327d199dbd7833649b52748',1,'parts::gate_control']]],
   ['get_5fmodule_18',['get_module',['../classparts_1_1patchboard.html#a0168a95374b061f9dbcd0537a1b30983',1,'parts::patchboard']]]
 ];

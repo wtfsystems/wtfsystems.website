@@ -8,7 +8,7 @@ var searchData=
   ['set_5fdecay_36',['set_decay',['../classenv_1_1envelope.html#a60650abbbe0f082311437aec03592432',1,'env::envelope']]],
   ['set_5fhigh_5fpass_37',['set_high_pass',['../classbpass_1_1band__pass.html#aa82aa1cbf487b8e846d3bd07ef419a19',1,'bpass::band_pass']]],
   ['set_5flow_5fpass_38',['set_low_pass',['../classbpass_1_1band__pass.html#a6e50f4d455a3f976c4dbc43eda78853c',1,'bpass::band_pass']]],
-  ['set_5fmod_39',['set_mod',['../classparts_1_1patchboard.html#af26e6c4e8819e14168d90124dc487fbc',1,'parts::patchboard']]],
+  ['set_5fmod_5fvalue_39',['set_mod_value',['../classparts_1_1patchboard.html#a191fe60ee3619541273a1a3fb53d0eb5',1,'parts::patchboard']]],
   ['set_5frelease_40',['set_release',['../classenv_1_1envelope.html#adb10d66da28d1f14b01382b4a1f16bf9',1,'env::envelope']]],
   ['set_5freverb_41',['set_reverb',['../classreverb_1_1reverberation.html#a1c30c61e3277035f3730d238de8b1761',1,'reverb::reverberation']]],
   ['set_5fsustain_42',['set_sustain',['../classenv_1_1envelope.html#a8d3e5917e7cafa34f2f4ba7d29b3f0b2',1,'env::envelope']]],
