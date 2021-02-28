@@ -237,12 +237,11 @@ body > .content {
 .blog > .blog_title {
     color: $blog_fg_color;
     background: $blog_bg_color;
-    border-bottom: 1px solid $blog_border_color;
     text-align: center;
 }
 .blog > .blog_post {
     text-align: left;
-    border-bottom: 1px solid $blog_border_color;
+    border-top: 1px solid $blog_border_color;
 }
 .blog_post > .blog_post_title {
     text-align: left;
