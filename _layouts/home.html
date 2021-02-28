@@ -1,0 +1,62 @@
+<!--
+    wtfsystems.net
+    Yukkuri shiteitte ne!
+-->
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <script type="text/javascript" src="/assets/js/prime_wheel.js"></script>
+    <script type="text/javascript" src="/assets/js/encoded_message.js"></script>
+    {% if page.url == "/index.html" %}
+    <script type="text/javascript" src="/assets/js/fake_console.js"></script>
+    {% endif %}
+</head>
+
+<body>
+
+<canvas id="background_canvas"></canvas>
+
+<div class="content">
+    <div class="header">
+        <img src="/assets/img/logo.png" alt="what the function systems" title="what the function systems"/>
+        <br/>
+        <canvas id="message_canvas"></canvas>
+        <nav>
+            {% for item in site.data.navigation %}
+                <button onclick="window.location.href='{{ item.link }}';" {% if page.url == item.link %}class="current" disabled{% endif %}>{{ item.name }}</button>
+            {% endfor %}
+        </nav>
+    </div>
+
+    {{ content }}
+
+    <div class="page_row">
+        <footer>
+            Thanks for viewing!
+            <br/>
+            This site was created with <a href="https://jekyllrb.com">Jekyll</a> and uses a cookie for the background.
+            <br/>
+            © 2021 under the terms of the <a href="https://github.com/wtfsystems/wtfsystems.github.io/blob/master/LICENSE.md">MIT License</a>.
+        </footer>
+    </div>
+
+    <div class="page_row">
+        <button class="toggle_button" onclick="prime_wheel_toggle(the_wheel)">Toggle Background</button>
+    </div>
+</div>
+
+<script type="text/javascript">
+encoded_message(
+    [ 0x63, 0x6f, 0x6e, 0x74, 0x61, 0x63, 0x74, 0x40, 0x77, 0x74, 0x66, 0x73, 0x79, 0x73, 0x74, 0x65, 0x6d, 0x73, 0x2e, 0x6e, 0x65, 0x74 ],
+    { canvas_width: 240, canvas_height: 48 }
+);
+let the_wheel = new prime_wheel();
+prime_wheel_start(the_wheel);
+</script>
+
+</body>
+</html>

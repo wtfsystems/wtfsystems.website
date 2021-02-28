@@ -1,0 +1,19 @@
+---
+permalink: /blog.html 
+layout: home
+---
+
+<div class="page_row">
+	<div class="blog">
+    	<div class="blog_title"><h2>Latest Posts</h2></div>
+
+		{% for post in site.posts %}
+		<div class="blog_post">
+			<div class="blog_post_title">
+				<a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+			</div>
+			<div class="blog_post_excerpt">{{ post.excerpt }}</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>

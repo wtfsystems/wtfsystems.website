@@ -1,0 +1,31 @@
+- name: WTEngine
+  desc: >-
+    A cross-platform C++17 game engine that uses <a href="https://liballeg.org/">Allegro</a> and <a href="https://www.icculus.org/physfs/">PhysicsFS</a>.
+    Has an <a href="https://en.wikipedia.org/wiki/Entity_component_system">ECS</a> based memory manager, messaging and scripting system, dynamic maps for configuration variables, and a programmable menu interface.
+    Performs 2D sprite rendering and has simple controller support.
+  img: /assets/img/wte_demo.png
+  links:
+    - { url: https://github.com/wtfsystems/wtengine, desc: GitHub Repo }
+    - { url: https://www.wtfsystems.net/docs/wtengine/index.html, desc: Documentation }
+    - { url: https://github.com/wtfsystems/releases/tree/master/win64, desc: Demo Game }
+
+- name: ppms
+  desc: >-
+    Python Polyphonic MIDI Synthesizer.
+    Digital synthesizer playable with a MIDI input device.
+    Has plug-in support for modules that alter the signal.  Configuration is handled via a JSON file.
+  img: /assets/img/ppms.png
+  links:
+    - { url: https://github.com/wtfsystems/ppms, desc: GitHub Repo }
+    - { url: https://www.wtfsystems.net/docs/ppms/index.html, desc: Documentation }
+
+- name: Code Snippets
+  desc: Various snippets & scripts
+  links:
+    - { url: https://github.com/wtfsystems/snippets, desc: GitHub Repo }
+
+- name: Website JavaScript
+  desc:
+  links:
+    - { url: https://github.com/wtfsystems/wtfsystems.github.io/blob/master/assets/js/encoded_message.js, desc: Message encoder }
+    - { url: https://github.com/wtfsystems/wtfsystems.github.io/blob/master/assets/js/prime_wheel.js, desc: Prime Wheel Background (mobile browsers not supported) }

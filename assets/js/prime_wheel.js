@@ -1,12 +1,14 @@
 /*
- * Animated background that creates a prime wheel
+ * Animated background that creates a prime wheel.
+ * Uses a cookie to track activity status across multiple pages.
+ * This will likely not run on mobile browsers due to the timer routine.
  *
  * Filename:  prime_wheel.js
  * By:  Matthew Evans
  *      https://www.wtfsystems.net/
- * Version:  110820
+ * Version:  022721
  * 
- * Copyright (c) 2020 Matthew Evans
+ * Copyright (c) 2020-2021 Matthew Evans
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -48,14 +50,12 @@ class prime_wheel {
     /* Use random offset */
     USE_RANDOM_OFFSET = true;
     /* Spam console with prime numbers */
-    SPAM = true;
+    SPAM = false;
 
     /*
      * Initialize
      */
     constructor() {
-        console.log("Running prime wheel effect");
-
         this.canvas = document.getElementById(this.CANVAS_NAME);
         this.ctx = this.canvas.getContext("2d");
 
@@ -106,48 +106,92 @@ function is_prime(num) {
 /*
  * Animation function
  */
-function animate_wheel(self) {
-    if(is_prime(self.last_prime)) {
-        if(self.SPAM) console.log("Found prime: " + self.last_prime);
-        self.ctx.font = self.FONT_SIZE + " " + self.FONT_FACE;
-        self.ctx.fillStyle = self.FONT_COLOR;
-        self.ctx.fillText(
-            self.last_prime,
-            (self.center_x + self.x_offset) + (self.last_prime * Math.cos(self.last_prime)),
-            (self.center_y + self.y_offset) - (self.last_prime * Math.sin(self.last_prime))
+function prime_wheel_animate(the_wheel) {
+    if(is_prime(the_wheel.last_prime)) {
+        if(the_wheel.SPAM) console.log("Found prime: " + the_wheel.last_prime);
+        the_wheel.ctx.font = the_wheel.FONT_SIZE + " " + the_wheel.FONT_FACE;
+        the_wheel.ctx.fillStyle = the_wheel.FONT_COLOR;
+        the_wheel.ctx.fillText(
+            the_wheel.last_prime,
+            (the_wheel.center_x + the_wheel.x_offset) + (the_wheel.last_prime * Math.cos(the_wheel.last_prime)),
+            (the_wheel.center_y + the_wheel.y_offset) - (the_wheel.last_prime * Math.sin(the_wheel.last_prime))
         );
     }
 
-    self.last_prime++;
+    the_wheel.last_prime++;
 
     //  Resets the effect
-    if(self.last_prime > 1400 * self.SCALE) {
+    if(the_wheel.last_prime > 1400 * the_wheel.SCALE) {
         console.log("Resetting prime wheel effect");
-        self.set_offset();
-        self.ctx.fillStyle = self.BACKGROUND_COLOR;
-        self.ctx.fillRect(0, 0, self.width, self.height);
-        self.last_prime = 2;
+        the_wheel.set_offset();
+        the_wheel.ctx.fillStyle = the_wheel.BACKGROUND_COLOR;
+        the_wheel.ctx.fillRect(0, 0, the_wheel.width, the_wheel.height);
+        the_wheel.last_prime = 2;
     }
 }
 
 /*
  * Function to toggle background on/off
- * Usage:  <button onclick="toggle_background(the_wheel)">Toggle Background</button>
  */
-function toggle_background(self) {
-    var x = document.getElementById(self.CANVAS_NAME);
+function prime_wheel_toggle(the_wheel) {
+    var x = document.getElementById(the_wheel.CANVAS_NAME);
     if (x.style.display === "none") {
-        console.log("Prime wheel toggeled on");
+        prime_wheel_set_cookie("true");
         x.style.display = "block";
-        self.animate_proc = setInterval(function() { animate_wheel(self) }, self.INTERVAL);
+        the_wheel.animate_proc = setInterval(function() { prime_wheel_animate(the_wheel) }, the_wheel.INTERVAL);
+        console.log("Prime wheel toggeled on");
     } else {
-        console.log("Prime wheel toggeled off");
+        prime_wheel_set_cookie("false");
         x.style.display = "none";
-        clearInterval(self.animate_proc);
+        clearInterval(the_wheel.animate_proc);
+        console.log("Prime wheel toggeled off");
     }
 }
 
 /*
+ * Function to register the prime wheel cookie
+ * Creates cookie on page load if one does not already exist
+ */
+function prime_wheel_reg_cookie(cookie_value) {
+    if(document.cookie.search("prime_wheel_running=") == -1) {
+        prime_wheel_set_cookie(cookie_value);
+    }
+}
+document.onload = prime_wheel_reg_cookie("true");  //  Register automatically on page load
+
+/*
+ * Function to set the prime wheel cookie - expires after 24hrs
+ */
+function prime_wheel_set_cookie(cookie_value) {
+    document.cookie = `prime_wheel_running=${cookie_value}; SameSite=Strict; Max-Age=86400; Path=/`;
+}
+
+/*
+ * Function to check prime_wheel_running cookie value
+ * Return true if set to true, false if set to false or not set
+ */
+function prime_wheel_get_cookie() {
+    if(document.cookie.search("prime_wheel_running=") == -1) return false;
+    if(document.cookie.search("prime_wheel_running=true") == -1) return false;
+    return true;
+}
+
+/*
+ * Function to start up the prime wheel
+ */
+function prime_wheel_start(the_wheel) {
+    if(prime_wheel_get_cookie()) {
+        the_wheel.animate_proc = setInterval(function() { prime_wheel_animate(the_wheel) }, the_wheel.INTERVAL);
+        console.log("Running prime wheel effect");
+    } else {
+        var x = document.getElementById(the_wheel.CANVAS_NAME);
+        x.style.display = "none";
+    }
+}
+
+/*
+ * Usage:
+ *
  * CSS:
  * html {
  *     height: 100%;
@@ -168,7 +212,9 @@ function toggle_background(self) {
  *    <canvas id="background_canvas"></canvas>
  *    <script type="text/javascript">
  *       let the_wheel = new prime_wheel();
- *       the_wheel.animate_proc = setInterval(function() { animate_wheel(the_wheel) }, the_wheel.INTERVAL);
+ *       prime_wheel_start(the_wheel);
  *    </script>
  * </body>
+ * 
+ * <button onclick="prime_wheel_toggle(the_wheel)">Toggle Background</button>
  */

@@ -1,0 +1,35 @@
+---
+permalink: /projects.html 
+layout: home
+---
+
+<div class="page_row">
+    <div class="project_showcase">
+    {% for project in site.data.projects %}
+    <div class="project_item">
+    <table><tr>
+        {% if project.img %}
+        <td width="65%">
+        {% else %}
+        <td width="100%">
+        {% endif %}
+            <h3>{{ project.name }}</h3>
+            {{ project.desc }}
+            {% if project.links %}
+            <ul>
+            {% for link in project.links %}
+            <li><a href="{{ link.url }}">{{ link.desc }}</a></li>
+            {% endfor %}
+            </ul>
+            {% endif %}
+        </td>
+        {% if project.img %}
+        <td width="35%">
+            <img src="{{ project.img }}" width="100%" title="{{ project.name }}"/>
+        </td>
+        {% endif %}
+    </tr></table>
+    </div>
+    {% endfor %}
+    </div>
+</div>

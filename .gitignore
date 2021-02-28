@@ -1,2 +1,6 @@
-# Ignore vs code stuffs
-wtfsystems.github.io.code-workspace
+_wtfsystems.github.io.code-workspace
+
+.jekyll-cache
+.jekyll-metadata
+Gemfile.lock
+_site

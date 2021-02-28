@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "NANI?!"
+date:   2021-02-22
+categories: AYB
+---
+
+TESTING
+
+{% highlight c++ %}
+int main() {
+    return 1;
+}
+{% endhighlight %}
