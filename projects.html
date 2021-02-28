@@ -7,28 +7,26 @@ layout: home
     <div class="project_showcase">
     {% for project in site.data.projects %}
     <div class="project_item">
-    <table><tr>
         {% if project.img %}
-        <td class="project_left_td">
-        {% else %}
-        <td>
+            <table><tr>
+            <td class="project_left_td">
         {% endif %}
-            <h3>{{ project.name }}</h3>
-            {{ project.desc }}
-            {% if project.links %}
+        <h3>{{ project.name }}</h3>
+        {{ project.desc }}
+        {% if project.links %}
             <ul>
             {% for link in project.links %}
-            <li><a href="{{ link.url }}">{{ link.desc }}</a></li>
+                <li><a href="{{ link.url }}">{{ link.desc }}</a></li>
             {% endfor %}
             </ul>
-            {% endif %}
-        </td>
-        {% if project.img %}
-        <td class="project_right_td">
-            <img src="{{ project.img }}" title="{{ project.name }}" class="project_img"/>
-        </td>
         {% endif %}
-    </tr></table>
+        {% if project.img %}
+            </td>
+            <td class="project_right_td">
+                <img src="{{ project.img }}" title="{{ project.name }}" class="project_img"/>
+            </td>
+            </tr></table>
+        {% endif %}
     </div>
     {% endfor %}
     </div>
