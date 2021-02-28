@@ -9,9 +9,9 @@ layout: home
     <div class="project_item">
     <table><tr>
         {% if project.img %}
-        <td width="65%">
+        <td id="project_left_td">
         {% else %}
-        <td width="100%">
+        <td>
         {% endif %}
             <h3>{{ project.name }}</h3>
             {{ project.desc }}
@@ -24,8 +24,8 @@ layout: home
             {% endif %}
         </td>
         {% if project.img %}
-        <td width="35%">
-            <img src="{{ project.img }}" width="100%" title="{{ project.name }}"/>
+        <td id="project_right_td">
+            <img src="{{ project.img }}" title="{{ project.name }}" id="project_img"/>
         </td>
         {% endif %}
     </tr></table>
