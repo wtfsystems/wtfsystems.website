@@ -8,7 +8,7 @@
 $body_bg_color: #808080;
 
 /* Navigation settings */
-$nav_bg_color: #263238;
+$nav_bg_color: #ffefd5;
 $nav_button_bg_color: #8f0f0f;
 $nav_button_fg_color: #eeffff;
 $nav_button_border_color: #000000;
@@ -35,7 +35,8 @@ $project_border_color: $project_fg_color;
 
 /* Blog settings */
 $blog_fg_color: #600000;
-$blog_bg_color: rgba(128, 128, 128, 0.87);
+$blog_bg_color: rgba(128, 128, 128, 0.75);
+$blog_post_bg_color: rgba(255, 239, 213, 0.5);
 $blog_border_color: $blog_fg_color;
 
 /* Footer settings */
@@ -233,22 +234,27 @@ body > .content {
 .page_row > .blog {
     width: 100%;
     background: $blog_bg_color;
+    color: $blog_fg_color;
 }
 .blog > .blog_title {
-    color: $blog_fg_color;
-    background: $blog_bg_color;
     text-align: center;
 }
 .blog > .blog_post {
+    background: $blog_post_bg_color;
     text-align: left;
-    border-top: 1px solid $blog_border_color;
+    border-radius: 8px;
+    margin-top: 8px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 .blog_post > .blog_post_title {
     text-align: left;
 }
 .blog_post > .blog_post_excerpt {
     text-align: left;
-    color: $blog_fg_color;
+    padding-left: 12px;
 }
 
 /* Toggle button formatting */
