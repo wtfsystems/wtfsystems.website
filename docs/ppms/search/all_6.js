@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['is_5fsynthmod_19',['IS_SYNTHMOD',['../classparts_1_1synthmod.html#ae83f1cca8afbe398e60014a8dc01a21c',1,'parts::synthmod']]]
+  ['get_5fmodule_14',['get_module',['../classparts_1_1patchboard.html#a0168a95374b061f9dbcd0537a1b30983',1,'parts::patchboard']]]
 ];

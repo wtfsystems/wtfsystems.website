@@ -83,9 +83,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af365d4de431f5c01669fd448445f207d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreverb_1_1reverberation.html#af365d4de431f5c01669fd448445f207d">process</a> (self, signal)</td></tr>
-<tr class="memdesc:af365d4de431f5c01669fd448445f207d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reverb process - Add a shifted array to the signal.  <a href="classreverb_1_1reverberation.html#af365d4de431f5c01669fd448445f207d">More...</a><br /></td></tr>
-<tr class="separator:af365d4de431f5c01669fd448445f207d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b5e4f10f3ac800f80f3d4e9fe992925"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreverb_1_1reverberation.html#a2b5e4f10f3ac800f80f3d4e9fe992925">process</a> (self, note, signal)</td></tr>
+<tr class="memdesc:a2b5e4f10f3ac800f80f3d4e9fe992925"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reverb process - Add a shifted array to the signal.  <a href="classreverb_1_1reverberation.html#a2b5e4f10f3ac800f80f3d4e9fe992925">More...</a><br /></td></tr>
+<tr class="separator:a2b5e4f10f3ac800f80f3d4e9fe992925"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a430faaf9ea8e6e12961647e6f9a06a"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreverb_1_1reverberation.html#a2a430faaf9ea8e6e12961647e6f9a06a">save_data</a> (self)</td></tr>
 <tr class="memdesc:a2a430faaf9ea8e6e12961647e6f9a06a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build an array of save data for the module.  <a href="classreverb_1_1reverberation.html#a2a430faaf9ea8e6e12961647e6f9a06a">More...</a><br /></td></tr>
 <tr class="separator:a2a430faaf9ea8e6e12961647e6f9a06a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,25 +109,16 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_attribs_classparts_1_1synthmod"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classparts_1_1synthmod')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classparts_1_1synthmod.html">parts.synthmod</a></td></tr>
-<tr class="memitem:ae83f1cca8afbe398e60014a8dc01a21c inherit pub_static_attribs_classparts_1_1synthmod"><td class="memItemLeft" align="right" valign="top"><a id="ae83f1cca8afbe398e60014a8dc01a21c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparts_1_1synthmod.html#ae83f1cca8afbe398e60014a8dc01a21c">IS_SYNTHMOD</a> = True</td></tr>
-<tr class="memdesc:ae83f1cca8afbe398e60014a8dc01a21c inherit pub_static_attribs_classparts_1_1synthmod"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag to check if valid synth module. <br /></td></tr>
-<tr class="separator:ae83f1cca8afbe398e60014a8dc01a21c inherit pub_static_attribs_classparts_1_1synthmod"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dff5601ab3f92aeba4bdca6eddd4cf2 inherit pub_static_attribs_classparts_1_1synthmod"><td class="memItemLeft" align="right" valign="top"><a id="a1dff5601ab3f92aeba4bdca6eddd4cf2"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparts_1_1synthmod.html#a1dff5601ab3f92aeba4bdca6eddd4cf2">MIDI_MIN</a> = 0</td></tr>
-<tr class="memdesc:a1dff5601ab3f92aeba4bdca6eddd4cf2 inherit pub_static_attribs_classparts_1_1synthmod"><td class="mdescLeft">&#160;</td><td class="mdescRight">Midi min. <br /></td></tr>
-<tr class="separator:a1dff5601ab3f92aeba4bdca6eddd4cf2 inherit pub_static_attribs_classparts_1_1synthmod"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae58af28d9cdd4435d43f1ff312264ec1 inherit pub_static_attribs_classparts_1_1synthmod"><td class="memItemLeft" align="right" valign="top"><a id="ae58af28d9cdd4435d43f1ff312264ec1"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparts_1_1synthmod.html#ae58af28d9cdd4435d43f1ff312264ec1">MIDI_MAX</a> = 127</td></tr>
-<tr class="memdesc:ae58af28d9cdd4435d43f1ff312264ec1 inherit pub_static_attribs_classparts_1_1synthmod"><td class="mdescLeft">&#160;</td><td class="mdescRight">Midi max. <br /></td></tr>
-<tr class="separator:ae58af28d9cdd4435d43f1ff312264ec1 inherit pub_static_attribs_classparts_1_1synthmod"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11f8eed3e5417e44b3c84c095efa7cfa inherit pub_static_attribs_classparts_1_1synthmod"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparts_1_1synthmod.html#a11f8eed3e5417e44b3c84c095efa7cfa">Final</a></td></tr>
+<tr class="memdesc:a11f8eed3e5417e44b3c84c095efa7cfa inherit pub_static_attribs_classparts_1_1synthmod"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag to check if valid synth module.  <a href="classparts_1_1synthmod.html#a11f8eed3e5417e44b3c84c095efa7cfa">More...</a><br /></td></tr>
+<tr class="separator:a11f8eed3e5417e44b3c84c095efa7cfa inherit pub_static_attribs_classparts_1_1synthmod"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>PPMS Synth Module for reverb. </p>
 <p>Shifts the signal and adds to original. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="af365d4de431f5c01669fd448445f207d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af365d4de431f5c01669fd448445f207d">&#9670;&nbsp;</a></span>process()</h2>
+<a id="a2b5e4f10f3ac800f80f3d4e9fe992925"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b5e4f10f3ac800f80f3d4e9fe992925">&#9670;&nbsp;</a></span>process()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -137,6 +128,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>note</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -162,7 +159,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Modified signal data </dd></dl>
 
-<p>Reimplemented from <a class="el" href="classparts_1_1synthmod.html#a65491cfe95ea1157bc576e2dc1e89758">parts.synthmod</a>.</p>
+<p>Reimplemented from <a class="el" href="classparts_1_1synthmod.html#a465c95dd9755a5763298e9cae7fd5efc">parts.synthmod</a>.</p>
 
 </div>
 </div>

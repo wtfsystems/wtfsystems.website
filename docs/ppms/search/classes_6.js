@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['reverberation_56',['reverberation',['../classreverb_1_1reverberation.html',1,'reverb']]]
+  ['synthmod_48',['synthmod',['../classparts_1_1synthmod.html',1,'parts']]]
 ];

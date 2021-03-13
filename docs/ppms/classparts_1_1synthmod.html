@@ -84,29 +84,21 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a65491cfe95ea1157bc576e2dc1e89758"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparts_1_1synthmod.html#a65491cfe95ea1157bc576e2dc1e89758">process</a> (self, signal)</td></tr>
-<tr class="separator:a65491cfe95ea1157bc576e2dc1e89758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a465c95dd9755a5763298e9cae7fd5efc"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparts_1_1synthmod.html#a465c95dd9755a5763298e9cae7fd5efc">process</a> (self, note, signal)</td></tr>
+<tr class="memdesc:a465c95dd9755a5763298e9cae7fd5efc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synth module process member for modifying signal.  <a href="classparts_1_1synthmod.html#a465c95dd9755a5763298e9cae7fd5efc">More...</a><br /></td></tr>
+<tr class="separator:a465c95dd9755a5763298e9cae7fd5efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:ae83f1cca8afbe398e60014a8dc01a21c"><td class="memItemLeft" align="right" valign="top"><a id="ae83f1cca8afbe398e60014a8dc01a21c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparts_1_1synthmod.html#ae83f1cca8afbe398e60014a8dc01a21c">IS_SYNTHMOD</a> = True</td></tr>
-<tr class="memdesc:ae83f1cca8afbe398e60014a8dc01a21c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag to check if valid synth module. <br /></td></tr>
-<tr class="separator:ae83f1cca8afbe398e60014a8dc01a21c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dff5601ab3f92aeba4bdca6eddd4cf2"><td class="memItemLeft" align="right" valign="top"><a id="a1dff5601ab3f92aeba4bdca6eddd4cf2"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparts_1_1synthmod.html#a1dff5601ab3f92aeba4bdca6eddd4cf2">MIDI_MIN</a> = 0</td></tr>
-<tr class="memdesc:a1dff5601ab3f92aeba4bdca6eddd4cf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Midi min. <br /></td></tr>
-<tr class="separator:a1dff5601ab3f92aeba4bdca6eddd4cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae58af28d9cdd4435d43f1ff312264ec1"><td class="memItemLeft" align="right" valign="top"><a id="ae58af28d9cdd4435d43f1ff312264ec1"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparts_1_1synthmod.html#ae58af28d9cdd4435d43f1ff312264ec1">MIDI_MAX</a> = 127</td></tr>
-<tr class="memdesc:ae58af28d9cdd4435d43f1ff312264ec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Midi max. <br /></td></tr>
-<tr class="separator:ae58af28d9cdd4435d43f1ff312264ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11f8eed3e5417e44b3c84c095efa7cfa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparts_1_1synthmod.html#a11f8eed3e5417e44b3c84c095efa7cfa">Final</a></td></tr>
+<tr class="memdesc:a11f8eed3e5417e44b3c84c095efa7cfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag to check if valid synth module.  <a href="classparts_1_1synthmod.html#a11f8eed3e5417e44b3c84c095efa7cfa">More...</a><br /></td></tr>
+<tr class="separator:a11f8eed3e5417e44b3c84c095efa7cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Synth module base class. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a65491cfe95ea1157bc576e2dc1e89758"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65491cfe95ea1157bc576e2dc1e89758">&#9670;&nbsp;</a></span>process()</h2>
+<a id="a465c95dd9755a5763298e9cae7fd5efc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a465c95dd9755a5763298e9cae7fd5efc">&#9670;&nbsp;</a></span>process()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -121,6 +113,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>note</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
           <td class="paramname"><em>signal</em>&#160;</td>
         </tr>
         <tr>
@@ -130,14 +128,45 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
+
+<p>Synth module process member for modifying signal. </p>
+<p>Override this to implement a custom process method. Raises not implemented error if not overridden. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">self</td><td>Object pointer </td></tr>
+    <tr><td class="paramname">note</td><td>Note to be played </td></tr>
+    <tr><td class="paramname">signal</td><td>Audio signal </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="classtest_1_1test__module.html#a79f23ba502e0c8827c5dd7f48f488067">test.test_module</a>, <a class="el" href="classreverb_1_1reverberation.html#af365d4de431f5c01669fd448445f207d">reverb.reverberation</a>, <a class="el" href="classmwtest_1_1mwtest__module.html#a9e5c065c60d398b22da5d0ab466fbcc0">mwtest.mwtest_module</a>, <a class="el" href="classenv_1_1envelope.html#ab41a1f5afa8e610978160ecec8566e58">env.envelope</a>, and <a class="el" href="classbpass_1_1band__pass.html#a085495738dc11acc0e97c181f7428f06">bpass.band_pass</a>.</p>
+<p>Reimplemented in <a class="el" href="classtest_1_1test__module.html#a07f84af54adb6b5b26fa203f8d0c7e94">test.test_module</a>, <a class="el" href="classreverb_1_1reverberation.html#a2b5e4f10f3ac800f80f3d4e9fe992925">reverb.reverberation</a>, <a class="el" href="classmwtest_1_1mwtest__module.html#ab60add18027feee54deb787bd120f300">mwtest.mwtest_module</a>, <a class="el" href="classenv_1_1envelope.html#ad63397f9995a0749c51d815f20578532">env.envelope</a>, and <a class="el" href="classbpass_1_1band__pass.html#a50f9b6a50c3e1a953fca7f9b2599e35a">bpass.band_pass</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a11f8eed3e5417e44b3c84c095efa7cfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11f8eed3e5417e44b3c84c095efa7cfa">&#9670;&nbsp;</a></span>Final</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">parts.synthmod.Final</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Flag to check if valid synth module. </p>
+<p>Midi max.</p>
+<p>Midi min. </p>
 
 </div>
 </div>
