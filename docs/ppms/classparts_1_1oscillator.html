@@ -103,9 +103,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a6d7298d1b72325af7508ceaf2285ff14"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparts_1_1oscillator.html#a6d7298d1b72325af7508ceaf2285ff14">__calc_sample_data</a> (self, frame_size, time_data)</td></tr>
 <tr class="memdesc:a6d7298d1b72325af7508ceaf2285ff14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate sample data.  <a href="classparts_1_1oscillator.html#a6d7298d1b72325af7508ceaf2285ff14">More...</a><br /></td></tr>
 <tr class="separator:a6d7298d1b72325af7508ceaf2285ff14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfa92e60a0111fbcd4d5fc8da98daa39"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparts_1_1oscillator.html#abfa92e60a0111fbcd4d5fc8da98daa39">__check_pitch_bend</a> (self, note_freq, pitch_bend)</td></tr>
-<tr class="memdesc:abfa92e60a0111fbcd4d5fc8da98daa39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate pitch bend.  <a href="classparts_1_1oscillator.html#abfa92e60a0111fbcd4d5fc8da98daa39">More...</a><br /></td></tr>
-<tr class="separator:abfa92e60a0111fbcd4d5fc8da98daa39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5003ba53904ccbb45daa1e26402a51d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparts_1_1oscillator.html#ac5003ba53904ccbb45daa1e26402a51d">__calc_pitch_bend</a> (self, note_freq, pitch_bend)</td></tr>
+<tr class="memdesc:ac5003ba53904ccbb45daa1e26402a51d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate pitch bend.  <a href="classparts_1_1oscillator.html#ac5003ba53904ccbb45daa1e26402a51d">More...</a><br /></td></tr>
+<tr class="separator:ac5003ba53904ccbb45daa1e26402a51d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b2804efffeee15f6bdd3e05aa9694a1"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparts_1_1oscillator.html#a4b2804efffeee15f6bdd3e05aa9694a1">__OSCFUNC</a> (self, note, pitch_bend, frame_size, time_data)</td></tr>
 <tr class="memdesc:a4b2804efffeee15f6bdd3e05aa9694a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate phase shift data for oscillator.  <a href="classparts_1_1oscillator.html#a4b2804efffeee15f6bdd3e05aa9694a1">More...</a><br /></td></tr>
 <tr class="separator:a4b2804efffeee15f6bdd3e05aa9694a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,6 +151,59 @@ Private Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac5003ba53904ccbb45daa1e26402a51d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5003ba53904ccbb45daa1e26402a51d">&#9670;&nbsp;</a></span>__calc_pitch_bend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">def parts.oscillator.__calc_pitch_bend </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>note_freq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>pitch_bend</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculate pitch bend. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>Object pointer </td></tr>
+    <tr><td class="paramname">note_freq</td><td>Note frequency </td></tr>
+    <tr><td class="paramname">pich_bend</td><td>Pitch bend amount </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The note frequency with pitch bend factored </dd></dl>
+
+</div>
+</div>
 <a id="a6d7298d1b72325af7508ceaf2285ff14"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6d7298d1b72325af7508ceaf2285ff14">&#9670;&nbsp;</a></span>__calc_sample_data()</h2>
 
@@ -201,59 +254,6 @@ Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Generated sample data </dd></dl>
-
-</div>
-</div>
-<a id="abfa92e60a0111fbcd4d5fc8da98daa39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abfa92e60a0111fbcd4d5fc8da98daa39">&#9670;&nbsp;</a></span>__check_pitch_bend()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">def parts.oscillator.__check_pitch_bend </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>note_freq</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>pitch_bend</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Calculate pitch bend. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">self</td><td>Object pointer </td></tr>
-    <tr><td class="paramname">note_freq</td><td>Calculated note frequency </td></tr>
-    <tr><td class="paramname">pich_bend</td><td>Calculated pitch bend amount </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The note frequency with pitch bend factored </dd></dl>
 
 </div>
 </div>

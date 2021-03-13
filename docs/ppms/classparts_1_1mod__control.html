@@ -85,11 +85,11 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a95293454203106ef34cd9b63060ac9b0"><td class="memItemLeft" align="right" valign="top"><a id="a95293454203106ef34cd9b63060ac9b0"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>set_mod_value</b> (cls, value)</td></tr>
+<tr class="memitem:a95293454203106ef34cd9b63060ac9b0"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparts_1_1mod__control.html#a95293454203106ef34cd9b63060ac9b0">set_mod_value</a> (cls, value)</td></tr>
+<tr class="memdesc:a95293454203106ef34cd9b63060ac9b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the mod wheel value.  <a href="classparts_1_1mod__control.html#a95293454203106ef34cd9b63060ac9b0">More...</a><br /></td></tr>
 <tr class="separator:a95293454203106ef34cd9b63060ac9b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8c47d03521d068fb2aaf16c1eb6ae23"><td class="memItemLeft" align="right" valign="top"><a id="ae8c47d03521d068fb2aaf16c1eb6ae23"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>get_mod_value</b> (cls)</td></tr>
+<tr class="memitem:ae8c47d03521d068fb2aaf16c1eb6ae23"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparts_1_1mod__control.html#ae8c47d03521d068fb2aaf16c1eb6ae23">get_mod_value</a> (cls)</td></tr>
+<tr class="memdesc:ae8c47d03521d068fb2aaf16c1eb6ae23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the mod wheel value.  <a href="classparts_1_1mod__control.html#ae8c47d03521d068fb2aaf16c1eb6ae23">More...</a><br /></td></tr>
 <tr class="separator:ae8c47d03521d068fb2aaf16c1eb6ae23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -106,8 +106,73 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>__MOD_VALUE</b> = 0</t
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Mod wheel control part. </p>
-<p>Lets a synth module read in the mod wheel value. This gets set within the ppms input coroutine. Extend this and call self.get_mod_value() to read. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<p>Lets a synth module read in the mod wheel value. Extend this and call self.get_mod_value() to read. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae8c47d03521d068fb2aaf16c1eb6ae23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8c47d03521d068fb2aaf16c1eb6ae23">&#9670;&nbsp;</a></span>get_mod_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def parts.mod_control.get_mod_value </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>cls</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the mod wheel value. </p>
+<p>Called within a synth module. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cls</td><td>Object pointer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Current mod wheel value </dd></dl>
+
+</div>
+</div>
+<a id="a95293454203106ef34cd9b63060ac9b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95293454203106ef34cd9b63060ac9b0">&#9670;&nbsp;</a></span>set_mod_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def parts.mod_control.set_mod_value </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>cls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the mod wheel value. </p>
+<p>This is set within the ppms input coroutine. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cls</td><td>Object pointer </td></tr>
+    <tr><td class="paramname">value</td><td>Value to set mod wheel to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>mod/parts.py</li>
 </ul>
 </div><!-- contents -->
