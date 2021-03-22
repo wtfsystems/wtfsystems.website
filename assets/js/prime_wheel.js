@@ -6,7 +6,7 @@
  * Filename:  prime_wheel.js
  * By:  Matthew Evans
  *      https://www.wtfsystems.net/
- * Version:  022721
+ * Version:  032221
  * 
  * Copyright (c) 2020-2021 Matthew Evans
  *
@@ -29,6 +29,11 @@
  * SOFTWARE.
  */
 
+/*
+ * Prime Wheel class
+ * This stores variables used to generate and draw the wheel
+ * Also contains members for setting the draw offset and resetting the wheel
+ */
 class prime_wheel {
     /*
      * Config variables
@@ -50,7 +55,7 @@ class prime_wheel {
     /* Use random offset */
     USE_RANDOM_OFFSET = true;
     /* Spam console with prime numbers */
-    SPAM = false;
+    SPAM = true;
 
     /*
      * Initialize
@@ -81,15 +86,22 @@ class prime_wheel {
     }
 
     /*
-     * Generate a random offset if enabled
+     * Generate a random x,y offset for drawing the wheel
      */
     set_offset() {
-        if(this.USE_RANDOM_OFFSET) {
-            this.x_offset = Math.floor(Math.random() * (this.center_x * 2 / 3) + 1);
-            this.x_offset = this.x_offset * (Math.random() < 0.5 ? -1 : 1);
-            this.y_offset = Math.floor(Math.random() * (this.center_y * 2 / 3) + 1);
-            this.y_offset = this.y_offset * (Math.random() < 0.5 ? -1 : 1);
-        }
+        this.x_offset = Math.floor(Math.random() * (this.center_x * 2 / 3) + 1);
+        this.x_offset = this.x_offset * (Math.random() < 0.5 ? -1 : 1);
+        this.y_offset = Math.floor(Math.random() * (this.center_y * 2 / 3) + 1);
+        this.y_offset = this.y_offset * (Math.random() < 0.5 ? -1 : 1);
+    }
+
+    /*
+     * Resets the effect
+     */
+    reset() {
+        this.ctx.fillStyle = this.BACKGROUND_COLOR;
+        this.ctx.fillRect(0, 0, this.width, this.height);
+        this.last_prime = 2;
     }
 }
 
@@ -107,6 +119,7 @@ function is_prime(num) {
  * Animation function
  */
 function prime_wheel_animate(the_wheel) {
+    //  Prime number found, draw it using cartesian coordinates
     if(is_prime(the_wheel.last_prime)) {
         if(the_wheel.SPAM) console.log("Found prime: " + the_wheel.last_prime);
         the_wheel.ctx.font = the_wheel.FONT_SIZE + " " + the_wheel.FONT_FACE;
@@ -118,15 +131,14 @@ function prime_wheel_animate(the_wheel) {
         );
     }
 
-    the_wheel.last_prime++;
+    the_wheel.last_prime++;  //  Increment counter to check for next prime
 
-    //  Resets the effect
+    //  Once the wheel reaches (1400 * SCALE) then reset
     if(the_wheel.last_prime > 1400 * the_wheel.SCALE) {
         console.log("Resetting prime wheel effect");
-        the_wheel.set_offset();
-        the_wheel.ctx.fillStyle = the_wheel.BACKGROUND_COLOR;
-        the_wheel.ctx.fillRect(0, 0, the_wheel.width, the_wheel.height);
-        the_wheel.last_prime = 2;
+        //  Change offset if enabled
+        if(the_wheel.USE_RANDOM_OFFSET) the_wheel.set_offset();
+        the_wheel.reset();
     }
 }
 
@@ -136,11 +148,13 @@ function prime_wheel_animate(the_wheel) {
 function prime_wheel_toggle(the_wheel) {
     var x = document.getElementById(the_wheel.CANVAS_NAME);
     if (x.style.display === "none") {
+        //  If off turn on
         prime_wheel_set_cookie("true");
         x.style.display = "block";
         the_wheel.animate_proc = setInterval(function() { prime_wheel_animate(the_wheel) }, the_wheel.INTERVAL);
         console.log("Prime wheel toggeled on");
     } else {
+        //  Otherwise turn off
         prime_wheel_set_cookie("false");
         x.style.display = "none";
         clearInterval(the_wheel.animate_proc);
