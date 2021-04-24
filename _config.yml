@@ -19,4 +19,18 @@ plugins:
   - jekyll-feed
 sass:
   style: compressed
+
 include: [docs]
+exclude:
+  - node_modules
+  - src
+  - Gemfile
+  - Gemfile.lock
+  - package.lock.json
+  - package.json
+  - webpack.config.babel.js
+  - .eslintignore
+  - .eslintrc.js
+  - README.md
+  - LICENSE.md
+  - LICENSE

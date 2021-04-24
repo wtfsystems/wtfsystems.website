@@ -4,3 +4,10 @@ _wtfsystems.github.io.code-workspace
 .jekyll-metadata
 Gemfile.lock
 _site
+_includes/scripts.html
+
+dist/
+node_modules/
+.misc
+.npm
+browser-sync.js
