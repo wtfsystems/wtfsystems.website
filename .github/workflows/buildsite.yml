@@ -28,6 +28,8 @@ jobs:
     # Remove output files from .gitignore
     - run: sed '/scripts.html/d' .gitignore > temp && mv temp .gitignore
     - run: sed '/dist/d' .gitignore > temp && mv temp .gitignore
+    # Add the src folder to .gitignore
+    - run: echo 'src/' >> .gitignore
 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@4.1.1
