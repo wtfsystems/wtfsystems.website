@@ -5,9 +5,9 @@ _wtfsystems.github.io.code-workspace
 .sass-cache
 Gemfile.lock
 _site
-_includes/scripts.html
+#_includes/scripts.html
 
-dist/
+#dist/
 node_modules/
 .misc
 .npm

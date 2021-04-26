@@ -26,6 +26,9 @@ jobs:
     - run: npm ci # --production
     - run: npm run build --if-present
 
+    - run: sed '/scripts.html/d' .gitignore > temp && mv temp .gitignore
+    - run: sed '/dist/d' .gitignore > temp && mv temp .gitignore
+
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@4.1.1
       with:
