@@ -13,9 +13,9 @@
 <script>
 import WebTermOutput from './components/WebTermOutput'
 import WebTermInput from './components/WebTermInput'
-import { TermCommands } from './TermCommands/TermCommands.mjs'
+import { TermCommands } from './modules/TermCommands.mjs'
 
-//  Object to process input
+//  Object to process terminal input
 let cmdProcessor = new TermCommands()
 
 export default {
