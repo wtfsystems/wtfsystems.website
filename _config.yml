@@ -26,11 +26,13 @@ exclude:
   - src
   - Gemfile
   - Gemfile.lock
-  - package.lock.json
+  - package-lock.json
   - package.json
   - webpack.config.babel.js
+  - .babelrc
   - .eslintignore
   - .eslintrc.js
+  - .gitignore
   - README.md
   - LICENSE.md
   - LICENSE
