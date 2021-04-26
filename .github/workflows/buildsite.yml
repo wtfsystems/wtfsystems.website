@@ -1,4 +1,4 @@
-name: Build website
+name: Build wtfsystems website
 
 on:
   push:
@@ -8,7 +8,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -19,13 +18,14 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Build with Node.js ${{ matrix.node-version }}
+    - name: Setup Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm ci # --production
     - run: npm run build --if-present
 
+    # Remove output files from .gitignore
     - run: sed '/scripts.html/d' .gitignore > temp && mv temp .gitignore
     - run: sed '/dist/d' .gitignore > temp && mv temp .gitignore
 
