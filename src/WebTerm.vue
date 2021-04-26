@@ -47,7 +47,7 @@ export default {
         //  Process the received command
         resolveCommand(cmd) {
             cmd = cmd.split(" ")
-            if(cmd[0] === "clear") return "clear"  //  Special case for clearing console
+            if(String(cmd[0]).toLowerCase() === "clear") return "clear"  //  Special case for clearing console
             return cmdProcessor.processCommand(cmd)
         }
     },
