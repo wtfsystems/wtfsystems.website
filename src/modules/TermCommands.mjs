@@ -5,6 +5,8 @@
  * It's basically used to render the website.
  */
 
+var $ = require( "jquery" );
+
 export class TermCommands {
 
     /*

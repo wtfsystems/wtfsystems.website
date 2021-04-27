@@ -41,6 +41,11 @@ jobs:
         echo 'package.json' >> .gitignore
         echo 'webpack.config.babel.js' >> .gitignore
 
+    - name: Build JSON
+      run: |
+        mkdir api
+        npx m2j _posts/*.markdown -c -o api/posts.json
+
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@4.1.1
       with:

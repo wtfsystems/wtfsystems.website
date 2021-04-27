@@ -20,6 +20,7 @@
   "author": "Christopher Murphy",
   "license": "MIT",
   "dependencies": {
+    "jquery": "^3.6.0",
     "vue": "^2.6.12"
   },
   "devDependencies": {
@@ -32,6 +33,7 @@
     "cross-env": "^7.0.3",
     "css-loader": "^5.2.4",
     "html-webpack-plugin": "^5.3.1",
+    "markdown-to-json": "^0.5.4",
     "sass": "^1.32.11",
     "sass-loader": "^11.0.1",
     "vue-loader": "^15.9.6",
