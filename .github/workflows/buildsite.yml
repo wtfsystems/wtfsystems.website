@@ -34,8 +34,6 @@ jobs:
         sed '/dist/d' .gitignore > temp && mv temp .gitignore
         echo 'src/' >> .gitignore
         echo '.babelrc' >> .gitignore
-        echo '.eslintignore' >> .gitignore
-        echo '.eslintrc.js' >> .gitignore
         echo 'LICENSE' >> .gitignore
         echo 'LICENSE.md' >> .gitignore
         echo 'README.md' >> .gitignore
