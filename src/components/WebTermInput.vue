@@ -8,7 +8,7 @@
         <span id="input-area">
             <span class="prompt">$</span>
             <form @submit="onSubmit">
-            <input type="text" name="input-box" id="input-box" onfocusout="this.value='';" v-model="userinput" @keyup.up="historyUp" @keyup.down="historyDown" autofocus/>
+            <input type="text" name="input-box" id="input-box" v-model="userinput" @keyup.up="historyUp" @keyup.down="historyDown" autofocus/>
             </form>
         </span>
     </div>

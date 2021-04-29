@@ -6,8 +6,8 @@ github_username:  wtfsystems
 
 lsi: false
 safe: true
-source: /
-incremental: false
+#source: /
+#incremental: false
 highlighter: rouge
 gist:
   noscript: false
