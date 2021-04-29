@@ -1,9 +1,16 @@
 /*
+ * Web Terminal Interface
  *
+ * Filename:  TermCommands.mjs
+ * By:  Matthew Evans
+ * See LICENSE.md for copyright information.
+ * 
  * Object to render various terminal command results.
  * The WebTerm VueJS app calls this.
  * It's basically used to render the website.
  */
+
+import { PostRenderer } from './PostRenderer.mjs'
 
 export class TermCommands {
 
@@ -19,6 +26,9 @@ export class TermCommands {
      */
     constructor() {
         this.commands = []
+
+        //this.posts = new PostRenderer()
+        //this.posts.getPosts()
 
         /*
          * motd command
@@ -95,9 +105,6 @@ export class TermCommands {
         temp.description = "Show posts"
         temp.function = (cmd) => {
             return "posts"
-            /*return $.ajax({url: "api/posts.json", success: function(result){
-                return result
-            }});*/
         }
         this.commands.push(temp)}
 
@@ -184,13 +191,14 @@ export class TermCommands {
          */
         about() {
             return `
-            <span style=\"font-weight: bold;\">Created with:</span><br/>
+            <span style=\"font-weight: bold;\">Created with:</span><br/><br/>
             <span style=\"height: 120px; max-height: 120px;\">
                 <a href=\"https://vuejs.org\"><img src=\"assets/img/512px-Vue.js_Logo_2.svg.png\" style=\"max-height: 120px;\"/></a>
                 <a href=\"https://jekyllrb.com\"><img src=\"assets/img/jekyll-logo-dark-transparent.png\" style=\"max-height: 120px;\"/></a>
                 <a href=\"https://pages.github.com\"><img src=\"assets/img/octocat.png\" style=\"max-height: 120px;\"/></a>
             </span>
-            <br/>
+            <br/><br/>
+            <span style=\"font-weight: bold;\">Boilerplate:</span>
             <a href=\"https://github.com/Splode/jekyll-vue-template\">jekyll-vue-template</a>
             `
         },
