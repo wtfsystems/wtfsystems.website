@@ -1,10 +1,14 @@
 <!--
-    Commentblock
+    Web Terminal Interface
+
+    Filename:  WebTermInfo.vue
+    By:  Matthew Evans
+    See LICENSE.md for copyright information.
 -->
 
 <template>
     <div class="term-info">
-         <span class="time">{{ currentTime }}</span><span class="user">{{ userIP }}</span><span class="site"><a href="https://www.wtfsystems.net" style="color: inherit; text-decoration:none;">www.wtfsystems.net</a></span>
+         <span class="time">{{ currentTime }}</span><span class="user">{{ userIP }}</span><span class="site"><a href="https://www.wtfsystems.net" style="color: inherit; text-decoration: none;">www.wtfsystems.net</a></span>
     </div>
 </template>
 

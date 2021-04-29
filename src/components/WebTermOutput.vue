@@ -1,5 +1,9 @@
 <!--
-    Commentblock
+    Web Terminal Interface
+
+    Filename:  WebTermOutput.vue
+    By:  Matthew Evans
+    See LICENSE.md for copyright information.
 -->
 
 <template>
