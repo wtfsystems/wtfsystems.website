@@ -4,7 +4,7 @@
 
 <template>
     <div class="term-info">
-         <span class="time">{{ currentTime }}</span><span class="user">{{ userIP }}</span><span class="site">www.wtfsystems.net</span>
+         <span class="time">{{ currentTime }}</span><span class="user">{{ userIP }}</span><span class="site"><a href="https://www.wtfsystems.net" style="color: inherit; text-decoration:none;">www.wtfsystems.net</a></span>
     </div>
 </template>
 
@@ -33,7 +33,6 @@ export default {
     //  Get user's IP address for display
     async mounted() {
         const res = await axios.get('https://www.cloudflare.com/cdn-cgi/trace')
-        console.log(res)
         let ipRegex = /[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}/
         this.userIP = res.data.match(ipRegex)[0]
     }
