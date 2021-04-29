@@ -9,7 +9,7 @@
 <template>
     <div class="term-output">
         <template v-for="item in outputHistory">
-            <WebTermHistory :key="item.history" v-bind:history="item.history"></WebTermHistory>
+            <WebTermHistory :key="item.history" v-bind:history="item.history" v-bind:userip="userip"></WebTermHistory>
             <WebTermDisplay :key="item.display" v-bind:display="item.display"></WebTermDisplay>
         </template>
     </div>
@@ -29,7 +29,8 @@ export default {
         output: {
             history: String,    //  Receive command history
             display: String     //  Receive display HTML
-        }
+        },
+        userip: String          //  User's IP address
     },
     data() {
         return {

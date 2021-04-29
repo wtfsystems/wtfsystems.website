@@ -8,7 +8,7 @@
 
 <template>
     <div class="term-history" v-if="history">
-         <WebTermInfo></WebTermInfo>
+         <WebTermInfo v-bind:userip="userip"></WebTermInfo>
          <span><span class="prompt">$</span> {{ history }}</span>
          <span><br/></span>
     </div>
@@ -23,7 +23,8 @@ export default {
         WebTermInfo
     },
     props: {
-        history: String     //  Previously ran command
+        history: String,     //  Previously ran command
+        userip: String       //  User's IP address
     }
 }
 </script>

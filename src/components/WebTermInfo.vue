@@ -8,19 +8,15 @@
 
 <template>
     <div class="term-info">
-         <span class="time">{{ currentTime }}</span><span class="user">{{ userIP }}</span><span class="site"><a href="https://www.wtfsystems.net" style="color: inherit; text-decoration: none;">www.wtfsystems.net</a></span>
+         <span class="time">{{ currentTime }}</span><span class="user">{{ userip }}</span><span class="site"><a href="https://www.wtfsystems.net" style="color: inherit; text-decoration: none;">www.wtfsystems.net</a></span>
     </div>
 </template>
 
 <script>
-import axios from 'axios'
-
 export default {
     name: 'WebTermInfo',
-    data() {
-        return {
-            userIP: null
-        }
+    props: {
+        userip: String     //  User's IP address
     },
     computed: {
         //  Return current time in 24hr HH:MM:SS format
@@ -33,12 +29,6 @@ export default {
             }
             return new Date().toLocaleTimeString("en-US", options)
         }
-    },
-    //  Get user's IP address for display
-    async mounted() {
-        const res = await axios.get('https://www.cloudflare.com/cdn-cgi/trace')
-        let ipRegex = /[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}/
-        this.userIP = res.data.match(ipRegex)[0]
     }
 }
 </script>

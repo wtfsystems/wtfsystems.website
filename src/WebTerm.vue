@@ -8,8 +8,8 @@
 
 <template>
     <div id="term-window">
-        <WebTermOutput v-bind:output="output"></WebTermOutput>
-        <WebTermInput @user-input="processInput"></WebTermInput>
+        <WebTermOutput v-bind:output="output" v-bind:userip="getIP"></WebTermOutput>
+        <WebTermInput @user-input="processInput" v-bind:userip="getIP"></WebTermInput>
         <span ref="bottom"></span>
     </div>
 </template>
@@ -18,6 +18,7 @@
 import WebTermOutput from './components/WebTermOutput'
 import WebTermInput from './components/WebTermInput'
 import { TermCommands } from './modules/TermCommands.mjs'
+import axios from 'axios'
 
 //  Object to process terminal input
 let cmdProcessor = new TermCommands()
@@ -53,6 +54,14 @@ export default {
             cmd = cmd.split(" ")
             if(String(cmd[0]).toLowerCase() === "clear") return "clear"  //  Special case for clearing console
             return cmdProcessor.processCommand(cmd)
+        }
+    },
+    asyncComputed: {
+        //  Get user's IP address
+        async getIP() {
+            const res = await axios.get('https://www.cloudflare.com/cdn-cgi/trace')
+            let ipRegex = /[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}/
+            return res.data.match(ipRegex)[0]
         }
     },
     //  Display on page load

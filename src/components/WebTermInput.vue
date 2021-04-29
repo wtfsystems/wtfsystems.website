@@ -8,7 +8,7 @@
 
 <template>
     <div id="terminal-input">
-        <WebTermInfo :key="infokey"></WebTermInfo>
+        <WebTermInfo :key="infokey" v-bind:userip="userip"></WebTermInfo>
         <span id="input-area">
             <span class="prompt">$</span>
             <form @submit="onSubmit">
@@ -25,6 +25,9 @@ export default {
     name: 'WebTermInput',
     components: {
         WebTermInfo
+    },
+    props: {
+        userip: String     //  User's IP address
     },
     data() {
         return {
