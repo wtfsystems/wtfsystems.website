@@ -22,7 +22,7 @@ export class Command {
     /*
      * Exec function to define what the command runs.
      */
-    exec() {
+    exec(args) {
         throw new Error("Method 'exec()' must be implemented.")
     }
 

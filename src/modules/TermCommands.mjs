@@ -124,8 +124,14 @@ class TermCommands {
      * Must be an instance of the Command abstract class.
      */
     addModule(obj) {
-        if(!(obj instanceof Command)) throw new Error("Error loading command module!")
-        if(obj.command === "error" || obj.description === "error") throw new Error("Error loading command module!")
+        if(!(obj instanceof Command))
+            throw new Error("Error loading command module!  Not an instance of Command.")
+        if(obj.command === "error" || obj.description === "error")
+            throw new Error("Error loading command module!  Command or description parameters not defined.")
+        for(var i = 0; i < this.commands.length; i++) {
+            if(this.commands[i].command === obj.command)
+                throw new Error("Error loading command module!  Command already exists.")
+        }
         this.commands.push(obj)
     }
 
