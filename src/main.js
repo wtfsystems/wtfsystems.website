@@ -20,7 +20,7 @@ import AsyncComputed from 'vue-async-computed'
  */
 import cmdProcessor from './modules/TermCommands.mjs'
 import { PostRenderer } from './modules/PostRenderer.mjs'
-cmdProcessor.addModule(new PostRenderer())
+cmdProcessor.addModule(new PostRenderer('api/posts.json'))
 cmdProcessor.getModule('posts').getPosts()
 
 /*

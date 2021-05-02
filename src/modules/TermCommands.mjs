@@ -15,8 +15,10 @@ import { Command } from './Command.mjs'
 class TermCommands {
 
     /*
-     * Fill the commands array.
+     * Fill the commands array with default commands.
      * Each command is created in its own scope.
+     * 
+     * Additional commands can be added with the addModule(obj) member.
      * 
      * Format of the command object:
      * command - input text for command, all lowercase.
@@ -125,24 +127,25 @@ class TermCommands {
      */
     addModule(obj) {
         if(!(obj instanceof Command))
-            throw new Error("Error loading command module!  Not an instance of Command.")
+            throw new Error("'addModule()' Error: Not an instance of Command.")
         if(obj.command === "error" || obj.description === "error")
-            throw new Error("Error loading command module!  Command or description parameters not defined.")
+            throw new Error("'addModule()' Error: Command or description parameters not defined.")
         for(var i = 0; i < this.commands.length; i++) {
             if(this.commands[i].command === obj.command)
-                throw new Error("Error loading command module!  Command already exists.")
+                throw new Error(`'addModule()' Error: Command '${obj.command}' already exists.`)
         }
         this.commands.push(obj)
     }
 
     /*
      * Return reference to a loaded module.
+     * Search by its command name.
      */
     getModule(cmd) {
         for(var i = 0; i < this.commands.length; i++) {
             if(this.commands[i].command === cmd) return this.commands[i]
         }
-        throw new Error(`'getModule()' Error:  Module '${cmd}' not found!`)
+        throw new Error(`'getModule()' Error: Module '${cmd}' not found!`)
     }
 
     /* ************************************** */
