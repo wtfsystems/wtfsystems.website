@@ -21,6 +21,7 @@ export class PostRenderer extends Command {
         if(location == null)
             throw new Error("'PostRenderer' Error: Must set a posts location.")
         this.posts = null
+        this.postTitles = null
         this.postsLocation = location
     }
 
@@ -30,6 +31,7 @@ export class PostRenderer extends Command {
      */
     async getPosts() {
         this.posts = await axios.get(this.postsLocation)
+        this.postTitles = Object.keys(this.posts.data)
     }
 
     /*
@@ -37,20 +39,19 @@ export class PostRenderer extends Command {
      */
     exec(args) {
         if(args.length > 0)
-            return this.render.post(this.posts, args[0])
-        return this.render.postList(this.posts)
+            return this.render.post(this.posts, this.postTitles, args[0])
+        return this.render.postList(this.postTitles)
     }
 
     /*
-     * Render functions
+     * Render functions.
      */
     render = {
         /*
-         * Render the post list
+         * Render the post list.
          */
-        postList(posts) {
+        postList(postTitles) {
             var list = "POSTS<br/><br/>"
-            var postTitles = Object.keys(posts.data)
 
             for(var i = 0; i < postTitles.length; i++) {
                 list += postTitles[i] + "<br/>"
@@ -59,14 +60,18 @@ export class PostRenderer extends Command {
             return list
         },
 
-        post(posts, name) {
+        /*
+         * Render a single post
+         */
+        post(posts, postTitles, name) {
             //  Verify post name
-            if(name == null) {
-                return "not found"
+            for(var i = 0; i < postTitles.length; i++) {
+                if(name == postTitles[i]) {
+                    var post = "found"
+                    return post
+                }
             }
-
-            var post = "POST"
-            return post
+            return "Post not found"
         }
     }
 
