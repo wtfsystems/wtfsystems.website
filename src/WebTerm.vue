@@ -15,13 +15,12 @@
 </template>
 
 <script>
-import WebTermOutput from './components/WebTermOutput'
-import WebTermInput from './components/WebTermInput'
-import { TermCommands } from './modules/TermCommands.mjs'
 import axios from 'axios'
 
-//  Object to process terminal input
-let cmdProcessor = new TermCommands()
+import WebTermOutput from './components/WebTermOutput'
+import WebTermInput from './components/WebTermInput'
+
+import cmdProcessor from './modules/TermCommands.mjs'
 
 export default {
     name: 'WebTerm',
@@ -59,7 +58,7 @@ export default {
     asyncComputed: {
         //  Get user's IP address
         async getIP() {
-            const res = await axios.get('https://www.cloudflare.com/cdn-cgi/trace')
+            const res = await axios.get("https://www.cloudflare.com/cdn-cgi/trace")
             let ipRegex = /[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}/
             return res.data.match(ipRegex)[0]
         }

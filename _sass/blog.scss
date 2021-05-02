@@ -1,0 +1,59 @@
+/*
+ * wtfsystems.net
+ */
+
+/* ********************** */
+/* *** Sass variables *** */
+/* ********************** */
+$body_bg_color: #808080;
+
+/* Navigation settings */
+$nav_bg_color: rgba(255, 239, 213, 0.5);
+$nav_button_bg_color: #8f0f0f;
+$nav_button_fg_color: #eeffff;
+$nav_button_border_color: #000000;
+$nav_button_disabled_color: #000000;
+$nav_font_size: medium;
+
+/* Hyperlink settings */
+$link_color: #32174d;
+$link_visited: #8f0f0f;
+$link_hover: #8f0f0f;
+$link_active: #32174d;
+
+/* Terminal settings */
+$term_bg_color: #263238;
+$term_fg_color: #eeffff;
+$term_cr_color: #ffcc00;
+$term_font_family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+$term_font_size: medium;
+
+/* Project showcase settings */
+$project_fg_color: #600000;
+$project_bg_color: rgba(128, 128, 128, 0.75);
+$project_border_color: $project_fg_color;
+
+/* Blog settings */
+$blog_fg_color: #600000;
+$blog_bg_color: rgba(128, 128, 128, 0.75);
+$blog_post_bg_color: rgba(255, 239, 213, 0.5);
+$blog_border_color: $blog_fg_color;
+
+/* Footer settings */
+$footer_fg_color: #600000;
+$footer_bg_color: #a9a9a9;
+
+/* Toggle button settings */
+$toggle_button_bg_color: #8f0f0f;
+$toggle_button_fg_color: #eeffff;
+$toggle_button_border_color: #000000;
+$toggle_button_font_size: small;
+/* ********************** */
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: $body_bg_color;
+}

@@ -10,9 +10,9 @@
  * It's basically used to render the website.
  */
 
-import { PostRenderer } from './PostRenderer.mjs'
+import { Command } from './Command.mjs'
 
-export class TermCommands {
+class TermCommands {
 
     /*
      * Fill the commands array.
@@ -27,16 +27,13 @@ export class TermCommands {
     constructor() {
         this.commands = []
 
-        //this.posts = new PostRenderer()
-        //this.posts.getPosts()
-
         /*
          * motd command
          */
         {let temp = new Object()
         temp.command = "motd"
         temp.description = "Message of the day"
-        temp.function = (cmd) => {
+        temp.exec = (cmd) => {
             return this.render.motd()
         }
         this.commands.push(temp)}
@@ -47,7 +44,7 @@ export class TermCommands {
         {let temp = new Object()
         temp.command = "about"
         temp.description = "Display website information"
-        temp.function = (cmd) => {
+        temp.exec = (cmd) => {
             return this.render.about()
         }
         this.commands.push(temp)}
@@ -58,7 +55,7 @@ export class TermCommands {
         {let temp = new Object()
         temp.command = "printenv"
         temp.description = "Print all or part of environment?"
-        temp.function = (cmd) => {
+        temp.exec = (cmd) => {
             return "These are not the environment variables that you are looking for"
         }
         this.commands.push(temp)}
@@ -69,8 +66,8 @@ export class TermCommands {
         {let temp = new Object()
         temp.command = "systemctl"
         temp.description = "Control the systemd system and service manager?"
-        temp.function = (cmd) => {
-            return this.render.systemctl(cmd.splice(1, cmd.length))
+        temp.exec = (cmd) => {
+            return this.render.systemctl(cmd)
         }
         this.commands.push(temp)}
 
@@ -80,8 +77,8 @@ export class TermCommands {
         {let temp = new Object()
         temp.command = "sudo"
         temp.description = "Execute a command as another user?"
-        temp.function = (cmd) => {
-            if(cmd.length > 1) return this.processCommand(cmd.splice(1, cmd.length))
+        temp.exec = (cmd) => {
+            if(cmd.length > 0) return this.processCommand(cmd)
             return "<span style=\"font-weight: bold;\">SPAWN MORE OVERLORDS!!!</span>"
         }
         this.commands.push(temp)}
@@ -92,19 +89,8 @@ export class TermCommands {
         {let temp = new Object()
         temp.command = "jabbascript"
         temp.description = "Modern development"
-        temp.function = (cmd) => {
+        temp.exec = (cmd) => {
             return this.render.jabbascript()
-        }
-        this.commands.push(temp)}
-
-        /*
-         * posts command
-         */
-        {let temp = new Object()
-        temp.command = "posts"
-        temp.description = "Show posts"
-        temp.function = (cmd) => {
-            return "posts"
         }
         this.commands.push(temp)}
 
@@ -128,9 +114,18 @@ export class TermCommands {
         if(String(cmd[0]).toLowerCase() === "help") return this.render.help(this.commands)
         for(var i = 0; i < this.commands.length; i++) {
             if(String(cmd[0]).toLowerCase() === this.commands[i].command)
-                return this.commands[i].function(cmd)
+                return this.commands[i].exec(cmd.splice(1, cmd.length))
         }
         return "<span style=\"font-weight: bold;\">command not found:</span> " + cmd[0]
+    }
+
+    /*
+     * Load a command module into the command array.
+     */
+    addModule(obj) {
+        if(!(obj instanceof Command)) throw new Error("Error loading command module!")
+        if(obj.command === "error" || obj.description === "error") throw new Error("Error loading command module!")
+        this.commands.push(obj)
     }
 
     /* ************************************** */
@@ -226,3 +221,5 @@ export class TermCommands {
         }
     }
 }
+
+export default new TermCommands()
