@@ -21,6 +21,9 @@ export class PostRenderer extends Command {
         console.log(res)
     }
 
+    /*
+     *
+     */
     exec(args) {
         if(args.length > 0) {
             return "yes args"
@@ -28,6 +31,9 @@ export class PostRenderer extends Command {
         return "no args"
     }
 
+    /*
+     *
+     */
     command = "posts"
     description = "Display blog posts"
 }

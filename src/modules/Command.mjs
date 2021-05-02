@@ -6,11 +6,12 @@
  * See LICENSE.md for copyright information.
  * 
  * Command abstract base class.
+ * Used to create a new command module to load into the TermCommands.
  */
 
 export class Command {
     /*
-     *
+     * Restrict creating instances of this class.
      */
     constructor() {
         if(this.constructor === Command) {
@@ -19,12 +20,16 @@ export class Command {
     }
 
     /*
-     *
+     * Exec function to define what the command runs.
      */
     exec() {
         throw new Error("Method 'exec()' must be implemented.")
     }
 
+    /*
+     * Command & description parameters.
+     * These need to be changed in the extending class.
+     */
     command = "error"
     description = "error"
 }

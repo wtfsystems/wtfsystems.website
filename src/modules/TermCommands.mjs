@@ -121,6 +121,7 @@ class TermCommands {
 
     /*
      * Load a command module into the command array.
+     * Must be an instance of the Command abstract class.
      */
     addModule(obj) {
         if(!(obj instanceof Command)) throw new Error("Error loading command module!")
