@@ -21,8 +21,8 @@ class TermCommands {
      * Format of the command object:
      * command - input text for command, all lowercase.
      * description - Description of command, displayed in help.
-     * function - Lambda expression that the command will execute.
-     *            This should have the cmd array passed to it.
+     * exec - Lambda expression that the command will execute.
+     *        This should have the cmd array passed to it.
      */
     constructor() {
         this.commands = []
@@ -133,6 +133,16 @@ class TermCommands {
                 throw new Error("Error loading command module!  Command already exists.")
         }
         this.commands.push(obj)
+    }
+
+    /*
+     * Return reference to a loaded module.
+     */
+    getModule(cmd) {
+        for(var i = 0; i < this.commands.length; i++) {
+            if(this.commands[i].command === cmd) return this.commands[i]
+        }
+        throw new Error(`'getModule()' Error:  Module '${cmd}' not found!`)
     }
 
     /* ************************************** */
