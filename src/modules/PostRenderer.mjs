@@ -31,7 +31,8 @@ export class PostRenderer extends Command {
      */
     async getPosts() {
         this.posts = await axios.get(this.postsLocation)
-        this.postTitles = Object.keys(this.posts.data)
+        this.posts = this.posts.data  //  Clean-up extra data
+        this.postTitles = Object.keys(this.posts)
     }
 
     /*
@@ -39,7 +40,7 @@ export class PostRenderer extends Command {
      */
     exec(args) {
         if(args.length > 0)
-            return this.render.post(this.posts, this.postTitles, args[0])
+            return this.render.post(this.posts, args[0])
         return this.render.postList(this.postTitles)
     }
 
@@ -63,15 +64,20 @@ export class PostRenderer extends Command {
         /*
          * Render a single post
          */
-        post(posts, postTitles, name) {
-            //  Verify post name
-            for(var i = 0; i < postTitles.length; i++) {
-                if(name == postTitles[i]) {
-                    var post = "found"
-                    return post
-                }
+        post(posts, name) {
+            var res = posts[Object.keys(posts).find(key => key === String(name).toLowerCase())]
+            if(res !== undefined) {
+                var post = res.content
+
+                console.log(post)
+                // now do cleanup / processing
+                post.replace(/\\n/g, "<br/>")
+                // done
+                console.log(post)
+
+                return post
             }
-            return "Post not found"
+            return `Post '${name}' not found.`
         }
     }
 
