@@ -65,7 +65,7 @@ export class PostRenderer extends Command {
          * Render a single post
          */
         post(posts, name) {
-            var res = posts[Object.keys(posts).find(key => key === String(name).toLowerCase())]
+            var res = posts[name]
             if(res !== undefined) {
                 var post = res.content
 
