@@ -51,7 +51,7 @@ export class PrimeWheel extends Command {
             this.prime_wheel_reset()
             return "Prime wheel reset."
         }
-        return "Usage: primewheel start|stop|reset"
+        return "<span style=\"font-weight: bold;\">Usage:</span> primewheel start|stop|reset"
     }
 
     /*
@@ -81,6 +81,7 @@ export class PrimeWheel extends Command {
         this.ctx.clearRect(0, 0, this.width, this.height)
         this.last_prime = 2
         if(this.use_random_offset) this.set_offset()
+        console.log("Prime wheel reset")
     }
 
     /*
