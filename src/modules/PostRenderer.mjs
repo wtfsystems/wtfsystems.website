@@ -10,6 +10,7 @@
  */
 
 import axios from 'axios'
+import showdown from 'showdown'
 import { Command } from './Command.mjs'
 
 export class PostRenderer extends Command {
@@ -69,11 +70,10 @@ export class PostRenderer extends Command {
             if(res !== undefined) {
                 var post = res.content
 
-                console.log(post)
                 // now do cleanup / processing
-                post.replace(/\\n/g, "<br/>")
+                var converter = new showdown.Converter()
+                post = converter.makeHtml(post)
                 // done
-                console.log(post)
 
                 return post
             }
