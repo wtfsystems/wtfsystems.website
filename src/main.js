@@ -23,7 +23,11 @@ import { PostRenderer } from './modules/PostRenderer.mjs'
 import { PrimeWheel } from './modules/PrimeWheel.mjs'
 
 cmdProcessor.addModule(new PostRenderer('api/posts.json'))
-cmdProcessor.addModule(new PrimeWheel())
+cmdProcessor.addModule(new PrimeWheel({ 
+	canvas_name: 'animation_canvas',
+	font_color: '#ff4500', font_size: '32px', font_face: 'Arial',
+	spam: true, debug: true
+}))
 
 cmdProcessor.getModule('posts').getPosts()
 
@@ -36,5 +40,5 @@ Vue.use(AsyncComputed)
 Vue.component('WebTerm', WebTerm)
 
 new Vue({
-  el: '#app'
+	el: '#app'
 })

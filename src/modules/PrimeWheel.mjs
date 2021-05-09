@@ -14,25 +14,44 @@ export class PrimeWheel extends Command {
     /*
      * Initialize PrimeWheel.
      */
-    constructor() {
+    constructor(options) {
         super()
+
+        var options = options || {}
+
+        if(options.canvas_name === undefined)
+            throw new Error("PrimeWheel error: canvas_name undefined.")
+        this.canvas_name = options.canvas_name
+        if(options.font_color === undefined)
+            throw new Error("PrimeWheel error: font_color undefined.")
+        this.font_color = options.font_color
+        if(options.font_size === undefined)
+            throw new Error("PrimeWheel error: font_size undefined.")
+        this.font_size = options.font_size
+        if(options.font_face === undefined)
+            throw new Error("PrimeWheel error: font_face undefined.")
+        this.font_face = options.font_face
+
+        this.scale = options.scale || 4
+        this.interval = options.interval || 1
+        this.use_random_offset = options.use_random_offset || true
+        this.spam = options.spam || false
+        this.debug = options.debug || false
+        this.x_offset = options.x_offset || 0
+        this.y_offset = options.y_offset || 0
+
         this.canvas = document.getElementById(this.canvas_name)
         this.ctx = this.canvas.getContext("2d")
 
         this.canvas.width = this.canvas.clientWidth * this.scale
         this.canvas.height = this.canvas.clientHeight * this.scale
-
         this.width = this.ctx.canvas.width
         this.height = this.ctx.canvas.height
-
         this.center_x = this.width / 2
         this.center_y = this.height / 2
 
         this.last_prime = 2
-
-        this.x_offset = 0
-        this.y_offset = 0
-        this.animate_proc = null
+        this.animate_proc = false
     }
 
     /*
@@ -40,8 +59,8 @@ export class PrimeWheel extends Command {
      */
     exec(args) {
         if(String(args[0]).toLowerCase() === "start") {
-            this.prime_wheel_start()
-            return "Prime wheel started."
+            if(this.prime_wheel_start()) return "Prime wheel started."
+            return "Error starting prime wheel effect."
         }
         if(String(args[0]).toLowerCase() === "stop") {
             this.prime_wheel_stop()
@@ -81,14 +100,16 @@ export class PrimeWheel extends Command {
         this.ctx.clearRect(0, 0, this.width, this.height)
         this.last_prime = 2
         if(this.use_random_offset) this.set_offset()
-        console.log("Prime wheel reset")
+        if(this.debug) console.log("Prime wheel reset")
     }
 
     /*
      * Start the prime wheel.
      */
     prime_wheel_start() {
-        this.prime_wheel_reset()
+        if(this.animate_proc !== false) this.prime_wheel_stop()
+        else this.prime_wheel_reset()
+
         this.animate_proc = setInterval(() => {
             //  Prime number found, draw it using cartesian coordinates
             if(this.is_prime(this.last_prime)) {
@@ -105,11 +126,17 @@ export class PrimeWheel extends Command {
 
             //  Once the wheel reaches (1400 * scale) then reset
             if(this.last_prime > 1400 * this.scale) {
-                console.log("Resetting prime wheel effect")
+                if(this.debug) console.log("Auto resetting prime wheel effect")
                 this.prime_wheel_reset()
             }
         }, this.interval)
-        console.log("Prime wheel started")
+
+        if(this.animate_proc === false) {
+            if(this.debug) console.log("Error starting prime wheel effect")
+            return false
+        }
+        if(this.debug) console.log("Prime wheel started")
+        return true
     }
 
     /*
@@ -118,7 +145,8 @@ export class PrimeWheel extends Command {
     prime_wheel_stop() {
         this.prime_wheel_reset()
         clearInterval(this.animate_proc)
-        console.log("Prime wheel stopped")
+        this.animate_proc = false
+        if(this.debug) console.log("Prime wheel stopped")
     }
 
     /*
@@ -126,24 +154,4 @@ export class PrimeWheel extends Command {
      */
     command = "primewheel"
     description = "Prime Wheel Effect"
-
-    /*
-     * Config parameters.
-     */
-    /* Sets the font color */
-    font_color = "#ff4500"
-    /* Sets the font size */
-    font_size = "32px"
-    /* Sets the font face */
-    font_face = "Arial"
-    /* Set the scale factor for the wheel */
-    scale = 4
-    /* Timer interval to draw (milliseconds) */
-    interval = 1
-    /* ID of canvas to draw to */
-    canvas_name = "animation_canvas"
-    /* Use random offset */
-    use_random_offset = true
-    /* Spam console with prime numbers */
-    spam = true
 }
