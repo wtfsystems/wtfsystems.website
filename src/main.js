@@ -20,8 +20,13 @@ import AsyncComputed from 'vue-async-computed'
  */
 import cmdProcessor from './modules/TermCommands.mjs'
 import { PostRenderer } from './modules/PostRenderer.mjs'
+import { PrimeWheel } from './modules/PrimeWheel.mjs'
+
 cmdProcessor.addModule(new PostRenderer('api/posts.json'))
+cmdProcessor.addModule(new PrimeWheel())
+
 cmdProcessor.getModule('posts').getPosts()
+//cmdProcessor.getModule('primewheel').background_color = 'rgba(0, 0, 0, 0)'
 
 /*
  * Set up the Vue app.

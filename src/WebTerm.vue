@@ -81,7 +81,7 @@ export default {
     background: $term_bg_color;
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 99vw;
     height: 100vh;
     padding: 6px;
 }
