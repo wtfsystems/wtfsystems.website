@@ -105,7 +105,7 @@ export class PrimeWheel extends Command {
             //  Once the wheel reaches (1400 * scale) then reset
             if(this.last_prime > 1400 * this.scale) {
                 console.log("Resetting prime wheel effect")
-                this.reset()
+                this.prime_wheel_reset()
             }
         }, this.interval)
         console.log("Prime wheel started")
