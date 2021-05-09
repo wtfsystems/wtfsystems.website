@@ -142,10 +142,10 @@ class TermCommands {
      * Search by its command name.
      */
     getModule(cmd) {
-        for(var i = 0; i < this.commands.length; i++) {
-            if(this.commands[i].command === cmd) return this.commands[i]
-        }
-        throw new Error(`'getModule()' Error: Module '${cmd}' not found!`)
+        var res = this.commands.find(elm => elm.command === cmd)
+        if(res === undefined)
+            throw new Error(`'getModule()' Error: Module '${cmd}' not found!`)
+        return res
     }
 
     /* ************************************** */

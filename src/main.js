@@ -26,7 +26,6 @@ cmdProcessor.addModule(new PostRenderer('api/posts.json'))
 cmdProcessor.addModule(new PrimeWheel())
 
 cmdProcessor.getModule('posts').getPosts()
-//cmdProcessor.getModule('primewheel').background_color = 'rgba(0, 0, 0, 0)'
 
 /*
  * Set up the Vue app.

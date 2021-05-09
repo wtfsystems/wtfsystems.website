@@ -32,19 +32,26 @@ export class PrimeWheel extends Command {
 
         this.x_offset = 0
         this.y_offset = 0
-        this.set_offset()
         this.animate_proc = null
-
-        //  Clear the canvas
-        this.ctx.fillStyle = this.background_color
-        this.ctx.fillRect(0, 0, this.width, this.height)
     }
 
     /*
      * Process command.
      */
     exec(args) {
-        //
+        if(String(args[0]).toLowerCase() === "start") {
+            this.prime_wheel_start()
+            return "Prime wheel started."
+        }
+        if(String(args[0]).toLowerCase() === "stop") {
+            this.prime_wheel_stop()
+            return "Prime wheel stopped."
+        }
+        if(String(args[0]).toLowerCase() === "reset") {
+            this.reset()
+            return "Prime wheel reset."
+        }
+        return "Usage: primewheel start|stop|reset"
     }
 
     /*
@@ -71,79 +78,50 @@ export class PrimeWheel extends Command {
      * Resets the effect.
      */
     reset() {
-        this.ctx.fillStyle = this.background_color
-        this.ctx.fillRect(0, 0, this.width, this.height)
+        this.ctx.clearRect(0, 0, this.width, this.height)
         this.last_prime = 2
+        if(this.use_random_offset) this.set_offset()
     }
 
     /*
-     * Animation function
-     */
-    prime_wheel_animate() {
-        //  Prime number found, draw it using cartesian coordinates
-        if(is_prime(this.last_prime)) {
-            if(this.spam) console.log("Found prime: " + this.last_prime)
-            this.ctx.font = this.font_size + " " + this.font_face
-            this.ctx.fillStyle = this.font_color
-            this.ctx.fillText(
-                this.last_prime,
-                (this.center_x + this.x_offset) + (this.last_prime * Math.cos(this.last_prime)),
-                (this.center_y + this.y_offset) - (this.last_prime * Math.sin(this.last_prime))
-            )
-        }
-
-        this.last_prime++  //  Increment counter to check for next prime
-
-        //  Once the wheel reaches (1400 * scale) then reset
-        if(this.last_prime > 1400 * this.scale) {
-            console.log("Resetting prime wheel effect")
-            //  Change offset if enabled
-            if(this.use_random_offset) this.set_offset()
-            this.reset()
-        }
-    }
-
-    /*
-     * Function to start up the prime wheel
+     * Start the prime wheel.
      */
     prime_wheel_start() {
-        if(prime_wheel_get_cookie()) {
-            this.animate_proc = setInterval(function() { prime_wheel_animate(this) }, this.interval)
-            console.log("Running prime wheel effect")
-        } else {
-            var x = document.getElementById(this.canvas_name)
-            x.style.display = "none"
-        }
-    }
-
-    /*
-     * Function to toggle background on/off
-     */
-    prime_wheel_toggle() {
         var x = document.getElementById(this.canvas_name)
-        if (x.style.display === "none") {
-            //  If off turn on
-            x.style.display = "block"
-            this.animate_proc = setInterval(function() { prime_wheel_animate(this) }, this.interval)
-            console.log("Prime wheel toggeled on")
-        } else {
-            //  Otherwise turn off
-            x.style.display = "none"
-            clearInterval(this.animate_proc)
-            console.log("Prime wheel toggeled off")
-        }
+        x.style.display = "block"
+        this.reset()
+        this.animate_proc = setInterval(() => {
+            //  Prime number found, draw it using cartesian coordinates
+            if(this.is_prime(this.last_prime)) {
+                if(this.spam) console.log("Found prime: " + this.last_prime)
+                this.ctx.font = this.font_size + " " + this.font_face
+                this.ctx.fillStyle = this.font_color
+                this.ctx.fillText(this.last_prime,
+                    (this.center_x + this.x_offset) + (this.last_prime * Math.cos(this.last_prime)),
+                    (this.center_y + this.y_offset) - (this.last_prime * Math.sin(this.last_prime))
+                )
+            }
+
+            this.last_prime++  //  Increment counter to check for next prime
+
+            //  Once the wheel reaches (1400 * scale) then reset
+            if(this.last_prime > 1400 * this.scale) {
+                console.log("Resetting prime wheel effect")
+                this.reset()
+            }
+        }, this.interval)
+        console.log("Prime wheel started")
     }
 
     /*
-     * Render functions.
+     * Stop the prime wheel.
      */
-    render = {
-        /*
-         * Render.
-         */
-        something() {
-            //
-        }
+    prime_wheel_stop() {
+        this.reset()
+        var x = document.getElementById(this.canvas_name)
+        x.style.display = "none"
+        clearInterval(this.animate_proc)
+        console.log("Prime wheel stopped")
     }
 
     /*
@@ -155,11 +133,8 @@ export class PrimeWheel extends Command {
     /*
      * Config parameters.
      */
-    /* Sets the background color */
-    background_color = "rgba(0, 0, 0, 0)"
-    //background_color = "#FFFFFF"
     /* Sets the font color */
-    font_color = "#191970"
+    font_color = "#ff4500"
     /* Sets the font size */
     font_size = "32px"
     /* Sets the font face */
@@ -167,7 +142,7 @@ export class PrimeWheel extends Command {
     /* Set the scale factor for the wheel */
     scale = 4
     /* Timer interval to draw (milliseconds) */
-    interval = 5
+    interval = 1
     /* ID of canvas to draw to */
     canvas_name = "animation_canvas"
     /* Use random offset */

@@ -41,7 +41,7 @@ export class PostRenderer extends Command {
      */
     exec(args) {
         if(args.length > 0)
-            return this.render.post(this.posts, args[0])
+            return this.render.post(this.posts, String(args[0]).toLowerCase())
         return this.render.postList(this.postTitles)
     }
 
