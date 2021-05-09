@@ -48,7 +48,7 @@ export class PrimeWheel extends Command {
             return "Prime wheel stopped."
         }
         if(String(args[0]).toLowerCase() === "reset") {
-            this.reset()
+            this.prime_wheel_reset()
             return "Prime wheel reset."
         }
         return "Usage: primewheel start|stop|reset"
@@ -77,7 +77,7 @@ export class PrimeWheel extends Command {
     /*
      * Resets the effect.
      */
-    reset() {
+    prime_wheel_reset() {
         this.ctx.clearRect(0, 0, this.width, this.height)
         this.last_prime = 2
         if(this.use_random_offset) this.set_offset()
@@ -87,7 +87,7 @@ export class PrimeWheel extends Command {
      * Start the prime wheel.
      */
     prime_wheel_start() {
-        this.reset()
+        this.prime_wheel_reset()
         this.animate_proc = setInterval(() => {
             //  Prime number found, draw it using cartesian coordinates
             if(this.is_prime(this.last_prime)) {
@@ -115,7 +115,7 @@ export class PrimeWheel extends Command {
      * Stop the prime wheel.
      */
     prime_wheel_stop() {
-        this.reset()
+        this.prime_wheel_reset()
         clearInterval(this.animate_proc)
         console.log("Prime wheel stopped")
     }
