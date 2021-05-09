@@ -87,8 +87,6 @@ export class PrimeWheel extends Command {
      * Start the prime wheel.
      */
     prime_wheel_start() {
-        var x = document.getElementById(this.canvas_name)
-        x.style.display = "block"
         this.reset()
         this.animate_proc = setInterval(() => {
             //  Prime number found, draw it using cartesian coordinates
@@ -118,8 +116,6 @@ export class PrimeWheel extends Command {
      */
     prime_wheel_stop() {
         this.reset()
-        var x = document.getElementById(this.canvas_name)
-        x.style.display = "none"
         clearInterval(this.animate_proc)
         console.log("Prime wheel stopped")
     }
