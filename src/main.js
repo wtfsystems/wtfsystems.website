@@ -14,6 +14,9 @@
 import 'regenerator-runtime/runtime.js'
 import Vue from 'vue'
 import AsyncComputed from 'vue-async-computed'
+import Prism from 'prismjs'
+
+Prism.manual = true  //  Disable PrismJS's auto highlighting.
 
 /*
  * Set up the command processor and its modules.

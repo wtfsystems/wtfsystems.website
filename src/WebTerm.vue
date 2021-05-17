@@ -41,7 +41,7 @@ export default {
         //  Get data from input component
         processInput(inData) {
             let data = new Object()
-            var displayData = this.resolveCommand(inData)
+            let displayData = this.resolveCommand(inData)
             data.history = inData
             data.display = displayData
             this.output = data

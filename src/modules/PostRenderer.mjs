@@ -63,17 +63,134 @@ export class PostRenderer extends Command {
         },
 
         /*
-         * Render a single post
+         * Render a single post.
+         *
+         * The function will first find and extract any code bocks in the post.
+         * A lookup table is used to determine the proper language formatting.
+         * These blocks are then formatted with PrismJS.
+         * The entire post is then formatted with Showdown.
+         * After that, the formatted code blocks are reinserted into the post.
+         * The old code formatting blocks are then removed.
+         * Finally, the formatted post is returned.
          */
         post(posts, name) {
+            /*
+             * Language Lookup Table
+             * Use to cross reference the language names incase any changes
+             * Example:  c++ becomes cpp
+             * 
+             * See:
+             * https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers
+             * And:
+             * https://prismjs.com/#supported-languages
+             */
+            var langLookup = []
+
+            {let temp = new Object()
+            temp.old = "c++"
+            temp.new = "cpp"
+            langLookup.push(temp)}
+
+            {let temp = new Object()
+            temp.old = "python"
+            temp.new = "py"
+            langLookup.push(temp)}
+
+            {let temp = new Object()
+            temp.old = "javascript"
+            temp.new = "js"
+            langLookup.push(temp)}
+            /*
+             * End lookup table
+             */
+
             var res = posts[name]
             if(res !== undefined) {
                 var post = res.content
 
-                // now do cleanup / processing
-                var converter = new showdown.Converter()
+                ///////////////////////////////////////////////
+                //            PrismJS Highlighting           //
+                ///////////////////////////////////////////////
+                //  First, find start/end indices of the code blocks
+                const codeStartRx = /{% highlight.*/g
+                const codeEndRx = /{% endhighlight %}/g
+                var result, startIndices = [], endIndices = []
+                while((result = codeStartRx.exec(post)) !== null)
+                    startIndices.push(result.index)
+                while((result = codeEndRx.exec(post)) !== null)
+                    endIndices.push(result.index)
+
+                //  Sanity check
+                if((startIndices.length !== endIndices.length) || startIndices.length === 0) {
+                    //  Just do the showdown conversion and return
+                    let converter = new showdown.Converter()
+                    post = converter.makeHtml(post)
+                    return post
+                }
+
+                //  Capture the code blocks, format them, and store in result array
+                var formattedCode = []
+                for(var i = 0; i < startIndices.length; i++) {
+                    //  Get the text to replace
+                    let tempStr = post.substr(startIndices[i], endIndices[i] - startIndices[i])
+
+                    //  Determine code language to format as
+                    let oldCode = tempStr.match(/{% highlight.*%}/)[0]
+                    oldCode = oldCode.replace("{% highlight ", "").replace(" %}", "")
+                    let codeLang = langLookup.find((lang) => {
+                        if(lang.old == oldCode) return true
+                    }).new
+
+                    //  Fallback, use what was found (risky)
+                    if(codeLang === undefined) codeLang = oldCode
+
+                    //  Wipe the code block start tag
+                    tempStr = tempStr.substr(tempStr.indexOf("%}") + 2)
+
+                    //  Highlight with PrismJS
+                    tempStr = Prism.highlight(tempStr, Prism.languages[codeLang], codeLang)
+                    //  Add the code tags for nicer formatting
+                    tempStr = "<pre><code class=\"language-" + codeLang + "\"" + tempStr + "</code></pre>"
+                    //  Push to the formatted code array
+                    formattedCode.push(tempStr)
+                }
+                ///////////////////////////////////////////////
+
+                //  Use showdown to process markdown
+                let converter = new showdown.Converter()
                 post = converter.makeHtml(post)
-                // done
+
+                ///////////////////////////////////////////////
+                //              PrismJS Insertion            //
+                ///////////////////////////////////////////////
+                //  Indices recheck incase location changed from formatting
+                startIndices = []
+                endIndices = []
+                while((result = codeStartRx.exec(post)) !== null)
+                    startIndices.push(result.index)
+                while((result = codeEndRx.exec(post)) !== null)
+                    endIndices.push(result.index)
+                
+                //  Now go back and insert the formatted code
+                for(var i = 0; i < formattedCode.length; i++) {
+                    let tempStr = post.substr(startIndices[i], endIndices[i] - startIndices[i])
+                    tempStr = tempStr.substr(tempStr.indexOf("%}") + 2)
+                    post = post.replace(tempStr, formattedCode[i])
+
+                    //  We need to recalc these :(
+                    //  The positions change each time code is inserted.
+                    startIndices = []
+                    endIndices = []
+                    while((result = codeStartRx.exec(post)) !== null)
+                        startIndices.push(result.index)
+                    while((result = codeEndRx.exec(post)) !== null)
+                        endIndices.push(result.index)
+                }
+
+                //  Clean up the old highlighting
+                post = post.replace(/{% highlight.*%}/g, "")
+                post = post.replace(/{% endhighlight %}/g, "")
+                ///////////////////////////////////////////////
 
                 return post
             }
