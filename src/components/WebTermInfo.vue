@@ -38,14 +38,18 @@ export default {
 
 .term-info {
     display: inline;
-    font-family: $term_font_family;
-    font-size: $term_font_size;
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
     margin-bottom: 6px;
 }
 
 .time {
     background-color: $time_bg_color;
     color: $time_fg_color;
+    font-family: inherit;
+    font-size: inherit;
     padding: 4px;
     padding-bottom: 3px;
 }
@@ -53,6 +57,8 @@ export default {
 .user {
     background-color: $user_bg_color;
     color: $user_fg_color;
+    font-family: inherit;
+    font-size: inherit;
     padding: 4px;
     padding-bottom: 3px;
 }
@@ -60,6 +66,8 @@ export default {
 .site {
     background-color: $site_bg_color;
     color: $site_fg_color;
+    font-family: inherit;
+    font-size: inherit;
     padding: 4px;
     padding-bottom: 3px;
 }

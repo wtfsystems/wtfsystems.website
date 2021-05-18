@@ -28,11 +28,17 @@ export default {
 .term-display {
     display: flex;
     flex-direction: column;
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
 }
 
 .term-display::v-deep {
-    font-family: $term_font_family;
-    font-size: $term_font_size;
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
 }
 
 .term-display::v-deep a:link {

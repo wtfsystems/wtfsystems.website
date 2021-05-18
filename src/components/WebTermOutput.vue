@@ -54,6 +54,9 @@ export default {
 @import '../css/WebTerm.scss';
 
 .term-output {
-    color: $term_fg_color;
+    color: inherit;
+    background-color: inherit;
+    font-family: inherit;
+    font-size: inherit;
 }
 </style>

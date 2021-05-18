@@ -35,8 +35,10 @@ export default {
 .term-history {
     display: flex;
     flex-direction: column;
-    font-family: $term_font_family;
-    font-size: $term_font_size;
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
 }
 
 .prompt {

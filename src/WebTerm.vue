@@ -77,9 +77,12 @@ export default {
 @import './css/WebTerm.scss';
 
 #term-window {
-    color: $term_fg_color;
     display: flex;
     flex-direction: column;
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
     width: 99vw;
     height: 100vh;
     padding: 6px;
