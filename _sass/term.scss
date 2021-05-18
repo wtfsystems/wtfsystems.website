@@ -26,3 +26,20 @@ html, body {
     height: 100%;
     margin: 0 auto;
 }
+
+a:link {
+    color: #ffcc00;
+    text-decoration: underline dotted;
+}
+a:visited {
+    color: #ff7f50;
+    text-decoration: underline dotted;
+}
+a:hover {
+    color: #8f0f0f;
+    text-decoration: underline dotted;
+}
+a:active {
+    color: #ffcc00;
+    text-decoration: underline dotted;
+}

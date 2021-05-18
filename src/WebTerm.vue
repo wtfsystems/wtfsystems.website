@@ -87,4 +87,5 @@ export default {
     height: 100vh;
     padding: 6px;
 }
+
 </style>

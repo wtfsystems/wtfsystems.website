@@ -59,4 +59,5 @@ export default {
     font-family: inherit;
     font-size: inherit;
 }
+
 </style>

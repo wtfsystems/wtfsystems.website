@@ -41,20 +41,4 @@ export default {
     font-size: inherit;
 }
 
-.term-display::v-deep a:link {
-    color: $link_color;
-    text-decoration: underline dotted;
-}
-.term-display::v-deep a:visited {
-    color: $link_visited;
-    text-decoration: underline dotted;
-}
-.term-display::v-deep a:hover {
-    color: $link_hover;
-    text-decoration: underline dotted;
-}
-.term-display::v-deep a:active {
-    color: $link_active;
-    text-decoration: underline dotted;
-}
 </style>
