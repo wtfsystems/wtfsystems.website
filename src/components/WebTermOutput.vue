@@ -55,6 +55,5 @@ export default {
 
 .term-output {
     color: $term_fg_color;
-    background: $term_bg_color;
 }
 </style>

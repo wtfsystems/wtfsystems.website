@@ -108,7 +108,7 @@ export default {
 input[type=text] {
     width: 95vw;
     color: $term_fg_color;
-    background: $term_bg_color;
+    background: inherit;
     font-family: $term_font_family;
     font-size: $term_font_size;
     border: 0px;

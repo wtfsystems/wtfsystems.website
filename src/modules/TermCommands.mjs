@@ -215,6 +215,10 @@ class TermCommands {
             <br/><br/>
             <span style=\"font-weight: bold;\">Boilerplate:</span>
             <a href=\"https://github.com/Splode/jekyll-vue-template\">jekyll-vue-template</a>
+            <br/>
+            <a href=\"https://github.com/wtfsystems/wtfsystems.github.io\">GitHub Source</a>
+            <br/>
+            <a href=\"https://github.com/wtfsystems/wtfsystems.github.io/blob/master/LICENSE.md\">LICENSE</a>
             `
         },
 

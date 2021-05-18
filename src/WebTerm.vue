@@ -78,7 +78,6 @@ export default {
 
 #term-window {
     color: $term_fg_color;
-    background: $term_bg_color;
     display: flex;
     flex-direction: column;
     width: 99vw;

@@ -24,6 +24,36 @@ export class PostRenderer extends Command {
         this.posts = null
         this.postTitles = null
         this.postsLocation = location
+
+        /*
+         * Language Lookup Table
+         * Use to cross reference the language names incase any changes
+         * Example:  c++ becomes cpp
+         * 
+         * See:
+         * https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers
+         * And:
+         * https://prismjs.com/#supported-languages
+         */
+        this.langLookup = []
+
+        {let temp = new Object()
+        temp.old = "c++"
+        temp.new = "cpp"
+        this.langLookup.push(temp)}
+
+        {let temp = new Object()
+        temp.old = "python"
+        temp.new = "py"
+        this.langLookup.push(temp)}
+
+        {let temp = new Object()
+        temp.old = "javascript"
+        temp.new = "js"
+        this.langLookup.push(temp)}
+        /*
+         * End lookup table
+         */
     }
 
     /*
@@ -41,7 +71,7 @@ export class PostRenderer extends Command {
      */
     exec(args) {
         if(args.length > 0)
-            return this.render.post(this.posts, String(args[0]).toLowerCase())
+            return this.render.post(String(args[0]).toLowerCase(), this.posts, this.langLookup)
         return this.render.postList(this.postTitles)
     }
 
@@ -73,37 +103,7 @@ export class PostRenderer extends Command {
          * The old code formatting blocks are then removed.
          * Finally, the formatted post is returned.
          */
-        post(posts, name) {
-            /*
-             * Language Lookup Table
-             * Use to cross reference the language names incase any changes
-             * Example:  c++ becomes cpp
-             * 
-             * See:
-             * https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers
-             * And:
-             * https://prismjs.com/#supported-languages
-             */
-            var langLookup = []
-
-            {let temp = new Object()
-            temp.old = "c++"
-            temp.new = "cpp"
-            langLookup.push(temp)}
-
-            {let temp = new Object()
-            temp.old = "python"
-            temp.new = "py"
-            langLookup.push(temp)}
-
-            {let temp = new Object()
-            temp.old = "javascript"
-            temp.new = "js"
-            langLookup.push(temp)}
-            /*
-             * End lookup table
-             */
-
+        post(name, posts, langLookup) {
             var res = posts[name]
             if(res !== undefined) {
                 var post = res.content
@@ -140,13 +140,11 @@ export class PostRenderer extends Command {
                     let codeLang = langLookup.find((lang) => {
                         if(lang.old == oldCode) return true
                     }).new
-
                     //  Fallback, use what was found (risky)
                     if(codeLang === undefined) codeLang = oldCode
 
                     //  Wipe the code block start tag
                     tempStr = tempStr.substr(tempStr.indexOf("%}") + 2)
-
                     //  Highlight with PrismJS
                     tempStr = Prism.highlight(tempStr, Prism.languages[codeLang], codeLang)
                     //  Add the code tags for nicer formatting
@@ -162,29 +160,21 @@ export class PostRenderer extends Command {
 
                 ///////////////////////////////////////////////
                 //              PrismJS Insertion            //
-                ///////////////////////////////////////////////
-                //  Indices recheck incase location changed from formatting
-                startIndices = []
-                endIndices = []
-                while((result = codeStartRx.exec(post)) !== null)
-                    startIndices.push(result.index)
-                while((result = codeEndRx.exec(post)) !== null)
-                    endIndices.push(result.index)
-                
+                ///////////////////////////////////////////////                
                 //  Now go back and insert the formatted code
                 for(var i = 0; i < formattedCode.length; i++) {
-                    let tempStr = post.substr(startIndices[i], endIndices[i] - startIndices[i])
-                    tempStr = tempStr.substr(tempStr.indexOf("%}") + 2)
-                    post = post.replace(tempStr, formattedCode[i])
-
-                    //  We need to recalc these :(
-                    //  The positions change each time code is inserted.
+                    //  Calc indices each step, as position will change
                     startIndices = []
                     endIndices = []
                     while((result = codeStartRx.exec(post)) !== null)
                         startIndices.push(result.index)
                     while((result = codeEndRx.exec(post)) !== null)
                         endIndices.push(result.index)
+
+                    //  Do the replacement
+                    let tempStr = post.substr(startIndices[i], endIndices[i] - startIndices[i])
+                    tempStr = tempStr.substr(tempStr.indexOf("%}") + 2)
+                    post = post.replace(tempStr, formattedCode[i])
                 }
 
                 //  Clean up the old highlighting
