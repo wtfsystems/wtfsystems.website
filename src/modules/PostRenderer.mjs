@@ -148,7 +148,7 @@ export class PostRenderer extends Command {
                     //  Highlight with PrismJS
                     tempStr = Prism.highlight(tempStr, Prism.languages[codeLang], codeLang)
                     //  Add the code tags for nicer formatting
-                    tempStr = "<pre><code class=\"language-" + codeLang + "\"" + tempStr + "</code></pre>"
+                    tempStr = "<pre class=\"line-numbers\"><code class=\"language-" + codeLang + "\">" + tempStr + "</code></pre>"
                     //  Push to the formatted code array
                     formattedCode.push(tempStr)
                 }
