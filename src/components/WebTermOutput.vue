@@ -51,7 +51,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../css/WebTerm.scss';
 
 .term-output {
     color: inherit;
