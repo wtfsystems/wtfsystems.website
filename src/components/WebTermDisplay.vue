@@ -23,21 +23,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../css/WebTerm.scss';
 
 .term-display {
     display: flex;
     flex-direction: column;
-    background-color: inherit;
-    color: inherit;
-    font-family: inherit;
-    font-size: inherit;
+    @include termstyle();
 }
 
-.term-display::v-deep {
-    background-color: inherit;
-    color: inherit;
-    font-family: inherit;
-    font-size: inherit;
-}
+.term-display::v-deep { @include termstyle(); }
 
 </style>

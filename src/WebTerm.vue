@@ -74,14 +74,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './css/WebTerm.scss';
 
 #term-window {
+    @include termstyle();
     display: flex;
     flex-direction: column;
-    background-color: inherit;
-    color: inherit;
-    font-family: inherit;
-    font-size: inherit;
     width: 99vw;
     height: 100vh;
     padding: 6px;

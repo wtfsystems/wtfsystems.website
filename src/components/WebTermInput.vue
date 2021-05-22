@@ -10,7 +10,7 @@
     <div id="terminal-input">
         <WebTermInfo :key="infokey" v-bind:userip="userip"></WebTermInfo>
         <span id="input-area">
-            <span class="prompt">$</span>
+            <span class="prompt">$</span>&nbsp;
             <form @submit="onSubmit">
             <input type="text" name="input-box" id="input-box" v-model="userinput" @keyup.up="historyUp" @keyup.down="historyDown" autofocus/>
             </form>
@@ -85,38 +85,20 @@ export default {
 @import '../css/WebTerm.scss';
 
 #terminal-input {
+    @include termstyle();
     display: flex;
     flex-direction: column;
-    background-color: inherit;
-    color: inherit;
-    font-family: inherit;
-    font-size: inherit;
 }
 
 #input-area {
+    @include termstyle();
     display: flex;
     flex-direction: row;
-    background-color: inherit;
-    color: inherit;
-    font-family: inherit;
-    font-size: inherit;
-}
-
-.prompt {
-    display: inline;
-    background-color: inherit;
-    color: $term_pr_color;
-    font-family: inherit;
-    font-size: inherit;
-    margin-right: 3px;
 }
 
 input[type=text] {
+    @include termstyle();
     width: 95vw;
-    background-color: inherit;
-    color: inherit;
-    font-family: inherit;
-    font-size: inherit;
     border: 0 none;
     padding: 0px;
     outline: none;

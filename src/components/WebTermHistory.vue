@@ -33,16 +33,8 @@ export default {
 @import '../css/WebTerm.scss';
 
 .term-history {
+    @include termstyle();
     display: flex;
     flex-direction: column;
-    background-color: inherit;
-    color: inherit;
-    font-family: inherit;
-    font-size: inherit;
-}
-
-.prompt {
-    display: inline;
-    color: $term_pr_color;
 }
 </style>

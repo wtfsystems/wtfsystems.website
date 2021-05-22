@@ -37,38 +37,14 @@ export default {
 @import '../css/WebTerm.scss';
 
 .term-info {
+    @include termstyle();
     display: inline;
-    background-color: inherit;
-    color: inherit;
-    font-family: inherit;
-    font-size: inherit;
     margin-bottom: 6px;
 }
 
-.time {
-    background-color: $time_bg_color;
-    color: $time_fg_color;
-    font-family: inherit;
-    font-size: inherit;
-    padding: 4px;
-    padding-bottom: 3px;
-}
+.time { @include infobar($time_bg_color, $time_fg_color); }
 
-.user {
-    background-color: $user_bg_color;
-    color: $user_fg_color;
-    font-family: inherit;
-    font-size: inherit;
-    padding: 4px;
-    padding-bottom: 3px;
-}
+.user { @include infobar($user_bg_color, $user_fg_color); }
 
-.site {
-    background-color: $site_bg_color;
-    color: $site_fg_color;
-    font-family: inherit;
-    font-size: inherit;
-    padding: 4px;
-    padding-bottom: 3px;
-}
+.site { @include infobar($site_bg_color, $site_fg_color); }
 </style>
