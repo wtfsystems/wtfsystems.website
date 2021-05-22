@@ -105,7 +105,7 @@ export default {
 .prompt {
     display: inline;
     background-color: inherit;
-    color: $term_cr_color;
+    color: $term_pr_color;
     font-family: inherit;
     font-size: inherit;
     margin-right: 3px;
@@ -117,7 +117,9 @@ input[type=text] {
     color: inherit;
     font-family: inherit;
     font-size: inherit;
-    border: 0px;
+    border: 0 none;
+    padding: 0px;
     outline: none;
+    caret-color: $term_cr_color;
 }
 </style>

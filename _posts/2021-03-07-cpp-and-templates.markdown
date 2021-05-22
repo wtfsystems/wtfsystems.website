@@ -26,7 +26,7 @@ Basically function templates so that you can do typical get/sets on the componen
 template <typename T> const const_component_container<T> get_components(void) const;
 {% endhighlight %}
 
-When building the object file, it will need the defenitions for every component type.  Sure the ones included in the engine could be defined, but if a custom component is created then it needs to be rebuilt.
+When building the object file, it will need the definitions for every component type.  Sure the ones included in the engine could be defined, but if a custom component is created then it needs to be rebuilt.
 
 I'm thinking my solution here may need to be that the Entity Manager is kept defined in the header, and compiled during the build.  Going to think about the structure here and what to do a bit more.
 
