@@ -86,12 +86,11 @@ export class PostRenderer extends Command {
             var numColumns = 2, c = 1
 
             var list = "<style>"
-            list += "table, th, td { border: 1px solid white; }"
-            list += "th, td { padding: 8px; }"
-            list += "td { text-align: center; }"
+            list += ".posttable th, .posttable td { border: 1px solid white; padding: 8px; }"
+            list += ".posttable td { text-align: center; }"
             list += "</style>"
 
-            list += "<table>"
+            list += "<table class=\"posttable\">"
             list += "<tr><th colspan=\"" + numColumns + "\">Posts</th></tr>"
 
             for(var i = 0; i < postTitles.length; i++) {
