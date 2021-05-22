@@ -96,6 +96,8 @@ export default {
     flex-direction: row;
 }
 
+.prompt { @include prompt(); }
+
 input[type=text] {
     @include termstyle();
     width: 95vw;

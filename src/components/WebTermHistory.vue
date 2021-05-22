@@ -37,4 +37,6 @@ export default {
     display: flex;
     flex-direction: column;
 }
+
+.prompt { @include prompt(); }
 </style>

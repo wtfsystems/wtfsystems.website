@@ -6,6 +6,11 @@
  * See LICENSE.md for copyright information.
  * 
  * Sass variables for terminal specific color settings.
+ * Also contains some global formatting.
+ * Vue specific formatting is in its individual files.
+ *
+ * Note that background color and font settings are
+ * inherited from the HTML body tag.
  */
 
 /*
@@ -25,17 +30,6 @@ $site_bg_color: #87cefa;
 $site_fg_color: #696969;
 
 /*
- * Prompt element formatting
- */
-.prompt {
-    display: inline;
-    background-color: inherit;
-    color: $term_pr_color;
-    font-family: inherit;
-    font-size: inherit;
-}
-
-/*
  * Mixin to inherit formatting
  */
 @mixin termstyle() {
@@ -46,13 +40,24 @@ $site_fg_color: #696969;
 }
 
 /*
- * Mixin for info bar formatting
+ * Prompt element formatting
+ */
+@mixin prompt() {
+    display: inline;
+    background-color: inherit;
+    color: $term_pr_color;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/*
+ * Info bar formatting
  */
 @mixin infobar($bg_color, $fg_color) {
     background-color: $bg_color;
     color: $fg_color;
     font-family: inherit;
     font-size: inherit;
-    padding: 4px;
-    padding-bottom: 3px;
+    padding: 5px;
+    padding-bottom: 2px;
 }

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: vueapp
 ---
 
 <web-term></web-term>

@@ -83,12 +83,29 @@ export class PostRenderer extends Command {
          * Render the post list.
          */
         postList(postTitles) {
-            var list = "POSTS<br/><br/>"
+            var numColumns = 2, c = 1
+
+            var list = "<style>"
+            list += "table, th, td { border: 1px solid white; }"
+            list += "th, td { padding: 8px; }"
+            list += "td { text-align: center; }"
+            list += "</style>"
+
+            list += "<table>"
+            list += "<tr><th colspan=\"" + numColumns + "\">Posts</th></tr>"
 
             for(var i = 0; i < postTitles.length; i++) {
-                list += postTitles[i] + "<br/>"
+                if(c == 1) list += "<tr>"
+                list += "<td>" + postTitles[i] + "</td>"
+                if((i == postTitles.length - 1) && (c < numColumns)) list += "</tr>"
+                if(c >= numColumns) {
+                    list += "</tr>"
+                    c = 1
+                }
+                c++
             }
 
+            list += "</table>"
             return list
         },
 
