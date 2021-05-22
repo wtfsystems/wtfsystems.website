@@ -43,6 +43,6 @@ export default {
 
 .prompt {
     display: inline;
-    color: $term_cr_color;
+    color: $term_pr_color;
 }
 </style>
