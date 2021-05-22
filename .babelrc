@@ -3,7 +3,6 @@
   "plugins": [
     ["prismjs", {
         "languages": ["cpp"],
-        "plugins": ["line-numbers"],
         "theme": "okaidia",
         "css": true
     }]

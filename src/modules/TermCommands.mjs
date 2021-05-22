@@ -114,11 +114,15 @@ class TermCommands {
      */
     processCommand(cmd) {
         if(String(cmd[0]).toLowerCase() === "help") return this.render.help(this.commands)
-        for(var i = 0; i < this.commands.length; i++) {
+        const res = this.commands.find(elm => elm.command === String(cmd[0]).toLowerCase())
+        if(res === undefined)
+            return "<span style=\"font-weight: bold;\">command not found:</span> " + cmd[0]
+        return res.exec(cmd.splice(1, cmd.length))
+        /*for(var i = 0; i < this.commands.length; i++) {
             if(String(cmd[0]).toLowerCase() === this.commands[i].command)
                 return this.commands[i].exec(cmd.splice(1, cmd.length))
         }
-        return "<span style=\"font-weight: bold;\">command not found:</span> " + cmd[0]
+        return "<span style=\"font-weight: bold;\">command not found:</span> " + cmd[0]*/
     }
 
     /*
@@ -142,7 +146,7 @@ class TermCommands {
      * Search by its command name.
      */
     getModule(cmd) {
-        var res = this.commands.find(elm => elm.command === cmd)
+        const res = this.commands.find(elm => elm.command === cmd)
         if(res === undefined)
             throw new Error(`'getModule()' Error: Module '${cmd}' not found!`)
         return res
@@ -207,18 +211,31 @@ class TermCommands {
         about() {
             return `
             <span style=\"font-weight: bold;\">Created with:</span><br/><br/>
-            <span style=\"height: 120px; max-height: 120px;\">
-                <a href=\"https://vuejs.org\"><img src=\"assets/img/512px-Vue.js_Logo_2.svg.png\" style=\"max-height: 120px;\"/></a>
-                <a href=\"https://jekyllrb.com\"><img src=\"assets/img/jekyll-logo-dark-transparent.png\" style=\"max-height: 120px;\"/></a>
-                <a href=\"https://pages.github.com\"><img src=\"assets/img/octocat.png\" style=\"max-height: 120px;\"/></a>
+            <span>
+                <a href=\"https://vuejs.org\"><img src=\"assets/img/512px-Vue.js_Logo_2.svg.png\" style=\"max-height: 65px;\"/></a>
+                <a href=\"https://prismjs.com\"><img src=\"assets/img/prism.svg\" style=\"max-height: 65px;\"/></a>
+                <a href=\"https://jekyllrb.com\"><img src=\"assets/img/jekyll-logo-dark-transparent.png\" style=\"max-height: 65px;\"/></a>
+                <a href=\"https://pages.github.com\"><img src=\"assets/img/octocat.png\" style=\"max-height: 65px;\"/></a>
+                <br/>
+                <a href=\"https://axios-http.com/\"><img src=\"assets/img/axios.svg\" style=\"max-height: 50px;\"/></a>
+                &nbsp;
+                <a href=\"http://showdownjs.com/\"><img src=\"assets/img/showdown.png\" style=\"max-height: 40px;\"/></a>
             </span>
             <br/><br/>
-            <span style=\"font-weight: bold;\">Boilerplate:</span>
-            <a href=\"https://github.com/Splode/jekyll-vue-template\">jekyll-vue-template</a>
-            <br/>
-            <a href=\"https://github.com/wtfsystems/wtfsystems.github.io\">GitHub Source</a>
-            <br/>
-            <a href=\"https://github.com/wtfsystems/wtfsystems.github.io/blob/master/LICENSE.md\">LICENSE</a>
+            <table style=\"border: 0px;\">
+                <tr>
+                <td><span style=\"font-weight: bold;\">Boilerplate:</span></td>
+                <td><a href=\"https://github.com/Splode/jekyll-vue-template\">jekyll-vue-template</a></td>
+                </tr>
+                <tr>
+                <td><span style=\"font-weight: bold;\">Source code:</span></td>
+                <td><a href=\"https://github.com/wtfsystems/wtfsystems.github.io\">GitHub</a></td>
+                </tr>
+                <tr>
+                <td><span style=\"font-weight: bold;\">License:</span></td>
+                <td><a href=\"https://github.com/wtfsystems/wtfsystems.github.io/blob/master/LICENSE.md\">MIT</a></td>
+                </tr>
+            </table>
             `
         },
 

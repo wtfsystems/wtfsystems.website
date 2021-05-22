@@ -1,14 +1,20 @@
 /*
+ * Web Terminal Interface
  *
+ * Filename:  WebTerm.scss
+ * By:  Matthew Evans
+ * See LICENSE.md for copyright information.
+ * 
+ * Sass variables for terminal specific color settings.
  */
 
 /*
- * Terminal colors
+ * Input prompt
  */
 $term_cr_color: #ffcc00;
 
 /*
- * Info bar colors
+ * Info bar
  */
 $time_bg_color: #dcdcdc;
 $time_fg_color: #000000;
