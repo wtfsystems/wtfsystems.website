@@ -54,6 +54,13 @@ export class PostRenderer extends Command {
         /*
          * End lookup table
          */
+
+        //  Inject styling for posts table
+        let style = document.createElement("style")
+        style.innerHTML = `
+            .posttable th, .posttable td { border: 1px solid white; padding: 8px; }
+            .posttable td { text-align: center; }`
+        document.body.appendChild(style)
     }
 
     /*
@@ -85,12 +92,7 @@ export class PostRenderer extends Command {
         postList(postTitles) {
             var numColumns = 2, c = 1
 
-            var list = "<style>"
-            list += ".posttable th, .posttable td { border: 1px solid white; padding: 8px; }"
-            list += ".posttable td { text-align: center; }"
-            list += "</style>"
-
-            list += "<table class=\"posttable\">"
+            var list = "<table class=\"posttable\">"
             list += "<tr><th colspan=\"" + numColumns + "\">Posts</th></tr>"
 
             for(var i = 0; i < postTitles.length; i++) {
