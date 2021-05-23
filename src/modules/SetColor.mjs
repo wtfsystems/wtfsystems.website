@@ -72,7 +72,7 @@ export class SetColor extends Command {
      * Test a string for valid rgb format
      */
     testRgb(str) {
-        return /^(rgb|hsl)?\((-?\d+%?[,\s]+){2,3}\s*[\d\.]+%?\)$/i.test(str)
+        return /^(rgb|hsl)a?\((-?\d+%?[,\s]+){2,3}\s*[\d\.]+%?\)$/i.test(str)
     }
 
     /*
@@ -134,11 +134,10 @@ export class SetColor extends Command {
             <tr><td><span style=\"font-weight: bold;\">reset</span></td><td>Reset colors to the default values.</td><tr/>
             <tr><td><span style=\"font-weight: bold;\">background</span></td><td>Set the background color.</td><tr/>
             <tr><td><span style=\"font-weight: bold;\">font</span></td><td>Set the font color.</td><tr/>
-            <tr><td colspan=\"2\">
-            Colors must be passed as: hex #nnnnnn or rgb(n,n,n) or hsl(n,n,n)
-            <br/>
+            </table><br/>
+            Colors must be passed as: hex #nnnnnn or rgb(n,n,n) or hsl(n,n,n)<br/>
+            Alpha values as rgba or hsla are allowed.<br/>
             Example: <span style=\"font-weight: bold;\">setcolor font #ffffff</span>
-            </td></tr></table>
             `
         }
     }
