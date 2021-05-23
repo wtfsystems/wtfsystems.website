@@ -53,7 +53,7 @@ export class SetColor extends Command {
             return "Error loading color settings!"
         }
         if(String(args[0]).toLowerCase() === "background") {
-            if((args[1] !== undefined) && (this.testHex(args[1]) || this.testRgb(args[1]))) {
+            if(this.testHex(args[1]) || this.testRgb(args[1])) {
                 this.setBgColor(args[1])
                 return "Background color set."
             }
