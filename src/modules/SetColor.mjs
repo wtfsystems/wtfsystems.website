@@ -20,6 +20,14 @@ export class SetColor extends Command {
         this.defaultBgColor = document.body.style.backgroundColor
         this.defaultFgColor = document.body.style.color
 
+        //  Regex tests for hex and rgb(a)/hsl(a)
+        this.testHex = (str) => { return /^#[0-9a-f]{3,4}([0-9a-f]{3,4})?$/i.test(str) }
+        this.testRgb = (str) => { return /^(rgb|hsl)a?\((-?\d+%?[,\s]+){2,3}\s*[\d\.]+%?\)$/i.test(str) }
+
+        //  Setting colors
+        this.setBgColor = (color) => { document.body.style.backgroundColor = color }
+        this.setFontColor = (color) => { document.body.style.color = color }
+
         this.loadColors()
     }
 
@@ -59,34 +67,6 @@ export class SetColor extends Command {
             return "Incorrect color code. " + errMsg
         }
         return "Incorrect usage. " + errMsg
-    }
-
-    /*
-     * Test a string for valid hex format
-     */
-    testHex(str) {
-        return /^#[0-9a-f]{3,4}([0-9a-f]{3,4})?$/i.test(str)
-    }
-
-    /*
-     * Test a string for valid rgb format
-     */
-    testRgb(str) {
-        return /^(rgb|hsl)a?\((-?\d+%?[,\s]+){2,3}\s*[\d\.]+%?\)$/i.test(str)
-    }
-
-    /*
-     * Set the background color
-     */
-    setBgColor(color) {
-        document.body.style.backgroundColor = color
-    }
-
-    /*
-     * Set the font color
-     */
-    setFontColor(color) {
-        document.body.style.color = color
     }
 
     /*
