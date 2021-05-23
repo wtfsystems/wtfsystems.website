@@ -24,6 +24,7 @@ Prism.manual = true  //  Disable PrismJS's auto highlighting.
 import cmdProcessor from './modules/TermCommands.mjs'
 import { PostRenderer } from './modules/PostRenderer.mjs'
 import { PrimeWheel } from './modules/PrimeWheel.mjs'
+import { SetColor } from './modules/SetColor.mjs'
 
 cmdProcessor.addModule(new PostRenderer('api/posts.json'))
 cmdProcessor.addModule(new PrimeWheel({ 
@@ -31,6 +32,7 @@ cmdProcessor.addModule(new PrimeWheel({
 	font_color: '#ff4500', font_size: '32px', font_face: 'Arial',
 	spam: true, debug: true
 }))
+cmdProcessor.addModule(new SetColor())
 
 cmdProcessor.getModule('posts').getPosts()
 

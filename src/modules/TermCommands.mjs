@@ -52,40 +52,6 @@ class TermCommands {
         this.commands.push(temp)}
 
         /*
-         * printenv command
-         */
-        {let temp = new Object()
-        temp.command = "printenv"
-        temp.description = "Print all or part of environment?"
-        temp.exec = (cmd) => {
-            return "These are not the environment variables that you are looking for"
-        }
-        this.commands.push(temp)}
-
-        /*
-         * systemctl command
-         */
-        {let temp = new Object()
-        temp.command = "systemctl"
-        temp.description = "Control the systemd system and service manager?"
-        temp.exec = (cmd) => {
-            return this.render.systemctl(cmd)
-        }
-        this.commands.push(temp)}
-
-        /*
-         * sudo command
-         */
-        {let temp = new Object()
-        temp.command = "sudo"
-        temp.description = "Execute a command as another user?"
-        temp.exec = (cmd) => {
-            if(cmd.length > 0) return this.processCommand(cmd)
-            return "<span style=\"font-weight: bold;\">SPAWN MORE OVERLORDS!!!</span>"
-        }
-        this.commands.push(temp)}
-
-        /*
          * jabbascript command
          */
         {let temp = new Object()
@@ -118,11 +84,6 @@ class TermCommands {
         if(res === undefined)
             return "<span style=\"font-weight: bold;\">command not found:</span> " + cmd[0]
         return res.exec(cmd.splice(1, cmd.length))
-        /*for(var i = 0; i < this.commands.length; i++) {
-            if(String(cmd[0]).toLowerCase() === this.commands[i].command)
-                return this.commands[i].exec(cmd.splice(1, cmd.length))
-        }
-        return "<span style=\"font-weight: bold;\">command not found:</span> " + cmd[0]*/
     }
 
     /*
@@ -237,17 +198,6 @@ class TermCommands {
                 </tr>
             </table>
             `
-        },
-
-        /*
-         * systemctl render function
-         */
-        systemctl(cmd) {
-            var usage = "Usage: systemctl [start/stop] [service name]"
-            if(typeof cmd[1] === 'undefined') return usage
-            if(String(cmd[0]).toLowerCase() === "start") return "Starting service " + cmd[1] + "..."
-            if(String(cmd[0]).toLowerCase() === "stop") return "Stopping service " + cmd[1] + "..."
-            return usage
         },
 
         /*
