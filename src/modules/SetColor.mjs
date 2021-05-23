@@ -65,7 +65,7 @@ export class SetColor extends Command {
      * Test a string for valid hex format
      */
     testHex(str) {
-        return /^#[0-9a-f]{3}([0-9a-f]{3})?$/i.test(str)
+        return /^#[0-9a-f]{3,4}([0-9a-f]{3,4})?$/i.test(str)
     }
 
     /*
@@ -136,7 +136,7 @@ export class SetColor extends Command {
             <tr><td><span style=\"font-weight: bold;\">font</span></td><td>Set the font color.</td><tr/>
             </table><br/>
             Colors must be passed as: hex #nnnnnn or rgb(n,n,n) or hsl(n,n,n)<br/>
-            Alpha values as rgba or hsla are allowed.<br/>
+            Alpha values as an additional hex value or rgba/hsla are allowed.<br/>
             Example: <span style=\"font-weight: bold;\">setcolor font #ffffff</span>
             `
         }
