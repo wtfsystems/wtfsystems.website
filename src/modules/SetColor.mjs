@@ -129,11 +129,11 @@ export class SetColor extends Command {
             Usage: setcolor background [color]|font [color]|save|load|reset
             <br/><br/>
             <table>
-            <tr><td><span style=\"font-weight: bold;\">save:</span></td><td>Save settings.  This will load on next visit.</td><tr/>
-            <tr><td><span style=\"font-weight: bold;\">load:</span></td><td>Load settings manually.</td><tr/>
-            <tr><td><span style=\"font-weight: bold;\">reset:</span></td><td>Reset colors to the default values.</td><tr/>
-            <tr><td><span style=\"font-weight: bold;\">background:</span></td><td>Set the background color.</td><tr/>
-            <tr><td><span style=\"font-weight: bold;\">font:</span></td><td>Set the font color.</td><tr/>
+            <tr><td><span style=\"font-weight: bold;\">save</span></td><td>Save settings.  This will load on next visit.</td><tr/>
+            <tr><td><span style=\"font-weight: bold;\">load</span></td><td>Load settings manually.</td><tr/>
+            <tr><td><span style=\"font-weight: bold;\">reset</span></td><td>Reset colors to the default values.</td><tr/>
+            <tr><td><span style=\"font-weight: bold;\">background</span></td><td>Set the background color.</td><tr/>
+            <tr><td><span style=\"font-weight: bold;\">font</span></td><td>Set the font color.</td><tr/>
             <tr><td colspan=\"2\">
             Colors must be passed as: hex #nnnnnn or rgb(n,n,n) or hsl(n,n,n)
             <br/>
