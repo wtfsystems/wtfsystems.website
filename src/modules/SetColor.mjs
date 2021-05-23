@@ -1,7 +1,7 @@
 /*
  * Web Terminal Interface
  *
- * Filename:  PrimeWheel.mjs
+ * Filename:  SetColor.mjs
  * By:  Matthew Evans
  * See LICENSE.md for copyright information.
  * 
