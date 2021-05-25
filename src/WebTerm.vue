@@ -4,6 +4,8 @@
     Filename:  WebTerm.vue
     By:  Matthew Evans
     See LICENSE.md for copyright information.
+
+    Main Vue App component.
 -->
 
 <template>

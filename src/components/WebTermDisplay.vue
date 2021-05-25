@@ -4,6 +4,8 @@
     Filename:  WebTermDisplay.vue
     By:  Matthew Evans
     See LICENSE.md for copyright information.
+
+    Displays the HTML result of running a command.
 -->
 
 <template>

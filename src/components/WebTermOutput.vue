@@ -4,6 +4,8 @@
     Filename:  WebTermOutput.vue
     By:  Matthew Evans
     See LICENSE.md for copyright information.
+
+    Output component for storing history/dispay pairs.
 -->
 
 <template>

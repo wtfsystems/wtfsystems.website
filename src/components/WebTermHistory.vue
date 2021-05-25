@@ -4,6 +4,8 @@
     Filename:  WebTermHistory.vue
     By:  Matthew Evans
     See LICENSE.md for copyright information.
+
+    Displays the command history.
 -->
 
 <template>

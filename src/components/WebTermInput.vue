@@ -4,6 +4,8 @@
     Filename:  WebTermInput.vue
     By:  Matthew Evans
     See LICENSE.md for copyright information.
+
+    Input box for capturing commands.
 -->
 
 <template>

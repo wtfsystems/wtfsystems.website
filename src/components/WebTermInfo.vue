@@ -4,6 +4,8 @@
     Filename:  WebTermInfo.vue
     By:  Matthew Evans
     See LICENSE.md for copyright information.
+
+    Info bar above terminal input.
 -->
 
 <template>
