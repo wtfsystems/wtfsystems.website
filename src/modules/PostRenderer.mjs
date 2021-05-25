@@ -158,8 +158,9 @@ export class PostRenderer extends Command {
                     let codeLang = langLookup.find((lang) => {
                         if(lang.old == oldCode) return true
                     }).new
-                    //  Fallback, use what was found (risky)
+                    //  Fallback: use what was found - cpp if that doesn't work
                     if(codeLang === undefined) codeLang = oldCode
+                    if(Prism.languages[codeLang] === undefined) codeLang = "cpp"
 
                     //  Wipe the code block start tag
                     tempStr = tempStr.substr(tempStr.indexOf("%}") + 2)
