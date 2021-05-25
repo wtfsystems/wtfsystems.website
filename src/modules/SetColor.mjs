@@ -66,7 +66,7 @@ export class SetColor extends Command {
             }
             return "Incorrect color code. " + errMsg
         }
-        return "Incorrect usage. " + errMsg
+        return this.render.help()
     }
 
     /*
