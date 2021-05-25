@@ -52,6 +52,10 @@ export class PrimeWheel extends Command {
 
         this.last_prime = 2
         this.animate_proc = false
+
+        //  Regex tests for hex and rgb(a)/hsl(a)
+        this.testHex = (str) => { return /^#[0-9a-f]{3,4}([0-9a-f]{3,4})?$/i.test(str) }
+        this.testRgb = (str) => { return /^(rgb|hsl)a?\((-?\d+%?[,\s]+){2,3}\s*[\d\.]+%?\)$/i.test(str) }
     }
 
     /*
@@ -69,6 +73,13 @@ export class PrimeWheel extends Command {
         if(String(args[0]).toLowerCase() === "reset") {
             this.prime_wheel_reset()
             return "Prime wheel reset."
+        }
+        if(String(args[0]).toLowerCase() === "color") {
+            if(this.testHex(args[1]) || this.testRgb(args[1])) {
+                this.font_color = args[1]
+                return "Color set."
+            }
+            return "Incorrect color code."
         }
         return "<span style=\"font-weight: bold;\">Usage:</span> primewheel start|stop|reset"
     }
