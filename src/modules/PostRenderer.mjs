@@ -200,6 +200,8 @@ export class PostRenderer extends Command {
                 post = post.replace(/{% endhighlight %}/g, "")
                 ///////////////////////////////////////////////
 
+                //  Add title and return formatted post
+                post = "<h2>" + res.title + "</h2>" + post
                 return post
             }
             return `Post '${name}' not found.`
