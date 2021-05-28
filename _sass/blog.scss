@@ -13,17 +13,25 @@ html, body {
     color: #eeffff;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: medium;
+    display: flex;
+    flex-direction: column;
 }
 
 #content {
-    float: left;
+    justify-content: left;
 }
 
 #contactinfo {
-    float: right;
+    justify-content: right;
     text-align: right;
     display: flex;
     flex-direction: row;
+}
+
+#jsnav {
+    justify-content: right;
+    text-align: right;
+    font-size: smaller;
 }
 
 .titleformat {

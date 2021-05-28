@@ -12,14 +12,16 @@
 
 <body>
     <a href="/blog.html">Back</a>
-    <br/><br/><br/>
-    <h2 class="titleformat">{{ page.title }}</h2>
-    <span class="dateformat">{{ page.date | date_to_string }}</span>
-    <br/><br/>
+    <br/>&nbsp;<br/>&nbsp;<br/>
+    <div>
+        <h2 class="titleformat">{{ page.title }}</h2>
+        <span class="dateformat">{{ page.date | date_to_string }}</span>
+    </div>
+    <br/>
     {{ content }}
-    <br/><br/>
+    <br/>&nbsp;<br/>
     <a href="/blog.html">Back</a>
-    <br/><br/><hr/><br/><br/>
+    <br/>
     {% include myinfo.html %}
 </body>
 
