@@ -1,5 +1,10 @@
-.highlight table td { padding: 5px; }
-.highlight table pre { margin: 0; }
+.highlight {
+  background-color: #272822;
+  font-size: large;
+  padding: 3px;
+  padding-left: 12px;
+  overflow: auto;
+}
 .highlight .cm {
   color: #999988;
   font-style: italic;
@@ -26,11 +31,11 @@
   background-color: #e3d2d2;
 }
 .highlight .gd {
-  color: #000000;
+  color: #52ccda;
   background-color: #ffdddd;
 }
 .highlight .ge {
-  color: #000000;
+  color: #52ccda;
   font-style: italic;
 }
 .highlight .gr {
@@ -40,7 +45,7 @@
   color: #999999;
 }
 .highlight .gi {
-  color: #000000;
+  color: #52ccda;
   background-color: #ddffdd;
 }
 .highlight .go {
@@ -59,23 +64,23 @@
   color: #aa0000;
 }
 .highlight .kc {
-  color: #000000;
+  color: #52ccda;
   font-weight: bold;
 }
 .highlight .kd {
-  color: #000000;
+  color: #52ccda;
   font-weight: bold;
 }
 .highlight .kn {
-  color: #000000;
+  color: #52ccda;
   font-weight: bold;
 }
 .highlight .kp {
-  color: #000000;
+  color: #52ccda;
   font-weight: bold;
 }
 .highlight .kr {
-  color: #000000;
+  color: #52ccda;
   font-weight: bold;
 }
 .highlight .kt {
@@ -83,7 +88,7 @@
   font-weight: bold;
 }
 .highlight .k, .highlight .kv {
-  color: #000000;
+  color: #52ccda;
   font-weight: bold;
 }
 .highlight .mf {
@@ -105,7 +110,7 @@
   color: #009999;
 }
 .highlight .sa {
-  color: #000000;
+  color: #52ccda;
   font-weight: bold;
 }
 .highlight .sb {
@@ -198,16 +203,13 @@
   color: #008080;
 }
 .highlight .ow {
-  color: #000000;
+  color: #52ccda;
   font-weight: bold;
 }
 .highlight .o {
-  color: #000000;
+  color: #52ccda;
   font-weight: bold;
 }
 .highlight .w {
   color: #bbbbbb;
-}
-.highlight {
-  background-color: #ffffe0;
 }

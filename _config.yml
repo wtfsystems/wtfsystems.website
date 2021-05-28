@@ -11,8 +11,8 @@ gist:
   noscript: false
 markdown: kramdown
 kramdown:
-  math_engine: mathjax
   syntax_highlighter: rouge
+highlighter: rouge
 plugins:
   - jekyll-feed
 sass:
@@ -36,4 +36,3 @@ exclude:
   - LICENSE.md
   - LICENSE
   - CNAME
-  - _posts

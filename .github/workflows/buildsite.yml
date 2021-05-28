@@ -39,7 +39,6 @@ jobs:
         echo '.babelrc' >> .gitignore
         echo 'LICENSE' >> .gitignore
         echo 'LICENSE.md' >> .gitignore
-        echo 'README.md' >> .gitignore
         echo 'package-lock.json' >> .gitignore
         echo 'package.json' >> .gitignore
         echo 'webpack.config.babel.js' >> .gitignore

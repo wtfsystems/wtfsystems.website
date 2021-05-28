@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ site.title }}</title>
+
+    <link rel="stylesheet" href="/assets/css/blog.css">
+</head>
+
+<body>
+    <a href="/blog.html">Back</a>
+    <br/><br/><br/>
+    <h2 class="titleformat">{{ page.title }}</h2>
+    <span class="dateformat">{{ page.date | date_to_string }}</span>
+    <br/><br/>
+    {{ content }}
+    <br/><br/>
+    <a href="/blog.html">Back</a>
+    <br/><br/><hr/><br/><br/>
+    {% include myinfo.html %}
+</body>
+
+</html>

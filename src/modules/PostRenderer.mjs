@@ -174,7 +174,7 @@ export class PostRenderer extends Command {
                 ///////////////////////////////////////////////
 
                 //  Use showdown to process markdown
-                let converter = new showdown.Converter()
+                const converter = new showdown.Converter()
                 post = converter.makeHtml(post)
 
                 ///////////////////////////////////////////////
@@ -202,8 +202,9 @@ export class PostRenderer extends Command {
                 ///////////////////////////////////////////////
 
                 //  Add title and return formatted post
-                post = "<h2>" + res.title + "</h2>" + post
-                return post
+                let headerStr = "<h2>" + res.title + "</h2>"
+                headerStr += "<span style=\"font-size: smaller\">" + new Date(res.date).toDateString() + "</span><hr/>"
+                return headerStr + post
             }
             return `Post '${name}' not found.`
         }

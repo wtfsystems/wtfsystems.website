@@ -13,3 +13,5 @@ node_modules/
 .misc
 .npm
 browser-sync.js
+
+_drafts/
