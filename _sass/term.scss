@@ -31,6 +31,12 @@ html, body {
     margin: 0 auto;
 }
 
+#htmlnav {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
 a:link {
     color: #ffcc00;
     text-decoration: underline dotted;
@@ -46,9 +52,4 @@ a:hover {
 a:active {
     color: #ffcc00;
     text-decoration: underline dotted;
-}
-
-#htmlnav {
-    position: fixed;
-    float: right;
 }
