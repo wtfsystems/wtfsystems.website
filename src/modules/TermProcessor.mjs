@@ -1,7 +1,7 @@
 /*
  * Web Terminal Interface
  *
- * Filename:  TermCommands.mjs
+ * Filename:  TermProcessor.mjs
  * By:  Matthew Evans
  * See LICENSE.md for copyright information.
  * 
@@ -12,7 +12,7 @@
 
 import { Command } from './Command.mjs'
 
-class TermCommands {
+class TermProcessor {
 
     /*
      * Fill the commands array with default commands.
@@ -95,7 +95,7 @@ class TermCommands {
             throw new Error("'addModule()' Error: Not an instance of Command.")
         if(obj.command === "error" || obj.description === "error")
             throw new Error("'addModule()' Error: Command or description parameters not defined.")
-        for(var i = 0; i < this.commands.length; i++) {
+        for(let i = 0; i < this.commands.length; i++) {
             if(this.commands[i].command === obj.command)
                 throw new Error(`'addModule()' Error: Command '${obj.command}' already exists.`)
         }
@@ -128,7 +128,7 @@ class TermCommands {
             var help = "<table style=\"border: 0px;\">"
             help += "<tr><th style=\"text-align: left;\">Command</th>"
             help += "<th>&nbsp;&nbsp;&nbsp;</th><th>Description</th></tr>"
-            for(var i = 0; i < commands.length; i++) {
+            for(let i = 0; i < commands.length; i++) {
                 help += "<tr>"
                 help += "<td><span style=\"font-weight: bold;\">" + commands[i].command + "</span></td>"
                 help += "<td>&nbsp;&nbsp;&nbsp;</td>"
@@ -149,7 +149,7 @@ class TermCommands {
             <h3>Welcome to my website!</h3>
             <span style=\"display: flex; flex-direction: row\">
                 <span>
-                    <img style=\"border-radius: 50%; width: 240px;\" src=\"assets/img/me.png\"/>
+                    <img style=\"border-radius: 50%; width: 160px;\" src=\"assets/img/me.png\"/>
                 </span>
                 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                 <span style=\"display: flex; flex-direction: column; line-height: 2;\">
@@ -213,4 +213,4 @@ class TermCommands {
     }
 }
 
-export default new TermCommands()
+export default new TermProcessor()

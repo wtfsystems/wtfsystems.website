@@ -21,7 +21,7 @@ Prism.manual = true  //  Disable PrismJS's auto highlighting.
 /*
  * Set up the command processor and its modules.
  */
-import cmdProcessor from './modules/TermCommands.mjs'
+import cmdProcessor from './modules/TermProcessor.mjs'
 import { PostRenderer } from './modules/PostRenderer.mjs'
 import { PrimeWheel } from './modules/PrimeWheel.mjs'
 import { SetColor } from './modules/SetColor.mjs'

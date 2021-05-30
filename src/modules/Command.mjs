@@ -5,7 +5,7 @@
  * By:  Matthew Evans
  * See LICENSE.md for copyright information.
  * 
- * Command abstract base class.
+ * Command interface class.
  * Used to create a new command module to load into the TermCommands.
  */
 
@@ -21,6 +21,7 @@ export class Command {
 
     /*
      * Exec function to define what the command runs.
+     * Override this.
      */
     exec(args) {
         throw new Error("Method 'exec()' must be implemented.")

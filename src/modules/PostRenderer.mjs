@@ -22,7 +22,7 @@ export class PostRenderer extends Command {
         if(location == null)
             throw new Error("'PostRenderer' Error: Must set a posts location.")
         this.posts = null
-        this.postTitles = null
+        this.postTitles = []
         this.postsLocation = location
 
         /*
@@ -70,7 +70,16 @@ export class PostRenderer extends Command {
     async getPosts() {
         this.posts = await axios.get(this.postsLocation)
         this.posts = this.posts.data  //  Clean-up extra data
-        this.postTitles = Object.keys(this.posts)
+
+        //  Build list of post titles
+        for(let key in this.posts) {
+            let temp = new Object()
+            temp.name = this.posts[key].basename
+            temp.date = this.posts[key].date
+            this.postTitles.push(temp)
+        }
+        //  Sort so newest first
+        this.postTitles = this.postTitles.sort((a, b) => a.date < b.date)
     }
 
     /*
@@ -95,9 +104,9 @@ export class PostRenderer extends Command {
             var list = "<table class=\"posttable\">"
             list += "<tr><th colspan=\"" + numColumns + "\">Posts</th></tr>"
 
-            for(var i = 0; i < postTitles.length; i++) {
+            for(let i = 0; i < postTitles.length; i++) {
                 if(c == 1) list += "<tr>"
-                list += "<td>" + postTitles[i] + "</td>"
+                list += "<td>" + postTitles[i].name + "</td>"
                 if((i == postTitles.length - 1) && (c < numColumns)) list += "</tr>"
                 if(c >= numColumns) {
                     list += "</tr>"
@@ -148,7 +157,7 @@ export class PostRenderer extends Command {
 
                 //  Capture the code blocks, format them, and store in result array
                 var formattedCode = []
-                for(var i = 0; i < startIndices.length; i++) {
+                for(let i = 0; i < startIndices.length; i++) {
                     //  Get the text to replace
                     let tempStr = post.substr(startIndices[i], endIndices[i] - startIndices[i])
 
@@ -181,7 +190,7 @@ export class PostRenderer extends Command {
                 //              PrismJS Insertion            //
                 ///////////////////////////////////////////////                
                 //  Now go back and insert the formatted code
-                for(var i = 0; i < formattedCode.length; i++) {
+                for(let i = 0; i < formattedCode.length; i++) {
                     //  Calc indices each step, as position will change
                     startIndices = []
                     endIndices = []
