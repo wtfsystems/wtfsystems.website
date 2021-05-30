@@ -134,6 +134,8 @@ export class PostRenderer extends Command {
             var res = posts[name]
             if(res !== undefined) {
                 var post = res.content
+                var headerStr = "<h2>" + res.title + "</h2>"
+                headerStr += "<span style=\"font-size: smaller\">" + new Date(res.date).toDateString() + "</span><hr/>"
 
                 ///////////////////////////////////////////////
                 //            PrismJS Highlighting           //
@@ -152,7 +154,7 @@ export class PostRenderer extends Command {
                     //  Just do the showdown conversion and return
                     let converter = new showdown.Converter()
                     post = converter.makeHtml(post)
-                    return post
+                    return headerStr + post
                 }
 
                 //  Capture the code blocks, format them, and store in result array
@@ -211,8 +213,6 @@ export class PostRenderer extends Command {
                 ///////////////////////////////////////////////
 
                 //  Add title and return formatted post
-                let headerStr = "<h2>" + res.title + "</h2>"
-                headerStr += "<span style=\"font-size: smaller\">" + new Date(res.date).toDateString() + "</span><hr/>"
                 return headerStr + post
             }
             return `Post '${name}' not found.`
