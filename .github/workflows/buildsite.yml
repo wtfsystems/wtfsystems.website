@@ -29,7 +29,7 @@ jobs:
     - name: Build JSON
       run: |
         mkdir api
-        npx m2j _posts/*.markdown -c -o api/posts.json
+        npx m2j _posts/*.md -c -o api/posts.json
 
     - name: Modify gitignore
       run: |
