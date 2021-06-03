@@ -8,6 +8,7 @@
  * Prime Wheel Effect command.
  */
 
+import termRenderer from './TermRenderer.mjs'
 import { Command } from './Command.mjs'
 
 export class PrimeWheel extends Command {

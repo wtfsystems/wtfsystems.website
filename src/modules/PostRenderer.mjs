@@ -56,11 +56,17 @@ export class PostRenderer extends Command {
          */
 
         //  Inject styling for posts table
-        let style = document.createElement("style")
+        {let style = document.createElement("style")
         style.innerHTML = `
             .posttable th, .posttable td { border: 1px solid white; padding: 8px; }
             .posttable td { text-align: center; }`
-        document.body.appendChild(style)
+        document.body.appendChild(style)}
+
+        //  Inject styling for posts body
+        {let style = document.createElement("style")
+        style.innerHTML = `
+            .postbody { width: clamp(45ch, 50%, 75ch); }`
+        document.body.appendChild(style)}
     }
 
     /*
@@ -135,7 +141,9 @@ export class PostRenderer extends Command {
             if(res !== undefined) {
                 var post = res.content
                 var headerStr = "<h2>" + res.title + "</h2>"
-                headerStr += "<span style=\"font-size: smaller\">" + new Date(res.date).toDateString() + "</span><hr/>"
+                headerStr += "<span style=\"font-size: smaller\">" + new Date(res.date).toDateString() + "</span>"
+                headerStr += "<div class=\"postbody\"><hr/>"
+                var footerStr = "</div>"
 
                 ///////////////////////////////////////////////
                 //            PrismJS Highlighting           //
@@ -154,7 +162,7 @@ export class PostRenderer extends Command {
                     //  Just do the showdown conversion and return
                     let converter = new showdown.Converter()
                     post = converter.makeHtml(post)
-                    return headerStr + post
+                    return headerStr + post + footerStr
                 }
 
                 //  Capture the code blocks, format them, and store in result array
@@ -207,13 +215,13 @@ export class PostRenderer extends Command {
                     post = post.replace(tempStr, formattedCode[i])
                 }
 
-                //  Clean up the old highlighting
-                post = post.replace(/{% highlight.*%}/g, "")
-                post = post.replace(/{% endhighlight %}/g, "")
+                //  Clean up the old highlighting & restart postbody div
+                post = post.replace(/{% highlight.*%}/g, "</div>")
+                post = post.replace(/{% endhighlight %}/g, "<div class=\"postbody\">")
                 ///////////////////////////////////////////////
 
                 //  Add title and return formatted post
-                return headerStr + post
+                return headerStr + post + footerStr
             }
             return `Post '${name}' not found.`
         }
