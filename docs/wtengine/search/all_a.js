@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['joystick_5fcheck_167',['joystick_check',['../classwte_1_1input__flags.html#afbe34011f5e2905cf9faffaa5ae4307d',1,'wte::input_flags']]],
-  ['joystick_5ftoggle_168',['joystick_toggle',['../classwte_1_1input__flags.html#ac92d99d9b229902a4256e5c53c2ab7d5',1,'wte::input_flags']]]
+  ['keyboard_5fbind_166',['keyboard_bind',['../classwte_1_1input__map.html#a4d44136397c985b6772c1b4f49e75dad',1,'wte::input_map']]]
 ];

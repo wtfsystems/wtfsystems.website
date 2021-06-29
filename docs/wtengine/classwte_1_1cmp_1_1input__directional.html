@@ -88,10 +88,10 @@ Inheritance diagram for wte::cmp::input_directional:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a33ec8f53c942e6589308ce559b074df3"><td class="memItemLeft" align="right" valign="top"><a id="a33ec8f53c942e6589308ce559b074df3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1cmp_1_1input__directional.html#a33ec8f53c942e6589308ce559b074df3">input_directional</a> (const std::size_t ib, void func_a(const <a class="el" href="namespacewte.html#abf2544b3056d60f0182109d89eab289a">entity_id</a> &amp;, const float &amp;, <a class="el" href="classwte_1_1mgr_1_1entity__manager.html">mgr::entity_manager</a> &amp;, <a class="el" href="classwte_1_1mgr_1_1message__manager.html">mgr::message_manager</a> &amp;, const int64_t &amp;), void func_b(const <a class="el" href="namespacewte.html#abf2544b3056d60f0182109d89eab289a">entity_id</a> &amp;, <a class="el" href="classwte_1_1mgr_1_1entity__manager.html">mgr::entity_manager</a> &amp;, <a class="el" href="classwte_1_1mgr_1_1message__manager.html">mgr::message_manager</a> &amp;, const int64_t &amp;))</td></tr>
-<tr class="memdesc:a33ec8f53c942e6589308ce559b074df3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input Directional constructor. <br /></td></tr>
-<tr class="separator:a33ec8f53c942e6589308ce559b074df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3cedfaf4590fdbf88463a8c36221d02"><td class="memItemLeft" align="right" valign="top"><a id="aa3cedfaf4590fdbf88463a8c36221d02"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1cmp_1_1input__directional.html#aa3cedfaf4590fdbf88463a8c36221d02">input_directional</a> (const std::size_t ib, std::function&lt; void(const <a class="el" href="namespacewte.html#abf2544b3056d60f0182109d89eab289a">entity_id</a> &amp;, const float &amp;)&gt; func_a, std::function&lt; void(const <a class="el" href="namespacewte.html#abf2544b3056d60f0182109d89eab289a">entity_id</a> &amp;)&gt; func_b)</td></tr>
+<tr class="memdesc:aa3cedfaf4590fdbf88463a8c36221d02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input Directional constructor. <br /></td></tr>
+<tr class="separator:aa3cedfaf4590fdbf88463a8c36221d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cc408c1f7e27008e7b4445ae6f737c4"><td class="memItemLeft" align="right" valign="top"><a id="a1cc408c1f7e27008e7b4445ae6f737c4"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1cmp_1_1input__directional.html#a1cc408c1f7e27008e7b4445ae6f737c4">~input_directional</a> ()</td></tr>
 <tr class="memdesc:a1cc408c1f7e27008e7b4445ae6f737c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input Directional destructor. <br /></td></tr>
@@ -99,12 +99,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8c9b11af401e66ce28d494a53d3e583f"><td class="memItemLeft" align="right" valign="top">const std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1cmp_1_1input__directional.html#a8c9b11af401e66ce28d494a53d3e583f">get_bind</a> (void) const</td></tr>
 <tr class="memdesc:a8c9b11af401e66ce28d494a53d3e583f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the joystick bounded to this component.  <a href="classwte_1_1cmp_1_1input__directional.html#a8c9b11af401e66ce28d494a53d3e583f">More...</a><br /></td></tr>
 <tr class="separator:a8c9b11af401e66ce28d494a53d3e583f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a154145fd44315b265be12de77ad24e44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1cmp_1_1input__directional.html#a154145fd44315b265be12de77ad24e44">on_set</a> (const <a class="el" href="namespacewte.html#abf2544b3056d60f0182109d89eab289a">entity_id</a> &amp;e_id, const float &amp;rad, <a class="el" href="classwte_1_1mgr_1_1entity__manager.html">mgr::entity_manager</a> &amp;world, <a class="el" href="classwte_1_1mgr_1_1message__manager.html">mgr::message_manager</a> &amp;messages, const int64_t &amp;current_time)</td></tr>
-<tr class="memdesc:a154145fd44315b265be12de77ad24e44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the joystick direction set function.  <a href="classwte_1_1cmp_1_1input__directional.html#a154145fd44315b265be12de77ad24e44">More...</a><br /></td></tr>
-<tr class="separator:a154145fd44315b265be12de77ad24e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2f57d25a4d8088212080e60011d8681"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1cmp_1_1input__directional.html#ab2f57d25a4d8088212080e60011d8681">on_unset</a> (const <a class="el" href="namespacewte.html#abf2544b3056d60f0182109d89eab289a">entity_id</a> &amp;e_id, <a class="el" href="classwte_1_1mgr_1_1entity__manager.html">mgr::entity_manager</a> &amp;world, <a class="el" href="classwte_1_1mgr_1_1message__manager.html">mgr::message_manager</a> &amp;messages, const int64_t &amp;current_time)</td></tr>
-<tr class="memdesc:ab2f57d25a4d8088212080e60011d8681"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the joystick direction unset function.  <a href="classwte_1_1cmp_1_1input__directional.html#ab2f57d25a4d8088212080e60011d8681">More...</a><br /></td></tr>
-<tr class="separator:ab2f57d25a4d8088212080e60011d8681"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5d3ede460fa94ee22d7c7614264a57d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1cmp_1_1input__directional.html#ad5d3ede460fa94ee22d7c7614264a57d">on_set</a> (const <a class="el" href="namespacewte.html#abf2544b3056d60f0182109d89eab289a">entity_id</a> &amp;e_id, const float &amp;rad)</td></tr>
+<tr class="memdesc:ad5d3ede460fa94ee22d7c7614264a57d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the joystick direction set function.  <a href="classwte_1_1cmp_1_1input__directional.html#ad5d3ede460fa94ee22d7c7614264a57d">More...</a><br /></td></tr>
+<tr class="separator:ad5d3ede460fa94ee22d7c7614264a57d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d6c37a6fed5ea7c32fc04dd8a70a7db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1cmp_1_1input__directional.html#a2d6c37a6fed5ea7c32fc04dd8a70a7db">on_unset</a> (const <a class="el" href="namespacewte.html#abf2544b3056d60f0182109d89eab289a">entity_id</a> &amp;e_id)</td></tr>
+<tr class="memdesc:a2d6c37a6fed5ea7c32fc04dd8a70a7db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the joystick direction unset function.  <a href="classwte_1_1cmp_1_1input__directional.html#a2d6c37a6fed5ea7c32fc04dd8a70a7db">More...</a><br /></td></tr>
+<tr class="separator:a2d6c37a6fed5ea7c32fc04dd8a70a7db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classwte_1_1cmp_1_1component"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwte_1_1cmp_1_1component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classwte_1_1cmp_1_1component.html">wte::cmp::component</a></td></tr>
 <tr class="memitem:a25b3f7c1a717222f3157a905694d2a9c inherit pub_methods_classwte_1_1cmp_1_1component"><td class="memItemLeft" align="right" valign="top"><a id="a25b3f7c1a717222f3157a905694d2a9c"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1cmp_1_1component.html#a25b3f7c1a717222f3157a905694d2a9c">~component</a> ()</td></tr>
@@ -152,8 +152,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a154145fd44315b265be12de77ad24e44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a154145fd44315b265be12de77ad24e44">&#9670;&nbsp;</a></span>on_set()</h2>
+<a id="ad5d3ede460fa94ee22d7c7614264a57d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5d3ede460fa94ee22d7c7614264a57d">&#9670;&nbsp;</a></span>on_set()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -168,25 +168,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const float &amp;&#160;</td>
-          <td class="paramname"><em>rad</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classwte_1_1mgr_1_1entity__manager.html">mgr::entity_manager</a> &amp;&#160;</td>
-          <td class="paramname"><em>world</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classwte_1_1mgr_1_1message__manager.html">mgr::message_manager</a> &amp;&#160;</td>
-          <td class="paramname"><em>messages</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int64_t &amp;&#160;</td>
-          <td class="paramname"><em>current_time</em>&#160;</td>
+          <td class="paramname"><em>rad</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -201,17 +183,14 @@ Additional Inherited Members</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">e_id</td><td>Entity ID </td></tr>
     <tr><td class="paramname">rad</td><td>Direction of input in radians. </td></tr>
-    <tr><td class="paramname">world</td><td>Reference to the entity manager. </td></tr>
-    <tr><td class="paramname">messages</td><td>Reference to the message manager. </td></tr>
-    <tr><td class="paramname">current_time</td><td>Current engine time. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ab2f57d25a4d8088212080e60011d8681"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2f57d25a4d8088212080e60011d8681">&#9670;&nbsp;</a></span>on_unset()</h2>
+<a id="a2d6c37a6fed5ea7c32fc04dd8a70a7db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d6c37a6fed5ea7c32fc04dd8a70a7db">&#9670;&nbsp;</a></span>on_unset()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -220,30 +199,8 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">void wte::cmp::input_directional::on_unset </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespacewte.html#abf2544b3056d60f0182109d89eab289a">entity_id</a> &amp;&#160;</td>
-          <td class="paramname"><em>e_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>e_id</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classwte_1_1mgr_1_1entity__manager.html">mgr::entity_manager</a> &amp;&#160;</td>
-          <td class="paramname"><em>world</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classwte_1_1mgr_1_1message__manager.html">mgr::message_manager</a> &amp;&#160;</td>
-          <td class="paramname"><em>messages</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int64_t &amp;&#160;</td>
-          <td class="paramname"><em>current_time</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -252,9 +209,6 @@ Additional Inherited Members</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">e_id</td><td>Entity ID </td></tr>
-    <tr><td class="paramname">world</td><td>Reference to the entity manager. </td></tr>
-    <tr><td class="paramname">messages</td><td>Reference to the message manager. </td></tr>
-    <tr><td class="paramname">current_time</td><td>Current engine time. </td></tr>
   </table>
   </dd>
 </dl>
@@ -267,7 +221,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 27 2021 16:53:42 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Mon Jun 28 2021 23:37:55 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -60,9 +60,14 @@ export default {
     asyncComputed: {
         //  Get user's IP address
         async getIP() {
-            const res = await axios.get("https://www.cloudflare.com/cdn-cgi/trace")
-            const ipRegex = /[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}/
-            return res.data.match(ipRegex)[0]
+            try {
+                const res = await axios.get("https://www.cloudflare.com/cdn-cgi/trace")
+                const ipRegex = /[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}/
+                if(res.data.match(ipRegex)[0] !== undefined) return res.data.match(ipRegex)[0]
+            } catch(err) {
+                return "127.0.0.1"
+            }
+            return "127.0.0.1"
         }
     },
     //  Display on page load

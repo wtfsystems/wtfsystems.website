@@ -11,7 +11,7 @@
 
 class TermRenderer {
 
-    canvas_name = "animation_canvas"
+    canvas_name = "termrenderer_canvas"
 
     /*
      * Set up the TermRenderer
