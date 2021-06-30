@@ -13,5 +13,10 @@ var searchData=
   ['alert_12',['alert',['../classwte_1_1alert.html',1,'wte']]],
   ['animate_13',['animate',['../classwte_1_1sys_1_1animate.html',1,'wte::sys']]],
   ['animator_14',['animator',['../classwte_1_1cmp_1_1animator.html#a52b42de6fd33678549ec75da9d9d41a5',1,'wte::cmp::animator::animator()'],['../classwte_1_1cmp_1_1animator.html',1,'wte::cmp::animator']]],
-  ['audio_15',['audio',['../classwte_1_1mgr_1_1audio.html',1,'wte::mgr']]]
+  ['audio_15',['audio',['../classwte_1_1mgr_1_1audio.html',1,'wte::mgr']]],
+  ['audio_5fde_5finit_16',['audio_de_init',['../classwte_1_1mgr_1_1interface.html#a6f8bc4104566c219a0f53f0ba43438d9',1,'wte::mgr::interface']]],
+  ['audio_5fget_5fvolume_17',['audio_get_volume',['../classwte_1_1mgr_1_1interface.html#a03943e25301ee40db4bc27fe4a065919',1,'wte::mgr::interface']]],
+  ['audio_5finit_18',['audio_init',['../classwte_1_1mgr_1_1interface.html#af64a12708d4016dd94c70af37242e182',1,'wte::mgr::interface']]],
+  ['audio_5fprocess_5fmessages_19',['audio_process_messages',['../classwte_1_1mgr_1_1interface.html#ad32727e3c2c502e158473efd1e50e066',1,'wte::mgr::interface']]],
+  ['audio_5fset_5fvolume_20',['audio_set_volume',['../classwte_1_1mgr_1_1interface.html#a4365219608d9c55bf5354034f2e5c1c4',1,'wte::mgr::interface']]]
 ];
