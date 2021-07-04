@@ -372,7 +372,6 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Read the value of a component by type for an entity. </p>
-<p>Note that calling this for a component that does not exist will cause the program to fail. If there is a chance it does not exist, call <a class="el" href="classwte_1_1mgr_1_1entities.html#acd50971602bd13ec2d6644c380812d96" title="Check if an entity has a component by type.">has_component()</a> first.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>Component type. </td></tr>
@@ -385,7 +384,13 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Return the component or nullptr if not found. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Return the component. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classwte_1_1wte__exception.html" title="Throws an internal engine exception.">wte_exception</a></td><td>Component not found. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -488,6 +493,12 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns a constant container of components based by entity ID. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classwte_1_1wte__exception.html" title="Throws an internal engine exception.">wte_exception</a></td><td>Entity does not exist. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -557,7 +568,13 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Entity name string. Empty string if not found. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Entity name string. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classwte_1_1wte__exception.html" title="Throws an internal engine exception.">wte_exception</a></td><td>Entity does not exist. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -663,7 +680,6 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Set the value of a component by type for an entity. </p>
-<p>Note that calling this for a component that does not exist will cause the program to fail. If there is a chance it does not exist, call <a class="el" href="classwte_1_1mgr_1_1entities.html#acd50971602bd13ec2d6644c380812d96" title="Check if an entity has a component by type.">has_component()</a> first.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>Component type. </td></tr>
@@ -676,7 +692,13 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Return the component or nullptr if not found. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Return the component. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classwte_1_1wte__exception.html" title="Throws an internal engine exception.">wte_exception</a></td><td>Component not found. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -750,6 +772,12 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns a container of components based by entity ID. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classwte_1_1wte__exception.html" title="Throws an internal engine exception.">wte_exception</a></td><td>Entity does not exist. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -805,7 +833,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 30 2021 16:51:43 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sun Jul 4 2021 14:51:12 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
