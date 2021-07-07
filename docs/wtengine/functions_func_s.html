@@ -66,14 +66,11 @@ $(function() {
 
 <h3><a id="index_s"></a>- s -</h3><ul>
 <li>save()
-: <a class="el" href="classwte_1_1engine__cfg.html#a61967f3544cd2775173a0cd8a97d8ee3">wte::engine_cfg</a>
-, <a class="el" href="classwte_1_1game__cfg.html#aed2f4054bd3b0c9d3c9d6a3b88e94231">wte::game_cfg</a>
+: <a class="el" href="classwte_1_1config.html#a3e2d60734a1f53d6f6c007a9563726d6">wte::config</a>
+, <a class="el" href="classwte_1_1mgr_1_1variables.html#ad5e29284887446624c61f1b96a06ec61">wte::mgr::variables</a>
 </li>
 <li>set()
-: <a class="el" href="classwte_1_1engine__cfg.html#af5c6ebcf3ff5df8ca5fe2086f337ed05">wte::engine_cfg</a>
-, <a class="el" href="classwte_1_1engine__flags.html#a8f39f1c30da6e8fa8f7e69ec6e228673">wte::engine_flags</a>
-, <a class="el" href="classwte_1_1game__cfg.html#afc51a87335f5eb462bfbed45e1156d07">wte::game_cfg</a>
-, <a class="el" href="classwte_1_1variable__map.html#a3eea8dc33f6c0cb222781de3638ca96e">wte::variable_map&lt; derived &gt;</a>
+: <a class="el" href="classwte_1_1mgr_1_1variables.html#ad3241a7ea7cb6799ae19e25a58170459">wte::mgr::variables</a>
 </li>
 <li>set_alert()
 : <a class="el" href="classwte_1_1alert.html#a7c4c7568eb2ebfec7d3c1cab9f94cd5d">wte::alert</a>
@@ -87,12 +84,6 @@ $(function() {
 <li>set_bg_color()
 : <a class="el" href="classwte_1_1alert.html#a54a9f99b66296726630e9b793bf48470">wte::alert</a>
 </li>
-<li>set_binding()
-: <a class="el" href="classwte_1_1input__map.html#adf4e6c4d67fba3b4046011debd30ae05">wte::input_map</a>
-</li>
-<li>set_button_event()
-: <a class="el" href="classwte_1_1input__flags.html#a9879242be8ae4696c2a2c273f5eb300c">wte::input_flags</a>
-</li>
 <li>set_component()
 : <a class="el" href="classwte_1_1mgr_1_1entities.html#aba99548abdba275927a7975cccc6fc6c">wte::mgr::entities</a>
 </li>
@@ -101,6 +92,9 @@ $(function() {
 </li>
 <li>set_cycle()
 : <a class="el" href="classwte_1_1cmp_1_1sprite.html#ace5fe48756843514ae2713a01511e509">wte::cmp::sprite</a>
+</li>
+<li>set_data_file()
+: <a class="el" href="classwte_1_1mgr_1_1variables.html#adfa29052f5668497960dee1a996863ae">wte::mgr::variables</a>
 </li>
 <li>set_default()
 : <a class="el" href="classwte_1_1mnu_1_1menu__item.html#a2bc019e6a36c8d01b8f46880ec42a20a">wte::mnu::menu_item</a>
@@ -115,7 +109,7 @@ $(function() {
 : <a class="el" href="classwte_1_1cmp_1_1animator.html#a78f287ad5c6713f7646f1d926cf8c80f">wte::cmp::animator</a>
 </li>
 <li>set_enc_key()
-: <a class="el" href="classwte_1_1game__cfg.html#a3a67d454abd384345cf9b4194ad4760d">wte::game_cfg</a>
+: <a class="el" href="classwte_1_1mgr_1_1variables.html#a91a8a65edf82a53cf71ae58273ad6560">wte::mgr::variables</a>
 </li>
 <li>set_entity()
 : <a class="el" href="classwte_1_1mgr_1_1entities.html#a397fc57c1139f40e8135e157f1eb289e">wte::mgr::entities</a>
@@ -130,26 +124,8 @@ $(function() {
 : <a class="el" href="classwte_1_1mgr_1_1menu.html#a01cbc8daf0573bee5c4d0a8bd3ea8b38">wte::mgr::menu</a>
 , <a class="el" href="classwte_1_1mgr_1_1renderer.html#abae832c05671f4434b86f5113d3235f3">wte::mgr::renderer</a>
 </li>
-<li>set_game_cfg_file()
-: <a class="el" href="classwte_1_1game__cfg.html#a60306b5d4e79712fcd945614fb29eb36">wte::game_cfg</a>
-</li>
 <li>set_height()
 : <a class="el" href="classwte_1_1cmp_1_1hitbox.html#a1179f91bd02b0b8aed61df7ae6402c9e">wte::cmp::hitbox</a>
-</li>
-<li>set_joystick_pol_x()
-: <a class="el" href="classwte_1_1input__flags.html#a284f2c47817990b1d6caec6e7b7fc34a">wte::input_flags</a>
-</li>
-<li>set_joystick_pol_y()
-: <a class="el" href="classwte_1_1input__flags.html#a879ce74db1230cf18637b3bd04bacdd7">wte::input_flags</a>
-</li>
-<li>set_joystick_radians()
-: <a class="el" href="classwte_1_1input__flags.html#ac55ddc7499ea18904572fe326a8e351f">wte::input_flags</a>
-</li>
-<li>set_last_buttonpress()
-: <a class="el" href="classwte_1_1input__flags.html#abbf30706c9b1e7dc0ae68f8e3a62b6d2">wte::input_flags</a>
-</li>
-<li>set_last_keypress()
-: <a class="el" href="classwte_1_1input__flags.html#a919aef8679e78da219748c167fc5c130">wte::input_flags</a>
 </li>
 <li>set_max_x()
 : <a class="el" href="classwte_1_1cmp_1_1bounding__box.html#a73ec7d32b74e241bc02720f39c214294">wte::cmp::bounding_box</a>
@@ -240,9 +216,6 @@ $(function() {
 <li>sprite()
 : <a class="el" href="classwte_1_1cmp_1_1sprite.html#a6ac5df8a3c567b722afc7f8af2b06e76">wte::cmp::sprite</a>
 </li>
-<li>subtract()
-: <a class="el" href="classwte_1_1game__cfg.html#a5e8d013853446d8b696627450faf51ad">wte::game_cfg</a>
-</li>
 <li>system()
 : <a class="el" href="classwte_1_1sys_1_1system.html#a9cd549a5b1b59bbf8aa735562fb17d80">wte::sys::system</a>
 </li>
@@ -268,7 +241,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 4 2021 14:51:12 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Jul 7 2021 09:41:24 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

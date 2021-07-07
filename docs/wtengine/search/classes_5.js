@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['game_5fcfg_382',['game_cfg',['../classwte_1_1game__cfg.html',1,'wte']]]
+  ['flags_348',['flags',['../structwte_1_1config_1_1flags.html',1,'wte::config']]]
 ];

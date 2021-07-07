@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['unset_695',['unset',['../classwte_1_1engine__flags.html#a78552781a25f302ff960a1f464e10dc5',1,'wte::engine_flags']]],
-  ['unset_5fall_696',['unset_all',['../classwte_1_1input__flags.html#ae15493426734b780df38a9f8e2ed7148',1,'wte::input_flags']]],
-  ['unset_5frotated_697',['unset_rotated',['../classwte_1_1cmp_1_1direction.html#a6dec1395c6fdba13b9243a8a3482c29d',1,'wte::cmp::direction']]],
-  ['update_5fresolution_698',['update_resolution',['../classwte_1_1mgr_1_1renderer.html#a6a22cf936365cc3fdd28c64abb80ca32',1,'wte::mgr::renderer']]]
+  ['what_637',['what',['../classwte_1_1wte__exception.html#a5710adcb243caa4901721f898554b3bd',1,'wte::wte_exception']]],
+  ['wte_5fexception_638',['wte_exception',['../classwte_1_1wte__exception.html#a20eaaa5d1818972f54ba913d045723b3',1,'wte::wte_exception']]]
 ];
