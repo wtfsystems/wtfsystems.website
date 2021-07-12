@@ -92,12 +92,6 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a788b7198d0ae026a1774cb84e5888bea"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mgr_1_1systems.html#a788b7198d0ae026a1774cb84e5888bea">add</a> (sys::system_uptr new_system)</td></tr>
 <tr class="memdesc:a788b7198d0ae026a1774cb84e5888bea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new system to the manager.  <a href="classwte_1_1mgr_1_1systems.html#a788b7198d0ae026a1774cb84e5888bea">More...</a><br /></td></tr>
 <tr class="separator:a788b7198d0ae026a1774cb84e5888bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a157572429b8d72018038a82206fda29f"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mgr_1_1systems.html#a157572429b8d72018038a82206fda29f">enable_system</a> (const std::string &amp;sys)</td></tr>
-<tr class="memdesc:a157572429b8d72018038a82206fda29f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable a system.  <a href="classwte_1_1mgr_1_1systems.html#a157572429b8d72018038a82206fda29f">More...</a><br /></td></tr>
-<tr class="separator:a157572429b8d72018038a82206fda29f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac42f97670d407954d17d4aa80c3d8637"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mgr_1_1systems.html#ac42f97670d407954d17d4aa80c3d8637">disable_system</a> (const std::string &amp;sys)</td></tr>
-<tr class="memdesc:ac42f97670d407954d17d4aa80c3d8637"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable a system.  <a href="classwte_1_1mgr_1_1systems.html#ac42f97670d407954d17d4aa80c3d8637">More...</a><br /></td></tr>
-<tr class="separator:ac42f97670d407954d17d4aa80c3d8637"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -144,85 +138,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>interface</b></td></
 
 </div>
 </div>
-<a id="ac42f97670d407954d17d4aa80c3d8637"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac42f97670d407954d17d4aa80c3d8637">&#9670;&nbsp;</a></span>disable_system()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static const bool wte::mgr::systems::disable_system </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>sys</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Disable a system. </p>
-<p>Toggle a system to disabled so its run member is skipped.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sys</td><td>Name of system to disable. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the system was found, false if it was not </dd></dl>
-
-</div>
-</div>
-<a id="a157572429b8d72018038a82206fda29f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a157572429b8d72018038a82206fda29f">&#9670;&nbsp;</a></span>enable_system()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static const bool wte::mgr::systems::enable_system </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>sys</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Enable a system. </p>
-<p>Toggle a system to enabled so its run member is processed.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sys</td><td>Name of system to enable. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the system was found, false if it was not. </dd></dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/wtengine/mgr/systems.hpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 7 2021 09:41:24 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Mon Jul 12 2021 19:36:02 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['back_5fin_5ffocus_407',['back_in_focus',['../classwte_1_1engine.html#a816fc2e5e25490951ba3a5d6e9fb109a',1,'wte::engine']]],
-  ['background_408',['background',['../classwte_1_1cmp_1_1background.html#a21450ee445f2c4c3e6fe54c148dec872',1,'wte::cmp::background::background(const int w, const int h, const std::size_t l, ALLEGRO_COLOR c)'],['../classwte_1_1cmp_1_1background.html#a71e47a8932f277c59e97fb0fe8714101',1,'wte::cmp::background::background(const int w, const int h, const std::size_t l, std::function&lt; void(const entity_id &amp;)&gt; func)']]],
-  ['bitmap_5fmap_409',['bitmap_map',['../classwte_1_1cmp_1_1bitmap__map.html#adba9f982ab67b36cc46d8ee410cf3c6e',1,'wte::cmp::bitmap_map']]],
-  ['bounding_5fbox_410',['bounding_box',['../classwte_1_1cmp_1_1bounding__box.html#ae1672ab02afc3b708b298901e2bd144d',1,'wte::cmp::bounding_box']]]
+  ['back_5fin_5ffocus_387',['back_in_focus',['../classwte_1_1engine.html#a816fc2e5e25490951ba3a5d6e9fb109a',1,'wte::engine']]],
+  ['background_388',['background',['../classwte_1_1cmp_1_1background.html#addd87fce43c470e45546ec2e44ebbbde',1,'wte::cmp::background::background(const std::string bmp, const std::size_t l, ALLEGRO_COLOR c)'],['../classwte_1_1cmp_1_1background.html#ac0cafc60259e5c2ad82c345ce7ac0ed5',1,'wte::cmp::background::background(const std::string bmp, const std::size_t l, std::function&lt; void(const entity_id &amp;)&gt; func)']]],
+  ['bitmap_5fbackup_389',['bitmap_backup',['../classwte_1_1mgr_1_1interface.html#a574cd7c12ceceacd00edcbe0890f6a95',1,'wte::mgr::interface']]],
+  ['bitmap_5freload_390',['bitmap_reload',['../classwte_1_1mgr_1_1interface.html#a51eb9338ef10d6d23f18006d0f2cc950',1,'wte::mgr::interface']]],
+  ['bounding_5fbox_391',['bounding_box',['../classwte_1_1cmp_1_1bounding__box.html#ae1672ab02afc3b708b298901e2bd144d',1,'wte::cmp::bounding_box']]]
 ];
