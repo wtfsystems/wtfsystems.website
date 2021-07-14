@@ -26,7 +26,7 @@ var searchData=
   ['get_5flabel_92',['get_label',['../classwte_1_1mnu_1_1menu__item.html#a0cabb4cdae909c79a46e58ad67c07465',1,'wte::mnu::menu_item']]],
   ['get_5fmax_5fx_93',['get_max_x',['../classwte_1_1cmp_1_1bounding__box.html#a8551a9d89db7394bcccb97c1a60c90ba',1,'wte::cmp::bounding_box']]],
   ['get_5fmax_5fy_94',['get_max_y',['../classwte_1_1cmp_1_1bounding__box.html#ad8d975ff2cc6a9a83d5e81be1a1f1c5f',1,'wte::cmp::bounding_box']]],
-  ['get_5fmenu_95',['get_menu',['../classwte_1_1mgr_1_1menu.html#a611b73fcc2db5df5617bb2388253094e',1,'wte::mgr::menu']]],
+  ['get_5fmenu_95',['get_menu',['../classwte_1_1mgr_1_1menus.html#a70052da46b3b38196043c13767255b19',1,'wte::mgr::menus']]],
   ['get_5fmin_5fx_96',['get_min_x',['../classwte_1_1cmp_1_1bounding__box.html#a0cbc85a93bfcf1d25b39440cec702de7',1,'wte::cmp::bounding_box']]],
   ['get_5fmin_5fy_97',['get_min_y',['../classwte_1_1cmp_1_1bounding__box.html#a4bc855a12baa58d7c8529d4ba47a8610',1,'wte::cmp::bounding_box']]],
   ['get_5fname_98',['get_name',['../classwte_1_1mgr_1_1entities.html#a0b3a4efe1c2157714f34067b2da264f6',1,'wte::mgr::entities::get_name()'],['../classwte_1_1sys_1_1system.html#a79f86d812412ad57693aa5da5df274cc',1,'wte::sys::system::get_name()']]],

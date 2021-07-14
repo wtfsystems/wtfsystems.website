@@ -6,7 +6,7 @@ var searchData=
   ['clear_29',['clear',['../classwte_1_1alert.html#a7d6c9247fe95b791577da9f846ff4946',1,'wte::alert::clear()'],['../classwte_1_1mgr_1_1entities.html#a10eb05008d9c52940d9eff45d630470f',1,'wte::mgr::entities::clear()']]],
   ['clear_5fsave_30',['clear_save',['../classwte_1_1mgr_1_1variables.html#a64d17e0f9991c8c239b2b2fb3dc7b9b8',1,'wte::mgr::variables']]],
   ['clear_5ftint_31',['clear_tint',['../classwte_1_1cmp_1_1animator.html#a2838aebefde8bb9431cfce66e9a6a5ca',1,'wte::cmp::animator']]],
-  ['close_5fmenu_32',['close_menu',['../classwte_1_1mgr_1_1menu.html#a79a49bb1553136ff8d2a429810e17e73',1,'wte::mgr::menu']]],
+  ['close_5fmenu_32',['close_menu',['../classwte_1_1mgr_1_1menus.html#ad09bbe499cddddb42b80dd2925a37c70',1,'wte::mgr::menus']]],
   ['colision_33',['colision',['../classwte_1_1sys_1_1colision.html',1,'wte::sys']]],
   ['commands_34',['commands',['../classwte_1_1commands.html',1,'wte']]],
   ['component_35',['component',['../classwte_1_1cmp_1_1component.html#ab57cc4bd5b63d207f1e8f06cce9d5921',1,'wte::cmp::component::component(const component &amp;)=delete'],['../classwte_1_1cmp_1_1component.html#a769a89e4047d5c0f0c4c8ce7105bfdce',1,'wte::cmp::component::component()'],['../classwte_1_1cmp_1_1component.html',1,'wte::cmp::component']]],
