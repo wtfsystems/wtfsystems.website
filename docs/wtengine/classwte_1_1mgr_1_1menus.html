@@ -74,6 +74,9 @@ $(function() {
 <div class="title">wte::mgr::menus Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Handles processing menus and rendering them.  
+ <a href="classwte_1_1mgr_1_1menus.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for wte::mgr::menus:</div>
 <div class="dyncontent">
@@ -89,9 +92,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a887b6b6cdb7c0d24605934470488a914"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mgr_1_1menus.html#a887b6b6cdb7c0d24605934470488a914">set_menu_size</a> (const float &amp;mw, const float &amp;mh, const float &amp;mp)</td></tr>
 <tr class="memdesc:a887b6b6cdb7c0d24605934470488a914"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set menu size.  <a href="classwte_1_1mgr_1_1menus.html#a887b6b6cdb7c0d24605934470488a914">More...</a><br /></td></tr>
 <tr class="separator:a887b6b6cdb7c0d24605934470488a914"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c4a37dbb407419eef450a2752052fc9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mgr_1_1menus.html#a3c4a37dbb407419eef450a2752052fc9">set_menu_color</a> (ALLEGRO_COLOR fcolor, ALLEGRO_COLOR bgcolor)</td></tr>
-<tr class="memdesc:a3c4a37dbb407419eef450a2752052fc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set menu colors.  <a href="classwte_1_1mgr_1_1menus.html#a3c4a37dbb407419eef450a2752052fc9">More...</a><br /></td></tr>
-<tr class="separator:a3c4a37dbb407419eef450a2752052fc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50ebf8cf0cdb4bde36bf0761fac5c276"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mgr_1_1menus.html#a50ebf8cf0cdb4bde36bf0761fac5c276">set_menu_color</a> (const ALLEGRO_COLOR &amp;fcolor, const ALLEGRO_COLOR &amp;bgcolor)</td></tr>
+<tr class="memdesc:a50ebf8cf0cdb4bde36bf0761fac5c276"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set menu colors.  <a href="classwte_1_1mgr_1_1menus.html#a50ebf8cf0cdb4bde36bf0761fac5c276">More...</a><br /></td></tr>
+<tr class="separator:a50ebf8cf0cdb4bde36bf0761fac5c276"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2c6c13ef9764bf09b6c0bb57c4e42e1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mgr_1_1menus.html#ae2c6c13ef9764bf09b6c0bb57c4e42e1">set_font_file</a> (const std::string &amp;fname, const int &amp;size, const int &amp;flags)</td></tr>
 <tr class="memdesc:ae2c6c13ef9764bf09b6c0bb57c4e42e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the font to be used by the menus.  <a href="classwte_1_1mgr_1_1menus.html#ae2c6c13ef9764bf09b6c0bb57c4e42e1">More...</a><br /></td></tr>
 <tr class="separator:ae2c6c13ef9764bf09b6c0bb57c4e42e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,7 +147,9 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>interface</b></td></
 class&#160;</td><td class="memItemRight" valign="bottom"><b>renderer</b></td></tr>
 <tr class="separator:ac1d7b7c76c80ffc9d15121d463d9b8ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Handles processing menus and rendering them. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad09bbe499cddddb42b80dd2925a37c70"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad09bbe499cddddb42b80dd2925a37c70">&#9670;&nbsp;</a></span>close_menu()</h2>
 
@@ -398,8 +403,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>renderer</b></td></t
 
 </div>
 </div>
-<a id="a3c4a37dbb407419eef450a2752052fc9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c4a37dbb407419eef450a2752052fc9">&#9670;&nbsp;</a></span>set_menu_color()</h2>
+<a id="a50ebf8cf0cdb4bde36bf0761fac5c276"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50ebf8cf0cdb4bde36bf0761fac5c276">&#9670;&nbsp;</a></span>set_menu_color()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -410,13 +415,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>renderer</b></td></t
         <tr>
           <td class="memname">static void wte::mgr::menus::set_menu_color </td>
           <td>(</td>
-          <td class="paramtype">ALLEGRO_COLOR&#160;</td>
+          <td class="paramtype">const ALLEGRO_COLOR &amp;&#160;</td>
           <td class="paramname"><em>fcolor</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ALLEGRO_COLOR&#160;</td>
+          <td class="paramtype">const ALLEGRO_COLOR &amp;&#160;</td>
           <td class="paramname"><em>bgcolor</em>&#160;</td>
         </tr>
         <tr>
@@ -503,7 +508,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>renderer</b></td></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 16 2021 10:39:18 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sun Jul 18 2021 00:06:31 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
