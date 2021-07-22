@@ -107,7 +107,8 @@ export class PostRenderer extends Command {
         postList(postTitles) {
             var numColumns = 2, c = 1
 
-            var list = "<table class=\"posttable\">"
+            var list = "<span style=\"font-weight: bold;\">Usage:</span> posts <em>postname</em><br/><br/>"
+            list += "<table class=\"posttable\">"
             list += "<tr><th colspan=\"" + numColumns + "\">Posts</th></tr>"
 
             for(let i = 0; i < postTitles.length; i++) {

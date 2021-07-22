@@ -82,7 +82,7 @@ export class PrimeWheel extends Command {
             }
             return "Incorrect color code."
         }
-        return "<span style=\"font-weight: bold;\">Usage:</span> primewheel start|stop|reset"
+        return "<span style=\"font-weight: bold;\">Usage:</span> primewheel <em>start</em>|<em>stop</em>|<em>reset</em>|<em>color</em>"
     }
 
     /*

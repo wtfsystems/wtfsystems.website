@@ -118,9 +118,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a605c9d3fbdddcda38cce849a21d4651c"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="namespacewte.html#adb06d3544221b0d8128e07b63ff0760e">const_entity_container</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mgr_1_1entities.html#a605c9d3fbdddcda38cce849a21d4651c">get_entity</a> (const <a class="el" href="namespacewte.html#abf2544b3056d60f0182109d89eab289a">entity_id</a> &amp;e_id)</td></tr>
 <tr class="memdesc:a605c9d3fbdddcda38cce849a21d4651c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all components related to an entity.  <a href="classwte_1_1mgr_1_1entities.html#a605c9d3fbdddcda38cce849a21d4651c">More...</a><br /></td></tr>
 <tr class="separator:a605c9d3fbdddcda38cce849a21d4651c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3551e602d8449131a0a641e5fdf9f5b0"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mgr_1_1entities.html#a3551e602d8449131a0a641e5fdf9f5b0">add_component</a> (const <a class="el" href="namespacewte.html#abf2544b3056d60f0182109d89eab289a">entity_id</a> &amp;e_id, const cmp::component_sptr &amp;comp)</td></tr>
-<tr class="memdesc:a3551e602d8449131a0a641e5fdf9f5b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new component to an entity.  <a href="classwte_1_1mgr_1_1entities.html#a3551e602d8449131a0a641e5fdf9f5b0">More...</a><br /></td></tr>
-<tr class="separator:a3551e602d8449131a0a641e5fdf9f5b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab98d2149a9b6ecfd05ce8c6fbf429e2a"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:ab98d2149a9b6ecfd05ce8c6fbf429e2a"><td class="memTemplItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwte_1_1mgr_1_1entities.html#ab98d2149a9b6ecfd05ce8c6fbf429e2a">add_component</a> (const <a class="el" href="namespacewte.html#abf2544b3056d60f0182109d89eab289a">entity_id</a> &amp;e_id, Args... args)</td></tr>
+<tr class="memdesc:ab98d2149a9b6ecfd05ce8c6fbf429e2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new component to an entity.  <a href="classwte_1_1mgr_1_1entities.html#ab98d2149a9b6ecfd05ce8c6fbf429e2a">More...</a><br /></td></tr>
+<tr class="separator:ab98d2149a9b6ecfd05ce8c6fbf429e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac238b888566943e18bfc729dd27e86b8"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ac238b888566943e18bfc729dd27e86b8"><td class="memTemplItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwte_1_1mgr_1_1entities.html#ac238b888566943e18bfc729dd27e86b8">delete_component</a> (const <a class="el" href="namespacewte.html#abf2544b3056d60f0182109d89eab289a">entity_id</a> &amp;e_id)</td></tr>
 <tr class="memdesc:ac238b888566943e18bfc729dd27e86b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a component by type for an entity.  <a href="classwte_1_1mgr_1_1entities.html#ac238b888566943e18bfc729dd27e86b8">More...</a><br /></td></tr>
@@ -149,11 +150,13 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Store a collection of entities and their corresponding components in memory. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3551e602d8449131a0a641e5fdf9f5b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3551e602d8449131a0a641e5fdf9f5b0">&#9670;&nbsp;</a></span>add_component()</h2>
+<a id="ab98d2149a9b6ecfd05ce8c6fbf429e2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab98d2149a9b6ecfd05ce8c6fbf429e2a">&#9670;&nbsp;</a></span>add_component()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename... Args&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -167,8 +170,8 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const cmp::component_sptr &amp;&#160;</td>
-          <td class="paramname"><em>comp</em>&#160;</td>
+          <td class="paramtype">Args...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -185,10 +188,16 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Add a new component to an entity. </p>
 <p>Entities can only have a single compoenent of each type.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Component type to add. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">e_id</td><td>Entity ID to add a component to. </td></tr>
-    <tr><td class="paramname">comp</td><td>Componenet to add. </td></tr>
+    <tr><td class="paramname">args</td><td>List of parameters to pass to component constructor. </td></tr>
   </table>
   </dd>
 </dl>
@@ -258,7 +267,7 @@ template&lt;typename T &gt; </div>
 <p>Delete a component by type for an entity. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>Component type. </td></tr>
+    <tr><td class="paramname">T</td><td>Component type to delete. </td></tr>
   </table>
   </dd>
 </dl>
@@ -374,7 +383,7 @@ template&lt;typename T &gt; </div>
 <p>Read the value of a component by type for an entity. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>Component type. </td></tr>
+    <tr><td class="paramname">T</td><td>Component type to search. </td></tr>
   </table>
   </dd>
 </dl>
@@ -424,7 +433,7 @@ template&lt;typename T &gt; </div>
 <p>This will return a container of non-modifiable components casted to their type.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>Component type. </td></tr>
+    <tr><td class="paramname">T</td><td>Component type to search. </td></tr>
   </table>
   </dd>
 </dl>
@@ -607,7 +616,7 @@ template&lt;typename T &gt; </div>
 <p>Check if an entity has a component by type. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>Component type. </td></tr>
+    <tr><td class="paramname">T</td><td>Component type to check. </td></tr>
   </table>
   </dd>
 </dl>
@@ -682,7 +691,7 @@ template&lt;typename T &gt; </div>
 <p>Set the value of a component by type for an entity. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>Component type. </td></tr>
+    <tr><td class="paramname">T</td><td>Component type to search. </td></tr>
   </table>
   </dd>
 </dl>
@@ -732,7 +741,7 @@ template&lt;typename T &gt; </div>
 <p>This will return a container of modifiable components casted to their type.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>Component type. </td></tr>
+    <tr><td class="paramname">T</td><td>Component type to search. </td></tr>
   </table>
   </dd>
 </dl>
@@ -833,7 +842,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 18 2021 00:06:31 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Jul 22 2021 12:25:28 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
