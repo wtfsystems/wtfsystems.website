@@ -1,8 +1,8 @@
 var searchData=
 [
   ['about_1',['About',['../index.html',1,'']]],
-  ['add_2',['add',['../classwte_1_1mgr_1_1systems.html#a788b7198d0ae026a1774cb84e5888bea',1,'wte::mgr::systems']]],
-  ['add_5fcomponent_3',['add_component',['../classwte_1_1mgr_1_1entities.html#ab98d2149a9b6ecfd05ce8c6fbf429e2a',1,'wte::mgr::entities']]],
+  ['add_2',['add',['../classwte_1_1mgr_1_1systems.html#a788b7198d0ae026a1774cb84e5888bea',1,'wte::mgr::systems::add()'],['../classwte_1_1commands.html#aeb68138729eebcbf1a9257c63d54e830',1,'wte::commands::add()']]],
+  ['add_5fcomponent_3',['add_component',['../classwte_1_1mgr_1_1world.html#a86a9ce6fefe7d04544b93148b6620722',1,'wte::mgr::world']]],
   ['add_5fcycle_4',['add_cycle',['../classwte_1_1cmp_1_1sprite.html#ab7d7ce2fca2d0b16036f4d7578e913de',1,'wte::cmp::sprite']]],
   ['add_5ffile_5flocation_5',['add_file_location',['../classwte_1_1engine.html#a848c9ff6e143f4a3f414164fb8a93311',1,'wte::engine']]],
   ['add_5fitem_6',['add_item',['../classwte_1_1mnu_1_1menu.html#a1c57f8d0d3465968edb91fc57634618b',1,'wte::mnu::menu']]],
@@ -11,7 +11,7 @@ var searchData=
   ['adjust_5fx_9',['adjust_x',['../classwte_1_1cmp_1_1location.html#a062edc61e7d133d3027cad460a7cdf90',1,'wte::cmp::location']]],
   ['adjust_5fy_10',['adjust_y',['../classwte_1_1cmp_1_1location.html#a868f350b2a9863f06ae6ac762f75df8d',1,'wte::cmp::location']]],
   ['ai_11',['ai',['../classwte_1_1cmp_1_1ai.html#ae88dfeb6b3964359e1fb4a96e8002a2a',1,'wte::cmp::ai::ai(const std::function&lt; void(const entity_id &amp;)&gt; &amp;func_a, const std::function&lt; void(const entity_id &amp;)&gt; &amp;func_b)'],['../classwte_1_1cmp_1_1ai.html#a51598b75d21a2ebecbc9331afa11e927',1,'wte::cmp::ai::ai(const std::function&lt; void(const entity_id &amp;)&gt; &amp;func)'],['../classwte_1_1cmp_1_1ai.html',1,'wte::cmp::ai']]],
-  ['al_5fbitmap_12',['al_bitmap',['../classwte_1_1al__bitmap.html',1,'wte']]],
+  ['al_5fbitmap_12',['al_bitmap',['../classwte_1_1al__bitmap.html#a8066c5f15dc1a115d07f7ce9bcc689c6',1,'wte::al_bitmap::al_bitmap(const int &amp;w, const int &amp;h, const bool &amp;p)'],['../classwte_1_1al__bitmap.html#a9caeced7801f73795c0b0b7b4295d60d',1,'wte::al_bitmap::al_bitmap(const int &amp;w, const int &amp;h)'],['../classwte_1_1al__bitmap.html#a912feffa768c8c59d7e20f5ecba77028',1,'wte::al_bitmap::al_bitmap(const bool &amp;p)'],['../classwte_1_1al__bitmap.html#a4ef3435acbc9bd88aa8c1af9259c3c7e',1,'wte::al_bitmap::al_bitmap()'],['../classwte_1_1al__bitmap.html',1,'wte::al_bitmap']]],
   ['al_5ffont_13',['al_font',['../classwte_1_1al__font.html',1,'wte']]],
   ['alert_14',['alert',['../classwte_1_1alert.html',1,'wte']]],
   ['animate_15',['animate',['../classwte_1_1sys_1_1animate.html',1,'wte::sys']]],

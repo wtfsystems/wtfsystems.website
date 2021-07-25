@@ -74,26 +74,92 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p> 
+<p>Container for storing engine commands expressed as a lambda.  
  <a href="classwte_1_1commands.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a72282e91183246c4e2758545e7a0a4cd"><td class="memItemLeft" align="right" valign="top"><a id="a72282e91183246c4e2758545e7a0a4cd"></a>
-const bool&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (const std::string &amp;cmd, const std::function&lt; void(const <a class="el" href="namespacewte.html#a9f90419c47d4341efce40073a5af630a">msg_arg_list</a> &amp;)&gt; func)</td></tr>
-<tr class="separator:a72282e91183246c4e2758545e7a0a4cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac602f1e05131792ddf452de22f5f2ce3"><td class="memItemLeft" align="right" valign="top"><a id="ac602f1e05131792ddf452de22f5f2ce3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>process_messages</b> (const <a class="el" href="namespacewte.html#a0b8c0a3a15a7a81f107e19304b85a7f6">message_container</a> &amp;messages)</td></tr>
+<tr class="memitem:aeb68138729eebcbf1a9257c63d54e830"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1commands.html#aeb68138729eebcbf1a9257c63d54e830">add</a> (const std::string &amp;cmd, const std::function&lt; void(const <a class="el" href="namespacewte.html#a9f90419c47d4341efce40073a5af630a">msg_arg_list</a> &amp;)&gt; &amp;func)</td></tr>
+<tr class="memdesc:aeb68138729eebcbf1a9257c63d54e830"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a command to the command processor.  <a href="classwte_1_1commands.html#aeb68138729eebcbf1a9257c63d54e830">More...</a><br /></td></tr>
+<tr class="separator:aeb68138729eebcbf1a9257c63d54e830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac602f1e05131792ddf452de22f5f2ce3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1commands.html#ac602f1e05131792ddf452de22f5f2ce3">process_messages</a> (const <a class="el" href="namespacewte.html#a0b8c0a3a15a7a81f107e19304b85a7f6">message_container</a> &amp;messages)</td></tr>
+<tr class="memdesc:ac602f1e05131792ddf452de22f5f2ce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process a list of messages.  <a href="classwte_1_1commands.html#ac602f1e05131792ddf452de22f5f2ce3">More...</a><br /></td></tr>
 <tr class="separator:ac602f1e05131792ddf452de22f5f2ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"></div><hr/>The documentation for this class was generated from the following file:<ul>
+<div class="textblock"><p>Container for storing engine commands expressed as a lambda. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aeb68138729eebcbf1a9257c63d54e830"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb68138729eebcbf1a9257c63d54e830">&#9670;&nbsp;</a></span>add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const bool wte::commands::add </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::function&lt; void(const <a class="el" href="namespacewte.html#a9f90419c47d4341efce40073a5af630a">msg_arg_list</a> &amp;)&gt; &amp;&#160;</td>
+          <td class="paramname"><em>func</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a command to the command processor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>Command name to run. </td></tr>
+    <tr><td class="paramname">func</td><td>Lambda expression to run. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True on sucess, false on fail. </dd></dl>
+
+</div>
+</div>
+<a id="ac602f1e05131792ddf452de22f5f2ce3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac602f1e05131792ddf452de22f5f2ce3">&#9670;&nbsp;</a></span>process_messages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wte::commands::process_messages </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacewte.html#a0b8c0a3a15a7a81f107e19304b85a7f6">message_container</a> &amp;&#160;</td>
+          <td class="paramname"><em>messages</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Process a list of messages. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">messages</td><td>List of messages to process. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/wtengine/_globals/commands.hpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 22 2021 12:29:12 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sun Jul 25 2021 16:05:36 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
