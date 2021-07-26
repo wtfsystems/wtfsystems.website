@@ -23,7 +23,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WTEngine
    </div>
-   <div id="projectbrief">ECS-based Game Engine in C++</div>
+   <div id="projectbrief">C++ Game Engine using Allegro</div>
   </td>
  </tr>
  </tbody>
@@ -90,7 +90,7 @@ Inheritance diagram for wte::cmp::sprite:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae73e65659f08b5dd59c13d86dc7a226c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1cmp_1_1sprite.html#ae73e65659f08b5dd59c13d86dc7a226c">sprite</a> (std::shared_ptr&lt; <a class="el" href="classwte_1_1wte__asset.html">wte_asset</a> &gt; bmp, const float &amp;sw, const float &amp;sh, const float &amp;dox, const float &amp;doy, const std::size_t &amp;rt, const std::size_t &amp;l)</td></tr>
-<tr class="memdesc:ae73e65659f08b5dd59c13d86dc7a226c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprite constructor.  <a href="classwte_1_1cmp_1_1sprite.html#ae73e65659f08b5dd59c13d86dc7a226c">More...</a><br /></td></tr>
+<tr class="memdesc:ae73e65659f08b5dd59c13d86dc7a226c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new Sprite component.  <a href="classwte_1_1cmp_1_1sprite.html#ae73e65659f08b5dd59c13d86dc7a226c">More...</a><br /></td></tr>
 <tr class="separator:ae73e65659f08b5dd59c13d86dc7a226c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82ea6c292d33f060df7a5230e0ad2023"><td class="memItemLeft" align="right" valign="top"><a id="a82ea6c292d33f060df7a5230e0ad2023"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1cmp_1_1sprite.html#a82ea6c292d33f060df7a5230e0ad2023">~sprite</a> ()</td></tr>
@@ -115,10 +115,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aa6e035f9b956805c79115ed4e95b657b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Y draw offset.  <a href="classwte_1_1cmp_1_1sprite.html#aa6e035f9b956805c79115ed4e95b657b">More...</a><br /></td></tr>
 <tr class="separator:aa6e035f9b956805c79115ed4e95b657b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad09284ce0f309814aa37ffd3048f3aa0"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1cmp_1_1sprite.html#ad09284ce0f309814aa37ffd3048f3aa0">get_sprite_x</a> (void) const</td></tr>
-<tr class="memdesc:ad09284ce0f309814aa37ffd3048f3aa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the X location for sprite drawing.  <a href="classwte_1_1cmp_1_1sprite.html#ad09284ce0f309814aa37ffd3048f3aa0">More...</a><br /></td></tr>
+<tr class="memdesc:ad09284ce0f309814aa37ffd3048f3aa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the sheet's X location for sprite drawing.  <a href="classwte_1_1cmp_1_1sprite.html#ad09284ce0f309814aa37ffd3048f3aa0">More...</a><br /></td></tr>
 <tr class="separator:ad09284ce0f309814aa37ffd3048f3aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e35fdb1ea9f28fcb9682d2cd40beceb"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1cmp_1_1sprite.html#a6e35fdb1ea9f28fcb9682d2cd40beceb">get_sprite_y</a> (void) const</td></tr>
-<tr class="memdesc:a6e35fdb1ea9f28fcb9682d2cd40beceb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Y location for sprite drawing.  <a href="classwte_1_1cmp_1_1sprite.html#a6e35fdb1ea9f28fcb9682d2cd40beceb">More...</a><br /></td></tr>
+<tr class="memdesc:a6e35fdb1ea9f28fcb9682d2cd40beceb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the sheet's Y location for sprite drawing.  <a href="classwte_1_1cmp_1_1sprite.html#a6e35fdb1ea9f28fcb9682d2cd40beceb">More...</a><br /></td></tr>
 <tr class="separator:a6e35fdb1ea9f28fcb9682d2cd40beceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07aaf8a7f0feb39db451873e028bde15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1cmp_1_1sprite.html#a07aaf8a7f0feb39db451873e028bde15">set_scale_factor_x</a> (const float &amp;sx)</td></tr>
 <tr class="memdesc:a07aaf8a7f0feb39db451873e028bde15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the X scale factor.  <a href="classwte_1_1cmp_1_1sprite.html#a07aaf8a7f0feb39db451873e028bde15">More...</a><br /></td></tr>
@@ -253,7 +253,7 @@ std::shared_ptr&lt; <a class="el" href="classwte_1_1wte__asset.html">wte_asset</
       </table>
 </div><div class="memdoc">
 
-<p>Sprite constructor. </p>
+<p>Create a new Sprite component. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sw</td><td>Sprite width. </td></tr>
@@ -331,7 +331,7 @@ std::shared_ptr&lt; <a class="el" href="classwte_1_1wte__asset.html">wte_asset</
 </div><div class="memdoc">
 
 <p>Get the X draw offset. </p>
-<dl class="section return"><dt>Returns</dt><dd>draw_offset_x </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>X offset in pixels. </dd></dl>
 
 </div>
 </div>
@@ -352,7 +352,7 @@ std::shared_ptr&lt; <a class="el" href="classwte_1_1wte__asset.html">wte_asset</
 </div><div class="memdoc">
 
 <p>Get the Y draw offset. </p>
-<dl class="section return"><dt>Returns</dt><dd>draw_offset_y </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Y offset in pixels. </dd></dl>
 
 </div>
 </div>
@@ -456,8 +456,8 @@ std::shared_ptr&lt; <a class="el" href="classwte_1_1wte__asset.html">wte_asset</
       </table>
 </div><div class="memdoc">
 
-<p>Get the X location for sprite drawing. </p>
-<dl class="section return"><dt>Returns</dt><dd>sprite_x </dd></dl>
+<p>Get the sheet's X location for sprite drawing. </p>
+<dl class="section return"><dt>Returns</dt><dd>Sprite sheet X location in pixels. </dd></dl>
 
 </div>
 </div>
@@ -477,8 +477,8 @@ std::shared_ptr&lt; <a class="el" href="classwte_1_1wte__asset.html">wte_asset</
       </table>
 </div><div class="memdoc">
 
-<p>Get the Y location for sprite drawing. </p>
-<dl class="section return"><dt>Returns</dt><dd>sprite_y </dd></dl>
+<p>Get the sheet's Y location for sprite drawing. </p>
+<dl class="section return"><dt>Returns</dt><dd>Sprite sheet Y location in pixels. </dd></dl>
 
 </div>
 </div>
@@ -567,7 +567,7 @@ std::shared_ptr&lt; <a class="el" href="classwte_1_1wte__asset.html">wte_asset</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 25 2021 16:05:36 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sun Jul 25 2021 23:15:43 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

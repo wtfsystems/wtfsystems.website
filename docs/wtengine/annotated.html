@@ -23,7 +23,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WTEngine
    </div>
-   <div id="projectbrief">ECS-based Game Engine in C++</div>
+   <div id="projectbrief">C++ Game Engine using Allegro</div>
   </td>
  </tr>
  </tbody>
@@ -77,7 +77,7 @@ $(function() {
 <tr id="row_0_0_4_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classwte_1_1cmp_1_1dispatcher.html" target="_self">dispatcher</a></td><td class="desc">Tag components to be processed by the Logic system </td></tr>
 <tr id="row_0_0_5_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classwte_1_1cmp_1_1enabled.html" target="_self">enabled</a></td><td class="desc">Toggle an entity to enabled or disabled state </td></tr>
 <tr id="row_0_0_6_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classwte_1_1cmp_1_1animator.html" target="_self">animator</a></td><td class="desc">Interface class for components with an animation process </td></tr>
-<tr id="row_0_0_7_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classwte_1_1cmp_1_1background.html" target="_self">background</a></td><td class="desc">Component for storing a background image and defining its animation process </td></tr>
+<tr id="row_0_0_7_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classwte_1_1cmp_1_1background.html" target="_self">background</a></td><td class="desc">Component for storing a Background image and defining its animation process </td></tr>
 <tr id="row_0_0_8_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classwte_1_1cmp_1_1overlay.html" target="_self">overlay</a></td><td class="desc">Component for storing an overlay image and defining its animation process </td></tr>
 <tr id="row_0_0_9_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classwte_1_1cmp_1_1sprite.html" target="_self">sprite</a></td><td class="desc">Component for loading a sprite sheet and storing its animation frames </td></tr>
 <tr id="row_0_0_10_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classwte_1_1cmp_1_1hitbox.html" target="_self">hitbox</a></td><td class="desc">Component to add a hitbox for performing colisions on </td></tr>
@@ -116,7 +116,7 @@ $(function() {
 <tr id="row_0_7_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classwte_1_1message.html" target="_self">message</a></td><td class="desc">Define individual message objects </td></tr>
 <tr id="row_0_8_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classwte_1_1al__bitmap.html" target="_self">al_bitmap</a></td><td class="desc">Provides a wrapper to Allegro Bitmaps </td></tr>
 <tr id="row_0_9_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classwte_1_1al__font.html" target="_self">al_font</a></td><td class="desc"></td></tr>
-<tr id="row_0_10_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classwte_1_1wte__asset.html" target="_self">wte_asset</a></td><td class="desc"></td></tr>
+<tr id="row_0_10_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classwte_1_1wte__asset.html" target="_self">wte_asset</a></td><td class="desc">Interface class for creating an asset </td></tr>
 <tr id="row_0_11_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classwte_1_1wte__exception.html" target="_self">wte_exception</a></td><td class="desc">Throws an internal engine exception </td></tr>
 <tr id="row_0_12_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_0_12_" class="arrow" onclick="toggleFolder('0_12_')">&#9660;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classwte_1_1config.html" target="_self">config</a></td><td class="desc">Store engine config variables in a globally accessible class </td></tr>
 <tr id="row_0_12_0_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structwte_1_1config_1_1controls.html" target="_self">controls</a></td><td class="desc">Control binding settings </td></tr>
@@ -135,13 +135,12 @@ $(function() {
 <tr id="row_0_15_0_1_1_" class="even"><td class="entry"><span style="width:80px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structwte_1_1input_1_1event_1_1p2_1_1onup.html" target="_self">onup</a></td><td class="desc">Player 2 on up events </td></tr>
 <tr id="row_0_15_1_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structwte_1_1input_1_1lastbuttonpress.html" target="_self">lastbuttonpress</a></td><td class="desc"></td></tr>
 <tr id="row_0_15_2_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structwte_1_1input_1_1lastkeypress.html" target="_self">lastkeypress</a></td><td class="desc"></td></tr>
-<tr id="row_1_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classwte__asset.html" target="_self">wte_asset</a></td><td class="desc">Interface class for creating an asset </td></tr>
 </table>
 </div><!-- directory -->
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 25 2021 16:05:36 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sun Jul 25 2021 23:15:43 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

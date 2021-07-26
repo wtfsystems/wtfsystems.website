@@ -7,7 +7,7 @@ var searchData=
   ['get_5farena_5fheight_428',['get_arena_height',['../classwte_1_1mgr_1_1renderer.html#ab70a924044695d3735919583f4807e18',1,'wte::mgr::renderer']]],
   ['get_5farena_5fwidth_429',['get_arena_width',['../classwte_1_1mgr_1_1renderer.html#a6719bec065c9dca699f06eb673e3b198',1,'wte::mgr::renderer']]],
   ['get_5farg_430',['get_arg',['../classwte_1_1message.html#af616c78f816af96a67863f6fc8839f13',1,'wte::message']]],
-  ['get_5farglist_431',['get_arglist',['../classwte_1_1message.html#a64ab3a819f5367d28423b053ab725240',1,'wte::message']]],
+  ['get_5fargs_431',['get_args',['../classwte_1_1message.html#a6f3f24073dbdf3281cb7e36c62684f64',1,'wte::message']]],
   ['get_5fbg_5fcolor_432',['get_bg_color',['../classwte_1_1alert.html#a3a3508c2fe21cdb8d14f8a046b136aff',1,'wte::alert']]],
   ['get_5fbitmap_433',['get_bitmap',['../classwte_1_1cmp_1_1animator.html#a4a7656a71410502a3f7da90b41860322',1,'wte::cmp::animator']]],
   ['get_5fcmd_434',['get_cmd',['../classwte_1_1message.html#ac0ec4f393664c17b6e460c745f77f98f',1,'wte::message']]],
