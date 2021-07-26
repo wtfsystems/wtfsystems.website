@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['get_69',['get',['../classwte_1_1mgr_1_1variables.html#a5c75e11c5e73c90b3a62fd804a7eecc9',1,'wte::mgr::variables']]],
+  ['get_69',['get',['../classwte_1_1mgr_1_1assets.html#ab3d8ff4741f668e50efa84044be78e3f',1,'wte::mgr::assets::get()'],['../classwte_1_1mgr_1_1variables.html#a5c75e11c5e73c90b3a62fd804a7eecc9',1,'wte::mgr::variables::get()']]],
   ['get_5factive_5fargs_70',['get_active_args',['../classwte_1_1mnu_1_1menu__item__toggle.html#a920c7e66c1611d7fd553738af9a06242',1,'wte::mnu::menu_item_toggle']]],
   ['get_5factive_5fcmd_71',['get_active_cmd',['../classwte_1_1mnu_1_1menu__item__toggle.html#af0a9eae450f78e03bdaa34713dd733e2',1,'wte::mnu::menu_item_toggle']]],
   ['get_5falert_72',['get_alert',['../classwte_1_1alert.html#a6e872c3fd6c907957ae399b49ffdc687',1,'wte::alert']]],
@@ -29,7 +29,7 @@ var searchData=
   ['get_5fmenu_95',['get_menu',['../classwte_1_1mgr_1_1menus.html#a70052da46b3b38196043c13767255b19',1,'wte::mgr::menus']]],
   ['get_5fmin_5fx_96',['get_min_x',['../classwte_1_1cmp_1_1bounding__box.html#a0cbc85a93bfcf1d25b39440cec702de7',1,'wte::cmp::bounding_box']]],
   ['get_5fmin_5fy_97',['get_min_y',['../classwte_1_1cmp_1_1bounding__box.html#a4bc855a12baa58d7c8529d4ba47a8610',1,'wte::cmp::bounding_box']]],
-  ['get_5fname_98',['get_name',['../classwte_1_1sys_1_1system.html#a79f86d812412ad57693aa5da5df274cc',1,'wte::sys::system::get_name()'],['../classwte_1_1mgr_1_1world.html#ac68ca36f979b0cc244fd06700dd19484',1,'wte::mgr::world::get_name()']]],
+  ['get_5fname_98',['get_name',['../classwte_1_1mgr_1_1world.html#ac68ca36f979b0cc244fd06700dd19484',1,'wte::mgr::world::get_name()'],['../classwte_1_1sys_1_1system.html#a79f86d812412ad57693aa5da5df274cc',1,'wte::sys::system::get_name()']]],
   ['get_5fpos_5fx_99',['get_pos_x',['../classwte_1_1cmp_1_1overlay.html#aec61461480f7a786d9b50a3fa77743d3',1,'wte::cmp::overlay']]],
   ['get_5fpos_5fy_100',['get_pos_y',['../classwte_1_1cmp_1_1overlay.html#a1433c3a9b3923e5e3ccf77515e5d6681',1,'wte::cmp::overlay']]],
   ['get_5fradians_101',['get_radians',['../classwte_1_1cmp_1_1direction.html#a170fc20b487c882e4210dcfb6e0375ad',1,'wte::cmp::direction']]],

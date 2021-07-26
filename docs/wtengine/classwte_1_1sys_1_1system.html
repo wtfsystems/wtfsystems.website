@@ -76,7 +76,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Interface class for creating systems.  
+<p>Interface class for creating Systems.  
  <a href="classwte_1_1sys_1_1system.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for wte::sys::system:</div>
@@ -85,7 +85,7 @@ Inheritance diagram for wte::sys::system:</div>
   <img src="classwte_1_1sys_1_1system.png" usemap="#wte::sys::system_map" alt=""/>
   <map id="wte::sys::system_map" name="wte::sys::system_map">
 <area href="classwte_1_1sys_1_1animate.html" title="Find the animate components and process them." alt="wte::sys::animate" shape="rect" coords="0,56,118,80"/>
-<area href="classwte_1_1sys_1_1colision.html" title="Will select components by team and test for a colision." alt="wte::sys::colision" shape="rect" coords="128,56,246,80"/>
+<area href="classwte_1_1sys_1_1colision.html" title="Selects components by team and tests for colisions." alt="wte::sys::colision" shape="rect" coords="128,56,246,80"/>
 <area href="classwte_1_1sys_1_1logic.html" title="Processes entities that have ai components." alt="wte::sys::logic" shape="rect" coords="256,56,374,80"/>
 <area href="classwte_1_1sys_1_1movement.html" title="Moves entities based on their velocity." alt="wte::sys::movement" shape="rect" coords="384,56,502,80"/>
   </map>
@@ -101,19 +101,18 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1sys_1_1system.html#aad9b366a740d1fab422ccf7dba945205">operator=</a> (<a class="el" href="classwte_1_1sys_1_1system.html">system</a> const &amp;)=delete</td></tr>
 <tr class="memdesc:aad9b366a740d1fab422ccf7dba945205"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove assignment operator. <br /></td></tr>
 <tr class="separator:aad9b366a740d1fab422ccf7dba945205"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79f86d812412ad57693aa5da5df274cc"><td class="memItemLeft" align="right" valign="top"><a id="a79f86d812412ad57693aa5da5df274cc"></a>
-const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1sys_1_1system.html#a79f86d812412ad57693aa5da5df274cc">get_name</a> (void) const</td></tr>
-<tr class="memdesc:a79f86d812412ad57693aa5da5df274cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the system name. <br /></td></tr>
+<tr class="memitem:a79f86d812412ad57693aa5da5df274cc"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1sys_1_1system.html#a79f86d812412ad57693aa5da5df274cc">get_name</a> (void) const</td></tr>
+<tr class="memdesc:a79f86d812412ad57693aa5da5df274cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the system name.  <a href="classwte_1_1sys_1_1system.html#a79f86d812412ad57693aa5da5df274cc">More...</a><br /></td></tr>
 <tr class="separator:a79f86d812412ad57693aa5da5df274cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81ec56a4867b65799413eabc64114ce5"><td class="memItemLeft" align="right" valign="top"><a id="a81ec56a4867b65799413eabc64114ce5"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1sys_1_1system.html#a81ec56a4867b65799413eabc64114ce5">run</a> (void)=0</td></tr>
-<tr class="memdesc:a81ec56a4867b65799413eabc64114ce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to create custom run method. <br /></td></tr>
+<tr class="memdesc:a81ec56a4867b65799413eabc64114ce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to create custom System run method. <br /></td></tr>
 <tr class="separator:a81ec56a4867b65799413eabc64114ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a5fa23ca9c78801bcd00e2f85df86bbfb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1sys_1_1system.html#a5fa23ca9c78801bcd00e2f85df86bbfb">system</a> (const std::string &amp;n)</td></tr>
-<tr class="memdesc:a5fa23ca9c78801bcd00e2f85df86bbfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">System constructor.  <a href="classwte_1_1sys_1_1system.html#a5fa23ca9c78801bcd00e2f85df86bbfb">More...</a><br /></td></tr>
+<tr class="memdesc:a5fa23ca9c78801bcd00e2f85df86bbfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new System object.  <a href="classwte_1_1sys_1_1system.html#a5fa23ca9c78801bcd00e2f85df86bbfb">More...</a><br /></td></tr>
 <tr class="separator:a5fa23ca9c78801bcd00e2f85df86bbfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -124,7 +123,7 @@ const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="e
 <tr class="separator:a5ff92811ae45f90dcb8dabc1f3771093"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Interface class for creating systems. </p>
+<div class="textblock"><p>Interface class for creating Systems. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5fa23ca9c78801bcd00e2f85df86bbfb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5fa23ca9c78801bcd00e2f85df86bbfb">&#9670;&nbsp;</a></span>system()</h2>
@@ -150,7 +149,7 @@ const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="e
 </table>
 </div><div class="memdoc">
 
-<p>System constructor. </p>
+<p>Create a new System object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">n</td><td>System name. </td></tr>
@@ -160,13 +159,35 @@ const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="e
 
 </div>
 </div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a79f86d812412ad57693aa5da5df274cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79f86d812412ad57693aa5da5df274cc">&#9670;&nbsp;</a></span>get_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string wte::sys::system::get_name </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the system name. </p>
+<dl class="section return"><dt>Returns</dt><dd>System name. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/wtengine/sys/system.hpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 26 2021 01:29:07 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Mon Jul 26 2021 17:24:31 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

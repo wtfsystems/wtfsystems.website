@@ -70,7 +70,7 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classwte_1_1commands-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">wte::commands Class Reference</div>  </div>
+<div class="title">wte::commands Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -79,9 +79,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af11fde29762926faf8e403a539294b89"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1commands.html#af11fde29762926faf8e403a539294b89">add</a> (const std::string &amp;cmd, const std::function&lt; void(const <a class="el" href="namespacewte.html#a2bb0a7e58ebc59b033e8f9d343873a5a">msg_args</a> &amp;)&gt; &amp;func)</td></tr>
-<tr class="memdesc:af11fde29762926faf8e403a539294b89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a command to the command processor.  <a href="classwte_1_1commands.html#af11fde29762926faf8e403a539294b89">More...</a><br /></td></tr>
-<tr class="separator:af11fde29762926faf8e403a539294b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cc567f38edce1dd035c6d7969edf3a3"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1commands.html#a9cc567f38edce1dd035c6d7969edf3a3">add</a> (const std::string &amp;cmd, const std::size_t &amp;nargs, const std::function&lt; void(const <a class="el" href="namespacewte.html#a2bb0a7e58ebc59b033e8f9d343873a5a">msg_args</a> &amp;)&gt; &amp;func)</td></tr>
+<tr class="memdesc:a9cc567f38edce1dd035c6d7969edf3a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a command to the command processor.  <a href="classwte_1_1commands.html#a9cc567f38edce1dd035c6d7969edf3a3">More...</a><br /></td></tr>
+<tr class="separator:a9cc567f38edce1dd035c6d7969edf3a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac602f1e05131792ddf452de22f5f2ce3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1commands.html#ac602f1e05131792ddf452de22f5f2ce3">process_messages</a> (const <a class="el" href="namespacewte.html#a0b8c0a3a15a7a81f107e19304b85a7f6">message_container</a> &amp;messages)</td></tr>
 <tr class="memdesc:ac602f1e05131792ddf452de22f5f2ce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process a list of messages.  <a href="classwte_1_1commands.html#ac602f1e05131792ddf452de22f5f2ce3">More...</a><br /></td></tr>
 <tr class="separator:ac602f1e05131792ddf452de22f5f2ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -89,8 +89,8 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Container for storing engine commands expressed as a lambda. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="af11fde29762926faf8e403a539294b89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af11fde29762926faf8e403a539294b89">&#9670;&nbsp;</a></span>add()</h2>
+<a id="a9cc567f38edce1dd035c6d7969edf3a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cc567f38edce1dd035c6d7969edf3a3">&#9670;&nbsp;</a></span>add()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -100,6 +100,12 @@ Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::size_t &amp;&#160;</td>
+          <td class="paramname"><em>nargs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -119,6 +125,7 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cmd</td><td>Command name to run. </td></tr>
+    <tr><td class="paramname">nargs</td><td>Minimum number of expected arguments. </td></tr>
     <tr><td class="paramname">func</td><td>Lambda expression to run. </td></tr>
   </table>
   </dd>
@@ -159,7 +166,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 26 2021 01:29:07 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Mon Jul 26 2021 17:24:31 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

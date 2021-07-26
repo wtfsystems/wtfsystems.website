@@ -2,7 +2,7 @@ var searchData=
 [
   ['make_5ffluid_150',['make_fluid',['../classwte_1_1cmp_1_1hitbox.html#a5e106ff09a4853082a6ff2dd6d5e112e',1,'wte::cmp::hitbox']]],
   ['make_5fsolid_151',['make_solid',['../classwte_1_1cmp_1_1hitbox.html#af2435b23b6f37625bbd0de5bb36dba59',1,'wte::cmp::hitbox']]],
-  ['manager_152',['manager',['../classwte_1_1mgr_1_1manager.html#a4eeefa94714ddba7f1cc05c4cf295bd2',1,'wte::mgr::manager::manager()'],['../classwte_1_1mgr_1_1manager.html#affe7a498647e08066e10f97f4dbdfd5e',1,'wte::mgr::manager::manager(const manager &amp;)=delete'],['../classwte_1_1mgr_1_1manager.html',1,'wte::mgr::manager&lt; derived &gt;']]],
+  ['manager_152',['manager',['../classwte_1_1mgr_1_1manager.html#affe7a498647e08066e10f97f4dbdfd5e',1,'wte::mgr::manager::manager(const manager &amp;)=delete'],['../classwte_1_1mgr_1_1manager.html#a4eeefa94714ddba7f1cc05c4cf295bd2',1,'wte::mgr::manager::manager()'],['../classwte_1_1mgr_1_1manager.html',1,'wte::mgr::manager&lt; derived &gt;']]],
   ['manager_3c_20assets_20_3e_153',['manager&lt; assets &gt;',['../classwte_1_1mgr_1_1manager.html',1,'wte::mgr']]],
   ['manager_3c_20audio_20_3e_154',['manager&lt; audio &gt;',['../classwte_1_1mgr_1_1manager.html',1,'wte::mgr']]],
   ['manager_3c_20interface_20_3e_155',['manager&lt; interface &gt;',['../classwte_1_1mgr_1_1manager.html',1,'wte::mgr']]],
@@ -31,6 +31,11 @@ var searchData=
   ['messages_5fget_178',['messages_get',['../classwte_1_1mgr_1_1interface.html#a289fa4872ac6ee1bc083ee25aac2e56d',1,'wte::mgr::interface']]],
   ['messages_5fload_5ffile_179',['messages_load_file',['../classwte_1_1mgr_1_1interface.html#afe628ded658739444c4ddc8b5b6efa0d',1,'wte::mgr::interface']]],
   ['messages_5fprune_180',['messages_prune',['../classwte_1_1mgr_1_1interface.html#a8a7b913c4287dc36e52fa3fccfcec5be',1,'wte::mgr::interface']]],
-  ['movement_181',['movement',['../classwte_1_1sys_1_1movement.html#a67f9e4cc6a0929590008ce1cfb1b4685',1,'wte::sys::movement::movement()'],['../classwte_1_1sys_1_1movement.html',1,'wte::sys::movement']]],
-  ['msg_5fargs_182',['msg_args',['../namespacewte.html#a2bb0a7e58ebc59b033e8f9d343873a5a',1,'wte']]]
+  ['movement_181',['movement',['../classwte_1_1sys_1_1movement.html',1,'wte::sys']]],
+  ['msg_5fargs_182',['msg_args',['../namespacewte.html#a2bb0a7e58ebc59b033e8f9d343873a5a',1,'wte']]],
+  ['music_5floop_183',['music_loop',['../classwte_1_1mgr_1_1audio.html#a217476add54b4387b38765889ba44718',1,'wte::mgr::audio']]],
+  ['music_5fpause_184',['music_pause',['../classwte_1_1mgr_1_1audio.html#a5f0d610394cb344ff914ca8151ac9f92',1,'wte::mgr::audio']]],
+  ['music_5fplay_185',['music_play',['../classwte_1_1mgr_1_1audio.html#a135653c30d16e09583eeb898402bc1ff',1,'wte::mgr::audio']]],
+  ['music_5fstop_186',['music_stop',['../classwte_1_1mgr_1_1audio.html#a5a6f0127ec5295fe7b825387eda29cc4',1,'wte::mgr::audio']]],
+  ['music_5funpause_187',['music_unpause',['../classwte_1_1mgr_1_1audio.html#a4ca49d658f313176e8b90937a3a6efc0',1,'wte::mgr::audio']]]
 ];

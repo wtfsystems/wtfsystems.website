@@ -76,7 +76,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>The main engine object.  
+<p>The main engine class.  
  <a href="classwte_1_1engine.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for wte::engine:</div>
@@ -93,7 +93,7 @@ Inheritance diagram for wte::engine:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a13920154a1662ccc6e0170687ef632b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1engine.html#a13920154a1662ccc6e0170687ef632b6">~engine</a> ()</td></tr>
-<tr class="memdesc:a13920154a1662ccc6e0170687ef632b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Engine destructor.  <a href="classwte_1_1engine.html#a13920154a1662ccc6e0170687ef632b6">More...</a><br /></td></tr>
+<tr class="memdesc:a13920154a1662ccc6e0170687ef632b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unloads the game engine.  <a href="classwte_1_1engine.html#a13920154a1662ccc6e0170687ef632b6">More...</a><br /></td></tr>
 <tr class="separator:a13920154a1662ccc6e0170687ef632b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a834ce10430ebe328a4045b4cef339650"><td class="memItemLeft" align="right" valign="top"><a id="a834ce10430ebe328a4045b4cef339650"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1engine.html#a834ce10430ebe328a4045b4cef339650">engine</a> (const <a class="el" href="classwte_1_1engine.html">engine</a> &amp;)=delete</td></tr>
@@ -129,7 +129,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:afbedfb62552d923027f5d479e732b081"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1engine.html#afbedfb62552d923027f5d479e732b081">engine</a> (const int &amp;argc, char **const &amp;argv, const std::string &amp;title)</td></tr>
-<tr class="memdesc:afbedfb62552d923027f5d479e732b081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Engine constructor.  <a href="classwte_1_1engine.html#afbedfb62552d923027f5d479e732b081">More...</a><br /></td></tr>
+<tr class="memdesc:afbedfb62552d923027f5d479e732b081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new instance of the game engine.  <a href="classwte_1_1engine.html#afbedfb62552d923027f5d479e732b081">More...</a><br /></td></tr>
 <tr class="separator:afbedfb62552d923027f5d479e732b081"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18d84659f1ba5d29ccef17bdbb073937"><td class="memItemLeft" align="right" valign="top"><a id="a18d84659f1ba5d29ccef17bdbb073937"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1engine.html#a18d84659f1ba5d29ccef17bdbb073937">load_menus</a> (void)=0</td></tr>
@@ -179,7 +179,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:a6f0ef42bf195ba08d2d09d2b51730563 inherit pro_methods_classwte_1_1input"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The main engine object. </p>
+<div class="textblock"><p>The main engine class. </p>
 <p>Sets up various system objects used by the engine. Contains the main game loop and members for managing the game and engine. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a13920154a1662ccc6e0170687ef632b6"></a>
@@ -197,8 +197,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
       </table>
 </div><div class="memdoc">
 
-<p>Engine destructor. </p>
-<p>Frees up instance, set initialized flag to false. Also makes sure to unload the engine. </p>
+<p>Unloads the game engine. </p>
+<p>Frees up instance, set initialized flag to false. </p>
 
 </div>
 </div>
@@ -242,7 +242,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table>
 </div><div class="memdoc">
 
-<p>Engine constructor. </p>
+<p>Create a new instance of the game engine. </p>
 <p>Force single instance, set initialized flag to true. Throws a runtime error if another instance is called.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -297,7 +297,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 26 2021 01:29:07 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Mon Jul 26 2021 17:24:31 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

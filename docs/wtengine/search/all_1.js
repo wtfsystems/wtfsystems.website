@@ -1,7 +1,7 @@
 var searchData=
 [
   ['about_1',['About',['../index.html',1,'']]],
-  ['add_2',['add',['../classwte_1_1mgr_1_1systems.html#a788b7198d0ae026a1774cb84e5888bea',1,'wte::mgr::systems::add()'],['../classwte_1_1commands.html#af11fde29762926faf8e403a539294b89',1,'wte::commands::add()']]],
+  ['add_2',['add',['../classwte_1_1mgr_1_1systems.html#a788b7198d0ae026a1774cb84e5888bea',1,'wte::mgr::systems::add()'],['../classwte_1_1commands.html#a9cc567f38edce1dd035c6d7969edf3a3',1,'wte::commands::add()']]],
   ['add_5fcomponent_3',['add_component',['../classwte_1_1mgr_1_1world.html#a86a9ce6fefe7d04544b93148b6620722',1,'wte::mgr::world']]],
   ['add_5fcycle_4',['add_cycle',['../classwte_1_1cmp_1_1sprite.html#ab7d7ce2fca2d0b16036f4d7578e913de',1,'wte::cmp::sprite']]],
   ['add_5ffile_5flocation_5',['add_file_location',['../classwte_1_1engine.html#a848c9ff6e143f4a3f414164fb8a93311',1,'wte::engine']]],
