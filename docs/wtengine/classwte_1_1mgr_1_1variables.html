@@ -104,16 +104,21 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ab761edf8188918e0620eabfa78252548"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ad2673dc3ad4098b83f2d72af96c35b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a5ad2673dc3ad4098b83f2d72af96c35b"><td class="memTemplItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwte_1_1mgr_1_1variables.html#a5ad2673dc3ad4098b83f2d72af96c35b">reg</a> (const std::string &amp;var, const T &amp;val)</td></tr>
+<tr class="memdesc:a5ad2673dc3ad4098b83f2d72af96c35b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new entry in the map.  <a href="classwte_1_1mgr_1_1variables.html#a5ad2673dc3ad4098b83f2d72af96c35b">More...</a><br /></td></tr>
 <tr class="separator:a5ad2673dc3ad4098b83f2d72af96c35b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac47a41459dd985e33ee983e38afd835c"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mgr_1_1variables.html#ac47a41459dd985e33ee983e38afd835c">isreg</a> (const std::string &amp;var)</td></tr>
+<tr class="memdesc:ac47a41459dd985e33ee983e38afd835c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a variable is registered.  <a href="classwte_1_1mgr_1_1variables.html#ac47a41459dd985e33ee983e38afd835c">More...</a><br /></td></tr>
 <tr class="separator:ac47a41459dd985e33ee983e38afd835c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade24fac53363e2c67ef33cd2f3708883"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mgr_1_1variables.html#ade24fac53363e2c67ef33cd2f3708883">del</a> (const std::string &amp;var)</td></tr>
+<tr class="memdesc:ade24fac53363e2c67ef33cd2f3708883"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a variable.  <a href="classwte_1_1mgr_1_1variables.html#ade24fac53363e2c67ef33cd2f3708883">More...</a><br /></td></tr>
 <tr class="separator:ade24fac53363e2c67ef33cd2f3708883"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3241a7ea7cb6799ae19e25a58170459"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ad3241a7ea7cb6799ae19e25a58170459"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwte_1_1mgr_1_1variables.html#ad3241a7ea7cb6799ae19e25a58170459">set</a> (const std::string &amp;var, const T &amp;val)</td></tr>
+<tr class="memdesc:ad3241a7ea7cb6799ae19e25a58170459"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a variable's value.  <a href="classwte_1_1mgr_1_1variables.html#ad3241a7ea7cb6799ae19e25a58170459">More...</a><br /></td></tr>
 <tr class="separator:ad3241a7ea7cb6799ae19e25a58170459"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c75e11c5e73c90b3a62fd804a7eecc9"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a5c75e11c5e73c90b3a62fd804a7eecc9"><td class="memTemplItemLeft" align="right" valign="top">static const T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwte_1_1mgr_1_1variables.html#a5c75e11c5e73c90b3a62fd804a7eecc9">get</a> (const std::string &amp;var)</td></tr>
+<tr class="memdesc:a5c75e11c5e73c90b3a62fd804a7eecc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a variable's value.  <a href="classwte_1_1mgr_1_1variables.html#a5c75e11c5e73c90b3a62fd804a7eecc9">More...</a><br /></td></tr>
 <tr class="separator:a5c75e11c5e73c90b3a62fd804a7eecc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -171,7 +176,15 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Delete entry </p>
+
+<p>Delete a variable. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">var</td><td>Variable name. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if deleted, false if not. </dd></dl>
 
 </div>
 </div>
@@ -200,7 +213,21 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get value </p>
+
+<p>Get a variable's value. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Variable type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">var</td><td>Variable name. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The variable's current value. </dd></dl>
 
 </div>
 </div>
@@ -227,7 +254,15 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Check if registered </p>
+
+<p>Check if a variable is registered. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">var</td><td>Variable name. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if it is, false if not. </dd></dl>
 
 </div>
 </div>
@@ -258,6 +293,18 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Load game config variables from file. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Variable type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">var</td><td>Variable name. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>False on fail, true on success. </dd></dl>
 
 </div>
@@ -297,7 +344,22 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Create a new entry in the map. Call this first before accessing. </p>
+
+<p>Create a new entry in the map. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Variable type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">var</td><td>Variable name. </td></tr>
+    <tr><td class="paramname">val</td><td>Variable starting value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>False on fail, true on success. </dd></dl>
 
 </div>
 </div>
@@ -328,6 +390,12 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Save a game config variable to file. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Variable type. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">var</td><td>Variable name. </td></tr>
@@ -373,7 +441,21 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set key Will override value </p>
+
+<p>Set a variable's value. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Variable type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">var</td><td>Variable name. </td></tr>
+    <tr><td class="paramname">val</td><td>New value. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -417,7 +499,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 26 2021 17:24:31 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Jul 27 2021 17:47:47 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
