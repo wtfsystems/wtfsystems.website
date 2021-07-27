@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_5fdisplay_655',['_display',['../classwte_1_1display.html#ac5170a4b42aa1e09e2fc75c99620da7a',1,'wte::display']]]
+  ['_5fdisplay_653',['_display',['../classwte_1_1display.html#ac5170a4b42aa1e09e2fc75c99620da7a',1,'wte::display']]]
 ];
