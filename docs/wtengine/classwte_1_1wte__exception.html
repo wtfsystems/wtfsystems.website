@@ -85,19 +85,24 @@ Inheritance diagram for wte::wte_exception:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a20eaaa5d1818972f54ba913d045723b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1wte__exception.html#a20eaaa5d1818972f54ba913d045723b3">wte_exception</a> (const char *desc)</td></tr>
-<tr class="memdesc:a20eaaa5d1818972f54ba913d045723b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="classwte_1_1wte__exception.html" title="Throws an internal engine exception.">wte_exception</a>.  <a href="classwte_1_1wte__exception.html#a20eaaa5d1818972f54ba913d045723b3">More...</a><br /></td></tr>
-<tr class="separator:a20eaaa5d1818972f54ba913d045723b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5710adcb243caa4901721f898554b3bd"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1wte__exception.html#a5710adcb243caa4901721f898554b3bd">what</a> () const  throw ()</td></tr>
-<tr class="memdesc:a5710adcb243caa4901721f898554b3bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the description of the thrown exception.  <a href="classwte_1_1wte__exception.html#a5710adcb243caa4901721f898554b3bd">More...</a><br /></td></tr>
-<tr class="separator:a5710adcb243caa4901721f898554b3bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f3aa926405d22ff6b7e1b6d353c9319"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1wte__exception.html#a1f3aa926405d22ff6b7e1b6d353c9319">wte_exception</a> (const char *desc, const char *loc, const int64_t &amp;t)</td></tr>
+<tr class="memdesc:a1f3aa926405d22ff6b7e1b6d353c9319"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="classwte_1_1wte__exception.html" title="Throws an internal engine exception.">wte_exception</a>.  <a href="classwte_1_1wte__exception.html#a1f3aa926405d22ff6b7e1b6d353c9319">More...</a><br /></td></tr>
+<tr class="separator:a1f3aa926405d22ff6b7e1b6d353c9319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a192e54586a9f4cd2f971bf5ebeb603cd"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1wte__exception.html#a192e54586a9f4cd2f971bf5ebeb603cd">what</a> () const noexcept override</td></tr>
+<tr class="memdesc:a192e54586a9f4cd2f971bf5ebeb603cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the description of the thrown exception.  <a href="classwte_1_1wte__exception.html#a192e54586a9f4cd2f971bf5ebeb603cd">More...</a><br /></td></tr>
+<tr class="separator:a192e54586a9f4cd2f971bf5ebeb603cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a320339d26f577d61d75444ccf41992fa"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1wte__exception.html#a320339d26f577d61d75444ccf41992fa">where</a> () const noexcept</td></tr>
+<tr class="separator:a320339d26f577d61d75444ccf41992fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52aad6698ca71c7ea5f5fcf33d09e26b"><td class="memItemLeft" align="right" valign="top">const int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1wte__exception.html#a52aad6698ca71c7ea5f5fcf33d09e26b">when</a> () const noexcept</td></tr>
+<tr class="separator:a52aad6698ca71c7ea5f5fcf33d09e26b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Throws an internal engine exception. </p>
-<p>Exceptions thrown this way will be displayed as an alert in the engine. </p>
+<p>Exceptions thrown this way will be displayed as an alert in the engine. <br  />
+If debugging is enabled, they will also be logged to file. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a20eaaa5d1818972f54ba913d045723b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20eaaa5d1818972f54ba913d045723b3">&#9670;&nbsp;</a></span>wte_exception()</h2>
+<a id="a1f3aa926405d22ff6b7e1b6d353c9319"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f3aa926405d22ff6b7e1b6d353c9319">&#9670;&nbsp;</a></span>wte_exception()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -106,8 +111,24 @@ Public Member Functions</h2></td></tr>
           <td class="memname">wte::wte_exception::wte_exception </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>desc</em></td><td>)</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>loc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int64_t &amp;&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -115,7 +136,9 @@ Public Member Functions</h2></td></tr>
 <p>Create a <a class="el" href="classwte_1_1wte__exception.html" title="Throws an internal engine exception.">wte_exception</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">desc</td><td>Exception description. </td></tr>
+    <tr><td class="paramname">desc</td><td>Description of thrown exception. </td></tr>
+    <tr><td class="paramname">loc</td><td>Location exception was thrown. </td></tr>
+    <tr><td class="paramname">t</td><td>Time exception was thrown. </td></tr>
   </table>
   </dd>
 </dl>
@@ -123,8 +146,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5710adcb243caa4901721f898554b3bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5710adcb243caa4901721f898554b3bd">&#9670;&nbsp;</a></span>what()</h2>
+<a id="a192e54586a9f4cd2f971bf5ebeb603cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a192e54586a9f4cd2f971bf5ebeb603cd">&#9670;&nbsp;</a></span>what()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -133,21 +156,15 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const char* wte::wte_exception::what </td>
+          <td class="memname">const char* wte::wte_exception::what </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
-        <tr>
-          <td align="right">throw </td><td>(</td><td colspan="2"></td>
-        </tr>
-        <tr>
-          <td align="right"></td><td>)</td><td></td><td></td>
-        </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -157,13 +174,65 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a52aad6698ca71c7ea5f5fcf33d09e26b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52aad6698ca71c7ea5f5fcf33d09e26b">&#9670;&nbsp;</a></span>when()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int64_t wte::wte_exception::when </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a320339d26f577d61d75444ccf41992fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a320339d26f577d61d75444ccf41992fa">&#9670;&nbsp;</a></span>where()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* wte::wte_exception::where </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/wtengine/_globals/wte_exception.hpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 27 2021 19:41:21 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Jul 28 2021 12:30:54 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
