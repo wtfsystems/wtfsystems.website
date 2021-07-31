@@ -83,10 +83,10 @@ Inheritance diagram for wte::mnu::menu_item:</div>
  <div class="center">
   <img src="classwte_1_1mnu_1_1menu__item.png" usemap="#wte::mnu::menu_5Fitem_map" alt=""/>
   <map id="wte::mnu::menu_5Fitem_map" name="wte::mnu::menu_5Fitem_map">
-<area href="classwte_1_1mnu_1_1menu__item__action.html" title="Menu item that runs a message." alt="wte::mnu::menu_item_action" shape="rect" coords="0,56,182,80"/>
-<area href="classwte_1_1mnu_1_1menu__item__apply.html" title="An apply option for the menus." alt="wte::mnu::menu_item_apply" shape="rect" coords="192,56,374,80"/>
-<area href="classwte_1_1mnu_1_1menu__item__selection.html" title="Menu item with multiple options." alt="wte::mnu::menu_item_selection" shape="rect" coords="384,56,566,80"/>
-<area href="classwte_1_1mnu_1_1menu__item__toggle.html" title="On/off menu item." alt="wte::mnu::menu_item_toggle" shape="rect" coords="576,56,758,80"/>
+<area href="classwte_1_1mnu_1_1action.html" title="Menu item that runs a message." alt="wte::mnu::action" shape="rect" coords="0,56,125,80"/>
+<area href="classwte_1_1mnu_1_1apply.html" title="An apply option for the menus." alt="wte::mnu::apply" shape="rect" coords="135,56,260,80"/>
+<area href="classwte_1_1mnu_1_1selection.html" title="Menu item with multiple options." alt="wte::mnu::selection" shape="rect" coords="270,56,395,80"/>
+<area href="classwte_1_1mnu_1_1toggle.html" title="On/off menu item." alt="wte::mnu::toggle" shape="rect" coords="405,56,530,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -107,10 +107,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mnu_1_1menu__item.html#acf5bef13120795b8db20138ab8c82170">on_right</a> (void)</td></tr>
 <tr class="memdesc:acf5bef13120795b8db20138ab8c82170"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define right click process. <br /></td></tr>
 <tr class="separator:acf5bef13120795b8db20138ab8c82170"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace254d74dcb3c08f06de0b1252413dd8"><td class="memItemLeft" align="right" valign="top"><a id="ace254d74dcb3c08f06de0b1252413dd8"></a>
-virtual const <a class="el" href="classwte_1_1message.html">message</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mnu_1_1menu__item.html#ace254d74dcb3c08f06de0b1252413dd8">on_select</a> (void)</td></tr>
-<tr class="memdesc:ace254d74dcb3c08f06de0b1252413dd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define selection process. <br /></td></tr>
-<tr class="separator:ace254d74dcb3c08f06de0b1252413dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af81ea27c54a1f0f912cd9a8ee755abb7"><td class="memItemLeft" align="right" valign="top"><a id="af81ea27c54a1f0f912cd9a8ee755abb7"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mnu_1_1menu__item.html#af81ea27c54a1f0f912cd9a8ee755abb7">on_select</a> (void)</td></tr>
+<tr class="memdesc:af81ea27c54a1f0f912cd9a8ee755abb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define selection process. <br /></td></tr>
+<tr class="separator:af81ea27c54a1f0f912cd9a8ee755abb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7969a3cf0614766ef3557bb7d1819d7"><td class="memItemLeft" align="right" valign="top"><a id="ac7969a3cf0614766ef3557bb7d1819d7"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mnu_1_1menu__item.html#ac7969a3cf0614766ef3557bb7d1819d7">reset_to_default</a> (void)</td></tr>
 <tr class="memdesc:ac7969a3cf0614766ef3557bb7d1819d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define reset process. <br /></td></tr>
@@ -293,7 +293,7 @@ Protected Member Functions</h2></td></tr>
 <p>Return display text for the menu item when rendering. </p>
 <dl class="section return"><dt>Returns</dt><dd>Vector of display text. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classwte_1_1mnu_1_1menu__item__toggle.html#a49cff756837bc301962dd51ed273e68b">wte::mnu::menu_item_toggle</a>, <a class="el" href="classwte_1_1mnu_1_1menu__item__selection.html#adf142ff03844c35a3d7f7626fb437f37">wte::mnu::menu_item_selection</a>, <a class="el" href="classwte_1_1mnu_1_1menu__item__apply.html#a20c3eb483e331daf3673e96af0231eb1">wte::mnu::menu_item_apply</a>, and <a class="el" href="classwte_1_1mnu_1_1menu__item__action.html#ac9809b26bf6f17029f16ab0d079b88a5">wte::mnu::menu_item_action</a>.</p>
+<p>Reimplemented in <a class="el" href="classwte_1_1mnu_1_1toggle.html#a79a8276a87c57d4ba69c079e9b919cd2">wte::mnu::toggle</a>, <a class="el" href="classwte_1_1mnu_1_1selection.html#ad0104c83e68ba723bbc242444ce55960">wte::mnu::selection</a>, <a class="el" href="classwte_1_1mnu_1_1apply.html#adbae42b50bb11fb6c7f7eecc03494676">wte::mnu::apply</a>, and <a class="el" href="classwte_1_1mnu_1_1action.html#a06e58d8faae6365bfedfa150ec831b24">wte::mnu::action</a>.</p>
 
 </div>
 </div>
@@ -345,7 +345,7 @@ Protected Member Functions</h2></td></tr>
 <p>Define setting changed process. </p>
 <dl class="section return"><dt>Returns</dt><dd>Default return false. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classwte_1_1mnu_1_1menu__item__toggle.html#a0f7b735e77a6f8f82fc1d9e8f2793949">wte::mnu::menu_item_toggle</a>, and <a class="el" href="classwte_1_1mnu_1_1menu__item__selection.html#a8cef806c1cb465aa226a825d65a7dcfc">wte::mnu::menu_item_selection</a>.</p>
+<p>Reimplemented in <a class="el" href="classwte_1_1mnu_1_1toggle.html#a8bbd765a34cf58747c0830c31207812a">wte::mnu::toggle</a>, and <a class="el" href="classwte_1_1mnu_1_1selection.html#aff86f29f6f674400f7c7c809c0331b82">wte::mnu::selection</a>.</p>
 
 </div>
 </div>
@@ -355,7 +355,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 28 2021 12:33:17 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat Jul 31 2021 19:06:59 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
