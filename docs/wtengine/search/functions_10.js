@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['unload_556',['unload',['../classwte_1_1mgr_1_1assets.html#a81884a916438a0f6436dc64b32782669',1,'wte::mgr::assets']]],
-  ['unset_5frotated_557',['unset_rotated',['../classwte_1_1cmp_1_1direction.html#a6dec1395c6fdba13b9243a8a3482c29d',1,'wte::cmp::direction']]]
+  ['team_557',['team',['../classwte_1_1cmp_1_1team.html#a188cd5dc94f67df6b24daa73c61db69b',1,'wte::cmp::team']]],
+  ['toggle_558',['toggle',['../classwte_1_1mnu_1_1toggle.html#a0823fce96165a04ea37c0ecc3fbf3628',1,'wte::mnu::toggle::toggle(const std::string label, const std::string con, const std::string aon, const std::string coff, const std::string aoff, bool func(void))'],['../classwte_1_1mnu_1_1toggle.html#a87c5c2adc19c2bf90dd0a2ba8a498e4a',1,'wte::mnu::toggle::toggle(const std::string label, const std::string con, const std::string aon, const std::string coff, const std::string aoff, const std::size_t st, bool func(void))']]]
 ];
