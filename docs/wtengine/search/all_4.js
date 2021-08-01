@@ -1,15 +1,13 @@
 var searchData=
 [
-  ['del_46',['del',['../classwte_1_1mgr_1_1variables.html#ade24fac53363e2c67ef33cd2f3708883',1,'wte::mgr::variables']]],
-  ['delete_5fcomponent_47',['delete_component',['../classwte_1_1mgr_1_1world.html#abb1c22c50e6be539f14c650b83146178',1,'wte::mgr::world']]],
-  ['delete_5fentity_48',['delete_entity',['../classwte_1_1mgr_1_1world.html#ac14c840bc97aad4c94d285e7dc165f15',1,'wte::mgr::world']]],
-  ['destroy_5fdisplay_49',['destroy_display',['../classwte_1_1display.html#a982a8e19e756afb0f2597f3f07b694c1',1,'wte::display']]],
-  ['destroy_5finput_5fevent_5fqueue_50',['destroy_input_event_queue',['../classwte_1_1input.html#a1bbf9c43e4cbea56ec35f40d7cd5ef03',1,'wte::input']]],
-  ['direction_51',['direction',['../classwte_1_1cmp_1_1direction.html#a6b16cd2a34c6bb00a3aedc8939f141d3',1,'wte::cmp::direction::direction(void)'],['../classwte_1_1cmp_1_1direction.html#a9eb23b02187ca87ba5a087c190a1788e',1,'wte::cmp::direction::direction(const bool &amp;r)'],['../classwte_1_1cmp_1_1direction.html#ac2df801b1f9d240fe553455cf29cdcaa',1,'wte::cmp::direction::direction(const float &amp;a)'],['../classwte_1_1cmp_1_1direction.html#a5c427b9e8ae4de73cfd4ea701c77be63',1,'wte::cmp::direction::direction(const float &amp;a, const bool &amp;r)'],['../classwte_1_1cmp_1_1direction.html',1,'wte::cmp::direction']]],
-  ['disable_52',['disable',['../classwte_1_1cmp_1_1enabled.html#ac2e9c03b248ef9ed9ca596da715da327',1,'wte::cmp::enabled']]],
-  ['dispatcher_53',['dispatcher',['../classwte_1_1cmp_1_1dispatcher.html#a605fa6d6f3953f28591e20cd08985f05',1,'wte::cmp::dispatcher::dispatcher()'],['../classwte_1_1cmp_1_1dispatcher.html',1,'wte::cmp::dispatcher']]],
-  ['display_54',['display',['../classwte_1_1display.html#a9f958a0c4b9420b15b3aafa26129c138',1,'wte::display::display()'],['../classwte_1_1display.html',1,'wte::display']]],
-  ['do_5fgame_55',['do_game',['../classwte_1_1engine.html#afdc8ecd25d3c36d2ba1d1f82717ba0f5',1,'wte::engine']]],
-  ['draw_5ftext_56',['draw_text',['../classwte_1_1cmp_1_1overlay.html#afc18cab567104c4815cd50160a6aba48',1,'wte::cmp::overlay']]],
-  ['draw_5ftinted_57',['draw_tinted',['../classwte_1_1cmp_1_1animator.html#ae90c71e608cbf595d0992634e4738f07',1,'wte::cmp::animator']]]
+  ['enable_52',['enable',['../classwte_1_1cmp_1_1enabled.html#a300fbcabad4f7049e24bf69950ec0433',1,'wte::cmp::enabled']]],
+  ['enabled_53',['enabled',['../classwte_1_1cmp_1_1enabled.html#addfcd298601f638305a357f5372efa9c',1,'wte::cmp::enabled::enabled()'],['../classwte_1_1cmp_1_1enabled.html#abcb4d74045a8ed9e48cc692c36222d92',1,'wte::cmp::enabled::enabled(const bool &amp;e)'],['../classwte_1_1cmp_1_1enabled.html',1,'wte::cmp::enabled']]],
+  ['end_5fgame_54',['end_game',['../classwte_1_1engine.html#a1fb5c6cfcfcb687d31f345eea80d3a85',1,'wte::engine']]],
+  ['engine_55',['engine',['../classwte_1_1engine.html#a834ce10430ebe328a4045b4cef339650',1,'wte::engine::engine(const engine &amp;)=delete'],['../classwte_1_1engine.html#afbedfb62552d923027f5d479e732b081',1,'wte::engine::engine(const int &amp;argc, char **const &amp;argv, const std::string &amp;title)'],['../classwte_1_1engine.html',1,'wte::engine']]],
+  ['engine_5ftime_56',['engine_time',['../classwte_1_1engine__time.html',1,'wte']]],
+  ['entity_57',['entity',['../namespacewte.html#a04199560263bbf229f0410fbdd5375cb',1,'wte']]],
+  ['entity_5fcontainer_58',['entity_container',['../namespacewte.html#ae0779b06e2731efe7a169ea34facbb49',1,'wte']]],
+  ['entity_5fexists_59',['entity_exists',['../classwte_1_1mgr_1_1world.html#aa018f5a92c3a08f9857b216916a0aa1b',1,'wte::mgr::world']]],
+  ['entity_5fid_60',['entity_id',['../namespacewte.html#abf2544b3056d60f0182109d89eab289a',1,'wte']]],
+  ['event_61',['event',['../structwte_1_1input_1_1event.html',1,'wte::input']]]
 ];

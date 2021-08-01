@@ -1,19 +1,13 @@
 var searchData=
 [
-  ['check_30',['check',['../classwte_1_1cmp_1_1enabled.html#a42926e34eb288ce8a27ed5af4ee4391d',1,'wte::cmp::enabled::check()'],['../classwte_1_1cmp_1_1visible.html#ac192ef8b0ff3de9a7c42f560cbb2ce87',1,'wte::cmp::visible::check()']]],
-  ['check_5finput_5fevents_31',['check_input_events',['../classwte_1_1input.html#a6f0ef42bf195ba08d2d09d2b51730563',1,'wte::input']]],
-  ['check_5ftime_32',['check_time',['../classwte_1_1engine__time.html#a47fabcc19077e7a3b3335d66d46fcdeb',1,'wte::engine_time']]],
-  ['clear_33',['clear',['../classwte_1_1alert.html#a7d6c9247fe95b791577da9f846ff4946',1,'wte::alert']]],
-  ['clear_5fsave_34',['clear_save',['../classwte_1_1mgr_1_1variables.html#a933ff801de0cc8339dd05e49b95bdd0d',1,'wte::mgr::variables']]],
-  ['clear_5ftint_35',['clear_tint',['../classwte_1_1cmp_1_1animator.html#a2838aebefde8bb9431cfce66e9a6a5ca',1,'wte::cmp::animator']]],
-  ['colision_36',['colision',['../classwte_1_1sys_1_1colision.html',1,'wte::sys']]],
-  ['commands_37',['commands',['../classwte_1_1commands.html',1,'wte']]],
-  ['component_38',['component',['../classwte_1_1cmp_1_1component.html#ab57cc4bd5b63d207f1e8f06cce9d5921',1,'wte::cmp::component::component(const component &amp;)=delete'],['../classwte_1_1cmp_1_1component.html#a769a89e4047d5c0f0c4c8ce7105bfdce',1,'wte::cmp::component::component()'],['../classwte_1_1cmp_1_1component.html',1,'wte::cmp::component']]],
-  ['component_5fcontainer_39',['component_container',['../namespacewte.html#a56755629ebb58790ea2caba5b704ff51',1,'wte']]],
-  ['config_40',['config',['../classwte_1_1config.html',1,'wte']]],
-  ['const_5fcomponent_5fcontainer_41',['const_component_container',['../namespacewte.html#a4fc4f86a660a0c1c54c06a1186c7d0f8',1,'wte']]],
-  ['const_5fentity_5fcontainer_42',['const_entity_container',['../namespacewte.html#adb06d3544221b0d8128e07b63ff0760e',1,'wte']]],
-  ['controls_43',['controls',['../structwte_1_1config_1_1controls.html',1,'wte::config']]],
-  ['create_5fdisplay_44',['create_display',['../classwte_1_1display.html#af9de8bf96f08b13d25c6dda450f4b536',1,'wte::display']]],
-  ['create_5finput_5fevent_5fqueue_45',['create_input_event_queue',['../classwte_1_1input.html#ab066b778bf2b27a0ee1df9b71ee88a73',1,'wte::input']]]
+  ['del_42',['del',['../classwte_1_1mgr_1_1variables.html#ade24fac53363e2c67ef33cd2f3708883',1,'wte::mgr::variables']]],
+  ['delete_5fcomponent_43',['delete_component',['../classwte_1_1mgr_1_1world.html#abb1c22c50e6be539f14c650b83146178',1,'wte::mgr::world']]],
+  ['delete_5fentity_44',['delete_entity',['../classwte_1_1mgr_1_1world.html#ac14c840bc97aad4c94d285e7dc165f15',1,'wte::mgr::world']]],
+  ['direction_45',['direction',['../classwte_1_1cmp_1_1direction.html#a6b16cd2a34c6bb00a3aedc8939f141d3',1,'wte::cmp::direction::direction(void)'],['../classwte_1_1cmp_1_1direction.html#a9eb23b02187ca87ba5a087c190a1788e',1,'wte::cmp::direction::direction(const bool &amp;r)'],['../classwte_1_1cmp_1_1direction.html#ac2df801b1f9d240fe553455cf29cdcaa',1,'wte::cmp::direction::direction(const float &amp;a)'],['../classwte_1_1cmp_1_1direction.html#a5c427b9e8ae4de73cfd4ea701c77be63',1,'wte::cmp::direction::direction(const float &amp;a, const bool &amp;r)'],['../classwte_1_1cmp_1_1direction.html',1,'wte::cmp::direction']]],
+  ['disable_46',['disable',['../classwte_1_1cmp_1_1enabled.html#ac2e9c03b248ef9ed9ca596da715da327',1,'wte::cmp::enabled']]],
+  ['dispatcher_47',['dispatcher',['../classwte_1_1cmp_1_1dispatcher.html#a605fa6d6f3953f28591e20cd08985f05',1,'wte::cmp::dispatcher::dispatcher()'],['../classwte_1_1cmp_1_1dispatcher.html',1,'wte::cmp::dispatcher']]],
+  ['display_48',['display',['../classwte_1_1display.html',1,'wte']]],
+  ['do_5fgame_49',['do_game',['../classwte_1_1engine.html#afdc8ecd25d3c36d2ba1d1f82717ba0f5',1,'wte::engine']]],
+  ['draw_5ftext_50',['draw_text',['../classwte_1_1cmp_1_1overlay.html#afc18cab567104c4815cd50160a6aba48',1,'wte::cmp::overlay']]],
+  ['draw_5ftinted_51',['draw_tinted',['../classwte_1_1cmp_1_1animator.html#ae90c71e608cbf595d0992634e4738f07',1,'wte::cmp::animator']]]
 ];

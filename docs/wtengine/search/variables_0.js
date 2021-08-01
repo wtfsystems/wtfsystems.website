@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_5fdisplay_599',['_display',['../classwte_1_1display.html#ac5170a4b42aa1e09e2fc75c99620da7a',1,'wte::display']]]
+  ['internal_5fbitmap_584',['internal_bitmap',['../classwte_1_1cmp_1_1animator.html#a2b533e77b18d0ef173fa07a2f6a713c5',1,'wte::cmp::animator']]]
 ];
