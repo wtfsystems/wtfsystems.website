@@ -92,9 +92,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aacf5e3b60da618c10ce4b76a2ef5f5f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1cmp_1_1overlay.html#aacf5e3b60da618c10ce4b76a2ef5f5f3">overlay</a> (std::shared_ptr&lt; <a class="el" href="classwte_1_1wte__asset.html">wte_asset</a> &gt; bmp, std::shared_ptr&lt; <a class="el" href="classwte_1_1wte__asset.html">wte_asset</a> &gt; font, const float &amp;x, const float &amp;y, const std::size_t &amp;l, const std::function&lt; void(const <a class="el" href="namespacewte.html#abf2544b3056d60f0182109d89eab289a">entity_id</a> &amp;)&gt; &amp;func)</td></tr>
 <tr class="memdesc:aacf5e3b60da618c10ce4b76a2ef5f5f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new Overlay component.  <a href="classwte_1_1cmp_1_1overlay.html#aacf5e3b60da618c10ce4b76a2ef5f5f3">More...</a><br /></td></tr>
 <tr class="separator:aacf5e3b60da618c10ce4b76a2ef5f5f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9749371c4e14d89ef079f1063655c553"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1cmp_1_1overlay.html#a9749371c4e14d89ef079f1063655c553">overlay</a> (std::shared_ptr&lt; <a class="el" href="classwte_1_1wte__asset.html">wte_asset</a> &gt; bmp, const float &amp;x, const float &amp;y, const std::size_t &amp;l, const std::function&lt; void(const <a class="el" href="namespacewte.html#abf2544b3056d60f0182109d89eab289a">entity_id</a> &amp;)&gt; &amp;func)</td></tr>
-<tr class="memdesc:a9749371c4e14d89ef079f1063655c553"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new Overlay component. Use system default font.  <a href="classwte_1_1cmp_1_1overlay.html#a9749371c4e14d89ef079f1063655c553">More...</a><br /></td></tr>
-<tr class="separator:a9749371c4e14d89ef079f1063655c553"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc18cab567104c4815cd50160a6aba48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1cmp_1_1overlay.html#afc18cab567104c4815cd50160a6aba48">draw_text</a> (const std::string &amp;txt, const ALLEGRO_COLOR &amp;color, const float &amp;x, const float &amp;y, const int &amp;f)</td></tr>
 <tr class="memdesc:afc18cab567104c4815cd50160a6aba48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw text on the overlay.  <a href="classwte_1_1cmp_1_1overlay.html#afc18cab567104c4815cd50160a6aba48">More...</a><br /></td></tr>
 <tr class="separator:afc18cab567104c4815cd50160a6aba48"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,7 +167,7 @@ std::shared_ptr&lt; <a class="el" href="classwte_1_1wte__asset.html">wte_asset</
 <div class="textblock"><p>Component for storing an overlay image and defining its animation process. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aacf5e3b60da618c10ce4b76a2ef5f5f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aacf5e3b60da618c10ce4b76a2ef5f5f3">&#9670;&nbsp;</a></span>overlay() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aacf5e3b60da618c10ce4b76a2ef5f5f3">&#9670;&nbsp;</a></span>overlay()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -224,64 +221,6 @@ std::shared_ptr&lt; <a class="el" href="classwte_1_1wte__asset.html">wte_asset</
   <table class="params">
     <tr><td class="paramname">bmp</td><td>Bitmap asset to use. </td></tr>
     <tr><td class="paramname">font</td><td>Font asset to use. </td></tr>
-    <tr><td class="paramname">x</td><td>Horizontal location of the overlay in pixels. </td></tr>
-    <tr><td class="paramname">y</td><td>Verticle location of the overlay in pixels. </td></tr>
-    <tr><td class="paramname">l</td><td>Layer for sorting. </td></tr>
-    <tr><td class="paramname">func</td><td>Function to define what is displayed in the overlay. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a9749371c4e14d89ef079f1063655c553"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9749371c4e14d89ef079f1063655c553">&#9670;&nbsp;</a></span>overlay() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">wte::cmp::overlay::overlay </td>
-          <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwte_1_1wte__asset.html">wte_asset</a> &gt;&#160;</td>
-          <td class="paramname"><em>bmp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const float &amp;&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const float &amp;&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::size_t &amp;&#160;</td>
-          <td class="paramname"><em>l</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::function&lt; void(const <a class="el" href="namespacewte.html#abf2544b3056d60f0182109d89eab289a">entity_id</a> &amp;)&gt; &amp;&#160;</td>
-          <td class="paramname"><em>func</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create a new Overlay component. Use system default font. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">bmp</td><td>Bitmap asset to use. </td></tr>
     <tr><td class="paramname">x</td><td>Horizontal location of the overlay in pixels. </td></tr>
     <tr><td class="paramname">y</td><td>Verticle location of the overlay in pixels. </td></tr>
     <tr><td class="paramname">l</td><td>Layer for sorting. </td></tr>
@@ -399,7 +338,7 @@ std::shared_ptr&lt; <a class="el" href="classwte_1_1wte__asset.html">wte_asset</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 1 2021 13:07:05 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sun Aug 1 2021 22:37:10 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
