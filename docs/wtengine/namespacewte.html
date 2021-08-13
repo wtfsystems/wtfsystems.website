@@ -90,9 +90,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1al__font.html">al_font</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a wrapper to Allegro fonts.  <a href="classwte_1_1al__font.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1wte__asset.html">wte_asset</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface class for creating an asset.  <a href="classwte_1_1wte__asset.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1wte__exception.html">wte_exception</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Throws an internal engine exception.  <a href="classwte_1_1wte__exception.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,6 +112,9 @@ Typedefs</h2></td></tr>
 <tr class="separator:a2bb0a7e58ebc59b033e8f9d343873a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b8c0a3a15a7a81f107e19304b85a7f6"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="classwte_1_1message.html">message</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewte.html#a0b8c0a3a15a7a81f107e19304b85a7f6">message_container</a></td></tr>
 <tr class="separator:a0b8c0a3a15a7a81f107e19304b85a7f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe8c5c490a75d19f3649cb7e7322af05"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:afe8c5c490a75d19f3649cb7e7322af05"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewte.html#afe8c5c490a75d19f3649cb7e7322af05">wte_asset</a> = std::shared_ptr&lt; T &gt;</td></tr>
+<tr class="separator:afe8c5c490a75d19f3649cb7e7322af05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69f8dda67f050eaa7b6d460769a17dcf"><td class="memItemLeft" align="right" valign="top"><a id="a69f8dda67f050eaa7b6d460769a17dcf"></a>
 typedef std::vector&lt; mnu::menu_sptr &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewte.html#a69f8dda67f050eaa7b6d460769a17dcf">menu_iterator</a></td></tr>
 <tr class="memdesc:a69f8dda67f050eaa7b6d460769a17dcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Menu iterator. <br /></td></tr>
@@ -219,11 +219,6 @@ typedef std::vector&lt; mnu::menu_sptr &gt;::const_iterator&#160;</td><td class=
 <dl class="section copyright"><dt>Copyright</dt><dd>See LICENSE.md for copyright information. </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2019-2021</dd></dl>
 <p>WTEngine | File: sprite.hpp</p>
-<dl class="section author"><dt>Author</dt><dd>Matthew Evans </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>0.5 </dd></dl>
-<dl class="section copyright"><dt>Copyright</dt><dd>See LICENSE.md for copyright information. </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2019-2021</dd></dl>
-<p>WTEngine | File: visible.hpp</p>
 <dl class="section author"><dt>Author</dt><dd>Matthew Evans </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>0.5 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>See LICENSE.md for copyright information. </dd></dl>
@@ -533,10 +528,32 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="afe8c5c490a75d19f3649cb7e7322af05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe8c5c490a75d19f3649cb7e7322af05">&#9670;&nbsp;</a></span>wte_asset</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacewte.html#afe8c5c490a75d19f3649cb7e7322af05">wte::wte_asset</a> = typedef std::shared_ptr&lt;T&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Asset type. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 1 2021 22:37:10 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Aug 12 2021 22:39:18 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
