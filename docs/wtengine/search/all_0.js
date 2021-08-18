@@ -14,7 +14,7 @@ var searchData=
   ['ai_11',['ai',['../classwte_1_1cmp_1_1ai.html#ae88dfeb6b3964359e1fb4a96e8002a2a',1,'wte::cmp::ai::ai(const std::function&lt; void(const entity_id &amp;)&gt; &amp;func_a, const std::function&lt; void(const entity_id &amp;)&gt; &amp;func_b)'],['../classwte_1_1cmp_1_1ai.html#a51598b75d21a2ebecbc9331afa11e927',1,'wte::cmp::ai::ai(const std::function&lt; void(const entity_id &amp;)&gt; &amp;func)'],['../classwte_1_1cmp_1_1ai.html',1,'wte::cmp::ai']]],
   ['al_5fbitmap_12',['al_bitmap',['../classwte_1_1al__bitmap.html#a4ef3435acbc9bd88aa8c1af9259c3c7e',1,'wte::al_bitmap::al_bitmap()'],['../classwte_1_1al__bitmap.html#a8066c5f15dc1a115d07f7ce9bcc689c6',1,'wte::al_bitmap::al_bitmap(const int &amp;w, const int &amp;h, const bool &amp;p)'],['../classwte_1_1al__bitmap.html#a9caeced7801f73795c0b0b7b4295d60d',1,'wte::al_bitmap::al_bitmap(const int &amp;w, const int &amp;h)'],['../classwte_1_1al__bitmap.html#a912feffa768c8c59d7e20f5ecba77028',1,'wte::al_bitmap::al_bitmap(const bool &amp;p)'],['../classwte_1_1al__bitmap.html',1,'wte::al_bitmap']]],
   ['al_5fbitmap_5fconverter_13',['al_bitmap_converter',['../classwte_1_1al__bitmap__converter.html',1,'wte']]],
-  ['al_5ffont_14',['al_font',['../classwte_1_1al__font.html#a2f4d19135e5fa4f6303810e8c6c1a7ea',1,'wte::al_font::al_font(const std::string &amp;fname, const int &amp;size, const int &amp;flags)'],['../classwte_1_1al__font.html#a6ac912190924bdf096e0da25b301aea7',1,'wte::al_font::al_font()'],['../classwte_1_1al__font.html',1,'wte::al_font']]],
+  ['al_5ffont_14',['al_font',['../classwte_1_1al__font.html#a6ac912190924bdf096e0da25b301aea7',1,'wte::al_font::al_font()'],['../classwte_1_1al__font.html#a2f4d19135e5fa4f6303810e8c6c1a7ea',1,'wte::al_font::al_font(const std::string &amp;fname, const int &amp;size, const int &amp;flags)'],['../classwte_1_1al__font.html',1,'wte::al_font']]],
   ['alert_15',['alert',['../classwte_1_1alert.html',1,'wte']]],
   ['ambiance_5floop_16',['ambiance_loop',['../classwte_1_1mgr_1_1audio.html#af5845c2132b061e4b5c65a219acf3e57',1,'wte::mgr::audio']]],
   ['ambiance_5fpause_17',['ambiance_pause',['../classwte_1_1mgr_1_1audio.html#aac13a0727878ad0539f5214086017014',1,'wte::mgr::audio']]],
@@ -22,8 +22,7 @@ var searchData=
   ['ambiance_5fstop_19',['ambiance_stop',['../classwte_1_1mgr_1_1audio.html#af11043c217e35f75b1e6714176aecb65',1,'wte::mgr::audio']]],
   ['ambiance_5funpause_20',['ambiance_unpause',['../classwte_1_1mgr_1_1audio.html#ac1583607cf205f1c9e2189edb7ec07d3',1,'wte::mgr::audio']]],
   ['animate_21',['animate',['../classwte_1_1sys_1_1animate.html',1,'wte::sys']]],
-  ['animator_22',['animator',['../classwte_1_1cmp_1_1animator.html#a159e8287fefa84efaf6283ede06e4f92',1,'wte::cmp::animator::animator()'],['../classwte_1_1cmp_1_1animator.html',1,'wte::cmp::animator']]],
-  ['apply_23',['apply',['../classwte_1_1mnu_1_1apply.html#ac55a4e0f942dfa0e398f223dfd3b29eb',1,'wte::mnu::apply::apply()'],['../classwte_1_1mnu_1_1apply.html',1,'wte::mnu::apply']]],
-  ['assets_24',['assets',['../classwte_1_1mgr_1_1assets.html',1,'wte::mgr']]],
-  ['audio_25',['audio',['../classwte_1_1mgr_1_1audio.html',1,'wte::mgr']]]
+  ['apply_22',['apply',['../classwte_1_1mnu_1_1apply.html#ac55a4e0f942dfa0e398f223dfd3b29eb',1,'wte::mnu::apply::apply()'],['../classwte_1_1mnu_1_1apply.html',1,'wte::mnu::apply']]],
+  ['assets_23',['assets',['../classwte_1_1mgr_1_1assets.html',1,'wte::mgr']]],
+  ['audio_24',['audio',['../classwte_1_1mgr_1_1audio.html',1,'wte::mgr']]]
 ];
