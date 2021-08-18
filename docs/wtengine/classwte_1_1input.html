@@ -68,7 +68,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classwte_1_1input-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -94,27 +93,25 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input event macros.  <a href="structwte_1_1input_1_1event.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwte_1_1input_1_1lastbuttonpress.html">lastbuttonpress</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record last button press.  <a href="structwte_1_1input_1_1lastbuttonpress.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwte_1_1input_1_1lastkeypress.html">lastkeypress</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record last key press.  <a href="structwte_1_1input_1_1lastkeypress.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:ae1fe1d7dbaec7e32c2da118acdb5bf5b"><td class="memItemLeft" align="right" valign="top"><a id="ae1fe1d7dbaec7e32c2da118acdb5bf5b"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1input.html#ae1fe1d7dbaec7e32c2da118acdb5bf5b">~input</a> ()=default</td></tr>
-<tr class="memdesc:ae1fe1d7dbaec7e32c2da118acdb5bf5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">WTE Input destructor. <br /></td></tr>
-<tr class="separator:ae1fe1d7dbaec7e32c2da118acdb5bf5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:ab066b778bf2b27a0ee1df9b71ee88a73"><td class="memItemLeft" align="right" valign="top"><a id="ab066b778bf2b27a0ee1df9b71ee88a73"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>create_input_event_queue</b> (void)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1input.html#ab066b778bf2b27a0ee1df9b71ee88a73">create_input_event_queue</a> (void)</td></tr>
+<tr class="memdesc:ab066b778bf2b27a0ee1df9b71ee88a73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the input queue for capturing events. Called during engine initialization. <br /></td></tr>
 <tr class="separator:ab066b778bf2b27a0ee1df9b71ee88a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bbf9c43e4cbea56ec35f40d7cd5ef03"><td class="memItemLeft" align="right" valign="top"><a id="a1bbf9c43e4cbea56ec35f40d7cd5ef03"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>destroy_input_event_queue</b> (void)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1input.html#a1bbf9c43e4cbea56ec35f40d7cd5ef03">destroy_input_event_queue</a> (void)</td></tr>
+<tr class="memdesc:a1bbf9c43e4cbea56ec35f40d7cd5ef03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the input queue. Called during engine de-initialization. <br /></td></tr>
 <tr class="separator:a1bbf9c43e4cbea56ec35f40d7cd5ef03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f0ef42bf195ba08d2d09d2b51730563"><td class="memItemLeft" align="right" valign="top"><a id="a6f0ef42bf195ba08d2d09d2b51730563"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>check_input_events</b> (void)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1input.html#a6f0ef42bf195ba08d2d09d2b51730563">check_input_events</a> (void)</td></tr>
+<tr class="memdesc:a6f0ef42bf195ba08d2d09d2b51730563"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the input queue for events. Called during the main engine loop. Passes any events to the input handler. <br /></td></tr>
 <tr class="separator:a6f0ef42bf195ba08d2d09d2b51730563"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -125,7 +122,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>check_input_events</b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 18 2021 12:25:45 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Aug 18 2021 19:35:55 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
