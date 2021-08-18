@@ -82,7 +82,11 @@ export class PrimeWheel extends Command {
             }
             return "Incorrect color code."
         }
-        return "<span style=\"font-weight: bold;\">Usage:</span> primewheel <em>start</em>|<em>stop</em>|<em>reset</em>|<em>color</em>"
+        return `
+            <span style=\"font-weight: bold;\">Usage:</span> primewheel <em>start</em>|<em>stop</em>|<em>reset</em>|<em>color</em>
+            <br/><br/>
+            Inspired by: <a href="https://www.youtube.com/watch?v=EK32jo7i5LQ">3blue1brown</a>
+        `
     }
 
     /*

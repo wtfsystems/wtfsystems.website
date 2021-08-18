@@ -95,6 +95,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afc18cab567104c4815cd50160a6aba48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1cmp_1_1overlay.html#afc18cab567104c4815cd50160a6aba48">draw_text</a> (const std::string &amp;txt, const ALLEGRO_COLOR &amp;color, const float &amp;x, const float &amp;y, const int &amp;f)</td></tr>
 <tr class="memdesc:afc18cab567104c4815cd50160a6aba48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw text on the overlay.  <a href="classwte_1_1cmp_1_1overlay.html#afc18cab567104c4815cd50160a6aba48">More...</a><br /></td></tr>
 <tr class="separator:afc18cab567104c4815cd50160a6aba48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c55421a8c306358ca13a79453f24fdc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1cmp_1_1overlay.html#a3c55421a8c306358ca13a79453f24fdc">set_pos_x</a> (const float &amp;x)</td></tr>
+<tr class="memdesc:a3c55421a8c306358ca13a79453f24fdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set X position.  <a href="classwte_1_1cmp_1_1overlay.html#a3c55421a8c306358ca13a79453f24fdc">More...</a><br /></td></tr>
+<tr class="separator:a3c55421a8c306358ca13a79453f24fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0053c982c2011ce7eecc9e7da45055a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1cmp_1_1overlay.html#a0053c982c2011ce7eecc9e7da45055a3">set_pos_y</a> (const float &amp;y)</td></tr>
+<tr class="memdesc:a0053c982c2011ce7eecc9e7da45055a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Y position.  <a href="classwte_1_1cmp_1_1overlay.html#a0053c982c2011ce7eecc9e7da45055a3">More...</a><br /></td></tr>
+<tr class="separator:a0053c982c2011ce7eecc9e7da45055a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec61461480f7a786d9b50a3fa77743d3"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1cmp_1_1overlay.html#aec61461480f7a786d9b50a3fa77743d3">get_pos_x</a> (void) const</td></tr>
 <tr class="memdesc:aec61461480f7a786d9b50a3fa77743d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get X position.  <a href="classwte_1_1cmp_1_1overlay.html#aec61461480f7a786d9b50a3fa77743d3">More...</a><br /></td></tr>
 <tr class="separator:aec61461480f7a786d9b50a3fa77743d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -246,7 +252,7 @@ Additional Inherited Members</h2></td></tr>
     <tr><td class="paramname">bmp</td><td>Bitmap asset to use. </td></tr>
     <tr><td class="paramname">font</td><td>Font asset to use. </td></tr>
     <tr><td class="paramname">x</td><td>Horizontal location of the overlay in pixels. </td></tr>
-    <tr><td class="paramname">y</td><td>Verticle location of the overlay in pixels. </td></tr>
+    <tr><td class="paramname">y</td><td>Vertical location of the overlay in pixels. </td></tr>
     <tr><td class="paramname">l</td><td>Layer for sorting. </td></tr>
     <tr><td class="paramname">func</td><td>Function to define what is displayed in the overlay. </td></tr>
   </table>
@@ -306,7 +312,7 @@ Additional Inherited Members</h2></td></tr>
     <tr><td class="paramname">txt</td><td>Text to be displayed. </td></tr>
     <tr><td class="paramname">color</td><td>Allegro color object. </td></tr>
     <tr><td class="paramname">x</td><td>Horizontal location of the text. </td></tr>
-    <tr><td class="paramname">y</td><td>Verticle location of the text. </td></tr>
+    <tr><td class="paramname">y</td><td>Vertical location of the text. </td></tr>
     <tr><td class="paramname">f</td><td>Text flags for drawing - see Allegro docs on al_draw_text. </td></tr>
   </table>
   </dd>
@@ -356,13 +362,65 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a3c55421a8c306358ca13a79453f24fdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c55421a8c306358ca13a79453f24fdc">&#9670;&nbsp;</a></span>set_pos_x()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wte::cmp::overlay::set_pos_x </td>
+          <td>(</td>
+          <td class="paramtype">const float &amp;&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set X position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>X position. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0053c982c2011ce7eecc9e7da45055a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0053c982c2011ce7eecc9e7da45055a3">&#9670;&nbsp;</a></span>set_pos_y()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wte::cmp::overlay::set_pos_y </td>
+          <td>(</td>
+          <td class="paramtype">const float &amp;&#160;</td>
+          <td class="paramname"><em>y</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set Y position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Y position. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/wtengine/cmp/gfx/overlay.hpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 17 2021 23:05:50 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Aug 18 2021 12:25:45 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
