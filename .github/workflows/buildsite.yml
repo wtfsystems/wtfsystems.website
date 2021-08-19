@@ -39,6 +39,7 @@ jobs:
     - name: Modify gitignore
       run: |
         sed '/scripts.html/d' .gitignore > temp && mv temp .gitignore
+        sed '/api/d' .gitignore > temp && mv temp .gitignore
         sed '/dist/d' .gitignore > temp && mv temp .gitignore
         echo 'src/' >> .gitignore
         echo '.babelrc' >> .gitignore
