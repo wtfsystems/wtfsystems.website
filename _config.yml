@@ -19,7 +19,7 @@ sass:
   sass_dir: _sass
   style: compressed
 
-include: [docs]
+include: [api, docs]
 exclude:
   - node_modules
   - src
