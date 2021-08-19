@@ -33,7 +33,7 @@ jobs:
 
     - name: Donger API
       run: |
-        mv donger_api/donger.json api/donger.json
+        mv donger_api/donger.json api/
         rm -rf donger_api/
 
     - name: Modify gitignore
