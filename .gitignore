@@ -1,6 +1,6 @@
-_wtfsystems.github.io.code-workspace
+*.code-workspace
 _drafts/
-_bak/
+*_bak/
 .bakignore
 
 .jekyll-cache
