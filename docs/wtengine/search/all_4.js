@@ -1,12 +1,14 @@
 var searchData=
 [
-  ['enable_55',['enable',['../classwte_1_1cmp_1_1ai.html#af8aff6893425246788d1278554444f43',1,'wte::cmp::ai']]],
-  ['end_5fgame_56',['end_game',['../classwte_1_1engine.html#a1fb5c6cfcfcb687d31f345eea80d3a85',1,'wte::engine']]],
-  ['engine_57',['engine',['../classwte_1_1engine.html#a834ce10430ebe328a4045b4cef339650',1,'wte::engine::engine(const engine &amp;)=delete'],['../classwte_1_1engine.html#afbedfb62552d923027f5d479e732b081',1,'wte::engine::engine(const int &amp;argc, char **const &amp;argv, const std::string &amp;title)'],['../classwte_1_1engine.html',1,'wte::engine']]],
-  ['engine_5ftime_58',['engine_time',['../classwte_1_1engine__time.html',1,'wte']]],
-  ['entity_59',['entity',['../namespacewte.html#a04199560263bbf229f0410fbdd5375cb',1,'wte']]],
-  ['entity_5fcontainer_60',['entity_container',['../namespacewte.html#ae0779b06e2731efe7a169ea34facbb49',1,'wte']]],
-  ['entity_5fexists_61',['entity_exists',['../classwte_1_1mgr_1_1world.html#aa018f5a92c3a08f9857b216916a0aa1b',1,'wte::mgr::world']]],
-  ['entity_5fid_62',['entity_id',['../namespacewte.html#abf2544b3056d60f0182109d89eab289a',1,'wte']]],
-  ['event_63',['event',['../structwte_1_1input_1_1event.html',1,'wte::input']]]
+  ['del_48',['del',['../classwte_1_1mgr_1_1variables.html#ade24fac53363e2c67ef33cd2f3708883',1,'wte::mgr::variables']]],
+  ['delete_5fcomponent_49',['delete_component',['../classwte_1_1mgr_1_1world.html#abb1c22c50e6be539f14c650b83146178',1,'wte::mgr::world']]],
+  ['delete_5fentity_50',['delete_entity',['../classwte_1_1mgr_1_1world.html#ac14c840bc97aad4c94d285e7dc165f15',1,'wte::mgr::world']]],
+  ['destroy_5finput_5fevent_5fqueue_51',['destroy_input_event_queue',['../classwte_1_1input.html#a1bbf9c43e4cbea56ec35f40d7cd5ef03',1,'wte::input']]],
+  ['disable_52',['disable',['../classwte_1_1cmp_1_1ai.html#a052ac29356c549a91b877e0a4c186168',1,'wte::cmp::ai']]],
+  ['dispatcher_53',['dispatcher',['../classwte_1_1cmp_1_1dispatcher.html#a605fa6d6f3953f28591e20cd08985f05',1,'wte::cmp::dispatcher::dispatcher()'],['../classwte_1_1cmp_1_1dispatcher.html',1,'wte::cmp::dispatcher']]],
+  ['display_54',['display',['../classwte_1_1display.html',1,'wte']]],
+  ['do_5fgame_55',['do_game',['../classwte_1_1engine.html#afdc8ecd25d3c36d2ba1d1f82717ba0f5',1,'wte::engine']]],
+  ['draw_5frotated_56',['draw_rotated',['../classwte_1_1cmp_1_1gfx.html#a5b75ca0d97ff26e159a6a48479bd0ec9',1,'wte::cmp::gfx']]],
+  ['draw_5ftext_57',['draw_text',['../classwte_1_1cmp_1_1overlay.html#afc18cab567104c4815cd50160a6aba48',1,'wte::cmp::overlay']]],
+  ['draw_5ftinted_58',['draw_tinted',['../classwte_1_1cmp_1_1gfx.html#ae9f69db2aaefedca37753860a8a7a717',1,'wte::cmp::gfx']]]
 ];
