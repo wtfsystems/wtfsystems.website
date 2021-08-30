@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['left_700',['left',['../structwte_1_1input_1_1event_1_1p1_1_1ondown.html#a72cf0d9345ef93f3f023a16a37b94279',1,'wte::input::event::p1::ondown::left()'],['../structwte_1_1input_1_1event_1_1p1_1_1onup.html#a28787167a848cbd371f98fbb0dd51b8f',1,'wte::input::event::p1::onup::left()'],['../structwte_1_1input_1_1event_1_1p2_1_1ondown.html#a57652d9a54e199a53169972c264d26ba',1,'wte::input::event::p2::ondown::left()'],['../structwte_1_1input_1_1event_1_1p2_1_1onup.html#a32b97288eb8f1e702c37b40eaa3be8b9',1,'wte::input::event::p2::onup::left()']]]
+  ['key_702',['key',['../structwte_1_1input_1_1lastkeypress.html#a2849066f16aea1a84b50394f91f390d9',1,'wte::input::lastkeypress']]],
+  ['key_5fmenu_703',['key_menu',['../structwte_1_1config_1_1controls.html#acdf74445f6788a6b9542b9071eca2f83',1,'wte::config::controls']]],
+  ['key_5fmenu_5fselect_704',['key_menu_select',['../structwte_1_1config_1_1controls.html#a9ab964f63c0f39ffa091c9108c367897',1,'wte::config::controls']]]
 ];

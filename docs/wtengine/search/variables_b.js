@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['up_781',['up',['../structwte_1_1input_1_1event_1_1p1_1_1ondown.html#a688908b6ddcd30c9e60fc91cb0774e8f',1,'wte::input::event::p1::ondown::up()'],['../structwte_1_1input_1_1event_1_1p1_1_1onup.html#a0405ba84f7ffd04d54a2d372d2cdf19a',1,'wte::input::event::p1::onup::up()'],['../structwte_1_1input_1_1event_1_1p2_1_1ondown.html#ac19222e7ce46401bbe39c1c0caaaefbe',1,'wte::input::event::p2::ondown::up()'],['../structwte_1_1input_1_1event_1_1p2_1_1onup.html#a61a0e7ab6112b1788e66cb13c0ad5e07',1,'wte::input::event::p2::onup::up()']]]
+  ['scale_5ffactor_783',['scale_factor',['../structwte_1_1config_1_1gfx.html#ad8ae1a0413c6278f95bc56e8ec0d29e8',1,'wte::config::gfx']]],
+  ['screen_5fh_784',['screen_h',['../structwte_1_1config_1_1gfx.html#a27b553615e7fcac0432cdfc3e2c3051b',1,'wte::config::gfx']]],
+  ['screen_5fw_785',['screen_w',['../structwte_1_1config_1_1gfx.html#a446188f7b0d94a4fe9a259196039afb7',1,'wte::config::gfx']]]
 ];
