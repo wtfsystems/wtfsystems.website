@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>WTEngine: About</title>
+<title>WTEngine: What the Engine?</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,16 +63,19 @@ $(function() {
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">About </div>  </div>
+<div class="title">What the Engine? </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_README"></a> <b>WTEngine</b> (What the Engine?) is a cross-platform game engine based on <a href="https://en.wikipedia.org/wiki/Entity_component_system">ECS</a> design that can be used to make a 2D action game. The engine is written in C++17 and uses the <a href="https://liballeg.org">Allegro Game Library</a> and <a href="https://www.icculus.org/physfs/">PhysicsFS</a>.</p>
-<h3><a class="anchor" id="autotoc_md1"></a>
+<div class="textblock"><p><a class="anchor" id="md_README"></a> </p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+About</h1>
+<p><b>WTEngine</b> is a cross-platform game engine based on <a href="https://en.wikipedia.org/wiki/Entity_component_system">ECS</a> design that can be used to make a 2D action game. The engine is written in C++17 and uses the <a href="https://liballeg.org">Allegro Game Library</a> and <a href="https://www.icculus.org/physfs/">PhysicsFS</a>.</p>
+<h3><a class="anchor" id="autotoc_md2"></a>
 API Documentation:</h3>
 <p><a href="https://www.wtfsystems.net/docs/wtengine/index.html">https://www.wtfsystems.net/docs/wtengine/index.html</a></p>
 <p>For an example of the engine in action, see the <a href="https://github.com/wtfsystems/wtengine/blob/master/example/src/wte_demo.cpp">demo game code</a>.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md3"></a>
+<h1><a class="anchor" id="autotoc_md4"></a>
 Library Installation</h1>
 <p>Build and installation is handled by <a href="https://cmake.org/">CMake</a>. To build just the library: </p><div class="fragment"><div class="line">git clone https://github.com/wtfsystems/wtengine.git</div>
 <div class="line">cd wtengine</div>
@@ -80,7 +83,7 @@ Library Installation</h1>
 <div class="line">make</div>
 </div><!-- fragment --><p>Then to install the library run: </p><div class="fragment"><div class="line">sudo make install</div>
 </div><!-- fragment --><hr  />
-<h1><a class="anchor" id="autotoc_md5"></a>
+<h1><a class="anchor" id="autotoc_md6"></a>
 Example Game</h1>
 <p>Requires the library to be installed to build.</p>
 <div class="fragment"><div class="line">cd example</div>
@@ -89,25 +92,53 @@ Example Game</h1>
 </div><!-- fragment --><p>No install process, just run the created <em>wte_demo</em> executable.</p>
 <p>A compiled demo for Windows can be found in the <a href="https://github.com/wtfsystems/releases">releases</a> repository. Binary data to play the demo is included.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md7"></a>
+<h1><a class="anchor" id="autotoc_md8"></a>
 Troubleshooting</h1>
-<h2><a class="anchor" id="autotoc_md8"></a>
+<h2><a class="anchor" id="autotoc_md9"></a>
 pkg-config can't find wtengine</h2>
 <p>Make sure the install location used for pkg-config is in PKG_CONFIG_PATH, example: </p><div class="fragment"><div class="line">export PKG_CONFIG_PATH=/usr/local/share/pkgconfig</div>
 </div><!-- fragment --><p>Check <b>install_manifest.txt</b> to see where <b>wtengine.pc</b> was placed.</p>
 <p>You can verify pkg-config can locate the engine by: </p><div class="fragment"><div class="line">pkg-config --libs --exists wtengine </div>
 </div><!-- fragment --><hr  />
-<h1><a class="anchor" id="autotoc_md10"></a>
+<h1><a class="anchor" id="autotoc_md11"></a>
 Manual</h1>
 <hr  />
-<p><b>NOTE:</b> <em>The following is incomplete, outdated, and is a work in progress.</em></p>
+<p><b>NOTE:</b> <em>The following is (kinda) incomplete, (sorta) outdated, and is a work in progress.</em></p>
 <hr  />
-<h2><a class="anchor" id="autotoc_md13"></a>
+<h2><a class="anchor" id="autotoc_md14"></a>
 Index</h2>
+<ul>
+<li><a href="#main-engine-object">Main Engine Object</a></li>
+<li><a href="#build-flags">Build Flags</a></li>
+<li><a href="#entities--components--systems">ECS</a><ul>
+<li><a href="#entities">Entities</a></li>
+<li><a href="#components">Components</a></li>
+<li><a href="#systems">Systems</a></li>
+</ul>
+</li>
+<li><a href="#components-with-custom-functions">Components with Custom Functions</a><ul>
+<li><a href="#background--overlay">Background &amp; Overlay</a></li>
+<li><a href="#dispatcher">Dispatcher</a></li>
+<li><a href="#ai">Ai</a></li>
+</ul>
+</li>
+<li><a href="#menus">Menus</a></li>
+<li><a href="#messaging-and-commands">Messaging and Commands</a><ul>
+<li><a href="#message-format">Message format</a></li>
+<li><a href="#examples">Examples</a></li>
+<li><a href="#built-in-messages">Built-In Messages</a></li>
+</ul>
+</li>
+<li><a href="#setting-up-physicsfs">Setting up PhysicsFS</a></li>
+<li><a href="#setting-up-the-renderer">Setting up the Renderer</a></li>
+<li><a href="#spawning-entities">Spawning Entities</a></li>
+<li><a href="#variables">Variables</a></li>
+</ul>
 <hr  />
-<h2><a class="anchor" id="autotoc_md15"></a>
+<p>Needs review</p>
+<h2><a class="anchor" id="autotoc_md16"></a>
 Main Engine Object</h2>
-<p>Creating a game is done by extending the <b>wte_main</b> object and implementing the members below.</p>
+<p>Creating a game is done by extending the <b>engine</b> object and implementing the members below.</p>
 <p><em>Required:</em> </p><div class="fragment"><div class="line">virtual void load_menus(void) - Define menus here</div>
 <div class="line">virtual void load_systems(void) - Load systems here</div>
 <div class="line">virtual void new_game(void) - New game process</div>
@@ -116,7 +147,6 @@ Main Engine Object</h2>
 <div class="line">virtual void on_menu_close(void) - Events when a menu closes</div>
 <div class="line">virtual void out_of_focus(void) - Events if the game window is clicked out of</div>
 <div class="line">virtual void back_in_focus(void) - Events when the game window is brought back into focus</div>
-<div class="line">virtual void handle_custom_sys_msg(const message&amp;) - Define custom message handling</div>
 </div><!-- fragment --><p>In your <b>main.cpp</b> file delcare the object as such: </p><div class="fragment"><div class="line">//  Initialize game object.</div>
 <div class="line">wte_demo my_game(argc, argv);</div>
 <div class="line">//  Run the game.</div>
@@ -125,30 +155,30 @@ Main Engine Object</h2>
 <p>When defining the constructor for your object, pass the window's display title as well: </p><div class="fragment"><div class="line">wte_demo::wte_demo(int argc, char **argv) : wte_main(argc, argv, &quot;WTE Demo&quot;)</div>
 </div><!-- fragment --><p>See the demo files <b>main.cpp</b> and <b>wte_demo.cpp</b> for an example of an implementation.</p>
 <hr  />
-<h2><a class="anchor" id="autotoc_md17"></a>
+<h2><a class="anchor" id="autotoc_md18"></a>
 Build Flags</h2>
-<p>All build flags are defined in <b>wte_global_defines.hpp</b></p>
+<p>All build flags are defined in <b>wtengine/_globals/_defines.hpp</b></p>
 <hr  />
-<h4><a class="anchor" id="autotoc_md19"></a>
+<h4><a class="anchor" id="autotoc_md20"></a>
 WTE_TICKS_PER_SECOND</h4>
 <p>By default the engine will tick at 60 iterations a second. You can change the rate using this build flag. The value is a float.</p>
 <hr  />
-<h4><a class="anchor" id="autotoc_md21"></a>
+<h4><a class="anchor" id="autotoc_md22"></a>
 WTE_BUILD_DEBUG</h4>
 <p>Build debug logging.</p>
 <hr  />
-<h4><a class="anchor" id="autotoc_md23"></a>
+<h4><a class="anchor" id="autotoc_md24"></a>
 WTE_MAX_PLAYING_SAMPLES</h4>
 <p>Sets the maximum number of simultaneous playing samples. Default is eight.</p>
 <hr  />
-<h4><a class="anchor" id="autotoc_md25"></a>
+<h4><a class="anchor" id="autotoc_md26"></a>
 WTE_NO_MAGIC_PINK</h4>
 <p>By default the engine will use "magic pink" (RGB 255, 0, 255) for transparency. Define this to disable the feature.</p>
 <hr  />
-<h2><a class="anchor" id="autotoc_md27"></a>
+<h2><a class="anchor" id="autotoc_md28"></a>
 Entities / Components / Systems</h2>
 <p>WTEngine stores game objects in the <b>entity_manager</b> class.</p>
-<h4><a class="anchor" id="autotoc_md28"></a>
+<h4><a class="anchor" id="autotoc_md29"></a>
 Entities:</h4>
 <p>Entities are any and all in-game objects, such as the player, background, enemies, even the text showing the score. When creating a new entity the engine will assign a unique ID number and unique name. If the engine is unable to create an entity the error code <b>WTE_ENTITY_ERROR</b> is returned. You can then change the name of the entity if desired. When setting the name the engine will verify it does not already exist.</p>
 <p><em>Creating an entity:</em> </p><div class="fragment"><div class="line">entity_id e_id = world.new_entity();</div>
@@ -156,60 +186,51 @@ Entities:</h4>
 </div><!-- fragment --><p><em>Get entity name by ID:</em> </p><div class="fragment"><div class="line">std::string player_name = world.get_name(plr_id);</div>
 </div><!-- fragment --><p><em>Get entity ID by name:</em> </p><div class="fragment"><div class="line">entity_id e_id = world.get_id(&quot;some_entity&quot;);</div>
 </div><!-- fragment --><hr  />
-<h4><a class="anchor" id="autotoc_md30"></a>
+<h4><a class="anchor" id="autotoc_md31"></a>
 Components:</h4>
 <p>Components are the data objects that make up each entity. Examples would be the location on the screen, sprite data, hitpoints, etc. After creating an entity you can assign components to it using its Entity ID. The engine has seperate functions for reading and setting component data. You can also create your own components by extending the base <b>component</b> object.</p>
-<p><em>Adding a component:</em> </p><div class="fragment"><div class="line">wte_new_component(e_id, cmp::visible, false);</div>
-</div><!-- fragment --><p><em>Setting a component's data:</em> </p><div class="fragment"><div class="line">wte_set_component(e_id, cmp::sprite)-&gt;load_sprite(&quot;my_sprite.bmp&quot;);</div>
-</div><!-- fragment --><p><em>Reading a component's data:</em> </p><div class="fragment"><div class="line">wte_get_component(e_id, cmp::location)-&gt;get_x()</div>
+<p><em>Adding a component:</em> </p><div class="fragment"><div class="line">mgr::world::add_component&lt;cmp::team&gt;(e_id, 0);</div>
+</div><!-- fragment --><p><em>Setting a component's data:</em> </p><div class="fragment"><div class="line">mgr::world::set_component&lt;cmp::overlay&gt;(e_id)-&gt;hide();</div>
+</div><!-- fragment --><p><em>Reading a component's data:</em> </p><div class="fragment"><div class="line">if(mgr::world::get_component&lt;health&gt;(plr_id)-&gt;hp &lt;= 0)</div>
 </div><!-- fragment --><hr  />
-<h4><a class="anchor" id="autotoc_md32"></a>
+<h4><a class="anchor" id="autotoc_md33"></a>
 Systems:</h4>
 <p>Systems are functions that are processed each iteration when the game is running. These are designed to obtain all components of a certain type and process them. For example, the movement system will look for all entities with a velocity component, verify they have a location component, and update their posistion based on the velocity value. You can also create your own systems by extending the base <b>system</b> object. You then load all systems into the <b>system_manager</b> in order they will be processed.</p>
 <p><em>Example:</em> </p><div class="fragment"><div class="line">void wte_demo::load_systems(void) {</div>
-<div class="line">    wte_add_system(sys::input);</div>
-<div class="line">    wte_add_system(sys::movement);</div>
-<div class="line">    wte_add_system(sys::colision);</div>
-<div class="line">    wte_add_system(sys::logic);</div>
-<div class="line">    wte_add_system(sys::animate);</div>
+<div class="line">    mgr::systems::add(std::make_unique&lt;sys::movement&gt;());</div>
+<div class="line">    mgr::systems::add(std::make_unique&lt;sys::colision&gt;());</div>
+<div class="line">    mgr::systems::add(std::make_unique&lt;sys::logic&gt;());</div>
+<div class="line">    mgr::systems::add(std::make_unique&lt;sys::animate&gt;());</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>The <b>entity_manager</b> has members for reading or setting all components of a type, see its documentation for more information.</p>
 <hr  />
-<h2><a class="anchor" id="autotoc_md34"></a>
+<h2><a class="anchor" id="autotoc_md35"></a>
 Components with Custom Functions</h2>
 <p>Certain components within the engine allow to have custom functionality assigned. Below is the required function signatures for defining these components. Please see their individual documentation for more information.</p>
 <hr  />
-<h4><a class="anchor" id="autotoc_md36"></a>
+<h4><a class="anchor" id="autotoc_md37"></a>
 Background &amp; Overlay</h4>
-<p>Define custom animation processes for backgrounds &amp; overlays. </p><div class="fragment"><div class="line">const entity_id&amp;, mgr::entity_manager&amp;, const int64_t&amp;</div>
+<p>Define custom animation processes for backgrounds &amp; overlays. </p><div class="fragment"><div class="line">const entity_id&amp;</div>
 </div><!-- fragment --><ul>
 <li><b>const entity_id&amp;</b> - Reference to the Entity ID associated with the calling component.</li>
-<li><b>mgr::entity_manager&amp;</b> - Reference to the entity manager.</li>
-<li><b>const int64_t&amp;</b> - Reference to the current engine time value.</li>
 </ul>
 <hr  />
-<h4><a class="anchor" id="autotoc_md38"></a>
+<h4><a class="anchor" id="autotoc_md39"></a>
 Dispatcher</h4>
-<p>Define entity message processing. </p><div class="fragment"><div class="line">const entity_id&amp;, const message&amp;, mgr::entity_manager&amp;, mgr::message_manager&amp;, const int64_t&amp;</div>
+<p>Define entity message processing. </p><div class="fragment"><div class="line">const entity_id&amp;</div>
 </div><!-- fragment --><ul>
 <li><b>entity_id&amp;</b> - Reference to the Entity ID associated with the calling component.</li>
-<li><b>const message&amp;</b> - Message to be processed.</li>
-<li><b>mgr::entity_manager&amp;</b> - Reference to the entity manager.</li>
-<li><b>mgr::message_manager&amp;</b> - Reference to the message manager.</li>
-<li><b>int64_t&amp;</b> - Reference to the current engine time value.</li>
 </ul>
 <hr  />
-<h4><a class="anchor" id="autotoc_md40"></a>
+<h4><a class="anchor" id="autotoc_md41"></a>
 Ai</h4>
-<p>Define entity logic. Has seperate calls for enabled and disabled entities. </p><div class="fragment"><div class="line">const entity_id&amp;, mgr::entity_manager&amp;, mgr::message_manager&amp;, const int64_t&amp;</div>
+<p>Define entity logic. Has seperate calls for enabled and disabled entities. </p><div class="fragment"><div class="line">const entity_id&amp;</div>
 </div><!-- fragment --><ul>
 <li><b>entity_id&amp;</b> - Reference to the Entity ID associated with the calling component.</li>
-<li><b>mgr::entity_manager&amp;</b> - Reference to the entity manager.</li>
-<li><b>mgr::message_manager&amp;</b> - Reference to the message manager.</li>
-<li><b>int64_t&amp;</b> - Reference to the current engine time value.</li>
 </ul>
 <hr  />
-<h4><a class="anchor" id="autotoc_md42"></a>
+<p>OLD</p>
+<h4><a class="anchor" id="autotoc_md43"></a>
 Input_directional</h4>
 <p>Directional input handling. </p><div class="fragment"><div class="line">const entity_id&amp;, const float&amp;, mgr::entity_manager&amp;, mgr::message_manager&amp;, const int64_t&amp;</div>
 </div><!-- fragment --><ul>
@@ -220,7 +241,8 @@ Input_directional</h4>
 <li><b>int64_t&amp;</b> - Reference to the current engine time value.</li>
 </ul>
 <hr  />
-<h4><a class="anchor" id="autotoc_md44"></a>
+<p>OLD</p>
+<h4><a class="anchor" id="autotoc_md45"></a>
 Input_button</h4>
 <p>Button input handling. </p><div class="fragment"><div class="line">const entity_id&amp;, mgr::entity_manager&amp;, mgr::message_manager&amp;, const int64_t&amp;</div>
 </div><!-- fragment --><ul>
@@ -230,8 +252,9 @@ Input_button</h4>
 <li><b>int64_t&amp;</b> - Reference to the current engine time value.</li>
 </ul>
 <hr  />
-<h2><a class="anchor" id="autotoc_md46"></a>
+<h2><a class="anchor" id="autotoc_md47"></a>
 Menus</h2>
+<p>OLD WIP</p>
 <p>By default WTEngine creates two empty menus, <b>main_menu</b> and <b>game_menu</b>. You can then create additional menus as necessary and add items to them. See the documentation on the individual menu items for their usage and functionality. All menus are stored in the <b>menu_manager</b> object.</p>
 <p><em>Creating a new menu:</em> </p><div class="fragment"><div class="line">mnu::menu my_menu = mnu::menu(&quot;settings&quot;, &quot;Settings&quot;);</div>
 </div><!-- fragment --><p><em>Adding an item using set_menu:</em> </p><div class="fragment"><div class="line">menus.set_menu(&quot;main_menu&quot;)-&gt;add_item(wte_menu_action(&quot;Settings&quot;, &quot;open_menu&quot;, &quot;settings&quot;));</div>
@@ -241,13 +264,13 @@ Menus</h2>
 <p>A custom menu size can be also be set: </p><div class="fragment"><div class="line">menus.set_menu_size(200, 200, 10);</div>
 </div><!-- fragment --><p> The values are width, height and padding in order. The engine will default to 500x400x32 if not called.</p>
 <hr  />
-<h2><a class="anchor" id="autotoc_md48"></a>
-Messaging and List of Built-In Commands</h2>
+<h2><a class="anchor" id="autotoc_md49"></a>
+Messaging and Commands</h2>
 <p>All in-engine communication is done with the messaging queue. Messages can be used to change game settings, control the game menus, or have entities interact with each other. Messages can also be set with a timer value to be processed later. The <b>message_manager</b> stores messages and keeps track of when they should be processed.</p>
 <p>When starting a new game, a file containing messages in binary format can be passed for processing. The engine also has a command (see list below) that can be used to load additional messages. These messages have their timer values added to the current engine time when loaded.</p>
 <p>A tool named <em>csv2sdf</em> is included to convert files in CSV format to be readable by the engine.</p>
 <hr  />
-<h4><a class="anchor" id="autotoc_md50"></a>
+<h4><a class="anchor" id="autotoc_md51"></a>
 Message format:</h4>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -257,13 +280,14 @@ Message format:</h4>
 </table>
 <p>Arguments are split with a semicolon ;</p>
 <hr  />
-<h4><a class="anchor" id="autotoc_md52"></a>
+<h4><a class="anchor" id="autotoc_md53"></a>
 Examples:</h4>
-<p><em>Send an instant message to pause music:</em> </p><div class="fragment"><div class="line">messages.add_message(message(&quot;audio&quot;, &quot;pause_music&quot;, &quot;&quot;));</div>
-</div><!-- fragment --><p> <em>Delete my_entity at timer value 100:</em> </p><div class="fragment"><div class="line">messages.add_message(message(100, &quot;spawner&quot;, &quot;delete&quot;, &quot;my_entity&quot;));</div>
-</div><!-- fragment --><p> <em>Communication between entities:</em> </p><div class="fragment"><div class="line">messages.add_message(message(&quot;entities&quot;, &quot;first_entity&quot;, &quot;second_entity&quot;, &quot;command&quot;, &quot;argument;another&quot;));</div>
+<p><em>Send an instant message to pause music:</em> </p><div class="fragment"><div class="line">mgr::messages::add_message(message(&quot;audio&quot;, &quot;pause_music&quot;, &quot;&quot;));</div>
+</div><!-- fragment --><p> <em>Delete my_entity at timer value 100:</em> </p><div class="fragment"><div class="line">mgr::messages::add_message(message(100, &quot;spawner&quot;, &quot;delete&quot;, &quot;my_entity&quot;));</div>
+</div><!-- fragment --><p> <em>Communication between entities:</em> </p><div class="fragment"><div class="line">mgr::messages::add_message(message(&quot;entities&quot;, &quot;first_entity&quot;, &quot;second_entity&quot;, &quot;command&quot;, &quot;argument;another&quot;));</div>
 </div><!-- fragment --><hr  />
-<h4><a class="anchor" id="autotoc_md54"></a>
+<p>Needs review</p>
+<h4><a class="anchor" id="autotoc_md55"></a>
 Built-In Messages</h4>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -343,41 +367,43 @@ Built-In Messages</h4>
 <p><em>Example:</em> </p><div class="fragment"><div class="line">some_sample;loop_ref;;0.4</div>
 </div><!-- fragment --><p>This loads a looping sample with a pan value, but no gain or speed.</p>
 <hr  />
-<h2><a class="anchor" id="autotoc_md56"></a>
+<h2><a class="anchor" id="autotoc_md57"></a>
 Setting up PhysicsFS</h2>
 <p>To set up <a href="https://www.icculus.org/physfs/">PhysicsFS</a> and configure the engine to load from a location, call the following in your <b>main.cpp</b> file before calling the game object:</p>
 <div class="fragment"><div class="line">wte_main::add_file_location(&quot;data.zip&quot;);</div>
 </div><!-- fragment --><p>You can make multiple calls to load from more than one location. That's all there is to it!</p>
 <hr  />
-<h2><a class="anchor" id="autotoc_md58"></a>
+<p>Needs review</p>
+<h2><a class="anchor" id="autotoc_md59"></a>
 Setting up the Renderer</h2>
 <p>The <b>render_manager</b> requires some parameters to be set up in your <b>main.cpp</b> file before calling the main engine object.</p>
-<h4><a class="anchor" id="autotoc_md59"></a>
+<h4><a class="anchor" id="autotoc_md60"></a>
 Set the arena</h4>
 <p>Set the arena size in pixels. This is a bitmap that is used for drawing the visible game area to. It can later be scaled up or down as necessary with the <b>scale_factor</b> engine variable. </p><div class="fragment"><div class="line">mgr::render_manager::set_arena_size(1920, 1080);</div>
-</div><!-- fragment --><h4><a class="anchor" id="autotoc_md60"></a>
+</div><!-- fragment --><h4><a class="anchor" id="autotoc_md61"></a>
 Set the title screen</h4>
 <p>Load a file to be used as the main title screen. This will be streched to fit the display size. If no file is provided, a black title screen will be drawn. </p><div class="fragment"><div class="line">mgr::render_manager::set_title_screen(&quot;title.bmp&quot;);</div>
-</div><!-- fragment --><h4><a class="anchor" id="autotoc_md61"></a>
+</div><!-- fragment --><h4><a class="anchor" id="autotoc_md62"></a>
 Set the background</h4>
 <p>Load a file to be used as the in-game background. If the arena size is smaller than the display size, the background will be visible. This will be streched to fit the display size. If no file is provided, a black background will be drawn. </p><div class="fragment"><div class="line">mgr::render_manager::set_background_screen(&quot;title.bmp&quot;);</div>
 </div><!-- fragment --><hr  />
-<h2><a class="anchor" id="autotoc_md63"></a>
+<p>Needs review</p>
+<h2><a class="anchor" id="autotoc_md64"></a>
 Spawning Entities</h2>
 <p>Spawning new entities while the engine is running is handled by the <b>spawn_manager</b>. When setting up a new game, you can add functions to the <b>spawn_manager</b> to be called later.</p>
-<p>Adding to the spawner is done as such: </p><div class="fragment"><div class="line">spawner.add_spawn(spawn_name, number_of_arguments, function)</div>
+<p>Adding to the spawner is done as such: </p><div class="fragment"><div class="line">mrg::spawner::add_spawn(spawn_name, number_of_arguments, function)</div>
 </div><!-- fragment --><p>Note that the number of arguments assigned must match what the calling message contains, but not counting the first argument. For example, if the message contains a total of 6 arguments, then pass the number 5. This is because the first argument of the message is used for searching the spawn_name value. If a number of arguments is being passed that the <b>spawn_manager</b> did not expect, the message will be ignored.</p>
 <p>The function being passed is used to create the new entity and needs the following signature:</p>
-<div class="fragment"><div class="line">const entity_id&amp;, mgr::entity_manager&amp;, const msg_arg_list&amp;</div>
+<div class="fragment"><div class="line">const entity_id&amp;, const msg_arg_list&amp;</div>
 </div><!-- fragment --><ul>
 <li><b>const entity_id&amp;</b> - Reference to the Entity ID associated with the calling component.</li>
-<li><b>mgr::entity_manager&amp;</b> - Reference to the entity manager.</li>
 <li><b>const msg_arg_list&amp;</b> - Reference to the message arguments in vector format.</li>
 </ul>
 <p>Spawning or deleting entities is then performed by passing a message. See the section on messaging for more information.</p>
 <hr  />
-<h2><a class="anchor" id="autotoc_md65"></a>
-Variable Maps</h2>
+<p>Needs review</p>
+<h2><a class="anchor" id="autotoc_md66"></a>
+Variables</h2>
 <p>The variable maps are a method to dynamically create and store variables for use by the game engine. WTEngine has two variable maps: <b>game_cfg</b> and <b>engine_cfg</b>. These are stored as strings, but can be type-casted to return as specific data types. Be careful when using these as they can return unexpected results if misused!</p>
 <p>The <b>engine_cfg</b> map should be used for storing configuration variables related to the engine, while <b>game_cfg</b> is used for variables related to your game. The <b>game_cfg</b> map also has members for performing simple math, see it's documentation for more information.</p>
 <p><em>Registering a variable:</em> </p><div class="fragment"><div class="line">engine_cfg::reg(&quot;display_mode=windowed&quot;)</div>
@@ -388,7 +414,8 @@ Variable Maps</h2>
 </div><!-- fragment --><p><em>Performing math:</em> </p><div class="fragment"><div class="line">game_cfg::subtract&lt;int&gt;(&quot;lives&quot;, 1);</div>
 </div><!-- fragment --><p>The messaging system can also be used to set these variables. See the documentation page on messaging for more information.</p>
 <hr  />
-<h4><a class="anchor" id="autotoc_md67"></a>
+<p>Needs review</p>
+<h4><a class="anchor" id="autotoc_md68"></a>
 Saving data:</h4>
 <p>Both variable maps can save their data, but the functionality is different for each.</p>
 <p>The <b>engine_cfg</b> map saves all registered data in <b>settings.cfg</b> and is saved/loaded with the following commands:</p>
@@ -399,7 +426,8 @@ Saving data:</h4>
 </div><!-- fragment --><p><em>Clearing old saved data:</em> </p><div class="fragment"><div class="line">game_cfg::clear_save();</div>
 </div><!-- fragment --><p><em>Saving data:</em> </p><div class="fragment"><div class="line">game_cfg::save(&quot;hiscore&quot;);</div>
 </div><!-- fragment --><hr  />
-<h4><a class="anchor" id="autotoc_md69"></a>
+<p>Needs review</p>
+<h4><a class="anchor" id="autotoc_md70"></a>
 Engine Config Variables Created by the Engine:</h4>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -429,7 +457,7 @@ Engine Config Variables Created by the Engine:</h4>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 30 2021 07:23:51 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Mon Aug 30 2021 18:17:17 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
