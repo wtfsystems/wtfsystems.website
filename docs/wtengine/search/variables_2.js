@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['name_601',['name',['../classwte_1_1sys_1_1system.html#a5ff92811ae45f90dcb8dabc1f3771093',1,'wte::sys::system']]]
+  ['game_5fmenu_5fopened_659',['game_menu_opened',['../structwte_1_1config_1_1flags.html#a6cacdd86966455ed3642bbae8ced948a',1,'wte::config::flags']]],
+  ['game_5fstarted_660',['game_started',['../structwte_1_1config_1_1flags.html#aaa44b0432caaa6ac54f8b90652a74d7d',1,'wte::config::flags']]]
 ];
