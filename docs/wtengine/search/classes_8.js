@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hitbox_317',['hitbox',['../classwte_1_1cmp_1_1hitbox.html',1,'wte::cmp']]]
+  ['input_308',['input',['../classwte_1_1input.html',1,'wte']]]
 ];

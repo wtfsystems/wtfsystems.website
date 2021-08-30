@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['flags_315',['flags',['../structwte_1_1config_1_1flags.html',1,'wte::config']]]
+  ['gfx_306',['gfx',['../classwte_1_1cmp_1_1gfx.html',1,'wte::cmp::gfx'],['../structwte_1_1config_1_1gfx.html',1,'wte::config::gfx']]]
 ];
