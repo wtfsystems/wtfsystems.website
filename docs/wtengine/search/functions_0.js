@@ -12,5 +12,6 @@ var searchData=
   ['al_5fbitmap_9',['al_bitmap',['../classwte_1_1al__bitmap.html#a4ef3435acbc9bd88aa8c1af9259c3c7e',1,'wte::al_bitmap::al_bitmap()'],['../classwte_1_1al__bitmap.html#a912feffa768c8c59d7e20f5ecba77028',1,'wte::al_bitmap::al_bitmap(const bool &amp;p)'],['../classwte_1_1al__bitmap.html#a9caeced7801f73795c0b0b7b4295d60d',1,'wte::al_bitmap::al_bitmap(const int &amp;w, const int &amp;h)'],['../classwte_1_1al__bitmap.html#a8066c5f15dc1a115d07f7ce9bcc689c6',1,'wte::al_bitmap::al_bitmap(const int &amp;w, const int &amp;h, const bool &amp;p)']]],
   ['al_5ffont_10',['al_font',['../classwte_1_1al__font.html#a6ac912190924bdf096e0da25b301aea7',1,'wte::al_font::al_font()'],['../classwte_1_1al__font.html#a2f4d19135e5fa4f6303810e8c6c1a7ea',1,'wte::al_font::al_font(const std::string &amp;fname, const int &amp;size, const int &amp;flags)']]],
   ['alert_11',['alert',['../classwte_1_1alert.html#a925da98105e7592c5a7ad64953c461f5',1,'wte::alert::alert()=delete'],['../classwte_1_1alert.html#a6a31c331539dabcfa425f59176711fb5',1,'wte::alert::alert(const alert &amp;)=delete']]],
-  ['apply_12',['apply',['../classwte_1_1mnu_1_1apply.html#ac55a4e0f942dfa0e398f223dfd3b29eb',1,'wte::mnu::apply']]]
+  ['apply_12',['apply',['../classwte_1_1mnu_1_1apply.html#ac55a4e0f942dfa0e398f223dfd3b29eb',1,'wte::mnu::apply']]],
+  ['apply_5fsetting_13',['apply_setting',['../classwte_1_1mnu_1_1item.html#a55f69642cdafcc17795767dbe7f72a4a',1,'wte::mnu::item']]]
 ];
