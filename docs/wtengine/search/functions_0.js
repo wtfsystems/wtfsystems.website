@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['action_0',['action',['../classwte_1_1mnu_1_1action.html#a751bc7731cfd20bd746c916a50cdeded',1,'wte::mnu::action::action(const std::string l, const std::string c)'],['../classwte_1_1mnu_1_1action.html#aa473e2e4b0b06cf220d59899e300afc7',1,'wte::mnu::action::action(const std::string l, const std::string c, const std::string a)']]],
+  ['action_0',['action',['../classwte_1_1mnu_1_1action.html#a32ed35350d37219c791d9ed7b2a240fa',1,'wte::mnu::action::action(const std::string &amp;l, const std::string &amp;c)'],['../classwte_1_1mnu_1_1action.html#a460c9a4a8b168ec40a8a2d65248a63c4',1,'wte::mnu::action::action(const std::string &amp;l, const std::string &amp;c, const std::string &amp;a)']]],
   ['add_1',['add',['../classwte_1_1commands.html#a9cc567f38edce1dd035c6d7969edf3a3',1,'wte::commands::add()'],['../classwte_1_1mgr_1_1messages.html#a2cd02321bb3521a641c445122477f32a',1,'wte::mgr::messages::add()'],['../classwte_1_1mgr_1_1spawner.html#afeaf7273489376454378f249213c855f',1,'wte::mgr::spawner::add()'],['../classwte_1_1mgr_1_1systems.html#a788b7198d0ae026a1774cb84e5888bea',1,'wte::mgr::systems::add()']]],
   ['add_5fcomponent_2',['add_component',['../classwte_1_1mgr_1_1world.html#a86a9ce6fefe7d04544b93148b6620722',1,'wte::mgr::world']]],
   ['add_5fcycle_3',['add_cycle',['../classwte_1_1cmp_1_1sprite.html#ab7d7ce2fca2d0b16036f4d7578e913de',1,'wte::cmp::sprite']]],
