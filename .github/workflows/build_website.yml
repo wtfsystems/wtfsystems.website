@@ -54,3 +54,18 @@ jobs:
       with:
         branch: dist
         folder: .
+
+    - name: Prep src-only
+      run: |
+        rm -rf _posts/
+        rm -rf dist/
+        rm -rf docs/
+        rm -rf donger_api/
+        rm .gitignore
+        rm CNAME
+
+    - name: Deploy src-only
+      uses: JamesIves/github-pages-deploy-action@4.1.1  #  https://github.com/marketplace/actions/deploy-to-github-pages
+      with:
+        branch: src-only
+        folder: .
