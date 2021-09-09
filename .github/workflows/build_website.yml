@@ -58,6 +58,8 @@ jobs:
     - name: Prep src-only
       run: |
         rm -rf _posts/
+        rm -rf api/
+        rm -rf node_modules/
         rm -rf dist/
         rm -rf docs/
         rm -rf donger_api/
