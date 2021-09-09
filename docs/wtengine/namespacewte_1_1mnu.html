@@ -82,11 +82,11 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mnu_1_1apply.html">apply</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An apply option for the menus.  <a href="classwte_1_1mnu_1_1apply.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mnu_1_1item.html">item</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Menu item interface class.  <a href="classwte_1_1mnu_1_1item.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mnu_1_1menu.html">menu</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for defining a menu.  <a href="classwte_1_1mnu_1_1menu.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mnu_1_1menu__item.html">menu_item</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Menu item interface class.  <a href="classwte_1_1mnu_1_1menu__item.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mnu_1_1selection.html">selection</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Menu item with multiple options.  <a href="classwte_1_1mnu_1_1selection.html#details">More...</a><br /></td></tr>
@@ -97,14 +97,18 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a6be15a866f70b7cf701be9174739b103"><td class="memItemLeft" align="right" valign="top"><a id="a6be15a866f70b7cf701be9174739b103" name="a6be15a866f70b7cf701be9174739b103"></a>
-typedef std::vector&lt; <a class="el" href="namespacewte_1_1mnu.html#a4317393bce4af0411bde44759f6cb467">menu_item_sptr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>menu_items</b></td></tr>
-<tr class="memdesc:a6be15a866f70b7cf701be9174739b103"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container for storing menu items. <br /></td></tr>
-<tr class="separator:a6be15a866f70b7cf701be9174739b103"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedb87ffee5dd62db97e063c30366dbfd"><td class="memItemLeft" align="right" valign="top"><a id="aedb87ffee5dd62db97e063c30366dbfd" name="aedb87ffee5dd62db97e063c30366dbfd"></a>
-typedef std::vector&lt; <a class="el" href="namespacewte_1_1mnu.html#a4317393bce4af0411bde44759f6cb467">menu_item_sptr</a> &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>menu_item_citerator</b></td></tr>
-<tr class="memdesc:aedb87ffee5dd62db97e063c30366dbfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant iterator for addressing menu items. <br /></td></tr>
-<tr class="separator:aedb87ffee5dd62db97e063c30366dbfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86b6f0a707173cf9fe8bcea87c1d189e"><td class="memItemLeft" align="right" valign="top"><a id="a86b6f0a707173cf9fe8bcea87c1d189e" name="a86b6f0a707173cf9fe8bcea87c1d189e"></a>
+typedef std::shared_ptr&lt; <a class="el" href="classwte_1_1mnu_1_1item.html">item</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>item_sptr</b></td></tr>
+<tr class="memdesc:a86b6f0a707173cf9fe8bcea87c1d189e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Menu Item shared pointer. <br /></td></tr>
+<tr class="separator:a86b6f0a707173cf9fe8bcea87c1d189e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fe78199814893029773d72bb166e814"><td class="memItemLeft" align="right" valign="top"><a id="a1fe78199814893029773d72bb166e814" name="a1fe78199814893029773d72bb166e814"></a>
+typedef std::vector&lt; <a class="el" href="namespacewte_1_1mnu.html#a86b6f0a707173cf9fe8bcea87c1d189e">item_sptr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>items</b></td></tr>
+<tr class="memdesc:a1fe78199814893029773d72bb166e814"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container for storing menu items. <br /></td></tr>
+<tr class="separator:a1fe78199814893029773d72bb166e814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a4d544d86d50f7cb14c6f9fd6fe92e4"><td class="memItemLeft" align="right" valign="top"><a id="a4a4d544d86d50f7cb14c6f9fd6fe92e4" name="a4a4d544d86d50f7cb14c6f9fd6fe92e4"></a>
+typedef std::vector&lt; <a class="el" href="namespacewte_1_1mnu.html#a86b6f0a707173cf9fe8bcea87c1d189e">item_sptr</a> &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>item_citerator</b></td></tr>
+<tr class="memdesc:a4a4d544d86d50f7cb14c6f9fd6fe92e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant iterator for addressing menu items. <br /></td></tr>
+<tr class="separator:a4a4d544d86d50f7cb14c6f9fd6fe92e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20c692554bad0c97b79be5d1809314c6"><td class="memItemLeft" align="right" valign="top"><a id="a20c692554bad0c97b79be5d1809314c6" name="a20c692554bad0c97b79be5d1809314c6"></a>
 typedef std::shared_ptr&lt; <a class="el" href="classwte_1_1mnu_1_1menu.html">mnu::menu</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>menu_sptr</b></td></tr>
 <tr class="memdesc:a20c692554bad0c97b79be5d1809314c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared pointer for addressing a menu. <br /></td></tr>
@@ -113,10 +117,6 @@ typedef std::shared_ptr&lt; <a class="el" href="classwte_1_1mnu_1_1menu.html">mn
 typedef std::shared_ptr&lt; const <a class="el" href="classwte_1_1mnu_1_1menu.html">mnu::menu</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>menu_csptr</b></td></tr>
 <tr class="memdesc:a4959d0ff6a2aa78c47f0b7532455edd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant shared pointer for addressing a menu. <br /></td></tr>
 <tr class="separator:a4959d0ff6a2aa78c47f0b7532455edd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4317393bce4af0411bde44759f6cb467"><td class="memItemLeft" align="right" valign="top"><a id="a4317393bce4af0411bde44759f6cb467" name="a4317393bce4af0411bde44759f6cb467"></a>
-typedef std::shared_ptr&lt; <a class="el" href="classwte_1_1mnu_1_1menu__item.html">menu_item</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>menu_item_sptr</b></td></tr>
-<tr class="memdesc:a4317393bce4af0411bde44759f6cb467"><td class="mdescLeft">&#160;</td><td class="mdescRight">Menu Item shared pointer. <br /></td></tr>
-<tr class="separator:a4317393bce4af0411bde44759f6cb467"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >WTEngine | File: action.hpp</p>
@@ -129,7 +129,7 @@ typedef std::shared_ptr&lt; <a class="el" href="classwte_1_1mnu_1_1menu__item.ht
 <dl class="section version"><dt>Version</dt><dd>0.6 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>See LICENSE.md for copyright information. </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2019-2021</dd></dl>
-<p>WTEngine | File: menu_item.hpp</p>
+<p>WTEngine | File: item.hpp</p>
 <dl class="section author"><dt>Author</dt><dd>Matthew Evans </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>0.6 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>See LICENSE.md for copyright information. </dd></dl>
@@ -147,7 +147,7 @@ typedef std::shared_ptr&lt; <a class="el" href="classwte_1_1mnu_1_1menu__item.ht
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 8 2021 22:19:27 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Thu Sep 9 2021 10:01:50 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
