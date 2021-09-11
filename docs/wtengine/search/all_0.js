@@ -23,9 +23,8 @@ var searchData=
   ['ambiance_20',['ambiance',['../structwte_1_1mgr_1_1audio_1_1ambiance.html',1,'wte::mgr::audio']]],
   ['animate_21',['animate',['../classwte_1_1sys_1_1animate.html',1,'wte::sys']]],
   ['apply_22',['apply',['../classwte_1_1mnu_1_1apply.html#ac55a4e0f942dfa0e398f223dfd3b29eb',1,'wte::mnu::apply::apply()'],['../classwte_1_1mnu_1_1apply.html',1,'wte::mnu::apply']]],
-  ['apply_5fsetting_23',['apply_setting',['../classwte_1_1mnu_1_1selection.html#aa6552d7dc88ca0d482ba7acd238ad623',1,'wte::mnu::selection::apply_setting()'],['../classwte_1_1mnu_1_1toggle.html#a615eaabfe11532c3a6d8d40071d5fae3',1,'wte::mnu::toggle::apply_setting()'],['../classwte_1_1mnu_1_1item.html#a55f69642cdafcc17795767dbe7f72a4a',1,'wte::mnu::item::apply_setting()']]],
-  ['arena_5fh_24',['arena_h',['../structwte_1_1config_1_1gfx.html#ad277e579934623c17bf0d0ee551b0c34',1,'wte::config::gfx']]],
-  ['arena_5fw_25',['arena_w',['../structwte_1_1config_1_1gfx.html#a4333cbef69659ebb34422dcb46f8750e',1,'wte::config::gfx']]],
-  ['assets_26',['assets',['../classwte_1_1mgr_1_1assets.html',1,'wte::mgr']]],
-  ['audio_27',['audio',['../classwte_1_1mgr_1_1audio.html',1,'wte::mgr']]]
+  ['arena_5fh_23',['arena_h',['../structwte_1_1config_1_1gfx.html#ad277e579934623c17bf0d0ee551b0c34',1,'wte::config::gfx']]],
+  ['arena_5fw_24',['arena_w',['../structwte_1_1config_1_1gfx.html#a4333cbef69659ebb34422dcb46f8750e',1,'wte::config::gfx']]],
+  ['assets_25',['assets',['../classwte_1_1mgr_1_1assets.html',1,'wte::mgr']]],
+  ['audio_26',['audio',['../classwte_1_1mgr_1_1audio.html',1,'wte::mgr']]]
 ];
