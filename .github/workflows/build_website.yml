@@ -26,12 +26,12 @@ jobs:
         npm ci
         npm run build --if-present
 
-    - name: Build Posts API JSON
+    - name: Build Posts API
       run: |
         mkdir api
         npx m2j _posts/*.md -c -o api/posts.json
 
-    - name: Donger API  #  ( ͡° ͜ʖ ͡°)
+    - name: Donger API ( ͡° ͜ʖ ͡°)
       run: |
         mv donger_api/donger.json api/
         rm -rf donger_api
