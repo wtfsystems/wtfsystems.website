@@ -69,6 +69,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classwte_1_1mgr_1_1audio-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">wte::mgr::audio Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
@@ -104,6 +105,12 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Voice commands.  <a href="structwte_1_1mgr_1_1audio_1_1voice.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ad470524481116d2a3f5bbd0046c868f1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mgr_1_1audio.html#ad470524481116d2a3f5bbd0046c868f1">set_level</a> (const std::size_t &amp;m, const float &amp;l)</td></tr>
+<tr class="memdesc:ad470524481116d2a3f5bbd0046c868f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjust a mixer's volume level.  <a href="classwte_1_1mgr_1_1audio.html#ad470524481116d2a3f5bbd0046c868f1">More...</a><br /></td></tr>
+<tr class="separator:ad470524481116d2a3f5bbd0046c868f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a3cb4ac1e642c3c077cd603a991204bf0"><td class="memItemLeft" align="right" valign="top"><a id="a3cb4ac1e642c3c077cd603a991204bf0" name="a3cb4ac1e642c3c077cd603a991204bf0"></a>
@@ -121,13 +128,59 @@ Mixer 1 - Play music - Load a file and play in a loop. Looping can be disabled. 
 Mixer 2 - Play samples - Has set number of samples that can be loaded in. <br  />
 Mixer 3 - Play voice - Load a file and play once. <br  />
 Mixer 4 - Play ambiance - Load a file and play in a loop. Looping can be disabled. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad470524481116d2a3f5bbd0046c868f1" name="ad470524481116d2a3f5bbd0046c868f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad470524481116d2a3f5bbd0046c868f1">&#9670;&nbsp;</a></span>set_level()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void wte::mgr::audio::set_level </td>
+          <td>(</td>
+          <td class="paramtype">const std::size_t &amp;&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float &amp;&#160;</td>
+          <td class="paramname"><em>l</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adjust a mixer's volume level. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>Mixer to adjust. </td></tr>
+    <tr><td class="paramname">l</td><td>Volume level to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/wtengine/mgr/audio.hpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 10 2021 23:13:46 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sat Sep 11 2021 07:34:48 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
