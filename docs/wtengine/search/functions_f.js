@@ -1,7 +1,7 @@
 var searchData=
 [
   ['save_0',['save',['../classwte_1_1mgr_1_1variables.html#a97ff76c23a68e9533b13e4232af82b71',1,'wte::mgr::variables::save()'],['../classwte_1_1config.html#a7071f52f9d6f1dc42a86bbdcbda7f31c',1,'wte::config::save()']]],
-  ['selection_1',['selection',['../classwte_1_1mnu_1_1selection.html#a85095d7698b3922d8a0b6d5d76738883',1,'wte::mnu::selection']]],
+  ['selection_1',['selection',['../classwte_1_1mnu_1_1selection.html#a34e7590764e8d85d6c7f5abfc0514a1b',1,'wte::mnu::selection']]],
   ['set_2',['set',['../classwte_1_1notice.html#af0230ba7e2189ada5802765cafb2b8ca',1,'wte::notice::set()'],['../classwte_1_1mgr_1_1variables.html#ad3241a7ea7cb6799ae19e25a58170459',1,'wte::mgr::variables::set()']]],
   ['set_5farena_5fsize_3',['set_arena_size',['../classwte_1_1mgr_1_1renderer.html#a4f5a21de910cf5c39a78effd995099c2',1,'wte::mgr::renderer']]],
   ['set_5fbackground_4',['set_background',['../classwte_1_1mgr_1_1menus.html#a850f5d61aff467f6fb809649d72d135d',1,'wte::mgr::menus']]],
