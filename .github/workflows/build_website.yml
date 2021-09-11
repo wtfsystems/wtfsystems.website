@@ -63,9 +63,11 @@ jobs:
         rm -rf dist/
         rm -rf docs/
         rm -rf donger_api/
+        rm -rf assets/img/
         rm .gitignore
         rm CNAME
         rm package-lock.json
+        rm _includes/scripts.html
 
     - name: Deploy src-only
       uses: JamesIves/github-pages-deploy-action@4.1.1  #  https://github.com/marketplace/actions/deploy-to-github-pages
