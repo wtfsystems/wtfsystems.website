@@ -5,7 +5,7 @@ var searchData=
   ['scale_5ffactor_2',['scale_factor',['../structwte_1_1config_1_1gfx.html#ad8ae1a0413c6278f95bc56e8ec0d29e8',1,'wte::config::gfx']]],
   ['screen_5fh_3',['screen_h',['../structwte_1_1config_1_1gfx.html#a27b553615e7fcac0432cdfc3e2c3051b',1,'wte::config::gfx']]],
   ['screen_5fw_4',['screen_w',['../structwte_1_1config_1_1gfx.html#a446188f7b0d94a4fe9a259196039afb7',1,'wte::config::gfx']]],
-  ['selection_5',['selection',['../classwte_1_1mnu_1_1selection.html#a34e7590764e8d85d6c7f5abfc0514a1b',1,'wte::mnu::selection::selection()'],['../classwte_1_1mnu_1_1selection.html',1,'wte::mnu::selection']]],
+  ['selection_5',['selection',['../classwte_1_1mnu_1_1selection.html#a07270eb03d107c54e03c5e00b9d5f184',1,'wte::mnu::selection::selection()'],['../classwte_1_1mnu_1_1selection.html',1,'wte::mnu::selection']]],
   ['set_6',['set',['../classwte_1_1mgr_1_1variables.html#ad3241a7ea7cb6799ae19e25a58170459',1,'wte::mgr::variables::set()'],['../classwte_1_1notice.html#af0230ba7e2189ada5802765cafb2b8ca',1,'wte::notice::set()']]],
   ['set_5farena_5fsize_7',['set_arena_size',['../classwte_1_1mgr_1_1renderer.html#a4f5a21de910cf5c39a78effd995099c2',1,'wte::mgr::renderer']]],
   ['set_5fbackground_8',['set_background',['../classwte_1_1mgr_1_1menus.html#a850f5d61aff467f6fb809649d72d135d',1,'wte::mgr::menus']]],
