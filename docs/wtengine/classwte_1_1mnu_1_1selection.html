@@ -90,9 +90,9 @@ Inheritance diagram for wte::mnu::selection:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af494172960066e612f0eeb23ff5d8ee1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mnu_1_1selection.html#af494172960066e612f0eeb23ff5d8ee1">selection</a> (const std::string &amp;label, const std::string &amp;vr, const std::vector&lt; std::string &gt; &amp;dvls, const std::vector&lt; std::string &gt; &amp;vls)</td></tr>
-<tr class="memdesc:af494172960066e612f0eeb23ff5d8ee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Menu item selection constructor.  <a href="classwte_1_1mnu_1_1selection.html#af494172960066e612f0eeb23ff5d8ee1">More...</a><br /></td></tr>
-<tr class="separator:af494172960066e612f0eeb23ff5d8ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85095d7698b3922d8a0b6d5d76738883"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mnu_1_1selection.html#a85095d7698b3922d8a0b6d5d76738883">selection</a> (const std::string &amp;label, const std::string &amp;vr, const std::vector&lt; std::string &gt; &amp;dvls, const std::vector&lt; std::string &gt; &amp;vls, const std::function&lt; void(void)&gt; &amp;dfunc, const std::function&lt; void(void)&gt; &amp;afunc)</td></tr>
+<tr class="memdesc:a85095d7698b3922d8a0b6d5d76738883"><td class="mdescLeft">&#160;</td><td class="mdescRight">Menu item selection constructor.  <a href="classwte_1_1mnu_1_1selection.html#a85095d7698b3922d8a0b6d5d76738883">More...</a><br /></td></tr>
+<tr class="separator:a85095d7698b3922d8a0b6d5d76738883"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e6acde9c60507da3359a1d8c8be9be9"><td class="memItemLeft" align="right" valign="top"><a id="a1e6acde9c60507da3359a1d8c8be9be9" name="a1e6acde9c60507da3359a1d8c8be9be9"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>~selection</b> ()=default</td></tr>
 <tr class="memdesc:a1e6acde9c60507da3359a1d8c8be9be9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor. <br /></td></tr>
@@ -112,6 +112,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a27770e46b31e4f2a4ee19b5c073f3a8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mnu_1_1selection.html#a27770e46b31e4f2a4ee19b5c073f3a8d">set_default</a> (void) override</td></tr>
 <tr class="memdesc:a27770e46b31e4f2a4ee19b5c073f3a8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the default variable.  <a href="classwte_1_1mnu_1_1selection.html#a27770e46b31e4f2a4ee19b5c073f3a8d">More...</a><br /></td></tr>
 <tr class="separator:a27770e46b31e4f2a4ee19b5c073f3a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6552d7dc88ca0d482ba7acd238ad623"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mnu_1_1selection.html#aa6552d7dc88ca0d482ba7acd238ad623">apply_setting</a> (void) override</td></tr>
+<tr class="memdesc:aa6552d7dc88ca0d482ba7acd238ad623"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the setting.  <a href="classwte_1_1mnu_1_1selection.html#aa6552d7dc88ca0d482ba7acd238ad623">More...</a><br /></td></tr>
+<tr class="separator:aa6552d7dc88ca0d482ba7acd238ad623"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff86f29f6f674400f7c7c809c0331b82"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mnu_1_1selection.html#aff86f29f6f674400f7c7c809c0331b82">setting_changed</a> (void) const override</td></tr>
 <tr class="memdesc:aff86f29f6f674400f7c7c809c0331b82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setting changed process.  <a href="classwte_1_1mnu_1_1selection.html#aff86f29f6f674400f7c7c809c0331b82">More...</a><br /></td></tr>
 <tr class="separator:aff86f29f6f674400f7c7c809c0331b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,10 +129,6 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~item</b> ()=defau
 <tr class="memitem:a5cabc9b99d87a74a070b4db69ca6d8e9 inherit pub_methods_classwte_1_1mnu_1_1item"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mnu_1_1item.html#a5cabc9b99d87a74a070b4db69ca6d8e9">on_select</a> (void)</td></tr>
 <tr class="memdesc:a5cabc9b99d87a74a070b4db69ca6d8e9 inherit pub_methods_classwte_1_1mnu_1_1item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define selection process.  <a href="classwte_1_1mnu_1_1item.html#a5cabc9b99d87a74a070b4db69ca6d8e9">More...</a><br /></td></tr>
 <tr class="separator:a5cabc9b99d87a74a070b4db69ca6d8e9 inherit pub_methods_classwte_1_1mnu_1_1item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55f69642cdafcc17795767dbe7f72a4a inherit pub_methods_classwte_1_1mnu_1_1item"><td class="memItemLeft" align="right" valign="top"><a id="a55f69642cdafcc17795767dbe7f72a4a" name="a55f69642cdafcc17795767dbe7f72a4a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>apply_setting</b> (void)</td></tr>
-<tr class="memdesc:a55f69642cdafcc17795767dbe7f72a4a inherit pub_methods_classwte_1_1mnu_1_1item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define apply setting process. <br /></td></tr>
-<tr class="separator:a55f69642cdafcc17795767dbe7f72a4a inherit pub_methods_classwte_1_1mnu_1_1item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abea5d530d6f79a0aaef0dc4266f9270a inherit pub_methods_classwte_1_1mnu_1_1item"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mnu_1_1item.html#abea5d530d6f79a0aaef0dc4266f9270a">get_label</a> (void) const</td></tr>
 <tr class="memdesc:abea5d530d6f79a0aaef0dc4266f9270a inherit pub_methods_classwte_1_1mnu_1_1item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the display label.  <a href="classwte_1_1mnu_1_1item.html#abea5d530d6f79a0aaef0dc4266f9270a">More...</a><br /></td></tr>
 <tr class="separator:abea5d530d6f79a0aaef0dc4266f9270a inherit pub_methods_classwte_1_1mnu_1_1item"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,8 +143,8 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Menu item with multiple options. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af494172960066e612f0eeb23ff5d8ee1" name="af494172960066e612f0eeb23ff5d8ee1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af494172960066e612f0eeb23ff5d8ee1">&#9670;&nbsp;</a></span>selection()</h2>
+<a id="a85095d7698b3922d8a0b6d5d76738883" name="a85095d7698b3922d8a0b6d5d76738883"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85095d7698b3922d8a0b6d5d76738883">&#9670;&nbsp;</a></span>selection()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -172,7 +171,19 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
-          <td class="paramname"><em>vls</em>&#160;</td>
+          <td class="paramname"><em>vls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::function&lt; void(void)&gt; &amp;&#160;</td>
+          <td class="paramname"><em>dfunc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::function&lt; void(void)&gt; &amp;&#160;</td>
+          <td class="paramname"><em>afunc</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -189,6 +200,8 @@ Additional Inherited Members</h2></td></tr>
     <tr><td class="paramname">vr</td><td>Variable to adjust. </td></tr>
     <tr><td class="paramname">dvls</td><td>Vector of display items. </td></tr>
     <tr><td class="paramname">vls</td><td>Vector of allowed settings. </td></tr>
+    <tr><td class="paramname">dfunc</td><td>Function to determine defaut setting. </td></tr>
+    <tr><td class="paramname">afunc</td><td>Function to apply setting. </td></tr>
   </table>
   </dd>
 </dl>
@@ -196,6 +209,36 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa6552d7dc88ca0d482ba7acd238ad623" name="aa6552d7dc88ca0d482ba7acd238ad623"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6552d7dc88ca0d482ba7acd238ad623">&#9670;&nbsp;</a></span>apply_setting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wte::mnu::selection::apply_setting </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Apply the setting. </p>
+
+<p>Reimplemented from <a class="el" href="classwte_1_1mnu_1_1item.html#a55f69642cdafcc17795767dbe7f72a4a">wte::mnu::item</a>.</p>
+
+</div>
+</div>
 <a id="a2b79828625aa9f7ab1a13b2f062c0031" name="a2b79828625aa9f7ab1a13b2f062c0031"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2b79828625aa9f7ab1a13b2f062c0031">&#9670;&nbsp;</a></span>get_setting()</h2>
 
@@ -406,7 +449,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 10 2021 13:25:36 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri Sep 10 2021 20:41:41 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

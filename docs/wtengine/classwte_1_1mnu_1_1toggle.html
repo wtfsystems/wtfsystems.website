@@ -90,9 +90,9 @@ Inheritance diagram for wte::mnu::toggle:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7f65d1ff95faeb656e57479f10580458"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mnu_1_1toggle.html#a7f65d1ff95faeb656e57479f10580458">toggle</a> (const std::string &amp;label, const std::string &amp;con, const std::string &amp;aon, const std::string &amp;coff, const std::string &amp;aoff, const std::function&lt; bool(void)&gt; &amp;func)</td></tr>
-<tr class="memdesc:a7f65d1ff95faeb656e57479f10580458"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a menu toggle item. Uses default setting type.  <a href="classwte_1_1mnu_1_1toggle.html#a7f65d1ff95faeb656e57479f10580458">More...</a><br /></td></tr>
-<tr class="separator:a7f65d1ff95faeb656e57479f10580458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30776232512c4f542056df7cd59c1c5c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mnu_1_1toggle.html#a30776232512c4f542056df7cd59c1c5c">toggle</a> (const std::string &amp;label, const std::function&lt; bool(void)&gt; &amp;dfunc, const std::function&lt; void(void)&gt; &amp;afunc)</td></tr>
+<tr class="memdesc:a30776232512c4f542056df7cd59c1c5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a menu toggle item. Uses default setting type.  <a href="classwte_1_1mnu_1_1toggle.html#a30776232512c4f542056df7cd59c1c5c">More...</a><br /></td></tr>
+<tr class="separator:a30776232512c4f542056df7cd59c1c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68c0382a2fb4f2435fb038f018cf578a"><td class="memItemLeft" align="right" valign="top"><a id="a68c0382a2fb4f2435fb038f018cf578a" name="a68c0382a2fb4f2435fb038f018cf578a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>~toggle</b> ()=default</td></tr>
 <tr class="memdesc:a68c0382a2fb4f2435fb038f018cf578a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor. <br /></td></tr>
@@ -106,18 +106,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a49775f19e5fec2d456780a0a4b270e29"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mnu_1_1toggle.html#a49775f19e5fec2d456780a0a4b270e29">get_text</a> (void) const override</td></tr>
 <tr class="memdesc:a49775f19e5fec2d456780a0a4b270e29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get display text.  <a href="classwte_1_1mnu_1_1toggle.html#a49775f19e5fec2d456780a0a4b270e29">More...</a><br /></td></tr>
 <tr class="separator:a49775f19e5fec2d456780a0a4b270e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bf1fb30d6d9eaf06108b75d29e6f7f7"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mnu_1_1toggle.html#a1bf1fb30d6d9eaf06108b75d29e6f7f7">get_active_cmd</a> (void)</td></tr>
-<tr class="memdesc:a1bf1fb30d6d9eaf06108b75d29e6f7f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the command depending if the setting is toggled on or off.  <a href="classwte_1_1mnu_1_1toggle.html#a1bf1fb30d6d9eaf06108b75d29e6f7f7">More...</a><br /></td></tr>
-<tr class="separator:a1bf1fb30d6d9eaf06108b75d29e6f7f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9ba6d4cc45ccac7ea7fabd613b93855"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mnu_1_1toggle.html#ab9ba6d4cc45ccac7ea7fabd613b93855">get_active_args</a> (void)</td></tr>
-<tr class="memdesc:ab9ba6d4cc45ccac7ea7fabd613b93855"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return arguments depending if the setting is toggled on or off.  <a href="classwte_1_1mnu_1_1toggle.html#ab9ba6d4cc45ccac7ea7fabd613b93855">More...</a><br /></td></tr>
-<tr class="separator:ab9ba6d4cc45ccac7ea7fabd613b93855"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63857a24a9cb74b7c5d11705d5df7ffc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mnu_1_1toggle.html#a63857a24a9cb74b7c5d11705d5df7ffc">reset_to_default</a> (void) override</td></tr>
 <tr class="memdesc:a63857a24a9cb74b7c5d11705d5df7ffc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset to default value.  <a href="classwte_1_1mnu_1_1toggle.html#a63857a24a9cb74b7c5d11705d5df7ffc">More...</a><br /></td></tr>
 <tr class="separator:a63857a24a9cb74b7c5d11705d5df7ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56bc61863a9130e174f63ee1b310fff3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mnu_1_1toggle.html#a56bc61863a9130e174f63ee1b310fff3">set_default</a> (void) override</td></tr>
 <tr class="memdesc:a56bc61863a9130e174f63ee1b310fff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine and set the default value for the menu toggle item.  <a href="classwte_1_1mnu_1_1toggle.html#a56bc61863a9130e174f63ee1b310fff3">More...</a><br /></td></tr>
 <tr class="separator:a56bc61863a9130e174f63ee1b310fff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a615eaabfe11532c3a6d8d40071d5fae3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mnu_1_1toggle.html#a615eaabfe11532c3a6d8d40071d5fae3">apply_setting</a> (void) override</td></tr>
+<tr class="memdesc:a615eaabfe11532c3a6d8d40071d5fae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the setting.  <a href="classwte_1_1mnu_1_1toggle.html#a615eaabfe11532c3a6d8d40071d5fae3">More...</a><br /></td></tr>
+<tr class="separator:a615eaabfe11532c3a6d8d40071d5fae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bbd765a34cf58747c0830c31207812a"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mnu_1_1toggle.html#a8bbd765a34cf58747c0830c31207812a">setting_changed</a> (void) const override</td></tr>
 <tr class="memdesc:a8bbd765a34cf58747c0830c31207812a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the current selection is the same as the default.  <a href="classwte_1_1mnu_1_1toggle.html#a8bbd765a34cf58747c0830c31207812a">More...</a><br /></td></tr>
 <tr class="separator:a8bbd765a34cf58747c0830c31207812a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,10 +126,6 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~item</b> ()=defau
 <tr class="memitem:a5cabc9b99d87a74a070b4db69ca6d8e9 inherit pub_methods_classwte_1_1mnu_1_1item"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mnu_1_1item.html#a5cabc9b99d87a74a070b4db69ca6d8e9">on_select</a> (void)</td></tr>
 <tr class="memdesc:a5cabc9b99d87a74a070b4db69ca6d8e9 inherit pub_methods_classwte_1_1mnu_1_1item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define selection process.  <a href="classwte_1_1mnu_1_1item.html#a5cabc9b99d87a74a070b4db69ca6d8e9">More...</a><br /></td></tr>
 <tr class="separator:a5cabc9b99d87a74a070b4db69ca6d8e9 inherit pub_methods_classwte_1_1mnu_1_1item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55f69642cdafcc17795767dbe7f72a4a inherit pub_methods_classwte_1_1mnu_1_1item"><td class="memItemLeft" align="right" valign="top"><a id="a55f69642cdafcc17795767dbe7f72a4a" name="a55f69642cdafcc17795767dbe7f72a4a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>apply_setting</b> (void)</td></tr>
-<tr class="memdesc:a55f69642cdafcc17795767dbe7f72a4a inherit pub_methods_classwte_1_1mnu_1_1item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define apply setting process. <br /></td></tr>
-<tr class="separator:a55f69642cdafcc17795767dbe7f72a4a inherit pub_methods_classwte_1_1mnu_1_1item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abea5d530d6f79a0aaef0dc4266f9270a inherit pub_methods_classwte_1_1mnu_1_1item"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mnu_1_1item.html#abea5d530d6f79a0aaef0dc4266f9270a">get_label</a> (void) const</td></tr>
 <tr class="memdesc:abea5d530d6f79a0aaef0dc4266f9270a inherit pub_methods_classwte_1_1mnu_1_1item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the display label.  <a href="classwte_1_1mnu_1_1item.html#abea5d530d6f79a0aaef0dc4266f9270a">More...</a><br /></td></tr>
 <tr class="separator:abea5d530d6f79a0aaef0dc4266f9270a inherit pub_methods_classwte_1_1mnu_1_1item"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,8 +140,8 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >On/off menu item. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a7f65d1ff95faeb656e57479f10580458" name="a7f65d1ff95faeb656e57479f10580458"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f65d1ff95faeb656e57479f10580458">&#9670;&nbsp;</a></span>toggle()</h2>
+<a id="a30776232512c4f542056df7cd59c1c5c" name="a30776232512c4f542056df7cd59c1c5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30776232512c4f542056df7cd59c1c5c">&#9670;&nbsp;</a></span>toggle()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -162,32 +155,14 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>con</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>aon</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>coff</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>aoff</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const std::function&lt; bool(void)&gt; &amp;&#160;</td>
-          <td class="paramname"><em>func</em>&#160;</td>
+          <td class="paramname"><em>dfunc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::function&lt; void(void)&gt; &amp;&#160;</td>
+          <td class="paramname"><em>afunc</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -201,11 +176,8 @@ Additional Inherited Members</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">label</td><td>Item display label. </td></tr>
-    <tr><td class="paramname">con</td><td>Command to run when toggled on. </td></tr>
-    <tr><td class="paramname">aon</td><td>Arguments to use when toggled on. </td></tr>
-    <tr><td class="paramname">coff</td><td>Command to run when toggled off. </td></tr>
-    <tr><td class="paramname">aoff</td><td>Arguments to use when toggled off. </td></tr>
-    <tr><td class="paramname">func</td><td>Fuction to determine defaut setting. </td></tr>
+    <tr><td class="paramname">dfunc</td><td>Function to determine defaut setting. </td></tr>
+    <tr><td class="paramname">afunc</td><td>Function to apply setting. </td></tr>
   </table>
   </dd>
 </dl>
@@ -213,45 +185,33 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab9ba6d4cc45ccac7ea7fabd613b93855" name="ab9ba6d4cc45ccac7ea7fabd613b93855"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9ba6d4cc45ccac7ea7fabd613b93855">&#9670;&nbsp;</a></span>get_active_args()</h2>
+<a id="a615eaabfe11532c3a6d8d40071d5fae3" name="a615eaabfe11532c3a6d8d40071d5fae3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a615eaabfe11532c3a6d8d40071d5fae3">&#9670;&nbsp;</a></span>apply_setting()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::string wte::mnu::toggle::get_active_args </td>
+          <td class="memname">void wte::mnu::toggle::apply_setting </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Return arguments depending if the setting is toggled on or off. </p>
-<dl class="section return"><dt>Returns</dt><dd>Active arguments string. </dd></dl>
+<p>Apply the setting. </p>
 
-</div>
-</div>
-<a id="a1bf1fb30d6d9eaf06108b75d29e6f7f7" name="a1bf1fb30d6d9eaf06108b75d29e6f7f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1bf1fb30d6d9eaf06108b75d29e6f7f7">&#9670;&nbsp;</a></span>get_active_cmd()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::string wte::mnu::toggle::get_active_cmd </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Return the command depending if the setting is toggled on or off. </p>
-<dl class="section return"><dt>Returns</dt><dd>Active command string. </dd></dl>
+<p>Reimplemented from <a class="el" href="classwte_1_1mnu_1_1item.html#a55f69642cdafcc17795767dbe7f72a4a">wte::mnu::item</a>.</p>
 
 </div>
 </div>
@@ -443,7 +403,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 10 2021 13:25:36 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri Sep 10 2021 20:41:41 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
