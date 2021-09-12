@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['pause_0',['pause',['../structwte_1_1mgr_1_1audio_1_1music.html#ab73270fd684fd2913ae5c70d00ffa8eb',1,'wte::mgr::audio::music::pause()'],['../structwte_1_1mgr_1_1audio_1_1voice.html#a5f24d45ae302f9ea5f6e0034e7e3d1d8',1,'wte::mgr::audio::voice::pause()'],['../structwte_1_1mgr_1_1audio_1_1ambiance.html#ab96d07adcc0e440b6dbd7be35a2a4f3d',1,'wte::mgr::audio::ambiance::pause()']]],
-  ['play_1',['play',['../structwte_1_1mgr_1_1audio_1_1music.html#afd2cc1407694a4fc3540ddc0d746acfa',1,'wte::mgr::audio::music::play()'],['../structwte_1_1mgr_1_1audio_1_1sample.html#ab9771a1a25e688cabb2e94e792f2fd2f',1,'wte::mgr::audio::sample::play(const std::string &amp;sname, const std::string &amp;ref)'],['../structwte_1_1mgr_1_1audio_1_1sample.html#a8438d44948d168631281cb4468877d9f',1,'wte::mgr::audio::sample::play(const std::string &amp;sname, const std::string &amp;ref, const float &amp;gain, const float &amp;pan, const float &amp;speed)'],['../structwte_1_1mgr_1_1audio_1_1voice.html#a0063a8e9838156426ad0778af385af20',1,'wte::mgr::audio::voice::play()'],['../structwte_1_1mgr_1_1audio_1_1ambiance.html#a6e201566b4e210cd51cefbb36a1fcf81',1,'wte::mgr::audio::ambiance::play()']]],
-  ['process_5fmessages_2',['process_messages',['../classwte_1_1commands.html#ac602f1e05131792ddf452de22f5f2ce3',1,'wte::commands']]]
+  ['reg_0',['reg',['../classwte_1_1mgr_1_1variables.html#a5ad2673dc3ad4098b83f2d72af96c35b',1,'wte::mgr::variables']]],
+  ['remove_1',['remove',['../classwte_1_1mgr_1_1spawner.html#a8cc7fbff8c36482ed1249a6c81e3b776',1,'wte::mgr::spawner']]],
+  ['reset_5fp1_5fpols_2',['reset_p1_pols',['../structwte_1_1config_1_1controls.html#af9017dc35bec402c9b0927a32d3f63f8',1,'wte::config::controls']]],
+  ['reset_5fp2_5fpols_3',['reset_p2_pols',['../structwte_1_1config_1_1controls.html#aafabdfb96721eb7d26df7b5738c51937',1,'wte::config::controls']]],
+  ['reset_5fpols_4',['reset_pols',['../structwte_1_1config_1_1controls.html#af087835f9804d04f7cca817888e80a24',1,'wte::config::controls']]],
+  ['run_5',['run',['../classwte_1_1sys_1_1animate.html#a9a6595f9eeca0f23c369d994bcc57472',1,'wte::sys::animate::run()'],['../classwte_1_1sys_1_1colision.html#a3d906c69bd244423cb13d25b448f7946',1,'wte::sys::colision::run()'],['../classwte_1_1sys_1_1logic.html#a5bf54b6239a21c094a80d0b5c92ebd11',1,'wte::sys::logic::run()'],['../classwte_1_1sys_1_1movement.html#a6147a6dab4399fff16ac23fbb4984699',1,'wte::sys::movement::run()'],['../classwte_1_1sys_1_1system.html#a81ec56a4867b65799413eabc64114ce5',1,'wte::sys::system::run()']]]
 ];
