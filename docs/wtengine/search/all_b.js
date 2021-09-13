@@ -3,7 +3,7 @@ var searchData=
   ['main_0',['main',['../structwte_1_1config_1_1volume.html#ace03e005f84e4648f434b899d9c99b52',1,'wte::config::volume']]],
   ['make_5ffluid_1',['make_fluid',['../classwte_1_1cmp_1_1hitbox.html#a5e106ff09a4853082a6ff2dd6d5e112e',1,'wte::cmp::hitbox']]],
   ['make_5fsolid_2',['make_solid',['../classwte_1_1cmp_1_1hitbox.html#af2435b23b6f37625bbd0de5bb36dba59',1,'wte::cmp::hitbox']]],
-  ['manager_3',['manager',['../classwte_1_1mgr_1_1manager.html#a4eeefa94714ddba7f1cc05c4cf295bd2',1,'wte::mgr::manager::manager()'],['../classwte_1_1mgr_1_1manager.html#affe7a498647e08066e10f97f4dbdfd5e',1,'wte::mgr::manager::manager(const manager &amp;)=delete'],['../classwte_1_1mgr_1_1manager.html',1,'wte::mgr::manager&lt; derived &gt;']]],
+  ['manager_3',['manager',['../classwte_1_1mgr_1_1manager.html#affe7a498647e08066e10f97f4dbdfd5e',1,'wte::mgr::manager::manager(const manager &amp;)=delete'],['../classwte_1_1mgr_1_1manager.html#a4eeefa94714ddba7f1cc05c4cf295bd2',1,'wte::mgr::manager::manager()'],['../classwte_1_1mgr_1_1manager.html',1,'wte::mgr::manager&lt; derived &gt;']]],
   ['manager_3c_20assets_3c_3e_20_3e_4',['manager&lt; assets&lt;&gt; &gt;',['../classwte_1_1mgr_1_1manager.html',1,'wte::mgr']]],
   ['manager_3c_20audio_20_3e_5',['manager&lt; audio &gt;',['../classwte_1_1mgr_1_1manager.html',1,'wte::mgr']]],
   ['manager_3c_20menus_20_3e_6',['manager&lt; menus &gt;',['../classwte_1_1mgr_1_1manager.html',1,'wte::mgr']]],
@@ -28,8 +28,13 @@ var searchData=
   ['mix2_25',['mix2',['../structwte_1_1config_1_1volume.html#a004ae935357dd5a7dc55118c99945a3e',1,'wte::config::volume']]],
   ['mix3_26',['mix3',['../structwte_1_1config_1_1volume.html#a0c1101a5c1c420b0ed8155ba0e529dab',1,'wte::config::volume']]],
   ['mix4_27',['mix4',['../structwte_1_1config_1_1volume.html#abe7eb2ba989b1a421f00cd8af1be817f',1,'wte::config::volume']]],
-  ['motion_28',['motion',['../classwte_1_1cmp_1_1motion.html#aa021a7f6e87ef18c8f68ee85a45d8a8d',1,'wte::cmp::motion::motion(void)'],['../classwte_1_1cmp_1_1motion.html#ad03c679f2a680a44c4e1439bf475e4a8',1,'wte::cmp::motion::motion(const float &amp;d, const float &amp;v)'],['../classwte_1_1cmp_1_1motion.html#a7d1ea08016329d23ec2a6ee8806afd81',1,'wte::cmp::motion::motion(const float &amp;d, const float &amp;xv, const float &amp;yv)'],['../classwte_1_1cmp_1_1motion.html',1,'wte::cmp::motion']]],
-  ['movement_29',['movement',['../classwte_1_1sys_1_1movement.html',1,'wte::sys']]],
-  ['msg_5fargs_30',['msg_args',['../namespacewte.html#a2bb0a7e58ebc59b033e8f9d343873a5a',1,'wte']]],
-  ['music_31',['music',['../structwte_1_1mgr_1_1audio_1_1music.html',1,'wte::mgr::audio']]]
+  ['mixer_5f1_28',['mixer_1',['../classwte_1_1mgr_1_1audio.html#ac2d67ef690e28a8f999abbf3a965eece',1,'wte::mgr::audio']]],
+  ['mixer_5f2_29',['mixer_2',['../classwte_1_1mgr_1_1audio.html#aba833019ad9abf7d6a97c6f85ec040ee',1,'wte::mgr::audio']]],
+  ['mixer_5f3_30',['mixer_3',['../classwte_1_1mgr_1_1audio.html#a82a3800bc49d1c2fc4cfeff2f888d6d4',1,'wte::mgr::audio']]],
+  ['mixer_5f4_31',['mixer_4',['../classwte_1_1mgr_1_1audio.html#a0a9af4542508f85e5f68d46debcf2819',1,'wte::mgr::audio']]],
+  ['mixer_5fmain_32',['mixer_main',['../classwte_1_1mgr_1_1audio.html#a360603705f364df1231a1d59af29b2ab',1,'wte::mgr::audio']]],
+  ['motion_33',['motion',['../classwte_1_1cmp_1_1motion.html#aa021a7f6e87ef18c8f68ee85a45d8a8d',1,'wte::cmp::motion::motion(void)'],['../classwte_1_1cmp_1_1motion.html#ad03c679f2a680a44c4e1439bf475e4a8',1,'wte::cmp::motion::motion(const float &amp;d, const float &amp;v)'],['../classwte_1_1cmp_1_1motion.html#a7d1ea08016329d23ec2a6ee8806afd81',1,'wte::cmp::motion::motion(const float &amp;d, const float &amp;xv, const float &amp;yv)'],['../classwte_1_1cmp_1_1motion.html',1,'wte::cmp::motion']]],
+  ['movement_34',['movement',['../classwte_1_1sys_1_1movement.html',1,'wte::sys']]],
+  ['msg_5fargs_35',['msg_args',['../namespacewte.html#a2bb0a7e58ebc59b033e8f9d343873a5a',1,'wte']]],
+  ['music_36',['music',['../structwte_1_1mgr_1_1audio_1_1music.html',1,'wte::mgr::audio']]]
 ];
