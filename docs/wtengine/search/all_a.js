@@ -10,5 +10,5 @@ var searchData=
   ['load_5fsystems_7',['load_systems',['../classwte_1_1engine.html#a2fcc4367a6ead89ae6fb95e080d5a134',1,'wte::engine']]],
   ['location_8',['location',['../classwte_1_1cmp_1_1location.html#a73f311698773e441cbeb49f39f09ee37',1,'wte::cmp::location::location()'],['../classwte_1_1cmp_1_1location.html',1,'wte::cmp::location']]],
   ['logic_9',['logic',['../classwte_1_1sys_1_1logic.html',1,'wte::sys']]],
-  ['loop_10',['loop',['../structwte_1_1mgr_1_1audio_1_1music.html#a2a37042882b2eef23ff13186462095a6',1,'wte::mgr::audio::music::loop()'],['../structwte_1_1mgr_1_1audio_1_1ambiance.html#aba70eef42be1d3ab47412203aa425780',1,'wte::mgr::audio::ambiance::loop()']]]
+  ['loop_10',['loop',['../structwte_1_1mgr_1_1audio_1_1music.html#aeb15970a3f2b7e7a4cf8f848dc8a18a5',1,'wte::mgr::audio::music::loop()'],['../structwte_1_1mgr_1_1audio_1_1ambiance.html#a17ef6626738ab6949de5585d2324e1ec',1,'wte::mgr::audio::ambiance::loop()']]]
 ];
