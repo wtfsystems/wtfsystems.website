@@ -84,9 +84,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aba70eef42be1d3ab47412203aa425780"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwte_1_1mgr_1_1audio_1_1ambiance.html#aba70eef42be1d3ab47412203aa425780">loop</a> (const std::string &amp;arg)</td></tr>
 <tr class="memdesc:aba70eef42be1d3ab47412203aa425780"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle ambiance looping.  <a href="structwte_1_1mgr_1_1audio_1_1ambiance.html#aba70eef42be1d3ab47412203aa425780">More...</a><br /></td></tr>
 <tr class="separator:aba70eef42be1d3ab47412203aa425780"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e201566b4e210cd51cefbb36a1fcf81"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwte_1_1mgr_1_1audio_1_1ambiance.html#a6e201566b4e210cd51cefbb36a1fcf81">play</a> (const std::string &amp;fname)</td></tr>
-<tr class="memdesc:a6e201566b4e210cd51cefbb36a1fcf81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Play a file.  <a href="structwte_1_1mgr_1_1audio_1_1ambiance.html#a6e201566b4e210cd51cefbb36a1fcf81">More...</a><br /></td></tr>
-<tr class="separator:a6e201566b4e210cd51cefbb36a1fcf81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b94caa103acbe36b4a5a288a502b69a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwte_1_1mgr_1_1audio_1_1ambiance.html#a5b94caa103acbe36b4a5a288a502b69a">play</a> (<a class="el" href="namespacewte.html#afe8c5c490a75d19f3649cb7e7322af05">wte_asset</a>&lt; <a class="el" href="classwte_1_1al__audio.html">al_audio</a> &gt; <a class="el" href="classwte_1_1mgr_1_1audio.html">audio</a>)</td></tr>
+<tr class="memdesc:a5b94caa103acbe36b4a5a288a502b69a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Play an audio asset on the ambiance channel.  <a href="structwte_1_1mgr_1_1audio_1_1ambiance.html#a5b94caa103acbe36b4a5a288a502b69a">More...</a><br /></td></tr>
+<tr class="separator:a5b94caa103acbe36b4a5a288a502b69a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e78354a500b2e045e1183af26c9a41f"><td class="memItemLeft" align="right" valign="top"><a id="a3e78354a500b2e045e1183af26c9a41f" name="a3e78354a500b2e045e1183af26c9a41f"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> (void)</td></tr>
 <tr class="memdesc:a3e78354a500b2e045e1183af26c9a41f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop playing ambiance. <br /></td></tr>
@@ -137,8 +137,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>unpause</b> (v
 
 </div>
 </div>
-<a id="a6e201566b4e210cd51cefbb36a1fcf81" name="a6e201566b4e210cd51cefbb36a1fcf81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e201566b4e210cd51cefbb36a1fcf81">&#9670;&nbsp;</a></span>play()</h2>
+<a id="a5b94caa103acbe36b4a5a288a502b69a" name="a5b94caa103acbe36b4a5a288a502b69a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b94caa103acbe36b4a5a288a502b69a">&#9670;&nbsp;</a></span>play()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -149,8 +149,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>unpause</b> (v
         <tr>
           <td class="memname">static void wte::mgr::audio::ambiance::play </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>fname</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="namespacewte.html#afe8c5c490a75d19f3649cb7e7322af05">wte_asset</a>&lt; <a class="el" href="classwte_1_1al__audio.html">al_audio</a> &gt;&#160;</td>
+          <td class="paramname"><em>audio</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -161,10 +161,10 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>unpause</b> (v
 </table>
 </div><div class="memdoc">
 
-<p>Play a file. </p>
+<p>Play an audio asset on the ambiance channel. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fname</td><td>Ambiance filename. </td></tr>
+    <tr><td class="paramname">audio</td><td>Audio asset. </td></tr>
   </table>
   </dd>
 </dl>
@@ -177,7 +177,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>unpause</b> (v
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 13 2021 10:55:42 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Mon Sep 13 2021 14:15:07 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

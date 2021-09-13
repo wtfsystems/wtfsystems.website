@@ -84,9 +84,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a2a37042882b2eef23ff13186462095a6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwte_1_1mgr_1_1audio_1_1music.html#a2a37042882b2eef23ff13186462095a6">loop</a> (const std::string &amp;arg)</td></tr>
 <tr class="memdesc:a2a37042882b2eef23ff13186462095a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle music looping.  <a href="structwte_1_1mgr_1_1audio_1_1music.html#a2a37042882b2eef23ff13186462095a6">More...</a><br /></td></tr>
 <tr class="separator:a2a37042882b2eef23ff13186462095a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd2cc1407694a4fc3540ddc0d746acfa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwte_1_1mgr_1_1audio_1_1music.html#afd2cc1407694a4fc3540ddc0d746acfa">play</a> (const std::string &amp;fname)</td></tr>
-<tr class="memdesc:afd2cc1407694a4fc3540ddc0d746acfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Play a music file.  <a href="structwte_1_1mgr_1_1audio_1_1music.html#afd2cc1407694a4fc3540ddc0d746acfa">More...</a><br /></td></tr>
-<tr class="separator:afd2cc1407694a4fc3540ddc0d746acfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a20b6a30ba1a3f831d7e061284a76c1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwte_1_1mgr_1_1audio_1_1music.html#a9a20b6a30ba1a3f831d7e061284a76c1">play</a> (<a class="el" href="namespacewte.html#afe8c5c490a75d19f3649cb7e7322af05">wte_asset</a>&lt; <a class="el" href="classwte_1_1al__audio.html">al_audio</a> &gt; <a class="el" href="classwte_1_1mgr_1_1audio.html">audio</a>)</td></tr>
+<tr class="memdesc:a9a20b6a30ba1a3f831d7e061284a76c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Play a music asset.  <a href="structwte_1_1mgr_1_1audio_1_1music.html#a9a20b6a30ba1a3f831d7e061284a76c1">More...</a><br /></td></tr>
+<tr class="separator:a9a20b6a30ba1a3f831d7e061284a76c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a836dd89ffba5af7bcbe1801cfa43c083"><td class="memItemLeft" align="right" valign="top"><a id="a836dd89ffba5af7bcbe1801cfa43c083" name="a836dd89ffba5af7bcbe1801cfa43c083"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> (void)</td></tr>
 <tr class="memdesc:a836dd89ffba5af7bcbe1801cfa43c083"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop playing music. <br /></td></tr>
@@ -137,8 +137,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>unpause</b> (v
 
 </div>
 </div>
-<a id="afd2cc1407694a4fc3540ddc0d746acfa" name="afd2cc1407694a4fc3540ddc0d746acfa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd2cc1407694a4fc3540ddc0d746acfa">&#9670;&nbsp;</a></span>play()</h2>
+<a id="a9a20b6a30ba1a3f831d7e061284a76c1" name="a9a20b6a30ba1a3f831d7e061284a76c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a20b6a30ba1a3f831d7e061284a76c1">&#9670;&nbsp;</a></span>play()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -149,8 +149,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>unpause</b> (v
         <tr>
           <td class="memname">static void wte::mgr::audio::music::play </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>fname</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="namespacewte.html#afe8c5c490a75d19f3649cb7e7322af05">wte_asset</a>&lt; <a class="el" href="classwte_1_1al__audio.html">al_audio</a> &gt;&#160;</td>
+          <td class="paramname"><em>audio</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -161,10 +161,10 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>unpause</b> (v
 </table>
 </div><div class="memdoc">
 
-<p>Play a music file. </p>
+<p>Play a music asset. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fname</td><td>Music filename. </td></tr>
+    <tr><td class="paramname">audio</td><td>Audio asset. </td></tr>
   </table>
   </dd>
 </dl>
@@ -177,7 +177,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>unpause</b> (v
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 13 2021 10:55:42 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Mon Sep 13 2021 14:15:07 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
