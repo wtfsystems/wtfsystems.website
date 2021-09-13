@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['input_0',['input',['../classwte_1_1input.html#ad8b865476faea0741665a9180131b15e',1,'wte::input']]],
+  ['input_0',['input',['../classwte_1_1input.html#ad8b865476faea0741665a9180131b15e',1,'wte::input::input(const input &amp;)=delete'],['../classwte_1_1input.html#a3bee28b1afb95070f017fc183a33dc28',1,'wte::input::input()']]],
   ['is_5frotated_1',['is_rotated',['../classwte_1_1cmp_1_1gfx.html#a70ff57a1c15293a1bbf6098ffc939b4d',1,'wte::cmp::gfx']]],
   ['is_5fset_2',['is_set',['../classwte_1_1notice.html#a7dfc3506ac8a0437d68faeb40ad9e00c',1,'wte::notice']]],
   ['is_5fsolid_3',['is_solid',['../classwte_1_1cmp_1_1hitbox.html#ae5e80d3fd35f13a94c801177a271550a',1,'wte::cmp::hitbox']]],
