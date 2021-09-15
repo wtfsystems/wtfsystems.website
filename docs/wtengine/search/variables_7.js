@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['main_0',['main',['../structwte_1_1config_1_1volume.html#ace03e005f84e4648f434b899d9c99b52',1,'wte::config::volume']]],
-  ['menu_5fopened_1',['menu_opened',['../structwte_1_1config_1_1flags.html#a17a3f6a28eb1706d228995c1a1a5aba4',1,'wte::config::flags']]],
-  ['menu_5fscale_5ffactor_2',['menu_scale_factor',['../structwte_1_1config_1_1gfx.html#a30954419d9d1afd893994e4747774ed6',1,'wte::config::gfx']]],
-  ['music_3',['music',['../structwte_1_1config_1_1volume.html#ac714943a598d0f7ecc19309b5c9f4119',1,'wte::config::volume']]]
+  ['input_5fenabled_0',['input_enabled',['../structwte_1_1config_1_1flags.html#a090769e7adc52d6eb93326be4eb7db25',1,'wte::config::flags']]],
+  ['internal_5fbitmap_1',['internal_bitmap',['../classwte_1_1cmp_1_1gfx.html#a01f20a499ecf8298fae77a41ba95047f',1,'wte::cmp::gfx']]],
+  ['is_5frunning_2',['is_running',['../structwte_1_1config_1_1flags.html#aa4114cdf838bede2cf33dd1d1b7bf7e8',1,'wte::config::flags']]]
 ];

@@ -1,13 +1,16 @@
 var searchData=
 [
-  ['enable_0',['enable',['../classwte_1_1cmp_1_1ai.html#af8aff6893425246788d1278554444f43',1,'wte::cmp::ai']]],
-  ['end_5fgame_1',['end_game',['../classwte_1_1engine.html#a1fb5c6cfcfcb687d31f345eea80d3a85',1,'wte::engine']]],
-  ['engine_2',['engine',['../classwte_1_1engine.html#a834ce10430ebe328a4045b4cef339650',1,'wte::engine::engine(const engine &amp;)=delete'],['../classwte_1_1engine.html#afbedfb62552d923027f5d479e732b081',1,'wte::engine::engine(const int &amp;argc, char **const &amp;argv, const std::string &amp;title)'],['../classwte_1_1engine.html',1,'wte::engine']]],
-  ['engine_5ftime_3',['engine_time',['../classwte_1_1engine__time.html#a50715bf55cbe8084ab7d4a14cc2b40c3',1,'wte::engine_time::engine_time()=delete'],['../classwte_1_1engine__time.html#a4f0405e0a04fe25db3db6c311888197d',1,'wte::engine_time::engine_time(const engine_time &amp;)=delete'],['../classwte_1_1engine__time.html',1,'wte::engine_time']]],
-  ['entity_4',['entity',['../namespacewte.html#a04199560263bbf229f0410fbdd5375cb',1,'wte']]],
-  ['entity_5fcomponent_5fpair_5',['entity_component_pair',['../namespacewte_1_1mgr.html#af17d4e047d3c4149a3a1c78560c665d1',1,'wte::mgr']]],
-  ['entity_5fcontainer_6',['entity_container',['../namespacewte.html#ae0779b06e2731efe7a169ea34facbb49',1,'wte']]],
-  ['entity_5fexists_7',['entity_exists',['../classwte_1_1mgr_1_1world.html#aa018f5a92c3a08f9857b216916a0aa1b',1,'wte::mgr::world']]],
-  ['entity_5fid_8',['entity_id',['../namespacewte.html#abf2544b3056d60f0182109d89eab289a',1,'wte']]],
-  ['event_9',['event',['../structwte_1_1input_1_1event.html',1,'wte::input']]]
+  ['del_0',['del',['../classwte_1_1mgr_1_1variables.html#ade24fac53363e2c67ef33cd2f3708883',1,'wte::mgr::variables']]],
+  ['delete_5fcomponent_1',['delete_component',['../classwte_1_1mgr_1_1world.html#abb1c22c50e6be539f14c650b83146178',1,'wte::mgr::world']]],
+  ['delete_5fentity_2',['delete_entity',['../classwte_1_1mgr_1_1world.html#ac14c840bc97aad4c94d285e7dc165f15',1,'wte::mgr::world']]],
+  ['destroy_3',['destroy',['../classwte_1_1al__bitmap.html#a8539a81f16cedcf118a4336da89bfc8b',1,'wte::al_bitmap']]],
+  ['direction_4',['direction',['../classwte_1_1cmp_1_1gfx.html#ac7cecd6936f897c1829f5e493bf59923',1,'wte::cmp::gfx::direction()'],['../classwte_1_1cmp_1_1motion.html#a1434e834a4ac7842e3a19c4a3bfc3957',1,'wte::cmp::motion::direction()']]],
+  ['dispatcher_5',['dispatcher',['../classwte_1_1cmp_1_1dispatcher.html#a605fa6d6f3953f28591e20cd08985f05',1,'wte::cmp::dispatcher::dispatcher()'],['../classwte_1_1cmp_1_1dispatcher.html',1,'wte::cmp::dispatcher']]],
+  ['display_6',['display',['../classwte_1_1display.html#a76886b116e4c9d8966fd7e1442bc51d1',1,'wte::display::display(const display &amp;)=delete'],['../classwte_1_1display.html#a9f958a0c4b9420b15b3aafa26129c138',1,'wte::display::display(const std::string &amp;title)'],['../classwte_1_1display.html',1,'wte::display']]],
+  ['display_5fmode_7',['display_mode',['../structwte_1_1config_1_1gfx.html#a1b680a81f3e295f397a5be93fe345907',1,'wte::config::gfx']]],
+  ['do_5fgame_8',['do_game',['../classwte_1_1engine.html#afdc8ecd25d3c36d2ba1d1f82717ba0f5',1,'wte::engine']]],
+  ['down_9',['down',['../structwte_1_1input_1_1event_1_1p1_1_1ondown.html#a8453ac56e4193400d4106050b1e13630',1,'wte::input::event::p1::ondown::down()'],['../structwte_1_1input_1_1event_1_1p1_1_1onup.html#a9af9cffa3283302b15d9e63f1b32ad41',1,'wte::input::event::p1::onup::down()'],['../structwte_1_1input_1_1event_1_1p2_1_1ondown.html#a784d69f2fa16b5e7a25548ac85973f3d',1,'wte::input::event::p2::ondown::down()'],['../structwte_1_1input_1_1event_1_1p2_1_1onup.html#ae4b49158eea5c483c3144ee69d70ef30',1,'wte::input::event::p2::onup::down()']]],
+  ['draw_5ffps_10',['draw_fps',['../structwte_1_1config_1_1flags.html#a5f0b610b2badd1c1b74c054c71b5ed67',1,'wte::config::flags']]],
+  ['draw_5ftext_11',['draw_text',['../classwte_1_1cmp_1_1overlay.html#afc18cab567104c4815cd50160a6aba48',1,'wte::cmp::overlay']]],
+  ['draw_5ftinted_12',['draw_tinted',['../classwte_1_1cmp_1_1gfx.html#ae9f69db2aaefedca37753860a8a7a717',1,'wte::cmp::gfx']]]
 ];
