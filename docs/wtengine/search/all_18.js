@@ -29,7 +29,6 @@ var searchData=
   ['_7eselection_26',['~selection',['../classwte_1_1mnu_1_1selection.html#a1e6acde9c60507da3359a1d8c8be9be9',1,'wte::mnu::selection']]],
   ['_7esprite_27',['~sprite',['../classwte_1_1cmp_1_1sprite.html#a165ece54cd156820e99c95580932bdbb',1,'wte::cmp::sprite']]],
   ['_7esystem_28',['~system',['../classwte_1_1sys_1_1system.html#a8a213161e09ee4b7e940f591941db3a9',1,'wte::sys::system']]],
-  ['_7eteam_29',['~team',['../classwte_1_1cmp_1_1team.html#a1ea272e5facacf25e369dd1575f759a2',1,'wte::cmp::team']]],
-  ['_7etoggle_30',['~toggle',['../classwte_1_1mnu_1_1toggle.html#a68c0382a2fb4f2435fb038f018cf578a',1,'wte::mnu::toggle']]],
-  ['_7ewte_5fexception_31',['~wte_exception',['../classwte_1_1wte__exception.html#a1b46f4d9d9a9edd6913ce86315b658fb',1,'wte::wte_exception']]]
+  ['_7etoggle_29',['~toggle',['../classwte_1_1mnu_1_1toggle.html#a68c0382a2fb4f2435fb038f018cf578a',1,'wte::mnu::toggle']]],
+  ['_7ewte_5fexception_30',['~wte_exception',['../classwte_1_1wte__exception.html#a1b46f4d9d9a9edd6913ce86315b658fb',1,'wte::wte_exception']]]
 ];
