@@ -92,9 +92,9 @@ Inheritance diagram for wte::cmp::sprite:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a50207d247c8fa252dadf03f32b7153a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1cmp_1_1sprite.html#a50207d247c8fa252dadf03f32b7153a3">sprite</a> (<a class="el" href="namespacewte.html#afe8c5c490a75d19f3649cb7e7322af05">wte_asset</a>&lt; <a class="el" href="classwte_1_1al__bitmap.html">al_bitmap</a> &gt; bmp, const float &amp;sw, const float &amp;sh, const float &amp;dox, const float &amp;doy, const std::size_t &amp;rt, const std::size_t &amp;l)</td></tr>
-<tr class="memdesc:a50207d247c8fa252dadf03f32b7153a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new Sprite component.  <a href="classwte_1_1cmp_1_1sprite.html#a50207d247c8fa252dadf03f32b7153a3">More...</a><br /></td></tr>
-<tr class="separator:a50207d247c8fa252dadf03f32b7153a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec11d5b6ae63cc1ff2bcafad9b821c81"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1cmp_1_1sprite.html#aec11d5b6ae63cc1ff2bcafad9b821c81">sprite</a> (<a class="el" href="namespacewte.html#afe8c5c490a75d19f3649cb7e7322af05">wte_asset</a>&lt; <a class="el" href="classwte_1_1al__bitmap.html">al_bitmap</a> &gt; bmp, const std::size_t &amp;l, const float &amp;sw, const float &amp;sh, const float &amp;dox, const float &amp;doy, const std::size_t &amp;rt)</td></tr>
+<tr class="memdesc:aec11d5b6ae63cc1ff2bcafad9b821c81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new Sprite component.  <a href="classwte_1_1cmp_1_1sprite.html#aec11d5b6ae63cc1ff2bcafad9b821c81">More...</a><br /></td></tr>
+<tr class="separator:aec11d5b6ae63cc1ff2bcafad9b821c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a165ece54cd156820e99c95580932bdbb"><td class="memItemLeft" align="right" valign="top"><a id="a165ece54cd156820e99c95580932bdbb" name="a165ece54cd156820e99c95580932bdbb"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>~sprite</b> ()=default</td></tr>
 <tr class="memdesc:a165ece54cd156820e99c95580932bdbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor. <br /></td></tr>
@@ -188,8 +188,8 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>scale_factor_y</b></
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Component for loading a sprite sheet and storing its animation frames. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a50207d247c8fa252dadf03f32b7153a3" name="a50207d247c8fa252dadf03f32b7153a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50207d247c8fa252dadf03f32b7153a3">&#9670;&nbsp;</a></span>sprite()</h2>
+<a id="aec11d5b6ae63cc1ff2bcafad9b821c81" name="aec11d5b6ae63cc1ff2bcafad9b821c81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec11d5b6ae63cc1ff2bcafad9b821c81">&#9670;&nbsp;</a></span>sprite()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -199,6 +199,12 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>scale_factor_y</b></
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacewte.html#afe8c5c490a75d19f3649cb7e7322af05">wte_asset</a>&lt; <a class="el" href="classwte_1_1al__bitmap.html">al_bitmap</a> &gt;&#160;</td>
           <td class="paramname"><em>bmp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::size_t &amp;&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -228,13 +234,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>scale_factor_y</b></
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::size_t &amp;&#160;</td>
-          <td class="paramname"><em>rt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::size_t &amp;&#160;</td>
-          <td class="paramname"><em>l</em>&#160;</td>
+          <td class="paramname"><em>rt</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -247,12 +247,12 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>scale_factor_y</b></
 <p>Create a new Sprite component. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">l</td><td>Layer for sorting. </td></tr>
     <tr><td class="paramname">sw</td><td>Sprite width. </td></tr>
     <tr><td class="paramname">sh</td><td>Sprite height. </td></tr>
     <tr><td class="paramname">dox</td><td>Horizontal draw offset in relation to entity location. </td></tr>
     <tr><td class="paramname">doy</td><td>Verticle draw offset in relation to entity location. </td></tr>
     <tr><td class="paramname">rt</td><td>Rate in engine timer ticks for animation. </td></tr>
-    <tr><td class="paramname">l</td><td>Layer for sorting. </td></tr>
   </table>
   </dd>
 </dl>
@@ -338,7 +338,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>scale_factor_y</b></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 15 2021 21:58:58 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Mon Oct 11 2021 21:20:08 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
