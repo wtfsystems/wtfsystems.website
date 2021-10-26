@@ -69,8 +69,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classwte_1_1sys_1_1system-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">wte::sys::system Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
@@ -107,31 +107,32 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~system</b> ()=def
 void&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classwte_1_1sys_1_1system.html">system</a> const &amp;)=delete</td></tr>
 <tr class="memdesc:aad9b366a740d1fab422ccf7dba945205"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete assignment operator. <br /></td></tr>
 <tr class="separator:aad9b366a740d1fab422ccf7dba945205"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79f86d812412ad57693aa5da5df274cc"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1sys_1_1system.html#a79f86d812412ad57693aa5da5df274cc">get_name</a> (void) const</td></tr>
-<tr class="memdesc:a79f86d812412ad57693aa5da5df274cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the system name.  <a href="classwte_1_1sys_1_1system.html#a79f86d812412ad57693aa5da5df274cc">More...</a><br /></td></tr>
-<tr class="separator:a79f86d812412ad57693aa5da5df274cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81ec56a4867b65799413eabc64114ce5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1sys_1_1system.html#a81ec56a4867b65799413eabc64114ce5">run</a> (void)=0</td></tr>
 <tr class="memdesc:a81ec56a4867b65799413eabc64114ce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to create custom System run method.  <a href="classwte_1_1sys_1_1system.html#a81ec56a4867b65799413eabc64114ce5">More...</a><br /></td></tr>
 <tr class="separator:a81ec56a4867b65799413eabc64114ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a5fa23ca9c78801bcd00e2f85df86bbfb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1sys_1_1system.html#a5fa23ca9c78801bcd00e2f85df86bbfb">system</a> (const std::string &amp;n)</td></tr>
-<tr class="memdesc:a5fa23ca9c78801bcd00e2f85df86bbfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new System object.  <a href="classwte_1_1sys_1_1system.html#a5fa23ca9c78801bcd00e2f85df86bbfb">More...</a><br /></td></tr>
-<tr class="separator:a5fa23ca9c78801bcd00e2f85df86bbfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
 <tr class="memitem:a5ff92811ae45f90dcb8dabc1f3771093"><td class="memItemLeft" align="right" valign="top"><a id="a5ff92811ae45f90dcb8dabc1f3771093" name="a5ff92811ae45f90dcb8dabc1f3771093"></a>
 const std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
-<tr class="memdesc:a5ff92811ae45f90dcb8dabc1f3771093"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of system. <br /></td></tr>
+<tr class="memdesc:a5ff92811ae45f90dcb8dabc1f3771093"><td class="mdescLeft">&#160;</td><td class="mdescRight">System name. <br /></td></tr>
 <tr class="separator:a5ff92811ae45f90dcb8dabc1f3771093"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a050c062a28bd1dc96040c6370909feb6"><td class="memItemLeft" align="right" valign="top"><a id="a050c062a28bd1dc96040c6370909feb6" name="a050c062a28bd1dc96040c6370909feb6"></a>
+const bool&#160;</td><td class="memItemRight" valign="bottom"><b>timed</b></td></tr>
+<tr class="memdesc:a050c062a28bd1dc96040c6370909feb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind system to timer. <br /></td></tr>
+<tr class="separator:a050c062a28bd1dc96040c6370909feb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a447a3f80c5426211c17e4e87d8f810eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1sys_1_1system.html#a447a3f80c5426211c17e4e87d8f810eb">system</a> (const std::string &amp;n, const bool &amp;t)</td></tr>
+<tr class="memdesc:a447a3f80c5426211c17e4e87d8f810eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new System object.  <a href="classwte_1_1sys_1_1system.html#a447a3f80c5426211c17e4e87d8f810eb">More...</a><br /></td></tr>
+<tr class="separator:a447a3f80c5426211c17e4e87d8f810eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Interface class for creating Systems. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a5fa23ca9c78801bcd00e2f85df86bbfb" name="a5fa23ca9c78801bcd00e2f85df86bbfb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fa23ca9c78801bcd00e2f85df86bbfb">&#9670;&nbsp;</a></span>system()</h2>
+<a id="a447a3f80c5426211c17e4e87d8f810eb" name="a447a3f80c5426211c17e4e87d8f810eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a447a3f80c5426211c17e4e87d8f810eb">&#9670;&nbsp;</a></span>system()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -143,8 +144,18 @@ const std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b>
           <td class="memname">wte::sys::system::system </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>n</em></td><td>)</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const bool &amp;&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -158,6 +169,7 @@ const std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">n</td><td>System name. </td></tr>
+    <tr><td class="paramname">t</td><td>Flag to bind to timer. </td></tr>
   </table>
   </dd>
 </dl>
@@ -165,27 +177,6 @@ const std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a79f86d812412ad57693aa5da5df274cc" name="a79f86d812412ad57693aa5da5df274cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79f86d812412ad57693aa5da5df274cc">&#9670;&nbsp;</a></span>get_name()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::string wte::sys::system::get_name </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the system name. </p>
-<dl class="section return"><dt>Returns</dt><dd>System name. </dd></dl>
-
-</div>
-</div>
 <a id="a81ec56a4867b65799413eabc64114ce5" name="a81ec56a4867b65799413eabc64114ce5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a81ec56a4867b65799413eabc64114ce5">&#9670;&nbsp;</a></span>run()</h2>
 
@@ -222,7 +213,7 @@ const std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 26 2021 13:20:51 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Tue Oct 26 2021 18:26:32 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

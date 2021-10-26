@@ -14,7 +14,7 @@ var searchData=
   ['get_5fid_11',['get_id',['../classwte_1_1mgr_1_1world.html#ad8ed4ac1b8f40e30b9656b710ed0076d',1,'wte::mgr::world']]],
   ['get_5flabel_12',['get_label',['../classwte_1_1mnu_1_1item.html#abea5d530d6f79a0aaef0dc4266f9270a',1,'wte::mnu::item']]],
   ['get_5fmenu_13',['get_menu',['../classwte_1_1mgr_1_1menus.html#a70052da46b3b38196043c13767255b19',1,'wte::mgr::menus']]],
-  ['get_5fname_14',['get_name',['../classwte_1_1mgr_1_1world.html#ac68ca36f979b0cc244fd06700dd19484',1,'wte::mgr::world::get_name()'],['../classwte_1_1sys_1_1system.html#a79f86d812412ad57693aa5da5df274cc',1,'wte::sys::system::get_name()']]],
+  ['get_5fname_14',['get_name',['../classwte_1_1mgr_1_1world.html#ac68ca36f979b0cc244fd06700dd19484',1,'wte::mgr::world']]],
   ['get_5fsys_15',['get_sys',['../classwte_1_1message.html#ab86721229c5009d8e6202525b45b950b',1,'wte::message']]],
   ['get_5ftimer_16',['get_timer',['../classwte_1_1message.html#a9760fd0e56ae1916b8c0cf144d41b888',1,'wte::message']]],
   ['get_5ftint_17',['get_tint',['../classwte_1_1cmp_1_1gfx.html#af41c12645bd0e7d02886c8d23f794449',1,'wte::cmp::gfx']]],

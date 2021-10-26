@@ -37,7 +37,7 @@ var searchData=
   ['sprite_34',['sprite',['../classwte_1_1cmp_1_1sprite.html#aec11d5b6ae63cc1ff2bcafad9b821c81',1,'wte::cmp::sprite::sprite()'],['../classwte_1_1cmp_1_1sprite.html',1,'wte::cmp::sprite']]],
   ['start_5ftime_35',['start_time',['../classwte_1_1mgr_1_1renderer.html#a87040c7e71c2a97bd09aa966257ff1c8',1,'wte::mgr::renderer']]],
   ['stop_36',['stop',['../structwte_1_1mgr_1_1audio_1_1sample.html#a2948c7626333678b9c8b8cb28d67d75c',1,'wte::mgr::audio::sample::stop()'],['../structwte_1_1mgr_1_1audio_1_1voice.html#a7fb6b441e264540ddc1832cb04efb930',1,'wte::mgr::audio::voice::stop()'],['../structwte_1_1mgr_1_1audio_1_1music.html#a836dd89ffba5af7bcbe1801cfa43c083',1,'wte::mgr::audio::music::stop()'],['../structwte_1_1mgr_1_1audio_1_1ambiance.html#a3e78354a500b2e045e1183af26c9a41f',1,'wte::mgr::audio::ambiance::stop()']]],
-  ['system_37',['system',['../classwte_1_1sys_1_1system.html#a9cd549a5b1b59bbf8aa735562fb17d80',1,'wte::sys::system::system(const system &amp;)=delete'],['../classwte_1_1sys_1_1system.html#a5fa23ca9c78801bcd00e2f85df86bbfb',1,'wte::sys::system::system(const std::string &amp;n)'],['../classwte_1_1sys_1_1system.html',1,'wte::sys::system']]],
+  ['system_37',['system',['../classwte_1_1sys_1_1system.html#a9cd549a5b1b59bbf8aa735562fb17d80',1,'wte::sys::system::system(const system &amp;)=delete'],['../classwte_1_1sys_1_1system.html#a447a3f80c5426211c17e4e87d8f810eb',1,'wte::sys::system::system(const std::string &amp;n, const bool &amp;t)'],['../classwte_1_1sys_1_1system.html',1,'wte::sys::system']]],
   ['system_5fuptr_38',['system_uptr',['../namespacewte_1_1sys.html#a48e849f74cfbf0055491ff40e2321ec6',1,'wte::sys']]],
   ['systems_39',['systems',['../classwte_1_1mgr_1_1systems.html',1,'wte::mgr']]]
 ];
