@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['game_5fstarted_0',['game_started',['../structwte_1_1config_1_1flags.html#aaa44b0432caaa6ac54f8b90652a74d7d',1,'wte::config::flags']]]
+  ['fps_0',['fps',['../classwte_1_1mgr_1_1renderer.html#ac3b7752180c838ac5bfbd13c12cf6921',1,'wte::mgr::renderer']]]
 ];
