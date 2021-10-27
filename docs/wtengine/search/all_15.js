@@ -14,5 +14,6 @@ var searchData=
   ['world_5fmap_11',['world_map',['../namespacewte.html#a4b889fdc5d76fcd57b54f6db840e8c39',1,'wte']]],
   ['wte_12',['wte',['../namespacewte.html',1,'']]],
   ['wte_5fasset_13',['wte_asset',['../namespacewte.html#afe8c5c490a75d19f3649cb7e7322af05',1,'wte']]],
-  ['wte_5fexception_14',['wte_exception',['../classwte_1_1wte__exception.html',1,'wte::wte_exception'],['../classwte_1_1wte__exception.html#a1f3aa926405d22ff6b7e1b6d353c9319',1,'wte::wte_exception::wte_exception()']]]
+  ['wte_5fexception_14',['wte_exception',['../classwte_1_1wte__exception.html',1,'wte::wte_exception'],['../classwte_1_1wte__exception.html#a1f3aa926405d22ff6b7e1b6d353c9319',1,'wte::wte_exception::wte_exception()']]],
+  ['wtebuildoptions_15',['WTEBUILDOPTIONS',['../struct_w_t_e_b_u_i_l_d_o_p_t_i_o_n_s.html',1,'']]]
 ];
