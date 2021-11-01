@@ -26,15 +26,15 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>/** ****************************************
+            <pre class="prettyprint source linenums"><code>/**
  * 
  * @author Matthew Evans
  * @module wtfsystems/wtgui
- * @version 0.0.1
+ * @version 0.0.2
  * @see README.me
  * @copyright LICENSE.md
  * 
- **************************************** */
+ */
 
 const fs = require('fs')
 
@@ -54,24 +54,11 @@ class WtGuiError extends Error {
 }
 exports.WtGuiError = WtGuiError
 
-/*
- * Parse required arguments.
- * @param {*} scope The scope (this).
- * @param {*} data Data to parse.
- * @param {*} args Arguments to parse for.
- */
-const argParser = (scope, data, args) => {
-    args.forEach((arg) => {
-        if(data[arg] === undefined) throw new WtGuiError(`${scope}:\n${arg} undefined.`)
-        scope[arg] = data[arg]
-    })
-}
-
-/** ***************************************
+/**
  *
  * WtGui main object
  * 
- *************************************** */
+ */
 class WtGui {
     /**
      * Don't allow direct construction
@@ -128,7 +115,36 @@ class WtGui {
         menus: [],             //  Array of available menus
         openedMenus: [],       //  Stack of opened menus
         currentMenu: {},       //  Current opened menu
-        bgAnimation: () => {}  //  Background animation
+        activeItem: undefined  //  Active menu item
+    }
+
+    /*
+     *
+     */
+    static #func = {
+        bgAnimation: () => {},  //  Background animation
+
+        /*
+         * AABB Alg
+         * @param {*} test 
+         * @param {[elm]} collection 
+         * @returns {elm}
+         */
+        AABB: (test, collection) => {
+            let res = undefined
+            collection.some((elm) => {
+                if(
+                    test.posX &lt; elm.posX + elm.width &amp;&amp;
+                    test.posX + test.width > elm.posX &amp;&amp;
+                    test.posY &lt; elm.posY + elm.height &amp;&amp;
+                    test.posY + test.height > elm.posY
+                ) {
+                    res = elm
+                    return true
+                } else return false
+            })
+            return res
+        }
     }
 
     /**
@@ -171,20 +187,20 @@ class WtGui {
      */
     static setBgAnimation = (func) => {
         if(!(func instanceof Function)) throw new WtGuiError(`Background animation must be a function.`)
-        WtGui.#data.bgAnimation = func
+        WtGui.#func.bgAnimation = func
     }
 
     /**
      * 
      * @returns {}
      */
-    static draw = () => { return WtGui.#data.ctx }
+    static get draw() { return WtGui.#data.ctx }
 
     /**
      * 
      * @returns {}
      */
-    //static draw3d = () => { return WtGui.#data.glctx }
+    //static get draw3d() { return WtGui.#data.glctx }
 
     /**
      * Add an image
@@ -407,18 +423,18 @@ class WtGui {
             ctx.fillRect(0, 0, WtGui.settings.width, WtGui.settings.height)
 
             //  Run background animation function
-            WtGui.#data.bgAnimation()
+            WtGui.#func.bgAnimation()
 
             //  Render the menu
             ctx.fillStyle = currentMenu.bgcolor
-            ctx.fillRect(currentMenu.pos_x, currentMenu.pos_y,
+            ctx.fillRect(currentMenu.posX, currentMenu.posY,
                 currentMenu.width, currentMenu.height)
 
             //  Render menu items
             currentMenu.items.forEach(elm => {
                 ctx.fillStyle = elm.bgcolor
-                ctx.fillRect(currentMenu.pos_x + elm.pos_x,
-                    currentMenu.pos_y + elm.pos_y,
+                ctx.fillRect(currentMenu.posX + elm.posX,
+                    currentMenu.posY + elm.posY,
                     elm.width, elm.height)
             })
 
@@ -448,7 +464,18 @@ class WtGui {
          * 
          */
         onMouseDown: (event) => {
-            //alert(event)
+            WtGui.#data.mouseCords.posX = event.offsetX
+            WtGui.#data.mouseCords.posY = event.offsetY
+            const res = WtGui.#func.AABB(
+                {
+                    posX: event.offsetX - WtGui.#data.currentMenu.posX,
+                    posY: event.offsetY - WtGui.#data.currentMenu.posY,
+                    width: 0,
+                    height: 0,
+                },
+                WtGui.#data.currentMenu.items
+            )
+            if(res !== undefined) res.event()
         },
 
         /*
@@ -464,6 +491,15 @@ class WtGui {
         onMouseMove: (event) => {
             WtGui.#data.mouseCords.posX = event.offsetX
             WtGui.#data.mouseCords.posY = event.offsetY
+            WtGui.#data.activeItem = WtGui.#func.AABB(
+                {
+                    posX: event.offsetX - WtGui.#data.currentMenu.posX,
+                    posY: event.offsetY - WtGui.#data.currentMenu.posY,
+                    width: 0,
+                    height: 0,
+                },
+                WtGui.#data.currentMenu.items
+            )
         },
 
         /*
@@ -544,6 +580,19 @@ exports.WtGui = WtGui
  * 
  *************************************** */
 
+/*
+ * Parse required arguments.
+ * @param {*} scope The scope (this).
+ * @param {*} data Data to parse.
+ * @param {*} args Arguments to parse for.
+ */
+const argParser = (scope, data, args) => {
+    args.forEach((arg) => {
+        if(data[arg] === undefined) throw new WtGuiError(`${scope}:\n${arg} undefined.`)
+        scope[arg] = data[arg]
+    })
+}
+
 /**
  * 
  */
@@ -556,7 +605,7 @@ class WtGuiMenu {
         var args = args || {}
         argParser(this, args,
             [ 'id', 'title',
-              'pos_x', 'pos_y',
+              'posX', 'posY',
               'width', 'height' ])
         this.items = []
         this.bgimage = args.bgimage || undefined
@@ -593,11 +642,15 @@ class WtGuiItem {
         var args = args || {}
         argParser(this, args,
             [ 'id', 'title',
-              'pos_x', 'pos_y',
+              'posX', 'posY',
               'width', 'height'])
         this.font = args.font || WtGui.settings.defaultFont
         this.bgcolor = args.bgcolor || 'rgb(255,0,0)'
         this.fgcolor = args.fgcolor || 'rgb(255,255,255)'
+    }
+
+    event = () => {
+        //
     }
 }
 exports.WtGuiItem = WtGuiItem
@@ -713,7 +766,7 @@ exports.WtGuiAction = WtGuiAction
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Sat Oct 30 2021 18:34:03 GMT-0400 (Eastern Daylight Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Sun Oct 31 2021 22:32:15 GMT-0400 (Eastern Daylight Time)
 </footer>
 
 <script> prettyPrint(); </script>
