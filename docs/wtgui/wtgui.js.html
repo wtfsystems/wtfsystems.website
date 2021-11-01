@@ -30,7 +30,7 @@
  * 
  * @author Matthew Evans
  * @module wtfsystems/wtgui
- * @version 0.0.2
+ * @version 0.0.3
  * @see README.me
  * @copyright LICENSE.md
  * 
@@ -55,6 +55,7 @@ class WtGuiError extends Error {
 exports.WtGuiError = WtGuiError
 
 /**
+ *
  * WtGui main object
  * @hideconstructor
  * 
@@ -63,28 +64,38 @@ class WtGui {
     constructor() { return false }  //  Don't allow direct construction
 
     /**
-     * Module settings
-     * @prop {Number} width
-     * @prop {Number} height
-     * @prop {String} defaultFont
-     * @prop {String} clearColor
-     * @prop {String} defaultMenu
+     * WtGui Module settings
+     * @prop {boolean} debugMode Enable/disable debug mode
+     * @prop {Number} width Width of the gui
+     * @prop {Number} height Height of the gui
+     * @prop {Number} mouseSize Size of the mouse hitbox
+     * @prop {String} clearColor Background color for gui context
+     * @prop {String} defaultFont Default font size/face
+     * @prop {String} defaultFontColor Default font color
+     * @prop {String} defaultMenuColor Default menu background color
+     * @prop {String} defaultItemColor Default item background color
+     * @prop {String} defaultMenu Default menu to open when all are closed
      */
     static settings = {
+        debugMode: false,
         width: Number(0),
         height: Number(0),
+        mouseSize: Number(0),
+        clearColor: 'rgb(142,142,142)',
         defaultFont: '12px Arial',
-        clearColor: 'rgb(255,255,255)',
+        defaultFontColor: 'rgb(255,255,255)',
+        defaultMenuColor: 'rgb(0,0,0)',
+        defaultItemColor: 'rgb(255,165,0)',
         defaultMenu: 'main_menu'
     }
 
     /**
-     * Module info
-     * @prop {Number} fps
-     * @prop {Number} frameDelta
-     * @prop {Number} lastRender
-     * @prop {Number} mousePosX
-     * @prop {Number} mousePosY
+     * WtGui Module info
+     * @prop {Number} fps Frames per second
+     * @prop {Number} frameDelta Time between frames
+     * @prop {Number} lastRender Time last frame render completed
+     * @prop {Number} mousePosX Mouse position X within canvas
+     * @prop {Number} mousePosY Mouse position Y within canvas
      */
     static info = {
         get fps() { return WtGui.#renderer.fps },
@@ -121,12 +132,14 @@ class WtGui {
         bgAnimation: () => {},  //  Background animation
 
         /*
-         * AABB Alg
-         * @param {*} test 
-         * @param {[elm]} collection 
-         * @returns {elm}
+         * AABB Algorithm
+         * @param {elmA} test 
+         * @param {[elmB]} collection 
+         * @returns {elmB}
          */
         AABB: (test, collection) => {
+            if(!(test instanceof Object)) return undefined
+            if(!(collection instanceof Array)) return undefined
             let res = undefined
             collection.some((elm) => {
                 if(
@@ -205,10 +218,7 @@ class WtGui {
      */
     static addImage = (id, file) => {
         if(WtGui.getImage(id) !== undefined) throw new WtGuiError(`Image ID already exists.`)
-        if(!fs.existsSync(file)) throw new WtGuiError(`${file} does not exist.`)
-        const tempImg = new Image()
-        tempImg.src = file
-        WtGui.#data.imageFiles.push({ id: id, file: tempImg })
+        WtGui.#data.imageFiles.push({ id: id, file: loadImg(file) })
     }
 
     /**
@@ -423,16 +433,42 @@ class WtGui {
             WtGui.#func.bgAnimation()
 
             //  Render the menu
-            ctx.fillStyle = currentMenu.bgcolor
-            ctx.fillRect(currentMenu.posX, currentMenu.posY,
-                currentMenu.width, currentMenu.height)
+            if(!WtGui.settings.debugMode &amp;&amp; currentMenu.bgImage !== undefined) {
+                {(currentMenu.scaleImg) ?
+                    ctx.drawImage(currentMenu.bgImage,
+                        currentMenu.posX + currentMenu.imgOffsetX,
+                        currentMenu.posY + currentMenu.imgOffsetY,
+                        currentMenu.width, currentMenu.height) :
+                    ctx.drawImage(currentMenu.bgImage,
+                        currentMenu.posX + currentMenu.imgOffsetX,
+                        currentMenu.posY + currentMenu.imgOffsetY)}
+            } else {
+                ctx.fillStyle = currentMenu.bgColor
+                ctx.fillRect(currentMenu.posX, currentMenu.posY,
+                    currentMenu.width, currentMenu.height)
+            }
 
             //  Render menu items
             currentMenu.items.forEach(elm => {
-                ctx.fillStyle = elm.bgcolor
-                ctx.fillRect(currentMenu.posX + elm.posX,
-                    currentMenu.posY + elm.posY,
-                    elm.width, elm.height)
+                if(!WtGui.settings.debugMode &amp;&amp; elm.bgImage !== undefined) {
+                    {(elm.scaleImg) ?
+                        ctx.drawImage(elm.bgImage,
+                            elm.posX + elm.imgOffsetX,
+                            elm.posY + elm.imgOffsetY,
+                            elm.width, elm.height) :
+                        ctx.drawImage(elm.bgImage,
+                            elm.posX + elm.imgOffsetX,
+                            elm.posY + elm.imgOffsetY)}
+                } else {
+                    ctx.fillStyle = elm.bgColor
+                    ctx.fillRect(currentMenu.posX + elm.posX,
+                        currentMenu.posY + elm.posY,
+                        elm.width, elm.height)
+                }
+
+                if(WtGui.#data.activeItem === elm) {
+                    // selected item
+                }
             })
 
             //  Render FPS counter if enabled
@@ -443,8 +479,10 @@ class WtGui {
                 ctx.fillText(WtGui.#renderer.fps, WtGui.settings.width, 12)
             }
 
+            //  Draw the rendered menu
             WtGui.#data.glctx.drawImage(WtGui.#data.renderCanvas, 0, 0)
 
+            //  Update renderer info and request next frame
             WtGui.#renderer.step++
             WtGui.#renderer.frameDelta = Date.now() - WtGui.#renderer.lastRender
             WtGui.#renderer.lastRender = Date.now()
@@ -463,16 +501,17 @@ class WtGui {
         onMouseDown: (event) => {
             WtGui.#data.mouseCords.posX = event.offsetX
             WtGui.#data.mouseCords.posY = event.offsetY
+            //  See if the mouse clicked on anything
             const res = WtGui.#func.AABB(
                 {
                     posX: event.offsetX - WtGui.#data.currentMenu.posX,
                     posY: event.offsetY - WtGui.#data.currentMenu.posY,
-                    width: 0,
-                    height: 0,
+                    width: WtGui.settings.mouseSize,
+                    height: WtGui.settings.mouseSize,
                 },
                 WtGui.#data.currentMenu.items
             )
-            if(res !== undefined) res.event()
+            if(res !== undefined &amp;&amp; res.allowSelection) res.selectEvent()
         },
 
         /*
@@ -488,15 +527,17 @@ class WtGui {
         onMouseMove: (event) => {
             WtGui.#data.mouseCords.posX = event.offsetX
             WtGui.#data.mouseCords.posY = event.offsetY
-            WtGui.#data.activeItem = WtGui.#func.AABB(
+            //  If the mouse is pointing at anything, make it the active item
+            const res = WtGui.#func.AABB(
                 {
                     posX: event.offsetX - WtGui.#data.currentMenu.posX,
                     posY: event.offsetY - WtGui.#data.currentMenu.posY,
-                    width: 0,
-                    height: 0,
+                    width: WtGui.settings.mouseSize,
+                    height: WtGui.settings.mouseSize,
                 },
                 WtGui.#data.currentMenu.items
             )
+            if(res !== undefined &amp;&amp; res.allowSelection) WtGui.#data.activeItem = res
         },
 
         /*
@@ -573,7 +614,7 @@ exports.WtGui = WtGui
 
 /* ****************************************
  *
- * Menu &amp; menu item objects
+ * Internal functions
  * 
  *************************************** */
 
@@ -590,6 +631,24 @@ const argParser = (scope, data, args) => {
     })
 }
 
+/*
+ * Load an image from file.
+ * @param {String} file 
+ * @returns {Image}
+ */
+const loadImg = (file) => {
+    if(!fs.existsSync(file)) throw new WtGuiError(`${file} does not exist.`)
+    const tempImg = new Image()
+    tempImg.src = file
+    return tempImg
+}
+
+/* ****************************************
+ *
+ * Menu &amp; menu item objects
+ * 
+ *************************************** */
+
 /**
  * 
  */
@@ -604,11 +663,14 @@ class WtGuiMenu {
             [ 'id', 'title',
               'posX', 'posY',
               'width', 'height' ])
-        this.items = []
-        this.bgimage = args.bgimage || undefined
         this.font = args.font || WtGui.settings.defaultFont
-        this.bgcolor = args.bgcolor || 'rgb(0,0,0)'
-        this.fgcolor = args.fgcolor || 'rgb(255,255,255)'
+        this.bgColor = args.bgColor || WtGui.settings.defaultMenuColor
+        this.fgColor = args.fgColor || WtGui.settings.defaultFontColor
+
+        if(args.bgImage !== undefined) this.bgImage = loadImg(args.bgImage)
+        this.scaleImg = args.scaleImg || false
+
+        this.items = []
     }
 
     /**
@@ -631,6 +693,9 @@ exports.WtGuiMenu = WtGuiMenu
  * @interface
  */
 class WtGuiItem {
+    #allowSelection = false
+    get allowSelection() { return this.#allowSelection }
+
     /**
      * 
      * @param {*} args 
@@ -642,12 +707,20 @@ class WtGuiItem {
               'posX', 'posY',
               'width', 'height'])
         this.font = args.font || WtGui.settings.defaultFont
-        this.bgcolor = args.bgcolor || 'rgb(255,0,0)'
-        this.fgcolor = args.fgcolor || 'rgb(255,255,255)'
+        this.bgColor = args.bgColor || WtGui.settings.defaultItemColor
+        this.fgColor = args.fgColor || WtGui.settings.defaultFontColor
+
+        if(args.bgImage !== undefined) this.bgImage = loadImg(args.bgImage)
+        this.imgOffsetX = args.imgOffsetX || 0
+        this.imgOffsetY = args.imgOffsetY || 0
+        this.scaleImg = args.scaleImg || false
     }
 
-    event = () => {
-        //
+    /**
+     * 
+     */
+    selectEvent = () => {
+        if(this.#allowSelection) throw new WtGuiError("Method 'selectEvent()' must be implemented.")
     }
 }
 exports.WtGuiItem = WtGuiItem
@@ -673,6 +746,8 @@ exports.WtGuiLabel = WtGuiLabel
  * @extends WtGuiItem
  */
 class WtGuiButton extends WtGuiItem {
+    #allowSelection = true
+
     /**
      * 
      * @param {*} args 
@@ -680,6 +755,13 @@ class WtGuiButton extends WtGuiItem {
     constructor(args) {
         var args = args || {}
         super(args)
+    }
+
+    /**
+     * 
+     */
+    selectEvent = () => {
+        //
     }
 }
 exports.WtGuiButton = WtGuiButton
@@ -763,7 +845,7 @@ exports.WtGuiAction = WtGuiAction
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Mon Nov 01 2021 00:01:54 GMT-0400 (Eastern Daylight Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Mon Nov 01 2021 17:27:33 GMT-0400 (Eastern Daylight Time)
 </footer>
 
 <script> prettyPrint(); </script>
