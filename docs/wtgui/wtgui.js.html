@@ -39,12 +39,14 @@
 const fs = require('fs')
 
 /**
+ * 
  * Custom error object
+ * 
  */
 class WtGuiError extends Error {
     /**
      * Create a new WtGuiError
-     * @param {String} message 
+     * @param {String} message Error message
      */
     constructor(message) {
         super(message)
@@ -157,8 +159,8 @@ class WtGui {
     }
 
     /**
-     * Configure canvas and start the gui
-     * @param {HTMLCanvasElement} canvas 
+     * Configure canvas and start the gui.
+     * @param {HTMLCanvasElement} canvas Canvas element to configure.
      */
     static startGui = (canvas) => {
         if(WtGui.#data.configRan) throw new WtGuiError(`WtGui is already running.`)
@@ -191,8 +193,8 @@ class WtGui {
     }
 
     /**
-     * 
-     * @param {Function} func 
+     * Set the background animation function.
+     * @param {Function} func New animation function.
      */
     static setBgAnimation = (func) => {
         if(!(func instanceof Function)) throw new WtGuiError(`Background animation must be a function.`)
@@ -200,19 +202,19 @@ class WtGui {
     }
 
     /**
-     * 
-     * @returns {}
+     * Get the menu drawing context.
+     * @returns {CanvasRenderingContext2D} 2D drawing context.
      */
     static get draw() { return WtGui.#data.ctx }
 
-    /**
+    /*
      * 
-     * @returns {}
+     * @returns {WebGL2RenderingContext}
      */
     //static get draw3d() { return WtGui.#data.glctx }
 
     /**
-     * Add an image
+     * Add an image.
      * @param {String} id 
      * @param {*} file 
      */
@@ -230,9 +232,9 @@ class WtGui {
     }
 
     /**
-     * Get an image
-     * @param {String} id 
-     * @returns {}
+     * Get an image.
+     * @param {String} id ID of image.
+     * @returns {Image} Image by ID reference.
      */
     static getImage = (id) => {
         const tempImg = WtGui.#data.imageFiles.find(elm => elm.id === id)
@@ -243,7 +245,7 @@ class WtGui {
     /**
      * 
      * @param {String} id 
-     * @param {*} file 
+     * @param {String} file 
      */
     static addAudio = (id, file) => {
         if(WtGui.getAudio(id) !== undefined) throw new WtGuiError(`Audio ID already exists.`)
@@ -274,8 +276,8 @@ class WtGui {
     }
 
     /**
-     * Add a menu
-     * @param {*} menuObj 
+     * Add a new menu.
+     * @param {*} menuObj Menu object to add.
      */
     static addMenu = (menuObj) => {
         if(!(menuObj instanceof WtGuiMenu)) {         //  Verify proper menu object
@@ -289,9 +291,9 @@ class WtGui {
     }
 
     /**
-     * Build a menu from an object
-     * @param {*} menuData 
-     * @returns {WtGuiMenu}
+     * Build a menu from an object.
+     * @param {*} menuData Data object to build from.
+     * @returns {WtGuiMenu} Generated menu object
      */
     static buildMenu = (menuData) => {
         const tempMenu = new WtGuiMenu(menuData)
@@ -299,16 +301,16 @@ class WtGui {
     }
 
     /**
-     * Get a menu
-     * @param {String} id 
-     * @returns {WtGuiMenu}
+     * Get a menu.
+     * @param {String} id ID of menu to get.
+     * @returns {WtGuiMenu} Menu object by ID.
      */
     static getMenu = (id) => { return WtGui.#data.menus.find(elm => elm.id === id) }
 
     /**
-     * Add a menu item
-     * @param {String} menuId 
-     * @param {WtGuiItem} itemObj 
+     * Add an item to a menu.
+     * @param {String} menuId ID of menu it add item to.
+     * @param {WtGuiItem} itemObj Item object to add.
      */
     static addItem = (menuId, itemObj) => {
         const menu = WtGui.getMenu(menuId)
@@ -511,14 +513,14 @@ class WtGui {
                 },
                 WtGui.#data.currentMenu.items
             )
-            if(res !== undefined &amp;&amp; res.allowSelection) res.selectEvent()
+            if(res !== undefined &amp;&amp; res.canSelect) res.selectEvent()
         },
 
         /*
          * 
          */
         onMouseUp: (event) => {
-            //alert(event)
+            console.log(event)
         },
 
         /*
@@ -537,63 +539,63 @@ class WtGui {
                 },
                 WtGui.#data.currentMenu.items
             )
-            if(res !== undefined &amp;&amp; res.allowSelection) WtGui.#data.activeItem = res
+            if(res !== undefined &amp;&amp; res.canSelect) WtGui.#data.activeItem = res
         },
 
         /*
          * 
          */
         onTouchStart: (event) => {
-            //alert(event)
+            console.log(event)
         },
 
         /*
          * 
          */
         onTouchEnd: (event) => {
-            //alert(event)
+            console.log(event)
         },
 
         /*
          * 
          */
         onTouchCancel: (event) => {
-            //alert(event)
+            console.log(event)
         },
 
         /*
          * 
          */
         onTouchMove: (event) => {
-            //alert(event)
+            console.log(event)
         },
 
         /*
          * 
          */
         onKeyDown: (event) => {
-            //alert(event)
+            console.log(event)
         },
 
         /*
          * 
          */
         onKeyUp: (event) => {
-            //alert(event)
+            console.log(event)
         },
 
         /*
          * 
          */
         onButtonDown: (event) => {
-            //alert(event)
+            console.log(event)
         },
 
         /*
          * 
          */
         onButtonUp: (event) => {
-            //alert(event)
+            console.log(event)
         }
     }
 
@@ -651,6 +653,8 @@ const loadImg = (file) => {
 
 /**
  * 
+ * WtGui Menu Object
+ * 
  */
 class WtGuiMenu {
     /**
@@ -674,7 +678,7 @@ class WtGuiMenu {
     }
 
     /**
-     * 
+     * Add an item to the menu
      * @param {WtGuiItem} itemObj 
      */
     addItem = (itemObj) => {
@@ -690,17 +694,17 @@ exports.WtGuiMenu = WtGuiMenu
 
 /**
  * 
+ * WtGui Menu Item Interface
  * @interface
+ * 
  */
 class WtGuiItem {
-    #allowSelection = false
-    get allowSelection() { return this.#allowSelection }
-
     /**
      * 
      * @param {*} args 
      */
     constructor(args) {
+        if(this.constructor === WtGuiItem) throw new WtGuiError(`'WtGuiItem' is an interface class.`)
         var args = args || {}
         argParser(this, args,
             [ 'id', 'title',
@@ -714,20 +718,23 @@ class WtGuiItem {
         this.imgOffsetX = args.imgOffsetX || 0
         this.imgOffsetY = args.imgOffsetY || 0
         this.scaleImg = args.scaleImg || false
+        this.canSelect = false
     }
 
     /**
      * 
      */
     selectEvent = () => {
-        if(this.#allowSelection) throw new WtGuiError("Method 'selectEvent()' must be implemented.")
+        if(this.canSelect) throw new WtGuiError(`Method 'selectEvent()' must be implemented.`)
     }
 }
 exports.WtGuiItem = WtGuiItem
 
 /**
  * 
+ * WtGui Item Label
  * @extends WtGuiItem
+ * 
  */
 class WtGuiLabel extends WtGuiItem {
     /**
@@ -743,11 +750,11 @@ exports.WtGuiLabel = WtGuiLabel
 
 /**
  * 
+ * WtGui Item Action
  * @extends WtGuiItem
+ * 
  */
-class WtGuiButton extends WtGuiItem {
-    #allowSelection = true
-
+ class WtGuiAction extends WtGuiItem {
     /**
      * 
      * @param {*} args 
@@ -755,20 +762,23 @@ class WtGuiButton extends WtGuiItem {
     constructor(args) {
         var args = args || {}
         super(args)
+        this.canSelect = true
     }
 
     /**
      * 
      */
-    selectEvent = () => {
-        //
+     selectEvent = () => {
+        console.log('action')
     }
 }
-exports.WtGuiButton = WtGuiButton
+exports.WtGuiAction = WtGuiAction
 
 /**
  * 
+ * 
  * @extends WtGuiItem
+ * 
  */
 class WtGuiInput extends WtGuiItem {
     /**
@@ -784,7 +794,9 @@ exports.WtGuiInput = WtGuiInput
 
 /**
  * 
+ * 
  * @extends WtGuiItem
+ * 
  */
 class WtGuiSelection extends WtGuiItem {
     /**
@@ -800,7 +812,9 @@ exports.WtGuiSelection = WtGuiSelection
 
 /**
  * 
+ * 
  * @extends WtGuiItem
+ * 
  */
 class WtGuiToggle extends WtGuiItem {
     /**
@@ -813,22 +827,6 @@ class WtGuiToggle extends WtGuiItem {
     }
 }
 exports.WtGuiToggle = WtGuiToggle
-
-/**
- * 
- * @extends WtGuiItem
- */
-class WtGuiAction extends WtGuiItem {
-    /**
-     * 
-     * @param {*} args 
-     */
-    constructor(args) {
-        var args = args || {}
-        super(args)
-    }
-}
-exports.WtGuiAction = WtGuiAction
 </code></pre>
         </article>
     </section>
@@ -839,13 +837,13 @@ exports.WtGuiAction = WtGuiAction
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-wtfsystems_wtgui.html">wtfsystems/wtgui</a></li></ul><h3>Classes</h3><ul><li><a href="module-wtfsystems_wtgui-WtGui.html">WtGui</a></li><li><a href="module-wtfsystems_wtgui-WtGuiAction.html">WtGuiAction</a></li><li><a href="module-wtfsystems_wtgui-WtGuiButton.html">WtGuiButton</a></li><li><a href="module-wtfsystems_wtgui-WtGuiError.html">WtGuiError</a></li><li><a href="module-wtfsystems_wtgui-WtGuiInput.html">WtGuiInput</a></li><li><a href="module-wtfsystems_wtgui-WtGuiLabel.html">WtGuiLabel</a></li><li><a href="module-wtfsystems_wtgui-WtGuiMenu.html">WtGuiMenu</a></li><li><a href="module-wtfsystems_wtgui-WtGuiSelection.html">WtGuiSelection</a></li><li><a href="module-wtfsystems_wtgui-WtGuiToggle.html">WtGuiToggle</a></li></ul><h3>Interfaces</h3><ul><li><a href="module-wtfsystems_wtgui-WtGuiItem.html">WtGuiItem</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-wtfsystems_wtgui.html">wtfsystems/wtgui</a></li></ul><h3>Classes</h3><ul><li><a href="module-wtfsystems_wtgui-WtGui.html">WtGui</a></li><li><a href="module-wtfsystems_wtgui-WtGuiAction.html">WtGuiAction</a></li><li><a href="module-wtfsystems_wtgui-WtGuiError.html">WtGuiError</a></li><li><a href="module-wtfsystems_wtgui-WtGuiInput.html">WtGuiInput</a></li><li><a href="module-wtfsystems_wtgui-WtGuiLabel.html">WtGuiLabel</a></li><li><a href="module-wtfsystems_wtgui-WtGuiMenu.html">WtGuiMenu</a></li><li><a href="module-wtfsystems_wtgui-WtGuiSelection.html">WtGuiSelection</a></li><li><a href="module-wtfsystems_wtgui-WtGuiToggle.html">WtGuiToggle</a></li></ul><h3>Interfaces</h3><ul><li><a href="module-wtfsystems_wtgui-WtGuiItem.html">WtGuiItem</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Mon Nov 01 2021 17:27:33 GMT-0400 (Eastern Daylight Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Mon Nov 01 2021 21:27:05 GMT-0400 (Eastern Daylight Time)
 </footer>
 
 <script> prettyPrint(); </script>
