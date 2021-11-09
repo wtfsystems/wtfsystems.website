@@ -30,7 +30,7 @@
  * 
  * @author Matthew Evans
  * @module wtfsystems/wtgui
- * @version 0.0.4
+ * @version 0.0.5
  * @see README.me
  * @copyright LICENSE.md
  * 
@@ -67,16 +67,18 @@ class WtGui {
 
     /**
      * WtGui Module settings
-     * @prop {boolean} debugMode Enable/disable debug mode
-     * @prop {Number} width Width of the gui
-     * @prop {Number} height Height of the gui
-     * @prop {Number} mouseSize Size of the mouse hitbox
-     * @prop {String} clearColor Background color for gui context
-     * @prop {String} defaultFont Default font size/face
-     * @prop {String} defaultFontColor Default font color
-     * @prop {String} defaultMenuColor Default menu background color
-     * @prop {String} defaultItemColor Default item background color
-     * @prop {String} defaultMenu Default menu to open when all are closed
+     * @prop {boolean} debugMode Enable/disable debug mode.
+     * @prop {Number} width Width of the gui.
+     * @prop {Number} height Height of the gui.
+     * @prop {Number} mouseSize Size of the mouse hitbox.
+     * @prop {String} clearColor Background color for gui context.
+     * @prop {String} defaultFont Default font size/face.
+     * @prop {String} defaultFontColor Default font color.
+     * @prop {String} defaultMenuColor Default menu background color.
+     * @prop {String} defaultItemColor Default item background color.
+     * @prop {String} defaultMenu Default menu to open when all are closed.
+     * @prop {String} fpsFont Font to use for rendering FPS.
+     * @prop {String} fpsColor Color to use for rendering FPS.
      */
     static settings = {
         debugMode: false,
@@ -84,36 +86,58 @@ class WtGui {
         height: Number(0),
         mouseSize: Number(0),
         clearColor: 'rgb(142,142,142)',
-        defaultFont: '12px Arial',
+        defaultFont: '14px Arial',
         defaultFontColor: 'rgb(255,255,255)',
         defaultMenuColor: 'rgb(0,0,0)',
         defaultItemColor: 'rgb(255,165,0)',
         defaultMenu: 'main_menu',
+        fpsFont: 'Bold 16px Arial',
+        fpsColor: 'rgb(255,165,0)',
 
-        keys: {
-            menuUp: [ 'up' ],
-            menuDown: [ 'down' ],
-            menuLeft: [ 'left' ],
-            menuRight: [ 'right' ],
-            menuSelect: [ 'select' ],
-            menuCancel: [ 'cancel' ]
+        actionBindings: {
+            keys: {
+                up: [ 'ArrowUp' ],
+                down: [ 'ArrowDown' ],
+                left: [ 'ArrowLeft' ],
+                right: [ 'ArrowRight' ],
+                select: [ ' ' ],
+                cancel: [ 'Escape' ]
+            },
+            buttons: {
+                up: [ 'idk' ],
+                down: [ 'idk' ],
+                left: [ 'idk' ],
+                right: [ 'idk' ],
+                select: [ 'idk' ],
+                cancel: [ 'idk' ]
+            }
         },
 
-        buttons: {
-            menuUp: [ 'up' ],
-            menuDown: [ 'down' ],
-            menuLeft: [ 'left' ],
-            menuRight: [ 'right' ],
-            menuSelect: [ 'select' ],
-            menuCancel: [ 'cancel' ]
+        /**
+         * Save input binding settings.
+         * @returns {Object} Binding settings packed into an object.
+         */
+        save: () => { return { ...WtGui.settings.actionBindings } },
+
+        /**
+         * Load input binding settings.
+         * @param {Object} settings Binding settings packed into an object.
+         */
+        load: (settings) => {
+            if(!(settings instanceof Object)) throw new WtGuiError(`Error loading settings.`)
+            Object.keys(settings).forEach(item => {
+                if(WtGui.settings.actionBindings[item] === undefined)
+                    throw new WtGuiError(`Bad setting format:\n${settings[item]}`)
+                WtGui.settings.actionBindings[item] = settings[item]
+            })
         }
     }
 
     /**
      * WtGui Module info
-     * @prop {Number} fps Frames per second
-     * @prop {Number} frameDelta Time between frames
-     * @prop {Number} lastRender Time last frame render completed
+     * @prop {Number} fps Frames per second.
+     * @prop {Number} frameDelta Time between frames.
+     * @prop {Number} lastRender Time last frame render completed.
      */
     static info = {
         get fps() { return WtGui.#renderer.fps },
@@ -143,13 +167,13 @@ class WtGui {
      * @param {HTMLCanvasElement} canvas Canvas element to configure.
      */
     static startGui = (canvas) => {
+        if(WtGui.#data.configRan) throw new WtGuiError(`WtGui is already running.`)
         if(WtGui.#data.menuStorage === undefined)
             throw new WtGuiError(`Please configure menu settings storage.`)
-        if(WtGui.#data.configRan) throw new WtGuiError(`WtGui is already running.`)
         if(!(canvas instanceof HTMLCanvasElement))
-            throw new WtGuiError(`'${canvas}' is not a HTMLCanvasElement.`)
+            throw new WtGuiError(`'${canvas}' is not a 'HTMLCanvasElement'.`)
         if(WtGui.settings.width &lt; 1 || WtGui.settings.height &lt; 1)
-            throw new WtGuiError(`Must define a width and height.`)
+            throw new WtGuiError(`Must define a 'width' and 'height'.`)
 
         //WtGui.#data.glctx = canvas.getContext('webgl2')
         //if(!WtGui.#data.glctx) throw new WtGuiError(`webgl2 error`)
@@ -219,7 +243,7 @@ class WtGui {
      */
     static addImage = (id, file) => {
         if(WtGui.getImage(id) !== undefined) throw new WtGuiError(`Image ID '${id}' already exists.`)
-        WtGui.#data.imageFiles.push({ id: id, file: WtGuiExtras.loadImg(file) })
+        WtGui.#data.imageFiles.push({ id: id, file: Wt.loadImg(file) })
     }
 
     /**
@@ -248,7 +272,7 @@ class WtGui {
      */
     static addAudio = (id, file) => {
         if(WtGui.getAudio(id) !== undefined) throw new WtGuiError(`Audio ID '${id}' already exists.`)
-        if(!fs.existsSync(file)) throw new WtGuiError(`${file} does not exist.`)
+        if(!fs.existsSync(file)) throw new WtGuiError(`'${file}' does not exist.`)
         fs.readFile(file, (error, data) => {
             if(error) throw new WtGuiError(error.message)
             WtGui.#data.audioFiles.push({ id: id, file: data })
@@ -282,7 +306,7 @@ class WtGui {
         if(!(menuObj instanceof WtGuiMenu)) {         //  Verify proper menu object
             menuObj = WtGui.buildMenu(menuObj)        //  Try to build menu if not
             if(!(menuObj instanceof WtGuiMenu))       //  Fail if still not a menu
-                throw new WtGuiError(`Object is not a valid menu.`)
+                throw new WtGuiError(`Menu is not a valid 'WtGuiMenu' object.`)
         }
         if(WtGui.getMenu(menuObj.id) !== undefined)   //  Verify menu does not exist
             throw new WtGuiError(`Menu ID '${menuObj.id}' already exists.`)
@@ -291,6 +315,7 @@ class WtGui {
 
     /**
      * Build a menu from an object.
+     * wip
      * @param {*} menuData Data object to build from.
      * @returns {WtGuiMenu} Generated menu object
      */
@@ -322,18 +347,18 @@ class WtGui {
      */
     static actions = {
         /**
-         * Pause the gui
+         * Pause the gui.
          * @inner
          */
         pauseGui: () => { WtGui.#renderer.paused = true },
 
         /**
-         * Unpause the gui
+         * Unpause the gui.
          */
         unpauseGui: () => { WtGui.#renderer.paused = false },
 
         /**
-         * Restart the gui
+         * Restart the gui.
          */
         restartGui: () => {
             WtGui.#renderer.stop()
@@ -341,16 +366,16 @@ class WtGui {
         },
 
         /**
-         * Turn fps drawing on or off
-         * @param {boolean} toggle 
+         * Turn fps drawing on or off.
+         * @param {boolean} toggle True to turn on, false to turn off.
          */
         drawFps: (toggle) => {
             (toggle) ? WtGui.#renderer.drawFps = true : WtGui.#renderer.drawFps = false
         },
 
         /**
-         * Open a menu
-         * @param {String} menuId 
+         * Open a menu.
+         * @param {String} menuId Menu ID to open.
          */
         openMenu: (menuId) => {
             const tempMenu = WtGui.getMenu(menuId)
@@ -360,8 +385,8 @@ class WtGui {
         },
 
         /**
-         * Close one or all menus
-         * @param {boolean} closeAll 
+         * Close one or all menus.
+         * @param {boolean} closeAll True to close all menus, false to close the top menu.
          */
         closeMenu: (closeAll) => {
             if(closeAll) {
@@ -372,6 +397,94 @@ class WtGui {
                 if(WtGui.#data.openedMenus.length === 0) WtGui.actions.openMenu(WtGui.settings.defaultMenu)
                 else WtGui.#data.currentMenu = WtGui.#data.openedMenus[(WtGui.#data.openedMenus.length - 1)]
             }
+        }
+    }
+
+    /*
+     * Private gui actions.
+     */
+    static #actions = {
+        scrollTimer: {},  //  Store running timer function.
+        
+        /*
+         * Timed function for scrolling menu items.
+         */
+        scroller: () => {
+            console.log('test')
+        },
+
+        /**
+         * Move the active menu item up in the index.
+         * @returns {boolean} True if the current item changed, else false.
+         */
+        menuItemUp: () => {
+            if(WtGui.#data.currentMenu.selectableItems !== undefined) {
+                const idx = WtGui.#data.currentMenu.selectableItems.findIndex(
+                    elm => elm === WtGui.#data.activeItem)
+                if(idx > 0) {
+                    --idx
+                    WtGui.#data.activeItem = WtGui.#data.currentMenu.selectableItems[idx]
+                    return true
+                }
+            }
+            return false
+        },
+
+        /**
+         * Move the active menu item down in the index.
+         * @returns {boolean} True if the current item changed, else false.
+         */
+        menuItemDown: () => {
+            if(WtGui.#data.currentMenu.selectableItems !== undefined) {
+                const idx = WtGui.#data.currentMenu.selectableItems.findIndex(
+                    elm => elm === WtGui.#data.activeItem)
+                if(idx &lt; WtGui.#data.currentMenu.selectableItems.length &amp;&amp; idx > 0) {
+                    ++idx
+                    WtGui.#data.activeItem = WtGui.#data.currentMenu.selectableItems[idx]
+                    return true
+                }
+            }
+            return false
+        },
+
+        /**
+         * Start scrolling through the menu item options.
+         * @param {boolean} direction True for left, false for right.
+         */
+        menuItemScrollStart: (direction) => {
+            if(WtGui.#data.currentMenu.selectableItems !== undefined &amp;&amp;
+               WtGui.#data.activeItem !== undefined) {
+                if(!WtGui.#data.activeItem.selectOnce) {
+                    clearInterval(WtGui.#actions.scrollTimer)
+                    WtGui.#actions.scrollTimer = setInterval(WtGui.#actions.scroller(), 50)
+                }
+                { (direction) ? true : false }
+            }
+        },
+
+        /**
+         * Stop scrolling through the menu item options.
+         */
+        menuItemScrollStop: () => {
+            clearInterval(WtGui.#actions.scrollTimer)
+            if(WtGui.#data.currentMenu.selectableItems !== undefined &amp;&amp;
+                WtGui.#data.activeItem !== undefined) {
+                //
+            }
+        },
+
+        /**
+         * 
+         */
+        menuItemSelect: () => {
+            //
+        },
+
+        /**
+         * 
+         */
+        menuCancel: () => {
+            //
         }
     }
 
@@ -440,11 +553,11 @@ class WtGui {
             //  Render the menu
             if(!WtGui.settings.debugMode &amp;&amp; currentMenu.bgImage !== undefined) {
                 {(currentMenu.scaleImg) ?
-                    ctx.drawImage(currentMenu.bgImage,
+                    ctx.drawImage(WtGui.getImage(currentMenu.bgImage),
                         currentMenu.posX + currentMenu.imgOffsetX,
                         currentMenu.posY + currentMenu.imgOffsetY,
                         currentMenu.width, currentMenu.height) :
-                    ctx.drawImage(currentMenu.bgImage,
+                    ctx.drawImage(WtGui.getImage(currentMenu.bgImage),
                         currentMenu.posX + currentMenu.imgOffsetX,
                         currentMenu.posY + currentMenu.imgOffsetY)}
             } else {
@@ -457,11 +570,11 @@ class WtGui {
             currentMenu.items.forEach(elm => {
                 if(!WtGui.settings.debugMode &amp;&amp; elm.bgImage !== undefined) {
                     {(elm.scaleImg) ?
-                        ctx.drawImage(elm.bgImage,
+                        ctx.drawImage(WtGui.getImage(elm.bgImage),
                             elm.posX + elm.imgOffsetX,
                             elm.posY + elm.imgOffsetY,
                             elm.width, elm.height) :
-                        ctx.drawImage(elm.bgImage,
+                        ctx.drawImage(WtGui.getImage(elm.bgImage),
                             elm.posX + elm.imgOffsetX,
                             elm.posY + elm.imgOffsetY)}
                 } else {
@@ -478,8 +591,8 @@ class WtGui {
 
             //  Render FPS counter if enabled
             if(WtGui.#renderer.drawFps) {
-                ctx.font = '12px Arial'
-                ctx.fillStyle = 'orange'
+                ctx.font = WtGui.settings.fpsFont
+                ctx.fillStyle = WtGui.settings.fpsColor
                 ctx.textAlign = 'right'
                 ctx.fillText(WtGui.#renderer.fps, WtGui.settings.width, 12)
             }
@@ -515,11 +628,11 @@ class WtGui {
      */
     static #events = {
         /*
-         * 
+         * Mouse Down Event
          */
         onMouseDown: (event) => {
             //  See if the mouse clicked on anything
-            const res = WtGuiExtras.AABB(
+            const res = Wt.AABB(
                 {
                     posX: event.offsetX - WtGui.#data.currentMenu.posX,
                     posY: event.offsetY - WtGui.#data.currentMenu.posY,
@@ -537,18 +650,16 @@ class WtGui {
         },
 
         /*
-         * 
+         * Mouse Up Event
          */
-        onMouseUp: (event) => {
-            console.log(event)
-        },
+        onMouseUp: (event) => {},
 
         /*
-         * 
+         * Mouse Move Event
          */
         onMouseMove: (event) => {
             //  If the mouse is pointing at anything, make it the active item
-            const res = WtGuiExtras.AABB(
+            const res = Wt.AABB(
                 {
                     posX: event.offsetX - WtGui.#data.currentMenu.posX,
                     posY: event.offsetY - WtGui.#data.currentMenu.posY,
@@ -570,7 +681,7 @@ class WtGui {
                 const hitX = 0
                 const hitY = 0
 
-                const res = WtGuiExtras.AABB(
+                const res = Wt.AABB(
                     {
                         posX: event.radiusX - WtGui.#data.currentMenu.posX,
                         posY: event.radiusY - WtGui.#data.currentMenu.posY,
@@ -589,65 +700,161 @@ class WtGui {
         },
 
         /*
-         * 
+         * wip
          */
         onTouchEnd: (event) => {
             console.log(event)
         },
 
         /*
-         * 
+         * wip
          */
         onTouchCancel: (event) => {
             console.log(event)
         },
 
         /*
-         * 
+         * wip
          */
         onTouchMove: (event) => {
             console.log(event)
         },
 
         /*
-         * 
+         * Key Down Events
          */
         onKeyDown: (event) => {
-            console.log(event)
+            Object.keys(WtGui.settings.actionBindings.keys).forEach(action => {
+                WtGui.settings.actionBindings.keys[action].forEach(binding => {
+                    if(event.key === binding) {
+                        switch(action) {
+                            case 'up':
+                                WtGui.#actions.menuItemUp()
+                                break
+                            case 'down':
+                                WtGui.#actions.menuItemDown()
+                                break
+                            case 'left':
+                                WtGui.#actions.menuItemScrollStart(true)
+                                break
+                            case 'right':
+                                WtGui.#actions.menuItemScrollStart(false)
+                                break
+                            case 'select':
+                                WtGui.#actions.menuItemSelect()
+                                break
+                            case 'cancel':
+                                WtGui.#actions.menuCancel()
+                                break
+                        }
+                    }
+                })
+            })
         },
 
         /*
-         * 
+         * Key Up Events
          */
         onKeyUp: (event) => {
-            console.log(event)
+            Object.keys(WtGui.settings.actionBindings.keys).forEach(action => {
+                WtGui.settings.actionBindings.keys[action].forEach(binding => {
+                    if(event.key === binding) {
+                        switch(action) {
+                            case 'left':
+                                WtGui.#actions.menuItemScrollStop()
+                                break
+                            case 'right':
+                                WtGui.#actions.menuItemScrollStop()
+                                break
+                        }
+                    }
+                })
+            })
         },
 
         /*
-         * 
+         * wip
          */
         onButtonDown: (event) => {
-            console.log(event)
+            Object.keys(WtGui.settings.actionBindings.buttons).forEach(action => {
+                WtGui.settings.actionBindings.keys[action].forEach(binding => {
+                    if(event.gamepad === binding) {
+                        switch(action) {
+                            case 'up':
+                                WtGui.#actions.menuItemUp()
+                                break
+                            case 'down':
+                                WtGui.#actions.menuItemDown()
+                                break
+                            case 'left':
+                                WtGui.#actions.menuItemScrollStart(true)
+                                break
+                            case 'right':
+                                WtGui.#actions.menuItemScrollStart(false)
+                                break
+                            case 'select':
+                                WtGui.#actions.menuItemSelect()
+                                break
+                            case 'cancel':
+                                WtGui.#actions.menuCancel()
+                                break
+                        }
+                    }
+                })
+            })
         },
 
         /*
-         * 
+         * wip
          */
         onButtonUp: (event) => {
-            console.log(event)
+            Object.keys(WtGui.settings.actionBindings.buttons).forEach(action => {
+                WtGui.settings.actionBindings.keys[action].forEach(binding => {
+                    if(event.gamepad === binding) {
+                        switch(action) {
+                            case 'left':
+                                WtGui.#actions.menuItemScrollStop()
+                                break
+                            case 'right':
+                                WtGui.#actions.menuItemScrollStop()
+                                break
+                        }
+                    }
+                })
+            })
         }
     }
 
     /**
-     * Gui tests
+     * Debug helper fuctions.
      */
-    static tests = {
+    static debug = {
         /**
-         * Print the menu
+         * Log menu objects to console.
          */
-        printMenu: () => {
-            console.log('menu:')
-            console.log(WtGui.#data.menus)
+        logMenus: () => {
+            WtGui.#data.menus.forEach(menu => { console.log(menu) })
+        },
+
+        /**
+         * Log opened menu stack to console.
+         */
+        logMenuStack: () => {
+            WtGui.#data.openedMenus.forEach(menu => { console.log(menu) })
+        },
+
+        /**
+         * Log image file list to console.
+         */
+        logImageFiles: () => {
+            WtGui.#data.imageFiles.forEach(img => { console.log(img) })
+        },
+
+        /**
+         * Log audio file list to console.
+         */
+        logAudioFiles: () => {
+            WtGui.#data.audioFiles.forEach(audio => { console.log(audio) })
         }
     }
 }
@@ -658,7 +865,7 @@ exports.WtGui = WtGui
  * Extra functions / algorithms
  * 
  */
-const WtGuiExtras = {
+const Wt = {
     /**
      * Parse required arguments.
      * @param {*} scope The scope (this).
@@ -667,15 +874,15 @@ const WtGuiExtras = {
      */
     argParser: (scope, data, args) => {
         args.forEach((arg) => {
-            if(data[arg] === undefined) throw new WtGuiError(`'${scope}':\n${arg} undefined.`)
+            if(data[arg] === undefined) throw new WtGuiError(`'${scope}':\n'${arg}' undefined.`)
             scope[arg] = data[arg]
         })
     },
 
     /**
      * Load an image from file.
-     * @param {String} file 
-     * @returns {Image}
+     * @param {String} file Filename and path to load.
+     * @returns {Image} Image object loaded from file.
      */
     loadImg: (file) => {
         if(!fs.existsSync(file)) throw new WtGuiError(`'${file}' does not exist.`)
@@ -685,17 +892,17 @@ const WtGuiExtras = {
     },
 
     /**
-     * Test for valid rgb(a)/hsl(a)
-     * @param {String} str String to test
-     * @returns {boolean} True if valid rgb(a)/hsl(a), else false
+     * Test for valid rgb(a)/hsl(a).
+     * @param {String} str String to test.
+     * @returns {boolean} True if valid rgb(a)/hsl(a), else false.
      */
     testRgb: (str) => { return /^(rgb|hsl)a?\((-?\d+%?[,\s]+){2,3}\s*[\d\.]+%?\)$/i.test(str) },
 
     /**
      * AABB Algorithm
-     * @param {elmA} test 
-     * @param {[elmB]} collection 
-     * @returns {elmB}
+     * @param {elmA} test Object to test.
+     * @param {[elmB]} collection Collection of objects to test against.
+     * @returns {elmB} Returns the first object collided, else undefined.
      */
     AABB: (test, collection) => {
         if(!(test instanceof Object)) return undefined
@@ -715,7 +922,7 @@ const WtGuiExtras = {
         return res
     }
 }
-exports.WtGuiExtras = WtGuiExtras
+exports.WtGuiExtras = Wt
 
 /* ****************************************
  *
@@ -735,7 +942,7 @@ class WtGuiMenu {
      */
     constructor(args) {
         var args = args || {}
-        WtGuiExtras.argParser(this, args,
+        Wt.argParser(this, args,
             [ 'id', 'title',
               'posX', 'posY',
               'width', 'height' ])
@@ -743,14 +950,14 @@ class WtGuiMenu {
         this.bgColor = args.bgColor || WtGui.settings.defaultMenuColor
         this.fgColor = args.fgColor || WtGui.settings.defaultFontColor
 
-        if(args.bgImage !== undefined) this.bgImage = WtGuiExtras.loadImg(args.bgImage)
+        if(args.bgImage !== undefined) this.bgImage = args.bgImage
         this.scaleImg = args.scaleImg || false
 
         this.items = []
         this.selectableItems = []
 
-        if(!WtGuiExtras.testRgb(this.bgColor)) throw new WtGuiError(`'${this.bgColor}' - Bad color code`)
-        if(!WtGuiExtras.testRgb(this.fgColor)) throw new WtGuiError(`'${this.fgColor}' - Bad color code`)
+        if(!Wt.testRgb(this.bgColor)) throw new WtGuiError(`'${this.bgColor}' - Bad color code`)
+        if(!Wt.testRgb(this.fgColor)) throw new WtGuiError(`'${this.fgColor}' - Bad color code`)
     }
 
     /**
@@ -759,7 +966,7 @@ class WtGuiMenu {
      */
     addItem = (itemObj) => {
         if(!(itemObj instanceof WtGuiItem))  //  Verify proper item object
-            throw new WtGuiError(`Object is not a valid menu item.`)
+            throw new WtGuiError(`Item is not a valid 'WtGuiItem' object.`)
         //  Verify item does not already exist
         if(this.items.find(elm => elm.id === itemObj.id) !== undefined)
             throw new WtGuiError(`Item ID '${itemObj.id}' already exists.`)
@@ -783,7 +990,7 @@ class WtGuiItem {
     constructor(args) {
         if(this.constructor === WtGuiItem) throw new WtGuiError(`'WtGuiItem' is an interface class.`)
         var args = args || {}
-        WtGuiExtras.argParser(this, args,
+        Wt.argParser(this, args,
             [ 'id', 'title',
               'posX', 'posY',
               'width', 'height'])
@@ -791,14 +998,14 @@ class WtGuiItem {
         this.bgColor = args.bgColor || WtGui.settings.defaultItemColor
         this.fgColor = args.fgColor || WtGui.settings.defaultFontColor
 
-        if(args.bgImage !== undefined) this.bgImage = WtGuiExtras.loadImg(args.bgImage)
+        if(args.bgImage !== undefined) this.bgImage = args.bgImage
         this.imgOffsetX = args.imgOffsetX || 0
         this.imgOffsetY = args.imgOffsetY || 0
         this.scaleImg = args.scaleImg || false
         this.canSelect = false
 
-        if(!WtGuiExtras.testRgb(this.bgColor)) throw new WtGuiError(`${this.bgColor} - Bad color code`)
-        if(!WtGuiExtras.testRgb(this.fgColor)) throw new WtGuiError(`${this.fgColor} - Bad color code`)
+        if(!Wt.testRgb(this.bgColor)) throw new WtGuiError(`'${this.bgColor}' - Bad color code`)
+        if(!Wt.testRgb(this.fgColor)) throw new WtGuiError(`'${this.fgColor}' - Bad color code`)
     }
 
     /**
@@ -935,7 +1142,7 @@ exports.WtGuiSelection = WtGuiSelection
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Sat Nov 06 2021 14:22:36 GMT-0400 (Eastern Daylight Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Tue Nov 09 2021 10:46:35 GMT-0500 (Eastern Standard Time)
 </footer>
 
 <script> prettyPrint(); </script>
