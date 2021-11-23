@@ -30,9 +30,9 @@
  * 
  * @author Matthew Evans
  * @module wtfsystems/wtgui
- * @version 0.0.5
- * @see README.me
- * @copyright LICENSE.md
+ * @version 0.0.6
+ * @see README.md
+ * @copyright MIT see LICENSE.md
  * 
  */
 
@@ -65,12 +65,15 @@ exports.WtGuiError = WtGuiError
 class WtGui {
     constructor() { return false }  //  Don't allow direct construction
 
+    static menuStorage = undefined  //  Storage for saving menu settings selection
+
     /**
      * WtGui Module settings
      * @prop {boolean} debugMode Enable/disable debug mode.
      * @prop {Number} width Width of the gui.
      * @prop {Number} height Height of the gui.
      * @prop {Number} mouseSize Size of the mouse hitbox.
+     * @prop {Number} scrollSpeed Speed to scroll menu items.
      * @prop {String} clearColor Background color for gui context.
      * @prop {String} defaultFont Default font size/face.
      * @prop {String} defaultFontColor Default font color.
@@ -85,6 +88,7 @@ class WtGui {
         width: Number(0),
         height: Number(0),
         mouseSize: Number(0),
+        scrollSpeed: Number(100),
         clearColor: 'rgb(142,142,142)',
         defaultFont: '14px Arial',
         defaultFontColor: 'rgb(255,255,255)',
@@ -96,10 +100,10 @@ class WtGui {
 
         actionBindings: {
             keys: {
-                up: [ 'ArrowUp' ],
-                down: [ 'ArrowDown' ],
-                left: [ 'ArrowLeft' ],
-                right: [ 'ArrowRight' ],
+                up: [ 'ArrowUp', 'W' ],
+                down: [ 'ArrowDown', 'S' ],
+                left: [ 'ArrowLeft', 'A' ],
+                right: [ 'ArrowRight', 'D' ],
                 select: [ ' ' ],
                 cancel: [ 'Escape' ]
             },
@@ -149,7 +153,7 @@ class WtGui {
      * Gui Data
      */
     static #data = {
-        menuStorage: undefined,  //  Storage for saving menu settings selection
+        mainCanvas: {},
         menuCanvas: {},          //  2d canvas for rendering menus
         glctx: {},               //  WebGL context for main drawing
         ctx: {},                 //  2d context for menu drawing
@@ -168,13 +172,14 @@ class WtGui {
      */
     static startGui = (canvas) => {
         if(WtGui.#data.configRan) throw new WtGuiError(`WtGui is already running.`)
-        if(WtGui.#data.menuStorage === undefined)
+        if(WtGui.menuStorage === undefined)
             throw new WtGuiError(`Please configure menu settings storage.`)
         if(!(canvas instanceof HTMLCanvasElement))
             throw new WtGuiError(`'${canvas}' is not a 'HTMLCanvasElement'.`)
         if(WtGui.settings.width &lt; 1 || WtGui.settings.height &lt; 1)
             throw new WtGuiError(`Must define a 'width' and 'height'.`)
 
+        WtGui.#data.mainCanvas = canvas
         //WtGui.#data.glctx = canvas.getContext('webgl2')
         //if(!WtGui.#data.glctx) throw new WtGuiError(`webgl2 error`)
         WtGui.#data.glctx = canvas.getContext('2d')
@@ -184,11 +189,13 @@ class WtGui {
         canvas.addEventListener('mousedown', WtGui.#events.onMouseDown, false)
         canvas.addEventListener('mouseup', WtGui.#events.onMouseUp, false)
         canvas.addEventListener('mousemove', WtGui.#events.onMouseMove, false)
+        canvas.addEventListener('wheel', WtGui.#events.onMouseWheel, false)
 
-        canvas.addEventListener("touchstart", WtGui.#events.onTouchStart, false)
-        canvas.addEventListener("touchend", WtGui.#events.onTouchEnd, false)
-        canvas.addEventListener("touchcancel", WtGui.#events.onTouchCancel, false)
-        canvas.addEventListener("touchmove", WtGui.#events.onTouchMove, false)
+        canvas.addEventListener('touchstart', WtGui.#events.onTouchStart, false)
+        canvas.addEventListener('touchend', WtGui.#events.onTouchEnd, false)
+        canvas.addEventListener('touchcancel', WtGui.#events.onTouchCancel, false)
+        canvas.addEventListener('touchmove', WtGui.#events.onTouchMove, false)
+        canvas.addEventListener('scroll', WtGui.#events.onScroll, false)
 
         window.addEventListener('keydown', WtGui.#events.onKeyDown, false)
         window.addEventListener('keyup', WtGui.#events.onKeyUp, false)
@@ -201,27 +208,23 @@ class WtGui {
     }
 
     /**
-     * 
-     * @param {Object} menuStorage
-     */
-    static setMenuStorage = (menuStorage) => {
-        //  add validation
-        WtGui.#data.menuStorage = menuStorage
-    }
-
-    /**
-     * 
-     * @returns {Object}
-     */
-    static get menuStorage() { return WtGui.#data.menuStorage }
-
-    /**
      * Set the background animation function.
      * @param {Function} func New animation function.
      */
     static setBgAnimation = (func) => {
+        if(WtGui.#data.configRan) throw new WtGuiError(`WtGui is already running.`)
         if(!(func instanceof Function)) throw new WtGuiError(`Background animation must be a function.`)
         WtGui.#renderer.bgAnimation = func
+    }
+
+    /**
+     * Set the item highlighting function.
+     * @param {Function} func New highlighting function.
+     */
+    static setItemHighlighting = (func) => {
+        if(WtGui.#data.configRan) throw new WtGuiError(`WtGui is already running.`)
+        if(!(func instanceof Function)) throw new WtGuiError(`Item highlighting must be a function.`)
+        WtGui.#renderer.highlighter = func
     }
 
     /**
@@ -382,6 +385,8 @@ class WtGui {
             if(tempMenu === undefined) throw new WtGuiError(`'${menuId}' - Menu does not exist.`)
             WtGui.#data.openedMenus.push(tempMenu)
             WtGui.#data.currentMenu = WtGui.#data.openedMenus[(WtGui.#data.openedMenus.length - 1)]
+            WtGui.#data.activeItem = WtGui.#data.currentMenu.selectableItems[0]
+            WtGui.#data.mainCanvas.focus()
         },
 
         /**
@@ -405,86 +410,301 @@ class WtGui {
      */
     static #actions = {
         scrollTimer: {},  //  Store running timer function.
-        
-        /*
-         * Timed function for scrolling menu items.
-         */
-        scroller: () => {
-            console.log('test')
-        },
 
-        /**
+        /*
+         *
+         */
+        scrollLeft: () => { WtGui.#data.activeItem.onLeft() },
+
+        /*
+         *
+         */
+        scrollRight: () => { WtGui.#data.activeItem.onRight() },
+
+        /*
          * Move the active menu item up in the index.
-         * @returns {boolean} True if the current item changed, else false.
          */
         menuItemUp: () => {
-            if(WtGui.#data.currentMenu.selectableItems !== undefined) {
-                const idx = WtGui.#data.currentMenu.selectableItems.findIndex(
-                    elm => elm === WtGui.#data.activeItem)
-                if(idx > 0) {
-                    --idx
-                    WtGui.#data.activeItem = WtGui.#data.currentMenu.selectableItems[idx]
-                    return true
-                }
+            let idx = WtGui.#data.currentMenu.selectableItems.findIndex(
+                elm => elm === WtGui.#data.activeItem)
+            if(idx > 0) {
+                --idx
+                WtGui.#data.activeItem = WtGui.#data.currentMenu.selectableItems[idx]
+                return true
             }
             return false
         },
 
-        /**
+        /*
          * Move the active menu item down in the index.
-         * @returns {boolean} True if the current item changed, else false.
          */
         menuItemDown: () => {
-            if(WtGui.#data.currentMenu.selectableItems !== undefined) {
-                const idx = WtGui.#data.currentMenu.selectableItems.findIndex(
-                    elm => elm === WtGui.#data.activeItem)
-                if(idx &lt; WtGui.#data.currentMenu.selectableItems.length &amp;&amp; idx > 0) {
-                    ++idx
-                    WtGui.#data.activeItem = WtGui.#data.currentMenu.selectableItems[idx]
-                    return true
-                }
+            let idx = WtGui.#data.currentMenu.selectableItems.findIndex(
+                elm => elm === WtGui.#data.activeItem)
+            if(idx &lt; WtGui.#data.currentMenu.selectableItems.length - 1 &amp;&amp; idx >= 0) {
+                ++idx
+                WtGui.#data.activeItem = WtGui.#data.currentMenu.selectableItems[idx]
+                return true
             }
             return false
         },
 
-        /**
+        /*
          * Start scrolling through the menu item options.
-         * @param {boolean} direction True for left, false for right.
          */
         menuItemScrollStart: (direction) => {
-            if(WtGui.#data.currentMenu.selectableItems !== undefined &amp;&amp;
-               WtGui.#data.activeItem !== undefined) {
-                if(!WtGui.#data.activeItem.selectOnce) {
-                    clearInterval(WtGui.#actions.scrollTimer)
-                    WtGui.#actions.scrollTimer = setInterval(WtGui.#actions.scroller(), 50)
-                }
-                { (direction) ? true : false }
-            }
+            clearInterval(WtGui.#actions.scrollTimer)
+            {(direction) ?
+                WtGui.#actions.scrollTimer = setInterval(
+                    WtGui.#actions.scrollLeft, WtGui.settings.scrollSpeed) :
+                WtGui.#actions.scrollTimer = setInterval(
+                    WtGui.#actions.scrollRight, WtGui.settings.scrollSpeed)}
         },
 
-        /**
+        /*
          * Stop scrolling through the menu item options.
          */
-        menuItemScrollStop: () => {
-            clearInterval(WtGui.#actions.scrollTimer)
-            if(WtGui.#data.currentMenu.selectableItems !== undefined &amp;&amp;
-                WtGui.#data.activeItem !== undefined) {
-                //
-            }
-        },
+        menuItemScrollStop: () => { clearInterval(WtGui.#actions.scrollTimer) },
 
-        /**
+        /*
          * 
          */
-        menuItemSelect: () => {
-            //
+        menuItemSelect: (event) => {
+            if(WtGui.#data.activeItem !== undefined) WtGui.#data.activeItem.onSelect(event)
         },
 
-        /**
+        /*
          * 
          */
         menuCancel: () => {
             //
+        }
+    }
+
+    /*
+     * Events sub-object
+     *
+     * Event object passed to UI elements:
+     * > {object} uiEvent - Original UI event repacked
+     * > {number} elmX - Calculated X offset within the UI item
+     * > {number} elmY - Calculated Y offset within the UI item
+     */
+    static #events = {
+        /*
+         * Mouse Down Event
+         */
+        onMouseDown: (event) => {
+            const hitX = event.offsetX - WtGui.#data.currentMenu.posX
+            const hitY = event.offsetY - WtGui.#data.currentMenu.posY
+            //  See if the mouse clicked on anything
+            const res = Wt.AABB(
+                {
+                    posX: hitX,
+                    posY: hitY,
+                    width: WtGui.settings.mouseSize,
+                    height: WtGui.settings.mouseSize,
+                },
+                WtGui.#data.currentMenu.items
+            )
+            if(res !== undefined &amp;&amp; res.canSelect) {
+                WtGui.#data.activeItem = res
+                if(res.scrollable) {
+                    (hitX - res.posX &lt; res.width / 2) ?
+                        WtGui.#actions.menuItemScrollStart(true) :
+                        WtGui.#actions.menuItemScrollStart(false)
+                }
+                else res.onSelect({
+                    uiEvent: event,
+                    elmX: hitX - res.posX,
+                    elmY: hitY - res.posY
+                })
+            }
+        },
+
+        /*
+         * Mouse Up Event
+         */
+        onMouseUp: (event) => { WtGui.#actions.menuItemScrollStop() },
+
+        /*
+         * Mouse Move Event
+         */
+        onMouseMove: (event) => {
+            //  If the mouse is pointing at anything, make it the active item
+            const res = Wt.AABB(
+                {
+                    posX: event.offsetX - WtGui.#data.currentMenu.posX,
+                    posY: event.offsetY - WtGui.#data.currentMenu.posY,
+                    width: WtGui.settings.mouseSize,
+                    height: WtGui.settings.mouseSize,
+                },
+                WtGui.#data.currentMenu.items
+            )
+            if(res !== undefined &amp;&amp; res.canSelect) {
+                if(WtGui.#data.activeItem !== res) WtGui.#actions.menuItemScrollStop()
+                WtGui.#data.activeItem = res
+            }
+        },
+
+        /*
+         * Mouse Wheel
+         */
+        onMouseWheel: (event) => {
+            event.preventDefault()
+        },
+
+        /*
+         * wip
+         */
+        onTouchStart: (event) => {
+            console.log(event)
+            event.targetTouches.forEach(touch => {
+                console.log(touch)
+                const hitX = 0
+                const hitY = 0
+
+                const res = Wt.AABB(
+                    {
+                        posX: event.radiusX - WtGui.#data.currentMenu.posX,
+                        posY: event.radiusY - WtGui.#data.currentMenu.posY,
+                        width: event.touchRadius,
+                        height: event.touchRadius,
+                    },
+                    WtGui.#data.currentMenu.items
+                )
+                if(res !== undefined &amp;&amp; res.canSelect)
+                    res.onSelect({
+                        uiEvent: event,
+                        elmX: event.radiusX - WtGui.#data.currentMenu.posX - res.posX,
+                        elmY: event.radiusY - WtGui.#data.currentMenu.posY - res.posY
+                    })
+            })
+        },
+
+        /*
+         * wip
+         */
+        onTouchEnd: (event) => {
+            console.log(event)
+        },
+
+        /*
+         * wip
+         */
+        onTouchCancel: (event) => {
+            console.log(event)
+        },
+
+        /*
+         * wip
+         */
+        onTouchMove: (event) => {
+            console.log(event)
+        },
+
+        /*
+         * wip
+         */
+        onScroll: (event) => {
+            console.log(event)
+            //event.preventDefault()
+        },
+
+        /*
+         * Key Down Events
+         */
+        onKeyDown: (event) => {
+            Object.keys(WtGui.settings.actionBindings.keys).forEach(action => {
+                WtGui.settings.actionBindings.keys[action].forEach(binding => {
+                    if(event.key.toUpperCase() === binding.toUpperCase())
+                        WtGui.#events.trigger.down(action, event)
+                })
+            })
+        },
+
+        /*
+         * Key Up Events
+         */
+        onKeyUp: (event) => {
+            Object.keys(WtGui.settings.actionBindings.keys).forEach(action => {
+                WtGui.settings.actionBindings.keys[action].forEach(binding => {
+                    if(event.key.toUpperCase() === binding.toUpperCase())
+                        WtGui.#events.trigger.up(action, event)
+                })
+            })
+        },
+
+        /*
+         * wip
+         */
+        onButtonDown: (event) => {
+            Object.keys(WtGui.settings.actionBindings.buttons).forEach(action => {
+                WtGui.settings.actionBindings.keys[action].forEach(binding => {
+                    if(event.gamepad === binding) WtGui.#events.trigger.down(action, event)
+                })
+            })
+        },
+
+        /*
+         * wip
+         */
+        onButtonUp: (event) => {
+            Object.keys(WtGui.settings.actionBindings.buttons).forEach(action => {
+                WtGui.settings.actionBindings.keys[action].forEach(binding => {
+                    if(event.gamepad === binding) WtGui.#events.trigger.up(action, event)
+                })
+            })
+        },
+
+        /*
+         * Input triggers
+         */
+        trigger: {
+            /*
+             * Input on down triggers
+             */
+            down: (action, event) => {
+                switch(action) {
+                    case 'up':
+                        WtGui.#actions.menuItemUp()
+                        break
+                    case 'down':
+                        WtGui.#actions.menuItemDown()
+                        break
+                    case 'left':
+                        if(WtGui.#data.activeItem.scrollable)
+                            WtGui.#actions.menuItemScrollStart(true)
+                        break
+                    case 'right':
+                        if(WtGui.#data.activeItem.scrollable)
+                            WtGui.#actions.menuItemScrollStart(false)
+                        break
+                    case 'select':
+                        WtGui.#actions.menuItemSelect({
+                            uiEvent: event,
+                            elmX: -1,
+                            elmY: -1
+                        })
+                        break
+                    case 'cancel':
+                        WtGui.#actions.menuCancel()
+                        break
+                }
+            },
+
+            /*
+             * Input on up triggers
+             */
+            up: (action, event) => {
+                switch(action) {
+                    case 'left':
+                        WtGui.#actions.menuItemScrollStop()
+                        break
+                    case 'right':
+                        WtGui.#actions.menuItemScrollStop()
+                        break
+                }
+            }
         }
     }
 
@@ -503,11 +723,20 @@ class WtGui {
         renderTexture: null,    //  Texture to draw to
         bgAnimation: () => {},  //  Background animation function
 
+        highlighter: (ctx, menuItem, currentMenu) => {
+            ctx.fillStyle = 'rgb(255,255,0)'
+            ctx.fillRect(
+                currentMenu.posX + (menuItem.posX - 10),
+                currentMenu.posY + (menuItem.posY - 10),
+                menuItem.width + 20, menuItem.height + 20)
+        },
+
         /*
          * Start the renderer
          */
         start: () => {
             //WtGui.#renderer.renderTexture = WtGui.#data.glctx.createTexture()
+            WtGui.#data.mainCanvas.focus()
             WtGui.#data.menuCanvas.width = WtGui.settings.width
             WtGui.#data.menuCanvas.height = WtGui.settings.height
             clearInterval(WtGui.#renderer.fpsCalc)
@@ -566,6 +795,10 @@ class WtGui {
                     currentMenu.width, currentMenu.height)
             }
 
+            //  Render active item highlighting
+            if(WtGui.#data.activeItem !== undefined)
+                WtGui.#renderer.highlighter(WtGui.#data.ctx, WtGui.#data.activeItem, currentMenu)
+
             //  Render menu items
             currentMenu.items.forEach(elm => {
                 if(!WtGui.settings.debugMode &amp;&amp; elm.bgImage !== undefined) {
@@ -582,10 +815,6 @@ class WtGui {
                     ctx.fillRect(currentMenu.posX + elm.posX,
                         currentMenu.posY + elm.posY,
                         elm.width, elm.height)
-                }
-
-                if(WtGui.#data.activeItem === elm) {
-                    // selected item
                 }
             })
 
@@ -615,213 +844,6 @@ class WtGui {
             WtGui.#renderer.lastRender = Date.now()
             while(WtGui.#renderer.paused) {}  //  Infinite loop for pause
             WtGui.#renderer.nextFrame = window.requestAnimationFrame(WtGui.#renderer.render)
-        }
-    }
-
-    /*
-     * Events sub-object
-     *
-     * Event object passed to UI elements:
-     * > {object} uiEvent - Original UI event repacked
-     * > {number} elmX - Calculated X offset within the UI item
-     * > {number} elmY - Calculated Y offset within the UI item
-     */
-    static #events = {
-        /*
-         * Mouse Down Event
-         */
-        onMouseDown: (event) => {
-            //  See if the mouse clicked on anything
-            const res = Wt.AABB(
-                {
-                    posX: event.offsetX - WtGui.#data.currentMenu.posX,
-                    posY: event.offsetY - WtGui.#data.currentMenu.posY,
-                    width: WtGui.settings.mouseSize,
-                    height: WtGui.settings.mouseSize,
-                },
-                WtGui.#data.currentMenu.items
-            )
-            if(res !== undefined &amp;&amp; res.canSelect)
-                res.selectEvent({
-                    uiEvent: event,
-                    elmX: event.offsetX - WtGui.#data.currentMenu.posX - res.posX,
-                    elmY: event.offsetY - WtGui.#data.currentMenu.posY - res.posY
-                })
-        },
-
-        /*
-         * Mouse Up Event
-         */
-        onMouseUp: (event) => {},
-
-        /*
-         * Mouse Move Event
-         */
-        onMouseMove: (event) => {
-            //  If the mouse is pointing at anything, make it the active item
-            const res = Wt.AABB(
-                {
-                    posX: event.offsetX - WtGui.#data.currentMenu.posX,
-                    posY: event.offsetY - WtGui.#data.currentMenu.posY,
-                    width: WtGui.settings.mouseSize,
-                    height: WtGui.settings.mouseSize,
-                },
-                WtGui.#data.currentMenu.items
-            )
-            if(res !== undefined &amp;&amp; res.canSelect) WtGui.#data.activeItem = res
-        },
-
-        /*
-         * wip
-         */
-        onTouchStart: (event) => {
-            console.log(event)
-            event.targetTouches.forEach(touch => {
-                console.log(touch)
-                const hitX = 0
-                const hitY = 0
-
-                const res = Wt.AABB(
-                    {
-                        posX: event.radiusX - WtGui.#data.currentMenu.posX,
-                        posY: event.radiusY - WtGui.#data.currentMenu.posY,
-                        width: event.touchRadius,
-                        height: event.touchRadius,
-                    },
-                    WtGui.#data.currentMenu.items
-                )
-                if(res !== undefined &amp;&amp; res.canSelect)
-                    res.selectEvent({
-                        uiEvent: event,
-                        elmX: event.radiusX - WtGui.#data.currentMenu.posX - res.posX,
-                        elmY: event.radiusY - WtGui.#data.currentMenu.posY - res.posY
-                    })
-            })
-        },
-
-        /*
-         * wip
-         */
-        onTouchEnd: (event) => {
-            console.log(event)
-        },
-
-        /*
-         * wip
-         */
-        onTouchCancel: (event) => {
-            console.log(event)
-        },
-
-        /*
-         * wip
-         */
-        onTouchMove: (event) => {
-            console.log(event)
-        },
-
-        /*
-         * Key Down Events
-         */
-        onKeyDown: (event) => {
-            Object.keys(WtGui.settings.actionBindings.keys).forEach(action => {
-                WtGui.settings.actionBindings.keys[action].forEach(binding => {
-                    if(event.key === binding) {
-                        switch(action) {
-                            case 'up':
-                                WtGui.#actions.menuItemUp()
-                                break
-                            case 'down':
-                                WtGui.#actions.menuItemDown()
-                                break
-                            case 'left':
-                                WtGui.#actions.menuItemScrollStart(true)
-                                break
-                            case 'right':
-                                WtGui.#actions.menuItemScrollStart(false)
-                                break
-                            case 'select':
-                                WtGui.#actions.menuItemSelect()
-                                break
-                            case 'cancel':
-                                WtGui.#actions.menuCancel()
-                                break
-                        }
-                    }
-                })
-            })
-        },
-
-        /*
-         * Key Up Events
-         */
-        onKeyUp: (event) => {
-            Object.keys(WtGui.settings.actionBindings.keys).forEach(action => {
-                WtGui.settings.actionBindings.keys[action].forEach(binding => {
-                    if(event.key === binding) {
-                        switch(action) {
-                            case 'left':
-                                WtGui.#actions.menuItemScrollStop()
-                                break
-                            case 'right':
-                                WtGui.#actions.menuItemScrollStop()
-                                break
-                        }
-                    }
-                })
-            })
-        },
-
-        /*
-         * wip
-         */
-        onButtonDown: (event) => {
-            Object.keys(WtGui.settings.actionBindings.buttons).forEach(action => {
-                WtGui.settings.actionBindings.keys[action].forEach(binding => {
-                    if(event.gamepad === binding) {
-                        switch(action) {
-                            case 'up':
-                                WtGui.#actions.menuItemUp()
-                                break
-                            case 'down':
-                                WtGui.#actions.menuItemDown()
-                                break
-                            case 'left':
-                                WtGui.#actions.menuItemScrollStart(true)
-                                break
-                            case 'right':
-                                WtGui.#actions.menuItemScrollStart(false)
-                                break
-                            case 'select':
-                                WtGui.#actions.menuItemSelect()
-                                break
-                            case 'cancel':
-                                WtGui.#actions.menuCancel()
-                                break
-                        }
-                    }
-                })
-            })
-        },
-
-        /*
-         * wip
-         */
-        onButtonUp: (event) => {
-            Object.keys(WtGui.settings.actionBindings.buttons).forEach(action => {
-                WtGui.settings.actionBindings.keys[action].forEach(binding => {
-                    if(event.gamepad === binding) {
-                        switch(action) {
-                            case 'left':
-                                WtGui.#actions.menuItemScrollStop()
-                                break
-                            case 'right':
-                                WtGui.#actions.menuItemScrollStop()
-                                break
-                        }
-                    }
-                })
-            })
         }
     }
 
@@ -979,6 +1001,14 @@ exports.WtGuiMenu = WtGuiMenu
 /**
  * 
  * WtGui Menu Item Interface
+ * 
+ * @prop {String} id
+ * @prop {String} title
+ * @prop {Number} posX
+ * @prop {Number} posY
+ * @prop {Number} width
+ * @prop {Number} height
+ * 
  * @interface
  * 
  */
@@ -1003,16 +1033,10 @@ class WtGuiItem {
         this.imgOffsetY = args.imgOffsetY || 0
         this.scaleImg = args.scaleImg || false
         this.canSelect = false
+        this.scrollable = false
 
         if(!Wt.testRgb(this.bgColor)) throw new WtGuiError(`'${this.bgColor}' - Bad color code`)
         if(!Wt.testRgb(this.fgColor)) throw new WtGuiError(`'${this.fgColor}' - Bad color code`)
-    }
-
-    /**
-     * 
-     */
-    selectEvent = (event) => {
-        if(this.canSelect) throw new WtGuiError(`Method 'selectEvent()' must be implemented.`)
     }
 }
 exports.WtGuiItem = WtGuiItem
@@ -1031,6 +1055,7 @@ class WtGuiLabel extends WtGuiItem {
     constructor(args) {
         var args = args || {}
         super(args)
+        this.canSelect = false
     }
 }
 exports.WtGuiLabel = WtGuiLabel
@@ -1050,28 +1075,65 @@ class WtGuiAction extends WtGuiItem {
         var args = args || {}
         super(args)
         this.canSelect = true
+        this.scrollable = false
         if(args.type === undefined) {
             if(args.action === undefined) throw new WtGuiError(`Must define an action.`)
-            this.action = args.action
+            this.onSelect = args.action
         }
         if(args.type === 'open_menu') {
             if(args.menuName === undefined) throw new WtGuiError(`Must define a menu name.`)
-            this.action = () => { WtGui.actions.openMenu(args.menuName) }
+            this.onSelect = () => { WtGui.actions.openMenu(args.menuName) }
         }
         if(args.type === 'close_menu') {
             this.allMenus = args.allMenus || false
-            this.action = () => { WtGui.actions.closeMenu(this.allMenus) }
+            this.onSelect = () => { WtGui.actions.closeMenu(this.allMenus) }
         }
-    }
-
-    /**
-     * 
-     */
-    selectEvent = (event) => {
-        this.action(event)
     }
 }
 exports.WtGuiAction = WtGuiAction
+
+/**
+ * 
+ * 
+ * @extends WtGuiItem
+ * 
+ */
+class WtGuiToggle extends WtGuiItem {
+    /**
+     * 
+     * @param {*} args 
+     */
+    constructor(args) {
+        var args = args || {}
+        super(args)
+        this.canSelect = true
+        this.scrollable = true
+        this.onSelect = (event) => {}
+        if(args.toggleLeft === undefined) throw new WtGuiError(`Must define left toggle.`)
+        this.onLeft = args.toggleLeft
+        if(args.toggleRight === undefined) throw new WtGuiError(`Must define right toggle.`)
+        this.onRight = args.toggleRight
+    }
+}
+exports.WtGuiToggle = WtGuiToggle
+
+/**
+ * 
+ * 
+ * @extends WtGuiItem
+ * 
+ */
+class WtGuiSetting extends WtGuiItem {
+    /**
+     * 
+     * @param {*} args 
+     */
+    constructor(args) {
+        var args = args || {}
+        super(args)
+    }
+}
+exports.WtGuiSetting = WtGuiSetting
 
 /**
  * 
@@ -1090,24 +1152,6 @@ class WtGuiInput extends WtGuiItem {
     }
 }
 exports.WtGuiInput = WtGuiInput
-
-/**
- * 
- * 
- * @extends WtGuiItem
- * 
- */
-class WtGuiToggle extends WtGuiItem {
-    /**
-     * 
-     * @param {*} args 
-     */
-    constructor(args) {
-        var args = args || {}
-        super(args)
-    }
-}
-exports.WtGuiToggle = WtGuiToggle
 
 /**
  * 
@@ -1136,13 +1180,13 @@ exports.WtGuiSelection = WtGuiSelection
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-wtfsystems_wtgui.html">wtfsystems/wtgui</a></li></ul><h3>Classes</h3><ul><li><a href="module-wtfsystems_wtgui-WtGui.html">WtGui</a></li><li><a href="module-wtfsystems_wtgui-WtGuiAction.html">WtGuiAction</a></li><li><a href="module-wtfsystems_wtgui-WtGuiError.html">WtGuiError</a></li><li><a href="module-wtfsystems_wtgui-WtGuiInput.html">WtGuiInput</a></li><li><a href="module-wtfsystems_wtgui-WtGuiLabel.html">WtGuiLabel</a></li><li><a href="module-wtfsystems_wtgui-WtGuiMenu.html">WtGuiMenu</a></li><li><a href="module-wtfsystems_wtgui-WtGuiSelection.html">WtGuiSelection</a></li><li><a href="module-wtfsystems_wtgui-WtGuiToggle.html">WtGuiToggle</a></li></ul><h3>Interfaces</h3><ul><li><a href="module-wtfsystems_wtgui-WtGuiItem.html">WtGuiItem</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-wtfsystems_wtgui.html">wtfsystems/wtgui</a></li></ul><h3>Classes</h3><ul><li><a href="module-wtfsystems_wtgui-WtGui.html">WtGui</a></li><li><a href="module-wtfsystems_wtgui-WtGuiAction.html">WtGuiAction</a></li><li><a href="module-wtfsystems_wtgui-WtGuiError.html">WtGuiError</a></li><li><a href="module-wtfsystems_wtgui-WtGuiInput.html">WtGuiInput</a></li><li><a href="module-wtfsystems_wtgui-WtGuiLabel.html">WtGuiLabel</a></li><li><a href="module-wtfsystems_wtgui-WtGuiMenu.html">WtGuiMenu</a></li><li><a href="module-wtfsystems_wtgui-WtGuiSelection.html">WtGuiSelection</a></li><li><a href="module-wtfsystems_wtgui-WtGuiSetting.html">WtGuiSetting</a></li><li><a href="module-wtfsystems_wtgui-WtGuiToggle.html">WtGuiToggle</a></li></ul><h3>Interfaces</h3><ul><li><a href="module-wtfsystems_wtgui-WtGuiItem.html">WtGuiItem</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Tue Nov 09 2021 10:46:35 GMT-0500 (Eastern Standard Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Tue Nov 23 2021 16:17:35 GMT-0500 (Eastern Standard Time)
 </footer>
 
 <script> prettyPrint(); </script>

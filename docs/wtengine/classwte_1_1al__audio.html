@@ -69,6 +69,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classwte_1_1al__audio-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">wte::al_audio Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
@@ -88,9 +89,31 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>~al_audio</b> ()=default</td></tr>
 <tr class="memdesc:a944ffcb309568f08ebe2dac43951529b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor. <br /></td></tr>
 <tr class="separator:a944ffcb309568f08ebe2dac43951529b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a794eb529ce767148f486ca78a9f6503f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1al__audio.html#a794eb529ce767148f486ca78a9f6503f">set_speed</a> (const float &amp;<a class="el" href="classwte_1_1al__audio.html#a686517b337d04c0ec79a312be1d3175f">speed</a>)</td></tr>
+<tr class="memdesc:a794eb529ce767148f486ca78a9f6503f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the play speed of the audio asset.  <a href="classwte_1_1al__audio.html#a794eb529ce767148f486ca78a9f6503f">More...</a><br /></td></tr>
+<tr class="separator:a794eb529ce767148f486ca78a9f6503f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b7ef195bd8bba896364857d10ad1c45"><td class="memItemLeft" align="right" valign="top">ALLEGRO_AUDIO_STREAM *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1al__audio.html#a6b7ef195bd8bba896364857d10ad1c45">operator*</a> ()</td></tr>
 <tr class="memdesc:a6b7ef195bd8bba896364857d10ad1c45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get audio asset.  <a href="classwte_1_1al__audio.html#a6b7ef195bd8bba896364857d10ad1c45">More...</a><br /></td></tr>
 <tr class="separator:a6b7ef195bd8bba896364857d10ad1c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:afb2c653c7a33e938a94df493475f3e2b"><td class="memItemLeft" align="right" valign="top"><a id="afb2c653c7a33e938a94df493475f3e2b" name="afb2c653c7a33e938a94df493475f3e2b"></a>
+const unsigned int &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>frequency</b> = get_frequency()</td></tr>
+<tr class="memdesc:afb2c653c7a33e938a94df493475f3e2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frequency value of audio asset. <br /></td></tr>
+<tr class="separator:afb2c653c7a33e938a94df493475f3e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb437c49f94412535d083ee8780a8df5"><td class="memItemLeft" align="right" valign="top"><a id="abb437c49f94412535d083ee8780a8df5" name="abb437c49f94412535d083ee8780a8df5"></a>
+const double &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>length</b> = get_length()</td></tr>
+<tr class="memdesc:abb437c49f94412535d083ee8780a8df5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length in seconds of audio asset. <br /></td></tr>
+<tr class="separator:abb437c49f94412535d083ee8780a8df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a686517b337d04c0ec79a312be1d3175f"><td class="memItemLeft" align="right" valign="top"><a id="a686517b337d04c0ec79a312be1d3175f" name="a686517b337d04c0ec79a312be1d3175f"></a>
+const float &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>speed</b> = get_speed()</td></tr>
+<tr class="memdesc:a686517b337d04c0ec79a312be1d3175f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current speed value of audio asset. <br /></td></tr>
+<tr class="separator:a686517b337d04c0ec79a312be1d3175f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1d2329f202c2dc662e05ff6a85c8fe0"><td class="memItemLeft" align="right" valign="top"><a id="ae1d2329f202c2dc662e05ff6a85c8fe0" name="ae1d2329f202c2dc662e05ff6a85c8fe0"></a>
+const bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>playing</b> = is_playing()</td></tr>
+<tr class="memdesc:ae1d2329f202c2dc662e05ff6a85c8fe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag to check if the audio asset is playing. <br /></td></tr>
+<tr class="separator:ae1d2329f202c2dc662e05ff6a85c8fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Provides a wrapper to Allegro audio streams. </p>
@@ -142,13 +165,39 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a794eb529ce767148f486ca78a9f6503f" name="a794eb529ce767148f486ca78a9f6503f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a794eb529ce767148f486ca78a9f6503f">&#9670;&nbsp;</a></span>set_speed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wte::al_audio::set_speed </td>
+          <td>(</td>
+          <td class="paramtype">const float &amp;&#160;</td>
+          <td class="paramname"><em>speed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the play speed of the audio asset. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">speed</td><td>New speed value. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/wtengine/_globals/wrappers.hpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 9 2021 10:46:34 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Tue Nov 23 2021 16:17:34 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

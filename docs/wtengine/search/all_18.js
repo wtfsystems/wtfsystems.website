@@ -8,7 +8,7 @@ var searchData=
   ['_7eal_5fsample_5',['~al_sample',['../classwte_1_1al__sample.html#a4f62fbd2fa21b90dd49a3b0a0e080e9a',1,'wte::al_sample']]],
   ['_7ealert_6',['~alert',['../classwte_1_1alert.html#a472ba1f708ebfe837d46ddf8124fadbe',1,'wte::alert']]],
   ['_7eapply_7',['~apply',['../classwte_1_1mnu_1_1apply.html#acba3e4a488ecdd1634412d932776f99f',1,'wte::mnu::apply']]],
-  ['_7ebackground_8',['~background',['../classwte_1_1cmp_1_1background.html#a88d77319298f52e7874097819ea84238',1,'wte::cmp::background']]],
+  ['_7ebackground_8',['~background',['../classwte_1_1cmp_1_1gfx_1_1background.html#a8913f9bba2285e23433e92d382721946',1,'wte::cmp::gfx::background']]],
   ['_7ebounding_5fbox_9',['~bounding_box',['../classwte_1_1cmp_1_1bounding__box.html#a7f9b9bc1fdff77a3300a653a7aa65a27',1,'wte::cmp::bounding_box']]],
   ['_7ecommands_10',['~commands',['../classwte_1_1commands.html#ad89c5101e5b12cb170ea9216f0cc3280',1,'wte::commands']]],
   ['_7ecomponent_11',['~component',['../classwte_1_1cmp_1_1component.html#a4af9a2b3547cbc48b390e9fbb7db5601',1,'wte::cmp::component']]],
@@ -25,10 +25,12 @@ var searchData=
   ['_7emenu_22',['~menu',['../classwte_1_1mnu_1_1menu.html#ad016cca1c9b32727ba0fcf1b08562c85',1,'wte::mnu::menu']]],
   ['_7emotion_23',['~motion',['../classwte_1_1cmp_1_1motion.html#a4bc498313b24eb8ccb72657b632a1ade',1,'wte::cmp::motion']]],
   ['_7enotice_24',['~notice',['../classwte_1_1notice.html#a2728c0911313460ca78212a6022e0814',1,'wte::notice']]],
-  ['_7eoverlay_25',['~overlay',['../classwte_1_1cmp_1_1overlay.html#a13216d6e149fb451e27aa63f7ea0aa10',1,'wte::cmp::overlay']]],
+  ['_7eoverlay_25',['~overlay',['../classwte_1_1cmp_1_1gfx_1_1overlay.html#a65088c11d4d1ba7a29943e2ef14ffa48',1,'wte::cmp::gfx::overlay']]],
   ['_7eselection_26',['~selection',['../classwte_1_1mnu_1_1selection.html#a1e6acde9c60507da3359a1d8c8be9be9',1,'wte::mnu::selection']]],
-  ['_7esprite_27',['~sprite',['../classwte_1_1cmp_1_1sprite.html#a165ece54cd156820e99c95580932bdbb',1,'wte::cmp::sprite']]],
+  ['_7esprite_27',['~sprite',['../classwte_1_1cmp_1_1gfx_1_1sprite.html#a64dcec9ae7f64c4f04645dd73a82c338',1,'wte::cmp::gfx::sprite']]],
   ['_7esystem_28',['~system',['../classwte_1_1sys_1_1system.html#a8a213161e09ee4b7e940f591941db3a9',1,'wte::sys::system']]],
-  ['_7etoggle_29',['~toggle',['../classwte_1_1mnu_1_1toggle.html#a68c0382a2fb4f2435fb038f018cf578a',1,'wte::mnu::toggle']]],
-  ['_7ewte_5fexception_30',['~wte_exception',['../classwte_1_1wte__exception.html#a1b46f4d9d9a9edd6913ce86315b658fb',1,'wte::wte_exception']]]
+  ['_7esystem_5ftimed_29',['~system_timed',['../classwte_1_1sys_1_1system__timed.html#a5569600ddd126e947d6cb8b9fa8b0bf0',1,'wte::sys::system_timed']]],
+  ['_7esystem_5funtimed_30',['~system_untimed',['../classwte_1_1sys_1_1system__untimed.html#a965bc2f145f23b7e0ff24d5652722ab2',1,'wte::sys::system_untimed']]],
+  ['_7etoggle_31',['~toggle',['../classwte_1_1mnu_1_1toggle.html#a68c0382a2fb4f2435fb038f018cf578a',1,'wte::mnu::toggle']]],
+  ['_7ewte_5fexception_32',['~wte_exception',['../classwte_1_1wte__exception.html#a1b46f4d9d9a9edd6913ce86315b658fb',1,'wte::wte_exception']]]
 ];

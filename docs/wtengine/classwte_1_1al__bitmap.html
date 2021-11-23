@@ -69,6 +69,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classwte_1_1al__bitmap-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">wte::al_bitmap Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
@@ -101,9 +102,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2a159baa6faafaaff37c7c4146c1608d"><td class="memItemLeft" align="right" valign="top">ALLEGRO_BITMAP *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1al__bitmap.html#a2a159baa6faafaaff37c7c4146c1608d">operator*</a> ()</td></tr>
 <tr class="memdesc:a2a159baa6faafaaff37c7c4146c1608d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to the internal Allegro bitmap.  <a href="classwte_1_1al__bitmap.html#a2a159baa6faafaaff37c7c4146c1608d">More...</a><br /></td></tr>
 <tr class="separator:a2a159baa6faafaaff37c7c4146c1608d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d431d131bfb2d92e5889ef9f6794d5f"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1al__bitmap.html#a5d431d131bfb2d92e5889ef9f6794d5f">isconverted</a> (void) const</td></tr>
-<tr class="memdesc:a5d431d131bfb2d92e5889ef9f6794d5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the bitmap should be converted when the screen is updated.  <a href="classwte_1_1al__bitmap.html#a5d431d131bfb2d92e5889ef9f6794d5f">More...</a><br /></td></tr>
-<tr class="separator:a5d431d131bfb2d92e5889ef9f6794d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32115e31709ebfc57c87520ece666077"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1al__bitmap.html#a32115e31709ebfc57c87520ece666077">load</a> (const std::string &amp;fname)</td></tr>
 <tr class="memdesc:a32115e31709ebfc57c87520ece666077"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a bitmap from file.  <a href="classwte_1_1al__bitmap.html#a32115e31709ebfc57c87520ece666077">More...</a><br /></td></tr>
 <tr class="separator:a32115e31709ebfc57c87520ece666077"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,12 +112,21 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>destroy</b> (void)</td></tr>
 <tr class="memdesc:a8539a81f16cedcf118a4336da89bfc8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the internal bitmap. <br /></td></tr>
 <tr class="separator:a8539a81f16cedcf118a4336da89bfc8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a492542b2e53162aaa673d737ec0e5d51"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1al__bitmap.html#a492542b2e53162aaa673d737ec0e5d51">get_width</a> (void) const</td></tr>
-<tr class="memdesc:a492542b2e53162aaa673d737ec0e5d51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get bitmap width.  <a href="classwte_1_1al__bitmap.html#a492542b2e53162aaa673d737ec0e5d51">More...</a><br /></td></tr>
-<tr class="separator:a492542b2e53162aaa673d737ec0e5d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7aff3add0188f45fd7a3c81dd5c6fe8"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1al__bitmap.html#ad7aff3add0188f45fd7a3c81dd5c6fe8">get_height</a> (void) const</td></tr>
-<tr class="memdesc:ad7aff3add0188f45fd7a3c81dd5c6fe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get bitmap height.  <a href="classwte_1_1al__bitmap.html#ad7aff3add0188f45fd7a3c81dd5c6fe8">More...</a><br /></td></tr>
-<tr class="separator:ad7aff3add0188f45fd7a3c81dd5c6fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a60e67949239a95ddcea7c283fc51db75"><td class="memItemLeft" align="right" valign="top"><a id="a60e67949239a95ddcea7c283fc51db75" name="a60e67949239a95ddcea7c283fc51db75"></a>
+const bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>is_converted</b> = nopreserve</td></tr>
+<tr class="memdesc:a60e67949239a95ddcea7c283fc51db75"><td class="mdescLeft">&#160;</td><td class="mdescRight">... <br /></td></tr>
+<tr class="separator:a60e67949239a95ddcea7c283fc51db75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a362a2487df4a9c09f3be984e75f66577"><td class="memItemLeft" align="right" valign="top"><a id="a362a2487df4a9c09f3be984e75f66577" name="a362a2487df4a9c09f3be984e75f66577"></a>
+const int &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>width</b> = get_width()</td></tr>
+<tr class="memdesc:a362a2487df4a9c09f3be984e75f66577"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitmap asset width. <br /></td></tr>
+<tr class="separator:a362a2487df4a9c09f3be984e75f66577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9663f8fa4371fabeff9747b076204c49"><td class="memItemLeft" align="right" valign="top"><a id="a9663f8fa4371fabeff9747b076204c49" name="a9663f8fa4371fabeff9747b076204c49"></a>
+const int &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>height</b> = get_height()</td></tr>
+<tr class="memdesc:a9663f8fa4371fabeff9747b076204c49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitmap asset height. <br /></td></tr>
+<tr class="separator:a9663f8fa4371fabeff9747b076204c49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Provides a wrapper to Allegro bitmaps. </p>
@@ -259,69 +266,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>destroy</b> (void)</t
 
 </div>
 </div>
-<a id="ad7aff3add0188f45fd7a3c81dd5c6fe8" name="ad7aff3add0188f45fd7a3c81dd5c6fe8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7aff3add0188f45fd7a3c81dd5c6fe8">&#9670;&nbsp;</a></span>get_height()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int wte::al_bitmap::get_height </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get bitmap height. </p>
-<dl class="section return"><dt>Returns</dt><dd>Bitmap height. </dd></dl>
-
-</div>
-</div>
-<a id="a492542b2e53162aaa673d737ec0e5d51" name="a492542b2e53162aaa673d737ec0e5d51"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a492542b2e53162aaa673d737ec0e5d51">&#9670;&nbsp;</a></span>get_width()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int wte::al_bitmap::get_width </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get bitmap width. </p>
-<dl class="section return"><dt>Returns</dt><dd>Bitmap width. </dd></dl>
-
-</div>
-</div>
-<a id="a5d431d131bfb2d92e5889ef9f6794d5f" name="a5d431d131bfb2d92e5889ef9f6794d5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d431d131bfb2d92e5889ef9f6794d5f">&#9670;&nbsp;</a></span>isconverted()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool wte::al_bitmap::isconverted </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Check if the bitmap should be converted when the screen is updated. </p>
-<dl class="section return"><dt>Returns</dt><dd>True if it should be converted, false if not. </dd></dl>
-
-</div>
-</div>
 <a id="a32115e31709ebfc57c87520ece666077" name="a32115e31709ebfc57c87520ece666077"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a32115e31709ebfc57c87520ece666077">&#9670;&nbsp;</a></span>load()</h2>
 
@@ -375,7 +319,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>destroy</b> (void)</t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 9 2021 10:46:34 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Tue Nov 23 2021 16:17:34 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
