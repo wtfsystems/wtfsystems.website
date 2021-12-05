@@ -38,20 +38,43 @@ class TermRenderer {
         canvas.setAttribute("height", window.innerHeight)
         document.body.prepend(canvas)
 
-        this.getCanvas = () => { return document.getElementById(this.canvas_name) }
-        this.getRenderer = () => { return this.getCanvas().getContext("2d") }
-        this.getWidth = () => { return this.getCanvas().width }
-        this.getHeight = () => { return this.getCanvas().height }
-
-        this.resizeToWindow()
+        this.renderFunc = () => {}
+        this.renderProc = undefined
+        //this.resizeToWindow()
     }
+
+    setRenderer = (func) => {
+        if(!(func instanceof Function)) throw new Error('Not a function!')
+        this.renderFunc = func
+    }
+
+    start = () => {
+        window.cancelAnimationFrame(this.renderProc)
+        this.renderProc = window.requestAnimationFrame(this.renderFunc)
+    }
+
+    stop = () => {
+        window.cancelAnimationFrame(this.renderProc)
+        this.renderProc = undefined
+    }
+
+    get isRunning() {
+        if(this.renderProc === undefined) return false
+        return true
+    }
+
+    get draw() { return document.getElementById(this.canvas_name).getContext("2d") }
+
+    get width() { return document.getElementById(this.canvas_name).width }
+
+    get height() { return document.getElementById(this.canvas_name).height }
 
     /*
      * Resize the renderer to fit the window
      */
-    resizeToWindow() {
-        //this.getCanvas().width = window.innerWidth
-        //this.getCanvas().height = window.innerHeight
+    resizeToWindow = () => {
+        //document.getElementById(this.canvas_name).width = window.innerWidth
+        //document.getElementById(this.canvas_name).height = window.innerHeight
     }
 }
 

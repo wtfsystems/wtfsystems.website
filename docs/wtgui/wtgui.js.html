@@ -57,6 +57,24 @@ class WtGuiError extends Error {
 exports.WtGuiError = WtGuiError
 
 /**
+ * 
+ * Promise resolver wrapper to access functions
+ * @prop {Promise} promise Access to the promise class.
+ * @prop {Function} reject Access to the reject function.
+ * @prop {Function} resolve Access to the resolve function.
+ * 
+ */
+class WtResolver {
+	constructor() {
+		this.promise = new Promise((resolve, reject) => {
+			this.reject = reject
+			this.resolve = resolve
+		})
+	}
+}
+exports.WtResolver = WtResolver
+
+/**
  *
  * WtGui main object
  * @hideconstructor
@@ -164,6 +182,16 @@ class WtGui {
         openedMenus: [],         //  Stack of opened menus
         currentMenu: {},         //  Current opened menu
         activeItem: undefined    //  Active menu item
+    }
+
+    /*
+     * Input recorder data
+     */
+    static #recorder = {
+        active: false,           //  Recorder is active
+        recordSize: Number(0),   //  ...
+        keyRecorder: [],         //  ...
+        buttonRecorder: []       //  ...
     }
 
     /**
@@ -377,30 +405,80 @@ class WtGui {
         },
 
         /**
-         * Open a menu.
-         * @param {String} menuId Menu ID to open.
+         * ...
          */
-        openMenu: (menuId) => {
-            const tempMenu = WtGui.getMenu(menuId)
-            if(tempMenu === undefined) throw new WtGuiError(`'${menuId}' - Menu does not exist.`)
-            WtGui.#data.openedMenus.push(tempMenu)
-            WtGui.#data.currentMenu = WtGui.#data.openedMenus[(WtGui.#data.openedMenus.length - 1)]
-            WtGui.#data.activeItem = WtGui.#data.currentMenu.selectableItems[0]
-            WtGui.#data.mainCanvas.focus()
+        menu: {
+            /**
+             * Open a menu.
+             * @param {String} menuId Menu ID to open.
+             */
+            open: (menuId) => {
+                const tempMenu = WtGui.getMenu(menuId)
+                if(tempMenu === undefined) throw new WtGuiError(`'${menuId}' - Menu does not exist.`)
+                WtGui.#data.openedMenus.push(tempMenu)
+                WtGui.#data.currentMenu = WtGui.#data.openedMenus[(WtGui.#data.openedMenus.length - 1)]
+                WtGui.#data.activeItem = WtGui.#data.currentMenu.selectableItems[0]
+                WtGui.#data.mainCanvas.focus()
+            },
+
+            /**
+             * Close one or all menus.
+             * @param {boolean} closeAll True to close all menus, false to close the top menu.
+             */
+            close: (closeAll) => {
+                if(closeAll) {
+                    WtGui.#data.openedMenus = []
+                    WtGui.#data.currentMenu = {}
+                } else {
+                    WtGui.#data.openedMenus.pop()
+                    if(WtGui.#data.openedMenus.length === 0) WtGui.actions.menu.open(WtGui.settings.defaultMenu)
+                    else WtGui.#data.currentMenu = WtGui.#data.openedMenus[(WtGui.#data.openedMenus.length - 1)]
+                }
+            }
         },
 
         /**
-         * Close one or all menus.
-         * @param {boolean} closeAll True to close all menus, false to close the top menu.
+         * ...
          */
-        closeMenu: (closeAll) => {
-            if(closeAll) {
-                WtGui.#data.openedMenus = []
-                WtGui.#data.currentMenu = {}
-            } else {
-                WtGui.#data.openedMenus.pop()
-                if(WtGui.#data.openedMenus.length === 0) WtGui.actions.openMenu(WtGui.settings.defaultMenu)
-                else WtGui.#data.currentMenu = WtGui.#data.openedMenus[(WtGui.#data.openedMenus.length - 1)]
+        recorder: {
+            /**
+             * ...
+             */
+            keys: {
+                /**
+                 * 
+                 */
+                start: () => {
+                    WtGui.#recorder.keyRecorder = []
+                    WtGui.#recorder.active = true
+                },
+
+                /**
+                 * 
+                 */
+                stop: () => {
+                    WtGui.#recorder.active = false
+                }
+            },
+
+            /**
+             * ...
+             */
+            buttons: {
+                /**
+                 * 
+                 */
+                start: () => {
+                    WtGui.#recorder.buttonRecorder = []
+                    WtGui.#recorder.active = true
+                },
+
+                /**
+                 * 
+                 */
+                stop: () => {
+                    WtGui.#recorder.active = false
+                }
             }
         }
     }
@@ -409,15 +487,15 @@ class WtGui {
      * Private gui actions.
      */
     static #actions = {
-        scrollTimer: {},  //  Store running timer function.
+        scrollTimer: Number(0),  //  Store running timer function.
 
         /*
-         *
+         * Timer function to scroll left.
          */
         scrollLeft: () => { WtGui.#data.activeItem.onLeft() },
 
         /*
-         *
+         * Timer function to scroll right.
          */
         scrollRight: () => { WtGui.#data.activeItem.onRight() },
 
@@ -614,6 +692,13 @@ class WtGui {
          * Key Down Events
          */
         onKeyDown: (event) => {
+            if(event.repeat) return
+            if(WtGui.#data.recordInput) {
+                WtGui.#data.keyRecorder.push(event.key)
+                if(recordSize == 0) WtGui.#data.recordInput = false
+                else recordSize--
+                return
+            }
             Object.keys(WtGui.settings.actionBindings.keys).forEach(action => {
                 WtGui.settings.actionBindings.keys[action].forEach(binding => {
                     if(event.key.toUpperCase() === binding.toUpperCase())
@@ -626,6 +711,9 @@ class WtGui {
          * Key Up Events
          */
         onKeyUp: (event) => {
+            if(WtGui.#data.recordInput) {
+                return
+            }
             Object.keys(WtGui.settings.actionBindings.keys).forEach(action => {
                 WtGui.settings.actionBindings.keys[action].forEach(binding => {
                     if(event.key.toUpperCase() === binding.toUpperCase())
@@ -638,6 +726,13 @@ class WtGui {
          * wip
          */
         onButtonDown: (event) => {
+            if(event.repeat) return
+            if(WtGui.#data.recordInput) {
+                //WtGui.#data.buttonRecorder.push(event.key)
+                if(recordSize == 0) WtGui.#data.recordInput = false
+                else recordSize--
+                return
+            }
             Object.keys(WtGui.settings.actionBindings.buttons).forEach(action => {
                 WtGui.settings.actionBindings.keys[action].forEach(binding => {
                     if(event.gamepad === binding) WtGui.#events.trigger.down(action, event)
@@ -649,6 +744,9 @@ class WtGui {
          * wip
          */
         onButtonUp: (event) => {
+            if(WtGui.#data.recordInput) {
+                return
+            }
             Object.keys(WtGui.settings.actionBindings.buttons).forEach(action => {
                 WtGui.settings.actionBindings.keys[action].forEach(binding => {
                     if(event.gamepad === binding) WtGui.#events.trigger.up(action, event)
@@ -712,7 +810,7 @@ class WtGui {
      * Renderer sub-object
      */
     static #renderer = {
-        fpsCalc: {},            //  Store timed func to calculate fps
+        fpsCalc: Number(0),     //  Store timed func to calculate fps
         nextFrame: Number(0),   //  Store the call to the animation frame
         paused: false,          //  Flag to pause renderer
         drawFps: false,         //  Flag for drawing fps counter
@@ -765,7 +863,7 @@ class WtGui {
         render: () => {
             if(WtGui.#data.openedMenus.length === 0 ||
                WtGui.#data.currentMenu === {} ||
-               WtGui.#data.currentMenu === undefined) WtGui.actions.openMenu(WtGui.settings.defaultMenu)
+               WtGui.#data.currentMenu === undefined) WtGui.actions.menu.open(WtGui.settings.defaultMenu)
             if(WtGui.#data.openedMenus.length === 0 ||
                WtGui.#data.currentMenu === {} ||
                WtGui.#data.currentMenu === undefined) throw new WtGuiError(`No menus available.`)
@@ -855,28 +953,28 @@ class WtGui {
          * Log menu objects to console.
          */
         logMenus: () => {
-            WtGui.#data.menus.forEach(menu => { console.log(menu) })
+            WtGui.#data.menus.forEach(menu => { console.log(JSON.parse(JSON.stringify(menu))) })
         },
 
         /**
          * Log opened menu stack to console.
          */
         logMenuStack: () => {
-            WtGui.#data.openedMenus.forEach(menu => { console.log(menu) })
+            WtGui.#data.openedMenus.forEach(menu => { console.log(JSON.parse(JSON.stringify(menu))) })
         },
 
         /**
          * Log image file list to console.
          */
         logImageFiles: () => {
-            WtGui.#data.imageFiles.forEach(img => { console.log(img) })
+            WtGui.#data.imageFiles.forEach(img => { console.log(JSON.parse(JSON.stringify(img))) })
         },
 
         /**
          * Log audio file list to console.
          */
         logAudioFiles: () => {
-            WtGui.#data.audioFiles.forEach(audio => { console.log(audio) })
+            WtGui.#data.audioFiles.forEach(audio => { console.log(JSON.parse(JSON.stringify(audio))) })
         }
     }
 }
@@ -919,6 +1017,27 @@ const Wt = {
      * @returns {boolean} True if valid rgb(a)/hsl(a), else false.
      */
     testRgb: (str) => { return /^(rgb|hsl)a?\((-?\d+%?[,\s]+){2,3}\s*[\d\.]+%?\)$/i.test(str) },
+
+    /**
+     * Test for alphabetic charecters.
+     * @param {String} str String to test.
+     * @returns {boolean} True if the string is only alpha, else false.
+     */
+    testAlpha: (str) => { return /^[A-Za-z]+$/g.test(str) },
+
+    /**
+     * Test for numeric charecters.
+     * @param {String} str String to test.
+     * @returns {boolean} True if the string is only numeric, else false.
+     */
+    testNumeric: (str) => { return /^\d+$/g.test(str) },
+
+    /**
+     * Test for alphabetic and numeric charecters.
+     * @param {String} str String to test.
+     * @returns {boolean} True if the string is only alpha and numeric, else false.
+     */
+    testAlphaNumeric: (str) => { return /^[a-zA-Z0-9]+$/g.test(str) },
 
     /**
      * AABB Algorithm
@@ -1035,8 +1154,8 @@ class WtGuiItem {
         this.canSelect = false
         this.scrollable = false
 
-        if(!Wt.testRgb(this.bgColor)) throw new WtGuiError(`'${this.bgColor}' - Bad color code`)
-        if(!Wt.testRgb(this.fgColor)) throw new WtGuiError(`'${this.fgColor}' - Bad color code`)
+        if(!Wt.testRgb(this.bgColor)) throw new WtGuiError(`'${this.bgColor}' - Bad color code.`)
+        if(!Wt.testRgb(this.fgColor)) throw new WtGuiError(`'${this.fgColor}' - Bad color code.`)
     }
 }
 exports.WtGuiItem = WtGuiItem
@@ -1082,11 +1201,11 @@ class WtGuiAction extends WtGuiItem {
         }
         if(args.type === 'open_menu') {
             if(args.menuName === undefined) throw new WtGuiError(`Must define a menu name.`)
-            this.onSelect = () => { WtGui.actions.openMenu(args.menuName) }
+            this.onSelect = () => { WtGui.actions.menu.open(args.menuName) }
         }
         if(args.type === 'close_menu') {
             this.allMenus = args.allMenus || false
-            this.onSelect = () => { WtGui.actions.closeMenu(this.allMenus) }
+            this.onSelect = () => { WtGui.actions.menu.close(this.allMenus) }
         }
     }
 }
@@ -1109,9 +1228,11 @@ class WtGuiToggle extends WtGuiItem {
         this.canSelect = true
         this.scrollable = true
         this.onSelect = (event) => {}
-        if(args.toggleLeft === undefined) throw new WtGuiError(`Must define left toggle.`)
+        if(args.toggleLeft === undefined || !(args.toggleLeft instanceof Function))
+            throw new WtGuiError(`Must define left toggle.`)
         this.onLeft = args.toggleLeft
-        if(args.toggleRight === undefined) throw new WtGuiError(`Must define right toggle.`)
+        if(args.toggleRight === undefined || !(args.toggleRight instanceof Function))
+            throw new WtGuiError(`Must define right toggle.`)
         this.onRight = args.toggleRight
     }
 }
@@ -1123,7 +1244,7 @@ exports.WtGuiToggle = WtGuiToggle
  * @extends WtGuiItem
  * 
  */
-class WtGuiSetting extends WtGuiItem {
+class WtGuiTextInput extends WtGuiItem {
     /**
      * 
      * @param {*} args 
@@ -1131,9 +1252,19 @@ class WtGuiSetting extends WtGuiItem {
     constructor(args) {
         var args = args || {}
         super(args)
+        this.canSelect = true
+        this.scrollable = false
+
+        if(args.size === undefined || typeof(args.size) !== 'number')
+            throw new WtGuiError(`Must define input size as a number.`)
+        this.size = args.size
+
+        this.onSelect = (event) => {
+            //
+        }
     }
 }
-exports.WtGuiSetting = WtGuiSetting
+exports.WtGuiTextInput = WtGuiTextInput
 
 /**
  * 
@@ -1141,7 +1272,7 @@ exports.WtGuiSetting = WtGuiSetting
  * @extends WtGuiItem
  * 
  */
-class WtGuiInput extends WtGuiItem {
+ class WtGuiInputSetting extends WtGuiItem {
     /**
      * 
      * @param {*} args 
@@ -1149,9 +1280,23 @@ class WtGuiInput extends WtGuiItem {
     constructor(args) {
         var args = args || {}
         super(args)
+        this.canSelect = true
+        this.scrollable = false
+        this.size = 0
+
+        if(args.type === undefined) throw new WtGuiError(`Must define input setting type.`)
+        if(args.type.toLowerCase() === 'key') {
+            //
+        } else if(args.type.toLowerCase() === 'button') {
+            //
+        } else throw new WtGuiError(`Input setting type must be 'key' or 'button'.`)
+
+        this.onSelect = (event) => {
+            //
+        }
     }
 }
-exports.WtGuiInput = WtGuiInput
+exports.WtGuiInputSetting = WtGuiInputSetting
 
 /**
  * 
@@ -1180,13 +1325,13 @@ exports.WtGuiSelection = WtGuiSelection
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-wtfsystems_wtgui.html">wtfsystems/wtgui</a></li></ul><h3>Classes</h3><ul><li><a href="module-wtfsystems_wtgui-WtGui.html">WtGui</a></li><li><a href="module-wtfsystems_wtgui-WtGuiAction.html">WtGuiAction</a></li><li><a href="module-wtfsystems_wtgui-WtGuiError.html">WtGuiError</a></li><li><a href="module-wtfsystems_wtgui-WtGuiInput.html">WtGuiInput</a></li><li><a href="module-wtfsystems_wtgui-WtGuiLabel.html">WtGuiLabel</a></li><li><a href="module-wtfsystems_wtgui-WtGuiMenu.html">WtGuiMenu</a></li><li><a href="module-wtfsystems_wtgui-WtGuiSelection.html">WtGuiSelection</a></li><li><a href="module-wtfsystems_wtgui-WtGuiSetting.html">WtGuiSetting</a></li><li><a href="module-wtfsystems_wtgui-WtGuiToggle.html">WtGuiToggle</a></li></ul><h3>Interfaces</h3><ul><li><a href="module-wtfsystems_wtgui-WtGuiItem.html">WtGuiItem</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-wtfsystems_wtgui.html">wtfsystems/wtgui</a></li></ul><h3>Classes</h3><ul><li><a href="module-wtfsystems_wtgui-WtGui.html">WtGui</a></li><li><a href="module-wtfsystems_wtgui-WtGuiAction.html">WtGuiAction</a></li><li><a href="module-wtfsystems_wtgui-WtGuiError.html">WtGuiError</a></li><li><a href="module-wtfsystems_wtgui-WtGuiInputSetting.html">WtGuiInputSetting</a></li><li><a href="module-wtfsystems_wtgui-WtGuiLabel.html">WtGuiLabel</a></li><li><a href="module-wtfsystems_wtgui-WtGuiMenu.html">WtGuiMenu</a></li><li><a href="module-wtfsystems_wtgui-WtGuiSelection.html">WtGuiSelection</a></li><li><a href="module-wtfsystems_wtgui-WtGuiTextInput.html">WtGuiTextInput</a></li><li><a href="module-wtfsystems_wtgui-WtGuiToggle.html">WtGuiToggle</a></li><li><a href="module-wtfsystems_wtgui-WtResolver.html">WtResolver</a></li></ul><h3>Interfaces</h3><ul><li><a href="module-wtfsystems_wtgui-WtGuiItem.html">WtGuiItem</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Tue Nov 23 2021 16:17:35 GMT-0500 (Eastern Standard Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Sun Dec 05 2021 08:21:33 GMT-0500 (Eastern Standard Time)
 </footer>
 
 <script> prettyPrint(); </script>

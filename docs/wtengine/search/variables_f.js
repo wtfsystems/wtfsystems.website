@@ -8,6 +8,5 @@ var searchData=
   ['screen_5fw_5',['screen_w',['../structwte_1_1config_1_1gfx.html#a446188f7b0d94a4fe9a259196039afb7',1,'wte::config::gfx']]],
   ['show_5fhitboxes_6',['show_hitboxes',['../structwte_1_1config_1_1flags.html#ae746b5474060da0017d1851d0cb67624',1,'wte::config::flags']]],
   ['solid_7',['solid',['../classwte_1_1cmp_1_1hitbox.html#aff295d13834416a34ec1896d99c6d6fa',1,'wte::cmp::hitbox']]],
-  ['speed_8',['speed',['../classwte_1_1al__audio.html#a686517b337d04c0ec79a312be1d3175f',1,'wte::al_audio']]],
-  ['start_5ftime_9',['start_time',['../classwte_1_1mgr_1_1gfx_1_1renderer.html#aa9123f3098f920b45e650f99ef34dd1b',1,'wte::mgr::gfx::renderer']]]
+  ['start_5ftime_8',['start_time',['../classwte_1_1mgr_1_1gfx_1_1renderer.html#aa9123f3098f920b45e650f99ef34dd1b',1,'wte::mgr::gfx::renderer']]]
 ];

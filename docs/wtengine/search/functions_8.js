@@ -5,5 +5,5 @@ var searchData=
   ['load_5fscript_2',['load_script',['../classwte_1_1mgr_1_1messages.html#a95b18b90ec0fed9baf6577e0048a8a73',1,'wte::mgr::messages']]],
   ['load_5fsystems_3',['load_systems',['../classwte_1_1engine.html#a2fcc4367a6ead89ae6fb95e080d5a134',1,'wte::engine']]],
   ['location_4',['location',['../classwte_1_1cmp_1_1location.html#a73f311698773e441cbeb49f39f09ee37',1,'wte::cmp::location']]],
-  ['loop_5',['loop',['../structwte_1_1mgr_1_1audio_1_1music.html#aeb15970a3f2b7e7a4cf8f848dc8a18a5',1,'wte::mgr::audio::music::loop()'],['../structwte_1_1mgr_1_1audio_1_1ambiance.html#a17ef6626738ab6949de5585d2324e1ec',1,'wte::mgr::audio::ambiance::loop()']]]
+  ['loop_5',['loop',['../structwte_1_1mgr_1_1audio_1_1music_1_1a.html#a1bcdc4fcf87f553a6a2e6cf49d0320a3',1,'wte::mgr::audio::music::a::loop()'],['../structwte_1_1mgr_1_1audio_1_1music_1_1b.html#a56be92a95b7de89bc319ccb20a6779d6',1,'wte::mgr::audio::music::b::loop()'],['../structwte_1_1mgr_1_1audio_1_1ambiance.html#a17ef6626738ab6949de5585d2324e1ec',1,'wte::mgr::audio::ambiance::loop()']]]
 ];
