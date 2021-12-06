@@ -1,7 +1,7 @@
 var searchData=
 [
   ['game_5fstarted_0',['game_started',['../structwte_1_1config_1_1flags.html#aaa44b0432caaa6ac54f8b90652a74d7d',1,'wte::config::flags']]],
-  ['get_1',['get',['../classwte_1_1notice.html#a6decd7d65c709fa58c4438152127b16b',1,'wte::notice::get()'],['../classwte_1_1mgr_1_1assets.html#abd2b182a4cb103b27690f301227e9a38',1,'wte::mgr::assets::get()'],['../classwte_1_1mgr_1_1variables.html#a5c75e11c5e73c90b3a62fd804a7eecc9',1,'wte::mgr::variables::get()']]],
+  ['get_1',['get',['../classwte_1_1mgr_1_1assets.html#abd2b182a4cb103b27690f301227e9a38',1,'wte::mgr::assets::get()'],['../classwte_1_1mgr_1_1variables.html#a5c75e11c5e73c90b3a62fd804a7eecc9',1,'wte::mgr::variables::get()']]],
   ['get_5farg_2',['get_arg',['../classwte_1_1message.html#af616c78f816af96a67863f6fc8839f13',1,'wte::message']]],
   ['get_5fargs_3',['get_args',['../classwte_1_1message.html#a6f3f24073dbdf3281cb7e36c62684f64',1,'wte::message']]],
   ['get_5fcmd_4',['get_cmd',['../classwte_1_1message.html#ac0ec4f393664c17b6e460c745f77f98f',1,'wte::message']]],
