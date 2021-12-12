@@ -1,12 +1,6 @@
 var searchData=
 [
-  ['main_0',['main',['../structwte_1_1config_1_1volume.html#ace03e005f84e4648f434b899d9c99b52',1,'wte::config::volume']]],
-  ['max_5fx_1',['max_x',['../classwte_1_1cmp_1_1bounding__box.html#aa8aa9ef2d03583ba5c69a2afe175a64b',1,'wte::cmp::bounding_box']]],
-  ['max_5fy_2',['max_y',['../classwte_1_1cmp_1_1bounding__box.html#afcf20e27c796e2dbf562afa7d2c08490',1,'wte::cmp::bounding_box']]],
-  ['menu_5fopened_3',['menu_opened',['../structwte_1_1config_1_1flags.html#a17a3f6a28eb1706d228995c1a1a5aba4',1,'wte::config::flags']]],
-  ['min_5fx_4',['min_x',['../classwte_1_1cmp_1_1bounding__box.html#a962aa622d6d8656c8a026169364329a1',1,'wte::cmp::bounding_box']]],
-  ['min_5fy_5',['min_y',['../classwte_1_1cmp_1_1bounding__box.html#ab64cb6fab9c9a683b0b0e5c1c3ada312',1,'wte::cmp::bounding_box']]],
-  ['music_6',['music',['../structwte_1_1config_1_1volume.html#ac714943a598d0f7ecc19309b5c9f4119',1,'wte::config::volume']]],
-  ['music_5fa_7',['music_a',['../structwte_1_1config_1_1volume.html#a5054853d17d82dab959c0a0a8548bd65',1,'wte::config::volume']]],
-  ['music_5fb_8',['music_b',['../structwte_1_1config_1_1volume.html#a2aae54ffcb3314cd8b4f7ea4a33e278f',1,'wte::config::volume']]]
+  ['last_5frender_0',['last_render',['../classwte_1_1mgr_1_1gfx_1_1renderer.html#ad43e54487434fe73646174cf73c20dbf',1,'wte::mgr::gfx::renderer']]],
+  ['layer_1',['layer',['../classwte_1_1cmp_1_1gfx_1_1gfx.html#a75523649b69ed356e5800128693b7a6f',1,'wte::cmp::gfx::gfx']]],
+  ['left_2',['left',['../structwte_1_1input_1_1event_1_1p1_1_1ondown.html#a72cf0d9345ef93f3f023a16a37b94279',1,'wte::input::event::p1::ondown::left()'],['../structwte_1_1input_1_1event_1_1p1_1_1onup.html#a28787167a848cbd371f98fbb0dd51b8f',1,'wte::input::event::p1::onup::left()'],['../structwte_1_1input_1_1event_1_1p2_1_1ondown.html#a57652d9a54e199a53169972c264d26ba',1,'wte::input::event::p2::ondown::left()'],['../structwte_1_1input_1_1event_1_1p2_1_1onup.html#a32b97288eb8f1e702c37b40eaa3be8b9',1,'wte::input::event::p2::onup::left()']]]
 ];

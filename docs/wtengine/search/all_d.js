@@ -1,8 +1,28 @@
 var searchData=
 [
-  ['name_0',['name',['../classwte_1_1sys_1_1system.html#a5ff92811ae45f90dcb8dabc1f3771093',1,'wte::sys::system']]],
-  ['needs_5freconfig_1',['needs_reconfig',['../structwte_1_1config_1_1gfx.html#a82257ba336f280e6f471902d797876c8',1,'wte::config::gfx']]],
-  ['new_5fentity_2',['new_entity',['../classwte_1_1mgr_1_1world.html#a71400054906705fca9d0bcd8c4e8b6e2',1,'wte::mgr::world']]],
-  ['new_5fgame_3',['new_game',['../classwte_1_1engine.html#aeca988bb39234d9430232f01900427bc',1,'wte::engine']]],
-  ['num_5fargs_4',['num_args',['../classwte_1_1message.html#ac397c438c1d0e01c18de6034a0c6fc68',1,'wte::message']]]
+  ['main_0',['main',['../structwte_1_1config_1_1volume.html#ace03e005f84e4648f434b899d9c99b52',1,'wte::config::volume']]],
+  ['manager_1',['manager',['../classwte_1_1mgr_1_1manager.html#a4eeefa94714ddba7f1cc05c4cf295bd2',1,'wte::mgr::manager::manager()'],['../classwte_1_1mgr_1_1manager.html#affe7a498647e08066e10f97f4dbdfd5e',1,'wte::mgr::manager::manager(const manager &amp;)=delete'],['../classwte_1_1mgr_1_1manager.html',1,'wte::mgr::manager&lt; derived &gt;']]],
+  ['manager_3c_20assets_3c_3e_20_3e_2',['manager&lt; assets&lt;&gt; &gt;',['../classwte_1_1mgr_1_1manager.html',1,'wte::mgr']]],
+  ['manager_3c_20audio_20_3e_3',['manager&lt; audio &gt;',['../classwte_1_1mgr_1_1manager.html',1,'wte::mgr']]],
+  ['manager_3c_20messages_20_3e_4',['manager&lt; messages &gt;',['../classwte_1_1mgr_1_1manager.html',1,'wte::mgr']]],
+  ['manager_3c_20renderer_20_3e_5',['manager&lt; renderer &gt;',['../classwte_1_1mgr_1_1manager.html',1,'wte::mgr']]],
+  ['manager_3c_20spawner_20_3e_6',['manager&lt; spawner &gt;',['../classwte_1_1mgr_1_1manager.html',1,'wte::mgr']]],
+  ['manager_3c_20systems_20_3e_7',['manager&lt; systems &gt;',['../classwte_1_1mgr_1_1manager.html',1,'wte::mgr']]],
+  ['manager_3c_20variables_20_3e_8',['manager&lt; variables &gt;',['../classwte_1_1mgr_1_1manager.html',1,'wte::mgr']]],
+  ['manager_3c_20world_20_3e_9',['manager&lt; world &gt;',['../classwte_1_1mgr_1_1manager.html',1,'wte::mgr']]],
+  ['max_5fx_10',['max_x',['../classwte_1_1cmp_1_1bounding__box.html#aa8aa9ef2d03583ba5c69a2afe175a64b',1,'wte::cmp::bounding_box']]],
+  ['max_5fy_11',['max_y',['../classwte_1_1cmp_1_1bounding__box.html#afcf20e27c796e2dbf562afa7d2c08490',1,'wte::cmp::bounding_box']]],
+  ['menu_5fopened_12',['menu_opened',['../structwte_1_1config_1_1flags.html#a17a3f6a28eb1706d228995c1a1a5aba4',1,'wte::config::flags']]],
+  ['message_13',['message',['../classwte_1_1message.html#a6bea4bf8e9b14c7a8d4e3c90707dbb28',1,'wte::message::message(const int64_t &amp;e, const std::string &amp;s, const std::string &amp;t, const std::string &amp;f, const std::string &amp;c, const std::string &amp;a)'],['../classwte_1_1message.html#a7ffad7e947e6b9235799ce5b30fb34d9',1,'wte::message::message(const std::string &amp;s, const std::string &amp;t, const std::string &amp;f, const std::string &amp;c, const std::string &amp;a)'],['../classwte_1_1message.html#ae7fea72b423dff368a55496728cbab1b',1,'wte::message::message(const int64_t &amp;e, const std::string &amp;s, const std::string &amp;c, const std::string &amp;a)'],['../classwte_1_1message.html#a0c942ee32e64539d5e6ddb325354bca6',1,'wte::message::message(const std::string &amp;s, const std::string &amp;c, const std::string &amp;a)'],['../classwte_1_1message.html',1,'wte::message']]],
+  ['message_5fcontainer_14',['message_container',['../namespacewte.html#a0b8c0a3a15a7a81f107e19304b85a7f6',1,'wte']]],
+  ['messages_15',['messages',['../classwte_1_1mgr_1_1messages.html',1,'wte::mgr']]],
+  ['min_5fx_16',['min_x',['../classwte_1_1cmp_1_1bounding__box.html#a962aa622d6d8656c8a026169364329a1',1,'wte::cmp::bounding_box']]],
+  ['min_5fy_17',['min_y',['../classwte_1_1cmp_1_1bounding__box.html#ab64cb6fab9c9a683b0b0e5c1c3ada312',1,'wte::cmp::bounding_box']]],
+  ['motion_18',['motion',['../classwte_1_1cmp_1_1motion.html#aa021a7f6e87ef18c8f68ee85a45d8a8d',1,'wte::cmp::motion::motion(void)'],['../classwte_1_1cmp_1_1motion.html#ad03c679f2a680a44c4e1439bf475e4a8',1,'wte::cmp::motion::motion(const float &amp;d, const float &amp;v)'],['../classwte_1_1cmp_1_1motion.html#a7d1ea08016329d23ec2a6ee8806afd81',1,'wte::cmp::motion::motion(const float &amp;d, const float &amp;xv, const float &amp;yv)'],['../classwte_1_1cmp_1_1motion.html',1,'wte::cmp::motion']]],
+  ['mouse_5fdetected_19',['mouse_detected',['../structwte_1_1config_1_1flags.html#ad0824f90fe325b062f9824f8dfb4f4cd',1,'wte::config::flags']]],
+  ['movement_20',['movement',['../classwte_1_1sys_1_1movement.html',1,'wte::sys']]],
+  ['msg_5fargs_21',['msg_args',['../namespacewte.html#a2bb0a7e58ebc59b033e8f9d343873a5a',1,'wte']]],
+  ['music_22',['music',['../structwte_1_1config_1_1volume.html#ac714943a598d0f7ecc19309b5c9f4119',1,'wte::config::volume::music()'],['../structwte_1_1mgr_1_1audio_1_1music.html',1,'wte::mgr::audio::music']]],
+  ['music_5fa_23',['music_a',['../structwte_1_1config_1_1volume.html#a5054853d17d82dab959c0a0a8548bd65',1,'wte::config::volume']]],
+  ['music_5fb_24',['music_b',['../structwte_1_1config_1_1volume.html#a2aae54ffcb3314cd8b4f7ea4a33e278f',1,'wte::config::volume']]]
 ];

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['last_5frender_0',['last_render',['../classwte_1_1mgr_1_1gfx_1_1renderer.html#ad43e54487434fe73646174cf73c20dbf',1,'wte::mgr::gfx::renderer']]],
-  ['layer_1',['layer',['../classwte_1_1cmp_1_1gfx_1_1gfx.html#a75523649b69ed356e5800128693b7a6f',1,'wte::cmp::gfx::gfx']]],
-  ['left_2',['left',['../structwte_1_1input_1_1event_1_1p1_1_1ondown.html#a72cf0d9345ef93f3f023a16a37b94279',1,'wte::input::event::p1::ondown::left()'],['../structwte_1_1input_1_1event_1_1p1_1_1onup.html#a28787167a848cbd371f98fbb0dd51b8f',1,'wte::input::event::p1::onup::left()'],['../structwte_1_1input_1_1event_1_1p2_1_1ondown.html#a57652d9a54e199a53169972c264d26ba',1,'wte::input::event::p2::ondown::left()'],['../structwte_1_1input_1_1event_1_1p2_1_1onup.html#a32b97288eb8f1e702c37b40eaa3be8b9',1,'wte::input::event::p2::onup::left()']]]
+  ['key_0',['key',['../structwte_1_1input_1_1lastkeypress.html#a2849066f16aea1a84b50394f91f390d9',1,'wte::input::lastkeypress']]],
+  ['key_5fmenu_1',['key_menu',['../structwte_1_1config_1_1controls.html#acdf74445f6788a6b9542b9071eca2f83',1,'wte::config::controls']]],
+  ['keyboard_5fdetected_2',['keyboard_detected',['../structwte_1_1config_1_1flags.html#a3184b077344a7d3ec21c8fe718a29015',1,'wte::config::flags']]]
 ];
