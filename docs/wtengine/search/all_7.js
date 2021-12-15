@@ -22,5 +22,6 @@ var searchData=
   ['get_5fto_19',['get_to',['../classwte_1_1message.html#ae275aafbff52515cbc1268d284c717c5',1,'wte::message']]],
   ['get_5fwidth_20',['get_width',['../classwte_1_1al__bitmap.html#a492542b2e53162aaa673d737ec0e5d51',1,'wte::al_bitmap']]],
   ['get_5fwindow_5ftitle_21',['get_window_title',['../classwte_1_1display.html#a11efcfc93e369e74022cd2c1f35f1059',1,'wte::display']]],
-  ['gfx_22',['gfx',['../classwte_1_1cmp_1_1gfx_1_1gfx.html#a461e5b50dcd25857b162a88b88c958a2',1,'wte::cmp::gfx::gfx::gfx()'],['../classwte_1_1cmp_1_1gfx_1_1gfx.html',1,'wte::cmp::gfx::gfx'],['../structwte_1_1config_1_1gfx.html',1,'wte::config::gfx']]]
+  ['gfx_22',['gfx',['../classwte_1_1cmp_1_1gfx_1_1gfx.html#a461e5b50dcd25857b162a88b88c958a2',1,'wte::cmp::gfx::gfx::gfx()'],['../classwte_1_1cmp_1_1gfx_1_1gfx.html',1,'wte::cmp::gfx::gfx'],['../structwte_1_1config_1_1gfx.html',1,'wte::config::gfx']]],
+  ['global_5fhandlers_23',['global_handlers',['../structwte_1_1handlers_1_1global__handlers.html',1,'wte::handlers']]]
 ];

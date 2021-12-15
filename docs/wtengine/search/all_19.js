@@ -15,13 +15,14 @@ var searchData=
   ['_7edisplay_12',['~display',['../classwte_1_1display.html#a1d13c6843fc7475fde6318da2243e0bf',1,'wte::display']]],
   ['_7eengine_13',['~engine',['../classwte_1_1engine.html#a13920154a1662ccc6e0170687ef632b6',1,'wte::engine']]],
   ['_7eengine_5ftime_14',['~engine_time',['../classwte_1_1engine__time.html#aef1f85c4da539298dd02c44b175cae0e',1,'wte::engine_time']]],
-  ['_7ehitbox_15',['~hitbox',['../classwte_1_1cmp_1_1hitbox.html#a42f021b65d427d549c4429d39dfee534',1,'wte::cmp::hitbox']]],
-  ['_7einput_16',['~input',['../classwte_1_1input.html#ae1fe1d7dbaec7e32c2da118acdb5bf5b',1,'wte::input']]],
-  ['_7elocation_17',['~location',['../classwte_1_1cmp_1_1location.html#afe978c7b9d2c16944067328a6a4614a2',1,'wte::cmp::location']]],
-  ['_7emanager_18',['~manager',['../classwte_1_1mgr_1_1manager.html#add55221d3c23ffc5b069779d19f4c1a0',1,'wte::mgr::manager']]],
-  ['_7emotion_19',['~motion',['../classwte_1_1cmp_1_1motion.html#a4bc498313b24eb8ccb72657b632a1ade',1,'wte::cmp::motion']]],
-  ['_7eoverlay_20',['~overlay',['../classwte_1_1cmp_1_1gfx_1_1overlay.html#a65088c11d4d1ba7a29943e2ef14ffa48',1,'wte::cmp::gfx::overlay']]],
-  ['_7esprite_21',['~sprite',['../classwte_1_1cmp_1_1gfx_1_1sprite.html#a64dcec9ae7f64c4f04645dd73a82c338',1,'wte::cmp::gfx::sprite']]],
-  ['_7esystem_22',['~system',['../classwte_1_1sys_1_1system.html#a8a213161e09ee4b7e940f591941db3a9',1,'wte::sys::system']]],
-  ['_7ewte_5fexception_23',['~wte_exception',['../classwte_1_1wte__exception.html#a1b46f4d9d9a9edd6913ce86315b658fb',1,'wte::wte_exception']]]
+  ['_7ehandlers_15',['~handlers',['../classwte_1_1handlers.html#a1370f999720855a99a49e93df50e4150',1,'wte::handlers']]],
+  ['_7ehitbox_16',['~hitbox',['../classwte_1_1cmp_1_1hitbox.html#a42f021b65d427d549c4429d39dfee534',1,'wte::cmp::hitbox']]],
+  ['_7einput_17',['~input',['../classwte_1_1input.html#ae1fe1d7dbaec7e32c2da118acdb5bf5b',1,'wte::input']]],
+  ['_7elocation_18',['~location',['../classwte_1_1cmp_1_1location.html#afe978c7b9d2c16944067328a6a4614a2',1,'wte::cmp::location']]],
+  ['_7emanager_19',['~manager',['../classwte_1_1mgr_1_1manager.html#add55221d3c23ffc5b069779d19f4c1a0',1,'wte::mgr::manager']]],
+  ['_7emotion_20',['~motion',['../classwte_1_1cmp_1_1motion.html#a4bc498313b24eb8ccb72657b632a1ade',1,'wte::cmp::motion']]],
+  ['_7eoverlay_21',['~overlay',['../classwte_1_1cmp_1_1gfx_1_1overlay.html#a65088c11d4d1ba7a29943e2ef14ffa48',1,'wte::cmp::gfx::overlay']]],
+  ['_7esprite_22',['~sprite',['../classwte_1_1cmp_1_1gfx_1_1sprite.html#a64dcec9ae7f64c4f04645dd73a82c338',1,'wte::cmp::gfx::sprite']]],
+  ['_7esystem_23',['~system',['../classwte_1_1sys_1_1system.html#a8a213161e09ee4b7e940f591941db3a9',1,'wte::sys::system']]],
+  ['_7ewte_5fexception_24',['~wte_exception',['../classwte_1_1wte__exception.html#a1b46f4d9d9a9edd6913ce86315b658fb',1,'wte::wte_exception']]]
 ];

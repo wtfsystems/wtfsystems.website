@@ -66,14 +66,28 @@ $(function() {
   <div class="headertitle"><div class="title">What the Engine? </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p ><a class="anchor" id="md_README"></a> </p>
-<h1><a class="anchor" id="autotoc_md1"></a>
-About</h1>
-<p ><b>WTEngine</b> is a cross-platform game engine based on <a href="https://en.wikipedia.org/wiki/Entity_component_system">ECS</a> design that can be used to make a 2D action game. The engine is written in C++17 and uses the <a href="https://liballeg.org">Allegro Game Library</a> and <a href="https://www.icculus.org/physfs/">PhysicsFS</a>.</p>
-<h3><a class="anchor" id="autotoc_md2"></a>
-API Documentation:</h3>
-<p ><a href="https://www.wtfsystems.net/docs/wtengine/index.html">https://www.wtfsystems.net/docs/wtengine/index.html</a></p>
-<p >For an example of the engine in action, see the <a href="https://github.com/wtfsystems/wtengine/blob/master/example/src/wte_demo.cpp">demo game code</a>.</p>
+<div class="textblock"><p ><a class="anchor" id="md_README"></a> <b>WTEngine</b> is a cross-platform game engine written in C++17 and based on <a href="https://en.wikipedia.org/wiki/Entity_component_system">ECS</a> design.</p>
+<h2><a class="anchor" id="autotoc_md1"></a>
+Requirements</h2>
+<ul>
+<li><b>Libraries</b>:<ul>
+<li><a href="https://liballeg.org">Allegro Game Library</a></li>
+<li><a href="https://www.icculus.org/physfs/">PhysicsFS</a></li>
+<li><a href="https://www.opengl.org">OpenGL</a> *(not yet implemented)*</li>
+</ul>
+</li>
+<li><b>Build tools</b>:<ul>
+<li><a href="https://cmake.org">CMake</a></li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md2"></a>
+Documentation:</h2>
+<ul>
+<li><a href="https://github.com/wtfsystems/wtengine/wiki">Manual</a></li>
+<li><a href="https://www.wtfsystems.net/docs/wtengine/index.html">API</a></li>
+<li><a href="https://github.com/wtfsystems/wtengine/blob/master/example/src/wte_demo.cpp">Example game</a></li>
+</ul>
 <hr  />
 <h1><a class="anchor" id="autotoc_md4"></a>
 Library Installation</h1>
@@ -82,37 +96,22 @@ Library Installation</h1>
 <div class="line">cmake .</div>
 <div class="line">make</div>
 </div><!-- fragment --><p >Then to install the library run: </p><div class="fragment"><div class="line">sudo make install</div>
-</div><!-- fragment --><hr  />
-<h1><a class="anchor" id="autotoc_md6"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md5"></a>
 Engine Tools</h1>
 <p >See the section on <a href="https://github.com/wtfsystems/wtengine/tree/master/wtengine-tools#readme">engine tools</a></p>
 <p ><a href="https://www.npmjs.com/package/@wtfsystems/wtengine-tools">NPM Package</a></p>
-<hr  />
-<h1><a class="anchor" id="autotoc_md8"></a>
-Example Game</h1>
-<p >Requires the library to be installed to build.</p>
-<div class="fragment"><div class="line">cd example</div>
-<div class="line">cmake .</div>
-<div class="line">make</div>
-</div><!-- fragment --><p >No install process, just run the created <em>wte_demo</em> executable.</p>
-<p >A compiled demo for Windows can be found in the <a href="https://github.com/wtfsystems/releases">releases</a> repository. Binary data to play the demo is included.</p>
-<hr  />
-<h1><a class="anchor" id="autotoc_md10"></a>
+<h1><a class="anchor" id="autotoc_md6"></a>
 Troubleshooting</h1>
-<h2><a class="anchor" id="autotoc_md11"></a>
+<h2><a class="anchor" id="autotoc_md7"></a>
 pkg-config can't find wtengine</h2>
 <p >Make sure the install location used for pkg-config is in PKG_CONFIG_PATH, example: </p><div class="fragment"><div class="line">export PKG_CONFIG_PATH=/usr/local/share/pkgconfig</div>
 </div><!-- fragment --><p >Check <b>install_manifest.txt</b> to see where <b>wtengine.pc</b> was placed.</p>
 <p >You can verify pkg-config can locate the engine by: </p><div class="fragment"><div class="line">pkg-config --libs --exists wtengine </div>
-</div><!-- fragment --><hr  />
-<h1><a class="anchor" id="autotoc_md13"></a>
-Manual</h1>
-<p ><a href="https://github.com/wtfsystems/wtengine/wiki">https://github.com/wtfsystems/wtengine/wiki</a> </p>
-</div></div><!-- PageDoc -->
+</div><!-- fragment --> </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 11 2021 21:23:37 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Wed Dec 15 2021 11:32:40 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

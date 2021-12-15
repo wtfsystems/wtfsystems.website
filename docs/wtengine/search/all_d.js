@@ -19,10 +19,11 @@ var searchData=
   ['min_5fx_16',['min_x',['../classwte_1_1cmp_1_1bounding__box.html#a962aa622d6d8656c8a026169364329a1',1,'wte::cmp::bounding_box']]],
   ['min_5fy_17',['min_y',['../classwte_1_1cmp_1_1bounding__box.html#ab64cb6fab9c9a683b0b0e5c1c3ada312',1,'wte::cmp::bounding_box']]],
   ['motion_18',['motion',['../classwte_1_1cmp_1_1motion.html#aa021a7f6e87ef18c8f68ee85a45d8a8d',1,'wte::cmp::motion::motion(void)'],['../classwte_1_1cmp_1_1motion.html#ad03c679f2a680a44c4e1439bf475e4a8',1,'wte::cmp::motion::motion(const float &amp;d, const float &amp;v)'],['../classwte_1_1cmp_1_1motion.html#a7d1ea08016329d23ec2a6ee8806afd81',1,'wte::cmp::motion::motion(const float &amp;d, const float &amp;xv, const float &amp;yv)'],['../classwte_1_1cmp_1_1motion.html',1,'wte::cmp::motion']]],
-  ['mouse_5fdetected_19',['mouse_detected',['../structwte_1_1config_1_1flags.html#ad0824f90fe325b062f9824f8dfb4f4cd',1,'wte::config::flags']]],
-  ['movement_20',['movement',['../classwte_1_1sys_1_1movement.html',1,'wte::sys']]],
-  ['msg_5fargs_21',['msg_args',['../namespacewte.html#a2bb0a7e58ebc59b033e8f9d343873a5a',1,'wte']]],
-  ['music_22',['music',['../structwte_1_1config_1_1volume.html#ac714943a598d0f7ecc19309b5c9f4119',1,'wte::config::volume::music()'],['../structwte_1_1mgr_1_1audio_1_1music.html',1,'wte::mgr::audio::music']]],
-  ['music_5fa_23',['music_a',['../structwte_1_1config_1_1volume.html#a5054853d17d82dab959c0a0a8548bd65',1,'wte::config::volume']]],
-  ['music_5fb_24',['music_b',['../structwte_1_1config_1_1volume.html#a2aae54ffcb3314cd8b4f7ea4a33e278f',1,'wte::config::volume']]]
+  ['mouse_19',['mouse',['../structwte_1_1input_1_1event_1_1mouse.html',1,'wte::input::event']]],
+  ['mouse_5fdetected_20',['mouse_detected',['../structwte_1_1config_1_1flags.html#ad0824f90fe325b062f9824f8dfb4f4cd',1,'wte::config::flags']]],
+  ['movement_21',['movement',['../classwte_1_1sys_1_1movement.html',1,'wte::sys']]],
+  ['msg_5fargs_22',['msg_args',['../namespacewte.html#a2bb0a7e58ebc59b033e8f9d343873a5a',1,'wte']]],
+  ['music_23',['music',['../structwte_1_1config_1_1volume.html#ac714943a598d0f7ecc19309b5c9f4119',1,'wte::config::volume::music()'],['../structwte_1_1mgr_1_1audio_1_1music.html',1,'wte::mgr::audio::music']]],
+  ['music_5fa_24',['music_a',['../structwte_1_1config_1_1volume.html#a5054853d17d82dab959c0a0a8548bd65',1,'wte::config::volume']]],
+  ['music_5fb_25',['music_b',['../structwte_1_1config_1_1volume.html#a2aae54ffcb3314cd8b4f7ea4a33e278f',1,'wte::config::volume']]]
 ];
