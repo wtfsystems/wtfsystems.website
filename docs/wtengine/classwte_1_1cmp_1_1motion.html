@@ -91,16 +91,13 @@ Inheritance diagram for wte::cmp::motion:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa021a7f6e87ef18c8f68ee85a45d8a8d"><td class="memItemLeft" align="right" valign="top"><a id="aa021a7f6e87ef18c8f68ee85a45d8a8d" name="aa021a7f6e87ef18c8f68ee85a45d8a8d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>motion</b> (void)</td></tr>
-<tr class="memdesc:aa021a7f6e87ef18c8f68ee85a45d8a8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new Motion component. <br /></td></tr>
-<tr class="separator:aa021a7f6e87ef18c8f68ee85a45d8a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad03c679f2a680a44c4e1439bf475e4a8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1cmp_1_1motion.html#ad03c679f2a680a44c4e1439bf475e4a8">motion</a> (const float &amp;d, const float &amp;v)</td></tr>
-<tr class="memdesc:ad03c679f2a680a44c4e1439bf475e4a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new Motion component with set direction and velocity.  <a href="classwte_1_1cmp_1_1motion.html#ad03c679f2a680a44c4e1439bf475e4a8">More...</a><br /></td></tr>
-<tr class="separator:ad03c679f2a680a44c4e1439bf475e4a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d1ea08016329d23ec2a6ee8806afd81"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1cmp_1_1motion.html#a7d1ea08016329d23ec2a6ee8806afd81">motion</a> (const float &amp;d, const float &amp;xv, const float &amp;yv)</td></tr>
 <tr class="memdesc:a7d1ea08016329d23ec2a6ee8806afd81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new Motion component with set direction and velocity.  <a href="classwte_1_1cmp_1_1motion.html#a7d1ea08016329d23ec2a6ee8806afd81">More...</a><br /></td></tr>
 <tr class="separator:a7d1ea08016329d23ec2a6ee8806afd81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29e1fdceb3a453bf90d9d218b4c01f56"><td class="memItemLeft" align="right" valign="top"><a id="a29e1fdceb3a453bf90d9d218b4c01f56" name="a29e1fdceb3a453bf90d9d218b4c01f56"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>motion</b> ()=delete</td></tr>
+<tr class="memdesc:a29e1fdceb3a453bf90d9d218b4c01f56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete default constructor. <br /></td></tr>
+<tr class="separator:a29e1fdceb3a453bf90d9d218b4c01f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bc498313b24eb8ccb72657b632a1ade"><td class="memItemLeft" align="right" valign="top"><a id="a4bc498313b24eb8ccb72657b632a1ade" name="a4bc498313b24eb8ccb72657b632a1ade"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>~motion</b> ()=default</td></tr>
 <tr class="memdesc:a4bc498313b24eb8ccb72657b632a1ade"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor. <br /></td></tr>
@@ -145,45 +142,8 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Store motion information (velocity and direction) of an entity. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad03c679f2a680a44c4e1439bf475e4a8" name="ad03c679f2a680a44c4e1439bf475e4a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad03c679f2a680a44c4e1439bf475e4a8">&#9670;&nbsp;</a></span>motion() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">wte::cmp::motion::motion </td>
-          <td>(</td>
-          <td class="paramtype">const float &amp;&#160;</td>
-          <td class="paramname"><em>d</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const float &amp;&#160;</td>
-          <td class="paramname"><em>v</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create a new Motion component with set direction and velocity. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">d</td><td>Direction in radians. </td></tr>
-    <tr><td class="paramname">v</td><td>Velocity for X and Y. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a7d1ea08016329d23ec2a6ee8806afd81" name="a7d1ea08016329d23ec2a6ee8806afd81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d1ea08016329d23ec2a6ee8806afd81">&#9670;&nbsp;</a></span>motion() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d1ea08016329d23ec2a6ee8806afd81">&#9670;&nbsp;</a></span>motion()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -232,7 +192,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 15 2021 11:32:40 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Tue Jan 4 2022 14:22:33 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

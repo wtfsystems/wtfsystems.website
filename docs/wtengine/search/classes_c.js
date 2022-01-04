@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['ondown_0',['ondown',['../structwte_1_1input_1_1event_1_1mouse_1_1ondown.html',1,'wte::input::event::mouse::ondown'],['../structwte_1_1input_1_1event_1_1p1_1_1ondown.html',1,'wte::input::event::p1::ondown'],['../structwte_1_1input_1_1event_1_1p2_1_1ondown.html',1,'wte::input::event::p2::ondown']]],
-  ['onup_1',['onup',['../structwte_1_1input_1_1event_1_1mouse_1_1onup.html',1,'wte::input::event::mouse::onup'],['../structwte_1_1input_1_1event_1_1p1_1_1onup.html',1,'wte::input::event::p1::onup'],['../structwte_1_1input_1_1event_1_1p2_1_1onup.html',1,'wte::input::event::p2::onup']]],
-  ['overlay_2',['overlay',['../classwte_1_1cmp_1_1gfx_1_1overlay.html',1,'wte::cmp::gfx']]]
+  ['renderer_0',['renderer',['../classwte_1_1mgr_1_1gfx_1_1renderer.html',1,'wte::mgr::gfx']]]
 ];

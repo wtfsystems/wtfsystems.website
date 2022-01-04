@@ -12,7 +12,6 @@ var searchData=
   ['message_9',['message',['../classwte_1_1message.html',1,'wte']]],
   ['messages_10',['messages',['../classwte_1_1mgr_1_1messages.html',1,'wte::mgr']]],
   ['motion_11',['motion',['../classwte_1_1cmp_1_1motion.html',1,'wte::cmp']]],
-  ['mouse_12',['mouse',['../structwte_1_1input_1_1event_1_1mouse.html',1,'wte::input::event']]],
-  ['movement_13',['movement',['../classwte_1_1sys_1_1movement.html',1,'wte::sys']]],
-  ['music_14',['music',['../structwte_1_1mgr_1_1audio_1_1music.html',1,'wte::mgr::audio']]]
+  ['movement_12',['movement',['../classwte_1_1sys_1_1movement.html',1,'wte::sys']]],
+  ['music_13',['music',['../structwte_1_1mgr_1_1audio_1_1music.html',1,'wte::mgr::audio']]]
 ];

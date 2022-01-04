@@ -6,7 +6,7 @@ var searchData=
   ['get_5fcmd_3',['get_cmd',['../classwte_1_1message.html#ac0ec4f393664c17b6e460c745f77f98f',1,'wte::message']]],
   ['get_5fcomponent_4',['get_component',['../classwte_1_1mgr_1_1world.html#ab7f7cf991482e2026a7c30a7c42446d9',1,'wte::mgr::world']]],
   ['get_5fcomponents_5',['get_components',['../classwte_1_1mgr_1_1world.html#a10ba157fd774620fc5941f39e8360101',1,'wte::mgr::world']]],
-  ['get_5fentities_6',['get_entities',['../classwte_1_1mgr_1_1world.html#a96f5c518b653ab53e98aea0808337528',1,'wte::mgr::world']]],
+  ['get_5fentities_6',['get_entities',['../classwte_1_1mgr_1_1world.html#ae738add979793bab4c9b523f87b287eb',1,'wte::mgr::world']]],
   ['get_5fentity_7',['get_entity',['../classwte_1_1mgr_1_1world.html#a5530e7c9ca4585b1e1fe071aca4ef809',1,'wte::mgr::world']]],
   ['get_5ffrequency_8',['get_frequency',['../classwte_1_1al__audio.html#ad0e0528b21b6b08176a196b4cbf5451a',1,'wte::al_audio']]],
   ['get_5ffrom_9',['get_from',['../classwte_1_1message.html#ab0ab6b8d73f2f03c12b37f562c700404',1,'wte::message']]],
@@ -20,6 +20,5 @@ var searchData=
   ['get_5ftint_17',['get_tint',['../classwte_1_1cmp_1_1gfx_1_1gfx.html#a69d5f1d92071c400bec4374e63df2f46',1,'wte::cmp::gfx::gfx']]],
   ['get_5fto_18',['get_to',['../classwte_1_1message.html#ae275aafbff52515cbc1268d284c717c5',1,'wte::message']]],
   ['get_5fwidth_19',['get_width',['../classwte_1_1al__bitmap.html#a492542b2e53162aaa673d737ec0e5d51',1,'wte::al_bitmap']]],
-  ['get_5fwindow_5ftitle_20',['get_window_title',['../classwte_1_1display.html#a11efcfc93e369e74022cd2c1f35f1059',1,'wte::display']]],
-  ['gfx_21',['gfx',['../classwte_1_1cmp_1_1gfx_1_1gfx.html#a461e5b50dcd25857b162a88b88c958a2',1,'wte::cmp::gfx::gfx']]]
+  ['gfx_20',['gfx',['../classwte_1_1cmp_1_1gfx_1_1gfx.html#ab1d839721a63d0b46d068f6147b9dfd9',1,'wte::cmp::gfx::gfx::gfx()=delete'],['../classwte_1_1cmp_1_1gfx_1_1gfx.html#a461e5b50dcd25857b162a88b88c958a2',1,'wte::cmp::gfx::gfx::gfx(wte_asset&lt; al_bitmap &gt; bmp, const std::size_t &amp;l, const std::function&lt; void(const entity_id &amp;)&gt; &amp;func)']]]
 ];
