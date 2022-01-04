@@ -1,6 +1,6 @@
 title: wtfsystems.net
 description: >-
-  Personal website of Matthew Evans
+  wtfsystems
 url: "https://www.wtfsystems.net"
 github_username:  wtfsystems
 
@@ -19,20 +19,11 @@ sass:
   sass_dir: _sass
   style: compressed
 
-include: [api, dist, docs]
+include: [docs]
 exclude:
-  - node_modules
-  - src
   - Gemfile
   - Gemfile.lock
-  - package-lock.json
-  - package.json
-  - webpack.config.babel.js
-  - .babelrc
-  - .eslintignore
-  - .eslintrc.js
   - .gitignore
-  - README.md
-  - LICENSE.md
-  - LICENSE
   - CNAME
+  - LICENSE.md
+  - README.md

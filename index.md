@@ -1,5 +1,5 @@
 ---
-layout: vueapp
+layout: main
 ---
 
-<web-term></web-term>
+<!-- stuff goes here! --->
