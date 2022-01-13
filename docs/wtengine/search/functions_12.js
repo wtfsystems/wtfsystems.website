@@ -16,7 +16,7 @@ var searchData=
   ['_7eengine_13',['~engine',['../classwte_1_1engine.html#a13920154a1662ccc6e0170687ef632b6',1,'wte::engine']]],
   ['_7eengine_5ftime_14',['~engine_time',['../classwte_1_1engine__time.html#aef1f85c4da539298dd02c44b175cae0e',1,'wte::engine_time']]],
   ['_7egfx_15',['~gfx',['../classwte_1_1cmp_1_1gfx_1_1gfx.html#af8dee91d3398500a7b03a5e27d115eff',1,'wte::cmp::gfx::gfx']]],
-  ['_7ehandlers_16',['~handlers',['../classwte_1_1handlers.html#a34d48159266f4619c0c6e2d548029d43',1,'wte::handlers']]],
+  ['_7ehandlers_16',['~handlers',['../classwte_1_1handlers_3_01_s_00_01_i_d_x_00_01_w_t_e___h_a_n_d_l_e_r___s_e_t_01_4.html#ae2775870d14c171bb94de98b3dfa11f2',1,'wte::handlers&lt; S, IDX, WTE_HANDLER_SET &gt;']]],
   ['_7ehitbox_17',['~hitbox',['../classwte_1_1cmp_1_1hitbox.html#a42f021b65d427d549c4429d39dfee534',1,'wte::cmp::hitbox']]],
   ['_7einput_18',['~input',['../classwte_1_1input.html#ae1fe1d7dbaec7e32c2da118acdb5bf5b',1,'wte::input']]],
   ['_7elocation_19',['~location',['../classwte_1_1cmp_1_1location.html#afe978c7b9d2c16944067328a6a4614a2',1,'wte::cmp::location']]],

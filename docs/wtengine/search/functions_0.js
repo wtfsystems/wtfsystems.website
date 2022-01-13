@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['add_0',['add',['../classwte_1_1handlers.html#a36a19f50a5378c2202cce78ce73b3b92',1,'wte::handlers::add()'],['../classwte_1_1mgr_1_1messages.html#a2cd02321bb3521a641c445122477f32a',1,'wte::mgr::messages::add()'],['../classwte_1_1mgr_1_1spawner.html#afeaf7273489376454378f249213c855f',1,'wte::mgr::spawner::add()'],['../classwte_1_1mgr_1_1systems.html#a788b7198d0ae026a1774cb84e5888bea',1,'wte::mgr::systems::add()'],['../classwte_1_1commands.html#a9cc567f38edce1dd035c6d7969edf3a3',1,'wte::commands::add()']]],
+  ['add_0',['add',['../classwte_1_1handlers_3_01_s_00_01_i_d_x_00_01_w_t_e___h_a_n_d_l_e_r___s_e_t_01_4.html#ad2ce75117fda3545f42955be384f6808',1,'wte::handlers&lt; S, IDX, WTE_HANDLER_SET &gt;::add()'],['../classwte_1_1mgr_1_1messages.html#a2cd02321bb3521a641c445122477f32a',1,'wte::mgr::messages::add()'],['../classwte_1_1mgr_1_1spawner.html#afeaf7273489376454378f249213c855f',1,'wte::mgr::spawner::add()'],['../classwte_1_1mgr_1_1systems.html#a788b7198d0ae026a1774cb84e5888bea',1,'wte::mgr::systems::add()'],['../classwte_1_1commands.html#a9cc567f38edce1dd035c6d7969edf3a3',1,'wte::commands::add()']]],
   ['add_5fcomponent_1',['add_component',['../classwte_1_1mgr_1_1world.html#a86a9ce6fefe7d04544b93148b6620722',1,'wte::mgr::world']]],
   ['add_5fcycle_2',['add_cycle',['../classwte_1_1cmp_1_1gfx_1_1sprite.html#a9f8569009083f2f301a924aa72521378',1,'wte::cmp::gfx::sprite']]],
   ['add_5ffile_5flocation_3',['add_file_location',['../classwte_1_1engine.html#a848c9ff6e143f4a3f414164fb8a93311',1,'wte::engine']]],
