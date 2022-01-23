@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['lastbuttonpress_0',['lastbuttonpress',['../structwte_1_1input_1_1lastbuttonpress.html',1,'wte::input']]],
-  ['lastkeypress_1',['lastkeypress',['../structwte_1_1input_1_1lastkeypress.html',1,'wte::input']]],
-  ['location_2',['location',['../classwte_1_1cmp_1_1location.html',1,'wte::cmp']]],
-  ['logic_3',['logic',['../classwte_1_1sys_1_1logic.html',1,'wte::sys']]]
+  ['input_0',['input',['../classwte_1_1input.html',1,'wte']]],
+  ['is_5fspecilization_5fof_1',['is_specilization_of',['../structwte_1_1is__specilization__of.html',1,'wte']]],
+  ['is_5fspecilization_5fof_3c_20primary_2c_20primary_3c_20args_2e_2e_2e_20_3e_20_3e_2',['is_specilization_of&lt; Primary, Primary&lt; Args... &gt; &gt;',['../structwte_1_1is__specilization__of_3_01_primary_00_01_primary_3_01_args_8_8_8_01_4_01_4.html',1,'wte']]]
 ];

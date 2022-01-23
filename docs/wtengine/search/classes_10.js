@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['touch_0',['touch',['../structwte_1_1input_1_1event_1_1touch.html',1,'wte::input::event']]]
+  ['world_0',['world',['../classwte_1_1mgr_1_1world.html',1,'wte::mgr']]],
+  ['wte_5fbuild_5foptions_1',['wte_build_options',['../structwte_1_1wte__build__options.html',1,'wte']]],
+  ['wte_5fexception_2',['wte_exception',['../classwte_1_1wte__exception.html',1,'wte']]]
 ];

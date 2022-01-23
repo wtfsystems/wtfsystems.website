@@ -85,14 +85,22 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>benchmark</b> (const std::string &amp;label)</td></tr>
 <tr class="memdesc:ad8ee3a57760b278f0b0bab5df86e5acd"><td class="mdescLeft">&#160;</td><td class="mdescRight">General initialization, see specializations below. <br /></td></tr>
 <tr class="separator:ad8ee3a57760b278f0b0bab5df86e5acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5efc955d3c006da71cfda88b1a07cf5e"><td class="memItemLeft" align="right" valign="top"><a id="a5efc955d3c006da71cfda88b1a07cf5e" name="a5efc955d3c006da71cfda88b1a07cf5e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>benchmark</b> ()=delete</td></tr>
+<tr class="memdesc:a5efc955d3c006da71cfda88b1a07cf5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete default constructor. <br /></td></tr>
+<tr class="separator:a5efc955d3c006da71cfda88b1a07cf5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac066945806434a8a156be6569e7f0cc1"><td class="memItemLeft" align="right" valign="top"><a id="ac066945806434a8a156be6569e7f0cc1" name="ac066945806434a8a156be6569e7f0cc1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~benchmark</b> ()=default</td></tr>
+<tr class="memdesc:ac066945806434a8a156be6569e7f0cc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor. <br /></td></tr>
+<tr class="separator:ac066945806434a8a156be6569e7f0cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a153341b065a71ec29e035d6dbec46840"><td class="memItemLeft" align="right" valign="top"><a id="a153341b065a71ec29e035d6dbec46840" name="a153341b065a71ec29e035d6dbec46840"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>start</b> (void)</td></tr>
+<tr class="memdesc:a153341b065a71ec29e035d6dbec46840"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start benchmark. <br /></td></tr>
+<tr class="separator:a153341b065a71ec29e035d6dbec46840"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dcd4f731ab81f9766cbaf420e1effd7"><td class="memItemLeft" align="right" valign="top"><a id="a1dcd4f731ab81f9766cbaf420e1effd7" name="a1dcd4f731ab81f9766cbaf420e1effd7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> (void)</td></tr>
 <tr class="memdesc:a1dcd4f731ab81f9766cbaf420e1effd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop benchmark and log to file. Logs all benchmarks to: benchmark\log.txt. <br /></td></tr>
 <tr class="separator:a1dcd4f731ab81f9766cbaf420e1effd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a566805c88015de68ad44d71295b55e0b"><td class="memItemLeft" align="right" valign="top"><a id="a566805c88015de68ad44d71295b55e0b" name="a566805c88015de68ad44d71295b55e0b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>benchmark</b> (const std::string &amp;label)</td></tr>
-<tr class="memdesc:a566805c88015de68ad44d71295b55e0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Benchmark in nanoseconds. <br /></td></tr>
-<tr class="separator:a566805c88015de68ad44d71295b55e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f98c61bfa07fc6cf1acccf806265685"><td class="memItemLeft" align="right" valign="top"><a id="a5f98c61bfa07fc6cf1acccf806265685" name="a5f98c61bfa07fc6cf1acccf806265685"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>benchmark</b> (const std::string &amp;label)</td></tr>
 <tr class="memdesc:a5f98c61bfa07fc6cf1acccf806265685"><td class="mdescLeft">&#160;</td><td class="mdescRight">Benchmark in microseconds. <br /></td></tr>
@@ -115,7 +123,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> (void)</td><
 <tr class="separator:a592bbd4f68e91224ebf35631c6ed2e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename T = std::chrono::nanoseconds&gt;<br />
 class wtf::benchmark&lt; T &gt;</div><p >Run a benchmark. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -129,7 +137,7 @@ class wtf::benchmark&lt; T &gt;</div><p >Run a benchmark. </p>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 13 2022 18:13:16 for libwtf by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+Generated on Sun Jan 23 2022 15:52:37 for libwtf by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
 </small></address>
 </body>
 </html>

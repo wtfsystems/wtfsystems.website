@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['stop_0',['stop',['../classwtf_1_1benchmark.html#a1dcd4f731ab81f9766cbaf420e1effd7',1,'wtf::benchmark']]]
+  ['operator_2a_0',['operator*',['../classwtf_1_1diamond__square.html#aa37c99fe21c18c09c237a61982a99c6d',1,'wtf::diamond_square']]]
 ];
