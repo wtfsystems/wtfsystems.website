@@ -68,6 +68,7 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">wte Namespace Reference</div></div>
 </div><!--header-->
@@ -207,6 +208,13 @@ Enumerations</h2></td></tr>
 , <b>WTE_HANDLER_NOTSET</b>
  }</td></tr>
 <tr class="separator:a1a68d5b90c6ae5eae663dda581ffea14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a88cdb55d52ae663e7f07de64b9c7d16c"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacewte.html#a509fed10b8538a13a07fb3f1b9667695">handler_scopes</a> S, <a class="el" href="namespacewte.html#a365a9372b5ea4b80d63e79262524a0eb">handler_events</a> IDX, class T &gt; </td></tr>
+<tr class="memitem:a88cdb55d52ae663e7f07de64b9c7d16c"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewte.html#a88cdb55d52ae663e7f07de64b9c7d16c">add_handle</a> (const handler_types &amp;handle)</td></tr>
+<tr class="memdesc:a88cdb55d52ae663e7f07de64b9c7d16c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to add an input handle.  <a href="namespacewte.html#a88cdb55d52ae663e7f07de64b9c7d16c">More...</a><br /></td></tr>
+<tr class="separator:a88cdb55d52ae663e7f07de64b9c7d16c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -553,10 +561,55 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a88cdb55d52ae663e7f07de64b9c7d16c" name="a88cdb55d52ae663e7f07de64b9c7d16c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88cdb55d52ae663e7f07de64b9c7d16c">&#9670;&nbsp;</a></span>add_handle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespacewte.html#a509fed10b8538a13a07fb3f1b9667695">handler_scopes</a> S, <a class="el" href="namespacewte.html#a365a9372b5ea4b80d63e79262524a0eb">handler_events</a> IDX, class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr void wte::add_handle </td>
+          <td>(</td>
+          <td class="paramtype">const handler_types &amp;&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Used to add an input handle. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">S</td><td>Handler scope. </td></tr>
+    <tr><td class="paramname">IDX</td><td>Event index. </td></tr>
+    <tr><td class="paramname">T</td><td>Handler type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>Input handler function expression. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 26 2022 20:41:59 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+Generated on Sat Apr 16 2022 23:52:12 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
 </small></address>
 </body>
 </html>

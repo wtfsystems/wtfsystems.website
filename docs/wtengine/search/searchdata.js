@@ -8,7 +8,8 @@ var indexSectionsWithContent =
   5: "cemsw",
   6: "h",
   7: "w",
-  8: "lw"
+  8: "a",
+  9: "lw"
 };
 
 var indexSectionNames =
@@ -21,7 +22,8 @@ var indexSectionNames =
   5: "typedefs",
   6: "enums",
   7: "enumvalues",
-  8: "pages"
+  8: "related",
+  9: "pages"
 };
 
 var indexSectionLabels =
@@ -34,6 +36,7 @@ var indexSectionLabels =
   5: "Typedefs",
   6: "Enumerations",
   7: "Enumerator",
-  8: "Pages"
+  8: "Friends",
+  9: "Pages"
 };
 

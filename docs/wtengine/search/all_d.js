@@ -1,7 +1,7 @@
 var searchData=
 [
   ['main_0',['main',['../structwte_1_1config_1_1volume.html#ace03e005f84e4648f434b899d9c99b52',1,'wte::config::volume']]],
-  ['manager_1',['manager',['../classwte_1_1mgr_1_1manager.html#a4eeefa94714ddba7f1cc05c4cf295bd2',1,'wte::mgr::manager::manager()'],['../classwte_1_1mgr_1_1manager.html#affe7a498647e08066e10f97f4dbdfd5e',1,'wte::mgr::manager::manager(const manager &amp;)=delete'],['../classwte_1_1mgr_1_1manager.html',1,'wte::mgr::manager&lt; derived &gt;']]],
+  ['manager_1',['manager',['../classwte_1_1mgr_1_1manager.html#a1e0ef40da6f1c281e82f5bb2f6a5c1b2',1,'wte::mgr::manager::manager()'],['../classwte_1_1mgr_1_1manager.html#a1d8d598d9f21d091b157f29bc88f6f2d',1,'wte::mgr::manager::manager(const manager &amp;)=delete'],['../classwte_1_1mgr_1_1manager.html',1,'wte::mgr::manager&lt; D &gt;']]],
   ['manager_3c_20assets_3c_3e_20_3e_2',['manager&lt; assets&lt;&gt; &gt;',['../classwte_1_1mgr_1_1manager.html',1,'wte::mgr']]],
   ['manager_3c_20audio_20_3e_3',['manager&lt; audio &gt;',['../classwte_1_1mgr_1_1manager.html',1,'wte::mgr']]],
   ['manager_3c_20messages_20_3e_4',['manager&lt; messages &gt;',['../classwte_1_1mgr_1_1manager.html',1,'wte::mgr']]],
