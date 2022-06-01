@@ -33,35 +33,3 @@ const encodedMessage = (ENCODED_TEXT, options) => {
 
     ctx.fillText(String.fromCharCode(...ENCODED_TEXT), locX, locY)
 }
-
-/*
- * HTML:
- * <head>
- *    <script type="text/javascript" src="encoded_message.js"></script>
- * </head>
- * <body>
- *    <canvas id="message_canvas"></canvas>
- *    <script type="text/javascript">
- *       encoded_message(
- *          [ 0x63, 0x6f, 0x6e, 0x74, 0x61, 0x63, 0x74, 0x40, 0x77, 0x74, 0x66, 0x73, 0x79, 0x73, 0x74, 0x65, 0x6d, 0x73, 0x2e, 0x6e, 0x65, 0x74 ],
- *          { canvas_width: 240, canvas_height: 48 }
- *       )
- *    </script>
- * </body>
- *
- * Required Parameter:
- * ENCODED_TEXT - An array of UTF-16 codes
- *
- * Optional Parameters:
- * canvas_name - Set the ID of the canvas to draw to
- * canvas_width - Set the width of the canvas
- * canvas_height - Set the height of the canvas
- * backgrounnd_color - Set the canvas background color
- * font_color - Set the font color
- * font_size - Set the font size
- * font_face - Set the font face
- * text_baseline - Vertical alignment of text (default middle)
- * text_align - Horizontal alignment of text (default center)
- * loc_x - X location of text (default center of canvas)
- * loc_y - Y location of text (default center of canvas)
- */

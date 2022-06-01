@@ -184,33 +184,3 @@ function prime_wheel_start(the_wheel) {
         x.style.display = "none"
     }
 }
-
-/*
- * Usage:
- *
- * CSS:
- * html {
- *     height: 100%
- * }
- * #background_canvas {
- *     position: fixed
- *     display: block
- *     width: 100%
- *     height: 100%
- *     margin: 0 auto
- * }
- * 
- * HTML:
- * <head>
- *    <script type="text/javascript" src="prime_wheel.js"></script>
- * </head>
- * <body>
- *    <canvas id="background_canvas"></canvas>
- *    <script type="text/javascript">
- *       let the_wheel = new prime_wheel()
- *       prime_wheel_start(the_wheel)
- *    </script>
- * </body>
- * 
- * <button onclick="prime_wheel_toggle(the_wheel)">Toggle Background</button>
- */
