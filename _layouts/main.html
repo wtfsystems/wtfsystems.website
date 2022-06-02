@@ -39,19 +39,19 @@
 <body>
 
 <!-- Start Jekyll generated content -->
-{% include header.html %}
 {{ content }}
-{% include footer.html %}
 <!-- End Jekyll generated content   -->
+
+<canvas id="message_canvas"></canvas>
 
 <canvas id="primewheel_canvas"></canvas>
 <script>
 
-{% include js/encodedMessage.js %}
+{% include encodedMessage.js %}
 
-{% include js/primeWheel.js %}
+{% include primeWheel.js %}
 
-{% include js/leToucan.js %}
+{% include leToucan.js %}
 
 /*
  * Run the scripts
