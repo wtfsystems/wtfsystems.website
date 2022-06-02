@@ -48,7 +48,7 @@ class primeWheel {
 
         this.x_offset = 0
         this.y_offset = 0
-        this.set_offset()
+        this.setOffset()
         this.animate_proc = null
 
         //  Clear the canvas
