@@ -12,7 +12,7 @@
  */
 
 const encodedMessage = (ENCODED_TEXT, options) => {
-    const options = options || {}
+    var options = options || {}
 
     const canvas = document.getElementById(options.canvas_name || "message_canvas")
     const ctx = canvas.getContext("2d")
