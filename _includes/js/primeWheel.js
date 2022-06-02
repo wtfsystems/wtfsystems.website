@@ -18,15 +18,15 @@ class primeWheel {
     /*
      * Config variables
      */
-    BACKGROUND_COLOR = "#000000"  //  Background color
-    FONT_COLOR = "#0000FF"  //  Font color
-    FONT_SIZE = "32px"  //  Font size
-    FONT_FACE = "Arial"  //  Font face
-    SCALE = 4  //  Scale multiplier
-    INTERVAL = 5  //  Speed interval
-    CANVAS_NAME = "background_canvas"  //  Target draw canvas
-    USE_RANDOM_OFFSET = true  //  Offset center position
-    SPAM = false  //  Spam the console with prime numbers
+    BACKGROUND_COLOR = "#000000"       //  Background color
+    FONT_COLOR = "#0000FF"             //  Font color
+    FONT_SIZE = "32px"                 //  Font size
+    FONT_FACE = "Arial"                //  Font face
+    SCALE = 4                          //  Scale multiplier
+    INTERVAL = 5                       //  Speed interval
+    CANVAS_NAME = "primewheel_canvas"  //  Target draw canvas
+    USE_RANDOM_OFFSET = true           //  Offset center position
+    SPAM = false                       //  Spam the console with prime numbers
 
     /*
      * Initialize
