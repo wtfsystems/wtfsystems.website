@@ -164,7 +164,7 @@ const primeWheelFuncs = {
     * Function to start up the prime wheel
     */
     primeWheelStart: (the_wheel) => {
-        if(primeWheelGetCookie()) {
+        if(primeWheelFuncs.primeWheelGetCookie()) {
             the_wheel.animate_proc = setInterval(function() { primeWheelFuncs.primeWheelAnimate(the_wheel) }, the_wheel.INTERVAL)
             console.log("Running prime wheel effect")
         } else {
