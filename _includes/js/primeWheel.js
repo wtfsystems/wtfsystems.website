@@ -92,7 +92,7 @@ const primeWheelFuncs = {
     */
     primeWheelAnimate: (the_wheel) => {
         //  Prime number found, draw it using cartesian coordinates
-        if(is_prime(the_wheel.last_prime)) {
+        if(primeWheelFuncs.isPrime(the_wheel.last_prime)) {
             if(the_wheel.SPAM) console.log("Found prime: " + the_wheel.last_prime)
             the_wheel.ctx.font = the_wheel.FONT_SIZE + " " + the_wheel.FONT_FACE
             the_wheel.ctx.fillStyle = the_wheel.FONT_COLOR
