@@ -1,6 +1,6 @@
 /*
  * Animated background that creates a prime wheel.
- * Uses a cookie to track activity status across multiple pages.
+ * Uses a cookie to track activity status across multiple page visits.
  *
  * Filename:  primeWheel.js
  * By:  Matthew Evans
