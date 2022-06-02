@@ -121,13 +121,13 @@ const primeWheelFuncs = {
         var x = document.getElementById(the_wheel.CANVAS_NAME)
         if (x.style.display === "none") {
             //  If off turn on
-            primeWheelSetCookie("true")
+            primeWheelFuncs.primeWheelSetCookie("true")
             x.style.display = "block"
-            the_wheel.animate_proc = setInterval(function() { primeWheelAnimate(the_wheel) }, the_wheel.INTERVAL)
+            the_wheel.animate_proc = setInterval(function() { primeWheelFuncs.primeWheelAnimate(the_wheel) }, the_wheel.INTERVAL)
             console.log("Prime wheel toggeled on")
         } else {
             //  Otherwise turn off
-            primeWheelSetCookie("false")
+            primeWheelFuncs.primeWheelSetCookie("false")
             x.style.display = "none"
             clearInterval(the_wheel.animate_proc)
             console.log("Prime wheel toggeled off")
@@ -139,7 +139,7 @@ const primeWheelFuncs = {
     */
     primeWheelRegCookie: (cookie_value) => {
         if(document.cookie.search("prime_wheel_running=") == -1) {
-            primeWheelSetCookie(cookie_value)
+            primeWheelFuncs.primeWheelSetCookie(cookie_value)
         }
     },
 
@@ -165,7 +165,7 @@ const primeWheelFuncs = {
     */
     primeWheelStart: (the_wheel) => {
         if(primeWheelGetCookie()) {
-            the_wheel.animate_proc = setInterval(function() { primeWheelAnimate(the_wheel) }, the_wheel.INTERVAL)
+            the_wheel.animate_proc = setInterval(function() { primeWheelFuncs.primeWheelAnimate(the_wheel) }, the_wheel.INTERVAL)
             console.log("Running prime wheel effect")
         } else {
             var x = document.getElementById(the_wheel.CANVAS_NAME)
