@@ -5,7 +5,7 @@
  * Filename:  primeWheel.js
  * By:  Matthew Evans
  *      https://www.wtfsystems.net/
- * Version:  060122
+ * Version:  060222
  *
  * Copyright (c) 2020-2022 Matthew Evans - See LICENSE.md
  *
@@ -21,9 +21,9 @@ class prime_wheel {
      * Config variables
      */
     /* Sets the background color */
-    BACKGROUND_COLOR = "#808080"
+    BACKGROUND_COLOR = "#000000"
     /* Sets the font color */
-    FONT_COLOR = "#191970"
+    FONT_COLOR = "#0000FF"
     /* Sets the font size */
     FONT_SIZE = "32px"
     /* Sets the font face */
@@ -37,7 +37,7 @@ class prime_wheel {
     /* Use random offset */
     USE_RANDOM_OFFSET = true
     /* Spam console with prime numbers */
-    SPAM = true
+    SPAM = false
 
     /*
      * Initialize
@@ -90,7 +90,7 @@ class prime_wheel {
 /*
  * Function to check if a number is prime
  */
-function is_prime(num) {
+const is_prime = (num) => {
     for(var i = 2; i < num; i++) {
         if(num % i == 0) return false
     }
@@ -100,7 +100,7 @@ function is_prime(num) {
 /*
  * Animation function
  */
-function prime_wheel_animate(the_wheel) {
+const prime_wheel_animate = (the_wheel) => {
     //  Prime number found, draw it using cartesian coordinates
     if(is_prime(the_wheel.last_prime)) {
         if(the_wheel.SPAM) console.log("Found prime: " + the_wheel.last_prime)
@@ -127,7 +127,7 @@ function prime_wheel_animate(the_wheel) {
 /*
  * Function to toggle background on/off
  */
-function prime_wheel_toggle(the_wheel) {
+const prime_wheel_toggle = (the_wheel) => {
     var x = document.getElementById(the_wheel.CANVAS_NAME)
     if (x.style.display === "none") {
         //  If off turn on
@@ -146,19 +146,17 @@ function prime_wheel_toggle(the_wheel) {
 
 /*
  * Function to register the prime wheel cookie
- * Creates cookie on page load if one does not already exist
  */
-function prime_wheel_reg_cookie(cookie_value) {
+const prime_wheel_reg_cookie = (cookie_value) => {
     if(document.cookie.search("prime_wheel_running=") == -1) {
         prime_wheel_set_cookie(cookie_value)
     }
 }
-document.onload = prime_wheel_reg_cookie("true")  //  Register automatically on page load
 
 /*
  * Function to set the prime wheel cookie - expires after 24hrs
  */
-function prime_wheel_set_cookie(cookie_value) {
+const prime_wheel_set_cookie = (cookie_value) => {
     document.cookie = `prime_wheel_running=${cookie_value} SameSite=Strict Max-Age=86400 Path=/`
 }
 
@@ -166,7 +164,7 @@ function prime_wheel_set_cookie(cookie_value) {
  * Function to check prime_wheel_running cookie value
  * Return true if set to true, false if set to false or not set
  */
-function prime_wheel_get_cookie() {
+const prime_wheel_get_cookie = () => {
     if(document.cookie.search("prime_wheel_running=") == -1) return false
     if(document.cookie.search("prime_wheel_running=true") == -1) return false
     return true
@@ -175,7 +173,7 @@ function prime_wheel_get_cookie() {
 /*
  * Function to start up the prime wheel
  */
-function prime_wheel_start(the_wheel) {
+const prime_wheel_start = (the_wheel) => {
     if(prime_wheel_get_cookie()) {
         the_wheel.animate_proc = setInterval(function() { prime_wheel_animate(the_wheel) }, the_wheel.INTERVAL)
         console.log("Running prime wheel effect")
