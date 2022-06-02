@@ -21,7 +21,7 @@ const leData = {
 const leSpam = (newInterval) => {
     if(newInterval !== undefined) leData.leInterval = newInterval
     leData.leProcess = setInterval(() => { 
-        console.log(Math.floor(Math.random() * leInterval))
+        console.log(Math.floor(Math.random() * leData.leInterval))
         console.log(leData.leToucan)
     }, leData.leInterval)
 }
