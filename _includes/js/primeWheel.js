@@ -154,7 +154,7 @@ const primeWheelFuncs = {
     * Function to check prime_wheel_running cookie value
     * Return true if set to true, false if set to false or not set
     */
-    primeWheelGetCookie: = () => {
+    primeWheelGetCookie: () => {
         if(document.cookie.search("prime_wheel_running=") == -1) return false
         if(document.cookie.search("prime_wheel_running=true") == -1) return false
         return true
