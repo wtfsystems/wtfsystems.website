@@ -11,7 +11,7 @@
  *
  */
 
-/*
+/**
  * Prime Wheel class
  */
 class primeWheel {
@@ -85,7 +85,7 @@ class primeWheel {
      * Internal functions
      */
     static #funcs = {
-        /*
+        /**
          * Generate a random x,y offset for drawing the wheel
          */
         setOffset: () => {
@@ -95,8 +95,10 @@ class primeWheel {
             this.#vars.y_offset = this.#vars.y_offset * (Math.random() < 0.5 ? -1 : 1)
         },
 
-        /*
-         * Function to check if a number is prime
+        /**
+         * Check if a number is prime
+         * @param {*} num 
+         * @returns 
          */
         isPrime: (num) => {
             for(var i = 2; i < num; i++) {
@@ -105,7 +107,7 @@ class primeWheel {
             return true
         },
 
-        /*
+        /**
          * Animation function
          */
         animate: () => {
@@ -130,25 +132,30 @@ class primeWheel {
             }
         },
 
-        /*
-         * Function to register the prime wheel cookie
+        /**
+         * Register the prime wheel cookie
+         * @param {*} cookie_value 
+         * @rerurns True if it was registered, false if it was not.
          */
         regCookie: (cookie_value) => {
             if(document.cookie.search("prime_wheel_running=") == -1) {
                 this.#funcs.setCookie(cookie_value)
+                return true
             }
+            return false
         },
 
-        /*
-         * Function to set the prime wheel cookie - expires after 1wk
+        /**
+         * Set the prime wheel cookie - expires after 1wk
+         * @param {*} cookie_value 
          */
         setCookie: (cookie_value) => {
             document.cookie = `prime_wheel_running=${cookie_value} SameSite=Strict Max-Age=604800 Path=/`
         },
 
-        /*
-         * Function to check prime_wheel_running cookie value
-         * Return true if set to true, false if set to false or not set
+        /**
+         * Check the prime_wheel_running cookie value
+         * @returns True if cookie is set to true, false if set to false or not set
          */
         getCookie: () => {
             if(document.cookie.search("prime_wheel_running=") == -1) return false
@@ -166,6 +173,9 @@ class primeWheel {
             return
         }
         this.#vars.start_called = true
+        //  Register cookie if one does not exist.
+        //  If it does and it's set to false, regCookie will just fail.
+        if(this.#funcs.getCookie()) this.#funcs.regCookie(true)
         if(this.#funcs.getCookie()) {
             this.#vars.canvas.style.display = "block"
             this.#vars.animate_proc = setInterval(this.#funcs.animate, this.INTERVAL)
