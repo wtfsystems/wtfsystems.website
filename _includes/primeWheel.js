@@ -51,14 +51,15 @@ class primeWheel {
         //  Make sure the canvas element exists
         if(this.#vars.canvas == null || this.#vars.canvas == undefined) {
             //  If not inject it after the body tag
-            document.body.insertAdjacentHTML("afterbegin", `<canvas id="${this.CANVAS_NAME}"></canvas>`)
+            document.body.insertAdjacentHTML("afterbegin",
+                `<canvas id="${this.CANVAS_NAME}" style="position: fixed; top: 0; left: 0;"></canvas>`)
             this.#vars.canvas = document.getElementById(this.CANVAS_NAME)
         }
         this.#vars.ctx = this.#vars.canvas.getContext("2d")
 
-        //  Make the canvas 1:1 ratio, full width
+        //  Make the canvas fit the screen
         this.#vars.canvas.width = window.innerWidth
-        this.#vars.canvas.height = window.innerWidth
+        this.#vars.canvas.height = window.innerHeight
         //  Calculate center position in the canvas
         this.#vars.center_x = this.#vars.ctx.canvas.width / 2
         this.#vars.center_y = this.#vars.ctx.canvas.height / 2
@@ -98,9 +99,9 @@ class primeWheel {
         },
 
         resize: () => {
-            //  Make the canvas 1:1 ratio, full width
+            //  Make the canvas fit the screen
             this.#vars.canvas.width = window.innerWidth
-            this.#vars.canvas.height = window.innerWidth
+            this.#vars.canvas.height = window.innerHeight
             //  Calculate center position in the canvas
             this.#vars.center_x = this.#vars.ctx.canvas.width / 2
             this.#vars.center_y = this.#vars.ctx.canvas.height / 2
