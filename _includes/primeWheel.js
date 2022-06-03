@@ -38,7 +38,7 @@ class primeWheel {
         height: null,
         center_x: null,
         center_y: null,
-        last_prime: null,
+        last_prime: 2,
         x_offset: null,
         y_offset: null,
         anime_proc: null
@@ -79,10 +79,10 @@ class primeWheel {
          * Generate a random x,y offset for drawing the wheel
          */
         setOffset: () => {
-            this.x_offset = Math.floor(Math.random() * (this.center_x * 2 / 3) + 1)
-            this.x_offset = this.x_offset * (Math.random() < 0.5 ? -1 : 1)
-            this.y_offset = Math.floor(Math.random() * (this.center_y * 2 / 3) + 1)
-            this.y_offset = this.y_offset * (Math.random() < 0.5 ? -1 : 1)
+            this.#vars.x_offset = Math.floor(Math.random() * (this.#vars.center_x * 2 / 3) + 1)
+            this.#vars.x_offset = this.#vars.x_offset * (Math.random() < 0.5 ? -1 : 1)
+            this.#vars.y_offset = Math.floor(Math.random() * (this.#vars.center_y * 2 / 3) + 1)
+            this.#vars.y_offset = this.#vars.y_offset * (Math.random() < 0.5 ? -1 : 1)
         },
 
         /*
@@ -99,9 +99,9 @@ class primeWheel {
          * Resets the effect
          */
         reset: () => {
-            this.ctx.fillStyle = this.BACKGROUND_COLOR
-            this.ctx.fillRect(0, 0, this.width, this.height)
-            this.last_prime = 2
+            this.#vars.ctx.fillStyle = this.BACKGROUND_COLOR
+            this.#vars.ctx.fillRect(0, 0, this.#vars.width, this.#vars.height)
+            this.#vars.last_prime = 2
         },
 
         /*
@@ -111,8 +111,8 @@ class primeWheel {
             //  Prime number found, draw it using cartesian coordinates
             if(this.#funcs.isPrime(this.#vars.last_prime)) {
                 if(this.#vars.SPAM) console.log("Found prime: " + this.#vars.last_prime)
-                this.#vars.ctx.font = this.#vars.FONT_SIZE + " " + this.#vars.FONT_FACE
-                this.#vars.ctx.fillStyle = this.#vars.FONT_COLOR
+                this.#vars.ctx.font = this.FONT_SIZE + " " + this.FONT_FACE
+                this.#vars.ctx.fillStyle = this.FONT_COLOR
                 this.#vars.ctx.fillText(
                     this.#vars.last_prime,
                     (this.#vars.center_x + this.#vars.x_offset) + (this.#vars.last_prime * Math.cos(this.#vars.last_prime)),
@@ -163,10 +163,10 @@ class primeWheel {
      */
     static start() {
         if(this.#funcs.getCookie()) {
-            this.#vars.animate_proc = setInterval(function() { this.#funcs.animate() }, this.#vars.INTERVAL)
+            this.#vars.animate_proc = setInterval(function() { this.#funcs.animate() }, this.INTERVAL)
             console.log("Running prime wheel effect")
         } else {
-            var x = document.getElementById(this.#vars.CANVAS_NAME)
+            var x = document.getElementById(this.CANVAS_NAME)
             x.style.display = "none"
         }
     }
@@ -175,12 +175,12 @@ class primeWheel {
      * Toggle effect on/off
      */
     static toggle() {
-        var x = document.getElementById(this.#vars.CANVAS_NAME)
+        var x = document.getElementById(this.CANVAS_NAME)
         if (x.style.display === "none") {
             //  If off turn on
             this.#funcs.setCookie("true")
             x.style.display = "block"
-            this.#vars.animate_proc = setInterval(function() { this.#funcs.animate() }, this.#vars.INTERVAL)
+            this.#vars.animate_proc = setInterval(function() { this.#funcs.animate() }, this.INTERVAL)
             console.log("Prime wheel toggeled on")
         } else {
             //  Otherwise turn off
