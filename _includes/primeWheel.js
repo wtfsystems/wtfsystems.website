@@ -32,6 +32,7 @@ class primeWheel {
      * Internal variables
      */
     static #vars = {
+        start_called: null,
         canvas: null,
         ctx: null,
         width: null,
@@ -75,6 +76,8 @@ class primeWheel {
         //  Clear the canvas
         this.#vars.ctx.fillStyle = this.BACKGROUND_COLOR
         this.#vars.ctx.fillRect(0, 0, this.#vars.width, this.#vars.height)
+
+        this.#vars.start_called = false
     }
 
     /*
@@ -157,6 +160,11 @@ class primeWheel {
      * Start the effect
      */
     static start() {
+        if(this.#vars.start_called) {
+            console.log("Prime wheel effect already running")
+            return
+        }
+        this.#vars.start_called = true
         if(this.#funcs.getCookie()) {
             this.#vars.canvas.style.display = "block"
             this.#vars.animate_proc = setInterval(this.#funcs.animate, this.INTERVAL)
