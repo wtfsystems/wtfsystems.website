@@ -17,27 +17,24 @@ html, body {
 }
 
 #page {
-    position: absolute;
-    top: 0px;
-    right: 0px;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 #header {
-    position: absolute;
-    top: 0px;
-    right: 0px;
+    align-self: center;
 }
 
 #main {
-    position: absolute;
-    top: 0px;
-    right: 0px;
+    align-self: flex-start;
 }
 
 #footer {
-    position: absolute;
-    top: 0px;
-    right: 0px;
+    align-self: center;
+    flex-basis: 80%;
 }
 
 a:link {

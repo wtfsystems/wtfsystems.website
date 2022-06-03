@@ -52,8 +52,8 @@ class primeWheel {
         this.#vars.canvas = document.getElementById(this.CANVAS_NAME)
         this.#vars.ctx = this.#vars.canvas.getContext("2d")
 
-        this.#vars.canvas.width = this.#vars.canvas.clientWidth * this.SCALE
-        this.#vars.canvas.height = this.#vars.canvas.clientHeight * this.SCALE
+        this.#vars.canvas.width = window.innerWidth
+        this.#vars.canvas.height = window.innerWidth
 
         this.#vars.width = this.#vars.ctx.canvas.width
         this.#vars.height = this.#vars.ctx.canvas.height
@@ -170,6 +170,7 @@ class primeWheel {
             this.#vars.animate_proc = setInterval(this.#funcs.animate, this.INTERVAL)
             console.log("Running prime wheel effect")
         } else {
+            console.log("Prime wheel effect disabled by setting")
             this.#vars.canvas.style.display = "none"
         }
     }
