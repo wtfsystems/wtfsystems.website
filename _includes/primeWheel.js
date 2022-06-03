@@ -161,8 +161,7 @@ class primeWheel {
             this.#vars.animate_proc = setInterval(function() { this.#funcs.animate() }, this.INTERVAL)
             console.log("Running prime wheel effect")
         } else {
-            var x = document.getElementById(this.CANVAS_NAME)
-            x.style.display = "none"
+            this.#vars.canvas.style.display = "none"
         }
     }
 
@@ -170,17 +169,16 @@ class primeWheel {
      * Toggle effect on/off
      */
     static toggle() {
-        var x = document.getElementById(this.CANVAS_NAME)
-        if (x.style.display === "none") {
+        if (this.#vars.canvas.style.display === "none") {
             //  If off turn on
             this.#funcs.setCookie("true")
-            x.style.display = "block"
+            this.#vars.canvas.style.display = "block"
             this.#vars.animate_proc = setInterval(this.#funcs.animate, this.INTERVAL)
             console.log("Prime wheel toggeled on")
         } else {
             //  Otherwise turn off
             this.#funcs.setCookie("false")
-            x.style.display = "none"
+            this.#vars.canvas.style.display = "none"
             clearInterval(this.#vars.animate_proc)
             console.log("Prime wheel toggeled off")
         }
