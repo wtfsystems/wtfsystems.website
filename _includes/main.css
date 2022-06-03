@@ -22,23 +22,23 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background: rgba(0, 0, 0, 128);
+    background-color: rgba(0, 0, 0, 128);
 }
 
 #header {
     align-self: center;
-    background: rgba(0, 0, 0, 128);
+    background-color: rgba(0, 0, 0, 128);
 }
 
 #main {
     align-self: flex-start;
-    background: rgba(0, 0, 0, 128);
+    background-color: rgba(0, 0, 0, 128);
 }
 
 #footer {
     align-self: center;
     flex-basis: 80%;
-    background: rgba(0, 0, 0, 128);
+    background-color: rgba(0, 0, 0, 128);
 }
 
 a:link {
