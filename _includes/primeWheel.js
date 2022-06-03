@@ -109,7 +109,7 @@ class primeWheel {
          */
         animate: () => {
             //  Prime number found, draw it using cartesian coordinates
-            if(#funcs..isPrime(this.#vars.last_prime)) {
+            if(this.#funcs.isPrime(this.#vars.last_prime)) {
                 if(this.#vars.SPAM) console.log("Found prime: " + this.#vars.last_prime)
                 this.#vars.ctx.font = this.#vars.FONT_SIZE + " " + this.#vars.FONT_FACE
                 this.#vars.ctx.fillStyle = this.#vars.FONT_COLOR
@@ -162,8 +162,8 @@ class primeWheel {
      * Start the effect
      */
     static start() {
-        if(this.#funcs.primeWheelGetCookie()) {
-            this.#vars.animate_proc = setInterval(function() { this.#funcs.primeWheelAnimate(this.#vars) }, this.#vars.INTERVAL)
+        if(this.#funcs.getCookie()) {
+            this.#vars.animate_proc = setInterval(function() { this.#funcs.animate() }, this.#vars.INTERVAL)
             console.log("Running prime wheel effect")
         } else {
             var x = document.getElementById(this.#vars.CANVAS_NAME)
@@ -178,13 +178,13 @@ class primeWheel {
         var x = document.getElementById(this.#vars.CANVAS_NAME)
         if (x.style.display === "none") {
             //  If off turn on
-            this.#funcs.primeWheelSetCookie("true")
+            this.#funcs.setCookie("true")
             x.style.display = "block"
-            this.#vars.animate_proc = setInterval(function() { this.#funcs.primeWheelAnimate(this.#vars) }, this.#vars.INTERVAL)
+            this.#vars.animate_proc = setInterval(function() { this.#funcs.animate() }, this.#vars.INTERVAL)
             console.log("Prime wheel toggeled on")
         } else {
             //  Otherwise turn off
-            this.#funcs.primeWheelSetCookie("false")
+            this.#funcs.setCookie("false")
             x.style.display = "none"
             clearInterval(this.#vars.animate_proc)
             console.log("Prime wheel toggeled off")
