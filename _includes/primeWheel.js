@@ -49,7 +49,7 @@ class primeWheel {
      */
     static {
         this.#vars.canvas = document.getElementById(this.CANVAS_NAME)
-        this.#vars.ctx = this.canvas.getContext("2d")
+        this.#vars.ctx = this.#vars.canvas.getContext("2d")
 
         this.#vars.canvas.width = this.#vars.canvas.clientWidth * this.SCALE
         this.#vars.canvas.height = this.#vars.canvas.clientHeight * this.SCALE
