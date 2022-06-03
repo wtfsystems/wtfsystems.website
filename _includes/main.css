@@ -6,7 +6,7 @@ html, body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 128);
     color: #eeffff;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: medium;
@@ -22,23 +22,19 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-color: rgba(0, 0, 0, 128);
 }
 
 #header {
     align-self: center;
-    background-color: rgba(0, 0, 0, 128);
 }
 
 #main {
     align-self: flex-start;
-    background-color: rgba(0, 0, 0, 128);
 }
 
 #footer {
     align-self: center;
     flex-basis: 80%;
-    background-color: rgba(0, 0, 0, 128);
 }
 
 a:link {
