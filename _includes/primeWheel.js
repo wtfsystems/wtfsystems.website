@@ -158,7 +158,7 @@ class primeWheel {
      */
     static start() {
         if(this.#funcs.getCookie()) {
-            this.#vars.animate_proc = setInterval(function() { this.#funcs.animate() }, this.INTERVAL)
+            this.#vars.animate_proc = setInterval(this.#funcs.animate, this.INTERVAL)
             console.log("Running prime wheel effect")
         } else {
             this.#vars.canvas.style.display = "none"
