@@ -184,7 +184,7 @@ class primeWheel {
             clearInterval(this.#vars.animate_proc)
             console.log("Prime wheel toggeled off")
         }
-    },
+    }
 
     /*
      * Resets the effect
