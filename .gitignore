@@ -10,9 +10,7 @@ Gemfile.lock
 _site
 _includes/scripts.html
 
-api/
 dist/
 node_modules/
-.misc
-.npm
+package.json
 browser-sync.js
