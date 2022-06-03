@@ -35,8 +35,6 @@ class primeWheel {
         start_called: null,
         canvas: null,
         ctx: null,
-        width: null,
-        height: null,
         center_x: null,
         center_y: null,
         last_prime: null,
@@ -59,13 +57,10 @@ class primeWheel {
         this.#vars.ctx = this.#vars.canvas.getContext("2d")
 
         this.#vars.canvas.width = window.innerWidth
-        this.#vars.canvas.height = window.innerWidth
+        this.#vars.canvas.height = window.innerHeight
 
-        this.#vars.width = this.#vars.ctx.canvas.width
-        this.#vars.height = this.#vars.ctx.canvas.height
-
-        this.#vars.center_x = this.#vars.width / 2
-        this.#vars.center_y = this.#vars.height / 2
+        this.#vars.center_x = this.#vars.ctx.canvas.width / 2
+        this.#vars.center_y = this.#vars.ctx.canvas.height / 2
 
         this.#vars.last_prime = 2
 
@@ -81,7 +76,7 @@ class primeWheel {
 
         //  Clear the canvas
         this.#vars.ctx.fillStyle = this.BACKGROUND_COLOR
-        this.#vars.ctx.fillRect(0, 0, this.#vars.width, this.#vars.height)
+        this.#vars.ctx.fillRect(0, 0, this.#vars.ctx.canvas.width, this.#vars.ctx.canvas.height)
 
         this.#vars.start_called = false
     }
@@ -205,7 +200,7 @@ class primeWheel {
      */
     static reset() {
         this.#vars.ctx.fillStyle = this.BACKGROUND_COLOR
-        this.#vars.ctx.fillRect(0, 0, this.#vars.width, this.#vars.height)
+        this.#vars.ctx.fillRect(0, 0, this.#vars.ctx.canvas.width, this.#vars.ctx.canvas.height)
         if(this.USE_RANDOM_OFFSET) this.#funcs.setOffset()
         this.#vars.last_prime = 2
     }
