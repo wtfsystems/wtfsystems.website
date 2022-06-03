@@ -16,6 +16,25 @@ html, body {
     box-sizing: border-box;
 }
 
+/*  Hyperlink formatting  */
+a:link {
+    color: #ffcc00;
+    text-decoration: underline dotted;
+}
+a:visited {
+    color: #ff7f50;
+    text-decoration: underline dotted;
+}
+a:hover {
+    color: #8f0f0f;
+    text-decoration: underline dotted;
+}
+a:active {
+    color: #ffcc00;
+    text-decoration: underline dotted;
+}
+
+/*  Div element formatting */
 #page {
     position: relative;
     width: 800px;
@@ -36,21 +55,4 @@ html, body {
 #footer {
     align-self: center;
     flex-basis: 80%;
-}
-
-a:link {
-    color: #ffcc00;
-    text-decoration: underline dotted;
-}
-a:visited {
-    color: #ff7f50;
-    text-decoration: underline dotted;
-}
-a:hover {
-    color: #8f0f0f;
-    text-decoration: underline dotted;
-}
-a:active {
-    color: #ffcc00;
-    text-decoration: underline dotted;
 }
