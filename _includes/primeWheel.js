@@ -192,7 +192,7 @@ class primeWheel {
     static reset() {
         this.#vars.ctx.fillStyle = this.BACKGROUND_COLOR
         this.#vars.ctx.fillRect(0, 0, this.#vars.width, this.#vars.height)
-        if(this.#vars.USE_RANDOM_OFFSET) this.#vars.setOffset()
+        if(this.USE_RANDOM_OFFSET) this.#vars.setOffset()
         this.#vars.last_prime = 2
     }
 }
