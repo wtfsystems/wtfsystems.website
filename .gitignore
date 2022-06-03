@@ -9,4 +9,5 @@ _drafts/
 dist/
 node_modules/
 package.json
+package-lock.json
 browser-sync.js

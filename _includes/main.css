@@ -17,8 +17,9 @@ html, body {
 }
 
 #page {
+    position: relative;
+    width: 800px;
     display: flex;
-    width: 80%;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
