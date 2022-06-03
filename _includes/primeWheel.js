@@ -105,7 +105,7 @@ class primeWheel {
             this.#vars.center_x = this.#vars.ctx.canvas.width / 2
             this.#vars.center_y = this.#vars.ctx.canvas.height / 2
             this.reset()
-        }
+        },
 
         /**
          * Check if a number is prime
