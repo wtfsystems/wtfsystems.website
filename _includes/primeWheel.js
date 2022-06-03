@@ -175,7 +175,7 @@ class primeWheel {
             //  If off turn on
             this.#funcs.setCookie("true")
             x.style.display = "block"
-            this.#vars.animate_proc = setInterval(function() { this.#funcs.animate() }, this.INTERVAL)
+            this.#vars.animate_proc = setInterval(this.#funcs.animate(), this.INTERVAL)
             console.log("Prime wheel toggeled on")
         } else {
             //  Otherwise turn off
