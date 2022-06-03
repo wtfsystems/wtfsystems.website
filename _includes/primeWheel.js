@@ -97,6 +97,16 @@ class primeWheel {
             this.#vars.y_offset = this.#vars.y_offset * (Math.random() < 0.5 ? -1 : 1)
         },
 
+        resize: () => {
+            //  Make the canvas 1:1 ratio, full width
+            this.#vars.canvas.width = window.innerWidth
+            this.#vars.canvas.height = window.innerWidth
+            //  Calculate center position in the canvas
+            this.#vars.center_x = this.#vars.ctx.canvas.width / 2
+            this.#vars.center_y = this.#vars.ctx.canvas.height / 2
+            this.reset()
+        }
+
         /**
          * Check if a number is prime
          * @param {*} num 
