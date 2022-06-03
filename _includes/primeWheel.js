@@ -56,8 +56,9 @@ class primeWheel {
         }
         this.#vars.ctx = this.#vars.canvas.getContext("2d")
 
+        //  Make the canvas 1:1 ratio, full width
         this.#vars.canvas.width = window.innerWidth
-        this.#vars.canvas.height = window.innerHeight
+        this.#vars.canvas.height = window.innerWidth
 
         this.#vars.center_x = this.#vars.ctx.canvas.width / 2
         this.#vars.center_y = this.#vars.ctx.canvas.height / 2
