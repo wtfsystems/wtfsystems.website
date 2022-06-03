@@ -140,10 +140,10 @@ class primeWheel {
         },
 
         /*
-         * Function to set the prime wheel cookie - expires after 24hrs
+         * Function to set the prime wheel cookie - expires after 1wk
          */
         setCookie: (cookie_value) => {
-            document.cookie = `prime_wheel_running=${cookie_value} SameSite=Strict Max-Age=86400 Path=/`
+            document.cookie = `prime_wheel_running=${cookie_value} SameSite=Strict Max-Age=604800 Path=/`
         },
 
         /*
