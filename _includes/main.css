@@ -4,7 +4,7 @@
 html, body {
     width: 100vw;
     height: 100vh;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     background-color: #000000;
     color: #eeffff;
@@ -38,6 +38,7 @@ a:active {
 #page {
     position: relative;
     width: 800px;
+    top: 64px;
     display: flex;
     flex-direction: column;
     justify-content: center;
