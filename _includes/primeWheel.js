@@ -53,7 +53,7 @@ class primeWheel {
         //  Make sure the canvas element exists
         if(this.#vars.canvas == null || this.#vars.canvas == undefined) {
             //  If not inject it after the body tag
-            document.body.insertAdjacentHTML("afterend", `<canvas id="${this.CANVAS_NAME}"></canvas>`)
+            document.body.insertAdjacentHTML("afterbegin", `<canvas id="${this.CANVAS_NAME}"></canvas>`)
             this.#vars.canvas = document.getElementById(this.CANVAS_NAME)
         }
         this.#vars.ctx = this.#vars.canvas.getContext("2d")
