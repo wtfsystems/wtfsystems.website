@@ -1,14 +1,10 @@
 *.code-workspace
-_drafts/
 *_bak/
 .bakignore
 
-.jekyll-cache
-.jekyll-metadata
-.sass-cache
 Gemfile.lock
-_site
-_includes/scripts.html
+_site/
+_drafts/
 
 dist/
 node_modules/
