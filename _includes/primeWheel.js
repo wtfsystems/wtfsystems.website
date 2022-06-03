@@ -64,7 +64,7 @@ class primeWheel {
 
         this.#vars.x_offset = 0
         this.#vars.y_offset = 0
-        this.#funcs.setOffset()
+        primeWheel.setOffset()
 
         //  Clear the canvas
         this.#vars.ctx.fillStyle = this.BACKGROUND_COLOR
