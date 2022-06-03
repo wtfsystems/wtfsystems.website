@@ -59,12 +59,13 @@ class primeWheel {
         //  Make the canvas 1:1 ratio, full width
         this.#vars.canvas.width = window.innerWidth
         this.#vars.canvas.height = window.innerWidth
-
+        //  Calculate center position in the canvas
         this.#vars.center_x = this.#vars.ctx.canvas.width / 2
         this.#vars.center_y = this.#vars.ctx.canvas.height / 2
 
-        this.#vars.last_prime = 2
+        this.#vars.last_prime = 2  //  Start at 2 for finding primes
 
+        //  Set an offset if enabled
         if(this.USE_RANDOM_OFFSET) {
             this.#vars.x_offset = Math.floor(Math.random() * (this.#vars.center_x * 2 / 3) + 1)
             this.#vars.x_offset = this.#vars.x_offset * (Math.random() < 0.5 ? -1 : 1)
@@ -79,7 +80,7 @@ class primeWheel {
         this.#vars.ctx.fillStyle = this.BACKGROUND_COLOR
         this.#vars.ctx.fillRect(0, 0, this.#vars.ctx.canvas.width, this.#vars.ctx.canvas.height)
 
-        this.#vars.start_called = false
+        this.#vars.start_called = false  //  Allow start to be called
     }
 
     /*
