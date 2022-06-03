@@ -62,9 +62,15 @@ class primeWheel {
 
         this.#vars.last_prime = 2
 
-        this.#vars.x_offset = 0
-        this.#vars.y_offset = 0
-        primeWheel.#funcs.setOffset()
+        if(this.USE_RANDOM_OFFSET) {
+            this.#vars.x_offset = Math.floor(Math.random() * (this.#vars.center_x * 2 / 3) + 1)
+            this.#vars.x_offset = this.#vars.x_offset * (Math.random() < 0.5 ? -1 : 1)
+            this.#vars.y_offset = Math.floor(Math.random() * (this.#vars.center_y * 2 / 3) + 1)
+            this.#vars.y_offset = this.#vars.y_offset * (Math.random() < 0.5 ? -1 : 1)
+        } else {
+            this.#vars.x_offset = 0
+            this.#vars.y_offset = 0
+        }
 
         //  Clear the canvas
         this.#vars.ctx.fillStyle = this.BACKGROUND_COLOR

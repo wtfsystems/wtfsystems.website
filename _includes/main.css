@@ -16,7 +16,25 @@ html, body {
     box-sizing: border-box;
 }
 
-#htmlnav {
+#page {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#header {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#main {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#footer {
     position: absolute;
     top: 0px;
     right: 0px;
