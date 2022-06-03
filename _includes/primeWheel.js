@@ -41,7 +41,7 @@ class primeWheel {
         last_prime: 2,
         x_offset: null,
         y_offset: null,
-        anime_proc: null
+        animate_proc: null
     }
 
     /*
@@ -136,7 +136,7 @@ class primeWheel {
          */
         regCookie: (cookie_value) => {
             if(document.cookie.search("prime_wheel_running=") == -1) {
-                this.#funcs.primeWheelSetCookie(cookie_value)
+                this.#funcs.setCookie(cookie_value)
             }
         },
 
