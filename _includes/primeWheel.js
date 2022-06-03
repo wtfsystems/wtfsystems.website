@@ -38,7 +38,7 @@ class primeWheel {
         height: null,
         center_x: null,
         center_y: null,
-        last_prime: 2,
+        last_prime: null,
         x_offset: null,
         y_offset: null,
         animate_proc: null
