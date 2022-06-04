@@ -37,8 +37,10 @@ a:active {
 /*  Div element formatting */
 #page {
     position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     width: 800px;
-    top: 64px;
+    top: 48px;
     display: flex;
     flex-direction: column;
     justify-content: center;
