@@ -139,10 +139,7 @@ class primeWheel {
             this.#vars.last_prime++  //  Increment counter to check for next prime
 
             //  Once the wheel reaches (1400 * SCALE) then reset
-            if(this.#vars.last_prime > 1400 * this.#vars.SCALE) {
-                console.log("Resetting prime wheel effect")
-                this.reset()
-            }
+            if(this.#vars.last_prime > 1400 * this.#vars.SCALE) this.reset()
         },
 
         /**
@@ -222,6 +219,7 @@ class primeWheel {
      * Resets the effect
      */
     static reset() {
+        console.log("Resetting prime wheel effect")
         this.#vars.ctx.fillStyle = this.BACKGROUND_COLOR
         this.#vars.ctx.fillRect(0, 0, this.#vars.ctx.canvas.width, this.#vars.ctx.canvas.height)
         if(this.USE_RANDOM_OFFSET) this.#funcs.setOffset()
