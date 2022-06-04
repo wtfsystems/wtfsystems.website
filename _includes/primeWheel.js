@@ -20,9 +20,9 @@ class primeWheel {
      */
     static BACKGROUND_COLOR = "#000000"       //  Background color
     static FONT_COLOR = "#0000FF"             //  Font color
-    static FONT_SIZE = "16px"                 //  Font size
+    static FONT_SIZE = "8px"                  //  Font size
     static FONT_FACE = "Arial"                //  Font face
-    static SCALE = 4                          //  Scale multiplier
+    static SCALE = 2                          //  Scale multiplier
     static INTERVAL = 5                       //  Speed interval
     static CANVAS_NAME = "primewheel_canvas"  //  Target draw canvas
     static USE_RANDOM_OFFSET = true           //  Offset center position
