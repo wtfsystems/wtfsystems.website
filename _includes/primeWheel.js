@@ -20,7 +20,7 @@ class primeWheel {
      */
     static BACKGROUND_COLOR = "#000000"       //  Background color
     static FONT_COLOR = "#0000FF"             //  Font color
-    static FONT_SIZE = "32px"                 //  Font size
+    static FONT_SIZE = "16px"                 //  Font size
     static FONT_FACE = "Arial"                //  Font face
     static SCALE = 4                          //  Scale multiplier
     static INTERVAL = 5                       //  Speed interval
