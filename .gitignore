@@ -1,6 +1,5 @@
 *.code-workspace
-*_bak/
-.bakignore
+*_backup/
 
 Gemfile.lock
 _site/
@@ -11,3 +10,6 @@ node_modules/
 package.json
 package-lock.json
 browser-sync.js
+
+.docbuilder_config.json
+.docbuilder.log
