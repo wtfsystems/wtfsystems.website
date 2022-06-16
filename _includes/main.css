@@ -51,6 +51,10 @@ a:active {
     align-self: center;
 }
 
+#navbar {
+    align-self: center;
+}
+
 #main {
     align-self: flex-start;
 }

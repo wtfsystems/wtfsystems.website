@@ -2,6 +2,7 @@
 
 	wtfsystems.net
 
+	The MIT License (MIT)
 	Copyright (c) 2021-2022 Matthew Evans
 
 	Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -22,6 +23,8 @@
 	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 	SOFTWARE.
 
+	https://mit-license.org/
+
 -->
 
 <!doctype html>
@@ -41,24 +44,28 @@
 <body>
 
 <div id="page">
-	<div id="header">wtfsystems</div>
+<div id="header">
+	wtfsystems
+</div>
 
-	<div id="main">
-	<!-- Start Jekyll generated content -->
-	{{ content }}
-	<!-- End Jekyll generated content   -->
-	</div>
+<div id="navbar">
+	---
+</div>
 
-	<div id="footer">
+<div id="main">
+<!-- Start Jekyll generated content -->
+{{ content }}
+<!-- End Jekyll generated content   -->
+</div>
+
+<div id="footer">
 	<canvas id="message_canvas" width="240" height="48"></canvas>
-	</div>
+</div>
 </div>
 
 <script>
 
 {% include encodedMessage.js %}
-
-{% include primeWheel.js %}
 
 {% include leToucan.js %}
 
@@ -66,7 +73,6 @@
  * Run the scripts
  */
 leSpam(700)         //  Be annoying to anyone trying to use console lol :p
-primeWheel.start()  //  Start up the prime wheel background effect
 encodedMessage(     //  Display contact email
 	[ 0x63, 0x6f, 0x6e, 0x74, 0x61, 0x63, 0x74, 0x40, 0x77, 0x74, 0x66, 0x73, 0x79, 0x73, 0x74, 0x65, 0x6d, 0x73, 0x2e, 0x6e, 0x65, 0x74 ],
 	{ canvas_width: 240, canvas_height: 48 }
