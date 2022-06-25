@@ -1,6 +1,8 @@
 source "https://rubygems.org"
 
+gem "jekyll"
+gem "webrick"
+
 group :jekyll_plugins do
-  gem "github-pages", "~> 214"
-  gem "jekyll-feed", "~> 0.15.1"
+  gem "github-pages", "~> 226"
 end
