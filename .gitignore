@@ -1,6 +1,7 @@
 *.code-workspace
 *_backup/
 
+.jekyll-metadata
 Gemfile.lock
 _site/
 _drafts/
