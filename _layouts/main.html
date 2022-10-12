@@ -50,31 +50,31 @@
 
 <div id="navbar">
 	<div class="dropdown">
-		<button class="dropbtn">Tech</button>
-		<div class="dropdown-content">
+		<button class="dropbtn" id="menu_button_1" onclick="showMenu(this)">Tech</button>
+		<div class="dropdown-content" id="menu_list_1">
 			<a href="wtengine.html"><img src="img/wte_logo.png" height="24px"/></a>
 			<a href="wtgui.html"><img src="img/wtgui_logo.png" height="24px"/></a>
 		</div>
 	</div>
 	<div class="dropdown">
-		<button class="dropbtn">Demos</button>
-		<div class="dropdown-content">
+		<button class="dropbtn" id="menu_button_2" onclick="showMenu(this)">Demos</button>
+		<div class="dropdown-content" id="menu_list_2">
 			<a href="#">Link 1</a>
 			<a href="#">Link 2</a>
 			<a href="#">Link 3</a>
 		</div>
 	</div>
 	<div class="dropdown">
-		<button class="dropbtn">Games</button>
-		<div class="dropdown-content">
+		<button class="dropbtn" id="menu_button_3" onclick="showMenu(this)">Games</button>
+		<div class="dropdown-content" id="menu_list_3">
 			<a href="#">Link 1</a>
 			<a href="#">Link 2</a>
 			<a href="#">Link 3</a>
 		</div>
 	</div>
 	<div class="dropdown">
-		<button class="dropbtn">About</button>
-		<div class="dropdown-content">
+		<button class="dropbtn" id="menu_button_4" onclick="showMenu(this)">About</button>
+		<div class="dropdown-content" id="menu_list_4">
 			<a href="#">Link 1</a>
 			<a href="#">Link 2</a>
 			<a href="#">Link 3</a>
@@ -95,14 +95,18 @@
 
 <script>
 
-{% include encodedMessage.js %}
+const showMenu = (elm) => {
+	const elmID = elm.id.slice(-1)
+	const menuItem = document.getElementById(`menu_list_${elmID}`)
+	if(menuItem.style.display == "none") menuItem.style.display = "block"
+	else menuItem.style.display = "none"
+}
 
-{% include leToucan.js %}
+{% include encodedMessage.js %}
 
 /*
  * Run the scripts
  */
-leSpam(1200)        //  Be annoying to anyone trying to use console lol :p
 encodedMessage(     //  Display contact email
 	[ 0x63, 0x6f, 0x6e, 0x74, 0x61, 0x63, 0x74, 0x40, 0x77, 0x74, 0x66, 0x73, 0x79, 0x73, 0x74, 0x65, 0x6d, 0x73, 0x2e, 0x6e, 0x65, 0x74 ],
 	{ canvas_width: 200, canvas_height: 24 }
