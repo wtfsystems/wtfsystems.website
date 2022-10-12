@@ -95,11 +95,20 @@
 
 <script>
 
+const checkDevice = () => {
+	if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
+		return true
+	else
+		return false
+}
+
 const showMenu = (elm) => {
-	const elmID = elm.id.slice(-1)
-	const menuItem = document.getElementById(`menu_list_${elmID}`)
-	if(menuItem.style.display == "none") menuItem.style.display = "block"
-	else menuItem.style.display = "none"
+	if(checkDevice()) {
+		const elmID = elm.id.slice(-1)
+		const menuItem = document.getElementById(`menu_list_${elmID}`)
+		if(menuItem.style.display == "none") menuItem.style.display = "block"
+		else menuItem.style.display = "none"
+	}
 }
 
 {% include encodedMessage.js %}

@@ -117,17 +117,3 @@ a:active {
         display: block;
     }
 }
-
-/* Navbar formatting for mobile */
-@media only screen and (hover: none) and (pointer: coarse) {
-    /* Show the dropdown menu on active */
-    /*.dropdown:active .dropdown-content {
-        display: block;
-    }
-    .dropdown:focus .dropdown-content {
-        display: block;
-    }
-    .dropdown .dropdown-content a:hover {
-        display: block;
-    }*/
-}
