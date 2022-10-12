@@ -95,6 +95,9 @@
 
 <script>
 
+/*
+ * Check to see if mobile device and return true if it is
+ */
 const checkDevice = () => {
 	if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
 		return true
@@ -102,6 +105,9 @@ const checkDevice = () => {
 		return false
 }
 
+/*
+ * Shows the navbar menu.  Only runs on mobile devices
+ */
 const showMenu = (elm) => {
 	if(checkDevice()) {
 		const elmID = elm.id.slice(-1)
