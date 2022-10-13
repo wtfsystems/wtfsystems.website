@@ -14,7 +14,7 @@ const checkDevice = () => {
 const showMenu = (elm) => {
 	if(checkDevice()) {
 		const menuItem = document.getElementById(`menu_list_${elm.id.slice(-1)}`)
-		if(menuItem.style.display == "none") menuItem.style.display = "block"
-		else menuItem.style.display = "none"
+		if(menuItem.style.display == "block") menuItem.style.display = "none"
+		else menuItem.style.display = "block"
 	}
 }
