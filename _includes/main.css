@@ -40,7 +40,7 @@ a:active {
     top: 24px;
     left: 50%;
     transform: translateX(-50%);
-    width: 95%;
+    width: 90vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,10 +53,6 @@ a:active {
 
 #navbar {
     align-self: center;
-}
-
-#main {
-    align-self: flex-start;
 }
 
 #footer {
