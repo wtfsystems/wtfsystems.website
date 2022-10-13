@@ -91,9 +91,10 @@ Inheritance diagram for wte::mgr::systems:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a788b7198d0ae026a1774cb84e5888bea"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1mgr_1_1systems.html#a788b7198d0ae026a1774cb84e5888bea">add</a> (<a class="el" href="namespacewte_1_1sys.html#a48e849f74cfbf0055491ff40e2321ec6">sys::system_uptr</a> new_system)</td></tr>
-<tr class="memdesc:a788b7198d0ae026a1774cb84e5888bea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new system to the manager.  <a href="classwte_1_1mgr_1_1systems.html#a788b7198d0ae026a1774cb84e5888bea">More...</a><br /></td></tr>
-<tr class="separator:a788b7198d0ae026a1774cb84e5888bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a01e6261821e8dabeaab424d43d412f"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:a7a01e6261821e8dabeaab424d43d412f"><td class="memTemplItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwte_1_1mgr_1_1systems.html#a7a01e6261821e8dabeaab424d43d412f">add</a> (Args... args)</td></tr>
+<tr class="memdesc:a7a01e6261821e8dabeaab424d43d412f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new system to the manager.  <a href="classwte_1_1mgr_1_1systems.html#a7a01e6261821e8dabeaab424d43d412f">More...</a><br /></td></tr>
+<tr class="separator:a7a01e6261821e8dabeaab424d43d412f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -104,11 +105,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>wte::engine</b></td>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Store the configured systems and process their runs and dispatches. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a788b7198d0ae026a1774cb84e5888bea" name="a788b7198d0ae026a1774cb84e5888bea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a788b7198d0ae026a1774cb84e5888bea">&#9670;&nbsp;</a></span>add()</h2>
+<a id="a7a01e6261821e8dabeaab424d43d412f" name="a7a01e6261821e8dabeaab424d43d412f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a01e6261821e8dabeaab424d43d412f">&#9670;&nbsp;</a></span>add()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename... Args&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -116,8 +119,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>wte::engine</b></td>
         <tr>
           <td class="memname">static const bool wte::mgr::systems::add </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacewte_1_1sys.html#a48e849f74cfbf0055491ff40e2321ec6">sys::system_uptr</a>&#160;</td>
-          <td class="paramname"><em>new_system</em></td><td>)</td>
+          <td class="paramtype">Args...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -146,7 +149,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>wte::engine</b></td>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 18 2022 17:42:28 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+Generated on Wed Oct 12 2022 20:30:53 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
 </small></address>
 </body>
 </html>

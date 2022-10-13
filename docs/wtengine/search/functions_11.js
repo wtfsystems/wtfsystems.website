@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['what_0',['what',['../classwte_1_1runtime__error.html#a45217980b7b7cc41ebd249a88dbd41b9',1,'wte::runtime_error::what()'],['../classwte_1_1exception.html#ab59731fad37159c4638e5b883bb4fc59',1,'wte::exception::what()']]],
-  ['when_1',['when',['../classwte_1_1runtime__error.html#a3e2b898a38623c92953f31d859a5fbc3',1,'wte::runtime_error::when()'],['../classwte_1_1exception.html#a01099d977e54f1f3cabc8bce0df0b98a',1,'wte::exception::when()']]],
-  ['where_2',['where',['../classwte_1_1runtime__error.html#a1778c13cd34c1e21a4ef7ab999e6ba4d',1,'wte::runtime_error::where()'],['../classwte_1_1exception.html#aa88bab8735dd8b76289950638eba300d',1,'wte::exception::where()']]]
+  ['what_0',['what',['../classwte_1_1engine__error.html#a5804bc5cc340b8324d261e2897368a11',1,'wte::engine_error::what()'],['../classwte_1_1engine__exception.html#a59cc10a716e2676b4f4a98b3be55ffb6',1,'wte::engine_exception::what()']]],
+  ['when_1',['when',['../classwte_1_1engine__error.html#ade6176ac3a12539b3e770a2aae3becc4',1,'wte::engine_error::when()'],['../classwte_1_1engine__exception.html#a50c10785dfd937666b8598210de09549',1,'wte::engine_exception::when()']]],
+  ['where_2',['where',['../classwte_1_1engine__error.html#abb561a13612bc87b319d0be57fe4e307',1,'wte::engine_error::where()'],['../classwte_1_1engine__exception.html#ad2645cea100b0604ac590fa6545d1127',1,'wte::engine_exception::where()']]]
 ];
