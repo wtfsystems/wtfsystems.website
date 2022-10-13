@@ -15,7 +15,7 @@ kramdown:
   syntax_highlighter: rouge
 highlighter: rouge
 
-include: [docs]
+include: [docs, img]
 exclude:
   - Gemfile
   - Gemfile.lock
