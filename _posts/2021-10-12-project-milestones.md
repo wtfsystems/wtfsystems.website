@@ -3,4 +3,7 @@ layout: posts
 title: Project Milestones
 ---
 
-This is a test post
+Currently the main features being worked on are:
+- Improvements with the assets and spawner
+- Building with Emscripten
+- Automating the build process via NodeJS
