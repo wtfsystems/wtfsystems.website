@@ -104,8 +104,7 @@ const checkDevice = () => {
  */
 const showMenu = (elm) => {
 	if(checkDevice()) {
-		const elmID = elm.id.slice(-1)
-		const menuItem = document.getElementById(`menu_list_${elmID}`)
+		const menuItem = document.getElementById(`menu_list_${elm.id.slice(-1)}`)
 		if(menuItem.style.display == "none") menuItem.style.display = "block"
 		else menuItem.style.display = "none"
 	}
