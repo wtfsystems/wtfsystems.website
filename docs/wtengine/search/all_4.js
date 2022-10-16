@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['del_0',['del',['../classwte_1_1mgr_1_1variables.html#ade24fac53363e2c67ef33cd2f3708883',1,'wte::mgr::variables']]],
-  ['delete_5fcomponent_1',['delete_component',['../classwte_1_1mgr_1_1world.html#abb1c22c50e6be539f14c650b83146178',1,'wte::mgr::world']]],
-  ['delete_5fentity_2',['delete_entity',['../classwte_1_1mgr_1_1world.html#ac14c840bc97aad4c94d285e7dc165f15',1,'wte::mgr::world']]],
+  ['del_0',['del',['../classwte_1_1mgr_1_1variables.html#a45d68560a0e18c742b4b4d8ad0ec18e0',1,'wte::mgr::variables']]],
+  ['delete_5fcomponent_1',['delete_component',['../classwte_1_1mgr_1_1world.html#a8ee00e9256e2fd4859cb220cb4b405a0',1,'wte::mgr::world']]],
+  ['delete_5fentity_2',['delete_entity',['../classwte_1_1mgr_1_1world.html#ac3838421bc757938e42302b4da31fe7e',1,'wte::mgr::world']]],
   ['delta_5ftime_3',['delta_time',['../classwte_1_1mgr_1_1gfx_1_1renderer.html#a50db7b2f16d460571f75f48f6f518532',1,'wte::mgr::gfx::renderer']]],
   ['destroy_4',['destroy',['../classwte_1_1al__bitmap.html#a8539a81f16cedcf118a4336da89bfc8b',1,'wte::al_bitmap']]],
   ['direction_5',['direction',['../classwte_1_1cmp_1_1gfx_1_1gfx.html#aae29bb5063530aa751a0abb1ddb93584',1,'wte::cmp::gfx::gfx::direction()'],['../classwte_1_1cmp_1_1motion.html#a1434e834a4ac7842e3a19c4a3bfc3957',1,'wte::cmp::motion::direction()']]],

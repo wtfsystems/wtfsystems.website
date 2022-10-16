@@ -7,7 +7,7 @@ var searchData=
   ['sys_4',['sys',['../namespacewte_1_1sys.html',1,'wte']]],
   ['what_5',['what',['../classwte_1_1engine__exception.html#a59cc10a716e2676b4f4a98b3be55ffb6',1,'wte::engine_exception::what()'],['../classwte_1_1engine__error.html#a5804bc5cc340b8324d261e2897368a11',1,'wte::engine_error::what()']]],
   ['what_20the_20engine_3f_6',['What the Engine?',['../index.html',1,'']]],
-  ['when_7',['when',['../classwte_1_1engine__error.html#ade6176ac3a12539b3e770a2aae3becc4',1,'wte::engine_error::when()'],['../classwte_1_1engine__exception.html#a50c10785dfd937666b8598210de09549',1,'wte::engine_exception::when()']]],
+  ['when_7',['when',['../classwte_1_1engine__error.html#ac06a510dfbf38a4a509b6b5db3e40044',1,'wte::engine_error::when()'],['../classwte_1_1engine__exception.html#aee1cec0e6184b58e5c551489acd2508e',1,'wte::engine_exception::when()']]],
   ['where_8',['where',['../classwte_1_1engine__error.html#abb561a13612bc87b319d0be57fe4e307',1,'wte::engine_error::where()'],['../classwte_1_1engine__exception.html#ad2645cea100b0604ac590fa6545d1127',1,'wte::engine_exception::where()']]],
   ['width_9',['width',['../classwte_1_1cmp_1_1hitbox.html#af23b8b5f3393b47f659aeebc2b2960ff',1,'wte::cmp::hitbox']]],
   ['world_10',['world',['../classwte_1_1mgr_1_1world.html',1,'wte::mgr']]],
