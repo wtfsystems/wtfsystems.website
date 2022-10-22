@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['joystick_5fdetected_0',['joystick_detected',['../structwte_1_1config_1_1flags.html#a09000c1cf3e15cd23efa92eafb82e48a',1,'wte::config::flags']]]
+  ['joystick_5finstalled_0',['joystick_installed',['../structwte_1_1config_1_1flags.html#ada13e2aa71ee64dee500c817c1a7ad2b',1,'wte::config::flags']]]
 ];
