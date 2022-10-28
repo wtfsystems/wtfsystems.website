@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['height_0',['height',['../classwte_1_1cmp_1_1hitbox.html#a1dedcf5f294b9c990e19331952625143',1,'wte::cmp::hitbox']]]
+  ['fps_0',['fps',['../classwte_1_1mgr_1_1gfx_1_1renderer.html#a0f97f662f1210c4fa12e490fb51bb68f',1,'wte::mgr::gfx::renderer']]]
 ];

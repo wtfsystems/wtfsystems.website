@@ -14,5 +14,6 @@ var searchData=
   ['config_11',['config',['../classwte_1_1config.html#a65cb634afd146758e9122c2e605d1b62',1,'wte::config::config()'],['../classwte_1_1config.html',1,'wte::config']]],
   ['const_5fcomponent_5fcontainer_12',['const_component_container',['../namespacewte.html#a4fc4f86a660a0c1c54c06a1186c7d0f8',1,'wte']]],
   ['const_5fentity_5fcontainer_13',['const_entity_container',['../namespacewte.html#adb06d3544221b0d8128e07b63ff0760e',1,'wte']]],
-  ['controls_14',['controls',['../structwte_1_1config_1_1controls.html',1,'wte::config']]]
+  ['controls_14',['controls',['../structwte_1_1config_1_1controls.html',1,'wte::config']]],
+  ['custom_5finput_5fevents_15',['custom_input_events',['../classwte_1_1input.html#add3e93438b0a5c832403ab25f8134da6',1,'wte::input']]]
 ];

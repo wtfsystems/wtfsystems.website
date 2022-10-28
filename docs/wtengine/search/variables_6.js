@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['input_5fenabled_0',['input_enabled',['../structwte_1_1config_1_1flags.html#a090769e7adc52d6eb93326be4eb7db25',1,'wte::config::flags']]],
-  ['is_5frunning_1',['is_running',['../structwte_1_1config_1_1flags.html#aa4114cdf838bede2cf33dd1d1b7bf7e8',1,'wte::config::flags']]]
+  ['height_0',['height',['../classwte_1_1cmp_1_1hitbox.html#a1dedcf5f294b9c990e19331952625143',1,'wte::cmp::hitbox']]]
 ];
