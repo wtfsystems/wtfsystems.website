@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['keyboard_5finstalled_0',['keyboard_installed',['../structwte_1_1config_1_1flags.html#a62a6bb6096a7e565984f9cc8f0d7bb20',1,'wte::config::flags']]]
+  ['last_5frender_0',['last_render',['../classwte_1_1mgr_1_1gfx_1_1renderer.html#ad43e54487434fe73646174cf73c20dbf',1,'wte::mgr::gfx::renderer']]],
+  ['layer_1',['layer',['../classwte_1_1cmp_1_1gfx_1_1gfx.html#a75523649b69ed356e5800128693b7a6f',1,'wte::cmp::gfx::gfx']]]
 ];
