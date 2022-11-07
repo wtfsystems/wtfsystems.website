@@ -155,9 +155,14 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwte_1_1wte__build__options.html">wte_build_options</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwte_1_1_w_t_f___d_i_s_p_l_a_y___m_o_d_e.html">WTF_DISPLAY_MODE</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:ab5c8b619ae591e63999186794d096474"><td class="memItemLeft" align="right" valign="top"><a id="ab5c8b619ae591e63999186794d096474" name="ab5c8b619ae591e63999186794d096474"></a>
+typedef struct <a class="el" href="structwte_1_1_w_t_f___d_i_s_p_l_a_y___m_o_d_e.html">wte::WTF_DISPLAY_MODE</a>&#160;</td><td class="memItemRight" valign="bottom"><b>WTF_DISPLAY_MODE</b></td></tr>
+<tr class="separator:ab5c8b619ae591e63999186794d096474"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa818a09e9bc265790bb3a9e3e7d54758"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewte.html#aa818a09e9bc265790bb3a9e3e7d54758">handler_types</a> = std::variant&lt; <a class="el" href="namespacewte_1_1handler.html#a1fffb8d15a80cc407c5f0597b26c51dc">handler::key</a>, handler::mouse_axis, handler::mouse_button, handler::mouse_display, handler::joystick_axis, handler::joystick_button, handler::touch &gt;</td></tr>
 <tr class="separator:aa818a09e9bc265790bb3a9e3e7d54758"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bb0a7e58ebc59b033e8f9d343873a5a"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewte.html#a2bb0a7e58ebc59b033e8f9d343873a5a">msg_args</a></td></tr>
@@ -243,6 +248,8 @@ Variables</h2></td></tr>
 <tr class="memitem:a7ec0ffcecdecde58b6e7d998135289d4"><td class="memItemLeft" align="right" valign="top"><a id="a7ec0ffcecdecde58b6e7d998135289d4" name="a7ec0ffcecdecde58b6e7d998135289d4"></a>
 constexpr <a class="el" href="structwte_1_1wte__build__options.html">wte_build_options</a>&#160;</td><td class="memItemRight" valign="bottom"><b>build_options</b></td></tr>
 <tr class="separator:a7ec0ffcecdecde58b6e7d998135289d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06821c5ccd00d92aebb0c54c3ddc2a3d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structwte_1_1_w_t_f___d_i_s_p_l_a_y___m_o_d_e.html">WTF_DISPLAY_MODE</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewte.html#a06821c5ccd00d92aebb0c54c3ddc2a3d">wtf_display_modes</a></td></tr>
+<tr class="separator:a06821c5ccd00d92aebb0c54c3ddc2a3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >wtengine | File: exceptions.hpp</p>
@@ -643,10 +650,42 @@ template&lt;<a class="el" href="namespacewte.html#a509fed10b8538a13a07fb3f1b9667
 
 </div>
 </div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a06821c5ccd00d92aebb0c54c3ddc2a3d" name="a06821c5ccd00d92aebb0c54c3ddc2a3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06821c5ccd00d92aebb0c54c3ddc2a3d">&#9670;&#160;</a></span>wtf_display_modes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structwte_1_1_w_t_f___d_i_s_p_l_a_y___m_o_d_e.html">WTF_DISPLAY_MODE</a>&gt; wte::wtf_display_modes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    </div>
+<div class="line">    WTF_DISPLAY_MODE { <span class="stringliteral">&quot;1440x1080&quot;</span>, 1440, 1080 },</div>
+<div class="line">    <a class="code hl_struct" href="structwte_1_1_w_t_f___d_i_s_p_l_a_y___m_o_d_e.html">WTF_DISPLAY_MODE</a> { <span class="stringliteral">&quot;1600x1200&quot;</span>, 1600, 1200 },</div>
+<div class="line">    WTF_DISPLAY_MODE { <span class="stringliteral">&quot;3200x2400&quot;</span>, 3200, 2400 },</div>
+<div class="line"> </div>
+<div class="line">    </div>
+<div class="line">    WTF_DISPLAY_MODE { <span class="stringliteral">&quot;1920x1080&quot;</span>, 1920, 1080 },</div>
+<div class="line">    WTF_DISPLAY_MODE { <span class="stringliteral">&quot;2560x1440&quot;</span>, 2560, 1440 },</div>
+<div class="line">    WTF_DISPLAY_MODE { <span class="stringliteral">&quot;3840x2160&quot;</span>, 3840, 2160 },</div>
+<div class="line"> </div>
+<div class="line">    </div>
+<div class="line">    WTF_DISPLAY_MODE { <span class="stringliteral">&quot;2520x1080&quot;</span>, 2520, 1080 },</div>
+<div class="line">    WTF_DISPLAY_MODE { <span class="stringliteral">&quot;3440x1440&quot;</span>, 3440, 1440 },</div>
+<div class="line">    WTF_DISPLAY_MODE { <span class="stringliteral">&quot;5120x2160&quot;</span>, 5120, 2160 }</div>
+<div class="line">}</div>
+<div class="ttc" id="astructwte_1_1_w_t_f___d_i_s_p_l_a_y___m_o_d_e_html"><div class="ttname"><a href="structwte_1_1_w_t_f___d_i_s_p_l_a_y___m_o_d_e.html">wte::WTF_DISPLAY_MODE</a></div><div class="ttdef"><b>Definition:</b> _defines.hpp:141</div></div>
+</div><!-- fragment -->
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 5 2022 10:18:27 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Mon Nov 7 2022 15:13:43 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>
