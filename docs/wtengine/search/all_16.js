@@ -15,5 +15,7 @@ var searchData=
   ['wte_12',['wte',['../namespacewte.html',1,'']]],
   ['wte_5fasset_13',['wte_asset',['../namespacewte.html#afe8c5c490a75d19f3649cb7e7322af05',1,'wte']]],
   ['wte_5fbuild_5foptions_14',['wte_build_options',['../structwte_1_1wte__build__options.html',1,'wte']]],
-  ['wtf_5fdisplay_5fmode_15',['WTF_DISPLAY_MODE',['../structwte_1_1_w_t_f___d_i_s_p_l_a_y___m_o_d_e.html',1,'wte']]]
+  ['wtf_5fdisplay_5fmode_15',['WTF_DISPLAY_MODE',['../structwte_1_1_w_t_f___d_i_s_p_l_a_y___m_o_d_e.html',1,'wte']]],
+  ['wtf_5fdisplay_5fmodes_16',['wtf_display_modes',['../namespacewte.html#a06821c5ccd00d92aebb0c54c3ddc2a3d',1,'wte']]],
+  ['wtf_5fscale_5ffactors_17',['wtf_scale_factors',['../namespacewte.html#ae93af606e7048b9f30b78cd90133b62b',1,'wte']]]
 ];
