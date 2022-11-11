@@ -148,7 +148,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manage the input queue and process events.  <a href="classwte_1_1input.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1logger.html">logger</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skip logging. This option is built when the engine is NOT in debug mode.  <a href="classwte_1_1logger.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs exceptions to file. This option is built when the engine is in debug mode.  <a href="classwte_1_1logger.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1message.html">message</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define individual message objects.  <a href="classwte_1_1message.html#details">More...</a><br /></td></tr>
@@ -235,10 +235,6 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a375fa089aa5c535dbbca649128b9855d"><td class="memTemplParams" colspan="2"><a id="a375fa089aa5c535dbbca649128b9855d" name="a375fa089aa5c535dbbca649128b9855d"></a>
-template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:a375fa089aa5c535dbbca649128b9855d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>logger_add</b> (Args... args)</td></tr>
-<tr class="separator:a375fa089aa5c535dbbca649128b9855d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b40076ac3a17712ea50b05a45e8ff58"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacewte.html#a509fed10b8538a13a07fb3f1b9667695">handler_scopes</a> S, <a class="el" href="namespacewte.html#a365a9372b5ea4b80d63e79262524a0eb">handler_events</a> IDX, typename T &gt; </td></tr>
 <tr class="memitem:a8b40076ac3a17712ea50b05a45e8ff58"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewte.html#a8b40076ac3a17712ea50b05a45e8ff58">add_handler</a> (const <a class="el" href="namespacewte.html#aa818a09e9bc265790bb3a9e3e7d54758">handler_types</a> &amp;handle)</td></tr>
 <tr class="memdesc:a8b40076ac3a17712ea50b05a45e8ff58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to add an input handle.  <a href="namespacewte.html#a8b40076ac3a17712ea50b05a45e8ff58">More...</a><br /></td></tr>
@@ -252,10 +248,10 @@ constexpr <a class="el" href="structwte_1_1wte__build__options.html">wte_build_o
 <tr class="memitem:a09ac11c98b3fc2701bd78ec6ea65de5a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structwte_1_1_w_t_f___d_i_s_p_l_a_y___m_o_d_e.html">WTF_DISPLAY_MODE</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewte.html#a09ac11c98b3fc2701bd78ec6ea65de5a">display_modes</a></td></tr>
 <tr class="memdesc:a09ac11c98b3fc2701bd78ec6ea65de5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default engine display modes.  <a href="namespacewte.html#a09ac11c98b3fc2701bd78ec6ea65de5a">More...</a><br /></td></tr>
 <tr class="separator:a09ac11c98b3fc2701bd78ec6ea65de5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ae6c6d26da9d25a8d9c5b0268cd9f21"><td class="memItemLeft" align="right" valign="top"><a id="a1ae6c6d26da9d25a8d9c5b0268cd9f21" name="a1ae6c6d26da9d25a8d9c5b0268cd9f21"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>scale_factors</b> [] = { .75f, 1.0f, 1.25f, 1.5f, 2.0f }</td></tr>
-<tr class="memdesc:a1ae6c6d26da9d25a8d9c5b0268cd9f21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default engine scale factors. <br /></td></tr>
-<tr class="separator:a1ae6c6d26da9d25a8d9c5b0268cd9f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6e095f58b99020005284c6971a872da"><td class="memItemLeft" align="right" valign="top"><a id="ab6e095f58b99020005284c6971a872da" name="ab6e095f58b99020005284c6971a872da"></a>
+std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>scale_factors</b> = { .75f, 1.0f, 1.25f, 1.5f, 2.0f }</td></tr>
+<tr class="memdesc:ab6e095f58b99020005284c6971a872da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default engine scale factors. <br /></td></tr>
+<tr class="separator:ab6e095f58b99020005284c6971a872da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >wtengine | File: exceptions.hpp</p>
@@ -693,7 +689,7 @@ template&lt;<a class="el" href="namespacewte.html#a509fed10b8538a13a07fb3f1b9667
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 9 2022 11:35:56 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Fri Nov 11 2022 15:23:31 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

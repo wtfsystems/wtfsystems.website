@@ -83,7 +83,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Skip logging. This option is built when the engine is NOT in debug mode.  
+<p>Logs exceptions to file. This option is built when the engine is in debug mode.  
  <a href="classwte_1_1logger.html#details">More...</a></p>
 
 <p><code>#include &lt;logger.hpp&gt;</code></p>
@@ -101,9 +101,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a cla
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a07afa27feef0548c0979a1a102323dc6"><td class="memItemLeft" align="right" valign="top"><a id="a07afa27feef0548c0979a1a102323dc6" name="a07afa27feef0548c0979a1a102323dc6"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (const std::string &amp;d, const std::string &amp;l, const uint &amp;c, const int64_t &amp;t)</td></tr>
-<tr class="separator:a07afa27feef0548c0979a1a102323dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a099d4bb398ea58d285adc784ec8b416a"><td class="memItemLeft" align="right" valign="top">static const void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1logger.html#a099d4bb398ea58d285adc784ec8b416a">log</a> (const std::string &amp;d, const std::string &amp;l, const uint &amp;c, const int64_t &amp;t)</td></tr>
+<tr class="memdesc:a099d4bb398ea58d285adc784ec8b416a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add exception information to the logger.  <a href="classwte_1_1logger.html#a099d4bb398ea58d285adc784ec8b416a">More...</a><br /></td></tr>
+<tr class="separator:a099d4bb398ea58d285adc784ec8b416a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -112,14 +112,74 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>engine</b></td></tr>
 <tr class="separator:a614ec0a1871249dee57baf50d4501271"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Skip logging. This option is built when the engine is NOT in debug mode. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<div class="textblock"><p >Logs exceptions to file. This option is built when the engine is in debug mode. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a099d4bb398ea58d285adc784ec8b416a" name="a099d4bb398ea58d285adc784ec8b416a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a099d4bb398ea58d285adc784ec8b416a">&#9670;&#160;</a></span>log()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const void wte::logger::log </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint &amp;&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int64_t &amp;&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add exception information to the logger. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">d</td><td>Description of item. </td></tr>
+    <tr><td class="paramname">l</td><td>Location of item. </td></tr>
+    <tr><td class="paramname">c</td><td>Error code of item. </td></tr>
+    <tr><td class="paramname">t</td><td>Engine time of item. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/wtengine/_debug/logger.hpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 9 2022 11:35:56 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Fri Nov 11 2022 15:23:31 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>
