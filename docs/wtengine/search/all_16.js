@@ -6,7 +6,7 @@ var searchData=
   ['mgr_3',['mgr',['../namespacewte_1_1mgr.html',1,'wte']]],
   ['sys_4',['sys',['../namespacewte_1_1sys.html',1,'wte']]],
   ['what_20the_20engine_3f_5',['What the Engine?',['../index.html',1,'']]],
-  ['width_6',['width',['../classwte_1_1cmp_1_1hitbox.html#af23b8b5f3393b47f659aeebc2b2960ff',1,'wte::cmp::hitbox']]],
+  ['width_6',['width',['../structwte_1_1_w_t_f___d_i_s_p_l_a_y___m_o_d_e.html#a84b51492a8c8541e356bdcf4d72c85b0',1,'wte::WTF_DISPLAY_MODE::width()'],['../classwte_1_1cmp_1_1hitbox.html#af23b8b5f3393b47f659aeebc2b2960ff',1,'wte::cmp::hitbox::width()']]],
   ['world_7',['world',['../classwte_1_1mgr_1_1world.html',1,'wte::mgr']]],
   ['world_5fmap_8',['world_map',['../namespacewte.html#a4b889fdc5d76fcd57b54f6db840e8c39',1,'wte']]],
   ['wte_9',['wte',['../namespacewte.html',1,'']]],
