@@ -95,18 +95,6 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1al__audio.html">al_audio</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a wrapper to Allegro audio streams.  <a href="classwte_1_1al__audio.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1al__bitmap.html">al_bitmap</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a wrapper to Allegro bitmaps.  <a href="classwte_1_1al__bitmap.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1al__font.html">al_font</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a wrapper to Allegro fonts.  <a href="classwte_1_1al__font.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1al__sample.html">al_sample</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a wrapper to Allegro samples.  <a href="classwte_1_1al__sample.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwte_1_1commands.html">commands</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container for storing engine commands expressed as a lambda.  <a href="classwte_1_1commands.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -205,10 +193,34 @@ Functions</h2></td></tr>
 <tr class="memitem:a8b40076ac3a17712ea50b05a45e8ff58"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewte.html#a8b40076ac3a17712ea50b05a45e8ff58">add_handler</a> (const <a class="el" href="namespacewte.html#aa818a09e9bc265790bb3a9e3e7d54758">handler_types</a> &amp;handle)</td></tr>
 <tr class="memdesc:a8b40076ac3a17712ea50b05a45e8ff58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to add an input handle.  <a href="namespacewte.html#a8b40076ac3a17712ea50b05a45e8ff58">More...</a><br /></td></tr>
 <tr class="separator:a8b40076ac3a17712ea50b05a45e8ff58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecc1799d46efe429c34d69901e93f2a8"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aecc1799d46efe429c34d69901e93f2a8"><td class="memTemplItemLeft" align="right" valign="top">static const <a class="el" href="namespacewte.html#afe8c5c490a75d19f3649cb7e7322af05">wte_asset</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewte.html#aecc1799d46efe429c34d69901e93f2a8">make_asset</a> (const T &amp;obj)</td></tr>
-<tr class="memdesc:aecc1799d46efe429c34d69901e93f2a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an asset (shared) pointer.  <a href="namespacewte.html#aecc1799d46efe429c34d69901e93f2a8">More...</a><br /></td></tr>
-<tr class="separator:aecc1799d46efe429c34d69901e93f2a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2607118cd48e5aa217a5cd4ca24ea6e"><td class="memTemplParams" colspan="2">template&lt;typename ALLEGRO_BITMAP &gt; </td></tr>
+<tr class="memitem:ad2607118cd48e5aa217a5cd4ca24ea6e"><td class="memTemplItemLeft" align="right" valign="top">static const <a class="el" href="namespacewte.html#afe8c5c490a75d19f3649cb7e7322af05">wte_asset</a>&lt; ALLEGRO_BITMAP &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewte.html#ad2607118cd48e5aa217a5cd4ca24ea6e">make_asset</a> (const int &amp;w, const int &amp;h)</td></tr>
+<tr class="memdesc:ad2607118cd48e5aa217a5cd4ca24ea6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an Allegro bitmap asset of size width x height.  <a href="namespacewte.html#ad2607118cd48e5aa217a5cd4ca24ea6e">More...</a><br /></td></tr>
+<tr class="separator:ad2607118cd48e5aa217a5cd4ca24ea6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28cbf29337df8c28b91687f05d68d938"><td class="memTemplParams" colspan="2">template&lt;typename ALLEGRO_FONT &gt; </td></tr>
+<tr class="memitem:a28cbf29337df8c28b91687f05d68d938"><td class="memTemplItemLeft" align="right" valign="top">static const <a class="el" href="namespacewte.html#afe8c5c490a75d19f3649cb7e7322af05">wte_asset</a>&lt; ALLEGRO_FONT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewte.html#a28cbf29337df8c28b91687f05d68d938">make_asset</a> ()</td></tr>
+<tr class="memdesc:a28cbf29337df8c28b91687f05d68d938"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the Allegro built-in font.  <a href="namespacewte.html#a28cbf29337df8c28b91687f05d68d938">More...</a><br /></td></tr>
+<tr class="separator:a28cbf29337df8c28b91687f05d68d938"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dc4b674f3e6aa8fd03f5f0759ec5395"><td class="memTemplParams" colspan="2">template&lt;typename ALLEGRO_FONT &gt; </td></tr>
+<tr class="memitem:a0dc4b674f3e6aa8fd03f5f0759ec5395"><td class="memTemplItemLeft" align="right" valign="top">static const <a class="el" href="namespacewte.html#afe8c5c490a75d19f3649cb7e7322af05">wte_asset</a>&lt; ALLEGRO_FONT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewte.html#a0dc4b674f3e6aa8fd03f5f0759ec5395">make_asset</a> (const std::string &amp;fname, const int &amp;size, const int &amp;flags)</td></tr>
+<tr class="memdesc:a0dc4b674f3e6aa8fd03f5f0759ec5395"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an Allegro font asset.  <a href="namespacewte.html#a0dc4b674f3e6aa8fd03f5f0759ec5395">More...</a><br /></td></tr>
+<tr class="separator:a0dc4b674f3e6aa8fd03f5f0759ec5395"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e77f070fc7a3ce40d0f0d6e80e06ef0"><td class="memTemplParams" colspan="2">template&lt;typename ALLEGRO_AUDIO_STREAM &gt; </td></tr>
+<tr class="memitem:a3e77f070fc7a3ce40d0f0d6e80e06ef0"><td class="memTemplItemLeft" align="right" valign="top">static const <a class="el" href="namespacewte.html#afe8c5c490a75d19f3649cb7e7322af05">wte_asset</a>&lt; ALLEGRO_AUDIO_STREAM &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewte.html#a3e77f070fc7a3ce40d0f0d6e80e06ef0">make_asset</a> (const std::string &amp;fname, const std::size_t &amp;buffer, const int &amp;samples)</td></tr>
+<tr class="memdesc:a3e77f070fc7a3ce40d0f0d6e80e06ef0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an Allegro audio stream asset.  <a href="namespacewte.html#a3e77f070fc7a3ce40d0f0d6e80e06ef0">More...</a><br /></td></tr>
+<tr class="separator:a3e77f070fc7a3ce40d0f0d6e80e06ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa3c91e7d2476005477f21ab23c38bb2"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aaa3c91e7d2476005477f21ab23c38bb2"><td class="memTemplItemLeft" align="right" valign="top">static const <a class="el" href="namespacewte.html#afe8c5c490a75d19f3649cb7e7322af05">wte_asset</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewte.html#aaa3c91e7d2476005477f21ab23c38bb2">make_asset</a> (const std::string &amp;fname)</td></tr>
+<tr class="memdesc:aaa3c91e7d2476005477f21ab23c38bb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an Allegro asset from file.  <a href="namespacewte.html#aaa3c91e7d2476005477f21ab23c38bb2">More...</a><br /></td></tr>
+<tr class="separator:aaa3c91e7d2476005477f21ab23c38bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53dbb8abf8396d388cb197b62d2b059d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a53dbb8abf8396d388cb197b62d2b059d"><td class="memTemplItemLeft" align="right" valign="top">static const <a class="el" href="namespacewte.html#afe8c5c490a75d19f3649cb7e7322af05">wte_asset</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewte.html#a53dbb8abf8396d388cb197b62d2b059d">make_asset</a> (T &amp;obj)</td></tr>
+<tr class="memdesc:a53dbb8abf8396d388cb197b62d2b059d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an asset from an object.  <a href="namespacewte.html#a53dbb8abf8396d388cb197b62d2b059d">More...</a><br /></td></tr>
+<tr class="separator:a53dbb8abf8396d388cb197b62d2b059d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade7f4a8b113cd2a2d3e1ab954b0e9f21"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ade7f4a8b113cd2a2d3e1ab954b0e9f21"><td class="memTemplItemLeft" align="right" valign="top">static const <a class="el" href="namespacewte.html#afe8c5c490a75d19f3649cb7e7322af05">wte_asset</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewte.html#ade7f4a8b113cd2a2d3e1ab954b0e9f21">make_asset</a> (std::function&lt; T()&gt; func, std::function&lt; void()&gt; deleter)</td></tr>
+<tr class="memdesc:ade7f4a8b113cd2a2d3e1ab954b0e9f21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an asset from an incomplete type.  <a href="namespacewte.html#ade7f4a8b113cd2a2d3e1ab954b0e9f21">More...</a><br /></td></tr>
+<tr class="separator:ade7f4a8b113cd2a2d3e1ab954b0e9f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -224,82 +236,82 @@ std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >wtengine | File: exceptions.hpp</p>
 <dl class="section author"><dt>Author</dt><dd>Matthew Evans </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>0.8.0 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.8.1 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>See LICENSE.md for copyright information. </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2019-2022</dd></dl>
 <p>wtengine | File: logger.hpp</p>
 <dl class="section author"><dt>Author</dt><dd>Matthew Evans </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>0.8.0 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.8.1 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>See LICENSE.md for copyright information. </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2019-2022</dd></dl>
 <p>wtengine | File: commands.hpp</p>
 <dl class="section author"><dt>Author</dt><dd>Matthew Evans </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>0.8.0 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.8.1 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>See LICENSE.md for copyright information. </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2019-2022</dd></dl>
 <p>wtengine | File: engine_time.hpp</p>
 <dl class="section author"><dt>Author</dt><dd>Matthew Evans </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>0.8.0 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.8.1 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>See LICENSE.md for copyright information. </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2019-2022</dd></dl>
 <p>wtengine | File: message.hpp</p>
 <dl class="section author"><dt>Author</dt><dd>Matthew Evans </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>0.8.0 </dd></dl>
-<dl class="section copyright"><dt>Copyright</dt><dd>See LICENSE.md for copyright information. </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2019-2022</dd></dl>
-<p>wtengine | File: wrappers.hpp</p>
-<dl class="section author"><dt>Author</dt><dd>Matthew Evans </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>0.8.0 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.8.1 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>See LICENSE.md for copyright information. </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2019-2022</dd></dl>
 <p>wtengine | File: wte_asset.hpp</p>
 <dl class="section author"><dt>Author</dt><dd>Matthew Evans </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>0.8.0 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.8.1 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>See LICENSE.md for copyright information. </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2019-2022</dd></dl>
 <p>wtengine | File: display.hpp</p>
 <dl class="section author"><dt>Author</dt><dd>Matthew Evans </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>0.8.0 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.8.1 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>See LICENSE.md for copyright information. </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2019-2022</dd></dl>
 <p>wtengine | File: engine.hpp</p>
 <dl class="section author"><dt>Author</dt><dd>Matthew Evans </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>0.8.0 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.8.1 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>See LICENSE.md for copyright information. </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2019-2022</dd></dl>
 <p>wtengine | File: input.hpp</p>
 <dl class="section author"><dt>Author</dt><dd>Matthew Evans </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>0.8.0 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.8.1 </dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>See LICENSE.md for copyright information. </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2019-2022</dd></dl>
+<p>wtengine | File: assets.hpp</p>
+<dl class="section author"><dt>Author</dt><dd>Matthew Evans </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.8.1 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>See LICENSE.md for copyright information. </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2019-2022</dd></dl>
 <p>wtengine | File: audio.hpp</p>
 <dl class="section author"><dt>Author</dt><dd>Matthew Evans </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>0.8.0 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.8.1 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>See LICENSE.md for copyright information. </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2019-2022</dd></dl>
 <p>wtengine | File: messages.hpp</p>
 <dl class="section author"><dt>Author</dt><dd>Matthew Evans </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>0.8.0 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.8.1 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>See LICENSE.md for copyright information. </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2019-2022</dd></dl>
 <p>wtengine | File: renderer.hpp</p>
 <dl class="section author"><dt>Author</dt><dd>Matthew Evans </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>0.8.0 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.8.1 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>See LICENSE.md for copyright information. </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2019-2022</dd></dl>
 <p>wtengine | File: spawner.hpp</p>
 <dl class="section author"><dt>Author</dt><dd>Matthew Evans </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>0.8.0 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.8.1 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>See LICENSE.md for copyright information. </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2019-2022</dd></dl>
 <p>wtengine | File: systems.hpp</p>
 <dl class="section author"><dt>Author</dt><dd>Matthew Evans </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>0.8.0 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.8.1 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>See LICENSE.md for copyright information. </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2019-2022</dd></dl>
 <p>wtengine | File: world.hpp</p>
 <dl class="section author"><dt>Author</dt><dd>Matthew Evans </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>0.8.0 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.8.1 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>See LICENSE.md for copyright information. </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2019-2022 </dd></dl>
 </div><h2 class="groupheader">Typedef Documentation</h2>
@@ -620,8 +632,98 @@ template&lt;<a class="el" href="namespacewte.html#a509fed10b8538a13a07fb3f1b9667
 
 </div>
 </div>
-<a id="aecc1799d46efe429c34d69901e93f2a8" name="aecc1799d46efe429c34d69901e93f2a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aecc1799d46efe429c34d69901e93f2a8">&#9670;&#160;</a></span>make_asset()</h2>
+<a id="a28cbf29337df8c28b91687f05d68d938" name="a28cbf29337df8c28b91687f05d68d938"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28cbf29337df8c28b91687f05d68d938">&#9670;&#160;</a></span>make_asset() <span class="overload">[1/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ALLEGRO_FONT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="namespacewte.html#afe8c5c490a75d19f3649cb7e7322af05">wte_asset</a>&lt; ALLEGRO_FONT &gt; wte::make_asset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create the Allegro built-in font. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ALLEGRO_FONT</td><td>Allegro font structure. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A new Allegro font asset with the default font. </dd></dl>
+
+</div>
+</div>
+<a id="ad2607118cd48e5aa217a5cd4ca24ea6e" name="ad2607118cd48e5aa217a5cd4ca24ea6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2607118cd48e5aa217a5cd4ca24ea6e">&#9670;&#160;</a></span>make_asset() <span class="overload">[2/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ALLEGRO_BITMAP &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="namespacewte.html#afe8c5c490a75d19f3649cb7e7322af05">wte_asset</a>&lt; ALLEGRO_BITMAP &gt; wte::make_asset </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>h</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create an Allegro bitmap asset of size width x height. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ALLEGRO_BITMAP</td><td>Allegro bitmap structure. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>Width of new bitmap. </td></tr>
+    <tr><td class="paramname">h</td><td>Height of new bitmap. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A new Allegro bitmap asset. </dd></dl>
+
+</div>
+</div>
+<a id="aaa3c91e7d2476005477f21ab23c38bb2" name="aaa3c91e7d2476005477f21ab23c38bb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa3c91e7d2476005477f21ab23c38bb2">&#9670;&#160;</a></span>make_asset() <span class="overload">[3/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -634,7 +736,226 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">static const <a class="el" href="namespacewte.html#afe8c5c490a75d19f3649cb7e7322af05">wte_asset</a>&lt; T &gt; wte::make_asset </td>
           <td>(</td>
-          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create an Allegro asset from file. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Type of Allegro asset. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fname</td><td>Filename to load. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A new asset of loaded type. </dd></dl>
+
+</div>
+</div>
+<a id="a0dc4b674f3e6aa8fd03f5f0759ec5395" name="a0dc4b674f3e6aa8fd03f5f0759ec5395"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dc4b674f3e6aa8fd03f5f0759ec5395">&#9670;&#160;</a></span>make_asset() <span class="overload">[4/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ALLEGRO_FONT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="namespacewte.html#afe8c5c490a75d19f3649cb7e7322af05">wte_asset</a>&lt; ALLEGRO_FONT &gt; wte::make_asset </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create an Allegro font asset. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ALLEGRO_FONT</td><td>Allegro font structure. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fname</td><td>Filename to load. </td></tr>
+    <tr><td class="paramname">size</td><td>Size of text. </td></tr>
+    <tr><td class="paramname">flags</td><td>Font flags (see Allegro documentation). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A new Allegro font asset with the loaded font. </dd></dl>
+
+</div>
+</div>
+<a id="a3e77f070fc7a3ce40d0f0d6e80e06ef0" name="a3e77f070fc7a3ce40d0f0d6e80e06ef0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e77f070fc7a3ce40d0f0d6e80e06ef0">&#9670;&#160;</a></span>make_asset() <span class="overload">[5/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ALLEGRO_AUDIO_STREAM &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="namespacewte.html#afe8c5c490a75d19f3649cb7e7322af05">wte_asset</a>&lt; ALLEGRO_AUDIO_STREAM &gt; wte::make_asset </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::size_t &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>samples</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create an Allegro audio stream asset. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ALLEGRO_AUDIO_STREAM</td><td>Allegro audio stream structure. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fname</td><td>Filename to load. </td></tr>
+    <tr><td class="paramname">buffer</td><td>Buffer size. </td></tr>
+    <tr><td class="paramname">samples</td><td>Number of samples (see Allegro documentation). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A new Allegro audio stream asset with the loaded file. </dd></dl>
+
+</div>
+</div>
+<a id="ade7f4a8b113cd2a2d3e1ab954b0e9f21" name="ade7f4a8b113cd2a2d3e1ab954b0e9f21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade7f4a8b113cd2a2d3e1ab954b0e9f21">&#9670;&#160;</a></span>make_asset() <span class="overload">[6/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="namespacewte.html#afe8c5c490a75d19f3649cb7e7322af05">wte_asset</a>&lt; T &gt; wte::make_asset </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; T()&gt;&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
+          <td class="paramname"><em>deleter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create an asset from an incomplete type. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Data structure. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">func</td><td>Function to create asset with. </td></tr>
+    <tr><td class="paramname">deleter</td><td>Deleter function to clean up data. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A new asset of the loaded type. </dd></dl>
+
+</div>
+</div>
+<a id="a53dbb8abf8396d388cb197b62d2b059d" name="a53dbb8abf8396d388cb197b62d2b059d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53dbb8abf8396d388cb197b62d2b059d">&#9670;&#160;</a></span>make_asset() <span class="overload">[7/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="namespacewte.html#afe8c5c490a75d19f3649cb7e7322af05">wte_asset</a>&lt; T &gt; wte::make_asset </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&#160;</td>
           <td class="paramname"><em>obj</em></td><td>)</td>
           <td></td>
         </tr>
@@ -646,27 +967,27 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Create an asset (shared) pointer. </p>
+<p>Create an asset from an object. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>Asset type. </td></tr>
+    <tr><td class="paramname">T</td><td>Object type. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">obj</td><td>Object to create asset from. </td></tr>
+    <tr><td class="paramname">obj</td><td>The object to load as an asset. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A new asset (shared pointer). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The object as an asset. </dd></dl>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 13 2022 12:50:07 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Thu Nov 17 2022 08:33:09 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

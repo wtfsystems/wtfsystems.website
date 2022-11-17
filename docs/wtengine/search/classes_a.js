@@ -1,7 +1,7 @@
 var searchData=
 [
   ['manager_0',['manager',['../classwte_1_1mgr_1_1manager.html',1,'wte::mgr']]],
-  ['manager_3c_20assets_3c_3e_20_3e_1',['manager&lt; assets&lt;&gt; &gt;',['../classwte_1_1mgr_1_1manager.html',1,'wte::mgr']]],
+  ['manager_3c_20assets_20_3e_1',['manager&lt; assets &gt;',['../classwte_1_1mgr_1_1manager.html',1,'wte::mgr']]],
   ['manager_3c_20audio_20_3e_2',['manager&lt; audio &gt;',['../classwte_1_1mgr_1_1manager.html',1,'wte::mgr']]],
   ['manager_3c_20messages_20_3e_3',['manager&lt; messages &gt;',['../classwte_1_1mgr_1_1manager.html',1,'wte::mgr']]],
   ['manager_3c_20renderer_20_3e_4',['manager&lt; renderer &gt;',['../classwte_1_1mgr_1_1manager.html',1,'wte::mgr']]],
