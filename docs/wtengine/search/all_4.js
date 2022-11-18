@@ -8,8 +8,7 @@ var searchData=
   ['dispatcher_5',['dispatcher',['../classwte_1_1cmp_1_1dispatcher.html#a605fa6d6f3953f28591e20cd08985f05',1,'wte::cmp::dispatcher::dispatcher(const std::function&lt; void(const entity_id &amp;, const message &amp;)&gt; &amp;func)'],['../classwte_1_1cmp_1_1dispatcher.html#a2aabea8c419456dca803e6a8e7efa87b',1,'wte::cmp::dispatcher::dispatcher()=delete'],['../classwte_1_1cmp_1_1dispatcher.html',1,'wte::cmp::dispatcher']]],
   ['display_6',['display',['../classwte_1_1display.html#a76886b116e4c9d8966fd7e1442bc51d1',1,'wte::display::display()'],['../classwte_1_1display.html',1,'wte::display']]],
   ['display_5fmode_7',['display_mode',['../structwte_1_1config_1_1gfx.html#a1b680a81f3e295f397a5be93fe345907',1,'wte::config::gfx']]],
-  ['display_5fmodes_8',['display_modes',['../namespacewte.html#a09ac11c98b3fc2701bd78ec6ea65de5a',1,'wte']]],
-  ['do_5fgame_9',['do_game',['../classwte_1_1engine.html#afdc8ecd25d3c36d2ba1d1f82717ba0f5',1,'wte::engine']]],
-  ['draw_5ffps_10',['draw_fps',['../structwte_1_1config_1_1flags.html#a5f0b610b2badd1c1b74c054c71b5ed67',1,'wte::config::flags']]],
-  ['draw_5ftext_11',['draw_text',['../classwte_1_1cmp_1_1gfx_1_1overlay.html#a2647f18fdd017e0244d40c5084c0c6e8',1,'wte::cmp::gfx::overlay']]]
+  ['do_5fgame_8',['do_game',['../classwte_1_1engine.html#afdc8ecd25d3c36d2ba1d1f82717ba0f5',1,'wte::engine']]],
+  ['draw_5ffps_9',['draw_fps',['../structwte_1_1config_1_1flags.html#a5f0b610b2badd1c1b74c054c71b5ed67',1,'wte::config::flags']]],
+  ['draw_5ftext_10',['draw_text',['../classwte_1_1cmp_1_1gfx_1_1overlay.html#a2647f18fdd017e0244d40c5084c0c6e8',1,'wte::cmp::gfx::overlay']]]
 ];
