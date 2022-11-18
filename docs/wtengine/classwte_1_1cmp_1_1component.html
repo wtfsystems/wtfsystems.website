@@ -76,8 +76,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classwte_1_1cmp_1_1component-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">wte::cmp::component Class Reference</div></div>
 </div><!--header-->
@@ -93,7 +91,7 @@ Inheritance diagram for wte::cmp::component:</div>
   <map id="wte::cmp::component_map" name="wte::cmp::component_map">
 <area href="classwte_1_1cmp_1_1ai.html" title="Tag components to be processed by the Logic system." alt="wte::cmp::ai" shape="rect" coords="0,56,156,80"/>
 <area href="classwte_1_1cmp_1_1bounding__box.html" title="Set a bounding box for an entity." alt="wte::cmp::bounding_box" shape="rect" coords="166,56,322,80"/>
-<area href="classwte_1_1cmp_1_1dispatcher.html" title="Tag components to be processed by the Logic system." alt="wte::cmp::dispatcher" shape="rect" coords="332,56,488,80"/>
+<area href="classwte_1_1cmp_1_1dispatcher.html" title="Tag components to receive messages." alt="wte::cmp::dispatcher" shape="rect" coords="332,56,488,80"/>
 <area href="classwte_1_1cmp_1_1gfx_1_1gfx.html" title="Interface class for components that display graphics." alt="wte::cmp::gfx::gfx" shape="rect" coords="498,56,654,80"/>
 <area href="classwte_1_1cmp_1_1hitbox.html" title="Component to add a hitbox for performing colisions on." alt="wte::cmp::hitbox" shape="rect" coords="664,56,820,80"/>
 <area href="classwte_1_1cmp_1_1location.html" title="Store the X/Y location of an entity in the arena." alt="wte::cmp::location" shape="rect" coords="830,56,986,80"/>
@@ -103,29 +101,6 @@ Inheritance diagram for wte::cmp::component:</div>
 <area href="classwte_1_1cmp_1_1gfx_1_1sprite.html" title="Component for loading a sprite sheet and storing its animation frames." alt="wte::cmp::gfx::sprite" shape="rect" coords="664,112,820,136"/>
   </map>
 </div></div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a4af9a2b3547cbc48b390e9fbb7db5601"><td class="memItemLeft" align="right" valign="top"><a id="a4af9a2b3547cbc48b390e9fbb7db5601" name="a4af9a2b3547cbc48b390e9fbb7db5601"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~component</b> ()=default</td></tr>
-<tr class="memdesc:a4af9a2b3547cbc48b390e9fbb7db5601"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default virtual destructor. <br /></td></tr>
-<tr class="separator:a4af9a2b3547cbc48b390e9fbb7db5601"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab57cc4bd5b63d207f1e8f06cce9d5921"><td class="memItemLeft" align="right" valign="top"><a id="ab57cc4bd5b63d207f1e8f06cce9d5921" name="ab57cc4bd5b63d207f1e8f06cce9d5921"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>component</b> (const <a class="el" href="classwte_1_1cmp_1_1component.html">component</a> &amp;)=delete</td></tr>
-<tr class="memdesc:ab57cc4bd5b63d207f1e8f06cce9d5921"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete copy constructor. <br /></td></tr>
-<tr class="separator:ab57cc4bd5b63d207f1e8f06cce9d5921"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c8a675c55a5002279a0688a60d1a174"><td class="memItemLeft" align="right" valign="top"><a id="a6c8a675c55a5002279a0688a60d1a174" name="a6c8a675c55a5002279a0688a60d1a174"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classwte_1_1cmp_1_1component.html">component</a> const &amp;)=delete</td></tr>
-<tr class="memdesc:a6c8a675c55a5002279a0688a60d1a174"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete assignment operator. <br /></td></tr>
-<tr class="separator:a6c8a675c55a5002279a0688a60d1a174"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a68d1eecc38075167bfd06a785f409cfa"><td class="memItemLeft" align="right" valign="top"><a id="a68d1eecc38075167bfd06a785f409cfa" name="a68d1eecc38075167bfd06a785f409cfa"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>component</b> ()=default</td></tr>
-<tr class="memdesc:a68d1eecc38075167bfd06a785f409cfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
-<tr class="separator:a68d1eecc38075167bfd06a785f409cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Interface class for creating a component. </p>
 <p >Extend this to creata a component that can be loaded into the Entity Manager. </p>
@@ -135,7 +110,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 18 2022 12:22:50 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Fri Nov 18 2022 14:31:00 for WTEngine by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

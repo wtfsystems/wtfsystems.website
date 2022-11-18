@@ -15,5 +15,5 @@ var searchData=
   ['get_5ftimer_12',['get_timer',['../classwte_1_1message.html#aa99867fd193ccc62a7b05fe9b4606d21',1,'wte::message']]],
   ['get_5ftint_13',['get_tint',['../classwte_1_1cmp_1_1gfx_1_1gfx.html#a69d5f1d92071c400bec4374e63df2f46',1,'wte::cmp::gfx::gfx']]],
   ['get_5fto_14',['get_to',['../classwte_1_1message.html#ae275aafbff52515cbc1268d284c717c5',1,'wte::message']]],
-  ['gfx_15',['gfx',['../classwte_1_1cmp_1_1gfx_1_1gfx.html#ab1d839721a63d0b46d068f6147b9dfd9',1,'wte::cmp::gfx::gfx::gfx()=delete'],['../classwte_1_1cmp_1_1gfx_1_1gfx.html#a3042f42ba98f6e561510d7616bc8f651',1,'wte::cmp::gfx::gfx::gfx(wte_asset&lt; ALLEGRO_BITMAP &gt; bmp, const std::size_t &amp;l, const std::function&lt; void(const entity_id &amp;)&gt; &amp;func)'],['../classwte_1_1cmp_1_1gfx_1_1gfx.html',1,'wte::cmp::gfx::gfx'],['../structwte_1_1config_1_1gfx.html',1,'wte::config::gfx']]]
+  ['gfx_15',['gfx',['../classwte_1_1cmp_1_1gfx_1_1gfx.html#a3042f42ba98f6e561510d7616bc8f651',1,'wte::cmp::gfx::gfx::gfx()'],['../classwte_1_1cmp_1_1gfx_1_1gfx.html',1,'wte::cmp::gfx::gfx'],['../structwte_1_1config_1_1gfx.html',1,'wte::config::gfx']]]
 ];

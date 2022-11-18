@@ -28,11 +28,11 @@ var searchData=
   ['solid_25',['solid',['../classwte_1_1cmp_1_1hitbox.html#aff295d13834416a34ec1896d99c6d6fa',1,'wte::cmp::hitbox']]],
   ['spawn_26',['spawn',['../classwte_1_1mgr_1_1spawner.html#a610bdd4fd6fe4fde926e1150aecfbe7f',1,'wte::mgr::spawner']]],
   ['spawner_27',['spawner',['../classwte_1_1mgr_1_1spawner.html',1,'wte::mgr']]],
-  ['sprite_28',['sprite',['../classwte_1_1cmp_1_1gfx_1_1sprite.html#aeb64a701e2566be173fd32996ec3191d',1,'wte::cmp::gfx::sprite::sprite(wte_asset&lt; ALLEGRO_BITMAP &gt; bmp, const std::size_t &amp;l, const float &amp;sw, const float &amp;sh, const float &amp;dox, const float &amp;doy, const std::size_t &amp;rt)'],['../classwte_1_1cmp_1_1gfx_1_1sprite.html#ae0f40be91870a17db8168ddabece2acb',1,'wte::cmp::gfx::sprite::sprite()=delete'],['../classwte_1_1cmp_1_1gfx_1_1sprite.html',1,'wte::cmp::gfx::sprite']]],
+  ['sprite_28',['sprite',['../classwte_1_1cmp_1_1gfx_1_1sprite.html#aeb64a701e2566be173fd32996ec3191d',1,'wte::cmp::gfx::sprite::sprite()'],['../classwte_1_1cmp_1_1gfx_1_1sprite.html',1,'wte::cmp::gfx::sprite']]],
   ['start_5frecording_29',['start_recording',['../classwte_1_1input.html#a538de6c0cf0c9d63c421568c42cdb8cc',1,'wte::input']]],
   ['start_5ftime_30',['start_time',['../classwte_1_1mgr_1_1gfx_1_1renderer.html#aa9123f3098f920b45e650f99ef34dd1b',1,'wte::mgr::gfx::renderer']]],
   ['stop_31',['stop',['../structwte_1_1mgr_1_1audio_1_1music_1_1a.html#a1bb2d03fbcf2d2797c5e3dbb4c2ed1fe',1,'wte::mgr::audio::music::a::stop()'],['../structwte_1_1mgr_1_1audio_1_1music_1_1b.html#aa740bc614919fd2491b3fe1ff76d92e0',1,'wte::mgr::audio::music::b::stop()'],['../structwte_1_1mgr_1_1audio_1_1sample.html#a2948c7626333678b9c8b8cb28d67d75c',1,'wte::mgr::audio::sample::stop()'],['../structwte_1_1mgr_1_1audio_1_1voice.html#a7fb6b441e264540ddc1832cb04efb930',1,'wte::mgr::audio::voice::stop()'],['../structwte_1_1mgr_1_1audio_1_1ambiance.html#a3e78354a500b2e045e1183af26c9a41f',1,'wte::mgr::audio::ambiance::stop()']]],
   ['stop_5frecording_32',['stop_recording',['../classwte_1_1input.html#af71be688a3763c97821a36ca8e58cae1',1,'wte::input']]],
-  ['system_33',['system',['../classwte_1_1sys_1_1system.html#a9cd549a5b1b59bbf8aa735562fb17d80',1,'wte::sys::system::system(const system &amp;)=delete'],['../classwte_1_1sys_1_1system.html#a5fa23ca9c78801bcd00e2f85df86bbfb',1,'wte::sys::system::system(const std::string &amp;n)'],['../classwte_1_1sys_1_1system.html',1,'wte::sys::system']]],
+  ['system_33',['system',['../classwte_1_1sys_1_1system.html#a5fa23ca9c78801bcd00e2f85df86bbfb',1,'wte::sys::system::system()'],['../classwte_1_1sys_1_1system.html',1,'wte::sys::system']]],
   ['systems_34',['systems',['../classwte_1_1mgr_1_1systems.html',1,'wte::mgr']]]
 ];
