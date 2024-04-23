@@ -1,0 +1,25 @@
+{
+  "name": "wtfsystems.website",
+  "private": true,
+  "version": "0.0.0",
+  "author": "Matthew Evans",
+  "license": "MIT",
+  "url": "https://www.wtfsystems.net",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.4.24"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "stylus": "^0.63.0",
+    "stylus-loader": "^8.1.0",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.10",
+    "vue-tsc": "^2.0.14"
+  }
+}
