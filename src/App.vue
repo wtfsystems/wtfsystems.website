@@ -3,7 +3,7 @@
 
 <template>
   <p style="text-align: center;">
-    <img src="/img/wtfsystems.png" width="90%">
+    <img src="/src/assets/wtfsystems.png" width="90%">
   </p>
   <p style="text-align: center;">
     <a href="https://github.com/wtfsystems">https://github.com/wtfsystems</a>
