@@ -1,2 +1,5 @@
 node_modules
 dist
+
+.docbuilder.config.json
+.docbuilder.log
