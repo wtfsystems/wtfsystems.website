@@ -8,6 +8,7 @@
     <a href="https://github.com/wtfsystems">
       <img src="/src/assets/wtfsystems.png">
     </a>
+    <h3>Fun in Silico</h3>
   </header>
 </template>
 
@@ -17,4 +18,7 @@ header
   margin-right auto
 img
   height 72px
+h3
+  text-align: center
+  color: rgb(255, 204, 0)
 </style>
