@@ -4,6 +4,22 @@
 -->
 
 <script setup lang="ts">
+
+const links = [
+  {
+    title: 'Source repository:',
+    url: 'https://github.com/wtfsystems/wtengine'
+  },
+  {
+    title: 'Example:',
+    url: 'https://github.com/wtfsystems/wte_demo_01'
+  },
+  {
+    title: 'Documentation:',
+    url: 'https://www.wtfsystems.net/docs/wtengine/index.html'
+  }
+]
+
 </script>
 
 <template>
@@ -12,25 +28,8 @@
       <img src="/src/assets/wte-logo.png">
     </a>
     <h3>C++17 Game Engine</h3>
-    <ul>
-      <li>
-        Source repository:
-        <a href="https://github.com/wtfsystems/wtengine">
-          https://github.com/wtfsystems/wtengine
-        </a>
-      </li>
-      <li>
-        Example:
-        <a href="https://github.com/wtfsystems/wte_demo_01">
-          https://github.com/wtfsystems/wte_demo_01
-        </a>
-      </li>
-      <li>
-        Documentation:
-        <a href="https://www.wtfsystems.net/docs/wtengine/index.html">
-          https://www.wtfsystems.net/docs/wtengine/index.html
-        </a>
-      </li>
+    <ul v-for="item in links">
+      <li>{{ item.title }} <a :href="item.url">{{ item.url }}</a></li>
     </ul>
   </div>
 </template>
