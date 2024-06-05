@@ -27,7 +27,7 @@ const links = [
     <a href="https://github.com/wtfsystems/wtengine">
       <img src="/src/assets/wte-logo.png">
     </a>
-    <h3>C++17 Game Engine</h3>
+    <h2>C++17 Game Engine</h2>
     <ul v-for="item in links">
       <li>{{ item.title }} <a :href="item.url">{{ item.url }}</a></li>
     </ul>
