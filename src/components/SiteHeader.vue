@@ -16,5 +16,5 @@ header
   margin-left auto
   margin-right auto
 img
-  height 58px
+  height 72px
 </style>

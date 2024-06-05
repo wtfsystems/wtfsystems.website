@@ -36,5 +36,5 @@ const links = [
 
 <style lang="stylus" scoped>
 img
-  height 32px
+  height 34px
 </style>
