@@ -8,7 +8,6 @@
       "name": "wtengine",
       "generator": "doxygen",
       "path": "/home/matt/Documents/Projects/wtfsystems/wtengine",
-      "out": "docs",
       "checkfolder": "true",
       "removeold": "true"
     },
@@ -16,7 +15,6 @@
       "name": "wtgui",
       "generator": "typedoc",
       "path": "/home/matt/Documents/Projects/wtfsystems/wtgui",
-      "out": "docs",
       "checkfolder": "true",
       "removeold": "true"
     }
