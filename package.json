@@ -20,8 +20,8 @@
     "stylus": "^0.63.0",
     "stylus-loader": "^8.1.0",
     "typescript": "^5.4.5",
-    "vite": "^5.2.12",
+    "vite": "^5.2.13",
     "vite-plugin-css-injected-by-js": "^3.5.1",
-    "vue-tsc": "^2.0.19"
+    "vue-tsc": "^2.0.21"
   }
 }

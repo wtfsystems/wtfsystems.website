@@ -15,10 +15,6 @@ const links = [
     url: 'https://github.com/wtfsystems/wtgui'
   },
   {
-    title: 'Example:',
-    url: 'https://github.com/wtfsystems/wtgui_example'
-  },
-  {
     title: 'Documentation:',
     url: 'https://www.wtfsystems.net/docs/wtgui/'
   }
