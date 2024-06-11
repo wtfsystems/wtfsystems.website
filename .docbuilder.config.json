@@ -1,7 +1,7 @@
 {
   "generators": {
     "doxygen": "doxygen .doxyfile",
-    "typedoc": "npx typedoc"
+    "vitepress": "npm run docs:build"
   },
   "jobs": [
     {
@@ -13,8 +13,8 @@
     },
     {
       "name": "wtgui",
-      "generator": "typedoc",
-      "path": "/home/matt/Documents/Projects/wtfsystems/wtgui",
+      "generator": "vitepress",
+      "path": "/home/matt/Documents/Projects/wtfsystems/wtgui/docs/.vitepress",
       "checkfolder": "true",
       "removeold": "true"
     }

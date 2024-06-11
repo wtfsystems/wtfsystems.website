@@ -12,5 +12,6 @@ var searchData=
   ['do_5fgame_9',['do_game',['../classwte_1_1engine.html#a4fd00eee57d6ac045447085794adf9da',1,'wte::engine']]],
   ['documentation_3a_10',['Documentation:',['../index.html#autotoc_md2',1,'']]],
   ['draw_5ffps_11',['draw_fps',['../structwte_1_1config_1_1flags.html#a5f0b610b2badd1c1b74c054c71b5ed67',1,'wte::config::flags']]],
-  ['draw_5ftext_12',['draw_text',['../classwte_1_1cmp_1_1gfx_1_1overlay.html#a2647f18fdd017e0244d40c5084c0c6e8',1,'wte::cmp::gfx::overlay']]]
+  ['draw_5fgui_12',['draw_gui',['../classwte_1_1mgr_1_1gfx_1_1renderer.html#af024e5973b9ea163d6dab270a502dc55',1,'wte::mgr::gfx::renderer']]],
+  ['draw_5ftext_13',['draw_text',['../classwte_1_1cmp_1_1gfx_1_1overlay.html#a2647f18fdd017e0244d40c5084c0c6e8',1,'wte::cmp::gfx::overlay']]]
 ];
