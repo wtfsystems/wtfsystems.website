@@ -12,7 +12,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.4.27"
+    "vue": "^3.4.28"
   },
   "devDependencies": {
     "@spongex/docbuilder": "^2.1.1",
@@ -20,7 +20,7 @@
     "stylus": "^0.63.0",
     "stylus-loader": "^8.1.0",
     "typescript": "^5.4.5",
-    "vite": "^5.3.0",
+    "vite": "^5.3.1",
     "vite-plugin-css-injected-by-js": "^3.5.1",
     "vue-tsc": "^2.0.21"
   }
