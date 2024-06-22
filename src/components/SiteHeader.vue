@@ -8,7 +8,7 @@
     <a href="https://github.com/wtfsystems">
       <img src="/src/assets/wtfsystems.png">
     </a>
-    <h3>Fun in Silico</h3>
+    <h3>Open Source Community Driven Game Software</h3>
   </header>
 </template>
 
