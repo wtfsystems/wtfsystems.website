@@ -27,7 +27,7 @@ const links = [
     <a href="https://github.com/wtfsystems/wtgui">
       <img src="/src/assets/wtgui-logo.png">
     </a>
-    <h2>Experimental HTML5 Canvas Menu System</h2>
+    <h2>Experimental Vue3 Menu System</h2>
     <ul v-for="item in links">
       <li>{{ item.title }} <a :href="item.url">{{ item.url }}</a></li>
     </ul>
