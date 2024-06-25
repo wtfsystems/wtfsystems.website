@@ -58,15 +58,18 @@ const toggleShow = () => {
   </footer>
 </template>
 
-<style lang="stylus" scoped>
-.title
-  font-weight bold
-.github
-  width 8px
-  height 8px
-footer
-  text-align right
-  font-size x-small
-  line-height 1.5
-  margin-bottom 8px
+<style scoped>
+.title {
+  font-weight: bold;
+}
+.github {
+  width: 8px;
+  height: 8px;
+}
+footer {
+  text-align: right;
+  font-size: x-small;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
 </style>

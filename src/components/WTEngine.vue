@@ -34,7 +34,8 @@ const links = [
   </div>
 </template>
 
-<style lang="stylus" scoped>
-img
-  height 34px
+<style scoped>
+img {
+  height: 34px;
+}
 </style>

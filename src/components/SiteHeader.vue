@@ -12,13 +12,16 @@
   </header>
 </template>
 
-<style lang="stylus" scoped>
-header
-  margin-left auto
-  margin-right auto
-img
-  height 72px
-h3
-  text-align: center
-  color: rgb(255, 204, 0)
+<style scoped>
+header {
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  height: 72px;
+}
+h3 {
+  text-align: center;
+  color: rgb(255, 204, 0);
+}
 </style>
