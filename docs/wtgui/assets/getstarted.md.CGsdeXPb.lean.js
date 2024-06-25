@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a,a1 as s}from"./chunks/framework.BeLQr1Zz.js";const m=JSON.parse('{"title":"Get Started","description":"","frontmatter":{},"headers":[],"relativePath":"getstarted.md","filePath":"getstarted.md"}'),r={name:"getstarted.md"},o=s("",6),i=[o];function n(d,p,c,l,u,h){return a(),t("div",null,i)}const _=e(r,[["render",n]]);export{m as __pageData,_ as default};
